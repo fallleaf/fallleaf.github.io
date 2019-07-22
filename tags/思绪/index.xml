@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>思绪 on Thinking, Writing And Waiting</title>
+    <link>/tags/%E6%80%9D%E7%BB%AA/</link>
+    <description>Recent content in 思绪 on Thinking, Writing And Waiting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 09 Dec 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%80%9D%E7%BB%AA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>四季</title>
+      <link>/post/four-season/</link>
+      <pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/four-season/</guid>
+      <description>
+
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

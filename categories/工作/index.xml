@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工作 on Thinking, Writing And Waiting</title>
+    <link>/categories/%E5%B7%A5%E4%BD%9C/</link>
+    <description>Recent content in 工作 on Thinking, Writing And Waiting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 07 Dec 2006 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/%E5%B7%A5%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>通信设计院杂谈</title>
+      <link>/post/something-about-telecom-design-institue/</link>
+      <pubDate>Thu, 07 Dec 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/post/something-about-telecom-design-institue/</guid>
+      <description>
+
+
+&lt;p&gt;在TelReading的BBS 上，网友shejiyuan 写了一片关于设计院间比较的文章，挺不错的， 摘录给大家阅读。&lt;/p&gt;
+&lt;p&gt;原文链接地址为http://bbs.telreading.com/thread-3820-1-1.html 。 </description>
+    </item>
+    
+    <item>
+      <title>关于通信设计的思考</title>
+      <link>/post/thinking-about-telecom-design/</link>
+      <pubDate>Tue, 14 Feb 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/post/thinking-about-telecom-design/</guid>
+      <description>
+
+
+&lt;p&gt;经常上一些通信的BBS，也看看了不少帖子。谈论起设计院，似乎有这样的观点，就是设计院无用，设计院只有盖章的功能，设计院迟早要被厂家替代等等言论，附和的人不少，维护设计院的人寥寥无几，在孤军奋战。到底设计院的作用是什么呢？我想，这是每个设计人员，尤其是初入此门的设计人员的最为关心的。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C-FOL论坛上一个关于MSTP的讨论</title>
+      <link>/post/discussion-about-mstp-on-c-fol-forum/</link>
+      <pubDate>Mon, 07 Nov 2005 00:00:00 +0000</pubDate>
+      
+      <guid>/post/discussion-about-mstp-on-c-fol-forum/</guid>
+      <description>
+
+
+&lt;p&gt;晚上和同事用IM讨论一个软课题，顺便到[[C-FOL论坛]]上查找资料，ASON的一个“MSTP上提供三层路由的功能有用吗？ “的帖子引起了长达一年的讨 论，开始于2004年1月，目前截至于2005年月。这个帖子的讨论对我帮助很大，今天凑空把讨论的内容整理一下，留做纪念。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

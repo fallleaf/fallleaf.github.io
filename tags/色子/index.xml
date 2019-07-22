@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>色子 on Thinking, Writing And Waiting</title>
+    <link>/tags/%E8%89%B2%E5%AD%90/</link>
+    <description>Recent content in 色子 on Thinking, Writing And Waiting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 29 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E8%89%B2%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>色子肖像--Python程序</title>
+      <link>/post/dice-portrait-python/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/dice-portrait-python/</guid>
+      <description>
+
+
+&lt;p&gt;一个完整的输出色子肖像点数排列的Python程序 </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,276 @@
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2019-07-21T22:46:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/r%E8%AF%AD%E8%A8%80/</loc>
+    <lastmod>2019-07-21T19:12:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r%E8%AF%AD%E8%A8%80/</loc>
+    <lastmod>2019-07-21T19:12:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/slopegraph/</loc>
+    <lastmod>2019-07-21T19:12:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2019-07-22T07:24:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/</loc>
+    <lastmod>2019-07-21T19:12:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/creating-slopegraph-with-r/</loc>
+    <lastmod>2019-07-21T19:12:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2019-07-22T07:24:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%82%96%E5%83%8F/</loc>
+    <lastmod>2019-07-22T07:24:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%89%B2%E5%AD%90/</loc>
+    <lastmod>2019-07-22T07:24:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/dice-portrait-python/</loc>
+    <lastmod>2019-07-22T07:24:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/four-season/</loc>
+    <lastmod>2019-07-22T10:14:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%80%9D%E7%BB%AA/</loc>
+    <lastmod>2019-07-22T10:14:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2015-01-21T22:56:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/sparse-coverage-of-access-network/</loc>
+    <lastmod>2015-01-21T22:56:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%96%84%E8%A6%86%E7%9B%96/</loc>
+    <lastmod>2015-01-21T22:56:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%8D%A1%E5%AE%BE%E8%BE%BE%E6%A0%91%E7%9A%AE/</loc>
+    <lastmod>2019-07-22T11:19:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/pau-de-cabinda/</loc>
+    <lastmod>2019-07-22T11:19:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/living-in-lobitobenguela/</loc>
+    <lastmod>2019-07-22T11:27:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/benguela/</loc>
+    <lastmod>2019-07-22T11:27:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/lobito/</loc>
+    <lastmod>2019-07-22T11:27:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E5%B7%A5%E4%BD%9C/</loc>
+    <lastmod>2019-07-22T11:37:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%AE%BE%E8%AE%A1%E9%99%A2/</loc>
+    <lastmod>2019-07-22T11:37:42+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/something-about-telecom-design-institue/</loc>
+    <lastmod>2019-07-22T11:37:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%AE%89%E5%93%A5%E6%8B%89/</loc>
+    <lastmod>2019-07-22T22:08:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/trip-to-middle-of-angola-2lobito-benguela/</loc>
+    <lastmod>2019-07-22T22:08:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E6%97%85%E8%A1%8C/</loc>
+    <lastmod>2019-07-22T22:08:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/trip-to-middle-of-angola-1ludanda-lobito/</loc>
+    <lastmod>2019-07-22T22:14:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%AD%9F%E5%8A%A0%E6%8B%89/</loc>
+    <lastmod>2019-07-22T22:17:55+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/bangladesh-drivers/</loc>
+    <lastmod>2019-07-22T22:17:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/a-party-of-c114-in-hangzhou/</loc>
+    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E7%BD%91%E5%8F%8B/</loc>
+    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%81%9A%E4%BC%9A/</loc>
+    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/thinking-about-telecom-design/</loc>
+    <lastmod>2019-07-22T10:57:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2019-07-22T10:57:40+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/discussion-about-mstp-on-c-fol-forum/</loc>
+    <lastmod>2019-07-22T11:07:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/cfol/</loc>
+    <lastmod>2019-07-22T11:07:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mstp/</loc>
+    <lastmod>2019-07-22T11:07:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
