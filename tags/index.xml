@@ -84,6 +84,42 @@
     </item>
     
     <item>
+      <title>LTE</title>
+      <link>/tags/lte/</link>
+      <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/lte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RAN</title>
+      <link>/tags/ran/</link>
+      <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ran/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>宗教</title>
+      <link>/tags/%E5%AE%97%E6%95%99/</link>
+      <pubDate>Thu, 08 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E5%AE%97%E6%95%99/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>逻辑</title>
+      <link>/tags/%E9%80%BB%E8%BE%91/</link>
+      <pubDate>Thu, 08 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E9%80%BB%E8%BE%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>卡宾达树皮</title>
       <link>/tags/%E5%8D%A1%E5%AE%BE%E8%BE%BE%E6%A0%91%E7%9A%AE/</link>
       <pubDate>Sun, 05 Aug 2007 00:00:00 +0000</pubDate>
@@ -138,47 +174,20 @@
     </item>
     
     <item>
+      <title>饭菜</title>
+      <link>/tags/%E9%A5%AD%E8%8F%9C/</link>
+      <pubDate>Sat, 03 Jun 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E9%A5%AD%E8%8F%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>网友</title>
       <link>/tags/%E7%BD%91%E5%8F%8B/</link>
       <pubDate>Mon, 17 Apr 2006 00:00:00 +0000</pubDate>
       
       <guid>/tags/%E7%BD%91%E5%8F%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>聚会</title>
-      <link>/tags/%E8%81%9A%E4%BC%9A/</link>
-      <pubDate>Mon, 17 Apr 2006 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E8%81%9A%E4%BC%9A/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>通信设计</title>
-      <link>/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/</link>
-      <pubDate>Tue, 14 Feb 2006 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CFOL</title>
-      <link>/tags/cfol/</link>
-      <pubDate>Mon, 07 Nov 2005 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/cfol/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MSTP</title>
-      <link>/tags/mstp/</link>
-      <pubDate>Mon, 07 Nov 2005 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/mstp/</guid>
       <description></description>
     </item>
     

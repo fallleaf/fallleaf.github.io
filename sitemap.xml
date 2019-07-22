@@ -3,7 +3,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <lastmod>2019-07-23T07:29:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -16,19 +16,13 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <lastmod>2019-07-23T07:24:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/r%E8%AF%AD%E8%A8%80/</loc>
-    <lastmod>2019-07-21T19:12:50+08:00</lastmod>
+    <lastmod>2019-07-23T07:29:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -39,8 +33,14 @@
   </url>
   
   <url>
+    <loc>/categories/r%E8%AF%AD%E8%A8%80/</loc>
+    <lastmod>2019-07-21T19:12:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
-    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <lastmod>2019-07-23T07:24:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -109,7 +109,7 @@
   
   <url>
     <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2019-07-22T22:20:58+08:00</lastmod>
+    <lastmod>2019-07-23T07:24:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -129,6 +129,50 @@
   <url>
     <loc>/tags/%E8%96%84%E8%A6%86%E7%9B%96/</loc>
     <lastmod>2015-01-21T22:56:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/lte/</loc>
+    <lastmod>2019-07-23T07:14:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/ran-with-lte/</loc>
+    <lastmod>2019-07-23T07:14:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ran/</loc>
+    <lastmod>2019-07-23T07:14:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E5%B7%A5%E4%BD%9C/</loc>
+    <lastmod>2019-07-23T07:14:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%AE%97%E6%95%99/</loc>
+    <lastmod>2019-07-23T07:20:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/religion-adn-logic/</loc>
+    <lastmod>2019-07-23T07:20:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E9%80%BB%E8%BE%91/</loc>
+    <lastmod>2019-07-23T07:20:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -161,12 +205,6 @@
   <url>
     <loc>/tags/lobito/</loc>
     <lastmod>2019-07-22T11:27:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2019-07-22T11:37:42+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -218,6 +256,33 @@
   <url>
     <loc>/post/bangladesh-drivers/</loc>
     <lastmod>2019-07-22T22:17:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/food-in-shanghai-unicom/</loc>
+    <lastmod>2019-07-23T07:24:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E9%A5%AD%E8%8F%9C/</loc>
+    <lastmod>2019-07-23T07:24:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/triple-good-luck-of-zhengzhou-citc/</loc>
+    <lastmod>2019-07-23T07:29:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/citc-shanghai-branch-established/</loc>
+    <lastmod>2019-07-23T07:26:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

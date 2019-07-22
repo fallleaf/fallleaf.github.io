@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LTE on Thinking, Writing And Waiting</title>
+    <link>/tags/lte/</link>
+    <description>Recent content in LTE on Thinking, Writing And Waiting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 12 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/lte/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LTE下的RAN</title>
+      <link>/post/ran-with-lte/</link>
+      <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ran-with-lte/</guid>
+      <description>
+
+
+&lt;p&gt;R5版本的RAN，NODE B到RNC之间只有Iub接口，基站间没有互联，Iub可以看做是一个端到端的链接，目前采用PTN传送，已经没有异议了，但在LTE环境下，eNODE到MME/S-GW是S1接口，类似Iub接口，但相邻的eNODE之间有了X2互联接口，那么LTE环境下的RAN该采用何种技术？PTN是否仍然合适？是否需要新建一个基于三层技术的IP RAN呢？ </description>
+    </item>
+    
+  </channel>
+</rss>

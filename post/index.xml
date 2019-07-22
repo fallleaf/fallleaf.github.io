@@ -62,6 +62,31 @@
     </item>
     
     <item>
+      <title>LTE下的RAN</title>
+      <link>/post/ran-with-lte/</link>
+      <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ran-with-lte/</guid>
+      <description>
+
+
+&lt;p&gt;R5版本的RAN，NODE B到RNC之间只有Iub接口，基站间没有互联，Iub可以看做是一个端到端的链接，目前采用PTN传送，已经没有异议了，但在LTE环境下，eNODE到MME/S-GW是S1接口，类似Iub接口，但相邻的eNODE之间有了X2互联接口，那么LTE环境下的RAN该采用何种技术？PTN是否仍然合适？是否需要新建一个基于三层技术的IP RAN呢？ </description>
+    </item>
+    
+    <item>
+      <title>宗教和逻辑</title>
+      <link>/post/religion-adn-logic/</link>
+      <pubDate>Thu, 08 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/post/religion-adn-logic/</guid>
+      <description>
+
+
+&lt;p&gt;对于基督、穆斯林信徒来说，必须回答“神是存在的。”，倘若回答了不存在，那就是无神论者。但佛教信徒则不同，即便回答“佛不存在”，“哪里会有佛”，“佛不过是草芥”，也可能是地地道道的佛教徒。&lt;/p&gt;
+&lt;p&gt;引自《给讨厌数学的人：数学的奥秘和生活》 </description>
+    </item>
+    
+    <item>
       <title>卡宾达树皮</title>
       <link>/post/pau-de-cabinda/</link>
       <pubDate>Sun, 05 Aug 2007 00:00:00 +0000</pubDate>
@@ -135,6 +160,43 @@
 
 
 &lt;p&gt;晚上，和在达卡的同事聊天，谈到过去的一些人和事，他告诉我“车子没了，人也死了”。 </description>
+    </item>
+    
+    <item>
+      <title>上海联通食堂的饭</title>
+      <link>/post/food-in-shanghai-unicom/</link>
+      <pubDate>Sat, 03 Jun 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/post/food-in-shanghai-unicom/</guid>
+      <description>
+
+
+&lt;p&gt;在上海联通吃食堂有2个月了，最深的感觉就是“酱油＋糖”，菜的颜色以酱油色为主，现在看到这种颜色就感觉饱了。不知那些常年在食堂吃饭的人能受的了吗。不禁想起成都的饭菜了。 </description>
+    </item>
+    
+    <item>
+      <title>吉祥三宝郑院版</title>
+      <link>/post/triple-good-luck-of-zhengzhou-citc/</link>
+      <pubDate>Tue, 30 May 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/post/triple-good-luck-of-zhengzhou-citc/</guid>
+      <description>
+
+
+&lt;p&gt;手机上收到一个短信，是仿吉祥三宝写的，也是对设计院工作的一个写照，内容如下：&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>中讯上分成立了</title>
+      <link>/post/citc-shanghai-branch-established/</link>
+      <pubDate>Sun, 28 May 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/post/citc-shanghai-branch-established/</guid>
+      <description>
+
+
+&lt;p&gt;上海分院近期成立了，地址在天目西路联通国际大厦。 </description>
     </item>
     
     <item>

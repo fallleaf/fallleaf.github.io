@@ -252,6 +252,40 @@ import numpy as np&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>LTE下的RAN</title>
+      <link>/post/ran-with-lte/</link>
+      <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ran-with-lte/</guid>
+      
+        <description>R5版本的RAN，NODE B到RNC之间只有Iub接口，基站间没有互联，Iub可以看做是一个端到端的链接，目前采用PTN传送，已经没有异议了，但在LTE环境下，eNODE到MME/S-GW是S1接口，类似Iub接口，但相邻的eNODE之间有了X2互联接口，那么LTE环境下的RAN该采用何种技术？PTN是否仍然合适？是否需要新建一个基于三层技术的IP RAN呢？&lt;/p&gt;
+&lt;p&gt;E2E时延： S1&amp;lt;10ms X2&amp;lt;20ms —–3GPP TR R3.018&lt;/p&gt;
+&lt;p&gt;流量： S1站97%以上，X2小于3%；&lt;/p&gt;
+&lt;p&gt;需要二层PTN吗？ 还是需要三层PTN? X2的时延，QOS？ EVPLAN EVPLINE&lt;/p&gt;
+&lt;p&gt;LTE新的逻辑接口X2主要用于切换，由于这个接口的出现，基站出现了逻辑部分MESH互连的承载难题，对传统点到点的传输网络架构提出了挑战。但进一步分析可以发现，实际X2接口带宽需求不会很大（最大不会超过S1接口的3%），X2业务面传输时延要求端到端50－100ms，信令面传输时延要求约 10－20ms，这个要求比S1用户面时延5ms宽松了许多。&lt;/p&gt;
+&lt;p&gt;LTE系统由核心网(EPC)、基站(eNodeB)和用户设备(UE)3部分组成。其中eNodeB负责无线接入网部分，称为E- UTRAN；EPC(EnvolvedPacketCore)是核心网部分，EPC信令处理部分称MME，数据处理部分称为SAE-Gateway。&lt;/p&gt;
+&lt;p&gt;eNodeB与EPC通过S1接口连接，eNodeB间通过X2接口连接，UE与eNodeB通过Uu接口连接。和TD-SCDMA相比，X2接口类似于Iur接口，S1 接口类似于Iu接口，但有较大简化。由于英电和RNC融合为网元eNodeB，LTE比WCDMA和TD-SCDMA少了Iub接口。&lt;/p&gt;
+&lt;p&gt;那么采用PTN接入的时候X2接口间的电路数量过多，在VLAN 上将会处理较为麻烦，而且PTN的LSP数量极剧增加，如果采用PTN传输是不是很麻烦，有一种说法是CE布置到汇聚层，完善数据城域网，接入层由传输负责，个人感觉还是比较好，X2的电路还是路由器调度比较方便，但是目前的机房条件好像再放路由器很难了，而且还有具有OTN。比较困难。不知道那位高手怎么看？&lt;/p&gt;
+&lt;p&gt;“下面我们就来看还有一个困扰PTN的发展，就是LTE提出了X2接口，整个基站是扁平化的网络，这时候就趋向了包括S1Flex动态归属需求，基站和基站之间互联。现在我们在中国电信内部讨论PTN有很大的问题，第一就是对LTE的情况下，三层功能比较弱，另外解决大客户用的时候也是不能提供的。这是我们的 IP RAN承载方案，路由器方案、PTN接入路由器方案、PTN+路由器方案。我认为PTN+路由器方案是最糟糕的方案，但实际运用中也不尽然，可能运作中 PTN+路由器还是比较多的方案。如果你放在综合承载，PTN不仅仅是基站，而是综合的承载基站，你考虑LTE更复杂的网络拓扑，这时候提到这个方案还是有一定道理的，所以我们并没有排除这个方案，让用户来选择是最好的。“ –张成良&lt;/p&gt;
+&lt;p&gt;若读者有什么想法，尽可留言。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>宗教和逻辑</title>
+      <link>/post/religion-adn-logic/</link>
+      <pubDate>Thu, 08 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/post/religion-adn-logic/</guid>
+      
+        <description>对于基督、穆斯林信徒来说，必须回答“神是存在的。”，倘若回答了不存在，那就是无神论者。但佛教信徒则不同，即便回答“佛不存在”，“哪里会有佛”，“佛不过是草芥”，也可能是地地道道的佛教徒。&lt;/p&gt;
+&lt;p&gt;引自《给讨厌数学的人：数学的奥秘和生活》&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>卡宾达树皮</title>
       <link>/post/pau-de-cabinda/</link>
       <pubDate>Sun, 05 Aug 2007 00:00:00 +0000</pubDate>
@@ -386,6 +420,43 @@ import numpy as np&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;“猫腻”这个人中等身材，浑身收拾的挺干净，穿皮鞋，头发梳的很亮，在孟加拉，等级的影响还是比较大的，穿皮鞋的显然要比穿拖鞋的高一等级。他在这四个司机中算是具有领导地位了，也非常容易理解我们的想法和要求，做事情也比较认真。我也只和他配合了近一个多月，他就配合别人去了。&lt;/p&gt;
 &lt;p&gt;阿卜杜拉和我配合的时间比较长，我第二次去孟加拉，他一直配合我。他长的比较高大，脸孔棱角分明，流着小胡子，如果穿上阿拉伯服装，简直是四十大盗中的一个，他是个文盲，不认字，但会说英语，去过阿联酋之类的国家打过工。阿波罗开车技术很好，也比较猛，不过我感觉孟人开车都比较猛，不知他属于哪一级。我们经常坐在车上从一个城市到另外一个城市，在车上没少训他，让他“drive slowly！be carefule，safe is fisrt!”。和他在一起也遇到不少情况，后视镜把别人挂倒加油门就跑，开车从羊身上飞跃过去，超车几乎开到路边的沟里，等的不耐烦了，下车把前面挡路的”依利西嘎“（黄包车）掀到一边，一起遇到持枪的游击队，在COX‘S BAZAR去缅甸边境买威士忌回来倒卖（尤其孟加拉还是穆斯林国家）现在想想，一幕幕又从现了。。。。。。&lt;/p&gt;
 &lt;p&gt;几年过去，再打听的时候，得知是这样的一种情况，颇有物是人非的酸酸的感觉。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>上海联通食堂的饭</title>
+      <link>/post/food-in-shanghai-unicom/</link>
+      <pubDate>Sat, 03 Jun 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/post/food-in-shanghai-unicom/</guid>
+      
+        <description>&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>吉祥三宝郑院版</title>
+      <link>/post/triple-good-luck-of-zhengzhou-citc/</link>
+      <pubDate>Tue, 30 May 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/post/triple-good-luck-of-zhengzhou-citc/</guid>
+      
+        <description>&lt;p&gt;手机上收到一个短信，是仿吉祥三宝写的，也是对设计院工作的一个写照，内容如下：&lt;/p&gt;
+&lt;p&gt;女儿：爸爸！ 爸爸：哎！ 女儿：太阳下山你就可以回家了吗？ 爸爸：不行！ 女儿：星星出来你又去哪里啦？ 爸爸：在加班！ 女儿：那加班费也不发？ 爸爸：尽业务了！ 合唱：能不被分流咱们就是吉祥的一家！&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>中讯上分成立了</title>
+      <link>/post/citc-shanghai-branch-established/</link>
+      <pubDate>Sun, 28 May 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/post/citc-shanghai-branch-established/</guid>
+      
+        <description>&lt;/p&gt;
 </description>
       
     </item>
