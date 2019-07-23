@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>-48v on Thinking, Writing And Waiting</title>
+    <link>/tags/48v/</link>
+    <description>Recent content in -48v on Thinking, Writing And Waiting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 21 Dec 2005 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/48v/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为什么通信设备使用–48V 这样的负电源系统？</title>
+      <link>/post/why-communication-equipments-use-48v/</link>
+      <pubDate>Wed, 21 Dec 2005 00:00:00 +0000</pubDate>
+      
+      <guid>/post/why-communication-equipments-use-48v/</guid>
+      <description>
+
+
+&lt;p&gt;在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

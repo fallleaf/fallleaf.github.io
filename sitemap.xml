@@ -3,7 +3,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-07-23T07:29:29+08:00</lastmod>
+    <lastmod>2019-07-23T08:29:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -16,13 +16,13 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-07-23T07:24:03+08:00</lastmod>
+    <lastmod>2019-07-23T08:29:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-07-23T07:29:29+08:00</lastmod>
+    <lastmod>2019-07-23T08:29:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -40,7 +40,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-07-23T07:24:03+08:00</lastmod>
+    <lastmod>2019-07-23T08:29:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -153,7 +153,7 @@
   
   <url>
     <loc>/categories/%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2019-07-23T07:14:31+08:00</lastmod>
+    <lastmod>2019-07-23T08:29:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -317,6 +317,19 @@
     <loc>/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2019-07-22T10:57:40+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/48v/</loc>
+    <lastmod>2019-07-23T08:29:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/why-communication-equipments-use-48v/</loc>
+    <lastmod>2019-07-23T08:29:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

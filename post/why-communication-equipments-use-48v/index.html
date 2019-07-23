@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>关于通信设计的思考 - Thinking, Writing And Waiting</title>
+  <title>为什么通信设备使用–48V 这样的负电源系统？ - Thinking, Writing And Waiting</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fallleaf" />
-  <meta name="description" content=" 经常上一些通信的BBS，也看看了不少帖子。谈论起设计院，似乎有这样的观点，就是设计院无用，设计院只有盖章的功能，设计院迟早要被厂家替代等等言论，附和的人不少，维护设计院的人寥寥无几，在孤军奋战。到底设计院的作用是什么呢？我想，这是每个设计人员，尤其是初入此门的设计人员的最为关心的。
+  <meta name="description" content=" 在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。
 " />
 
   <meta name="keywords" content="Hugo, theme, jane" />
@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="/post/thinking-about-telecom-design/" />
+<link rel="canonical" href="/post/why-communication-equipments-use-48v/" />
 
 
 
@@ -58,38 +58,38 @@
 
 
 
-<meta property="og:title" content="关于通信设计的思考" />
+<meta property="og:title" content="为什么通信设备使用–48V 这样的负电源系统？" />
 <meta property="og:description" content="
 
 
-经常上一些通信的BBS，也看看了不少帖子。谈论起设计院，似乎有这样的观点，就是设计院无用，设计院只有盖章的功能，设计院迟早要被厂家替代等等言论，附和的人不少，维护设计院的人寥寥无几，在孤军奋战。到底设计院的作用是什么呢？我想，这是每个设计人员，尤其是初入此门的设计人员的最为关心的。
+在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/thinking-about-telecom-design/" />
-<meta property="article:published_time" content="2006-02-14T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-07-22T10:57:40&#43;08:00"/>
+<meta property="og:url" content="/post/why-communication-equipments-use-48v/" />
+<meta property="article:published_time" content="2005-12-21T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-07-23T08:29:06&#43;08:00"/>
 
-<meta itemprop="name" content="关于通信设计的思考">
+<meta itemprop="name" content="为什么通信设备使用–48V 这样的负电源系统？">
 <meta itemprop="description" content="
 
 
-经常上一些通信的BBS，也看看了不少帖子。谈论起设计院，似乎有这样的观点，就是设计院无用，设计院只有盖章的功能，设计院迟早要被厂家替代等等言论，附和的人不少，维护设计院的人寥寥无几，在孤军奋战。到底设计院的作用是什么呢？我想，这是每个设计人员，尤其是初入此门的设计人员的最为关心的。
+在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。
 ">
 
 
-<meta itemprop="datePublished" content="2006-02-14T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-07-22T10:57:40&#43;08:00" />
-<meta itemprop="wordCount" content="1319">
+<meta itemprop="datePublished" content="2005-12-21T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-23T08:29:06&#43;08:00" />
+<meta itemprop="wordCount" content="1283">
 
 
 
-<meta itemprop="keywords" content="通信设计," />
+<meta itemprop="keywords" content="-48v," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="关于通信设计的思考"/>
+<meta name="twitter:title" content="为什么通信设备使用–48V 这样的负电源系统？"/>
 <meta name="twitter:description" content="
 
 
-经常上一些通信的BBS，也看看了不少帖子。谈论起设计院，似乎有这样的观点，就是设计院无用，设计院只有盖章的功能，设计院迟早要被厂家替代等等言论，附和的人不少，维护设计院的人寥寥无几，在孤军奋战。到底设计院的作用是什么呢？我想，这是每个设计人员，尤其是初入此门的设计人员的最为关心的。
+在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。
 "/>
 
 <!--[if lte IE 9]>
@@ -310,11 +310,11 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">关于通信设计的思考</h1>
+      <h1 class="post-title">为什么通信设备使用–48V 这样的负电源系统？</h1>
       
       <div class="post-meta">
-        <time datetime="2006-02-14" class="post-time">
-          2006-02-14
+        <time datetime="2005-12-21" class="post-time">
+          2005-12-21
         </time>
         <div class="post-category">
             <a href="/categories/%E5%B7%A5%E4%BD%9C/"> 工作 </a>
@@ -335,13 +335,21 @@
 
     
     <div class="post-content">
-      <p>经常上一些通信的BBS，也看看了不少帖子。谈论起设计院，似乎有这样的观点，就是设计院无用，设计院只有盖章的功能，设计院迟早要被厂家替代等等言论，附和的人不少，维护设计院的人寥寥无几，在孤军奋战。到底设计院的作用是什么呢？我想，这是每个设计人员，尤其是初入此门的设计人员的最为关心的。</p>
-<p>通信设计到底是什么概念呢？由于我是做传输设计的，就从我的视角上来说一说。通信设计，也就是设计人员根据对通信网络的理解，采用自己所掌握的专业知识，完成某一需求所做的能够指导工程实施的一系列工作，最终的产品就是设计文件。通信设计到底包括哪些方面呢？很多人的观念中好像搞设计的就是画画平面图，确定一下设备位置，安排一下走线路由，仅此而已，而这些工作好象设备厂家都可完成，比如华为公司，在设备发货前一般都要他的第三方去工勘，收集一些数据，比如安装方式、线缆长度等以便下料发货，但有些设备厂家，大多是国外厂家，往往要根据设计院的图纸进行下料。这些工作，实际上是设计工作的一小部分，设计的内容应该包括方案设计和安装设计两方面的内容。方案设计，在设计工作中最重要也是最有技术含量的，设计人员对网络的理解，对专业技术的掌握，对网络现状的熟悉，对业务需求的分析，会出现不同的设计思路和方案，这对运营商的网络及其发展会带来很大的影响。</p>
-<p>目前设计院所做的方案设计，感觉定性的东西多，定量的东西少，各种能够比较的方案不多，这些都是设计人员今后要改进的地方。这个阶段一般是在可研阶段，但对于一些不大的工程，也有做一阶段设计的。这个阶段的设计，是指导网络建设，设备选型、设备配置的，一般也都是运营商的计划发展部门以及设备厂商的售前参与。这对设计人员水平的要求很高，需要洞察各厂家设备及方案的优缺点以及一些隐藏的条件。</p>
-<p>设备安装设计阶段就相对简单些，主要是根据已制定好的组网方案，根据所采用的设备，进行设备的安装设计，这方案虽然简单，想要做好，也不容易，主要是一些配套的东西，如电源端子、DDF/ODF端子的安排，电缆路由的确定等，这要求设计人员熟悉设备的连接关系，机房的情况，还要对工程施工过程有所了解，这个阶段，牵扯的方方面面的细节很多，对于厂家的工勘，就他们就不需了解更多的情况了，实际按正常的流程，设备厂商应该从设计中获得数据，以便下料。这一阶段的设计，需要细致，应该考虑如何让设计图纸让施工单位能够按图施工。在这个阶段，运营商的维护人员、厂家的督导、施工人员以及监理，都碰面了，如果设计上有什么不清楚以及漏洞，难免会让这些人对设计的作用产生怀疑，对设计颇有微词。</p>
-<p>设计人员还有一个工作，就是编制阶段的工程费用，可研叫估算，初设叫概算，一阶段或施工图叫预算。</p>
-<p>设计人员的角色，怎么说呢，两面性，加在运营商和设备商中间，对于运营商，我们是乙方，对于设备商，我们又相当于半个甲方。</p>
-<p>经常有人说，设计单位迟早要没有了，今后，也许会没有单纯的一个设计院或设计所了，但设计的这一个作用，是会一直存在下去的，会以不同的形式出现。比如设备厂家的工勘，也属于设计工作的一部分。在比如设备厂家的TURNKEY工程，从前期的方案制定，到后期的工程实施，无时无刻会有设计工作的影子，只不过改了另外一种名称罢了。</p>
+      <p>在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。</p>
+<p>整理：邓兴昌</p>
+<p>A：这里面包含2 个意思：</p>
+<p>（1） 极性为何是负电源（也就是正接地）？</p>
+<p>（2） 电压为何为-48V（-36~ -72V）？</p>
+<p>先说一下第2个问题。使用-48V电源是历史原因造成的。使用最早的通讯网是电话网，话机是由电讯局供电的，选48V是在当时的条件下尽可能提高用户到端局的距离（36V是安全电压，超过太多不安全）。后来为了兼容早期设备、降低成本考虑，局端通讯设备还是用-48V电源。</p>
+<p>同样，采用负电源系统，正极接地只是约定俗成。原来有个说法是空气中有大量的负电荷，根据电化学知识，正极接地可以吸附空气中的负离子，从而保护电信设备的外壳不被锈蚀。其实这种说法不是很对。原电池反应和电解反应是会导致设备生锈，但是因为它们在设备上是以微观形式存在的，几乎没有影响。例如非通讯系统的网络都是负极接地（例如您正在使用的计算机），但是并没有生锈。并且-48V内部都通过DC/DC隔离，DC/DC输出的就是负极接地，也没有看到单板腐蚀生锈。所以不论哪个极接地，都是一样的。</p>
+<p>至于设备的外壳接地（接PGND），这是出于保护性的目的，将设备上累积的电荷快速泻放到大地，从而不会损伤设备和工作人员。</p>
+<p>我们的产品基本上都是使用-48V 电源系统，一般测到的实际电压是–53.5V。这是因为出于可靠考虑， 通讯设备都带有备用电池（-48v），为了保证电池的可靠充电，供电电压需要略高于电池电压。</p>
+<p>通过媒介可能还会了解到有使用-24V电源系统的设备，这是现代一些内部设备为设计方便而使用的。一般测量到电源的输出电压26.8V。</p>
+<p>一般要求设备在电压波动范围±20%内工作正常。对-48V系统设备就是要求工作电压范围-38.4V ~ 57.6V，但是我们实际上一般要求工作范围–36V ~ -72V。主要是考虑-48V 系统设备要兼容–60V电源系统，它要求–48~ -72V。这样取合集就是就是要求工作电压范围约-36V ~ -72V。</p>
+<p>顺便提一下，-48V 电源系统只是我国和大部分国家采用的通信电源标准， 并非所有国家都使用这个标准，例如俄罗斯会使用-60V 的电源系统，还有某些国家使用-24V 的电源系统。如果产品要在这些地区销售，就要兼顾这些不同的标准。</p>
+<p>市电的标准在世界范围内也是不同的，例如我国和欧洲等采用220V 的市电系统，美国、日本等是110V 的市电。</p>
+<p>从华为的资料中找到为什么是正极接地的解释，作为补充解释：</p>
+<p>正极接地主要是为了防止电极的腐蚀。电话局蓄电池组-48V或-24V是正极接地，其原因是减少由于继电器或电缆金属外皮绝缘不良时产生的电蚀作用，使继电器和电缆金属外皮受到损坏。因为在电蚀时，金属离子在化学反应下是由正极向负极移动的。继电器线圈和铁芯之间的绝缘不良，就有小电流流过，电池组负极接地时，线圈的导线有可能蚀断。反之，如电池组正极接地，虽然铁芯也会受到电蚀，但线圈的导线不会腐蚀，铁芯的质量较大，不会招致可察觉的后果。正极接地也可以使外线电缆的芯线在绝缘不良时免受腐蚀。（注：隐含条件是继电器铁芯接地）</p>
 
     </div>
 
@@ -354,14 +362,14 @@
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/">通信设计</a>
+          <a href="/tags/48v/">-48v</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/a-party-of-c114-in-hangzhou/">
+          <a class="prev" href="/post/thinking-about-telecom-design/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -371,12 +379,12 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">C114的网友杭州聚会</span>
+            <span class="prev-text nav-default">关于通信设计的思考</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/why-communication-equipments-use-48v/">
-            <span class="next-text nav-default">为什么通信设备使用–48V 这样的负电源系统？</span>
+          <a class="next" href="/post/discussion-about-mstp-on-c-fol-forum/">
+            <span class="next-text nav-default">C-FOL论坛上一个关于MSTP的讨论</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
