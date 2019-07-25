@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>project365 on Thinking, Writing And Waiting</title>
+    <link>/tags/project365/</link>
+    <description>Recent content in project365 on Thinking, Writing And Waiting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 04 Feb 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/project365/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的PROJECT 365</title>
+      <link>/post/my-project-365/</link>
+      <pubDate>Sun, 04 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/post/my-project-365/</guid>
+      <description>
+
+
+&lt;p&gt;这几天看了几个有关PROJECT 365的帖子，颇为心动。2007年已经到来了，该定下今年的一些目标了，那么其中的一个目标就是PROJECT 365。 </description>
+    </item>
+    
+  </channel>
+</rss>
