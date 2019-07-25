@@ -26,25 +26,6 @@
   </url>
   
   <url>
-    <loc>/tags/project365/</loc>
-    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/my-project-365/</loc>
-    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/%E6%80%9D%E7%BB%AA/</loc>
     <lastmod>2019-07-25T14:45:05+08:00</lastmod>
     <priority>0</priority>
@@ -55,6 +36,12 @@
     <lastmod>2019-07-25T14:45:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -226,6 +213,19 @@
     <loc>/tags/lobito/</loc>
     <lastmod>2019-07-22T11:27:18+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/project365/</loc>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/my-project-365/</loc>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
