@@ -3,25 +3,44 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-07-26T06:13:33+08:00</lastmod>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-07-26T06:13:33+08:00</lastmod>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-07-26T06:13:33+08:00</lastmod>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-07-26T06:13:33+08:00</lastmod>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/project365/</loc>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/my-project-365/</loc>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2019-07-26T06:30:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -39,12 +58,6 @@
   </url>
   
   <url>
-    <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2019-07-26T06:13:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/about/</loc>
     <lastmod>2019-07-21T22:46:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,13 +65,13 @@
   </url>
   
   <url>
-    <loc>/tags/r%E8%AF%AD%E8%A8%80/</loc>
+    <loc>/categories/r%E8%AF%AD%E8%A8%80/</loc>
     <lastmod>2019-07-21T19:12:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r%E8%AF%AD%E8%A8%80/</loc>
+    <loc>/tags/r%E8%AF%AD%E8%A8%80/</loc>
     <lastmod>2019-07-21T19:12:50+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -213,19 +226,6 @@
     <loc>/tags/lobito/</loc>
     <lastmod>2019-07-22T11:27:18+08:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/project365/</loc>
-    <lastmod>2019-07-26T06:13:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/my-project-365/</loc>
-    <lastmod>2019-07-26T06:13:33+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
