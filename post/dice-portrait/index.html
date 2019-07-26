@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>色子肖像--Python程序 - Thinking, Writing And Waiting</title>
+  <title>色子肖像 - Thinking, Writing And Waiting</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fallleaf" />
-  <meta name="description" content=" 一个完整的输出色子肖像点数排列的Python程序 " />
+  <meta name="description" content=" 2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：
+" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -35,7 +36,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="/post/dice-portrait-python/" />
+<link rel="canonical" href="/post/dice-portrait/" />
 
 
 
@@ -57,36 +58,39 @@
 
 
 
-<meta property="og:title" content="色子肖像--Python程序" />
+<meta property="og:title" content="色子肖像" />
 <meta property="og:description" content="
 
 
-一个完整的输出色子肖像点数排列的Python程序 " />
+2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：
+" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/dice-portrait-python/" />
-<meta property="article:published_time" content="2017-12-29T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-07-22T07:24:05&#43;08:00"/>
+<meta property="og:url" content="/post/dice-portrait/" />
+<meta property="article:published_time" content="2017-12-12T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-07-26T20:44:59&#43;08:00"/>
 
-<meta itemprop="name" content="色子肖像--Python程序">
+<meta itemprop="name" content="色子肖像">
 <meta itemprop="description" content="
 
 
-一个完整的输出色子肖像点数排列的Python程序 ">
+2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：
+">
 
 
-<meta itemprop="datePublished" content="2017-12-29T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-07-22T07:24:05&#43;08:00" />
-<meta itemprop="wordCount" content="2021">
+<meta itemprop="datePublished" content="2017-12-12T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-26T20:44:59&#43;08:00" />
+<meta itemprop="wordCount" content="1069">
 
 
 
-<meta itemprop="keywords" content="python,色子,肖像," />
+<meta itemprop="keywords" content="python,肖像," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="色子肖像--Python程序"/>
+<meta name="twitter:title" content="色子肖像"/>
 <meta name="twitter:description" content="
 
 
-一个完整的输出色子肖像点数排列的Python程序 "/>
+2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：
+"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -306,18 +310,18 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">色子肖像--Python程序</h1>
+      <h1 class="post-title">色子肖像</h1>
       
       <div class="post-meta">
-        <time datetime="2017-12-29" class="post-time">
-          2017-12-29
+        <time datetime="2017-12-12" class="post-time">
+          2017-12-12
         </time>
         <div class="post-category">
             <a href="/categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
             
           </div>
-        <span class="more-meta"> 约 2021 字 </span>
-          <span class="more-meta"> 预计阅读 5 分钟 </span>
+        <span class="more-meta"> 约 1069 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
 
         
         
@@ -332,153 +336,101 @@
 
     
     <div class="post-content">
-      上一篇色子肖像介绍了把图像变成色子点阵图的基本思路，用python语言采用PIL库写了一个程序，后来发现opencv更加简便合适，就采用numpy以及opencv库，进行了优化。</p>
-<p>这是我第一次开始用python语言编写稍微复杂些的程序。对于有一定编程经验的人，采用实现一个功能的方式编程能够很快熟悉该语言，是一种很好的学习方式。</p>
-<p>以下是我编写的程序以及简单的注释。</p>
-<p>由于要对图像进行数值处理，所以采用opencv以及numpy库。首先是加载库，datetime是用于计算程序运行时间，os是用于获得文件路径，sys是用于获得命令行参数，cv2是opencv库，numpy是python的数组库。</p>
-<pre><code>import datetime
-import os
-import sys
-import cv2
-import numpy as np</code></pre>
-<p>保证程序本身直接执行，而不是被调用，如果直接执行，则调用main()函数。</p>
-<pre><code>if __name__ == &quot;__main__&quot;:
-    main()</code></pre>
-<p>一个python文件就可以看作是一个python的模块，这个python模块（.py文件）有两种使用方式：直接运行使用和作为模块被其他模块调用。 每一个模块都有一个内置属性__name__。而__name__的值取决与python模块（.py文件）的使用方式。如果是直接运行使用，那么这个模块的__name__值就是“<strong>main</strong>”；如果是作为模块被其他模块调用，那么这个模块（.py文件）的__name__值就是该模块（.py文件）的文件名且不带路径和文件扩展名，如果dice_portrait_cv.py被其他python程序import dice_portrait_cv，则__name__为dice_portrait_cv。 main()函数，主要功能流程的执行，分别是： 1.初始化文件路径</p>
-<pre><code>def main():
-    start_time = datetime.datetime.now() #设置程序运行开始时间
-    #初始化文件路径
-    EXEC_PATH = os.getcwd()
-    DICEPATH = EXEC_PATH + &#39;\\dice_image\\&#39;
-    OUTPUTPATH = EXEC_PATH + &#39;\\output\\&#39;
-    if not (os.path.exists(OUTPUTPATH)):
-       os.mkdir(OUTPUTPATH)</code></pre>
-<p>2.获得命令行参数，调用自定义函数getvalue()，返回输入图片文件名，色子列数，是否旋转</p>
-<pre><code>    imagefile, DICE_WIDTH, ROTATE = getvalue()</code></pre>
-<p>3.读取要渲染的图片及色子图片</p>
-<pre><code>    im = cv2.imread(imagefile, 0)
-    dice = getDice(DICEPATH)</code></pre>
-<p>4.调用自定义函数，调整图片大小，返回图片数组</p>
-<pre><code>    im = AjustImage(DICE_WIDTH, im)</code></pre>
-<p>5.定义灰色度数值对应色子1-6点的分组，用了list，也可以用numpy的数组</p>
-<pre><code>    p = [60, 80, 110, 150, 190, 220]
-    #使用numpy数组
-    p = np.array([60, 80, 110, 150, 190, 220])</code></pre>
-<p>6.对图像进行16x16图块分割，并计算灰度，对应色子1-6，并将图片转换成色子点阵图，调用自定义函数，获得处理后的图像以及色子点数文件。</p>
-<pre><code>    im, dice_data = calculateDice(im, imagefile, p, dice, ROTATE)</code></pre>
-<p>7.保存图片及色子点数文件</p>
-<pre><code>    write_Dice(im, OUTPUTPATH, imagefile, dice_data)</code></pre>
-<p>8.打印运行时间以及色子图片，按任意键退出</p>
-<pre><code>    end_time = datetime.datetime.now()
-    print(&#39;程序运行时间:&#39;, end_time - start_time,&#39;秒&#39;)
-    cv2.imshow(imagefile, im)
-    cv2.waitKey(0)</code></pre>
-<p>下面是自定义函数。 1.获得命令行变量，返回变量：imagefile（输入文件名）, DICE_WIDTH（色子列数）, ROTATE（色子2，3，6是否旋转） def getvalue():</p>
-<pre><code>    if (len(sys.argv) &lt; 2 or len(sys.argv) &gt; 4):
-        print(&quot;Error, invalid arguments!&quot;)
-        print(&quot;Call with &quot; + sys.argv[0] + &quot; inputimage [tile-size] &quot;)
-        sys.exit(1)
-    ROTATE = False
-    DICE_WIDTH = 50
-    if len(sys.argv) == 2:
-        imagefile = sys.argv[1]
-    elif len(sys.argv) == 3:
-        imagefile = sys.argv[1]
-        DICE_WIDTH = int(sys.argv[2])
-        if (DICE_WIDTH &gt; 150 or DICE_WIDTH &lt; 30):
-            print(&quot;色子列数不正确，应在30-150之间&quot;)
-            sys.exit(1)
-    else:
-        imagefile = sys.argv[1]
-        DICE_WIDTH = int(sys.argv[2])
-        if (DICE_WIDTH &gt; 150 or DICE_WIDTH &lt; 30):
-            print(&quot;Dice quality not avialiabe. It betweet 30 and 150&quot;)
-            sys.exit(1)
-        if (sys.argv[3] == &#39;0&#39; or sys.argv[3] == &#39;1&#39;):
-            ROTATE = bool(int(sys.argv[3]))
-        else:
-            print(&quot;1:色子旋转, 0:色子不旋转&quot;)
-            sys.exit(1)
-    return imagefile, DICE_WIDTH, ROTATE</code></pre>
-<p>2.调整图片，图片宽度为色子列数*16，返回调整后的图像数组，自定义函数输入变量为DICE_WIDTH（色子列数），image（输入的图像数组）</p>
-<pre><code>def AjustImage(DICE_WIDTH, image):  # 调整图片
-    hight, width = image.shape[:2]
-    ratio = DICE_WIDTH * 16 / width
-    width = int(width * ratio)
-    hight = int(hight * ratio)
-    image = cv2.resize(image, (width, hight)) 
-    return image</code></pre>
-<p>3.读入色子图形</p>
-<pre><code>def getDice(DICEPATH):  # 读入色子图形文件
-    dice = np.zeros((9, 16, 16),dtype=&#39;u8&#39;)
-    for i in range(9):
-        dice[i] = cv2.imread(&#39;./dice_image/&#39; + str(i + 1) + &#39;w.png&#39;, 0)
-    return dice</code></pre>
-<p>4.对图像进行处理，输入参数：im（图像数组）, imagefile（图片文件名）, p（灰色度分组数组）, dice（色子图片数组）, ROTATE（色子2，3，6是否旋转），返回处理后的图片数组im，以及色子点数数组image_data</p>
-<pre><code>def calculateDice(im, imagefile, p, dice, ROTATE):  # 处理图片
-    x_max = int((im.shape[1]/16))
-    y_max = int((im.shape[0]/16))
-    dice_data = np.arange(y_max * x_max, dtype=&quot;u8&quot;).reshape(y_max, x_max)
-    dice2_rotate = False
-    dice3_rotate = False
-    dice6_rotate = False
-    cv2.namedWindow(imagefile, 0)
-    cv2.resizeWindow(imagefile, 640, int(640 * y_max / x_max))    
-    for j in range(y_max):
-        for i in range(x_max):
-            # 获得16x16图片的色度平均值mean或中位数median
-            image_data = int(np.mean(im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16]))
-            # 根据色度值确定色子点数
-            if (image_data &lt; p[0]):
-                n = 5
-                if (ROTATE):
-                    dice6_rotate = not (dice6_rotate)
-                    if (dice6_rotate):
-                        n = 8
-            elif (image_data &gt;= p[0]) and (image_data &lt; p[1]):
-                n = 4
-            elif (image_data &gt;= p[1]) and (image_data &lt; p[2]):
-                n = 3
-            elif (image_data &gt;= p[2]) and (image_data &lt; p[3]):
-                n = 2
-                if (ROTATE):
-                    dice3_rotate = not (dice3_rotate)
-                    if (dice3_rotate):
-                        n = 7
-            elif (image_data &gt;= p[3]) and (image_data &lt; p[4]):
-                n = 1
-                if (ROTATE):
-                    dice2_rotate = not (dice2_rotate)
-                    if (dice2_rotate):
-                        n = 6
-            else:
-                n = 0
-            #将色子图片写入原图片 
-            im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16] = dice[n]
-            dice_data[j, i] = n + 1
-            #显示色子覆盖原图片步骤
-            cv2.imshow(imagefile, im)
-            cv2.waitKey(1)
-    return im, dice_data</code></pre>
-<p>5.保存图片及色子点数文件</p>
-<pre><code>def write_Dice(im, OUTPUTPATH, imagefile, dice_data):  # 将色子点数写入文件
-    y_max, x_max = np.shape(dice_data)
-    DICE_WIDTH = x_max
-    print(&quot;色子数量&quot;, y_max, &#39;*&#39;, x_max, &#39;=&#39;, x_max * y_max)
-    cv2.imwrite(OUTPUTPATH + str(DICE_WIDTH) + &#39;_hist_&#39; + imagefile, im)
-    f = open(OUTPUTPATH + str(DICE_WIDTH) + &#39;_hist_&#39; + imagefile + &#39;.txt&#39;, &#39;wt&#39;)
-        for y in range(y_max):
-        f.write((str(y + 1) + &#39;:&#39;))
-        for x in range(x_max):
-            f.write(str(dice_data[y, x]) + &#39;,&#39;)
-        f.write(&#39;\n&#39;)
-    f.close()
-    print(&#39;文件保存完毕!&#39;)
-    return </code></pre>
-<p>采用numpy，对数组进行运算非常方便。</p>
-<p>程序放到了<a href="https://github.com/fallleaf/dice_portrait">GitHub</a>上，也可以直接用</p>
-<pre><code>git clone https://github.com/fallleaf/dice_portrait.git</code></pre>
-<p>图框和色子都准备好了，这将是18年的第一个项目。</p>
+      <p>2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：</p>
+<div class="figure">
+<img src="/post/2019-07-26-色子肖像_files/caroline_portrait.png" alt="caroline_portrait" />
+<p class="caption">caroline_portrait</p>
+</div>
+<p>他用了2560（40x60）个16mm的色子，制作了一个64cmx96cm的色子肖像，如下图：</p>
+<div class="figure">
+<img src="/post/2019-07-26-色子肖像_files/caroline.jpg" alt="caroline" />
+<p class="caption">caroline</p>
+</div>
+<p>他用的是Prossing语言编写的程序。近期正在学习Python，就尝试用Python来实现这一功能。</p>
+<p>思路是先对图像进行灰度处理，然后把图片分割成16x16像素的单元图块，再对图块中256个点的灰度取平均值，对平均值分组用1-6数值代替。色度值范围0-255，亮度从深到浅，颜色从黑到白。数值1-6对应色子的点数，对于黑底白点的色子，色度值和点数正比例关系，对于白底黑点的色子，色度值和点数反比例关系。最后按色子点数做出图。</p>
+<p>我用了三种16x16的图块，如下：</p>
+<p>灰度色块：</p>
+<div class="figure">
+<img src="/post/2019-07-26-色子肖像_files/graydice.png" alt="graydice" />
+<p class="caption">graydice</p>
+</div>
+<p>黑底白点色子：</p>
+<div class="figure">
+<img src="/post/2019-07-26-色子肖像_files/blackdice.png" alt="blackdice" />
+<p class="caption">blackdice</p>
+</div>
+<p>白底黑点色子：</p>
+<div class="figure">
+<img src="/post/2019-07-26-色子肖像_files/whitedice.png" alt="whitedice" />
+<p class="caption">whitedice</p>
+</div>
+<p>利用Python的PIL库（Python Image Library）以及numpy数组库，能够很容易的完成功能。</p>
+<p>首先是加载库文件，打开图片，对图片灰度处理，并计算要分割图块的数量</p>
+<pre><code>#加载库文件
+from PIL import Image, ImageDraw
+import numpy as np
+#载入色子图片，1.png-6.png，代表色子点数
+dice =[]
+for i in range(6):
+    dice.append(Image.open(str(i+1)+&#39;.png&#39;)) 
+#载入肖像图片 
+im = Image.open(&quot;cecilia.png&quot;)
+im=im.convert(&quot;L&quot;)
+width,hight =im.size      
+x_max = int (width/16)
+y_max = int(hight/16)</code></pre>
+<p>分割图片为16x16图块，并计算点的色度平均值</p>
+<pre><code>image_data = np.ones(y_max*x_max).reshape(y_max,x_max)
+block_data = np.ones(16*16).reshape(16,16)
+dice_data = np.ones(y_max*x_max).reshape(y_max,x_max)
+for j in range(y_max):
+      for i in range(x_max):
+            b=im.crop( (i*16,j*16,(i+1)*16,(j+1)*16))#获得16x16图片
+            sum_x=0
+            for ii in range(16):
+                  for jj in range(16):
+                        block_data[jj,ii]=b.getpixel((ii,jj))
+            image_data[j,i]=int(np.mean(block_data))</code></pre>
+<p>根据色块的平均值分配色子图块：</p>
+<pre><code>#定义色度分组值
+p = [45,65,80,95,130,155]
+if (image_data[j,i]&lt;p[0]):
+      n = 5 
+elif (image_data[j,i]&gt;=p[0]) and (image_data[j,i]&lt;p[1]):
+      n = 4      
+elif (image_data[j,i]&gt;=p[1]) and (image_data[j,i]&lt;p[2]):
+      n = 3                       
+elif (image_data[j,i]&gt;=p[2]) and (image_data[j,i]&lt;p[3]):
+      n = 2      
+elif(image_data[j,i]&gt;=p[3]) and (image_data[j,i]&lt;p[4]):
+      n = 1      
+else:
+      n = 0
+im.paste(dice[n],(i*16,j*16))
+dice_data[j,i] = n+1</code></pre>
+<p>这里p1<sub>p6是对0</sub>255的色度值划分到1-6的分组值。 生成处理后的图片，及显示图片</p>
+<pre><code>im.save(&#39;small_ceciliaw.png&#39;)
+im.show()</code></pre>
+<p>将色子点数写入文件</p>
+<pre><code>f = open(&#39;cecilia_dice_data.txt&#39;,&#39;wt&#39;)
+for y in range(y_max):
+      f.write((str(y+1)+&#39;:&#39;))
+      for x in range(x_max):
+            f.write(str(dice_data[y,x])+&#39;,&#39;)
+      f.write(&#39;\n&#39;)
+f.close()</code></pre>
+<p>按以上方法生成了三种处理后的图片，第一个是原图，第二个是灰度色块，第三个是黑底白点，第四个是白底黑点。如下图：</p>
+<div class="figure">
+<img src="/post/2019-07-26-色子肖像_files/cecilia_small.png" />
+
+</div>
+<p>所用原始图片的大小为1120x1584，一共生成色子数量为70x99=6930块,若用8mm的色子制作，大小为56cmx79.2cm。 亚洲人的面部没有欧洲人立体感强，选择照片时需挑选立体感强，色差比较鲜明的图片，这样，分辨率可以低一些，色子的数量可以减少一些。另外，1-6的分组值也需要进一步优化。下图是分辨率变化的情况。</p>
+<p><img src="/post/2019-07-26-色子肖像_files/ceciliag_gif.gif" /> <img src="/post/2019-07-26-色子肖像_files/ceciliab_gif.gif" /> <img src="/post/2019-07-26-色子肖像_files/ceciliaw_gif.gif" /></p>
+<p>这个项目正在进行中，等色子及图框到后再把制作的全过程展示一下。</p>
+<p>续：</p>
+<p>购买了2000个色子，用纸盒盖子做框，摆成一个肖像，远看效果好些</p>
+<p><img src="/post/2019-07-26-色子肖像_files/cecilia_dice1.jpg" /> <img src="/post/2019-07-26-色子肖像_files/cecilia_dice2.jpg" /></p>
+<p>源代码放到了<a href="https://github.com/fallleaf/dice_portrait">GitHub</a>上，做了些改动，采用opencv做图像处理。</p>
 
     </div>
 
@@ -492,7 +444,6 @@ import numpy as np</code></pre>
     <footer class="post-footer">
       <div class="post-tags">
           <a href="/tags/python/">python</a>
-          <a href="/tags/%E8%89%B2%E5%AD%90/">色子</a>
           <a href="/tags/%E8%82%96%E5%83%8F/">肖像</a>
           
         </div>
@@ -500,7 +451,7 @@ import numpy as np</code></pre>
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/creating-slopegraph-with-r/">
+          <a class="prev" href="/post/dice-portrait-python/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -510,12 +461,12 @@ import numpy as np</code></pre>
 </svg>
 
             </i>
-            <span class="prev-text nav-default">用R语言做斜线图</span>
+            <span class="prev-text nav-default">色子肖像--Python程序</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/dice-portrait/">
-            <span class="next-text nav-default">色子肖像</span>
+          <a class="next" href="/post/four-season/">
+            <span class="next-text nav-default">四季</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">

@@ -23,5 +23,18 @@
 &lt;p&gt;一个完整的输出色子肖像点数排列的Python程序 </description>
     </item>
     
+    <item>
+      <title>色子肖像</title>
+      <link>/post/dice-portrait/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/dice-portrait/</guid>
+      <description>
+
+
+&lt;p&gt;2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
