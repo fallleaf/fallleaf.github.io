@@ -25,8 +25,8 @@
 <meta name="author" content="fallleaf" />
   <meta name="description" content=" 斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据变化（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。
 " />
+<meta name="keywords" content="slopegraph" />
 
-  <meta name="keywords" content="通信设计, 旅游, 吉他, 设计, 网络规划" />
 
 
 
@@ -67,7 +67,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/creating-slopegraph-with-r/" />
 <meta property="article:published_time" content="2019-07-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-07-21T19:12:50+08:00" />
+<meta property="article:modified_time" content="2019-07-28T00:00:00+00:00" />
 <meta itemprop="name" content="用R语言做斜线图">
 <meta itemprop="description" content="
 
@@ -77,8 +77,8 @@
 
 
 <meta itemprop="datePublished" content="2019-07-21T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-07-21T19:12:50&#43;08:00" />
-<meta itemprop="wordCount" content="595">
+<meta itemprop="dateModified" content="2019-07-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1041">
 
 
 
@@ -319,8 +319,8 @@
             <a href="../../categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
             
           </div>
-        <span class="more-meta"> 约 595 字 </span>
-          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span class="more-meta"> 约 1041 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
 
         
         
@@ -337,41 +337,65 @@
     <div class="post-content">
       <div class="section level2">
 <h2>什么是斜线图</h2>
-<p><strong>斜线图</strong>，英文为<strong>Slopegraph</strong>，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据<strong>变化</strong>（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。</p>
-<p>Edward Tufte在1983年的著作《The Visual Display of Quantitative Information》第一次提到了斜线图。从那以后很少有人采用，不过近期使用多了起来。</p>
+<p><strong>斜线图</strong>，英文为<strong>Slopegraph</strong>，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后的数据<strong>变化</strong>（比如排名，百分比，数值等），或者两个不同的维度数据之间的联系，由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。</p>
+<p>Edward Tufte在1983年的著作《The Visual Display of Quantitative Information》第一次提到了斜线图，2011年6月1日他在<a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003nk&amp;topic_id=1">论坛</a>里把这种表示方式正式命名为slopegraph。前期很少有人使用，不过近期使用多了起来。</p>
 <p>先看看两个斜线图的实例。</p>
-<div style="white-space: pre-line;"><embed src="../../post/2019-07-21-用r语言做斜率图_files/slopegraph_time.webp" /> | <embed src="../../post/2019-07-21-用r语言做斜率图_files/slopegraph_group.webp" /> |</div>
-<p>这个是网易的一个斜线图，X轴有1990年和2017年两个时间点，Y轴按慢性病伤残调整寿命年排序，显而易见，可以看出从1990年到2017年，哪些慢性病成为了主要死因，以及这些死因的变化情况。斜线图适合时间跨度比较大的数据展示。</p>
-<p>这张是引自<a href="https://www.storytellingwithdata.com/blog/2014/03/more-on-slopegraphs">stroytellingwithday</a>中一片文章的图，展示的是一份调查数据不同分组情况变化的斜线图，X轴是两个分组，一个是整体的（Company），一个是整体中的一部分（Team X），Y轴是不同调查内容的得分情况，可以看出某项指标在总体和个体中所处于的地位以及变化情况。</p>
+<div class="figure">
+<img src="../../post/2019-07-21-用r语言做斜率图_files/slopegraph_time.png" style="width:45.0%" />
+
+</div>
+<p>这张是网易的一个斜线图，X轴有1990年和2017年两个时间点，Y轴按慢性病伤残调整寿命年排序，显而易见，很容易看出从1990年到2017年，哪些慢性病成为了主要死因，以及这些死因排序的变化情况。一般来说，斜线图适合时间跨度比较大的数据展示。</p>
+<div class="figure">
+<img src="../../post/2019-07-21-用r语言做斜率图_files/slopegraph_group.png" style="width:45.0%" />
+
+</div>
+<p>这张是引自<a href="https://www.storytellingwithdata.com">stroytellingwithdata</a>中一篇文章<a href="https://www.storytellingwithdata.com/blog/2014/03/more-on-slopegraphs">more on slopegraphs</a>的图，展示的是一份调查数据不同分组情况变化的斜线图，X轴是两个分组，一个是整体的（Company），一个是整体中的一部分（Team X），Y轴是不同调查内容的得分情况，可以看出某项指标在总体和个体中所处于的地位以及变化情况。</p>
 </div>
 <div class="section level2">
-<h2>斜线图用在哪里</h2>
-</div>
-<div class="section level2">
-<h2>怎么制作斜线图</h2>
-</div>
-<div class="section level1">
-<h1>显示数据</h1>
-<p>这是四个公司2018、2019年收入情况，</p>
-<pre class="r"><code>data</code></pre>
-<pre><code>##         site year income
-## 1 Company\nA 2018    132
-## 2 Company\nA 2019    241
-## 3 Company\nB 2018    111
-## 4 Company\nB 2019    325
-## 5 Company\nC 2018    216
-## 6 Company\nC 2019    217
-## 7 Company\nD 2018    431
-## 8 Company\nD 2019    229</code></pre>
-<p>用常规展示展示，可以用柱状图，如下 <img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<h2>什么时候用斜线图</h2>
+<p>在Edward Tufte6月1日的<a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003nk&amp;topic_id=1">帖子</a>里，他总结了slopegraph的用法：</p>
+<blockquote>
+<p>“Slopegraphs compare changes over time for a list of nouns located on an ordinal or interval scale.”</p>
+</blockquote>
+<p>意思就是××Slopegraphs是用来比较不同时间的一组指标的变化××。</p>
+<p>在用到折线图或柱状图数据可视化的情况，斜线图都是一种不错的选择。例如下面分别用柱状图和斜线图表示4个公司2018年和2019年收入情况。</p>
+<p>柱状图表示：</p>
+<p><img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar1-1.png" width="480" /></p>
+<p>或者：</p>
+<p><img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar2-1.png" width="480" /></p>
 <p>用斜线图表示，如下</p>
-<p><img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
+<p><img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/slopegraph-1.png" width="480" /></p>
+<p>比较上面三个图表，显然斜线图更能给受众更加直观、清晰的可视数据。柱状图只是吧数据进行的展示，并没有在图中同时直观的展示出各公司收入的<strong>排名</strong>和收入变化的<strong>幅度</strong>，而斜线图上则把收入、排名、变化幅度都同时直观的展示出来了。</p>
+</div>
+<div id="r" class="section level2">
+<h2>怎么用R语言作斜线图</h2>
+<p>由于斜线图就是折线图的一种变形，所以，只要能够制作折线图的软件都能制作斜线图，这里要介绍一下在R语言环境下制作斜线图的方法。</p>
+<p><a href="https://github.com">GitHub</a>有一个R语言库项目：<a href="https://github.com/ibecav/CGPfunctions">CGPfunctions</a>，提供了制作斜线图的函数<strong>newggslopegraph()</strong>。上面的斜线图就是用这个函数做出来的。</p>
+<p>库文件的安装详见网页说明，这里只把这个函数的参数说明解释说一下。</p>
 </div>
 
     </div>
 
     
     
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">fallleaf</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-07-28
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
 
 
     
