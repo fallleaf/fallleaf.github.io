@@ -23,10 +23,10 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fallleaf" />
-  <meta name="description" content=" 斜线图，英文为slopegraph，是近年来比较流行的数据表现形式，适合反映两个时间点的数据变化，比如今年和去年，之前和之后。制作斜率图的软件很多，用excel、spss、R语言都可以制作。斜率图实际上就是折线图，会画折线图就会画斜线图。
+  <meta name="description" content=" 斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据变化（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。
 " />
 
-  <meta name="keywords" content="Hugo, theme, jane" />
+  <meta name="keywords" content="通信设计, 旅游, 吉他, 设计, 网络规划" />
 
 
 
@@ -36,15 +36,11 @@
 <meta name="generator" content="Hugo 0.56.0" />
 
 
-<link rel="canonical" href="/post/creating-slopegraph-with-r/" />
+<link rel="canonical" href="../../post/creating-slopegraph-with-r/" />
 
 
 
-<link rel="icon" href="/favicon.ico" />
-
-
-
-
+<link rel="icon" href="../../favicon.ico" />
 
 
 
@@ -52,7 +48,11 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.31c4b7729c8d71cc152f8de4203d90bfd8a04f7eab69372de7234ebf55b7701b.css" integrity="sha256-McS3cpyNccwVL43kID2Qv9igT36raTct5yNOv1W3cBs=" media="screen" crossorigin="anonymous">
+
+
+
+
+<link rel="stylesheet" href="../../sass/jane.min.31c4b7729c8d71cc152f8de4203d90bfd8a04f7eab69372de7234ebf55b7701b.css" integrity="sha256-McS3cpyNccwVL43kID2Qv9igT36raTct5yNOv1W3cBs=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,7 +62,7 @@
 <meta property="og:description" content="
 
 
-斜线图，英文为slopegraph，是近年来比较流行的数据表现形式，适合反映两个时间点的数据变化，比如今年和去年，之前和之后。制作斜率图的软件很多，用excel、spss、R语言都可以制作。斜率图实际上就是折线图，会画折线图就会画斜线图。
+斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据变化（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/creating-slopegraph-with-r/" />
@@ -72,23 +72,23 @@
 <meta itemprop="description" content="
 
 
-斜线图，英文为slopegraph，是近年来比较流行的数据表现形式，适合反映两个时间点的数据变化，比如今年和去年，之前和之后。制作斜率图的软件很多，用excel、spss、R语言都可以制作。斜率图实际上就是折线图，会画折线图就会画斜线图。
+斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据变化（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。
 ">
 
 
 <meta itemprop="datePublished" content="2019-07-21T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-07-21T19:12:50&#43;08:00" />
-<meta itemprop="wordCount" content="227">
+<meta itemprop="wordCount" content="595">
 
 
 
-<meta itemprop="keywords" content="R语言,slopegraph,斜线图," />
+<meta itemprop="keywords" content="R语言,slopegraph,斜线图,数据可视化,data visualization," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="用R语言做斜线图"/>
 <meta name="twitter:description" content="
 
 
-斜线图，英文为slopegraph，是近年来比较流行的数据表现形式，适合反映两个时间点的数据变化，比如今年和去年，之前和之后。制作斜率图的软件很多，用excel、spss、R语言都可以制作。斜率图实际上就是折线图，会画折线图就会画斜线图。
+斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据变化（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。
 "/>
 
 <!--[if lte IE 9]>
@@ -107,7 +107,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">Thinking, Writing And Waiting</a>
+    <a href="../../" class="logo">Thinking, Writing And Waiting</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -121,35 +121,35 @@
         
           
           
-            <a class="menu-item-link" href="/">首页</a>
+            <a class="menu-item-link" href="../../">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="/post/">存档</a>
+            <a class="menu-item-link" href="../../post/">存档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="/tags/">标签</a>
+            <a class="menu-item-link" href="../../tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="/categories/">类别</a>
+            <a class="menu-item-link" href="../../categories/">类别</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="/about/">关于我</a>
+            <a class="menu-item-link" href="../../about/">关于我</a>
           
         
       </li>
@@ -168,8 +168,8 @@
 
 
 
-  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
-  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+  <link rel="stylesheet" href="../../lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="../../lib/photoswipe/default-skin/default-skin.min.css" />
 
 
 
@@ -226,7 +226,7 @@
 
   <header id="header" class="header container">
     <div class="logo-wrapper">
-  <a href="/" class="logo">
+  <a href="../../" class="logo">
     
       Thinking, Writing And Waiting
     
@@ -241,7 +241,7 @@
         
           
           
-            <a class="menu-item-link" href="/">首页</a>
+            <a class="menu-item-link" href="../../">首页</a>
           
 
         
@@ -252,7 +252,7 @@
         
           
           
-            <a class="menu-item-link" href="/post/">存档</a>
+            <a class="menu-item-link" href="../../post/">存档</a>
           
 
         
@@ -263,7 +263,7 @@
         
           
           
-            <a class="menu-item-link" href="/tags/">标签</a>
+            <a class="menu-item-link" href="../../tags/">标签</a>
           
 
         
@@ -274,7 +274,7 @@
         
           
           
-            <a class="menu-item-link" href="/categories/">类别</a>
+            <a class="menu-item-link" href="../../categories/">类别</a>
           
 
         
@@ -285,7 +285,7 @@
         
           
           
-            <a class="menu-item-link" href="/about/">关于我</a>
+            <a class="menu-item-link" href="../../about/">关于我</a>
           
 
         
@@ -316,12 +316,11 @@
           2019-07-21
         </time>
         <div class="post-category">
-            <a href="/categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
-            <a href="/categories/r%E8%AF%AD%E8%A8%80/"> R语言 </a>
+            <a href="../../categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
             
           </div>
-        <span class="more-meta"> 约 227 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span class="more-meta"> 约 595 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
 
         
         
@@ -336,8 +335,21 @@
 
     
     <div class="post-content">
-      <p><strong>斜线图</strong>，英文为<strong>slopegraph</strong>，是近年来比较流行的数据表现形式，适合反映两个时间点的数据变化，比如今年和去年，之前和之后。制作斜率图的软件很多，用excel、spss、R语言都可以制作。斜率图实际上就是折线图，会画折线图就会画斜线图。</p>
-<p>先展示一个斜线图的样子。</p>
+      <div class="section level2">
+<h2>什么是斜线图</h2>
+<p><strong>斜线图</strong>，英文为<strong>Slopegraph</strong>，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据<strong>变化</strong>（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。</p>
+<p>Edward Tufte在1983年的著作《The Visual Display of Quantitative Information》第一次提到了斜线图。从那以后很少有人采用，不过近期使用多了起来。</p>
+<p>先看看两个斜线图的实例。</p>
+<div style="white-space: pre-line;"><embed src="../../post/2019-07-21-用r语言做斜率图_files/slopegraph_time.webp" /> | <embed src="../../post/2019-07-21-用r语言做斜率图_files/slopegraph_group.webp" /> |</div>
+<p>这个是网易的一个斜线图，X轴有1990年和2017年两个时间点，Y轴按慢性病伤残调整寿命年排序，显而易见，可以看出从1990年到2017年，哪些慢性病成为了主要死因，以及这些死因的变化情况。斜线图适合时间跨度比较大的数据展示。</p>
+<p>这张是引自<a href="https://www.storytellingwithdata.com/blog/2014/03/more-on-slopegraphs">stroytellingwithday</a>中一片文章的图，展示的是一份调查数据不同分组情况变化的斜线图，X轴是两个分组，一个是整体的（Company），一个是整体中的一部分（Team X），Y轴是不同调查内容的得分情况，可以看出某项指标在总体和个体中所处于的地位以及变化情况。</p>
+</div>
+<div class="section level2">
+<h2>斜线图用在哪里</h2>
+</div>
+<div class="section level2">
+<h2>怎么制作斜线图</h2>
+</div>
 <div class="section level1">
 <h1>显示数据</h1>
 <p>这是四个公司2018、2019年收入情况，</p>
@@ -351,9 +363,9 @@
 ## 6 Company\nC 2019    217
 ## 7 Company\nD 2018    431
 ## 8 Company\nD 2019    229</code></pre>
-<p>用常规展示展示，可以用柱状图，如下 <img src="/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>用常规展示展示，可以用柱状图，如下 <img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>用斜线图表示，如下</p>
-<p><img src="/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
+<p><img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
 </div>
 
     </div>
@@ -364,19 +376,38 @@
 
     
     
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">送人玫瑰，手有余香，赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="../../wechatpay.jpg">
+        <span>微信支持</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="../../alipay.jpg">
+        <span>支付宝支持</span>
+      </label>
+  </div>
+</div>
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/r%E8%AF%AD%E8%A8%80/">R语言</a>
-          <a href="/tags/slopegraph/">slopegraph</a>
-          <a href="/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/">斜线图</a>
+          <a href="../../tags/r%E8%AF%AD%E8%A8%80/">R语言</a>
+          <a href="../../tags/slopegraph/">slopegraph</a>
+          <a href="../../tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/">斜线图</a>
+          <a href="../../tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/">数据可视化</a>
+          <a href="../../tags/data-visualization/">data visualization</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/trip-thought/">
+          <a class="prev" href="../../post/trip-thought/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -390,7 +421,7 @@
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/moonlight-sor-classical/">
+          <a class="next" href="../../post/moonlight-sor-classical/">
             <span class="next-text nav-default">月光——吉他曲（索尔）</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
@@ -454,7 +485,7 @@
 
     </a>
   
-    <a href="http://twitter.com/fallleaf" rel="me noopener" class="iconfont"
+    <a href="http://twitter.com/fallleafyx" rel="me noopener" class="iconfont"
       title="twitter"  target="_blank"
       >
       <svg class="icon" viewBox="0 0 1264 1024" version="1.1"
@@ -488,7 +519,7 @@
     </a>
 
 
-<a href="/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="../../index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -512,7 +543,7 @@
   <span class="copyright-year">
     &copy;
     
-      2005 -
+      2004 -
     2019
     <span class="heart">
       
@@ -551,13 +582,13 @@
     </div>
   </div>
   
-<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../../lib/slideout/slideout-1.0.1.min.js"></script>
 
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 <script id="baidu_analytics">
   var _hmt = _hmt || [];
   (function() {
@@ -574,9 +605,9 @@
 
 
   
-    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
-    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
-    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="../../js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="../../lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="../../lib/photoswipe/photoswipe-ui-default.min.js"></script>
   
 
 

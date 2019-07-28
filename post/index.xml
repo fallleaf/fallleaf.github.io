@@ -34,7 +34,7 @@
       <description>
 
 
-&lt;p&gt;&lt;strong&gt;斜线图&lt;/strong&gt;，英文为&lt;strong&gt;slopegraph&lt;/strong&gt;，是近年来比较流行的数据表现形式，适合反映两个时间点的数据变化，比如今年和去年，之前和之后。制作斜率图的软件很多，用excel、spss、R语言都可以制作。斜率图实际上就是折线图，会画折线图就会画斜线图。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;斜线图&lt;/strong&gt;，英文为&lt;strong&gt;Slopegraph&lt;/strong&gt;，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据&lt;strong&gt;变化&lt;/strong&gt;（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。&lt;/p&gt;
 </description>
     </item>
     
