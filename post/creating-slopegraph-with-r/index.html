@@ -22,9 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="fallleaf" />
-  <meta name="description" content=" 斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据变化（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。
-" />
+<meta name="author" content="fallleaf" /><meta name="description" content="制作斜线图" />
 <meta name="keywords" content="slopegraph" />
 
 
@@ -36,15 +34,11 @@
 <meta name="generator" content="Hugo 0.56.1" />
 
 
-<link rel="canonical" href="/post/creating-slopegraph-with-r/" />
+<link rel="canonical" href="../../post/creating-slopegraph-with-r/" />
 
 
 
-<link rel="icon" href="/favicon.ico" />
-
-
-
-
+<link rel="icon" href="../../favicon.ico" />
 
 
 
@@ -52,44 +46,36 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.31c4b7729c8d71cc152f8de4203d90bfd8a04f7eab69372de7234ebf55b7701b.css" integrity="sha256-McS3cpyNccwVL43kID2Qv9igT36raTct5yNOv1W3cBs=" media="screen" crossorigin="anonymous">
+
+
+
+
+<link rel="stylesheet" href="../../sass/jane.min.31c4b7729c8d71cc152f8de4203d90bfd8a04f7eab69372de7234ebf55b7701b.css" integrity="sha256-McS3cpyNccwVL43kID2Qv9igT36raTct5yNOv1W3cBs=" media="screen" crossorigin="anonymous">
 
 
 
 
 
 <meta property="og:title" content="用R语言做斜线图" />
-<meta property="og:description" content="
-
-
-斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据变化（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。
-" />
+<meta property="og:description" content="制作斜线图" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/creating-slopegraph-with-r/" />
 <meta property="article:published_time" content="2019-07-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-07-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-29T00:00:00+00:00" />
 <meta itemprop="name" content="用R语言做斜线图">
-<meta itemprop="description" content="
-
-
-斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据变化（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。
-">
+<meta itemprop="description" content="制作斜线图">
 
 
 <meta itemprop="datePublished" content="2019-07-21T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-07-28T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1040">
+<meta itemprop="dateModified" content="2019-07-29T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="3056">
 
 
 
 <meta itemprop="keywords" content="R语言,slopegraph,斜线图,数据可视化,data visualization," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="用R语言做斜线图"/>
-<meta name="twitter:description" content="
-
-
-斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后等或两个不同的分类的数据变化（比如排名，百分比，数值等），由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。
-"/>
+<meta name="twitter:description" content="制作斜线图"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -107,7 +93,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">Thinking, Writing And Waiting</a>
+    <a href="../../" class="logo">Thinking, Writing And Waiting</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -121,35 +107,35 @@
         
           
           
-            <a class="menu-item-link" href="/">首页</a>
+            <a class="menu-item-link" href="../../">首页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="/post/">存档</a>
+            <a class="menu-item-link" href="../../post/">存档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="/tags/">标签</a>
+            <a class="menu-item-link" href="../../tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="/categories/">类别</a>
+            <a class="menu-item-link" href="../../categories/">类别</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="/about/">关于我</a>
+            <a class="menu-item-link" href="../../about/">关于我</a>
           
         
       </li>
@@ -168,8 +154,8 @@
 
 
 
-  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
-  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+  <link rel="stylesheet" href="../../lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="../../lib/photoswipe/default-skin/default-skin.min.css" />
 
 
 
@@ -226,7 +212,7 @@
 
   <header id="header" class="header container">
     <div class="logo-wrapper">
-  <a href="/" class="logo">
+  <a href="../../" class="logo">
     
       Thinking, Writing And Waiting
     
@@ -241,7 +227,7 @@
         
           
           
-            <a class="menu-item-link" href="/">首页</a>
+            <a class="menu-item-link" href="../../">首页</a>
           
 
         
@@ -252,7 +238,7 @@
         
           
           
-            <a class="menu-item-link" href="/post/">存档</a>
+            <a class="menu-item-link" href="../../post/">存档</a>
           
 
         
@@ -263,7 +249,7 @@
         
           
           
-            <a class="menu-item-link" href="/tags/">标签</a>
+            <a class="menu-item-link" href="../../tags/">标签</a>
           
 
         
@@ -274,7 +260,7 @@
         
           
           
-            <a class="menu-item-link" href="/categories/">类别</a>
+            <a class="menu-item-link" href="../../categories/">类别</a>
           
 
         
@@ -285,7 +271,7 @@
         
           
           
-            <a class="menu-item-link" href="/about/">关于我</a>
+            <a class="menu-item-link" href="../../about/">关于我</a>
           
 
         
@@ -316,11 +302,11 @@
           2019-07-21
         </time>
         <div class="post-category">
-            <a href="/categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
+            <a href="../../categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
             
           </div>
-        <span class="more-meta"> 约 1040 字 </span>
-          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span class="more-meta"> 约 3056 字 </span>
+          <span class="more-meta"> 预计阅读 7 分钟 </span>
 
         
         
@@ -341,12 +327,12 @@
 <p>Edward Tufte在1983年的著作《The Visual Display of Quantitative Information》第一次提到了斜线图，2011年6月1日他在<a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003nk&amp;topic_id=1">论坛</a>里把这种表示方式正式命名为slopegraph。前期很少有人使用，不过近期使用多了起来。</p>
 <p>先看看两个斜线图的实例。</p>
 <div class="figure">
-<img src="/post/2019-07-21-用r语言做斜率图_files/slopegraph_time.png" style="width:45.0%" />
+<img src="../../post/2019-07-21-用r语言做斜率图_files/slopegraph_time.png" style="width:50.0%" />
 
 </div>
 <p>这张是网易的一个斜线图，X轴有1990年和2017年两个时间点，Y轴按慢性病伤残调整寿命年排序，显而易见，很容易看出从1990年到2017年，哪些慢性病成为了主要死因，以及这些死因排序的变化情况。一般来说，斜线图适合时间跨度比较大的数据展示。</p>
 <div class="figure">
-<img src="/post/2019-07-21-用r语言做斜率图_files/slopegraph_group.png" style="width:45.0%" />
+<img src="../../post/2019-07-21-用r语言做斜率图_files/slopegraph_group.png" style="width:50.0%" />
 
 </div>
 <p>这张是引自<a href="https://www.storytellingwithdata.com">stroytellingwithdata</a>中一篇文章<a href="https://www.storytellingwithdata.com/blog/2014/03/more-on-slopegraphs">more on slopegraphs</a>的图，展示的是一份调查数据不同分组情况变化的斜线图，X轴是两个分组，一个是整体的（Company），一个是整体中的一部分（Team X），Y轴是不同调查内容的得分情况，可以看出某项指标在总体和个体中所处于的地位以及变化情况。</p>
@@ -357,21 +343,97 @@
 <blockquote>
 <p>“Slopegraphs compare changes over time for a list of nouns located on an ordinal or interval scale.”</p>
 </blockquote>
-<p>意思就是××Slopegraphs是用来比较不同时间的一组指标的变化××。</p>
+<p>意思就是<strong>Slopegraphs是用来比较不同时间的一组指标的变化</strong>。</p>
 <p>在用到折线图或柱状图数据可视化的情况，斜线图都是一种不错的选择。例如下面分别用柱状图和斜线图表示4个公司2018年和2019年收入情况。</p>
 <p>柱状图表示：</p>
-<p><img src="/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar1-1.png" width="480" /></p>
+<p><img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar1-1.png" width="480" /></p>
 <p>或者：</p>
-<p><img src="/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar2-1.png" width="480" /></p>
+<p><img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar2-1.png" width="480" /></p>
 <p>用斜线图表示，如下</p>
-<p><img src="/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/slopegraph-1.png" width="480" /></p>
+<p><img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/slopegraph-1.png" width="672" /></p>
 <p>比较上面三个图表，显然斜线图更能给受众更加直观、清晰的可视数据。柱状图只是吧数据进行的展示，并没有在图中同时直观的展示出各公司收入的<strong>排名</strong>和收入变化的<strong>幅度</strong>，而斜线图上则把收入、排名、变化幅度都同时直观的展示出来了。</p>
 </div>
 <div id="r" class="section level2">
 <h2>怎么用R语言作斜线图</h2>
 <p>由于斜线图就是折线图的一种变形，所以，只要能够制作折线图的软件都能制作斜线图，这里介绍一下在R语言环境下制作斜线图的方法。</p>
 <p><a href="https://github.com">GitHub</a>有一个R语言库项目：<a href="https://github.com/ibecav/CGPfunctions">CGPfunctions</a>，提供了制作斜线图的函数<strong>newggslopegraph()</strong>。上面的斜线图就是用这个函数做出来的。</p>
-<p>库文件的安装详见网页说明，这里只把这个函数的参数说明解释说一下。</p>
+<p>库文件的安装详见网页说明，最新版本是0.5.8，包含了新增加的一些函数参数，这里只把这个函数的参数用中文解释一下。</p>
+<p><strong>用法：</strong></p>
+<pre><code>newggslopegraph(
+  dataframe, Times, Measurement, Grouping,
+  Title = &quot;No title given&quot;, SubTitle = &quot;No subtitle given&quot;,
+  Caption = &quot;No caption given&quot;, XTextSize = 12, YTextSize = 3,
+  TitleTextSize = 14, SubTitleTextSize = 10, CaptionTextSize = 8,
+  TitleJustify = &quot;left&quot;, SubTitleJustify = &quot;left&quot;,
+  CaptionJustify = &quot;right&quot;, LineThickness = 1, LineColor = &quot;ByGroup&quot;,
+  DataTextSize = 2.5, DataTextColor = &quot;black&quot;,
+  DataLabelPadding = 0.05, DataLabelLineSize = 0,
+  DataLabelFillColor = &quot;white&quot;, WiderLabels = FALSE,
+  ReverseYAxis = FALSE, ReverseXAxis = FALSE, RemoveMissing = TRUE,
+  ThemeChoice = &quot;bw&quot;
+  )</code></pre>
+<p>参数：</p>
+<ul>
+<li><p>dataframe：一个数据框类型的数据组，tidy data格式。会检查一些基本的错误，如检查是否存在列名称。</p></li>
+<li><p>Times：数据框中的一列数据名，表示X轴上不同分组，比如时间或类别，可以是一个有序的class，因子或字符。注意，如果这列数据是日期类型，则需用as.character()转换成字符类型。</p></li>
+<li><p>Measurement： 数据框中的一列数据名，表示Y轴上不同的数值。一般为百分比、名次等，也可为数值，可接受的类型为整数或数值。如果数值不那么离散或集中，斜线图的表达会更完美。</p></li>
+<li><p>Grouping：分组名，数据框中的一列数据，表示不同的分组</p></li>
+</ul>
+<p>例如上面例子中用的数据框为：</p>
+<pre class="r"><code>data</code></pre>
+<pre><code>##    company   year income
+## 1 CompanyA 2018年    232
+## 2 CompanyA 2019年    261
+## 3 CompanyB 2018年    111
+## 4 CompanyB 2019年    425
+## 5 CompanyC 2018年    266
+## 6 CompanyC 2019年    217
+## 7 CompanyD 2018年    431
+## 8 CompanyD 2019年    329</code></pre>
+<p>这是一个带列名称的数据框data，第一列就是<strong>Grouping</strong>，表明每个斜线的类别，第二列是<strong>Times</strong>，表明X轴上的两个时间点，第三列是“Measurement”，表明每列别对应X轴在Y轴上的位置。</p>
+<ul>
+<li><p>Title：标题，可选，当Title = NULL时，没有标题，当Title = “”时，一个空标题，但在图形中占据位置。</p></li>
+<li><p>SubTitle：副标题，可选，当SubTitle = NULL时，没有标题，当SubTitle = “”时，一个空标题，但在图形中占据位置。</p></li>
+<li><p>Caption：说明文字，可选，当Caption = NULL时，没有标题，当Caption = “”时，一个空标题，但在图形中占据位置。</p></li>
+<li><p>XTextSize：X轴分组的文字大小，可选，缺省大小为12，和Y轴的分组文字大小有不同比例。</p></li>
+<li><p>YTextSize：Y轴分组的文字大小，可选，缺省大小为3，和X轴的分组文字大小有不同比例。</p></li>
+<li><p>TitleTextSize：标题文字大小，可选，缺省大小为14。</p></li>
+<li><p>SubTitleTextSize：副标题文字大小，可选，缺省大小为10。</p></li>
+<li><p>CaptionTextSize：说明文字大小， 可选，缺省大小为8。</p></li>
+<li><p>TitleJustify：标题位置，为“L”, “R” or “C” or use the hjust = notation from ggplot2 with a numeric value between ‘0’ (left) and ‘1’ (right)。</p></li>
+<li><p>SubTitleJustify：副标题位置，为“L”, “R” or “C” or use the hjust = notation from ggplot2 with a numeric value between ‘0’ (left) and ‘1’ (right)。</p></li>
+<li><p>CaptionJustify：说明文字位置，为“L”, “R” or “C” or use the hjust = notation from ggplot2 with a numeric value between ‘0’ (left) and ‘1’ (right)。</p></li>
+<li><p>LineThickness：斜线线宽，可选，缺省值为1。</p></li>
+<li><p>LineColor：斜线颜色。可以用一个向量给每个分组设置颜色，向量的长度应和分组的分类数相等，如果不足，则循环设置，如c(“gray”, “red”, “green”, “gray”)或者时带分组名称的向量 c(“CompanyA” = “gray”, “CompanyB” = “red”, “CompanyC” = “green”, “CompanyD” = “gray”)。</p></li>
+<li><p>DataTextSize：Y轴数值字符大小，可选，缺省值为2.5。</p></li>
+<li><p>DataTextColor：Y轴数值颜色，可选，缺省为黑色“black”，可以是“colors()”中颜色或16进制数“#FF00FF”。</p></li>
+<li><p>DataLabelPadding：Y轴数值和外框的间距，缺省值为0.05。</p></li>
+<li><p>DataLabelLineSize：Y轴数值外框的线宽，缺省值为0，即没有框。</p></li>
+<li><p>DataLabelFillColor：Y轴数值框内的颜色，缺省值为“white”，可以是“colors()”中颜色或16进制数“#FF00FF”。</p></li>
+<li><p>WiderLabels：logical, set this value to TRUE if your “labels” or Grouping variable values tend to be long as they are in the newcancer dataset. This setting will give them more room in the same plot size.</p></li>
+<li><p>ReverseYAxis：反转Y轴，逻辑值，如果想改变Y轴的排序方式，可设置为TRUE，可以把第一名调整在顶层。</p></li>
+<li><p>ReverseXAxis：反转X轴，逻辑值，想改变<strong>factor levels</strong>时，可设置为TRUE。</p></li>
+<li><p>RemoveMissing：逻辑值，如果设置为TRUE，如果缺少一些数值，则响应的分组也会移除不显示。</p></li>
+<li><p>ThemeChoice：主题选择，缺省主题为“bw”,其他的是“ipsum”, “econ”, “wsj”, “gdocs”, and “tufte”。</p></li>
+</ul>
+<p>下面展示一个完整的函数参数以及创建的图形，注意，X轴和Y轴均倒置了。</p>
+<pre class="r"><code>newggslopegraph(
+  data, year, income, company,
+  Title = &quot;This is Title&quot;, SubTitle = &quot;This is subTitle&quot;,
+  Caption = &quot;This is Caption\nSecond line&quot;, XTextSize = 14, YTextSize = 4,
+  TitleTextSize = 14, SubTitleTextSize = 12, CaptionTextSize = 10,
+  TitleJustify = &quot;L&quot;, SubTitleJustify = &quot;R&quot;,
+  CaptionJustify = &quot;C&quot;, LineThickness = 2, 
+  LineColor = c(&quot;CompanyD&quot; = &quot;seagreen&quot;,&quot;CompanyA&quot; = &quot;green&quot;,
+                &quot;CompanyB&quot; = &quot;tomato&quot;,&quot;CompanyC&quot; = &quot;orange&quot;),
+  DataTextSize = 4, DataTextColor = &quot;red&quot;,
+  DataLabelPadding = 0.2, DataLabelLineSize = 0.5,
+  DataLabelFillColor = &quot;gray&quot;, WiderLabels = FALSE,
+  ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
+  ThemeChoice = &quot;tufte&quot;
+  )</code></pre>
+<p><img src="../../post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/demo-1.png" width="672" /></p>
+<p>若有什么意见和建议，请在下面留言。</p>
 </div>
 
     </div>
@@ -386,7 +448,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2019-07-28
+      2019-07-29
       
     </span>
   </p>
@@ -407,12 +469,12 @@
     
     
       <label class="qr-code-image" for="reward">
-        <img class="image" src="/wechatpay.jpg">
+        <img class="image" src="../../wechatpay.jpg">
         <span>微信支持</span>
       </label>
     
       <label class="qr-code-image" for="reward">
-        <img class="image" src="/alipay.jpg">
+        <img class="image" src="../../alipay.jpg">
         <span>支付宝支持</span>
       </label>
   </div>
@@ -420,18 +482,18 @@
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/r%E8%AF%AD%E8%A8%80/">R语言</a>
-          <a href="/tags/slopegraph/">slopegraph</a>
-          <a href="/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/">斜线图</a>
-          <a href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/">数据可视化</a>
-          <a href="/tags/data-visualization/">data visualization</a>
+          <a href="../../tags/r%E8%AF%AD%E8%A8%80/">R语言</a>
+          <a href="../../tags/slopegraph/">slopegraph</a>
+          <a href="../../tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/">斜线图</a>
+          <a href="../../tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/">数据可视化</a>
+          <a href="../../tags/data-visualization/">data visualization</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/trip-thought/">
+          <a class="prev" href="../../post/trip-thought/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -445,7 +507,7 @@
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/moonlight-sor-classical/">
+          <a class="next" href="../../post/moonlight-sor-classical/">
             <span class="next-text nav-default">月光——吉他曲（索尔）</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
@@ -543,7 +605,7 @@
     </a>
 
 
-<a href="/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="../../index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -606,13 +668,13 @@
     </div>
   </div>
   
-<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="../../lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../../lib/slideout/slideout-1.0.1.min.js"></script>
 
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 <script id="baidu_analytics">
   var _hmt = _hmt || [];
   (function() {
@@ -629,9 +691,9 @@
 
 
   
-    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
-    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
-    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="../../js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="../../lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="../../lib/photoswipe/photoswipe-ui-default.min.js"></script>
   
 
 
