@@ -68,7 +68,7 @@
 
 <meta itemprop="datePublished" content="2019-07-21T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-07-30T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3208">
+<meta itemprop="wordCount" content="3270">
 
 
 
@@ -305,7 +305,7 @@
             <a href="/categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
             
           </div>
-        <span class="more-meta"> 约 3208 字 </span>
+        <span class="more-meta"> 约 3270 字 </span>
           <span class="more-meta"> 预计阅读 7 分钟 </span>
 
         
@@ -352,6 +352,7 @@
 <p>用斜线图表示，如下</p>
 <p><img src="/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/slopegraph-1.png" width="672" /></p>
 <p>比较上面三个图表，显然斜线图更能给受众更加直观、清晰的可视数据。柱状图只是吧数据进行的展示，并没有在图中同时直观的展示出各公司收入的<strong>排名</strong>和收入变化的<strong>幅度</strong>，而斜线图上则把收入、排名、变化幅度都同时直观的展示出来了。</p>
+<p>对比上面的柱状图和斜线图，最大的差别是柱状图的Y轴数值一般是从0开始，这也是在做折线图、柱状图的一个基本要求，如果不从零开始，就会放大变化的幅度。而斜线图的Y轴并不是从0开始的，所以更适合比较名次的变化或相对数值的变化，而不是绝对数值的变化。</p>
 </div>
 <div id="r" class="section level2">
 <h2>怎么用R语言作斜线图</h2>
@@ -433,10 +434,10 @@
   ThemeChoice = &quot;tufte&quot;
   )</code></pre>
 <p><img src="/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/demo-1.png" width="672" /></p>
-<p>若有什么意见和建议，请在下面留言。</p>
-<p>附：中国联通2018年12月，2019年6月业务数据的斜线图。</p>
+<p>一般来说，斜线图是比较两个时间点或两组分类的数据可视图，但也可以比较多组数据，但一般不要过多，时间扩大最好大一些。如下图。</p>
+<p>中国联通2018年四季度，2019年一、二季度业务数据的斜线图。</p>
 <p><img src="/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/chinaunicom-1.png" width="672" /></p>
-<p>对比上面的柱状图和斜线图，最大的差别是柱状图的Y轴数值一般是从0开始，这也是在做折线图、柱状图的一个基本要求，如果不从零开始，就会放大变化的幅度。而斜线图的Y轴并不是从0开始的，所以更适合比较名次的变化或相对数值的变化，而不是绝对数值的变化。</p>
+<p>若有什么意见和建议，请在下面留言。</p>
 </div>
 
     </div>
