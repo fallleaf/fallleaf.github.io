@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LTE on Thinking, Writing And Waiting</title>
-    <link>/tags/lte/</link>
+    <link>https://blogl.fallleaf.net/tags/lte/</link>
     <description>Recent content in LTE on Thinking, Writing And Waiting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 12 Jul 2010 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/lte/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blogl.fallleaf.net/tags/lte/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LTE下的RAN</title>
-      <link>/post/ran-with-lte/</link>
+      <link>https://blogl.fallleaf.net/post/ran-with-lte/</link>
       <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>/post/ran-with-lte/</guid>
+      <guid>https://blogl.fallleaf.net/post/ran-with-lte/</guid>
       <description>
 
 
