@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>通信设计 on Thinking, Writing And Waiting</title>
-    <link>https://blog.fallleaf.net/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/</link>
+    <link>http://blog.fallleaf.net/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/</link>
     <description>Recent content in 通信设计 on Thinking, Writing And Waiting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 14 Feb 2006 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.fallleaf.net/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.fallleaf.net/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于通信设计的思考</title>
-      <link>https://blog.fallleaf.net/post/thinking-about-telecom-design/</link>
+      <link>http://blog.fallleaf.net/post/thinking-about-telecom-design/</link>
       <pubDate>Tue, 14 Feb 2006 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/thinking-about-telecom-design/</guid>
+      <guid>http://blog.fallleaf.net/post/thinking-about-telecom-design/</guid>
       <description>
 
 

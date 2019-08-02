@@ -1,545 +1,545 @@
-<?xml-stylesheet type="text/xsl" href="https://blog.fallleaf.net/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://blog.fallleaf.net/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.fallleaf.net/categories/</loc>
+    <loc>http://blog.fallleaf.net/categories/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/</loc>
+    <loc>http://blog.fallleaf.net/post/</loc>
     <lastmod>2019-08-02T21:50:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/</loc>
+    <loc>http://blog.fallleaf.net/tags/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/</loc>
+    <loc>http://blog.fallleaf.net/</loc>
     <lastmod>2019-08-02T21:50:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E6%80%9D%E7%BB%AA/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E6%80%9D%E7%BB%AA/</loc>
     <lastmod>2019-07-27T13:15:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/trip-thought/</loc>
+    <loc>http://blog.fallleaf.net/post/trip-thought/</loc>
     <lastmod>2019-07-25T14:45:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>http://blog.fallleaf.net/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2019-07-27T13:15:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/about/</loc>
+    <loc>http://blog.fallleaf.net/about/</loc>
     <lastmod>2019-07-21T22:46:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/</loc>
+    <loc>http://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/data-visualization/</loc>
+    <loc>http://blog.fallleaf.net/tags/data-visualization/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/slopegraph/</loc>
+    <loc>http://blog.fallleaf.net/tags/slopegraph/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>http://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</loc>
+    <loc>http://blog.fallleaf.net/post/creating-slopegraph-with-r/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E5%90%89%E4%BB%96/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E5%90%89%E4%BB%96/</loc>
     <lastmod>2019-07-27T11:10:46+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/moonlight-sor-classical/</loc>
+    <loc>http://blog.fallleaf.net/post/moonlight-sor-classical/</loc>
     <lastmod>2019-07-26T21:19:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/python/</loc>
+    <loc>http://blog.fallleaf.net/tags/python/</loc>
     <lastmod>2019-07-26T20:44:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E8%82%96%E5%83%8F/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E8%82%96%E5%83%8F/</loc>
     <lastmod>2019-07-26T20:44:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E8%89%B2%E5%AD%90/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E8%89%B2%E5%AD%90/</loc>
     <lastmod>2019-07-22T07:24:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/dice-portrait-python/</loc>
+    <loc>http://blog.fallleaf.net/post/dice-portrait-python/</loc>
     <lastmod>2019-07-22T07:24:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/dice-portrait/</loc>
+    <loc>http://blog.fallleaf.net/post/dice-portrait/</loc>
     <lastmod>2019-07-26T20:44:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/memory-series-1/</loc>
+    <loc>http://blog.fallleaf.net/post/memory-series-1/</loc>
     <lastmod>2019-07-27T11:10:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/2014-2015-business-trip-infomation/</loc>
+    <loc>http://blog.fallleaf.net/post/2014-2015-business-trip-infomation/</loc>
     <lastmod>2019-07-26T21:15:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E5%87%BA%E5%B7%AE/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E5%87%BA%E5%B7%AE/</loc>
     <lastmod>2019-07-26T21:15:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/categories/%E5%B7%A5%E4%BD%9C/</loc>
+    <loc>http://blog.fallleaf.net/categories/%E5%B7%A5%E4%BD%9C/</loc>
     <lastmod>2019-07-26T21:15:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/four-season/</loc>
+    <loc>http://blog.fallleaf.net/post/four-season/</loc>
     <lastmod>2019-07-22T10:14:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://blog.fallleaf.net/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2019-07-27T12:34:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/sparse-coverage-of-access-network/</loc>
+    <loc>http://blog.fallleaf.net/post/sparse-coverage-of-access-network/</loc>
     <lastmod>2015-01-21T22:56:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E8%96%84%E8%A6%86%E7%9B%96/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E8%96%84%E8%A6%86%E7%9B%96/</loc>
     <lastmod>2015-01-21T22:56:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/discover-reson-of-runway-crackdown/</loc>
+    <loc>http://blog.fallleaf.net/post/discover-reson-of-runway-crackdown/</loc>
     <lastmod>2019-08-02T21:50:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/lte/</loc>
+    <loc>http://blog.fallleaf.net/tags/lte/</loc>
     <lastmod>2019-07-23T07:14:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/ran-with-lte/</loc>
+    <loc>http://blog.fallleaf.net/post/ran-with-lte/</loc>
     <lastmod>2019-07-23T07:14:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/ran/</loc>
+    <loc>http://blog.fallleaf.net/tags/ran/</loc>
     <lastmod>2019-07-23T07:14:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E5%AE%97%E6%95%99/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E5%AE%97%E6%95%99/</loc>
     <lastmod>2019-07-23T07:20:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/religion-adn-logic/</loc>
+    <loc>http://blog.fallleaf.net/post/religion-adn-logic/</loc>
     <lastmod>2019-07-23T07:20:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E9%80%BB%E8%BE%91/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E9%80%BB%E8%BE%91/</loc>
     <lastmod>2019-07-23T07:20:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E5%8D%A1%E5%AE%BE%E8%BE%BE%E6%A0%91%E7%9A%AE/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E5%8D%A1%E5%AE%BE%E8%BE%BE%E6%A0%91%E7%9A%AE/</loc>
     <lastmod>2019-07-22T11:19:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/pau-de-cabinda/</loc>
+    <loc>http://blog.fallleaf.net/post/pau-de-cabinda/</loc>
     <lastmod>2019-07-22T11:19:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/living-in-lobitobenguela/</loc>
+    <loc>http://blog.fallleaf.net/post/living-in-lobitobenguela/</loc>
     <lastmod>2019-07-22T11:27:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/benguela/</loc>
+    <loc>http://blog.fallleaf.net/tags/benguela/</loc>
     <lastmod>2019-07-22T11:27:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/lobito/</loc>
+    <loc>http://blog.fallleaf.net/tags/lobito/</loc>
     <lastmod>2019-07-22T11:27:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/project365/</loc>
+    <loc>http://blog.fallleaf.net/tags/project365/</loc>
     <lastmod>2019-07-26T06:30:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/my-project-365/</loc>
+    <loc>http://blog.fallleaf.net/post/my-project-365/</loc>
     <lastmod>2019-07-26T06:30:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E8%AE%BE%E8%AE%A1%E9%99%A2/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E8%AE%BE%E8%AE%A1%E9%99%A2/</loc>
     <lastmod>2019-07-22T11:37:42+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/something-about-telecom-design-institue/</loc>
+    <loc>http://blog.fallleaf.net/post/something-about-telecom-design-institue/</loc>
     <lastmod>2019-07-22T11:37:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/a-tool-for-preventing-rsi/</loc>
+    <loc>http://blog.fallleaf.net/post/a-tool-for-preventing-rsi/</loc>
     <lastmod>2019-07-26T07:27:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E5%AE%89%E5%93%A5%E6%8B%89/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E5%AE%89%E5%93%A5%E6%8B%89/</loc>
     <lastmod>2019-07-26T07:48:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/bill-of-angola/</loc>
+    <loc>http://blog.fallleaf.net/post/bill-of-angola/</loc>
     <lastmod>2019-07-26T07:48:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/trip-to-middle-of-angola-2lobito-benguela/</loc>
+    <loc>http://blog.fallleaf.net/post/trip-to-middle-of-angola-2lobito-benguela/</loc>
     <lastmod>2019-07-22T22:08:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/categories/%E6%97%85%E8%A1%8C/</loc>
+    <loc>http://blog.fallleaf.net/categories/%E6%97%85%E8%A1%8C/</loc>
     <lastmod>2019-07-22T22:08:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/trip-to-middle-of-angola-1ludanda-lobito/</loc>
+    <loc>http://blog.fallleaf.net/post/trip-to-middle-of-angola-1ludanda-lobito/</loc>
     <lastmod>2019-07-22T22:14:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/nanping-guoliang-vacation-in-national-day/</loc>
+    <loc>http://blog.fallleaf.net/post/nanping-guoliang-vacation-in-national-day/</loc>
     <lastmod>2019-07-27T13:04:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E6%97%85%E6%B8%B8/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E6%97%85%E6%B8%B8/</loc>
     <lastmod>2019-07-27T13:04:17+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E5%AD%9F%E5%8A%A0%E6%8B%89/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E5%AD%9F%E5%8A%A0%E6%8B%89/</loc>
     <lastmod>2019-07-22T22:17:55+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/bangladesh-drivers/</loc>
+    <loc>http://blog.fallleaf.net/post/bangladesh-drivers/</loc>
     <lastmod>2019-07-22T22:17:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/food-in-shanghai-unicom/</loc>
+    <loc>http://blog.fallleaf.net/post/food-in-shanghai-unicom/</loc>
     <lastmod>2019-07-23T07:24:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E9%A5%AD%E8%8F%9C/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E9%A5%AD%E8%8F%9C/</loc>
     <lastmod>2019-07-23T07:24:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/triple-good-luck-of-zhengzhou-citc/</loc>
+    <loc>http://blog.fallleaf.net/post/triple-good-luck-of-zhengzhou-citc/</loc>
     <lastmod>2019-07-23T07:29:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/citc-shanghai-branch-established/</loc>
+    <loc>http://blog.fallleaf.net/post/citc-shanghai-branch-established/</loc>
     <lastmod>2019-07-23T07:26:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/a-party-of-c114-in-hangzhou/</loc>
+    <loc>http://blog.fallleaf.net/post/a-party-of-c114-in-hangzhou/</loc>
     <lastmod>2019-07-22T22:20:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E7%BD%91%E5%8F%8B/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E7%BD%91%E5%8F%8B/</loc>
     <lastmod>2019-07-22T22:20:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E8%81%9A%E4%BC%9A/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E8%81%9A%E4%BC%9A/</loc>
     <lastmod>2019-07-22T22:20:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/im-coming-shanghai/</loc>
+    <loc>http://blog.fallleaf.net/post/im-coming-shanghai/</loc>
     <lastmod>2019-07-27T12:01:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E7%94%B5%E6%BA%90/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E7%94%B5%E6%BA%90/</loc>
     <lastmod>2019-07-27T12:29:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/how-to-choose-electrical-wire/</loc>
+    <loc>http://blog.fallleaf.net/post/how-to-choose-electrical-wire/</loc>
     <lastmod>2019-07-27T12:29:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E7%BA%BF%E5%BE%84/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E7%BA%BF%E5%BE%84/</loc>
     <lastmod>2019-07-27T12:29:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/mstp/</loc>
+    <loc>http://blog.fallleaf.net/tags/mstp/</loc>
     <lastmod>2019-07-27T12:34:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/tips-for-choose-mstp/sdh-equiment/</loc>
+    <loc>http://blog.fallleaf.net/post/tips-for-choose-mstp/sdh-equiment/</loc>
     <lastmod>2019-07-27T12:34:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E9%80%89%E5%9E%8B/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E9%80%89%E5%9E%8B/</loc>
     <lastmod>2019-07-27T12:34:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/image-of-sekou/</loc>
+    <loc>http://blog.fallleaf.net/post/image-of-sekou/</loc>
     <lastmod>2019-07-27T13:10:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/thinking-about-telecom-design/</loc>
+    <loc>http://blog.fallleaf.net/post/thinking-about-telecom-design/</loc>
     <lastmod>2019-07-22T10:57:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E9%80%9A%E4%BF%A1%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2019-07-22T10:57:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/48v/</loc>
+    <loc>http://blog.fallleaf.net/tags/48v/</loc>
     <lastmod>2019-07-23T08:29:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/why-communication-equipments-use-48v/</loc>
+    <loc>http://blog.fallleaf.net/post/why-communication-equipments-use-48v/</loc>
     <lastmod>2019-07-23T08:29:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/image-of-hefei/</loc>
+    <loc>http://blog.fallleaf.net/post/image-of-hefei/</loc>
     <lastmod>2019-07-27T13:15:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/daughter-wash-bowls/</loc>
+    <loc>http://blog.fallleaf.net/post/daughter-wash-bowls/</loc>
     <lastmod>2019-07-27T12:48:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/discussion-about-mstp-on-c-fol-forum/</loc>
+    <loc>http://blog.fallleaf.net/post/discussion-about-mstp-on-c-fol-forum/</loc>
     <lastmod>2019-07-22T11:07:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/cfol/</loc>
+    <loc>http://blog.fallleaf.net/tags/cfol/</loc>
     <lastmod>2019-07-22T11:07:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/rizhao-vacation-in-national-day-1/</loc>
+    <loc>http://blog.fallleaf.net/post/rizhao-vacation-in-national-day-1/</loc>
     <lastmod>2019-07-27T12:51:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/rizhao-vacation-in-national-day-2/</loc>
+    <loc>http://blog.fallleaf.net/post/rizhao-vacation-in-national-day-2/</loc>
     <lastmod>2019-07-27T12:55:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/rizhao-vacation-in-national-dayend/</loc>
+    <loc>http://blog.fallleaf.net/post/rizhao-vacation-in-national-dayend/</loc>
     <lastmod>2019-07-27T13:00:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/tags/%E5%A5%B3%E5%84%BF/</loc>
+    <loc>http://blog.fallleaf.net/tags/%E5%A5%B3%E5%84%BF/</loc>
     <lastmod>2019-07-27T12:45:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/post/daughter-angry/</loc>
+    <loc>http://blog.fallleaf.net/post/daughter-angry/</loc>
     <lastmod>2019-07-27T12:45:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

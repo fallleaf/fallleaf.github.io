@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://blog.fallleaf.net/sitemap.xml
+Sitemap: http://blog.fallleaf.net/sitemap.xml
