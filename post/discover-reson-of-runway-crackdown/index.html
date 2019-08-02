@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>浅谈宽带接入网的薄覆盖 - Thinking, Writing And Waiting</title>
+  <title>走线架垮塌事件分析 - Thinking, Writing And Waiting</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,8 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="fallleaf" />
-  <meta name="description" content=" 在宽带接入网工程中，常常会出现关于覆盖的几种说法，如“全覆盖”，“深覆盖”，“薄覆盖”等，其概念各不相同，各自的理解也不同，依据目前我的经验，谈谈一点看法。
-" />
+  <meta name="description" content=" 某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑： " />
 
   <meta name="keywords" content="通信设计, 旅游, 吉他, 设计, 网络规划" />
 
@@ -36,7 +35,7 @@
 <meta name="generator" content="Hugo 0.56.1" />
 
 
-<link rel="canonical" href="https://blog.fallleaf.net/post/sparse-coverage-of-access-network/" />
+<link rel="canonical" href="https://blog.fallleaf.net/post/discover-reson-of-runway-crackdown/" />
 
 
 
@@ -58,38 +57,35 @@
 
 
 
-<meta property="og:title" content="浅谈宽带接入网的薄覆盖" />
+<meta property="og:title" content="走线架垮塌事件分析" />
 <meta property="og:description" content="
 
 
-在宽带接入网工程中，常常会出现关于覆盖的几种说法，如“全覆盖”，“深覆盖”，“薄覆盖”等，其概念各不相同，各自的理解也不同，依据目前我的经验，谈谈一点看法。
-" />
+某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑： " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.fallleaf.net/post/sparse-coverage-of-access-network/" />
-<meta property="article:published_time" content="2015-01-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2015-01-21T22:56:04+08:00" />
-<meta itemprop="name" content="浅谈宽带接入网的薄覆盖">
+<meta property="og:url" content="https://blog.fallleaf.net/post/discover-reson-of-runway-crackdown/" />
+<meta property="article:published_time" content="2011-02-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-02T21:50:20+08:00" />
+<meta itemprop="name" content="走线架垮塌事件分析">
 <meta itemprop="description" content="
 
 
-在宽带接入网工程中，常常会出现关于覆盖的几种说法，如“全覆盖”，“深覆盖”，“薄覆盖”等，其概念各不相同，各自的理解也不同，依据目前我的经验，谈谈一点看法。
-">
+某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑： ">
 
 
-<meta itemprop="datePublished" content="2015-01-21T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2015-01-21T22:56:04&#43;08:00" />
-<meta itemprop="wordCount" content="1579">
+<meta itemprop="datePublished" content="2011-02-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-02T21:50:20&#43;08:00" />
+<meta itemprop="wordCount" content="1534">
 
 
 
-<meta itemprop="keywords" content="薄覆盖," />
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="浅谈宽带接入网的薄覆盖"/>
+<meta name="twitter:title" content="走线架垮塌事件分析"/>
 <meta name="twitter:description" content="
 
 
-在宽带接入网工程中，常常会出现关于覆盖的几种说法，如“全覆盖”，“深覆盖”，“薄覆盖”等，其概念各不相同，各自的理解也不同，依据目前我的经验，谈谈一点看法。
-"/>
+某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑： "/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -309,17 +305,14 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">浅谈宽带接入网的薄覆盖</h1>
+      <h1 class="post-title">走线架垮塌事件分析</h1>
       
       <div class="post-meta">
-        <time datetime="2015-01-21" class="post-time">
-          2015-01-21
+        <time datetime="2011-02-01" class="post-time">
+          2011-02-01
         </time>
-        <div class="post-category">
-            <a href="https://blog.fallleaf.net/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
-            
-          </div>
-        <span class="more-meta"> 约 1579 字 </span>
+        
+        <span class="more-meta"> 约 1534 字 </span>
           <span class="more-meta"> 预计阅读 4 分钟 </span>
 
         
@@ -335,17 +328,44 @@
 
     
     <div class="post-content">
-      <p>在宽带接入网工程中，常常会出现关于覆盖的几种说法，如“全覆盖”，“深覆盖”，“薄覆盖”等，其概念各不相同，各自的理解也不同，依据目前我的经验，谈谈一点看法。</p>
-<p>在很多资料里，“全覆盖”和“薄覆盖”是相对出现，是从工程建设界面的角度来定义的。</p>
-<p>“全覆盖”是指在宽带接入工程中，建设的网络末端为用户家中的光纤插座或多媒体箱，是工程做到了入户，而“薄覆盖”，是指网络末端只做到单元、楼宇或小区，工程没有做到入户，不能给用户提供一个全程端到端的连接。现在宽带接入建设，大多要求按照薄覆盖来建设，究其原因，主要是由于宽带运营商竞争的加剧，小区的宽带用户渗透率以及各运营商的宽带市场份额也不可能百分百，这两方面因素共同导致了在用户不明确的情况下，若采用全覆盖方式来进行宽带接入建设，会导致网络利用率不高、建设的端口浪费、投资大，在投资受限的情况下，进而会导致覆盖小区数量减少，覆盖率下降。</p>
-<p>但以这种接入覆盖的深度（到用户的距离）来定义薄覆盖，与它所倡导的一种建设思路上来比，还是有些缺陷。若全覆盖和薄覆盖只是入不入户的差别，那么不可避免建设的网络存在容量利用率不高，端口浪费的情况，因为若薄覆盖是按照1户1线这种思路去做，也就是小区的用户渗透率及市场份额都是百分百考虑，并没有达到薄覆盖的真实目的。</p>
-<p>在联通2014-2016年的宽带规划编制原则中，提出：</p>
-<p>薄覆盖是指在建设中降低建设端口和覆盖住户的比例，无论南北方均应按照目标用户数来确定分光器端口和配线光缆规模实现薄覆盖。对于自建方式，新建区域要求目标实占率大于70%，北方改造区域要考虑现有用户转网和后期发展端口需求，由于用户明确，目标实占率应大于80%。在薄覆盖建设中，除分光器端口外，接入配线光缆也要按照薄覆盖的要求进行建设，从而降低建设规模，减少投资，提高资源利用率。”</p>
-<p>这里，薄覆盖强调了另一个含义，就是接入网络的容量，应按照预测的目标用户数来确定，而这个目标用户数，又和市场策略，营销力度有关，这样，就把市场需求和建设通过“薄覆盖”联系到一起了，市场提需求，网络依据需求来建设，力求避免那种有需求没建设、没需求有建设局面。</p>
-<p>薄覆盖的建设方式，就是以业务预测的目标用户数为基础，按照一定的目标实占率要求，确定PON口数量以及ODN网各部分的规模（主干光缆规模、配线光缆规模、分光器端口数量）的一种建设方式。对于自建方式，新建区域要求目标实占率（目标用户数/建设的FTTH端口）不低于70%，对于改造区域，由于用户明确，目标实占率可不低于80%。</p>
-<p>在网络建设中，又出现了一种超薄覆盖概念，主要是指在建设中，只建设到配线区光交接箱；配线光缆、分线盒及用户皮线光缆待用户装机时再布放。这种“点到为止”的方式，只能适合目标用户极不确定以及某些特殊的情况。它是把一个完整的接入工程拆成两部分来做，看似接入工程造价极低，实际是把大量工作拖到后期完成，这对整个网络建设、维护、开户都会产生一些问题，应在工程中尽量避免。这种方式，从本质上说，就是目标用户不明确，市场目标不明确，是这种“这个小区，我知道可能有用户，用户能预计发展多少我不知道，什么时候发展我不知道，先占个地再说”的心态。是一种市场和建设脱节的无奈之举。</p>
-<p>从目前市场格局来看，除了独家进线的、目标用户渗透率70%以上（这时按薄覆盖的话，端口渗透率也就是100%了），改造网络等情况可按全覆盖来进行建设，其他情况均可按薄覆盖进行建设。而薄覆盖的定义，应从覆盖深度及建设规模上来进行阐述，这里，试图给薄覆盖一个定义：</p>
-<p>薄覆盖，是指在宽带接入网网络建设中，网络末端只建设到分光器、分纤箱，入户线在装机时进行敷设，并以业务预测的稳定期用户数（目标用户数）为基础，按照一定的目标实占率要求，确定PON口数量以及ODN网各部分的规模（主干光缆规模、配线光缆规模、分光器端口数量）的一种建设方式。</p>
+      某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑：</p>
+<div class="figure">
+<img src="/post/2019-08-02-走线架垮塌事件分析_files/runwaycrackdown.jpg" style="width:90.0%" style="height:90.0%" />
+
+</div>
+<p><em>材料方面</em></p>
+<p>从现场情况看，吊杆与天花板未脱落，吊杆亦未发生拉伸变形及断裂，可认为吊杆的强度是足够的，主要问题就在于吊杆与走线架的连接件上。</p>
+<p>连接件作为连接与支持走线架的零件，受力要比走线架大得多，所使用材料强度应高于走线架所用材料的强度，从现场来看，所使用材料均为同一规格，厚度为2mm。按YD5026-95和YD/T5026-2005《电信机房铁架安装设计标准》的要求，所采用铁件一般为50x50x5mm。</p>
+<p>从螺栓与连接件的紧固方式看，连接件的受力面积主要是螺栓垫片与连接件的接触面积，从照片上看，螺栓垫圈小，致使连接件单位面积受力过大，超过连接件的受力特性，造成了螺孔槽受压力作用变形并扩张。目前走线架所用螺栓规格为M6，规范要求的螺栓规格为M8和M10和M12，</p>
+<p><img src="/post/2019-08-02-走线架垮塌事件分析_files/1.png" style="width:45.0%" style="height:45.0%" /><img src="/post/2019-08-02-走线架垮塌事件分析_files/2.png" style="width:45.0%" style="height:45.0%" /></p>
+<p><em>地震及受力的影响</em></p>
+<p>从512大地震以来，该地区陆续发生了大大小小的上百次的余震。大地震和余震产生地震波，使走线架上下及左右震动，长期处于一种不稳定状态。螺栓、螺母与连接件的紧固，是靠螺栓、螺母以及垫片与紧固件间的摩擦力固紧的，同时，由于部分螺母、螺栓安装时没有加弹簧垫圈（见下图），经过512大地震以及上百次余震的冲击波后，非常容易使螺母与螺栓松动。</p>
+<p>走线架安装后，也经过了若干次的施工，在敷设电缆的过程中，走线架不是一个静态、缓慢受力的过程，而是受到线缆自重、拖拉线缆以及施工人员操作时产生的冲击力，这也会对螺栓螺母等紧固件产生影响，加速松动的过程。</p>
+<p>螺栓、螺母与连接件间的松动，使得连接件间有了空隙，同时由于走线架重量的缘故，使得连接件螺栓槽有了变形的空间，一旦受到外界一定的冲击力，超过其承受程度，就会使得变形加速，造成走线架的脱落。</p>
+<p>现场塌垮的走线架，是维护和施工通道一侧走线架发生侧翻，而不是走线架整体垮塌，在施工中，由于外力扰动，走线架受力不平衡，维护和施工通道一侧走线架连接件受力过大也是一个原因。</p>
+<p><img src="/post/2019-08-02-走线架垮塌事件分析_files/3.png" style="width:45.0%" style="height:45.0%" /><img src="/post/2019-08-02-走线架垮塌事件分析_files/4.png" style="width:45.0%" style="height:45.0%" /></p>
+<p><em>连接加固方式</em></p>
+<p>现场走线架吊挂有两种方式，一种为龙门架，龙门架的横担支撑两层走线架的重量，另外一种为吊挂上层走线架梁上，如下图所示</p>
+<div class="figure">
+<img src="/post/2019-08-02-走线架垮塌事件分析_files/5.png" style="width:45.0%" style="height:45.0%" />
+
+</div>
+<p>按一般要求，对于双层走线架，每层都应与吊挂连接（见下图），以免连接件集中受力，现场的走线架只有最下一层与吊挂连接，导致所有线缆的重量都压在横梁上，也导致连接件的受力过大。</p>
+<p>现场走线架另外一种的吊挂方式，这种方式致使只有连接件的螺栓受力，而整个连接件不受力，也会导致螺孔槽所受压力过大，以致变形，若连接件承托上梁下放，则受力为整个连接件以及螺栓（见下图）。</p>
+<div class="figure">
+<img src="/post/2019-08-02-走线架垮塌事件分析_files/7.png" style="width:90.0%" style="height:90.0%" />
+
+</div>
+<p>现场的走线架投入使用已多年，期间经历了512大地震以及前后若干次地震、施工布放线缆等，对走线架，尤其是连接件部位的可靠性、安全性产生了较大的影响，加上最后一次施工过程中产生外力的影响，以及吊挂件的材料与安装方式的不合理因素，导致此次事件的发生。同时，由于现场走线架是近年来采用新型材料，以往相关的规范未提及该种材料，还需对该种走线架应有的各项指标要求进行不断的实践和探索。</p>
+<p><em>有关走线架的规范</em></p>
+<ul>
+<li>YD 5026-1996《长途通信传输机房铁架槽道安装设计标准》（被YD/T 5026-2005替代）</li>
+<li>YD 5059-98《通信设备安装抗震设计规范》（被YD 5059-2005替代）</li>
+<li>YD 5060-1998《通信设备安装抗震设计图集》（被YD 5060-2010替代）</li>
+<li>YD/T 5026-2005《电信机房铁架安装设计标准》</li>
+<li>YD 5059-2005《电信设备安装抗震设计规范》</li>
+<li>YD 5060-2010《通信设备安装抗震设计图集》</li>
+</ul>
 
     </div>
 
@@ -355,17 +375,31 @@
 
     
     
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">送人玫瑰，手有余香，赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/wechatpay.jpg">
+        <span>微信支持</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/alipay.jpg">
+        <span>支付宝支持</span>
+      </label>
+  </div>
+</div>
 
     <footer class="post-footer">
-      <div class="post-tags">
-          <a href="https://blog.fallleaf.net/tags/%E8%96%84%E8%A6%86%E7%9B%96/">薄覆盖</a>
-          
-        </div>
+      
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/four-season/">
+          <a class="prev" href="/post/sparse-coverage-of-access-network/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -375,12 +409,12 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">四季</span>
+            <span class="prev-text nav-default">浅谈宽带接入网的薄覆盖</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/discover-reson-of-runway-crackdown/">
-            <span class="next-text nav-default">走线架垮塌事件分析</span>
+          <a class="next" href="/post/ran-with-lte/">
+            <span class="next-text nav-default">LTE下的RAN</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
