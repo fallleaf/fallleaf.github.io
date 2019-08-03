@@ -34,6 +34,8 @@
       
         <description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
 
+&lt;p&gt;这个网站，采用过joomla，wordpress，typecho，最终采用了RStudio+blogdown+hugo+github+coding这种形式。文章以markdow的文本形式保存，避免了采用数据库存储时迁移的一些问题。&lt;/p&gt;
+
 &lt;p&gt;我的网站，从04年开始，起先是用的二级域名，后来申请了自己的域名，断断续续，时停时开，记录了我的一段经历，中间，有高达上万的访问量，也有访问无页面的时刻，回头看来，有不少不能成为博客，只能是一种记录，总之，这个博客不为别的，只为了表明在网络世界里，我来了，我存在。&lt;/p&gt;
 </description>
       
@@ -608,6 +610,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
 
 &lt;/div&gt;
 &lt;p&gt;按一般要求，对于双层走线架，每层都应与吊挂连接（见下图），以免连接件集中受力，现场的走线架只有最下一层与吊挂连接，导致所有线缆的重量都压在横梁上，也导致连接件的受力过大。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/6.jpg&#34; style=&#34;width:90.0%&#34; style=&#34;height:90.0%&#34; /&gt;
+
+&lt;/div&gt;
 &lt;p&gt;现场走线架另外一种的吊挂方式，这种方式致使只有连接件的螺栓受力，而整个连接件不受力，也会导致螺孔槽所受压力过大，以致变形，若连接件承托上梁下放，则受力为整个连接件以及螺栓（见下图）。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
 &lt;img src=&#34;https://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/7.png&#34; style=&#34;width:90.0%&#34; style=&#34;height:90.0%&#34; /&gt;
