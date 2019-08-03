@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thinking, Writing And Waiting</title>
-    <link>http://blog.fallleaf.net/</link>
+    <link>https://blog.fallleaf.net/</link>
     <description>Recent content on Thinking, Writing And Waiting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://blog.fallleaf.net/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.fallleaf.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>旅途思绪</title>
-      <link>http://blog.fallleaf.net/post/trip-thought/</link>
+      <link>https://blog.fallleaf.net/post/trip-thought/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/trip-thought/</guid>
+      <guid>https://blog.fallleaf.net/post/trip-thought/</guid>
       
         <description>&lt;p&gt;“坐火车的时候，喜欢一直看着窗外。&lt;/p&gt;
 &lt;p&gt;我会盯着远处的房子，看着瞬间经过的人，想象这房子的住着几口人，他们都过着什么样的人生；男主人女主人是什么性格脾气，他们做着什么工作；他们经历过多少苦难，又被幸运女神眷顾过几次； 他们的孩子多大了，有过什么样的童年，还在上学还是在外工作……&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>关于我</title>
-      <link>http://blog.fallleaf.net/about/</link>
+      <link>https://blog.fallleaf.net/about/</link>
       <pubDate>Sun, 21 Jul 2019 22:46:34 +0800</pubDate>
       
-      <guid>http://blog.fallleaf.net/about/</guid>
+      <guid>https://blog.fallleaf.net/about/</guid>
       
         <description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
 
@@ -41,10 +41,10 @@
     
     <item>
       <title>用R语言做斜线图</title>
-      <link>http://blog.fallleaf.net/post/creating-slopegraph-with-r/</link>
+      <link>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/creating-slopegraph-with-r/</guid>
+      <guid>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</guid>
       
         <description>&lt;div class=&#34;section level2&#34;&gt;
 &lt;h2&gt;什么是斜线图&lt;/h2&gt;
@@ -52,12 +52,12 @@
 &lt;p&gt;Edward Tufte在1983年的著作《The Visual Display of Quantitative Information》第一次提到了斜线图，2011年6月1日他在&lt;a href=&#34;http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003nk&amp;amp;topic_id=1&#34;&gt;论坛&lt;/a&gt;里把这种表示方式正式命名为slopegraph。前期很少有人使用，不过近期使用多了起来。&lt;/p&gt;
 &lt;p&gt;先看看两个斜线图的实例。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-21-用r语言做斜率图_files/slopegraph_time.png&#34; style=&#34;width:50.0%&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-用r语言做斜率图_files/slopegraph_time.png&#34; style=&#34;width:50.0%&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;这张是网易的一个斜线图，X轴有1990年和2017年两个时间点，Y轴按慢性病伤残调整寿命年排序，显而易见，很容易看出从1990年到2017年，哪些慢性病成为了主要死因，以及这些死因排序的变化情况。一般来说，斜线图适合时间跨度比较大的数据展示。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-21-用r语言做斜率图_files/slopegraph_group.png&#34; style=&#34;width:50.0%&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-用r语言做斜率图_files/slopegraph_group.png&#34; style=&#34;width:50.0%&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;这张是引自&lt;a href=&#34;https://www.storytellingwithdata.com&#34;&gt;stroytellingwithdata&lt;/a&gt;中一篇文章&lt;a href=&#34;https://www.storytellingwithdata.com/blog/2014/03/more-on-slopegraphs&#34;&gt;more on slopegraphs&lt;/a&gt;的图，展示的是一份调查数据不同分组情况变化的斜线图，X轴是两个分组，一个是整体的（Company），一个是整体中的一部分（Team X），Y轴是不同调查内容的得分情况，可以看出某项指标在总体和个体中所处于的地位以及变化情况。&lt;/p&gt;
@@ -71,11 +71,11 @@
 &lt;p&gt;意思就是&lt;strong&gt;Slopegraphs是用来比较不同时间的一组指标的变化&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;在用到折线图或柱状图数据可视化的情况，斜线图都是一种不错的选择。例如下面分别用柱状图和斜线图表示4个公司2018年和2019年收入情况。&lt;/p&gt;
 &lt;p&gt;柱状图表示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar1-1.png&#34; width=&#34;480&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar1-1.png&#34; width=&#34;480&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;或者：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar2-1.png&#34; width=&#34;480&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/bar2-1.png&#34; width=&#34;480&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;用斜线图表示，如下&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/slopegraph-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/slopegraph-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;比较上面三个图表，显然斜线图更能给受众更加直观、清晰的可视数据。柱状图只是吧数据进行的展示，并没有在图中同时直观的展示出各公司收入的&lt;strong&gt;排名&lt;/strong&gt;和收入变化的&lt;strong&gt;幅度&lt;/strong&gt;，而斜线图上则把收入、排名、变化幅度都同时直观的展示出来了。&lt;/p&gt;
 &lt;p&gt;对比上面的柱状图和斜线图，最大的差别是柱状图的Y轴数值一般是从0开始，这也是在做折线图、柱状图的一个基本要求，如果不从零开始，就会放大变化的幅度。而斜线图的Y轴并不是从0开始的，所以更适合比较名次的变化或相对数值的变化，而不是绝对数值的变化。&lt;/p&gt;
 &lt;/div&gt;
@@ -158,10 +158,10 @@
   ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
   ThemeChoice = &amp;quot;tufte&amp;quot;
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/demo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/demo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;一般来说，斜线图是比较两个时间点或两组分类的数据可视图，但也可以比较多组数据，但一般不要过多，时间扩大最好大一些。如下图。&lt;/p&gt;
 &lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/chinaunicom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/chinaunicom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;若有什么意见和建议，请在下面留言。&lt;/p&gt;
 &lt;/div&gt;
 </description>
@@ -170,13 +170,13 @@
     
     <item>
       <title>月光——吉他曲（索尔）</title>
-      <link>http://blog.fallleaf.net/post/moonlight-sor-classical/</link>
+      <link>https://blog.fallleaf.net/post/moonlight-sor-classical/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/moonlight-sor-classical/</guid>
+      <guid>https://blog.fallleaf.net/post/moonlight-sor-classical/</guid>
       
         <description>&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-月光-吉他曲-索尔_files/moonlight.jpg&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-月光-吉他曲-索尔_files/moonlight.jpg&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;索尔（Fernando Sor,1778-1839）&lt;/p&gt;
@@ -217,17 +217,17 @@
 &lt;blockquote&gt;
 &lt;p&gt;7、记得有人说演奏此曲时应该突出旋律声部，否则就是错误的，现在您还会同意吗？充分发挥您的想象力吧，开放您的思维模式，您会得到更多的东西，但，这一切都离不开对作品合理的分析和理解！ 最后，您可能会感觉到，所谓的技巧被您心中的音乐带走了。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;五线谱下载：&lt;a href=&#34;http://blog.fallleaf.net/post/2019-07-26-月光-吉他曲-索尔_files/sor-fernando-op-35-n-22-etude-en-si-mineur.pdf&#34;&gt;月光-索尔&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;五线谱下载：&lt;a href=&#34;https://blog.fallleaf.net/post/2019-07-26-月光-吉他曲-索尔_files/sor-fernando-op-35-n-22-etude-en-si-mineur.pdf&#34;&gt;月光-索尔&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
     
     <item>
       <title>色子肖像--Python程序</title>
-      <link>http://blog.fallleaf.net/post/dice-portrait-python/</link>
+      <link>https://blog.fallleaf.net/post/dice-portrait-python/</link>
       <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/dice-portrait-python/</guid>
+      <guid>https://blog.fallleaf.net/post/dice-portrait-python/</guid>
       
         <description>上一篇色子肖像介绍了把图像变成色子点阵图的基本思路，用python语言采用PIL库写了一个程序，后来发现opencv更加简便合适，就采用numpy以及opencv库，进行了优化。&lt;/p&gt;
 &lt;p&gt;这是我第一次开始用python语言编写稍微复杂些的程序。对于有一定编程经验的人，采用实现一个功能的方式编程能够很快熟悉该语言，是一种很好的学习方式。&lt;/p&gt;
@@ -382,19 +382,19 @@ import numpy as np&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>色子肖像</title>
-      <link>http://blog.fallleaf.net/post/dice-portrait/</link>
+      <link>https://blog.fallleaf.net/post/dice-portrait/</link>
       <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/dice-portrait/</guid>
+      <guid>https://blog.fallleaf.net/post/dice-portrait/</guid>
       
         <description>&lt;p&gt;2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/caroline_portrait.png&#34; alt=&#34;caroline_portrait&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/caroline_portrait.png&#34; alt=&#34;caroline_portrait&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;caroline_portrait&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;他用了2560（40x60）个16mm的色子，制作了一个64cmx96cm的色子肖像，如下图：&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/caroline.jpg&#34; alt=&#34;caroline&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/caroline.jpg&#34; alt=&#34;caroline&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;caroline&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;他用的是Prossing语言编写的程序。近期正在学习Python，就尝试用Python来实现这一功能。&lt;/p&gt;
@@ -402,17 +402,17 @@ import numpy as np&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;我用了三种16x16的图块，如下：&lt;/p&gt;
 &lt;p&gt;灰度色块：&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/graydice.png&#34; alt=&#34;graydice&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/graydice.png&#34; alt=&#34;graydice&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;graydice&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;黑底白点色子：&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/blackdice.png&#34; alt=&#34;blackdice&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/blackdice.png&#34; alt=&#34;blackdice&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;blackdice&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;白底黑点色子：&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/whitedice.png&#34; alt=&#34;whitedice&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/whitedice.png&#34; alt=&#34;whitedice&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;whitedice&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;利用Python的PIL库（Python Image Library）以及numpy数组库，能够很容易的完成功能。&lt;/p&gt;
@@ -472,15 +472,15 @@ for y in range(y_max):
 f.close()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;按以上方法生成了三种处理后的图片，第一个是原图，第二个是灰度色块，第三个是黑底白点，第四个是白底黑点。如下图：&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/cecilia_small.png&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/cecilia_small.png&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;所用原始图片的大小为1120x1584，一共生成色子数量为70x99=6930块,若用8mm的色子制作，大小为56cmx79.2cm。 亚洲人的面部没有欧洲人立体感强，选择照片时需挑选立体感强，色差比较鲜明的图片，这样，分辨率可以低一些，色子的数量可以减少一些。另外，1-6的分组值也需要进一步优化。下图是分辨率变化的情况。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/ceciliag_gif.gif&#34; /&gt; &lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/ceciliab_gif.gif&#34; /&gt; &lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/ceciliaw_gif.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/ceciliag_gif.gif&#34; /&gt; &lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/ceciliab_gif.gif&#34; /&gt; &lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/ceciliaw_gif.gif&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这个项目正在进行中，等色子及图框到后再把制作的全过程展示一下。&lt;/p&gt;
 &lt;p&gt;续：&lt;/p&gt;
 &lt;p&gt;购买了2000个色子，用纸盒盖子做框，摆成一个肖像，远看效果好些&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/cecilia_dice1.jpg&#34; /&gt; &lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-色子肖像_files/cecilia_dice2.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/cecilia_dice1.jpg&#34; /&gt; &lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-色子肖像_files/cecilia_dice2.jpg&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;源代码放到了&lt;a href=&#34;https://github.com/fallleaf/dice_portrait&#34;&gt;GitHub&lt;/a&gt;上，做了些改动，采用opencv做图像处理。&lt;/p&gt;
 </description>
       
@@ -488,27 +488,27 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Memory系列-1</title>
-      <link>http://blog.fallleaf.net/post/memory-series-1/</link>
+      <link>https://blog.fallleaf.net/post/memory-series-1/</link>
       <pubDate>Fri, 12 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/memory-series-1/</guid>
+      <guid>https://blog.fallleaf.net/post/memory-series-1/</guid>
       
         <description>&lt;/p&gt;
 &lt;p&gt;这段时间练习了Per-Olov Kindgren的三首古典吉他小品：Why、A Touch of Love、I Miss You，统一合成专辑“Memory”，后期还会陆续的有曲子加入。在5sing网上也有我上传的专辑&lt;a href=&#34;http://5sing.kugou.com/55832651/default.html&#34;&gt;fallleaf的音乐&lt;/a&gt;。这三首曲子仅仅是把声音正确的弹了出来，期待后面的曲子的表现力会有一个飞跃。&lt;/p&gt;
 &lt;p&gt;有人说纯粹的音乐仅仅在于声音的组合和运度，是不要标题的。只有这样才能激发听者的心灵，以旺盛的想象力和生命力在一个虚拟而自足的世界里与音乐交流。这三首曲子，它的声音的组合和运用也与我们的某些情感共鸣，恰如其分的反映了标题的意义。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Why&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;至那些从未问起的为什么以及那些也永远不会回复的为什么&lt;/p&gt;
-&lt;audio src=&#34;http://blog.fallleaf.net/post/2019-07-27-memory系列-1_files/04-Why.mp3&#34; controls=&#34;controls&#34;&gt;
+&lt;audio src=&#34;https://blog.fallleaf.net/post/2019-07-27-memory系列-1_files/04-Why.mp3&#34; controls=&#34;controls&#34;&gt;
 你的浏览器不支持HTML5
 &lt;/audio&gt;
 &lt;p&gt;&lt;strong&gt;A Touch of Love&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;你能感觉到吗&lt;/p&gt;
-&lt;audio src=&#34;http://blog.fallleaf.net/post/2019-07-27-memory系列-1_files/02-A Touch Of Love.mp3&#34; controls=&#34;controls&#34;&gt;
+&lt;audio src=&#34;https://blog.fallleaf.net/post/2019-07-27-memory系列-1_files/02-A Touch Of Love.mp3&#34; controls=&#34;controls&#34;&gt;
 你的浏览器不支持HTML5
 &lt;/audio&gt;
 &lt;p&gt;&lt;strong&gt;I Miss You&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;真的，我想你了&lt;/p&gt;
-&lt;audio src=&#34;http://blog.fallleaf.net/post/2019-07-27-memory系列-1_files/01-I Miss You.mp3&#34; controls=&#34;controls&#34;&gt;
+&lt;audio src=&#34;https://blog.fallleaf.net/post/2019-07-27-memory系列-1_files/01-I Miss You.mp3&#34; controls=&#34;controls&#34;&gt;
 你的浏览器不支持HTML5
 &lt;/audio&gt;
 </description>
@@ -517,19 +517,19 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>2014、2015年出差数据</title>
-      <link>http://blog.fallleaf.net/post/2014-2015-business-trip-infomation/</link>
+      <link>https://blog.fallleaf.net/post/2014-2015-business-trip-infomation/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/2014-2015-business-trip-infomation/</guid>
+      <guid>https://blog.fallleaf.net/post/2014-2015-business-trip-infomation/</guid>
       
         <description>&lt;p&gt;用gephi以及excel做了一个2014年、2015年出差的图表。可以反映出工作的变化。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-2014-2015年出差数据_files/2014-trip.jpg&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-2014-2015年出差数据_files/2014-trip.jpg&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;2014年是比较繁忙的一年，尤其是年底，基本是在飞机、宾馆、会议室之间穿梭。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-2014-2015年出差数据_files/2015-trip.jpg&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-2014-2015年出差数据_files/2015-trip.jpg&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;2015年就比较轻松，但是无效劳动居多&lt;/p&gt;
@@ -539,17 +539,17 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>四季</title>
-      <link>http://blog.fallleaf.net/post/four-season/</link>
+      <link>https://blog.fallleaf.net/post/four-season/</link>
       <pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/four-season/</guid>
+      <guid>https://blog.fallleaf.net/post/four-season/</guid>
       
         <description>&lt;p&gt;曾醉过春天温馨的风&lt;/p&gt;
 &lt;p&gt;却错过夏天娇艳的花&lt;/p&gt;
 &lt;p&gt;想珍藏秋天成熟的叶&lt;/p&gt;
 &lt;p&gt;要留住冬天洁白的雪&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-22-四季_files/four-seasons.jpg&#34; alt=&#34;四季&#34; style=&#34;width:50.0%&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-22-四季_files/four-seasons.jpg&#34; alt=&#34;四季&#34; style=&#34;width:50.0%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;四季&lt;/p&gt;
 &lt;/div&gt;
 </description>
@@ -558,10 +558,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>浅谈宽带接入网的薄覆盖</title>
-      <link>http://blog.fallleaf.net/post/sparse-coverage-of-access-network/</link>
+      <link>https://blog.fallleaf.net/post/sparse-coverage-of-access-network/</link>
       <pubDate>Wed, 21 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/sparse-coverage-of-access-network/</guid>
+      <guid>https://blog.fallleaf.net/post/sparse-coverage-of-access-network/</guid>
       
         <description>&lt;p&gt;在宽带接入网工程中，常常会出现关于覆盖的几种说法，如“全覆盖”，“深覆盖”，“薄覆盖”等，其概念各不相同，各自的理解也不同，依据目前我的经验，谈谈一点看法。&lt;/p&gt;
 &lt;p&gt;在很多资料里，“全覆盖”和“薄覆盖”是相对出现，是从工程建设界面的角度来定义的。&lt;/p&gt;
@@ -580,37 +580,37 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>走线架垮塌事件分析</title>
-      <link>http://blog.fallleaf.net/post/discover-reson-of-runway-crackdown/</link>
+      <link>https://blog.fallleaf.net/post/discover-reson-of-runway-crackdown/</link>
       <pubDate>Tue, 01 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/discover-reson-of-runway-crackdown/</guid>
+      <guid>https://blog.fallleaf.net/post/discover-reson-of-runway-crackdown/</guid>
       
         <description>某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑：&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/runwaycrackdown.jpg&#34; style=&#34;width:90.0%&#34; style=&#34;height:90.0%&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/runwaycrackdown.jpg&#34; style=&#34;width:90.0%&#34; style=&#34;height:90.0%&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;材料方面&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;从现场情况看，吊杆与天花板未脱落，吊杆亦未发生拉伸变形及断裂，可认为吊杆的强度是足够的，主要问题就在于吊杆与走线架的连接件上。&lt;/p&gt;
 &lt;p&gt;连接件作为连接与支持走线架的零件，受力要比走线架大得多，所使用材料强度应高于走线架所用材料的强度，从现场来看，所使用材料均为同一规格，厚度为2mm。按YD5026-95和YD/T5026-2005《电信机房铁架安装设计标准》的要求，所采用铁件一般为50x50x5mm。&lt;/p&gt;
 &lt;p&gt;从螺栓与连接件的紧固方式看，连接件的受力面积主要是螺栓垫片与连接件的接触面积，从照片上看，螺栓垫圈小，致使连接件单位面积受力过大，超过连接件的受力特性，造成了螺孔槽受压力作用变形并扩张。目前走线架所用螺栓规格为M6，规范要求的螺栓规格为M8和M10和M12，&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/1.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/2.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/1.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/2.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;地震及受力的影响&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;从512大地震以来，该地区陆续发生了大大小小的上百次的余震。大地震和余震产生地震波，使走线架上下及左右震动，长期处于一种不稳定状态。螺栓、螺母与连接件的紧固，是靠螺栓、螺母以及垫片与紧固件间的摩擦力固紧的，同时，由于部分螺母、螺栓安装时没有加弹簧垫圈（见下图），经过512大地震以及上百次余震的冲击波后，非常容易使螺母与螺栓松动。&lt;/p&gt;
 &lt;p&gt;走线架安装后，也经过了若干次的施工，在敷设电缆的过程中，走线架不是一个静态、缓慢受力的过程，而是受到线缆自重、拖拉线缆以及施工人员操作时产生的冲击力，这也会对螺栓螺母等紧固件产生影响，加速松动的过程。&lt;/p&gt;
 &lt;p&gt;螺栓、螺母与连接件间的松动，使得连接件间有了空隙，同时由于走线架重量的缘故，使得连接件螺栓槽有了变形的空间，一旦受到外界一定的冲击力，超过其承受程度，就会使得变形加速，造成走线架的脱落。&lt;/p&gt;
 &lt;p&gt;现场塌垮的走线架，是维护和施工通道一侧走线架发生侧翻，而不是走线架整体垮塌，在施工中，由于外力扰动，走线架受力不平衡，维护和施工通道一侧走线架连接件受力过大也是一个原因。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/3.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;&lt;img src=&#34;http://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/4.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/3.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/4.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;连接加固方式&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;现场走线架吊挂有两种方式，一种为龙门架，龙门架的横担支撑两层走线架的重量，另外一种为吊挂上层走线架梁上，如下图所示&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/5.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/5.png&#34; style=&#34;width:45.0%&#34; style=&#34;height:45.0%&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;按一般要求，对于双层走线架，每层都应与吊挂连接（见下图），以免连接件集中受力，现场的走线架只有最下一层与吊挂连接，导致所有线缆的重量都压在横梁上，也导致连接件的受力过大。&lt;/p&gt;
 &lt;p&gt;现场走线架另外一种的吊挂方式，这种方式致使只有连接件的螺栓受力，而整个连接件不受力，也会导致螺孔槽所受压力过大，以致变形，若连接件承托上梁下放，则受力为整个连接件以及螺栓（见下图）。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/7.png&#34; style=&#34;width:90.0%&#34; style=&#34;height:90.0%&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-08-02-走线架垮塌事件分析_files/7.png&#34; style=&#34;width:90.0%&#34; style=&#34;height:90.0%&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;现场的走线架投入使用已多年，期间经历了512大地震以及前后若干次地震、施工布放线缆等，对走线架，尤其是连接件部位的可靠性、安全性产生了较大的影响，加上最后一次施工过程中产生外力的影响，以及吊挂件的材料与安装方式的不合理因素，导致此次事件的发生。同时，由于现场走线架是近年来采用新型材料，以往相关的规范未提及该种材料，还需对该种走线架应有的各项指标要求进行不断的实践和探索。&lt;/p&gt;
@@ -629,10 +629,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>LTE下的RAN</title>
-      <link>http://blog.fallleaf.net/post/ran-with-lte/</link>
+      <link>https://blog.fallleaf.net/post/ran-with-lte/</link>
       <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/ran-with-lte/</guid>
+      <guid>https://blog.fallleaf.net/post/ran-with-lte/</guid>
       
         <description>R5版本的RAN，NODE B到RNC之间只有Iub接口，基站间没有互联，Iub可以看做是一个端到端的链接，目前采用PTN传送，已经没有异议了，但在LTE环境下，eNODE到MME/S-GW是S1接口，类似Iub接口，但相邻的eNODE之间有了X2互联接口，那么LTE环境下的RAN该采用何种技术？PTN是否仍然合适？是否需要新建一个基于三层技术的IP RAN呢？&lt;/p&gt;
 &lt;p&gt;E2E时延： S1&amp;lt;10ms X2&amp;lt;20ms —–3GPP TR R3.018&lt;/p&gt;
@@ -650,10 +650,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>宗教和逻辑</title>
-      <link>http://blog.fallleaf.net/post/religion-adn-logic/</link>
+      <link>https://blog.fallleaf.net/post/religion-adn-logic/</link>
       <pubDate>Thu, 08 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/religion-adn-logic/</guid>
+      <guid>https://blog.fallleaf.net/post/religion-adn-logic/</guid>
       
         <description>对于基督、穆斯林信徒来说，必须回答“神是存在的。”，倘若回答了不存在，那就是无神论者。但佛教信徒则不同，即便回答“佛不存在”，“哪里会有佛”，“佛不过是草芥”，也可能是地地道道的佛教徒。&lt;/p&gt;
 &lt;p&gt;引自《给讨厌数学的人：数学的奥秘和生活》&lt;/p&gt;
@@ -663,10 +663,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>卡宾达树皮</title>
-      <link>http://blog.fallleaf.net/post/pau-de-cabinda/</link>
+      <link>https://blog.fallleaf.net/post/pau-de-cabinda/</link>
       <pubDate>Sun, 05 Aug 2007 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/pau-de-cabinda/</guid>
+      <guid>https://blog.fallleaf.net/post/pau-de-cabinda/</guid>
       
         <description>&lt;p&gt;安哥拉盛产石油和原钻，不过一般人都带不走，其他还有黑木以及象牙首饰，这些东西其他非洲国家也有，而且还可能遇到假货或法律问题，那还有什么可以当做礼物的本地特产呢？答案是肯定的，而且越来越多来安哥拉的人点名要这个，越来越多的驻安中国公司把它当做礼物。这个东西就是–PAU DE CABINDA （卡宾达树皮）。估计以后就会“今年过年不送礼，要送就送老树皮”，至于它的作用，那是“谁用谁知道”。&lt;/p&gt;
 &lt;p&gt;卡宾达树皮，产自安哥拉卡宾达省，据说世界上只有这个地方有这种树，才产这种树皮。当地部落把这种东西当做一种天然的春药，在一些部落里，还成为送给新婚人的礼物。&lt;/p&gt;
@@ -689,10 +689,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>LOBITO,BENGUELA的吃住行</title>
-      <link>http://blog.fallleaf.net/post/living-in-lobitobenguela/</link>
+      <link>https://blog.fallleaf.net/post/living-in-lobitobenguela/</link>
       <pubDate>Mon, 19 Feb 2007 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/living-in-lobitobenguela/</guid>
+      <guid>https://blog.fallleaf.net/post/living-in-lobitobenguela/</guid>
       
         <description>&lt;p&gt;前几个星期到BENGUELA、LOBITO、HUAMBO和KUITO四个城市转了转，回来后把当地的一些情况记录下来，供感兴趣的了解。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BENGUELA：&lt;/strong&gt;&lt;/p&gt;
@@ -722,10 +722,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>我的PROJECT 365</title>
-      <link>http://blog.fallleaf.net/post/my-project-365/</link>
+      <link>https://blog.fallleaf.net/post/my-project-365/</link>
       <pubDate>Thu, 04 Jan 2007 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/my-project-365/</guid>
+      <guid>https://blog.fallleaf.net/post/my-project-365/</guid>
       
         <description>这几天看了几个有关PROJECT 365的帖子，颇为心动。2007年已经到来了，该定下今年的一些目标了，那么其中的一个目标就是PROJECT 365。&lt;/p&gt;
 &lt;p&gt;PROJECT 365简单的说就是每天照几张照片，并且坚持一年。照相可以每天固定在一个特定的时间，也可以固定在一个特定的地方，也可以固定与一个特定的物体。比如每天的自拍像，每天路口的情况等等。我计划每天拍3张照片，一张是每天上午10点左右的自拍像，选择这个时间，我想是最能反应我当时的情况，另外两张拍的是一天内有意义的事情，比如外出吃饭，工作，游玩等。这样持续一年时间，到年底的时候，一定会发现巨大的意义。&lt;/p&gt;
@@ -766,10 +766,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>通信设计院杂谈</title>
-      <link>http://blog.fallleaf.net/post/something-about-telecom-design-institue/</link>
+      <link>https://blog.fallleaf.net/post/something-about-telecom-design-institue/</link>
       <pubDate>Thu, 07 Dec 2006 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/something-about-telecom-design-institue/</guid>
+      <guid>https://blog.fallleaf.net/post/something-about-telecom-design-institue/</guid>
       
         <description>在TelReading的BBS 上，网友shejiyuan 写了一片关于设计院间比较的文章，挺不错的， 摘录给大家阅读。&lt;/p&gt;
 &lt;p&gt;原文链接地址为http://bbs.telreading.com/thread-3820-1-1.html 。&lt;/p&gt;
@@ -795,10 +795,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>预防RSI的利器</title>
-      <link>http://blog.fallleaf.net/post/a-tool-for-preventing-rsi/</link>
+      <link>https://blog.fallleaf.net/post/a-tool-for-preventing-rsi/</link>
       <pubDate>Wed, 06 Dec 2006 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/a-tool-for-preventing-rsi/</guid>
+      <guid>https://blog.fallleaf.net/post/a-tool-for-preventing-rsi/</guid>
       
         <description>RSI，英文全名叫Repetitive Strain Injury或者为Repetitive Stress Injury，中文意思为重复性压迫损伤。它是由于从事重复性活动或不良姿势而造成的对腱、神经、肌肉和其它软组织的损伤，它的损害可归结为肌肉纤维的结构性变化和血流量减少，神经也不幸被牵扯其中，不活动的组织和周围的炎症压迫着神经，能够引起肢体失去知觉和酸麻，在神经损坏严重时最终变得脆弱。RSI 不是一种特定症状的名称，它是一类具有相同特点的症状的集合，如腕管综合征（CTS，Carpal tunnel syndroma），俗称“鼠标手”，腱鞘炎，奎缅综合征（DeQuervain’s syndrome），肘管综合症（cubital tunnel syndrome），胸廓出口综合征（thoracic outlet syndrome)等。它是一种职业性疾病，经常发生在从事重复性劳动的人群中，如流水线上的工人、IT行业人士、键盘手以及短信狂等。典型症状如颈部、四肢和背部的疼痛，手腕无力、手指麻木、疼痛，无法举双肩，眼睛模糊、酸疼等，对于从事计算机行业的人群中，以腕管综合征（CTS）最普遍。&lt;/p&gt;
 &lt;p&gt;对于长时间进行计算机操作的人员，预防RSI，可参照以下的方法：&lt;/p&gt;
@@ -810,36 +810,36 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;－ 如果开始觉得疼痛或疼痛持续，应及早治疗。&lt;/p&gt;
 &lt;p&gt;采用软件来帮助预防RSI，是一种有效的方法。常见的付费软件有WorkPace、&lt;a href=&#34;mailto:fit@work&#34;&gt;fit@work&lt;/a&gt;、RSIguard和A.R.M.S（Avoid Repetitive Motion Syndrome），免费开源的软件有Workrave、type-break-mode等。这里要介绍的软件是Workrave。&lt;/p&gt;
 &lt;p&gt;Workrave是一个预防和消除RSI的软件，它遵循遵循GPL规定，可在Microsoft Windows以及Linux下运行。它的网站地址为&lt;a href=&#34;http://www.workrave.org&#34; class=&#34;uri&#34;&gt;http://www.workrave.org&lt;/a&gt; ，可到去&lt;a href=&#34;http://www.workrave.org/download/&#34; class=&#34;uri&#34;&gt;http://www.workrave.org/download/&lt;/a&gt; 下载程序和代码，截至2006年12月6日，当前的版本是1.8.3。它可根据你设定好的时间间隔，让你小憩（micro-pauses）、休息 （rest breaks）以及工作时间（daily limit），并且可以弹出画面指导你进行运动。它具有统计功能，可以统计你每天的休息的情况、鼠标点击的次数、移动的距离以及敲击键盘的次数等。它还具有联网功能，使在网上的计算机都具有相同的设置，方便你在其他计算机上工作时，仍能够依照原来的设置进行休息。&lt;/p&gt;
-&lt;p&gt;下图是Workrave的设置页面，包括定时器的设置，用户界面的设置，以及网络设置。 &lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/preferences.gif&#34; alt=&#34;Preferences&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;下图是Workrave的设置页面，包括定时器的设置，用户界面的设置，以及网络设置。 &lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/preferences.gif&#34; alt=&#34;Preferences&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;定时器设置包括小憩、休息和工作时间的设置，以小憩为例，可设置小憩间的时间间隔（time before break)，小憩的持续时间（pause duration），延后时间（post-pone time），还可设置时候显示取消或延后按钮（show “post－pone” and “skip” button），这个选项可防止不遵守设置时间的行为，另外，还可设置是否扣除不活动的时间（suspend timer when inactive），此项避免人不在的时候仍然计时，一般当键盘或鼠标5－6秒没有动作的时候才停止计时。&lt;/p&gt;
 &lt;p&gt;下面的图形是Workrave的主窗口，手型图案为小憩的图标，茶图案为休息的时间，退出图案为剩余工作时间。也可将该窗口关闭，显示在工具栏中。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/main-window.png&#34; alt=&#34;Main window&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/main-window.png&#34; alt=&#34;Main window&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Main window&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;这个闪烁的窗口提醒你该小憩了。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/prelude.gif&#34; alt=&#34;Prelude window&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/prelude.gif&#34; alt=&#34;Prelude window&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Prelude window&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;这是小憩时间的窗口，你可以去到杯水，或闭上眼，这个窗口有取消(skip)和延时(postpone)两个按钮，当然，你也可以在设置页中取消它，这样你就不得不遵守这些时间了。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/micro-pause.png&#34; alt=&#34;Micro-pause&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/micro-pause.png&#34; alt=&#34;Micro-pause&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Micro-pause&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;下图告诉你该好好休息了，可以去做操，散步，去喝杯咖啡，嫌时间不够吗，可以在设置页中增加。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/rest-break.png&#34; alt=&#34;Rest break&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/rest-break.png&#34; alt=&#34;Rest break&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Rest break&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;呵呵，今天工作时间结束了，如果你还想工作，不如远离计算机，看看其他文件什么的。注意，时间可别设置的太短了，不然，还得重启计算机才行。也别设置的太长了，要防止”过劳死“。！）&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/daily-limit.png&#34; alt=&#34;Daily limit&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/daily-limit.png&#34; alt=&#34;Daily limit&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Daily limit&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;跟着一起做操吧。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/exercises.gif&#34; alt=&#34;Exercises&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-预防rsi的利器_files/exercises.gif&#34; alt=&#34;Exercises&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Exercises&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;在时间的设置上，我一般设置10分钟间隔一小憩，小憩时间2分钟，60分钟一休息，休息时间为10分钟，这个是参照“用(10+2)*5法来对付惰性”进行设置的，你也可以根据你的习惯设置。&lt;/p&gt;
@@ -850,10 +850,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>安哥拉的货币</title>
-      <link>http://blog.fallleaf.net/post/bill-of-angola/</link>
+      <link>https://blog.fallleaf.net/post/bill-of-angola/</link>
       <pubDate>Mon, 27 Nov 2006 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/bill-of-angola/</guid>
+      <guid>https://blog.fallleaf.net/post/bill-of-angola/</guid>
       
         <description>安哥拉的货币是宽扎，目前的汇率一美元折合80宽扎，一元人民币折合约为十宽扎，基本上在罗安达零售价格在一元人民币的日用物品的价格是一美元到一百宽扎，也就是说在国内一块钱的东西，这里要一美元才能买到。&lt;/p&gt;
 &lt;p&gt;安哥拉的货币有纸币和硬币两种，纸币分为2000KZ，1000KZ，500KZ，200KZ，100KZ，50KZ，10KZ，5KZ八种，硬币有2KZ和1KZ（还没见过）两种。下图是安哥拉纸币。纸币上的侧面人像，是安哥拉独立后的两任总统，外面的是第一任内图，里面的是第二任，现任总统多斯桑托斯。安哥拉钱币是不能带出境的。&lt;/p&gt;
@@ -875,10 +875,10 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>安哥拉中部行记2(Lobito-Benguela)</title>
-      <link>http://blog.fallleaf.net/post/trip-to-middle-of-angola-2lobito-benguela/</link>
+      <link>https://blog.fallleaf.net/post/trip-to-middle-of-angola-2lobito-benguela/</link>
       <pubDate>Sat, 25 Nov 2006 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/trip-to-middle-of-angola-2lobito-benguela/</guid>
+      <guid>https://blog.fallleaf.net/post/trip-to-middle-of-angola-2lobito-benguela/</guid>
       
         <description>&lt;p&gt;早晨起来，到楼下吃早餐。这里的房价太贵了，据司机说，他们晚上是睡在车里的。吃完饭，就退房上车，手续很快，也就是把钥匙交上去，来之前听说黑人算账很 慢，所以昨天晚上就发把票要了，但住宿手续比较复杂，除了要先交钱，还要填一堆住宿的表格，有的HOTEL是一个房间一个表格，有的是一个人一个表格，遇到比较死板的，还要填那种专给外国人的表格，不把这些手续办好，休想先拿钥匙，一般都要花个半小时以上时间。&lt;/p&gt;
 &lt;p&gt;LOBITO，安哥拉西海岸中部城市，是安哥拉第二大港口，也是链接刚果的BENGUELA铁路的终点。LOBITO由葡萄牙人建于1843年。&lt;/p&gt;

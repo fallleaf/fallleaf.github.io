@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据可视化 on Thinking, Writing And Waiting</title>
-    <link>http://blog.fallleaf.net/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+    <link>https://blog.fallleaf.net/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
     <description>Recent content in 数据可视化 on Thinking, Writing And Waiting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://blog.fallleaf.net/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.fallleaf.net/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>用R语言做斜线图</title>
-      <link>http://blog.fallleaf.net/post/creating-slopegraph-with-r/</link>
+      <link>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.fallleaf.net/post/creating-slopegraph-with-r/</guid>
+      <guid>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</guid>
       <description>
 
 
