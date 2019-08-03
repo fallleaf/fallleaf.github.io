@@ -2,192 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Thinking, Writing And Waiting</title>
-    <link>https://blog.fallleaf.net/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Thinking, Writing And Waiting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.fallleaf.net/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>25G</title>
+      <link>/tags/25g/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/25g/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>5G</title>
+      <link>/tags/5g/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/5g/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BiDi</title>
+      <link>/tags/bidi/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bidi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>单纤双向</title>
+      <link>/tags/%E5%8D%95%E7%BA%A4%E5%8F%8C%E5%90%91/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E5%8D%95%E7%BA%A4%E5%8F%8C%E5%90%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>思绪</title>
-      <link>https://blog.fallleaf.net/tags/%E6%80%9D%E7%BB%AA/</link>
+      <link>/tags/%E6%80%9D%E7%BB%AA/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E6%80%9D%E7%BB%AA/</guid>
+      <guid>/tags/%E6%80%9D%E7%BB%AA/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R语言</title>
-      <link>https://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/</link>
+      <link>/tags/r%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/</guid>
+      <guid>/tags/r%E8%AF%AD%E8%A8%80/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data visualization</title>
-      <link>https://blog.fallleaf.net/tags/data-visualization/</link>
+      <link>/tags/data-visualization/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/data-visualization/</guid>
+      <guid>/tags/data-visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>slopegraph</title>
-      <link>https://blog.fallleaf.net/tags/slopegraph/</link>
+      <link>/tags/slopegraph/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/slopegraph/</guid>
+      <guid>/tags/slopegraph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>数据可视化</title>
-      <link>https://blog.fallleaf.net/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <link>/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <guid>/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
       <description></description>
     </item>
     
     <item>
       <title>斜线图</title>
-      <link>https://blog.fallleaf.net/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/</link>
+      <link>/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/</guid>
+      <guid>/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/</guid>
       <description></description>
     </item>
     
     <item>
       <title>吉他</title>
-      <link>https://blog.fallleaf.net/tags/%E5%90%89%E4%BB%96/</link>
+      <link>/tags/%E5%90%89%E4%BB%96/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E5%90%89%E4%BB%96/</guid>
+      <guid>/tags/%E5%90%89%E4%BB%96/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://blog.fallleaf.net/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>肖像</title>
-      <link>https://blog.fallleaf.net/tags/%E8%82%96%E5%83%8F/</link>
+      <link>/tags/%E8%82%96%E5%83%8F/</link>
       <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E8%82%96%E5%83%8F/</guid>
+      <guid>/tags/%E8%82%96%E5%83%8F/</guid>
       <description></description>
     </item>
     
     <item>
       <title>色子</title>
-      <link>https://blog.fallleaf.net/tags/%E8%89%B2%E5%AD%90/</link>
+      <link>/tags/%E8%89%B2%E5%AD%90/</link>
       <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E8%89%B2%E5%AD%90/</guid>
+      <guid>/tags/%E8%89%B2%E5%AD%90/</guid>
       <description></description>
     </item>
     
     <item>
       <title>出差</title>
-      <link>https://blog.fallleaf.net/tags/%E5%87%BA%E5%B7%AE/</link>
+      <link>/tags/%E5%87%BA%E5%B7%AE/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E5%87%BA%E5%B7%AE/</guid>
+      <guid>/tags/%E5%87%BA%E5%B7%AE/</guid>
       <description></description>
     </item>
     
     <item>
       <title>薄覆盖</title>
-      <link>https://blog.fallleaf.net/tags/%E8%96%84%E8%A6%86%E7%9B%96/</link>
+      <link>/tags/%E8%96%84%E8%A6%86%E7%9B%96/</link>
       <pubDate>Wed, 21 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E8%96%84%E8%A6%86%E7%9B%96/</guid>
+      <guid>/tags/%E8%96%84%E8%A6%86%E7%9B%96/</guid>
       <description></description>
     </item>
     
     <item>
       <title>走线架</title>
-      <link>https://blog.fallleaf.net/tags/%E8%B5%B0%E7%BA%BF%E6%9E%B6/</link>
+      <link>/tags/%E8%B5%B0%E7%BA%BF%E6%9E%B6/</link>
       <pubDate>Tue, 01 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E8%B5%B0%E7%BA%BF%E6%9E%B6/</guid>
+      <guid>/tags/%E8%B5%B0%E7%BA%BF%E6%9E%B6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LTE</title>
-      <link>https://blog.fallleaf.net/tags/lte/</link>
+      <link>/tags/lte/</link>
       <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/lte/</guid>
+      <guid>/tags/lte/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RAN</title>
-      <link>https://blog.fallleaf.net/tags/ran/</link>
+      <link>/tags/ran/</link>
       <pubDate>Mon, 12 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/ran/</guid>
+      <guid>/tags/ran/</guid>
       <description></description>
     </item>
     
     <item>
       <title>宗教</title>
-      <link>https://blog.fallleaf.net/tags/%E5%AE%97%E6%95%99/</link>
+      <link>/tags/%E5%AE%97%E6%95%99/</link>
       <pubDate>Thu, 08 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/tags/%E5%AE%97%E6%95%99/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>逻辑</title>
-      <link>https://blog.fallleaf.net/tags/%E9%80%BB%E8%BE%91/</link>
-      <pubDate>Thu, 08 Jul 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fallleaf.net/tags/%E9%80%BB%E8%BE%91/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>卡宾达树皮</title>
-      <link>https://blog.fallleaf.net/tags/%E5%8D%A1%E5%AE%BE%E8%BE%BE%E6%A0%91%E7%9A%AE/</link>
-      <pubDate>Sun, 05 Aug 2007 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fallleaf.net/tags/%E5%8D%A1%E5%AE%BE%E8%BE%BE%E6%A0%91%E7%9A%AE/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>benguela</title>
-      <link>https://blog.fallleaf.net/tags/benguela/</link>
-      <pubDate>Mon, 19 Feb 2007 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fallleaf.net/tags/benguela/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lobito</title>
-      <link>https://blog.fallleaf.net/tags/lobito/</link>
-      <pubDate>Mon, 19 Feb 2007 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fallleaf.net/tags/lobito/</guid>
+      <guid>/tags/%E5%AE%97%E6%95%99/</guid>
       <description></description>
     </item>
     

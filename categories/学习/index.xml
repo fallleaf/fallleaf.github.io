@@ -2,21 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习 on Thinking, Writing And Waiting</title>
-    <link>https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/</link>
+    <link>/categories/%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 学习 on Thinking, Writing And Waiting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>25G单纤双向收发合一光模块</title>
+      <link>/post/25g-bidi-optical-transceiver-module/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/25g-bidi-optical-transceiver-module/</guid>
+      <description>
+
+
+&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>用R语言做斜线图</title>
-      <link>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</link>
+      <link>/post/creating-slopegraph-with-r/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</guid>
+      <guid>/post/creating-slopegraph-with-r/</guid>
       <description>
 
 
@@ -26,10 +39,10 @@
     
     <item>
       <title>色子肖像--Python程序</title>
-      <link>https://blog.fallleaf.net/post/dice-portrait-python/</link>
+      <link>/post/dice-portrait-python/</link>
       <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/dice-portrait-python/</guid>
+      <guid>/post/dice-portrait-python/</guid>
       <description>
 
 
@@ -38,10 +51,10 @@
     
     <item>
       <title>色子肖像</title>
-      <link>https://blog.fallleaf.net/post/dice-portrait/</link>
+      <link>/post/dice-portrait/</link>
       <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/dice-portrait/</guid>
+      <guid>/post/dice-portrait/</guid>
       <description>
 
 

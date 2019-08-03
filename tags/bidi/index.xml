@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BiDi on Thinking, Writing And Waiting</title>
+    <link>/tags/bidi/</link>
+    <description>Recent content in BiDi on Thinking, Writing And Waiting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 03 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bidi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>25G单纤双向收发合一光模块</title>
+      <link>/post/25g-bidi-optical-transceiver-module/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/25g-bidi-optical-transceiver-module/</guid>
+      <description>
+
+
+&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
