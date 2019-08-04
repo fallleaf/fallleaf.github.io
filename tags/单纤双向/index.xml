@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>单纤双向 on Thinking, Writing And Waiting</title>
-    <link>/tags/%E5%8D%95%E7%BA%A4%E5%8F%8C%E5%90%91/</link>
-    <description>Recent content in 单纤双向 on Thinking, Writing And Waiting</description>
+    <title>单纤双向 on Reading,Thinking And Writing</title>
+    <link>https://blog.fallleaf.net/tags/%E5%8D%95%E7%BA%A4%E5%8F%8C%E5%90%91/</link>
+    <description>Recent content in 单纤双向 on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 03 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/%E5%8D%95%E7%BA%A4%E5%8F%8C%E5%90%91/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.fallleaf.net/tags/%E5%8D%95%E7%BA%A4%E5%8F%8C%E5%90%91/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>25G单纤双向收发合一光模块</title>
-      <link>/post/25g-bidi-optical-transceiver-module/</link>
+      <link>https://blog.fallleaf.net/post/25g-bidi-optical-transceiver-module/</link>
       <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/25g-bidi-optical-transceiver-module/</guid>
+      <guid>https://blog.fallleaf.net/post/25g-bidi-optical-transceiver-module/</guid>
       <description>
 
 
