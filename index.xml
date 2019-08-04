@@ -59,8 +59,14 @@
 &lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; —— 维护冗余,工程中维护冗余按 3dB 计算。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;按平均发光功率的统计数据计算，得出：&lt;/p&gt;
-&lt;p&gt;-10km模块最大线路衰减： &lt;span class=&#34;math inline&#34;&gt;\(P_o-S_i-E= 4.0-2.7-(-13)=14.4dB\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;-15km模块最大线路衰减： &lt;span class=&#34;math inline&#34;&gt;\(P_o-S_i-E= 6.0-2.7-(-13)=17.4dB\)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10km模块最大线路衰减：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(P_o-S_i-E= 4.0-2.7-(-13)=14.4dB\)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;15km模块最大线路衰减：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(P_o-S_i-E= 6.0-2.7-(-13)=17.4dB\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;即当光缆线路端到端衰减大于&lt;span class=&#34;math inline&#34;&gt;\(14.4dB\)&lt;/span&gt;时，应选用15km单纤双向光模块。&lt;/p&gt;
 </description>
       
