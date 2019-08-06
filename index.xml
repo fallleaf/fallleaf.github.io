@@ -135,7 +135,7 @@
 &lt;/div&gt;
 &lt;p&gt;这张是网易的一个斜线图，X轴有1990年和2017年两个时间点，Y轴按慢性病伤残调整寿命年排序，显而易见，很容易看出从1990年到2017年，哪些慢性病成为了主要死因，以及这些死因排序的变化情况。一般来说，斜线图适合时间跨度比较大的数据展示。&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-用r语言做斜率图_files/slopegraph_group.png&#34; style=&#34;width:50.0%&#34; /&gt;
+&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-用r语言做斜率图_files/slopegraph_group.png&#34; style=&#34;width:80.0%&#34; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;这张是引自&lt;a href=&#34;https://www.storytellingwithdata.com&#34;&gt;stroytellingwithdata&lt;/a&gt;中一篇文章&lt;a href=&#34;https://www.storytellingwithdata.com/blog/2014/03/more-on-slopegraphs&#34;&gt;more on slopegraphs&lt;/a&gt;的图，展示的是一份调查数据不同分组情况变化的斜线图，X轴是两个分组，一个是整体的（Company），一个是整体中的一部分（Team X），Y轴是不同调查内容的得分情况，可以看出某项指标在总体和个体中所处于的地位以及变化情况。&lt;/p&gt;
@@ -237,10 +237,9 @@
   ThemeChoice = &amp;quot;tufte&amp;quot;
   )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/demo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;一般来说，斜线图是比较两个时间点或两组分类的数据可视图，但也可以比较多组数据，但一般不要过多，时间扩大最好大一些。如下图。&lt;/p&gt;
+&lt;p&gt;一般来说，斜线图是比较两个时间点或两组分类的数据可视图，但也可以用来比较多个时间点，但一般不要过多，一般三、四个，时间跨度最好大一些。如下图。&lt;/p&gt;
 &lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-21-%E7%94%A8r%E8%AF%AD%E8%A8%80%E5%81%9A%E6%96%9C%E7%8E%87%E5%9B%BE_files/figure-html/chinaunicom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;若有什么意见和建议，请在下面留言。&lt;/p&gt;
 &lt;/div&gt;
 </description>
       
