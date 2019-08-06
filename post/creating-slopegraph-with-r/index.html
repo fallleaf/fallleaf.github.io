@@ -31,7 +31,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.56.1" />
+<meta name="generator" content="Hugo 0.56.3" />
 
 
 <link rel="canonical" href="https://blog.fallleaf.net/post/creating-slopegraph-with-r/" />
@@ -68,7 +68,7 @@
 
 <meta itemprop="datePublished" content="2019-07-21T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-07-30T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3270">
+<meta itemprop="wordCount" content="3304">
 
 
 
@@ -305,7 +305,7 @@
             <a href="https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
             
           </div>
-        <span class="more-meta"> 约 3270 字 </span>
+        <span class="more-meta"> 约 3304 字 </span>
           <span class="more-meta"> 预计阅读 7 分钟 </span>
 
         
@@ -325,7 +325,12 @@
 <h2>什么是斜线图</h2>
 <p><strong>斜线图</strong>，英文为<strong>Slopegraph</strong>，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后的数据<strong>变化</strong>（比如排名，百分比，数值等），或者两个不同的维度数据之间的联系，由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。</p>
 <p>Edward Tufte在1983年的著作《The Visual Display of Quantitative Information》第一次提到了斜线图，2011年6月1日他在<a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003nk&amp;topic_id=1">论坛</a>里把这种表示方式正式命名为slopegraph。前期很少有人使用，不过近期使用多了起来。</p>
-<p>先看看两个斜线图的实例。</p>
+<p>先看看几个斜线图的实例。</p>
+<div class="figure">
+<img src="/post/2019-07-21-用r语言做斜率图_files/slopegraph_boycott.jpg" style="width:90.0%" style="height:90.0%" />
+
+</div>
+<p>这是FT所作的一个关于中国消费者抵制美国品牌商品态度的变化的斜线图。</p>
 <div class="figure">
 <img src="/post/2019-07-21-用r语言做斜率图_files/slopegraph_time.png" style="width:50.0%" />
 
