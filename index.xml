@@ -113,6 +113,46 @@
     </item>
     
     <item>
+      <title>我的吉他作品</title>
+      <link>https://blog.fallleaf.net/guitar/</link>
+      <pubDate>Sun, 21 Jul 2019 22:46:34 +0800</pubDate>
+      
+      <guid>https://blog.fallleaf.net/guitar/</guid>
+      
+        <description>&lt;p&gt;初三的时候喜欢上了吉他，当时伙同同学找关系去本市的一个乐器厂买了一把，当时的条件也只能自学，由于五音不全，也只好学习古典和指弹，断断续续一直到了大学后，兴趣就逐渐消失，等工作后，就不再触及了。&lt;/p&gt;
+
+&lt;p&gt;两三年前，一个偶然的机会，再次捡起兴趣，好在网上有了各种资源和视频，学习起来不那么难了，到现在，陆陆续续弹了一些曲子，留作纪念，自娱自乐。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;难忘的一天&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
+&lt;source src=&#34;http://wsaudio.bssdlbig.kugou.com/1908071919/ttKEe6y5wrJeYspKG9XdfQ/1565263195/bss/extname/wsaudio/76d606c1aae8f65df81be526d810222d.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+您的浏览器不支持 audio 元素。
+&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Autumn leaves&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
+&lt;source src=&#34;http://wsaudio.bssdlbig.kugou.com/1908071827/5KCqb0iKRJ6r13nJse_UjQ/1565260055/bss/extname/wsaudio/73944afdb67c3a0e089718bb55a49d09.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+您的浏览器不支持 audio 元素。
+&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Russian romance&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
+&lt;source src=&#34;http://wsaudio.bssdlbig.kugou.com/1908080713/h4Xmnluk0qQLUcitoaMk3g/1565306027/bss/extname/wsaudio/cca17b5092818cef130c5c8dd8585727.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+您的浏览器不支持 audio 元素。
+&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;时光&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
+&lt;source src=&#34;http://wsaudio.bssdlbig.kugou.com/1908080716/5mWaQAyTX-38-DYbTnAgrQ/1565306180/bss/extname/wsaudio/2429579932dfb5796c1b4b6d62697483.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+您的浏览器不支持 audio 元素。
+&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;逆流成河&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
+&lt;source src=&#34;http://wsaudio.bssdlbig.kugou.com/1908080718/fbhRfSk1w2KzvwsZ6JifWQ/1565306336/bss/extname/wsaudio/8f9e6eec804a2382b6c76c325fbf85fc.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>用R语言做斜线图</title>
       <link>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
@@ -926,31 +966,6 @@ f.close()&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;在时间的设置上，我一般设置10分钟间隔一小憩，小憩时间2分钟，60分钟一休息，休息时间为10分钟，这个是参照“用(10+2)*5法来对付惰性”进行设置的，你也可以根据你的习惯设置。&lt;/p&gt;
 &lt;p&gt;刚开始用这个软件，可能你感觉不适应，总觉的时间间隔太短或着打扰你工作的劲头，不过，这是防止RSI的重要的方法，想想吧，身体和工作，哪个更重要些。&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>安哥拉的货币</title>
-      <link>https://blog.fallleaf.net/post/bill-of-angola/</link>
-      <pubDate>Mon, 27 Nov 2006 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fallleaf.net/post/bill-of-angola/</guid>
-      
-        <description>安哥拉的货币是宽扎，目前的汇率一美元折合80宽扎，一元人民币折合约为十宽扎，基本上在罗安达零售价格在一元人民币的日用物品的价格是一美元到一百宽扎，也就是说在国内一块钱的东西，这里要一美元才能买到。&lt;/p&gt;
-&lt;p&gt;安哥拉的货币有纸币和硬币两种，纸币分为2000KZ，1000KZ，500KZ，200KZ，100KZ，50KZ，10KZ，5KZ八种，硬币有2KZ和1KZ（还没见过）两种。下图是安哥拉纸币。纸币上的侧面人像，是安哥拉独立后的两任总统，外面的是第一任内图，里面的是第二任，现任总统多斯桑托斯。安哥拉钱币是不能带出境的。&lt;/p&gt;
-&lt;p&gt;信用卡在安哥拉不能用，但各个在大城市有些ATM机，只做取现金用，还没联网。 安哥拉纸币回收周期很长，大多纸币已经很破旧，很不卫生。&lt;/p&gt;
-&lt;p&gt;下面是一些物品的价格（价格来自JUMBO超市）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;一升装菠萝果汁:180KZ&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;香蕉:135KZ/kg&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;土豆:100KZ/kg&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Castrol柴油车机油:2480KZ/瓶&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;菠萝:250KZ/个&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;鸡蛋:25KZ/个&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;广州虎牌1号电池:150KZ/12个&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;袋装1公斤面粉:150KZ&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
       
     </item>
