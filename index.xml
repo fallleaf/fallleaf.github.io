@@ -123,7 +123,7 @@
 
 &lt;p&gt;初三的时候喜欢上了吉他，当时伙同同学找关系去本市的一个乐器厂买了一把，当时的条件也只能自学，由于五音不全，也只好学习古典和指弹，断断续续一直到了大学后，不再为谁而弹，兴趣就逐渐消失，等工作后，就不再触及了。&lt;/p&gt;
 
-&lt;p&gt;两三年前，一个偶然的机会，再次捡起兴趣，好在网上有了各种资源和视频，学习起来不那么难了，到现在，陆陆续续弹了一些曲子，集成一集《Memory》，留作纪念，自娱自乐。&lt;/p&gt;
+&lt;p&gt;两三年前，一个偶然的机会，再次捡起兴趣，好在网上有了各种资源和视频，学习起来不那么难了，到现在，陆陆续续弹了一些曲子，集成一辑《Memory》，留作纪念，自娱自乐。&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -334,7 +334,7 @@
 &lt;li&gt;&lt;p&gt;SubTitleJustify：副标题位置，为“L”, “R” or “C” or use the hjust = notation from ggplot2 with a numeric value between ‘0’ (left) and ‘1’ (right)。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;CaptionJustify：说明文字位置，为“L”, “R” or “C” or use the hjust = notation from ggplot2 with a numeric value between ‘0’ (left) and ‘1’ (right)。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;LineThickness：斜线线宽，可选，缺省值为1。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;LineColor：斜线颜色。可以用一个向量给每个分组设置颜色，向量的长度应和分组的分类数相等，如果不足，则循环设置，如c(“gray”, “red”, “green”, “gray”)或者时带分组名称的向量 c(“CompanyA” = “gray”, “CompanyB” = “red”, “CompanyC” = “green”, “CompanyD” = “gray”)。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;LineColor：斜线颜色。可以用一个向量给每个分组设置颜色，向量的长度应和分组的分类数相等，如果不足，则循环设置，如c(“gray”, “red”, “green”, “gray”)或者时带分组名称的向量 c(“CompanyA” = “gray”, “CompanyB” = “red”, “CompanyC” = “green”, “CompanyD” = “gray”)，利用这一特性，可以绘制出不同颜色的斜线。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;DataTextSize：Y轴数值字符大小，可选，缺省值为2.5。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;DataTextColor：Y轴数值颜色，可选，缺省为黑色“black”，可以是“colors()”中颜色或16进制数“#FF00FF”。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;DataLabelPadding：Y轴数值和外框的间距，缺省值为0.05。&lt;/p&gt;&lt;/li&gt;
@@ -378,7 +378,7 @@
       
       <guid>https://blog.fallleaf.net/post/moonlight-sor-classical/</guid>
       
-        <description>&lt;p&gt;我的作品：&lt;audio src=&#34;http://wsaudio.bssdlbig.kugou.com/1908062153/3JOnMkERbs9g_237fFz8Cw/1565186021/bss/extname/wsaudio/588900b80416c7c9562329c959832149.mp3&#34; controls=&#34;controls&#34;&gt;你的浏览器不支持HTML5&lt;/audio&gt;&lt;/p&gt;
+        <description>&lt;p&gt;我的作品：&lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt; &lt;source src=&#34;http://www.fallleaf.net:1107/25-moonlight.mp3&#34; type=&#34;audio/mpeg&#34;&gt; &lt;/audio&gt;&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
 &lt;img src=&#34;https://blog.fallleaf.net/post/2019-07-26-月光-吉他曲-索尔_files/moonlight.jpg&#34; /&gt;
 
