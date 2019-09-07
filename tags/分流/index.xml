@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>分流 on Reading,Thinking And Writing</title>
-    <link>/tags/%E5%88%86%E6%B5%81/</link>
+    <link>https://blog.fallleaf.net/tags/%E5%88%86%E6%B5%81/</link>
     <description>Recent content in 分流 on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/%E5%88%86%E6%B5%81/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.fallleaf.net/tags/%E5%88%86%E6%B5%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Wireguard的分流方法</title>
-      <link>/post/wireguard-auto-routing/</link>
+      <link>https://blog.fallleaf.net/post/wireguard-auto-routing/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/wireguard-auto-routing/</guid>
+      <guid>https://blog.fallleaf.net/post/wireguard-auto-routing/</guid>
       <description>
 
 
-&lt;p&gt;Wireguard开启后，由于默认采用的全局路由，所有流量都通过wireguard隧道，造成不必要的流量浪费，有必要对此进行流量的分流。 </description>
+&lt;p&gt;Wireguard开启后，由于默认采用的全局路由，所有流量都通过wireguard隧道，造成不必要的流量浪费，有必要进行流量分流。 </description>
     </item>
     
   </channel>

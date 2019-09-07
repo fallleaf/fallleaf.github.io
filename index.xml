@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reading,Thinking And Writing</title>
-    <link>/</link>
+    <link>https://blog.fallleaf.net/</link>
     <description>Recent content on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.fallleaf.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Posts</title>
-      <link>/post/</link>
+      <link>https://blog.fallleaf.net/post/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/</guid>
+      <guid>https://blog.fallleaf.net/post/</guid>
       
         <description></description>
       
@@ -24,10 +24,10 @@
     
     <item>
       <title>关于我</title>
-      <link>/about/</link>
+      <link>https://blog.fallleaf.net/about/</link>
       <pubDate>Sun, 21 Jul 2019 22:46:34 +0800</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://blog.fallleaf.net/about/</guid>
       
         <description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
 
@@ -40,10 +40,10 @@
     
     <item>
       <title>我的吉他作品</title>
-      <link>/guitar/</link>
+      <link>https://blog.fallleaf.net/guitar/</link>
       <pubDate>Sun, 21 Jul 2019 22:46:34 +0800</pubDate>
       
-      <guid>/guitar/</guid>
+      <guid>https://blog.fallleaf.net/guitar/</guid>
       
         <description>
 
