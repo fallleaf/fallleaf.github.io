@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>旅游 on Reading,Thinking And Writing</title>
-    <link>https://blog.fallleaf.net/tags/%E6%97%85%E6%B8%B8/</link>
+    <link>/tags/%E6%97%85%E6%B8%B8/</link>
     <description>Recent content in 旅游 on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 07 Oct 2006 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.fallleaf.net/tags/%E6%97%85%E6%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E6%97%85%E6%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>十一南坪、郭亮游</title>
-      <link>https://blog.fallleaf.net/post/nanping-guoliang-vacation-in-national-day/</link>
+      <link>/post/nanping-guoliang-vacation-in-national-day/</link>
       <pubDate>Sat, 07 Oct 2006 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/nanping-guoliang-vacation-in-national-day/</guid>
+      <guid>/post/nanping-guoliang-vacation-in-national-day/</guid>
       <description>
 
 
@@ -25,10 +25,10 @@
     
     <item>
       <title>国庆日照游记1</title>
-      <link>https://blog.fallleaf.net/post/rizhao-vacation-in-national-day-1/</link>
+      <link>/post/rizhao-vacation-in-national-day-1/</link>
       <pubDate>Mon, 31 Oct 2005 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/rizhao-vacation-in-national-day-1/</guid>
+      <guid>/post/rizhao-vacation-in-national-day-1/</guid>
       <description>
 
 
@@ -37,10 +37,10 @@
     
     <item>
       <title>国庆日照游记2</title>
-      <link>https://blog.fallleaf.net/post/rizhao-vacation-in-national-day-2/</link>
+      <link>/post/rizhao-vacation-in-national-day-2/</link>
       <pubDate>Mon, 31 Oct 2005 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/rizhao-vacation-in-national-day-2/</guid>
+      <guid>/post/rizhao-vacation-in-national-day-2/</guid>
       <description>
 
 
@@ -49,10 +49,10 @@
     
     <item>
       <title>国庆日照游记（完）</title>
-      <link>https://blog.fallleaf.net/post/rizhao-vacation-in-national-dayend/</link>
+      <link>/post/rizhao-vacation-in-national-dayend/</link>
       <pubDate>Mon, 31 Oct 2005 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/rizhao-vacation-in-national-dayend/</guid>
+      <guid>/post/rizhao-vacation-in-national-dayend/</guid>
       <description>
 
 
