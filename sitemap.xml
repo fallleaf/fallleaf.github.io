@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.fallleaf.net/tags/auto-routing/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fallleaf.net/tags/brook/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fallleaf.net/categories/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fallleaf.net/post/</loc>
     <lastmod>2019-09-07T09:12:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,7 +37,35 @@
   </url>
   
   <url>
+    <loc>https://blog.fallleaf.net/tags/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fallleaf.net/tags/wireguard/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fallleaf.net/post/wireguard-auto-routing/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fallleaf.net/tags/%E5%88%86%E6%B5%81/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2019-09-07T09:12:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -51,28 +100,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fallleaf.net/categories/</loc>
-    <lastmod>2019-08-03T21:51:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fallleaf.net/tags/</loc>
-    <lastmod>2019-08-03T21:51:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fallleaf.net/tags/%E5%8D%95%E7%BA%A4%E5%8F%8C%E5%90%91/</loc>
-    <lastmod>2019-08-03T21:51:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2019-08-03T21:51:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

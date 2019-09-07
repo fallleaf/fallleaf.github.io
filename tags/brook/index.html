@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Wireguard的分流方法 - Reading,Thinking And Writing</title>
+  <title>brook · Reading,Thinking And Writing</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -22,9 +22,9 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="fallleaf" /><meta name="description" content="学习" />
-<meta name="keywords" content="wireguard, 分流, auto routing" />
-
+<meta name="author" content="fallleaf" />
+  <meta name="description" content="一个通信设计人的网站" />
+  <meta name="keywords" content="通信设计, 旅游, 吉他, 设计, 网络规划" />
 
 
 
@@ -34,7 +34,8 @@
 <meta name="generator" content="Hugo 0.58.1" />
 
 
-<link rel="canonical" href="https://blog.fallleaf.net/post/wireguard-auto-routing/" />
+<link rel="canonical" href="https://blog.fallleaf.net/tags/brook/" />
+<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/tags/brook/index.xml%20https://blog.fallleaf.net/tags/brook/index.xml%7d" rel="alternate" type="application/rss+xml" title="Reading,Thinking And Writing" />
 
 
 
@@ -56,26 +57,18 @@
 
 
 
-<meta property="og:title" content="Wireguard的分流方法" />
-<meta property="og:description" content="学习" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.fallleaf.net/post/wireguard-auto-routing/" />
-<meta property="article:published_time" content="2019-09-07T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-09-07T09:12:46+08:00" />
-<meta itemprop="name" content="Wireguard的分流方法">
-<meta itemprop="description" content="学习">
+<meta property="og:title" content="brook" />
+<meta property="og:description" content="一个通信设计人的网站" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://blog.fallleaf.net/tags/brook/" />
 
+<meta property="og:updated_time" content="2019-09-07T00:00:00+00:00" />
+<meta itemprop="name" content="brook">
+<meta itemprop="description" content="一个通信设计人的网站">
 
-<meta itemprop="datePublished" content="2019-09-07T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-09-07T09:12:46&#43;08:00" />
-<meta itemprop="wordCount" content="420">
-
-
-
-<meta itemprop="keywords" content="wireguard,分流,auto routing,brook," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Wireguard的分流方法"/>
-<meta name="twitter:description" content="学习"/>
+<meta name="twitter:title" content="brook"/>
+<meta name="twitter:description" content="一个通信设计人的网站"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -310,147 +303,55 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          <article class="post bg-white">
-    
-    <header class="post-header">
-      <h1 class="post-title">Wireguard的分流方法</h1>
-      
-      <div class="post-meta">
-        <time datetime="2019-09-07" class="post-time">
-          2019-09-07
-        </time>
-        <div class="post-category">
-            <a href="https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
-            
-          </div>
-        <span class="more-meta"> 约 420 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
-
-        
-        
-          <span id="busuanzi_container_page_pv">
-            | 阅读 <span id="busuanzi_value_page_pv"></span>
-          </span>
-        
-
-        
-        
-      </div>
-    </header>
-
-    
-    
-
-    
-    <div class="post-content">
-      Wireguard开启后，由于默认采用的全局路由，所有流量都通过wireguard隧道，造成不必要的流量浪费，有必要对此进行流量的分流。</p>
-<p>分流的方法主要利用路由方式，让特定的IP包转发到wireguard隧道中，可参见这篇：<a href="https://doubibackup.com/x2_8j160.html">WireGuard —— Windows 客户端国内外IP分流教程</a>。</p>
-<p>这种方式是将国内地址段做成路由，不走wireguard隧道，但需要不时维护地址段，同时一些常规状态下能访问的地址也走了隧道。 <!--more--></p>
-<p>用wireguard，主要问题就要解决科学上网的问题，国外ip也并不是都不能直接访问，因此就有了另外一种方式，见这一篇：<a href="https://www.atrandys.com/2019/1752.html">wireguard+ss/v2ray/brook等实现域名分流</a>。方法是先利用wireguard组网，然后在wireguard前后串上brook等，利用这些软件的pac功能实现域名分流。</p>
-<p>在win10和linuxmint设置了一下，效果不错。手机上因为wireguard可以设置某些app通过wireguard，也就不用考虑了。</p>
-
-    </div>
-
-    
-    
-<div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">文章作者</span>
-    <span class="item-content">fallleaf</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">上次更新</span>
-    <span class="item-content">
-      2019-09-07
-      
-    </span>
-  </p>
-  
-  <p class="copyright-item">
-    <span class="item-title">许可协议</span>
-    <span class="item-content">原创文章，如需转载请注明文章作者和出处。谢谢！</span>
-  </p>
-</div>
-
-
-    
-    
-<div class="post-reward">
-  <input type="checkbox" name="reward" id="reward" hidden />
-  <label class="reward-button" for="reward">送人玫瑰，手有余香，赞赏支持</label>
-  <div class="qr-code">
-    
-    
-      <label class="qr-code-image" for="reward">
-        <img class="image" src="/wechatpay.jpg">
-        <span>微信支持</span>
-      </label>
-    
-      <label class="qr-code-image" for="reward">
-        <img class="image" src="/alipay.jpg">
-        <span>支付宝支持</span>
-      </label>
-  </div>
-</div>
-
-    <footer class="post-footer">
-      <div class="post-tags">
-          <a href="https://blog.fallleaf.net/tags/wireguard/">wireguard</a>
-          <a href="https://blog.fallleaf.net/tags/%E5%88%86%E6%B5%81/">分流</a>
-          <a href="https://blog.fallleaf.net/tags/auto-routing/">auto routing</a>
-          <a href="https://blog.fallleaf.net/tags/brook/">brook</a>
           
-        </div>
 
-      
-      <nav class="post-nav">
-        
-        
-          <a class="next" href="/post/25g-bidi-optical-transceiver-module/">
-            <span class="next-text nav-default">25G单纤双向收发合一光模块</span>
-            <span class="prev-text nav-mobile">下一篇</span>
-            
-            <i class="iconfont">
-              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
-</svg>
-
-            </i>
-          </a>
-      </nav>
-    </footer>
-  </article>
-
+<section id="archive" class="archive">
   
+    
+      <div class="archive-title tag">
+        <h2 class="archive-name">标签： brook</h2>
+      </div>
+    
   
 
   
-  
-
-  
-
-  
-  
-    <div class="post bg-white">
-      <script src="https://utteranc.es/client.js"
-            repo= "fallleaf/comments"
-            issue-term="pathname"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-      </script>
+    <div class="archive-post">
+      <time datetime="2019-09-07" class="archive-post-time">
+        2019-09-07
+      </time>
+      <span class="archive-post-title">
+        <a href="/post/wireguard-auto-routing/" class="archive-post-link">
+          Wireguard的分流方法
+        </a>
+      </span>
     </div>
   
+</section>
 
+
+
+
+
+
+  
+  
   
 
   
-
   
 
-    
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
 
         </div>
       </div>
