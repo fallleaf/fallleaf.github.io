@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 03 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.fallleaf.net/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Wireguard的分流方法</title>
+      <link>https://blog.fallleaf.net/post/wireguard-auto-routing/</link>
+      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fallleaf.net/post/wireguard-auto-routing/</guid>
+      <description>Wireguard开启后，由于默认采用的全局路由，所有流量都通过wireguard隧道，造成不必要的流量浪费，有必要对此进行流量的分流。 分流</description>
+    </item>
     
     <item>
       <title>25G单纤双向收发合一光模块</title>
@@ -250,19 +259,6 @@
 
 
 &lt;p&gt;安哥拉的货币是宽扎，目前的汇率一美元折合80宽扎，一元人民币折合约为十宽扎，基本上在罗安达零售价格在一元人民币的日用物品的价格是一美元到一百宽扎，也就是说在国内一块钱的东西，这里要一美元才能买到。 </description>
-    </item>
-    
-    <item>
-      <title>安哥拉中部行记2(Lobito-Benguela)</title>
-      <link>https://blog.fallleaf.net/post/trip-to-middle-of-angola-2lobito-benguela/</link>
-      <pubDate>Sat, 25 Nov 2006 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fallleaf.net/post/trip-to-middle-of-angola-2lobito-benguela/</guid>
-      <description>
-
-
-&lt;p&gt;早晨起来，到楼下吃早餐。这里的房价太贵了，据司机说，他们晚上是睡在车里的。吃完饭，就退房上车，手续很快，也就是把钥匙交上去，来之前听说黑人算账很 慢，所以昨天晚上就发把票要了，但住宿手续比较复杂，除了要先交钱，还要填一堆住宿的表格，有的HOTEL是一个房间一个表格，有的是一个人一个表格，遇到比较死板的，还要填那种专给外国人的表格，不把这些手续办好，休想先拿钥匙，一般都要花个半小时以上时间。&lt;/p&gt;
-</description>
     </item>
     
   </channel>

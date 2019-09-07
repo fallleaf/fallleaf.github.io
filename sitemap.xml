@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.fallleaf.net/post/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fallleaf.net/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fallleaf.net/post/wireguard-auto-routing/</loc>
+    <lastmod>2019-09-07T09:12:46+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fallleaf.net/tags/25g/</loc>
     <lastmod>2019-08-03T21:51:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -32,20 +53,6 @@
   <url>
     <loc>https://blog.fallleaf.net/categories/</loc>
     <lastmod>2019-08-03T21:51:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fallleaf.net/post/</loc>
-    <lastmod>2019-08-03T21:51:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fallleaf.net/</loc>
-    <lastmod>2019-08-10T22:46:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
