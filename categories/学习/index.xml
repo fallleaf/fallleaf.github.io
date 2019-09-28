@@ -2,21 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习 on Reading,Thinking And Writing</title>
-    <link>https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/</link>
+    <link>/categories/%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 学习 on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>V2ray的WebSocket&#43;TLS&#43;Web安装记录</title>
+      <link>/post/the-step-of-installation-for-v2ray&#43;websocket&#43;tls&#43;web/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-step-of-installation-for-v2ray&#43;websocket&#43;tls&#43;web/</guid>
+      <description>
+
+
+&lt;p&gt;一些vpn或代理的特征比较明显容易被识别，虽然是加密的，看不到内容，但知道是vpn，容易被block，采用websoket+tls+web，虽然也是加密的，但和正常web访问类似，不易被block。&lt;/p&gt;
+&lt;p&gt;整个过程比较简单，前提是要有一个墙外的VPS。 </description>
+    </item>
+    
+    <item>
       <title>Wireguard的分流方法</title>
-      <link>https://blog.fallleaf.net/post/wireguard-auto-routing/</link>
+      <link>/post/wireguard-auto-routing/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/wireguard-auto-routing/</guid>
+      <guid>/post/wireguard-auto-routing/</guid>
       <description>
 
 
@@ -25,10 +38,10 @@
     
     <item>
       <title>25G单纤双向收发合一光模块</title>
-      <link>https://blog.fallleaf.net/post/25g-bidi-optical-transceiver-module/</link>
+      <link>/post/25g-bidi-optical-transceiver-module/</link>
       <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/25g-bidi-optical-transceiver-module/</guid>
+      <guid>/post/25g-bidi-optical-transceiver-module/</guid>
       <description>
 
 
@@ -38,10 +51,10 @@
     
     <item>
       <title>用R语言做斜线图</title>
-      <link>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</link>
+      <link>/post/creating-slopegraph-with-r/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</guid>
+      <guid>/post/creating-slopegraph-with-r/</guid>
       <description>
 
 
@@ -51,10 +64,10 @@
     
     <item>
       <title>色子肖像--Python程序</title>
-      <link>https://blog.fallleaf.net/post/dice-portrait-python/</link>
+      <link>/post/dice-portrait-python/</link>
       <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/dice-portrait-python/</guid>
+      <guid>/post/dice-portrait-python/</guid>
       <description>
 
 
@@ -63,10 +76,10 @@
     
     <item>
       <title>色子肖像</title>
-      <link>https://blog.fallleaf.net/post/dice-portrait/</link>
+      <link>/post/dice-portrait/</link>
       <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fallleaf.net/post/dice-portrait/</guid>
+      <guid>/post/dice-portrait/</guid>
       <description>
 
 

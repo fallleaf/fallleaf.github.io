@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>v2ray on Reading,Thinking And Writing</title>
+    <link>/tags/v2ray/</link>
+    <description>Recent content in v2ray on Reading,Thinking And Writing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>V2ray的WebSocket&#43;TLS&#43;Web安装记录</title>
+      <link>/post/the-step-of-installation-for-v2ray&#43;websocket&#43;tls&#43;web/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-step-of-installation-for-v2ray&#43;websocket&#43;tls&#43;web/</guid>
+      <description>
+
+
+&lt;p&gt;一些vpn或代理的特征比较明显容易被识别，虽然是加密的，看不到内容，但知道是vpn，容易被block，采用websoket+tls+web，虽然也是加密的，但和正常web访问类似，不易被block。&lt;/p&gt;
+&lt;p&gt;整个过程比较简单，前提是要有一个墙外的VPS。 </description>
+    </item>
+    
+  </channel>
+</rss>
