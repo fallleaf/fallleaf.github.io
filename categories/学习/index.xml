@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习 on Reading,Thinking And Writing</title>
-    <link>/categories/%E5%AD%A6%E4%B9%A0/</link>
+    <link>https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 学习 on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.fallleaf.net/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>V2ray的WebSocket&#43;TLS&#43;Web安装记录</title>
-      <link>/post/the-step-of-installation-for-v2ray&#43;websocket&#43;tls&#43;web/</link>
+      <link>https://blog.fallleaf.net/post/the-step-of-installation-for-v2ray&#43;websocket&#43;tls&#43;web/</link>
       <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/the-step-of-installation-for-v2ray&#43;websocket&#43;tls&#43;web/</guid>
+      <guid>https://blog.fallleaf.net/post/the-step-of-installation-for-v2ray&#43;websocket&#43;tls&#43;web/</guid>
       <description>
 
 
@@ -26,10 +26,10 @@
     
     <item>
       <title>Wireguard的分流方法</title>
-      <link>/post/wireguard-auto-routing/</link>
+      <link>https://blog.fallleaf.net/post/wireguard-auto-routing/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/wireguard-auto-routing/</guid>
+      <guid>https://blog.fallleaf.net/post/wireguard-auto-routing/</guid>
       <description>
 
 
@@ -38,10 +38,10 @@
     
     <item>
       <title>25G单纤双向收发合一光模块</title>
-      <link>/post/25g-bidi-optical-transceiver-module/</link>
+      <link>https://blog.fallleaf.net/post/25g-bidi-optical-transceiver-module/</link>
       <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/25g-bidi-optical-transceiver-module/</guid>
+      <guid>https://blog.fallleaf.net/post/25g-bidi-optical-transceiver-module/</guid>
       <description>
 
 
@@ -51,10 +51,10 @@
     
     <item>
       <title>用R语言做斜线图</title>
-      <link>/post/creating-slopegraph-with-r/</link>
+      <link>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</link>
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/creating-slopegraph-with-r/</guid>
+      <guid>https://blog.fallleaf.net/post/creating-slopegraph-with-r/</guid>
       <description>
 
 
@@ -64,10 +64,10 @@
     
     <item>
       <title>色子肖像--Python程序</title>
-      <link>/post/dice-portrait-python/</link>
+      <link>https://blog.fallleaf.net/post/dice-portrait-python/</link>
       <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/dice-portrait-python/</guid>
+      <guid>https://blog.fallleaf.net/post/dice-portrait-python/</guid>
       <description>
 
 
@@ -76,10 +76,10 @@
     
     <item>
       <title>色子肖像</title>
-      <link>/post/dice-portrait/</link>
+      <link>https://blog.fallleaf.net/post/dice-portrait/</link>
       <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/dice-portrait/</guid>
+      <guid>https://blog.fallleaf.net/post/dice-portrait/</guid>
       <description>
 
 

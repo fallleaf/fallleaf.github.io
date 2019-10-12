@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>brook on Reading,Thinking And Writing</title>
-    <link>/tags/brook/</link>
+    <link>https://blog.fallleaf.net/tags/brook/</link>
     <description>Recent content in brook on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/brook/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.fallleaf.net/tags/brook/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Wireguard的分流方法</title>
-      <link>/post/wireguard-auto-routing/</link>
+      <link>https://blog.fallleaf.net/post/wireguard-auto-routing/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/wireguard-auto-routing/</guid>
+      <guid>https://blog.fallleaf.net/post/wireguard-auto-routing/</guid>
       <description>
 
 

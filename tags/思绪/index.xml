@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>思绪 on Reading,Thinking And Writing</title>
-    <link>/tags/%E6%80%9D%E7%BB%AA/</link>
+    <link>https://blog.fallleaf.net/tags/%E6%80%9D%E7%BB%AA/</link>
     <description>Recent content in 思绪 on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/%E6%80%9D%E7%BB%AA/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.fallleaf.net/tags/%E6%80%9D%E7%BB%AA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>旅途思绪</title>
-      <link>/post/trip-thought/</link>
+      <link>https://blog.fallleaf.net/post/trip-thought/</link>
       <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/trip-thought/</guid>
+      <guid>https://blog.fallleaf.net/post/trip-thought/</guid>
       <description>
 
 
@@ -27,10 +27,10 @@
     
     <item>
       <title>四季</title>
-      <link>/post/four-season/</link>
+      <link>https://blog.fallleaf.net/post/four-season/</link>
       <pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/four-season/</guid>
+      <guid>https://blog.fallleaf.net/post/four-season/</guid>
       <description>
 
 
@@ -39,10 +39,10 @@
     
     <item>
       <title>蛇口印象</title>
-      <link>/post/image-of-sekou/</link>
+      <link>https://blog.fallleaf.net/post/image-of-sekou/</link>
       <pubDate>Fri, 17 Feb 2006 00:00:00 +0000</pubDate>
       
-      <guid>/post/image-of-sekou/</guid>
+      <guid>https://blog.fallleaf.net/post/image-of-sekou/</guid>
       <description>
 
 
@@ -51,10 +51,10 @@
     
     <item>
       <title>合肥印象</title>
-      <link>/post/image-of-hefei/</link>
+      <link>https://blog.fallleaf.net/post/image-of-hefei/</link>
       <pubDate>Wed, 21 Dec 2005 00:00:00 +0000</pubDate>
       
-      <guid>/post/image-of-hefei/</guid>
+      <guid>https://blog.fallleaf.net/post/image-of-hefei/</guid>
       <description>
 
 

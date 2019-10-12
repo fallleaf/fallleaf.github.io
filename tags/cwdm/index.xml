@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CWDM on Reading,Thinking And Writing</title>
+    <link>https://blog.fallleaf.net/tags/cwdm/</link>
+    <description>Recent content in CWDM on Reading,Thinking And Writing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 12 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.fallleaf.net/tags/cwdm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>无源波分前传分场景解决方案</title>
+      <link>https://blog.fallleaf.net/post/cwdm-in-fronthual/</link>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fallleaf.net/post/cwdm-in-fronthual/</guid>
+      <description>
+
+
+&lt;p&gt;4G建设时期，前传主要采用光纤直驱方式，建设了大量接入主干和配线光缆。由于5G基站大量与4G共站，均有配线光缆接入，采用无源波分方式能最大化提高现有光缆的利用效能，为光缆网络增值，降低接入成本，是5G前传建设时需要重点考虑建设方式。 </description>
+    </item>
+    
+  </channel>
+</rss>
