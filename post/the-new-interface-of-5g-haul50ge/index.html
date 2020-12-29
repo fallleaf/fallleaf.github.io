@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>5G承载中回传新接口：50GE - Reading,Thinking And Writing</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="fallleaf" />
+  <meta name="description" content=" 在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。
+" />
+
+  <meta name="keywords" content="通信设计, 旅游, 吉他, 设计, 网络规划" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.59.1" />
+
+
+<link rel="canonical" href="https://blog.fallleaf.net/post/the-new-interface-of-5g-haul50ge/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.af20b78e95c84de86b00a0242a4a77bd2601700e1b250edf27537d957ac0041d.css" integrity="sha256-ryC3jpXITehrAKAkKkp3vSYBcA4bJQ7fJ1N9lXrABB0=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="5G承载中回传新接口：50GE" />
+<meta property="og:description" content="
+
+
+在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.fallleaf.net/post/the-new-interface-of-5g-haul50ge/" />
+<meta property="article:published_time" content="2019-12-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-13T23:35:26+08:00" />
+<meta itemprop="name" content="5G承载中回传新接口：50GE">
+<meta itemprop="description" content="
+
+
+在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。
+">
+
+
+<meta itemprop="datePublished" content="2019-12-13T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-13T23:35:26&#43;08:00" />
+<meta itemprop="wordCount" content="4942">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="5G承载中回传新接口：50GE"/>
+<meta name="twitter:description" content="
+
+
+在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Reading,Thinking And Writing</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/">首页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/post/">存档</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/categories/">类别</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/guitar/">作品</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/about/">关于我</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      Reading,Thinking And Writing
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/">首页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/post/">存档</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/categories/">类别</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/guitar/">作品</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://blog.fallleaf.net/about/">关于我</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">5G承载中回传新接口：50GE</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-12-13" class="post-time">
+          2019-12-13
+        </time>
+        
+        <span class="more-meta"> 约 4942 字 </span>
+          <span class="more-meta"> 预计阅读 10 分钟 </span>
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p>在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。</p>
+<div id="g相关以太网光接口标准" class="section level3">
+<h3>50G相关以太网光接口标准</h3>
+<p>IEEE的两个标准：IEEE 802.3 bs(400G，200G) 和802.3 cd（200G，100G，50G） 定义了50G，100G，200G，400G以太网的媒体访问控制层（MAC）以及物理层（PHY）的相关参数。主要的光接口类型以及采用的调制格式如下表：</p>
+<p>可以看到，在实现50G以上的高速以太网接口时，主要采用了50G比特速率（波特26.6GBaud），PAM4调制方式。</p>
+</div>
+<div id="为什么是pam4" class="section level3">
+<h3>为什么是PAM4</h3>
+<p>光传输一直在追求更高的传输速率，但速率越高，所面临的问题也就越多，诸如色散、发光功率、信噪比、光收发器的线性度及灵敏度、技术成熟度、成本等。提高速率的方式有多种，包括通过频率、振幅、相位等变化的调制方式。</p>
+<p>NRZ（不归零码，Non-Return-to-Zero）调制方式一直是光通信采用的主要技术，随着速率的提升，如 200G/400G，NRZ调制在色散影响、光电转换带宽和成本上遇到了较大的困难。对于25G以上的波特率，在中长距传输时，色散的影响显著；光电转换带宽在60Gbit/s以上出现了技术瓶颈。对于高速接口，每通道数据速率要提高到50Gbps以上，如果仍然采用NRZ技术，由于每个符号周期只有不到20ps，对于收发芯片的时间裕量以及传输链路的损耗要求更加苛刻， 若能既保持较低的波特率，又提高每一波特的信息量，就能大大降低光器件的带宽要求，从而可以降低光器件成本。而PAM4调制方式极大的满足了上述要求，是继NRZ后热门的信号调制技术，也是多阶调制技术的代表。</p>
+</div>
+<div id="pam4是什么" class="section level3">
+<h3>PAM4是什么</h3>
+<p>PAM即脉冲幅度调制（Pulse Amplitude Modulation）。NRZ调制方式采用高、低两种信号电平来表示要传输的数字逻辑信号的1、0信息，每个信号符号周期可以传输1bit的逻辑信息，实际上NRZ方式可也叫做PAM2，2表示的是有2种电平信号。那么PAM4调制方式就是采用4个不同的信号电平来进行数据传输，每个符号周期可以表示2bit的逻辑信息（00、01、10、11）。由于 PAM4 信号每个符号周期可以传输2bit的信息，因此要实现同样的信号传输能力，PAM4信号的符号速率（波特率）只有NRZ信号的一半，换而言之，采用同样的波特速率，PAM4的信号比特率是NRZ信号的2倍，比如利用25G波特率，PAM4调制方式，可以传输50G比特率的信息。NRZ和PAM4信号典型波形如下图所示，右侧为NRZ和PAM4的光眼图对比，NRZ为单眼波形，PAM4为三眼波形（Y轴方向存在3个眼状图形）。</p>
+<p>其实多阶PAM调制的概念并不新鲜，比如最普遍使用的100MBase-T以太网，就使用3种电平进行信号传输；而在无线通信领域中普遍使用的16QAM调制、32QAM调制、64QAM调制等，也都是采用多电平的基带信号对载波信号进行调制。此外还有PAM5（802.3ab），PAM8（802.3bm）等。</p>
+<p>在2014年发布的100G背板标准802.3 bj中，同时定义了两种信号传输方式：4组25.78G波特率的NRZ信号，或者4组13.6G波特率的PAM4信号。由于芯片技术以及PCB板材和连接器技术的快速发展，25G波特率的NRZ技术很快实现商用应用，但PAM4由于当时技术成熟度和成本的原因，并没有在100G以太网的技术中被真正应用。随着IEEE 802.3 bs 和802.3 cd的发布，PAM4将越来越多的大规模应用起来。</p>
+</div>
+<div id="g相关标准进展" class="section level3">
+<h3>50G相关标准进展</h3>
+<p>IEEE 802.3 bs标准批准时间为2017年12月，该标准覆盖了400GE/200GE两种以太网接口速率。其中400GE定义了LR8 (10km)/FR8 (2km)/DR4 (500m)/SR16 (100m)等PMD子层规格以及多种AUI电接口。LR8/FR8采用了50G PAM4技术，成为以太网标准中首个采用该技术接口标准，为PAM4技术开启广泛商用打开了大门。</p>
+<p>IEEE 802.3 cd标准批准时间为2018年12月，标准覆盖了50GBASE-LR/KR/SR PMD子层，所有PMD子层都采用了50G PAM4技术，50GE是PAM4技术应用最广泛的以太网接口速率。</p>
+<p>以上标准定义的50GE传输距离都在10km以下，2018年4月IEEE成立了Beyond 10km工作组，对50G在40km传输距离范围内，100G、200G、400G在40km及80km传输范围的技术进行研究，2018年9月更改为P802.3 cn工作组，计划规范批准时间节点为2020年6月。</p>
+</div>
+<div id="g光收发模块原理及功率预算" class="section level3">
+<h3>50G光收发模块原理及功率预算</h3>
+<p>基于50G PAM4光模块运用PAM4编码技术，每个采样周期的传输信息量提升了一倍，可以利用一对25G发射和接收器件实现50G传输速率，降低了模块的成本。50G PAM4可有多种应用场景，除了单通道的50GE PAM4光模块，还有4通道的200GE（4×50G）光模块和8通道的400GE（8×50G）光模块。</p>
+<p>下面以单通道50G PAM4即50GE光模块为例，介绍各模块功能。</p>
+<p>发送方向：数据经过50GE MAC、PCS、PMA后，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到50GE光模块，经过PAM4 DSP编解码芯片进行速率和码型转换，从2通道转换为1通道，调制码型转换成为PAM4，速率为26.5625G波特率，激光器驱动芯片将PAM4信号放大，驱动25G激光器将电信号转换为单波长25GBaud（50Gbps）光信号。</p>
+<p>接收方向，接受器将单波长25GBaud光信号转换为电信号，整形放大后输出至PAM4 DSP编解码芯片，PAM4编解码芯片再将该信号转换为2*25G NRZ信号，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到以太网处理芯片。</p>
+<p>目前50GE PAM4模块的封装形式为QSFP28，计划的封装为SFP56，光口类型为LC，使用单模光纤，中心波长为1311nm，传输距离为10km/40km，模块的最大功耗为4.5W。有关功率预算关键技术参数如下表：</p>
+<p>和传输距离相关的主要是通道插损，即光纤以及光纤连接器引入的插损之和。IEEE目前定义50G LR场景，极限情况下是1304.5nm，按0.43dB/km计算，即0.43dB/km×10km=4.3dB，还有6.3-4.3=2dB余量是给光纤连接、以及熔纤导致的插损。</p>
+</div>
+<div id="g光收发模块相关技术" class="section level3">
+<h3>50G光收发模块相关技术</h3>
+<p>PAM4相比传统的NRZ信号，从2阶变为4阶，眼图从单眼变成3眼。在承载bit效率方面虽然提升了1倍，但也引入了对噪声、线性度敏感的问题，因此不能简单的利用已经成熟的25G光电模块，还需根据PAM4的特性进行相应的改变。</p>
+<ul>
+<li>发送机线性要求</li>
+</ul>
+<p>由于多电平调制，PAM4 对器件的线性度有要求。当线性度差时，PAM4 输出眼图的3 个眼高度不一样，容易造成误判，增加了误码率。电器件比较容易满足上述要求，10 km 规格能采用直接调制激光器（DML）实现，同时也保证了低成本。40km规格则需要使用电吸收调制激光器(EML)和雪崩光电探测器。另一方面，10km和40km的规格均对高线性度的激光器驱动器和跨阻放大器有需求。</p>
+<ul>
+<li>光功率预算</li>
+</ul>
+<p>功率预算主要考虑出光功率、光调制幅度（OMA）、光链路损耗、发射机和色散眼图闭合度（TDECQ）、多径干扰（MPI）和接收灵敏度等，PAM4在功率预算计算上与NRZ 类似。对于同样的接收信号幅度，由于PAM4发送4 个电平，最小信号眼图眼高比NRZ 的小5 dB 左右。因此，相比于NRZ 方式，PAM4 存在着5dB左右的调制代价。激光器的发射功率相对采用NRZ的25G激光器需要提高。</p>
+<ul>
+<li>PAM4 DSP芯片</li>
+</ul>
+<p>由于PAM4编码有4种电平逻辑，所以要求模块内部的Driver和TIA芯片都具备线性输出功能，而NRZ模块使用限幅输出的方案即可。PAM4模块需要使用DSP来完成50G PAM4和2×25G NRZ信号的转换，而NRZ模块只需要使用传统的CDR芯片即可完成数据传输。</p>
+</div>
+<div id="ge的应用及展望" class="section level3">
+<h3>50GE的应用及展望</h3>
+<p>50GE除了在数据中心的交换机以及服务器互联中大量采用，随着5G承载网建设的日益临近，其在承载网接入层中的应用也越来越多的得到运营商的关注。</p>
+<p>在运营商方面：</p>
+<ul>
+<li>中国移动：</li>
+</ul>
+<p>李晗表示，在技术推动上，中国移动选择“两条腿走路”——既完善SPN的相关标准，推动其成熟，又发挥中国移动产业影响力，积极与光芯片、光器件、光模块等厂家合作，降低光层整体成本。SPN接入层采用50G PAM4 BiDi光模块，更好地满足带宽、同步等指标，需进一步推进产业成熟和降低成本。据悉，50GE光模块支持10km、100km DiBi方案，已有可商用产品，而50G较25G成本增加主要是PAM4电芯片，预计量产后50G PAM4较25G光模块贵10%-20%以内，预计单比特成本下降35%-45%。</p>
+<ul>
+<li>中国电信：</li>
+</ul>
+<p>张成良指出，4G和5G相比，不仅是承载网络架构发生变化，对核心网、中传/回传、前传等都提出了更高的要求。核心网需要更高速的光模块（200G/400G）、更大的容量的光传输、更灵活的组网、更高效的光层调度。中传/回传需要更高速的光模块（50G/100G）、更大的网络带宽和更灵活的网络以及更好的性能。中国电信在STN招标里，要求STN-A2，STN-B设备“承诺支持50GE/25GE 接口”。</p>
+<ul>
+<li>中国联通</li>
+</ul>
+<p>中国联通网络技术研究院沈世奎表示：“中国联通在5G承载网的建设已有较为清晰的方向，务实为本，采用产业链中更加成熟的技术；成本为主，以综合成本和TCO最低为目标。25G光层产业链已经完善，基于PAM4技术和25G光收发器实现的50GE更具性价比优势。”</p>
+<p>50GE光模块的应用需要整个产业链的共同促进，其中运营商的需求是决定因素，据目前的信息，中国移动在推进50GE的应用最积极，其次是中国电信，以中国移动的需求量，或许能够加速整个产业链的发展。</p>
+<p>国内传统通信设备厂商华为、中兴、烽火也都宣称5G承载网设备支持50G接口。华为一直在牵头做技术推动，2018年联合上下游企业发布了《50G PAM4技术白皮书》。在2019年4月，华为宣称通过了中国移动研究院组织开展的50GE单纤双向新技术测试，其在技术交流资料中，更是介绍了采用FlexE技术将50GE平滑升级成100G的方案。</p>
+<p>50GE在5G回传接入层的应用，主要取决于接入层流量预测以及50GE光收发器的价格。</p>
+<p>据测算，目前4G基站单站平均流速大概0.08Gb/s，结合目前运营商的建设指导意见，一个接入环大概带4个BBU集中点，一个BBU集中点大约带10个左右的基站，若按5G基站平均流速是4G的10倍计算，则一个环的总流速大概为0.08×10×4×10=32Gb/s，这种情况下采用50GE是比较合适的，但考虑初期50GE成本问题，建设初期可采用10GE建设，随着流量增加进行10GE捆绑方式扩容（实际上，也可考虑采用前传采用的25GE速率）。假若50GE的价格能够达到10GE价格的2-3倍时（这一点在数通的报价体系内估计很难达到），或100GE的1/3以下时，采用50GE是一个优选的方案，可以达到TCO的最优。n×10GE捆绑方式，除了考虑光模块的价格，还要把维护量的增加、数据配置的复杂、对光纤的占用都纳入TCO的评估中。据相关资料，现有4G回传接入层有30%-44%采用的40km10G光模块，因此50GE 40km光模块的价格对其应用也是至关重要的。</p>
+<p>126.6GBaud实为26.5625GBaud，在使用PAM4调制时，采用前向纠错编码RS-FEC（544，514）以及线路编码256b257b将25G变为26.5625G，25G×（544÷514）×（257÷256）＝26.5625G。</p>
+<p>225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。</p>
+</div>
+
+    </div>
+
+    
+    
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/the-compatible-of-sfp/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">SFP模块的兼容性</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/cwdm-in-fronthual/">
+            <span class="next-text nav-default">无源波分前传分场景解决方案</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:fallleaf.yx@email.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://twitter.com/fallleafyx" rel="me noopener" class="iconfont"
+      title="twitter"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1264 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M1229.8616 18.043658c0 0-117.852626 63.135335-164.151872 67.344358-105.225559-164.151872-505.082682-92.598492-437.738325 223.078185C278.622548 312.675223 89.216542 47.506814 89.216542 47.506814s-117.852626 189.406006 75.762402 345.139833C127.097743 396.85567 55.544363 371.601535 55.544363 371.601535S26.081207 535.753407 253.368414 615.724832c-21.045112 29.463156-113.643603 8.418045-113.643603 8.418045s25.254134 143.10676 231.496229 180.987961c-143.10676 130.479693-387.230056 92.598492-370.393967 105.225559 206.242095 189.406006 1119.599946 231.496229 1128.01799-643.98042C1179.353331 249.539887 1263.533778 123.269217 1263.533778 123.269217s-130.479693 37.881201-138.897738 33.672179C1225.652577 98.015083 1229.8616 18.043658 1229.8616 18.043658"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://github.com/fallleaf" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://weibo.com/fallleafyx" rel="me noopener" class="iconfont"
+      title="weibo"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M385.714286 733.714286q12-19.428571 6.285714-39.428571t-25.714286-28.571429q-19.428571-8-41.714286-0.571429t-34.285714 26.285714q-12.571429 19.428571-7.428571 39.142857t24.571429 28.857143 42.571429 1.428571 35.714286-27.142857zm53.714286-69.142857q4.571429-7.428571 2-15.142857t-10-10.571429q-8-2.857143-16.285714 2.857143t-12.285714 10.571429q-9.714286 17.714286 7.428571 25.714286 8 2.857143 16.571429 2.857143t12.571429-10.571429zm99.428571 61.142857q-25.714286 58.285714-90.285714 85.714286t-128 6.857143q-61.142857-19.428571-84.285714-72.285714t3.714286-107.142857q26.857143-53.142857 86.571429-79.428571t120.285714-10.857143q63.428571 16.571429 90.571429 68.285714t1.428571 108.857143zm178.285714-91.428571q-5.142857-54.857143-50.857143-97.142857t-119.142857-62.285714-156.857143-12q-127.428571 13.142857-211.142857 80.857143t-75.714286 151.142857q5.142857 54.857143 50.857143 97.142857t119.142857 62.285714 156.857143 12q127.428571-13.142857 211.142857-80.857143t75.714286-151.142857zm176 2.285714q0 38.857143-21.142857 79.714286t-62.285714 78.285714-96.285714 67.142857-129.142857 47.428571-154.571429 17.714286-157.142857-19.142857-137.428571-53.142857-98-86.285714-37.142857-114q0-65.714286 39.714286-140t112.857143-147.428571q96.571429-96.571429 195.142857-134.857143t140.857143 4q37.142857 36.571429 11.428571 119.428571-2.285714 8-0.571429 11.428571t5.714286 4 8.285714 2.857143 7.714286-2l3.428571-1.142857q79.428571-33.714286 140.571429-33.714286t87.428571 34.857143q25.714286 36 0 101.714286-1.142857 7.428571-2.571429 11.428571t2.571429 7.142857 6.857143 4.285714 9.714286 3.428571q32.571429 10.285714 58.857143 26.857143t45.714286 46.571429 19.428571 66.571429zm-42.285714-356.571429q24 26.857143 31.142857 62t-3.714286 67.142857q-4.571429 13.142857-16.857143 19.428571t-25.428571 2.285714q-13.142857-4.571429-19.428571-16.857143t-2.285714-25.428571q11.428571-36-13.714286-63.428571t-61.142857-20q-13.714286 2.857143-25.714286-4.571429t-14.285714-21.142857q-2.857143-13.714286 4.571429-25.428571t21.142857-14.571429q34.285714-7.428571 68 3.142857t57.714286 37.428571zm103.428571-93.142857q49.714286 54.857143 64.285714 127.142857t-7.714286 138q-5.142857 15.428571-19.428571 22.857143t-29.714286 2.285714-22.857143-19.428571-2.857143-29.714286q16-46.857143 5.714286-98.285714t-45.714286-90.285714q-35.428571-39.428571-84.571429-54.571429t-98.857143-4.857143q-16 3.428571-29.714286-5.428571t-17.142857-24.857143 5.428571-29.428571 24.857143-16.857143q70.285714-14.857143 139.428571 6.571429t118.857143 76.857143z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://blog.fallleaf.net/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2004 -
+    2020
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        fallleaf
+        
+      </span></span>
+
+  
+  
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
