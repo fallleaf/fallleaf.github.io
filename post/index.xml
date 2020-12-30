@@ -6,11 +6,7 @@
     <description>Recent content in Posts on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.fallleaf.net/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ZEROTIER内网穿透实践</title>
       <link>https://blog.fallleaf.net/post/soft-defining-network-with-zerotier/</link>

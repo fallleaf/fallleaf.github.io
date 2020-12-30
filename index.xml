@@ -30,9 +30,7 @@
       <guid>https://blog.fallleaf.net/about/</guid>
       
         <description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
-
 &lt;p&gt;这个网站，采用过joomla，wordpress，typecho，最终采用了RStudio+blogdown+hugo+github+coding这种形式。文章以markdow的文本形式保存，避免了采用数据库存储时迁移的一些问题。&lt;/p&gt;
-
 &lt;p&gt;我的网站，从04年开始，起先是用的二级域名，后来申请了自己的域名，断断续续，时停时开，记录了我的一段经历，中间，有高达上万的访问量，也有访问无页面的时刻，回头看来，有不少不能成为博客，只能是一种记录，总之，这个博客不为别的，只为了表明在网络世界里，我来了，我存在。&lt;/p&gt;
 </description>
       
@@ -45,121 +43,110 @@
       
       <guid>https://blog.fallleaf.net/guitar/</guid>
       
-        <description>
-
-&lt;p&gt;初三的时候喜欢上了吉他，当时伙同同学找关系去本市的一个乐器厂买了一把，当时的条件也只能自学，由于五音不全，也只好学习古典和指弹，断断续续一直到了大学后，不再为谁而弹，兴趣就逐渐消失，等工作后，就不再触及了。&lt;/p&gt;
-
+        <description>&lt;p&gt;初三的时候喜欢上了吉他，当时伙同同学找关系去本市的一个乐器厂买了一把，当时的条件也只能自学，由于五音不全，也只好学习古典和指弹，断断续续一直到了大学后，不再为谁而弹，兴趣就逐渐消失，等工作后，就不再触及了。&lt;/p&gt;
 &lt;p&gt;两三年前，一个偶然的机会，再次捡起兴趣，好在网上有了各种资源和视频，学习起来不那么难了，到现在，陆陆续续弹了一些曲子，集成一辑《Memory》，留作纪念，自娱自乐。&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;h2 id=&#34;memory&#34;&gt;Memory&lt;/h2&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;难忘的一天&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/05-难忘的一天.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-您的浏览器不支持 audio 元素。
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Autumn Leaves&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/13-Autumn Leaves.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-您的浏览器不支持 audio 元素。
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Russian Romance&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/24-russian romance.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-您的浏览器不支持 audio 元素。
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;时光&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/23-时光.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-您的浏览器不支持 audio 元素。
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;逆流成河&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/22-逆流成河.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Million Scarlet Roses&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/26-Million Scarlet Roses.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Feeling&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/14-Feelings.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Sway&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/11-Sway.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Historian de Un Amor&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/16-Historian de Un Amor.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Song From A Secret Garden&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/18-Song From A Secret Garden.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;十年&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/28-十年.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Piensa En Mi&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/20-Piensa En Mi.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Natali&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/19-Cecila.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Speak Softly Love&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/21-Speak Softly Love.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Why&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/04-Why.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;A Touch Of Love&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/02-A Touch Of Love.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;I Miss You&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/01-I Miss You.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Faded(Alan walker)&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/03-Faded.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Sea Of Nectar&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/07-Sea of Nectar.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Around You&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/17-Around You.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;I dreamed you in the summer&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/27-I dreamed you in the summer.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;贝加尔湖畔&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/09-贝加尔湖畔.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;I will never forget&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/10-I will never forget.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;It hurts to leave and it hurts to stay&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/06-It hurts to leave and it hurts to stay.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Moonlight&lt;/strong&gt; &lt;audio controls=&#34;controls&#34;  preload=&#34;none&#34;&gt;
-&lt;source src=&#34;http://www.fallleaf.net:1107/25-moonlight.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;难忘的一天&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Autumn Leaves&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Russian Romance&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;时光&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;逆流成河&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Million Scarlet Roses&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Feeling&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sway&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Historian de Un Amor&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Song From A Secret Garden&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;十年&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Piensa En Mi&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Natali&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Speak Softly Love&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Why&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;A Touch Of Love&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;I Miss You&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Faded(Alan walker)&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sea Of Nectar&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Around You&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;I dreamed you in the summer&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;贝加尔湖畔&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;I will never forget&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;It hurts to leave and it hurts to stay&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Moonlight&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
 </description>
       
     </item>

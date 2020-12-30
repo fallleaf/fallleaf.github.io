@@ -6,11 +6,7 @@
     <description>Recent content in RAN on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 12 Jul 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.fallleaf.net/tags/ran/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 12 Jul 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/ran/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LTE下的RAN</title>
       <link>https://blog.fallleaf.net/post/ran-with-lte/</link>

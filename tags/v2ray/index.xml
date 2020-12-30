@@ -6,11 +6,7 @@
     <description>Recent content in v2ray on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.fallleaf.net/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>V2ray的WebSocket&#43;TLS&#43;Web安装记录</title>
       <link>https://blog.fallleaf.net/post/the-step-of-installation-for-v2ray&#43;websocket&#43;tls&#43;web/</link>
