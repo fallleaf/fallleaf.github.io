@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zerotier on Reading,Thinking And Writing</title>
+    <link>https://blog.fallleaf.net/tags/zerotier/</link>
+    <description>Recent content in zerotier on Reading,Thinking And Writing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.fallleaf.net/tags/zerotier/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ZEROTIER内网穿透实践</title>
+      <link>https://blog.fallleaf.net/post/soft-defining-network-with-zerotier/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fallleaf.net/post/soft-defining-network-with-zerotier/</guid>
+      <description>
+
+
+&lt;p&gt;内网和外网计算机组成一个局域网，相互能访问，并能访问内网资源。 </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Reading,Thinking And Writing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 12 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.fallleaf.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>zerotier</title>
+      <link>https://blog.fallleaf.net/tags/zerotier/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fallleaf.net/tags/zerotier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>内网穿透</title>
+      <link>https://blog.fallleaf.net/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fallleaf.net/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CWDM</title>
@@ -170,24 +188,6 @@
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://blog.fallleaf.net/tags/%E6%96%9C%E7%BA%BF%E5%9B%BE/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>吉他</title>
-      <link>https://blog.fallleaf.net/tags/%E5%90%89%E4%BB%96/</link>
-      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fallleaf.net/tags/%E5%90%89%E4%BB%96/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://blog.fallleaf.net/tags/python/</link>
-      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fallleaf.net/tags/python/</guid>
       <description></description>
     </item>
     
