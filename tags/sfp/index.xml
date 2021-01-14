@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SFP on Reading,Thinking And Writing</title>
+    <link>https://blog.fallleaf.net/tags/sfp/</link>
+    <description>Recent content in SFP on Reading,Thinking And Writing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/sfp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SFP模块的兼容性</title>
+      <link>https://blog.fallleaf.net/post/the-compatible-of-sfp/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fallleaf.net/post/the-compatible-of-sfp/</guid>
+      <description>
+
+
+&lt;p&gt;根据MSA标准设计制造生产的SFP光模块，兼容性是不言而喻的。&lt;/p&gt;
+&lt;p&gt;MSA（Multi-Source Agreement）是一个多供应商规范，相比IEEE算是一个民间的非官方组织形式，针对不同的光模块（SFP、SFP+、QSFP等）标准会形成不同的MSA协议，可以理解是产业内企业联盟行为。MSA除了定义光模块的结构封装（包括外形尺寸，电连接器，引脚分配等），也定义了电接口、光接口，从而形成完整的光模块标准。理论上，遵循MSA协议生产的光模块均可兼容。 </description>
+    </item>
+    
+  </channel>
+</rss>
