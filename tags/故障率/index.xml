@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>故障率 on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/%E6%95%85%E9%9A%9C%E7%8E%87/</link>
+        <description>Recent content in 故障率 on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Sat, 11 Oct 2025 07:45:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%95%85%E9%9A%9C%E7%8E%87/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>距离越长，光缆就越容易出故障吗？</title>
+        <link>https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/</link>
+        <pubDate>Sat, 11 Oct 2025 07:45:00 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/cover.jpeg" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;乍听之下，这似乎不用讨论——当然越长越容易坏了，线路越长，风险点越多，还有一个指标可以通过反算来说明这个问题。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;平均百皮长公里故障次数 = 障碍总次数 ÷ 光缆线路总长度 × 100&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个指标被广泛用于年报、统计表以及考核体系中。它适合进行总体评价，虽然看似科学、简洁，但对于分类的评价，很容易导致错误的推论。因为它混淆了“总量”和“密度”，把不同长度、不同环境的光缆混在一起平均，从而掩盖了真正的规律。&lt;/p&gt;
+&lt;h2 id=&#34;被平均掩盖的真相&#34;&gt;被“平均”掩盖的真相
+&lt;/h2&gt;&lt;p&gt;举个简单的例子。假设网络里有两类光缆：城区的短光缆和长途的干线光缆，故障统计如下：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;类型&lt;/th&gt;
+          &lt;th&gt;长度（皮长公里）&lt;/th&gt;
+          &lt;th&gt;故障次数&lt;/th&gt;
+          &lt;th&gt;平均百皮长公里故障次数&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;城区短光缆&lt;/td&gt;
+          &lt;td&gt;50&lt;/td&gt;
+          &lt;td&gt;10&lt;/td&gt;
+          &lt;td&gt;20&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;长途干线&lt;/td&gt;
+          &lt;td&gt;400&lt;/td&gt;
+          &lt;td&gt;20&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;合计&lt;/td&gt;
+          &lt;td&gt;450&lt;/td&gt;
+          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;6.67&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;城区短光缆虽然线路短，但故障次数却不少；长途干线线路长，故障次数更多，但换算成单位长度的故障率却低得多。把两种光缆加起来平均，看似网络整体很稳定，但却掩盖了城区短光缆的高风险。这个“混合偏差”告诉我们，直接用简单的算术平均数（以下简称平均数）来评价，往往会给出误导性的结论。&lt;/p&gt;
+&lt;p&gt;这就是典型的“ &lt;strong&gt;混合偏差&lt;/strong&gt; ”（mixing bias）：当你把不同性质的对象混在一起算平均，结果往往没有任何现实意义。就像把婴儿和老人一起统计平均寿命，再用它预测“中年人的死亡风险”，完全南辕北辙。&lt;/p&gt;
+&lt;h2 id=&#34;为什么分档统计更科学&#34;&gt;为什么“分档统计”更科学
+&lt;/h2&gt;&lt;p&gt;因此，一个更科学的方法是将光缆按长度分档（光缆的端点如何确定，还是比较复杂的，比如用复用段、光放段、光缆段、光路段？，这是另外的话题了），比如10公里以下、10到50公里、50到100公里、100公里以上，分别计算每档的故障率。通过分档统计，我们才能真正看到不同长度光缆的故障规律：如果长距离光缆的单位故障率高，就说明距离确实加大了风险；如果故障率差别不大，说明故障次数的增加仅仅是线路数量多的自然结果；如果短距离的故障率反而更高，背后可能是施工环境复杂和人为破坏导致的。&lt;/p&gt;
+&lt;p&gt;这种做法，统计学上叫分层分析（stratified analysis），工程上叫结构化指标分析。它能避免整体平均的“生态谬误”（Ecological Fallacy）——即不能用总体平均去推断局部特征。&lt;/p&gt;
+&lt;h2 id=&#34;为什么越长越坏未必成立&#34;&gt;为什么“越长越坏”未必成立
+&lt;/h2&gt;&lt;p&gt;从工程实际出发，光缆故障的因素极多——不仅仅是长度。光缆及附件质量、外部环境、敷设方式、巡检力度等等，都在发挥作用。比如城区改造区域光缆密集，施工挖掘频繁，造成故障频发，再如接入光缆的接头盒质量不过关，极易造成衰减不稳定，发生闪断。反而相对平稳、保护措施好的长途光缆，单位长度的故障概率会更低。因此，简单认为“越长越容易坏”其实并不严谨。&lt;/p&gt;
+&lt;p&gt;换句话说，总故障数确实随长度增加，但单位长度的故障概率未必增加。把两者混为一谈，就像说“人口多的国家交通事故一定多”，却没问一句——每万人事故率是多少？&lt;/p&gt;
+&lt;h2 id=&#34;科学分析的进阶方法&#34;&gt;科学分析的进阶方法
+&lt;/h2&gt;&lt;p&gt;如果要更深入探究接入距离与故障次数的关系，可以借助统计学中的 &lt;strong&gt;泊松回归&lt;/strong&gt; 或 &lt;strong&gt;负二项回归&lt;/strong&gt; ，将 &lt;strong&gt;故障次数作为因变量&lt;/strong&gt; ， &lt;strong&gt;光缆长度作为基准&lt;/strong&gt; ，同时控制 &lt;strong&gt;环境条件、施工质量等因素&lt;/strong&gt; 。还可以做 &lt;strong&gt;队列对比分析&lt;/strong&gt; ，比较改造前后的长、短线路组的故障表现，计算相对风险，这才能给出“长度是否是独立风险因子”的科学证据。单凭简单的平均数，根本看不到这些细节。&lt;/p&gt;
+&lt;h2 id=&#34;拒绝平均的幻觉&#34;&gt;拒绝“平均的幻觉”
+&lt;/h2&gt;&lt;p&gt;总的来说，平均数往往会让我们陷入“平均的幻觉”，看似简单合理，却掩盖了真实的光缆故障分布。只有通过分层、分档、分情境的细致分析，才能真正触及问题本质。做到这点，数据才有了洞察的力量，而不仅仅是枯燥的数字。&lt;/p&gt;
+&lt;h2 id=&#34;题外话&#34;&gt;题外话
+&lt;/h2&gt;&lt;p&gt;数据的价值不只在于计算，更在于深入挖掘背后的故事。当平均数让视野模糊，我们要学会拆解与细致观察，逐层揭开真相。这种科学严谨的态度，正是面对复杂系统时最可靠的方法。 &lt;strong&gt;只是，收集和准备好这些详细的数据，是实践中最大的挑战&lt;/strong&gt; 。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

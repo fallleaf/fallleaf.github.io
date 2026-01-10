@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>极简网络 on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/%E6%9E%81%E7%AE%80%E7%BD%91%E7%BB%9C/</link>
+        <description>Recent content in 极简网络 on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Wed, 03 Sep 2025 07:32:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%9E%81%E7%AE%80%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>移动近10亿招标“极简网络”，联通将其升华为网络哲学，背后有何玄机？</title>
+        <link>https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/</link>
+        <pubDate>Wed, 03 Sep 2025 07:32:00 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/cover.jpeg" alt="Featured image of post 移动近10亿招标“极简网络”，联通将其升华为网络哲学，背后有何玄机？" /&gt;&lt;p&gt;一场关于“极简”的本质之争，正在三大运营商之间悄然上演。近期，广东移动近10亿元的“极简网络改造技术支撑”项目招标，再次将“极简”推向风口浪尖。然而，当我们深入剖析三大运营商在这一领域的实施路径时，却发现了一个令人深思的现象： &lt;strong&gt;名称相同，但理念和做法却大相径庭。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;移动与电信项目式的减法工程&#34;&gt;移动与电信：项目式的“减法工程”
+&lt;/h2&gt;&lt;p&gt;移动和电信对“极简”的理解，更倾向于一个具体的工程项目。他们的招标项目通常直接、明确，预算和改造站点数量清晰可见，主要聚焦移动基站及配套的精简。这是一种典型的项目化运作模式，聚焦于物理层面的设备简化，例如采用刀片电池和刀片电源，将基站CRAN化，从而减少机房和配套设施。这种模式的优点是目标明确、执行高效，能够迅速看到网络运营成本的降低和效能的提升，但其本质是一场“减法工程”，旨在解决眼前的问题。&lt;/p&gt;
+&lt;h2 id=&#34;联通理念化的重构哲学&#34;&gt;联通：理念化的“重构哲学”
+&lt;/h2&gt;&lt;p&gt;与此形成鲜明对比的是，联通的“极简”实践鲜有大规模的集中招标，查询其招标网站，也只有两条相关的机房招标公告 ，但搜索网站和公众号文章 ， 却发现联通的&amp;quot;打造极简网络&amp;quot;工作，全国范围内正如火如荼的开展，贯穿网络建设的方方面面。联通将“极简”视为一种 &lt;strong&gt;贯穿网络全生命周期的核心哲学&lt;/strong&gt; ，而非一个孤立的技术项目。这种理念的引领，使得联通的“极简”实践更具系统性和长远性。&lt;/p&gt;
+&lt;h2 id=&#34;中国联通极简网络的深层内涵&#34;&gt;中国联通“极简网络”的深层内涵
+&lt;/h2&gt;&lt;p&gt;中国联通的“打造极简网络”工作不仅仅是设备上的简化，而是一项系统性的工程，其核心内涵可以从以下几个方面重新阐述：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优化架构，夯实基础：
+联通的“极简网络”战略首先聚焦于网络架构的深层优化。这包括整合分散、小型化的机房，以构建一个更精简、更稳定的网络架构。通过淘汰老旧设备、更新关键设施（如发电机和电池），提升网络的整体可靠性和安全性，为用户提供一个坚实、可靠的基础网络服务。&lt;/li&gt;
+&lt;li&gt;效率至上，网络革新：
+为了提高网络效率，联通对移动网、宽带网和承载网进行优化改造。他们通过优化光缆结构和光纤交接箱的布局，缩短接入距离，优化承载网络，形成一刚一柔两张简洁的承载网。同时，联通积极推进2G、3G网络的退网，并精简冗余的4G基站，OLT局点的优化、老旧OLT的退网，最终构建一个以4G/5G、10G PON宽带和智能城域网/PeOTN网为核心的现代化精品网络，大幅提升了网络能力和运营效率。&lt;/li&gt;
+&lt;li&gt;能力升级，数据驱动：
+“极简网络”的实施也是一次内部能力的革命。联通鼓励自有员工参与到网络建设和改造中，以此提升团队的核心技术能力，降低对外部供应商的依赖。此外，还对网络资源进行的全面数据治理，为公司的数智化转型打下坚实基础，从而能更好地为用户提供高品质、个性化的服务。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;极简背后的深层价值超越技术的价值创造&#34;&gt;“极简”背后的深层价值：超越技术的价值创造
+&lt;/h2&gt;&lt;p&gt;联通的“打造极简网络”工作不仅限于技术层面，更延伸至组织能力、企业文化和战略发展等多个维度。这种超越技术的价值创造，是其与友商最大的不同。&lt;/p&gt;
+&lt;p&gt;通过 &lt;strong&gt;自主实施&lt;/strong&gt; 网络精简、架构优化等工作，联通不仅降低了对外部供应商的依赖，更培养了员工的系统思维能力和自主创新能力。这种“自己动手”的方式，将极简理念内化为企业文化，让员工从被动执行变为主动创新。例如，某地市联通在实践中发现，通过“打造极简网络”工作，不仅节省了机房空间、降低了能耗，还能提高设备运行的稳定性和延长使用寿命，这正是从 “为极简而极简” 到 “为价值而极简” 的深刻转变 。&lt;/p&gt;
+&lt;p&gt;此外，极简网络更是联通未来战略的基石。正如联通副总经理苗守野在2020年全球移动宽带论坛上所言，联通将从“ 极简网络 、极致体验、极智服务”三个方面打造高品质目标网，极简网络为网络智能化发展奠定了基础，能更好地支持人工智能、大数据、云计算等新技术的应用。这与联通提出的 “5G+ABC端到端网络建设发展路线” 一脉相承，展现了其对未来网络演进方向的深刻洞察。&lt;/p&gt;
+&lt;h2 id=&#34;极简的真谛复杂问题的简单化&#34;&gt;“极简”的真谛：复杂问题的简单化
+&lt;/h2&gt;&lt;p&gt;真正的极简，不是简单的减少，而是通过系统思考实现复杂问题的简单化。当电信和移动还在为如何减少基站设备数量而努力时，联通已经将极简升华为一种网络建设的哲学。&lt;/p&gt;
+&lt;p&gt;这种哲学体现在：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;战略高度：&lt;/strong&gt; 将“极简 ” 作为企业长期发展策略。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方法论体系： 各省/各地市形成了诸如“理、强、迁、退、评”等可复制、可推广的工作流程。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作原则：&lt;/strong&gt; 遵循“强基础 ，优网络，升安全，治数据” 指导原则。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文化内化： 将极简理念融入日常工作，成为企业DNA的一部分。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过极简网络工作，联通不仅实现了网络效能提升和成本降低，更重要的是培养了各级员工的系统思维能力和自主创新能力。这种内在能力的提升，对企业长远发展的价值不可估量。&lt;/p&gt;
+&lt;h2 id=&#34;结语极简之路道阻且长&#34;&gt;结语：极简之路，道阻且长
+&lt;/h2&gt;&lt;p&gt;当移动豪掷近10亿招标“极简网络”，电信大规模推进“极简基站”时，联通却选择了另一条路——将 “ 极简 ” 升华为网络建设的核心理念。这种差异，反映了三大运营商对“极简”本质理解的深刻分歧。&lt;/p&gt;
+&lt;p&gt;随着5G-Advanced技术的演进和6G研究的启动，网络智能化将成为必然趋势。在这一背景下，联通将“极简”作为网络建设理念而非项目推进的方式，虽然在短期内可能难以看到爆炸性的成效，但却是在默默锤炼内功，为未来智能化网络奠定坚实基础。 真正的极简革命，不在于减少多少设备，而在于能否通过系统思考，将复杂问题简单化，让网络回归本质，让技术真正服务于人。 中国联通的极简网络实践，正是这一理念的生动诠释。&lt;/p&gt;
+&lt;p&gt;本文参考的相关网络资源:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;运营商&lt;/th&gt;
+          &lt;th&gt;标题&lt;/th&gt;
+          &lt;th&gt;来源&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国移动&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;广东移动2025-2026极简网络改造技术支撑招标公告&lt;/td&gt;
+          &lt;td&gt;中国移动采购及招标网&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;安庆联通桐城汇聚区打造极简网络工作案例&lt;/td&gt;
+          &lt;td&gt;网易&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;率先完成本地网极简网络工作&lt;/td&gt;
+          &lt;td&gt;中国青年网&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;沁县联通聚焦绿色发展，打造极简网络&lt;/td&gt;
+          &lt;td&gt;搜狐&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;【联通好网络 畅享每一刻】打造极简网络 驱动网络焕新&lt;/td&gt;
+          &lt;td&gt;中华网&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;璧山联通打造“极简网络” 共赢双碳未来&lt;/td&gt;
+          &lt;td&gt;中国网&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;中国联通苗守野：极简网络+极致体验+极智服务 成就高品质5G赋能未来&lt;/td&gt;
+          &lt;td&gt;新浪财经&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国电信&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;中国电信陕西公司2025年极简基站改造服务项目标包一招标公告&lt;/td&gt;
+          &lt;td&gt;中国电信阳光采购网&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国电信&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;中国电信股份有限公司湖北分公司2024年极简基站改造服务项目招标公告&lt;/td&gt;
+          &lt;td&gt;中国电信阳光采购网&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;中国移动&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;陕西移动咸阳分公司推进极简站改造 助力“碳中和、碳达峰”战略&lt;/td&gt;
+          &lt;td&gt;搜狐&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;行业讨论&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;三大运营商集体押注极简网络，是破局还是闯祸？&lt;/td&gt;
+          &lt;td&gt;通信人家园（论坛）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;中国联通&lt;/td&gt;
+          &lt;td&gt;极简网络相关内容&lt;/td&gt;
+          &lt;td&gt;微信公众号:通信菜园儿&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

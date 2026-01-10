@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>量子通信 on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/%E9%87%8F%E5%AD%90%E9%80%9A%E4%BF%A1/</link>
+        <description>Recent content in 量子通信 on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E9%87%8F%E5%AD%90%E9%80%9A%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输</title>
+        <link>https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/</link>
+        <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/cover.jpg" alt="Featured image of post 量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输" /&gt;&lt;p&gt;最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。&lt;/p&gt;
+&lt;h2 id=&#34;核心技术q-chip让量子信号搭车互联网&#34;&gt;核心技术：Q-chip，让量子信号“搭车”互联网
+&lt;/h2&gt;&lt;p&gt;这项成果的核心，是一个名为 &lt;strong&gt;Q-chip&lt;/strong&gt; 的集成芯片。它的神奇之处在于——可以让量子信号在现有的光纤网络中“穿行”，而不被破坏。&lt;/p&gt;
+&lt;p&gt;Q-chip 的工作原理是“量子-经典混合”：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;经典信号&lt;/strong&gt; 像“火车头”，负责在复杂的网络中导航，寻找最优路径；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;量子信号&lt;/strong&gt; 则像“密封集装箱”，携带着脆弱的量子态，在传输过程中受到保护，不受环境干扰。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更厉害的是，这种机制还能自动纠错，确保量子数据的高保真传输。研究团队在 Verizon 的真实商用网络上进行了测试，即使在温度波动和振动干扰下，系统的量子信号保真度依然高达 97%。&lt;/p&gt;
+&lt;h2 id=&#34;它和我们熟悉的量子加密通信有什么不同&#34;&gt;它和我们熟悉的量子加密通信有什么不同？
+&lt;/h2&gt;&lt;p&gt;很多人听到“量子通信”，第一反应是量子密钥分发（QKD），一种用于超安全加密的技术。但 Q-chip 所代表的量子互联网，远不止于此。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;特性&lt;/th&gt;
+          &lt;th&gt;Q-chip 技术&lt;/th&gt;
+          &lt;th&gt;量子密钥分发（QKD）&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;应用目标&lt;/td&gt;
+          &lt;td&gt;构建量子互联网，实现量子计算机、传感器互联&lt;/td&gt;
+          &lt;td&gt;提供不可破解的密钥，用于加密通信&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;传输介质&lt;/td&gt;
+          &lt;td&gt;商用光纤，量子与经典信号并行传输&lt;/td&gt;
+          &lt;td&gt;专用光纤或独占信道&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;信号类型&lt;/td&gt;
+          &lt;td&gt;真正的量子态（如量子比特），可用于计算与协同处理&lt;/td&gt;
+          &lt;td&gt;弱相干光脉冲，仅用于密钥生成&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;技术挑战&lt;/td&gt;
+          &lt;td&gt;自动路由、纠错、与现有网络兼容&lt;/td&gt;
+          &lt;td&gt;长距离衰减与中继信任问题&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;简单来说，QKD 是量子技术在信息安全领域的应用，而 Q-chip 则是为未来的量子计算和通信网络打基础。它的目标是让量子设备像今天的手机和电脑一样，在同一个网络中互联协作。&lt;/p&gt;
+&lt;h2 id=&#34;量子互联网的未来不仅是通信更是计算革命&#34;&gt;量子互联网的未来：不仅是通信，更是计算革命
+&lt;/h2&gt;&lt;p&gt;想象一下未来的世界：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;量子计算机之间可以远程协同，解决超级复杂的问题；&lt;/li&gt;
+&lt;li&gt;量子传感器可以实时共享数据，提升医疗、气象、能源等领域的效率；&lt;/li&gt;
+&lt;li&gt;人类将拥有一个全新的信息基础设施，远超今天的互联网。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这不是科幻，而是正在发生的现实。宾大的这项研究，正是通往量子互联网的“第一块路砖”。&lt;/p&gt;
+&lt;h2 id=&#34;量子网络节点实拍开发板与光纤的协奏&#34;&gt;量子网络节点实拍：开发板与光纤的协奏
+&lt;/h2&gt;&lt;p&gt;下图展示的是构建量子网络节点所使用的部分设备，距离信号源约一公里的 Verizon 商用光纤终端处。这张图中最引人注目的， 是节点设备采用Arduino Mega 2560开发板。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;图片&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;原文链接:
+Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-for-the-first-time/&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

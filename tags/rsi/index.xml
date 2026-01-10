@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>RSI on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/rsi/</link>
+        <description>Recent content in RSI on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Sun, 30 Jul 2023 15:58:05 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/rsi/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>预防RSI的利器</title>
+        <link>https://blog.fallleaf.net/p/life-rsi-prevention-tools/</link>
+        <pubDate>Wed, 06 Dec 2006 15:58:05 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/life-rsi-prevention-tools/</guid>
+        <description>&lt;p&gt;RSI，英文全名叫Repetitive Strain Injury或者为Repetitive Stress Injury，中文意思为重复性压迫损伤。它是由于从事重复性活动或不良姿势而造成的对腱、神经、肌肉和其它软组织的损伤，它的损害可归结为肌肉纤维的结构性变化和血流量减少，神经也不幸被牵扯其中，不活动的组织和周围的炎症压迫着神经，能够引起肢体失去知觉和酸麻，在神经损坏严重时最终变得脆弱。RSI 不是一种特定症状的名称，它是一类具有相同特点的症状的集合，如腕管综合征（CTS，Carpal tunnel syndroma），俗称“鼠标手”，腱鞘炎，奎缅综合征（DeQuervain’s syndrome），肘管综合症（cubital tunnel syndrome），胸廓出口综合征（thoracic outlet syndrome)等。它是一种职业性疾病，经常发生在从事重复性劳动的人群中，如流水线上的工人、IT行业人士、键盘手以及短信狂等。典型症状如颈部、四肢和背部的疼痛，手腕无力、手指麻木、疼痛，无法举双肩，眼睛模糊、酸疼等，对于从事计算机行业的人群中，以腕管综合征（CTS）最普遍。&lt;/p&gt;
+&lt;p&gt;对于长时间进行计算机操作的人员，预防RSI，可参照以下的方法：&lt;/p&gt;
+&lt;p&gt;－ 每工作 30－45 分钟，至少休息 5 分钟。可以借助一些预防RSI的软件，帮助提醒你按时休息；&lt;/p&gt;
+&lt;p&gt;－ 在休息时伸展放松你的身体，做些体操，眼保健操之类的活动；&lt;/p&gt;
+&lt;p&gt;－ 时常注意正确的身体姿态，如不要躺着使用笔记本电脑，不要斜躺在桌椅上；&lt;/p&gt;
+&lt;p&gt;－ 时常调整桌椅、显示器、键盘、鼠标的位置，不要总固定在一个位置上；&lt;/p&gt;
+&lt;p&gt;－ 不要沉湎于上网；&lt;/p&gt;
+&lt;p&gt;－ 如果开始觉得疼痛或疼痛持续，应及早治疗。&lt;/p&gt;
+&lt;p&gt;采用软件来帮助预防RSI，是一种有效的方法。常见的付费软件有WorkPace、fit@work、RSIguard和A.R.M.S（Avoid Repetitive Motion Syndrome），免费开源的软件有Workrave、type-break-mode等。这里要介绍的软件是Workrave。&lt;/p&gt;
+&lt;p&gt;Workrave是一个预防和消除RSI的软件，它遵循遵循GPL规定，可在Microsoft Windows以及Linux下运行。它的网站地址为http://www.workrave.org ，可到去http://www.workrave.org/download/ 下载程序和代码，截至2006年12月6日，当前的版本是1.8.3。它可根据你设定好的时间间隔，让你小憩（micro-pauses）、休息 （rest breaks）以及工作时间（daily limit），并且可以弹出画面指导你进行运动。它具有统计功能，可以统计你每天的休息的情况、鼠标点击的次数、移动的距离以及敲击键盘的次数等。它还具有联网功能，使在网上的计算机都具有相同的设置，方便你在其他计算机上工作时，仍能够依照原来的设置进行休息。&lt;/p&gt;
+&lt;p&gt;下图是Workrave的设置页面，包括定时器的设置，用户界面的设置，以及网络设置。
+&lt;img src=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/preferences.gif&#34;
+	width=&#34;616&#34;
+	height=&#34;364&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/preferences_hu_5c16d250cac9b2e8.gif 480w, https://blog.fallleaf.net/p/life-rsi-prevention-tools/preferences_hu_4ae1eea7193b77d2.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Preferences&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;169&#34;
+		data-flex-basis=&#34;406px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;定时器设置包括小憩、休息和工作时间的设置，以小憩为例，可设置小憩间的时间间隔（time before break)，小憩的持续时间（pause duration），延后时间（post-pone time），还可设置时候显示取消或延后按钮（show “post－pone” and “skip” button），这个选项可防止不遵守设置时间的行为，另外，还可设置是否扣除不活动的时间（suspend timer when inactive），此项避免人不在的时候仍然计时，一般当键盘或鼠标5－6秒没有动作的时候才停止计时。&lt;/p&gt;
+&lt;p&gt;下面的图形是Workrave的主窗口，手型图案为小憩的图标，茶图案为休息的时间，退出图案为剩余工作时间。也可将该窗口关闭，显示在工具栏中。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/main-window.png&#34;
+	width=&#34;90&#34;
+	height=&#34;105&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/main-window_hu_b7c6e67eb9da1809.png 480w, https://blog.fallleaf.net/p/life-rsi-prevention-tools/main-window_hu_1d41653d9d95f798.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Main window&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;85&#34;
+		data-flex-basis=&#34;205px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Main window&lt;/p&gt;
+&lt;p&gt;这个闪烁的窗口提醒你该小憩了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/prelude.gif&#34;
+	width=&#34;250&#34;
+	height=&#34;78&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/prelude_hu_a1b6f3bcc4ac12a.gif 480w, https://blog.fallleaf.net/p/life-rsi-prevention-tools/prelude_hu_937e8527ec329e78.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Prelude window&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;320&#34;
+		data-flex-basis=&#34;769px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Prelude window&lt;/p&gt;
+&lt;p&gt;这是小憩时间的窗口，你可以去到杯水，或闭上眼，这个窗口有取消(skip)和延时(postpone)两个按钮，当然，你也可以在设置页中取消它，这样你就不得不遵守这些时间了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/micro-pause.png&#34;
+	width=&#34;247&#34;
+	height=&#34;157&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/micro-pause_hu_bb51db2e7f987aac.png 480w, https://blog.fallleaf.net/p/life-rsi-prevention-tools/micro-pause_hu_37eab97c7f328a3e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Micro-pause&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;157&#34;
+		data-flex-basis=&#34;377px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Micro-pause&lt;/p&gt;
+&lt;p&gt;下图告诉你该好好休息了，可以去做操，散步，去喝杯咖啡，嫌时间不够吗，可以在设置页中增加。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/rest-break.png&#34;
+	width=&#34;352&#34;
+	height=&#34;170&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/rest-break_hu_98eade2ac74c9ebe.png 480w, https://blog.fallleaf.net/p/life-rsi-prevention-tools/rest-break_hu_8fdd89f2ed9ab76.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Rest break&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;496px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Rest break&lt;/p&gt;
+&lt;p&gt;呵呵，今天工作时间结束了，如果你还想工作，不如远离计算机，看看其他文件什么的。注意，时间可别设置的太短了，不然，还得重启计算机才行。也别设置的太长了，要防止”过劳死“。！）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/daily-limit.png&#34;
+	width=&#34;367&#34;
+	height=&#34;138&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/daily-limit_hu_8550708f53428dde.png 480w, https://blog.fallleaf.net/p/life-rsi-prevention-tools/daily-limit_hu_5685d62fc9b0ffc3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Daily limit&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;265&#34;
+		data-flex-basis=&#34;638px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Daily limit&lt;/p&gt;
+&lt;p&gt;跟着一起做操吧。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/exercises.gif&#34;
+	width=&#34;574&#34;
+	height=&#34;358&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/life-rsi-prevention-tools/exercises_hu_94d0041999dce0a5.gif 480w, https://blog.fallleaf.net/p/life-rsi-prevention-tools/exercises_hu_be4fc4adf85d3739.gif 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Exercises&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Exercises&lt;/p&gt;
+&lt;p&gt;在时间的设置上，我一般设置10分钟间隔一小憩，小憩时间2分钟，60分钟一休息，休息时间为10分钟，这个是参照“用(10+2)*5法来对付惰性”进行设置的，你也可以根据你的习惯设置。&lt;/p&gt;
+&lt;p&gt;刚开始用这个软件，可能你感觉不适应，总觉的时间间隔太短或着打扰你工作的劲头，不过，这是防止RSI的重要的方法，想想吧，身体和工作，哪个更重要些。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

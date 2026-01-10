@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>可靠性 on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</link>
+        <description>Recent content in 可靠性 on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Fri, 12 Dec 2025 09:35:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析</title>
+        <link>https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/</link>
+        <pubDate>Fri, 12 Dec 2025 09:35:00 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/cover.jpeg" alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析" /&gt;&lt;p&gt;承载关键业务电路时，选择何种方式是一个涉及技术、成本与风险的重大决策。是采用 &lt;strong&gt;简单直接的光纤直驱&lt;/strong&gt; ，还是选择 &lt;strong&gt;具备冗余保护的传输系统承载&lt;/strong&gt; 呢？大概大部分人都会选择最“ &lt;strong&gt;安全&lt;/strong&gt; ”的方式，就是上传输系统。&lt;/p&gt;
+&lt;p&gt;但是，是否真是这样呢？&lt;/p&gt;
+&lt;h2 id=&#34;核心问题如何实现高可靠性&#34;&gt;核心问题：如何实现高可靠性？
+&lt;/h2&gt;&lt;p&gt;我们对两种主要的承载方式进行可靠性分析，其中，可靠性（Reliability）用$R$来表示，它代表系统在给定时间内无故障运行的概率。&lt;/p&gt;
+&lt;p&gt;我们假设：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;光缆的可靠性&lt;/strong&gt;为$p$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;传输设备的可靠性&lt;/strong&gt;为$q$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;方式-1光纤直驱&#34;&gt;方式 1：光纤直驱
+&lt;/h3&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph TD;
+    A[业务输入] --&amp;gt; B(光缆 $$p$$);
+    B --&amp;gt; C[业务输出];
+    style B fill:#f9f,stroke:#333,stroke-width:2px;&lt;/pre&gt;
+&lt;p&gt;这是最简洁的方式，电路直接通过一根光缆承载。&lt;/p&gt;
+&lt;h3 id=&#34;方式-2传输系统承载&#34;&gt;方式 2：传输系统承载
+&lt;/h3&gt;&lt;p&gt;我们简化模型为： &lt;strong&gt;一个传输设备&lt;/strong&gt; 与 &lt;strong&gt;两条并联的光缆&lt;/strong&gt; 串联组成。&lt;/p&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;graph TD
+    D[业务输入] --&amp;gt; E{传输设备 $$q$$};
+    E --&amp;gt; F;
+    F --&amp;gt; G([光缆 $$p$$]);
+    F --&amp;gt; H([光缆 $$p$$]);
+    G --&amp;gt; I;
+    H --&amp;gt; I;
+    I --&amp;gt; J[业务输出];
+
+    subgraph 并联光缆组
+        F(分路)
+        G
+        H
+        I(合路)
+    end
+    
+    style E fill:#ccf,stroke:#333,stroke-width:2px
+    style G fill:#f9f,stroke:#333,stroke-width:2px
+    style H fill:#f9f,stroke:#333,stroke-width:2px&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;并联光缆的可靠性：&lt;/strong&gt; 两条光缆并联，只有当两条光缆同时失效时，光缆承载才失效。&lt;/p&gt;
+$$ R_{光缆并联} = 1 - (1-p)(1-p) = 2p - p^2$$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;系统总可靠性：&lt;/strong&gt; 将光缆并联体与传输设备 $q$ 串联起来。&lt;/p&gt;
+$$ R_{方式2} = R_{光缆并联} \times q = (2p - p^2) \times q$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;可靠性的决胜局谁更优&#34;&gt;可靠性的“决胜局”：谁更优？
+&lt;/h2&gt;&lt;p&gt;通过数学比较 $R_{方式2}$ 和 $R_{方式1}$ 的大小，我们得出了一个&lt;strong&gt;关键的临界值&lt;/strong&gt;，它决定了你的选择：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;临界条件&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;可靠性比较&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;决策建议&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;当 $q &amp;gt; \frac{1}{2-p}$ 时&lt;/td&gt;
+          &lt;td&gt;$R_{方式2} &amp;gt; R_{方式1}$&lt;/td&gt;
+          &lt;td&gt;传输系统承载更优&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;当 $q &amp;lt; \frac{1}{2-p}$ 时&lt;/td&gt;
+          &lt;td&gt;$R_{方式1} &amp;gt; R_{方式2}$&lt;/td&gt;
+          &lt;td&gt;光纤直驱更优&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;当 $q = \frac{1}{2-p}$ 时&lt;/td&gt;
+          &lt;td&gt;$R_{方式1} \approx R_{方式2}$&lt;/td&gt;
+          &lt;td&gt;两者可靠性相当&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;临界值-q_临界--frac12-p-的分析&#34;&gt;临界值 $Q_{临界} = \frac{1}{2-p}$ 的分析
+&lt;/h3&gt;&lt;h4 id=&#34;1-当光缆-p-极高时接近完美&#34;&gt;1. 当光缆 $p$ 极高时（接近完美）
+&lt;/h4&gt;&lt;p&gt;假设你的光缆质量非常好， $p = 0.99$。&lt;/p&gt;
+$$Q_{临界} = \frac{1}{2 - 0.99} = \frac{1}{1.01} \approx 0.9901$$&lt;p&gt;这意味着，除非你的传输设备 $q$ 的可靠性&lt;strong&gt;高于 99.01%&lt;/strong&gt;，否则方式1（直驱）的可靠性反而更高！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解读：&lt;/strong&gt; 当基础的光缆本身已经足够可靠时，再引入高昂的传输设备，其带来的&lt;strong&gt;故障风险 ($1-q$)&lt;/strong&gt; 甚至可能超过两条并联光缆带来的冗余收益。额外的投资换来的可能是可靠性的&lt;strong&gt;下降&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;2-当光缆-p-较低时&#34;&gt;2. 当光缆 $p$ 较低时
+&lt;/h4&gt;&lt;p&gt;假设你的光缆环境较差， $p = 0.8$。&lt;/p&gt;
+$$Q_{临界} = \frac{1}{2 - 0.8} = \frac{1}{1.2} \approx 0.833$$&lt;p&gt;在这种情况下，只要你的传输设备 $q$ 的可靠性&lt;strong&gt;高于 83.3%&lt;/strong&gt;，方式2就会优于方式1。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解读：&lt;/strong&gt; 当基础链路可靠性不足时，冗余的光缆并联结构（方式2的核心优势）可以显著提升整体可靠性，即便引入的设备风险较大，也是值得的。&lt;/p&gt;
+&lt;h3 id=&#34;工程抉择投资与安全的平衡&#34;&gt;工程抉择：投资与安全的平衡
+&lt;/h3&gt;&lt;p&gt;分析结果清晰地告诉我们： &lt;strong&gt;业务电路承载的可靠性选择，绝不能一概而论。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;方式2（传输系统承载）固然提供了强大的光缆冗余保护，但也带来了 &lt;strong&gt;巨大的投资增加&lt;/strong&gt; 和 &lt;strong&gt;新的故障点（传输设备 ）&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h2 id=&#34;结论最贵的不一定就是最好的&#34;&gt;结论：最贵的，不一定就是最好的
+&lt;/h2&gt;&lt;p&gt;构建高可靠性的通信网络，需要从 “可靠性” 和 “投资有效性” 两个维度进行评估。&lt;/p&gt;
+&lt;p&gt;我们应该避免用巨大的、不经济的投资，去换取微量的安全提升。只有通过精确的数学模型分析和对具体工程环境（$p$ 和 $q$ 的实际值）的深入理解，才能找到真正符合业务需求、且最具成本效益的承载方案。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最可靠的方案，是平衡了成本与风险的方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>距离越长，光缆就越容易出故障吗？</title>
+        <link>https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/</link>
+        <pubDate>Sat, 11 Oct 2025 07:45:00 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/cover.jpeg" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;乍听之下，这似乎不用讨论——当然越长越容易坏了，线路越长，风险点越多，还有一个指标可以通过反算来说明这个问题。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;平均百皮长公里故障次数 = 障碍总次数 ÷ 光缆线路总长度 × 100&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个指标被广泛用于年报、统计表以及考核体系中。它适合进行总体评价，虽然看似科学、简洁，但对于分类的评价，很容易导致错误的推论。因为它混淆了“总量”和“密度”，把不同长度、不同环境的光缆混在一起平均，从而掩盖了真正的规律。&lt;/p&gt;
+&lt;h2 id=&#34;被平均掩盖的真相&#34;&gt;被“平均”掩盖的真相
+&lt;/h2&gt;&lt;p&gt;举个简单的例子。假设网络里有两类光缆：城区的短光缆和长途的干线光缆，故障统计如下：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;类型&lt;/th&gt;
+          &lt;th&gt;长度（皮长公里）&lt;/th&gt;
+          &lt;th&gt;故障次数&lt;/th&gt;
+          &lt;th&gt;平均百皮长公里故障次数&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;城区短光缆&lt;/td&gt;
+          &lt;td&gt;50&lt;/td&gt;
+          &lt;td&gt;10&lt;/td&gt;
+          &lt;td&gt;20&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;长途干线&lt;/td&gt;
+          &lt;td&gt;400&lt;/td&gt;
+          &lt;td&gt;20&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;合计&lt;/td&gt;
+          &lt;td&gt;450&lt;/td&gt;
+          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;6.67&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;城区短光缆虽然线路短，但故障次数却不少；长途干线线路长，故障次数更多，但换算成单位长度的故障率却低得多。把两种光缆加起来平均，看似网络整体很稳定，但却掩盖了城区短光缆的高风险。这个“混合偏差”告诉我们，直接用简单的算术平均数（以下简称平均数）来评价，往往会给出误导性的结论。&lt;/p&gt;
+&lt;p&gt;这就是典型的“ &lt;strong&gt;混合偏差&lt;/strong&gt; ”（mixing bias）：当你把不同性质的对象混在一起算平均，结果往往没有任何现实意义。就像把婴儿和老人一起统计平均寿命，再用它预测“中年人的死亡风险”，完全南辕北辙。&lt;/p&gt;
+&lt;h2 id=&#34;为什么分档统计更科学&#34;&gt;为什么“分档统计”更科学
+&lt;/h2&gt;&lt;p&gt;因此，一个更科学的方法是将光缆按长度分档（光缆的端点如何确定，还是比较复杂的，比如用复用段、光放段、光缆段、光路段？，这是另外的话题了），比如10公里以下、10到50公里、50到100公里、100公里以上，分别计算每档的故障率。通过分档统计，我们才能真正看到不同长度光缆的故障规律：如果长距离光缆的单位故障率高，就说明距离确实加大了风险；如果故障率差别不大，说明故障次数的增加仅仅是线路数量多的自然结果；如果短距离的故障率反而更高，背后可能是施工环境复杂和人为破坏导致的。&lt;/p&gt;
+&lt;p&gt;这种做法，统计学上叫分层分析（stratified analysis），工程上叫结构化指标分析。它能避免整体平均的“生态谬误”（Ecological Fallacy）——即不能用总体平均去推断局部特征。&lt;/p&gt;
+&lt;h2 id=&#34;为什么越长越坏未必成立&#34;&gt;为什么“越长越坏”未必成立
+&lt;/h2&gt;&lt;p&gt;从工程实际出发，光缆故障的因素极多——不仅仅是长度。光缆及附件质量、外部环境、敷设方式、巡检力度等等，都在发挥作用。比如城区改造区域光缆密集，施工挖掘频繁，造成故障频发，再如接入光缆的接头盒质量不过关，极易造成衰减不稳定，发生闪断。反而相对平稳、保护措施好的长途光缆，单位长度的故障概率会更低。因此，简单认为“越长越容易坏”其实并不严谨。&lt;/p&gt;
+&lt;p&gt;换句话说，总故障数确实随长度增加，但单位长度的故障概率未必增加。把两者混为一谈，就像说“人口多的国家交通事故一定多”，却没问一句——每万人事故率是多少？&lt;/p&gt;
+&lt;h2 id=&#34;科学分析的进阶方法&#34;&gt;科学分析的进阶方法
+&lt;/h2&gt;&lt;p&gt;如果要更深入探究接入距离与故障次数的关系，可以借助统计学中的 &lt;strong&gt;泊松回归&lt;/strong&gt; 或 &lt;strong&gt;负二项回归&lt;/strong&gt; ，将 &lt;strong&gt;故障次数作为因变量&lt;/strong&gt; ， &lt;strong&gt;光缆长度作为基准&lt;/strong&gt; ，同时控制 &lt;strong&gt;环境条件、施工质量等因素&lt;/strong&gt; 。还可以做 &lt;strong&gt;队列对比分析&lt;/strong&gt; ，比较改造前后的长、短线路组的故障表现，计算相对风险，这才能给出“长度是否是独立风险因子”的科学证据。单凭简单的平均数，根本看不到这些细节。&lt;/p&gt;
+&lt;h2 id=&#34;拒绝平均的幻觉&#34;&gt;拒绝“平均的幻觉”
+&lt;/h2&gt;&lt;p&gt;总的来说，平均数往往会让我们陷入“平均的幻觉”，看似简单合理，却掩盖了真实的光缆故障分布。只有通过分层、分档、分情境的细致分析，才能真正触及问题本质。做到这点，数据才有了洞察的力量，而不仅仅是枯燥的数字。&lt;/p&gt;
+&lt;h2 id=&#34;题外话&#34;&gt;题外话
+&lt;/h2&gt;&lt;p&gt;数据的价值不只在于计算，更在于深入挖掘背后的故事。当平均数让视野模糊，我们要学会拆解与细致观察，逐层揭开真相。这种科学严谨的态度，正是面对复杂系统时最可靠的方法。 &lt;strong&gt;只是，收集和准备好这些详细的数据，是实践中最大的挑战&lt;/strong&gt; 。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

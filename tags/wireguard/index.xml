@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Wireguard on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/wireguard/</link>
+        <description>Recent content in Wireguard on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Sun, 30 Jul 2023 15:45:22 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/wireguard/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Wireguard的分流方法</title>
+        <link>https://blog.fallleaf.net/p/tech-wireguard-split-tunneling/</link>
+        <pubDate>Sat, 07 Sep 2019 15:45:22 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-wireguard-split-tunneling/</guid>
+        <description>&lt;p&gt;Wireguard开启后，由于默认采用的全局路由，所有流量都通过Wireguard隧道，造成不必要的流量浪费，有必要进行流量分流。&lt;/p&gt;
+&lt;p&gt;分流的一种方法主要利用路由方式，让特定的IP包转发到Wireguard隧道中，可参见这篇：WireGuard —— Windows 客户端国内外IP分流教程。这种方式是将国内地址段以路由方式不走隧道，但需要不时维护国内地址段，同时一些常规状态下能访问的国外IP地址也走了隧道。&lt;/p&gt;
+&lt;p&gt;用Wireguard，主要就是要科学上网，不能直接访问的毕竟是少数，因此就有了另外一种方式，见这一篇：wireguard+ss/v2ray/brook等实现域名分流。方法是先利用Wireguard建立隧道，再开启Brook等服务，然后利用Wireguard的AllowIPs功能，限定Brook通过隧道建立连接，利用SwitchOmega等代理插件的PAC列表，实现域名分流。&lt;/p&gt;
+&lt;p&gt;在Win10和Linuxmint设置了一下，效果不错。手机上因为Wireguard可以设置某些App通过Wireguard，也就不用考虑了。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

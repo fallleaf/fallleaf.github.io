@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。">
+<title>量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输</title>
+
+<link rel='canonical' href='https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/'>
+
+<link rel="stylesheet" href="/scss/style.min.613380e828aecb9eecf17f919ae65fe9f7d8afb8a8e41598bfb6572364a3a7b2.css"><meta property='og:title' content="量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输">
+<meta property='og:description' content="最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。">
+<meta property='og:url' content='https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/'>
+<meta property='og:site_name' content='Reading,Thinking And Writing'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='量子通信' /><meta property='article:published_time' content='2025-10-07T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-10-07T00:00:00&#43;00:00'/><meta property='og:image' content='https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/cover.jpg' />
+<meta name="twitter:title" content="量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输">
+<meta name="twitter:description" content="最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/cover.jpg' /><script
+  src="https://code.jquery.com/jquery-latest.min.js"
+  crossorigin="anonymous"></script>
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_5644df797013a54f.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Reading,Thinking And Writing</a></h1>
+            <h2 class="site-description">我是一颗蛋，一颗红旗下的蛋</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>存档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>标签</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#核心技术q-chip让量子信号搭车互联网">核心技术：Q-chip，让量子信号“搭车”互联网</a></li>
+    <li><a href="#它和我们熟悉的量子加密通信有什么不同">它和我们熟悉的量子加密通信有什么不同？</a></li>
+    <li><a href="#量子互联网的未来不仅是通信更是计算革命">量子互联网的未来：不仅是通信，更是计算革命</a></li>
+    <li><a href="#量子网络节点实拍开发板与光纤的协奏">量子网络节点实拍：开发板与光纤的协奏</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/tech-q-chip-quantum-internet-commercial-fiber/">
+                <img src="/p/tech-q-chip-quantum-internet-commercial-fiber/cover_hu_7c0037cbc15b3710.jpg"
+                        srcset="/p/tech-q-chip-quantum-internet-commercial-fiber/cover_hu_7c0037cbc15b3710.jpg 800w, /p/tech-q-chip-quantum-internet-commercial-fiber/cover_hu_3b3dde0411df4f8d.jpg 1600w"
+                        width="800" 
+                        height="340" 
+                        loading="lazy"
+                        alt="Featured image of post 量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/tech/" >
+                技术与实践
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/tech-q-chip-quantum-internet-commercial-fiber/">量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2025-10-07T00:00:00Z'>2025年10月7日</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。</p>
+<h2 id="核心技术q-chip让量子信号搭车互联网">核心技术：Q-chip，让量子信号“搭车”互联网
+</h2><p>这项成果的核心，是一个名为 <strong>Q-chip</strong> 的集成芯片。它的神奇之处在于——可以让量子信号在现有的光纤网络中“穿行”，而不被破坏。</p>
+<p>Q-chip 的工作原理是“量子-经典混合”：</p>
+<ul>
+<li><strong>经典信号</strong> 像“火车头”，负责在复杂的网络中导航，寻找最优路径；</li>
+<li><strong>量子信号</strong> 则像“密封集装箱”，携带着脆弱的量子态，在传输过程中受到保护，不受环境干扰。</li>
+</ul>
+<p>更厉害的是，这种机制还能自动纠错，确保量子数据的高保真传输。研究团队在 Verizon 的真实商用网络上进行了测试，即使在温度波动和振动干扰下，系统的量子信号保真度依然高达 97%。</p>
+<h2 id="它和我们熟悉的量子加密通信有什么不同">它和我们熟悉的量子加密通信有什么不同？
+</h2><p>很多人听到“量子通信”，第一反应是量子密钥分发（QKD），一种用于超安全加密的技术。但 Q-chip 所代表的量子互联网，远不止于此。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>特性</th>
+          <th>Q-chip 技术</th>
+          <th>量子密钥分发（QKD）</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>应用目标</td>
+          <td>构建量子互联网，实现量子计算机、传感器互联</td>
+          <td>提供不可破解的密钥，用于加密通信</td>
+      </tr>
+      <tr>
+          <td>传输介质</td>
+          <td>商用光纤，量子与经典信号并行传输</td>
+          <td>专用光纤或独占信道</td>
+      </tr>
+      <tr>
+          <td>信号类型</td>
+          <td>真正的量子态（如量子比特），可用于计算与协同处理</td>
+          <td>弱相干光脉冲，仅用于密钥生成</td>
+      </tr>
+      <tr>
+          <td>技术挑战</td>
+          <td>自动路由、纠错、与现有网络兼容</td>
+          <td>长距离衰减与中继信任问题</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>简单来说，QKD 是量子技术在信息安全领域的应用，而 Q-chip 则是为未来的量子计算和通信网络打基础。它的目标是让量子设备像今天的手机和电脑一样，在同一个网络中互联协作。</p>
+<h2 id="量子互联网的未来不仅是通信更是计算革命">量子互联网的未来：不仅是通信，更是计算革命
+</h2><p>想象一下未来的世界：</p>
+<ul>
+<li>量子计算机之间可以远程协同，解决超级复杂的问题；</li>
+<li>量子传感器可以实时共享数据，提升医疗、气象、能源等领域的效率；</li>
+<li>人类将拥有一个全新的信息基础设施，远超今天的互联网。</li>
+</ul>
+<p>这不是科幻，而是正在发生的现实。宾大的这项研究，正是通往量子互联网的“第一块路砖”。</p>
+<h2 id="量子网络节点实拍开发板与光纤的协奏">量子网络节点实拍：开发板与光纤的协奏
+</h2><p>下图展示的是构建量子网络节点所使用的部分设备，距离信号源约一公里的 Verizon 商用光纤终端处。这张图中最引人注目的， 是节点设备采用Arduino Mega 2560开发板。</p>
+<p><img src="https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+	
+	
+	
+	loading="lazy"
+	
+		alt="图片"
+	
+	
+></p>
+<p>原文链接:
+Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-for-the-first-time/</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E9%87%8F%E5%AD%90%E9%80%9A%E4%BF%A1/">量子通信</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/tech-pcdn-overview/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-pcdn-overview/cover.1156c9f3f569e8d3ac9cbf929a79ef9b_hu_980ce765dbf164b2.webp"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post PCDN现象初探及浅见"
+                        data-key="tech-pcdn-overview" 
+                        data-hash="md5-EVbJ8/Vp6NOsnL&#43;Smnnvmw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">PCDN现象初探及浅见</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-fiber-direct-vs-transport-reliability/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-fiber-direct-vs-transport-reliability/cover.2064044f6fc5c751b663100afb5e69c8_hu_900d920fe45bec80.jpeg"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析"
+                        data-key="tech-fiber-direct-vs-transport-reliability" 
+                        data-hash="md5-IGQET2/Fx1G2YxAK&#43;15pyA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-fiber-more-longer-more-fail/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-fiber-more-longer-more-fail/cover.4ec3f6df839bd2a452ae0b39ba8d1b6e_hu_f17ab5316111ee52.jpeg"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post 距离越长，光缆就越容易出故障吗？"
+                        data-key="tech-fiber-more-longer-more-fail" 
+                        data-hash="md5-TsP234Ob0qRSrgs5uo0bbg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">距离越长，光缆就越容易出故障吗？</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-cpo-data-center-energy-efficiency-revolution/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-cpo-data-center-energy-efficiency-revolution/cover.8a22e44ba63615020ee2b875923d9421_hu_a3d71ce2c0d563ad.jpg"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命"
+                        data-key="tech-cpo-data-center-energy-efficiency-revolution" 
+                        data-hash="md5-iiLkS6Y2FQIO4rh1kj2UIQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">光电共封装（CPO）：数据中心的下一场“能效革命</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-optical-network-digital-twin/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-optical-network-digital-twin/cover.801869565a89df8186fde71ed40c042d_hu_4a4c5e0545aa00a1.jpg"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post 光网络数字孪生：让网络在虚拟世界先跑一遍"
+                        data-key="tech-optical-network-digital-twin" 
+                        data-hash="md5-gBhpVlqJ34GG/ece1AwELQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">光网络数字孪生：让网络在虚拟世界先跑一遍</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof Waline !== 'undefined') {
+            Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Admin","placeholder":null},"pageview":true,"requiredMeta":["name","email"],"serverURL":"https://comments.fallleaf.net"});
+        } else {
+            
+            const script = document.querySelector('script[src*="waline.js"]');
+            script.addEventListener('load', function() {
+                Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Admin","placeholder":null},"pageview":true,"requiredMeta":["name","email"],"serverURL":"https://comments.fallleaf.net"});
+            });
+        }
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2004 - 
+        
+        2026 红旗下的蛋
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"
+      crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"
+        crossorigin="anonymous">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/mhchem.min.js"
+        crossorigin="anonymous">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"
+       crossorigin="anonymous"
+       onload='renderMathInElement(document.body, null);'>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"
+        crossorigin="anonymous"></script>
+<script src="/js/main.min.beed1be94ebe04a73a3d983583046daf3fd8ac54857fa72d94a1e83c470d9eaf.js" integrity="sha256-vu0b6U6&#43;BKc6PZg1gwRtrz/YrFSFf6ctlKHoPEcNnq8=" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

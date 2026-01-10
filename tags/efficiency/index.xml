@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>效率 on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/efficiency/</link>
+        <description>Recent content in 效率 on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Thu, 16 Oct 2025 14:26:23 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/efficiency/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>对LLM客气，纯属自找麻烦</title>
+        <link>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</link>
+        <pubDate>Thu, 16 Oct 2025 14:26:23 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/cover.webp" alt="Featured image of post 对LLM客气，纯属自找麻烦" /&gt;&lt;h2 id=&#34;实验结果越客气llm越糊涂&#34;&gt;实验结果：越客气，LLM越糊涂
+&lt;/h2&gt;&lt;p&gt;最近有篇论文做了个实验，结论让人哭笑不得：你对ChatGPT越客气，它答题越不准。&lt;/p&gt;
+&lt;p&gt;研究者出了50道多选题，用五种语气问ChatGPT-4o——从“请您帮忙解答一下”到“快给我答案”。结果如下：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;语气&lt;/th&gt;
+          &lt;th&gt;正确率&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;非常礼貌&lt;/td&gt;
+          &lt;td&gt;80.8%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;礼貌&lt;/td&gt;
+          &lt;td&gt;81.4%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;中性&lt;/td&gt;
+          &lt;td&gt;82.2%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;粗鲁&lt;/td&gt;
+          &lt;td&gt;82.8%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;非常粗鲁&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;84.8%&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;越不客气，越准确。
+这不是段子，而是统计检验后的真实结果。&lt;/p&gt;
+&lt;p&gt;换句话说——LLM（&lt;strong&gt;语言大模型&lt;/strong&gt;）不吃“客气”那一套。&lt;/p&gt;
+&lt;h2 id=&#34;为什么客气反而坏事&#34;&gt;为什么客气反而坏事？
+&lt;/h2&gt;&lt;p&gt;别以为LLM真懂“礼貌”。
+它不过是一台概率机器，所有输入的字，对它而言只是数据。&lt;/p&gt;
+&lt;p&gt;“请”“麻烦您”“谢谢”这些词，对人来说表示尊重，对LLM来说只是 &lt;strong&gt;冗余的噪音&lt;/strong&gt; 。它无法感受到情绪，却要在冗余语言中找出你真正的问题。结果是—— &lt;strong&gt;它被你的客气话搞糊涂了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;还有一个原因是： &lt;strong&gt;上下文窗口的效率。&lt;/strong&gt;
+在有限的上下文窗口（Context Window）中，你的客气话占据了 &lt;strong&gt;宝贵的Token数量&lt;/strong&gt; 。每一个Token都应该用于传递关键的指令信息，而不是用于寒暄。ChatGPT这类模型的训练数据中，大量来自论坛、技术问答等。模型在这些语境下习惯处理简洁、命令式句子，而不是文绉绉的礼貌表达。换句话说，它对“直白的命令”更熟悉，对“客气的请求”反而陌生。&lt;/p&gt;
+&lt;p&gt;当你绕弯子时，它反而要花更多算力去猜你的真实意图。
+结果就像说话绕圈子，让对方瞎猜，准确率自然下降了。&lt;/p&gt;
+&lt;h2 id=&#34;别把llm当人看警惕粗鲁的边界&#34;&gt;别把LLM当人看（警惕“粗鲁”的边界）
+&lt;/h2&gt;&lt;p&gt;很多人用LLM时，总喜欢装出一副“礼貌至上”的样子：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“请帮我详细而准确地回答以下问题，麻烦您了，谢谢～”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这对人说没问题，对LLM说完全没意义。
+它不会因为你客气就更用心，也不会因为你粗鲁就罢工。&lt;/p&gt;
+&lt;p&gt;LLM没有自尊，也没有同理心。你所有的客气，只是浪费token。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;【重要提醒】&lt;/strong&gt; 实验中的“非常粗鲁”指的是 &lt;strong&gt;指令的绝对直白和省略客套&lt;/strong&gt; 。我们不鼓励使用侮辱或攻击性词汇。真正的侮辱性内容会触发LLM的 &lt;strong&gt;安全过滤机制（GuardrLLMls）&lt;/strong&gt; ，反而会导致拒绝回答或输出质量下降。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;对llm发指令追求清晰度&#34;&gt;对LLM发指令，追求清晰度
+&lt;/h2&gt;&lt;p&gt;这项研究其实提醒我们一个朴素的道理：
+&lt;strong&gt;和LLM打交道，关键不是态度，而是表达的清晰度。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的提示词要像指令，不像寒暄。越简洁，越容易让LLM锁定任务。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;低效寒暄式&lt;/th&gt;
+          &lt;th&gt;高效指令式&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;请问您能帮我解一下这个复杂的方程吗？&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;解方程，输出步骤。&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;请帮我总结一下《红楼梦》的主要人物，要详细哦。&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;指令：提炼《红楼梦》前80回五位核心人物，格式：姓名/关系/主要性格特征。&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;人与人的沟通追求“情商”，人与LLM的交互追求“指令清晰度”。&lt;/strong&gt; 这是人机协作的准则，无关态度，只关效率。&lt;/p&gt;
+&lt;h2 id=&#34;别被llm的懂礼貌假象骗了&#34;&gt;别被LLM的“懂礼貌”假象骗了
+&lt;/h2&gt;&lt;p&gt;很多人说：“ChatGPT挺懂人情世故啊，还会说谢谢。”
+这是错觉。&lt;/p&gt;
+&lt;p&gt;LLM的礼貌，是模仿出来的。
+它从无数人类对话中学到“客气话的模式”，
+却从未理解“礼貌的意义”。&lt;/p&gt;
+&lt;p&gt;它只是鹦鹉学舌，说“请”“谢谢”只是语言表演，不是情感反应。如果你以为那是“温度”，那不过是 &lt;strong&gt;统计学拟合出的幻觉。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;真正的礼貌是对人&#34;&gt;真正的礼貌，是对人
+&lt;/h2&gt;&lt;p&gt;对LLM客气，不仅没用，还可能降低效率。
+它不会感激，也不会回礼。&lt;/p&gt;
+&lt;p&gt;真正该讲礼貌的对象，是人——而不是算法。
+对机器，只要清晰、准确、高效就够了。&lt;/p&gt;
+&lt;p&gt;下次和LLM交互时，不妨试试直接说出需求。
+别说“麻烦帮我”，直接说“生成报告，800字，总结重点”。&lt;/p&gt;
+&lt;p&gt;这不是没礼貌，而是理性。
+因为LLM不需要礼貌，它只需要清晰。&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语
+&lt;/h2&gt;&lt;p&gt;LLM越进步，人越容易把它“人化”。
+但别忘了，它不是思想者，只是概率引擎。&lt;/p&gt;
+&lt;p&gt;我们要做的，不是讨好它，而是让它听懂。
+&lt;strong&gt;把话说清楚，比说得好听更重要。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;论文链接：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/pdf/2510.04950&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;《Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy》&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>驾驭你的LLM：从提示词新手到“指令设计师”的极简指南</title>
+        <link>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</link>
+        <pubDate>Tue, 07 Oct 2025 08:15:00 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/cover.jpeg" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id=&#34;为什么llm总跑偏先搞清它其实不会懂你&#34;&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
+&lt;/h2&gt;&lt;p&gt;你有没有遇到过这样的情况：问LLM一个问题，有时候它回答得像个专家，精准又到位；有时候它就好像刚学会说话的小孩，答非所问，甚至自说自话。难道LLM在“抽风”？其实不完全是。&lt;/p&gt;
+&lt;p&gt;LLM的本质其实是个超级“猜词机器”：它并不真正理解你说话的深意，而是在它庞大的学习数据中，预测“下一句最可能出现的词”是什么。换句话说，它靠概率输出内容。&lt;/p&gt;
+&lt;p&gt;当你给它的提示话很模糊时，它只能在无数的可能中猜答案，自然容易“跑偏”。&lt;/p&gt;
+&lt;p&gt;所以，想让LLM表现得聪明，关键不在问得多，而在于问得 &lt;strong&gt;准&lt;/strong&gt; 。你的问题越模糊，LLM就越容易瞎猜；问题越精准，它就越能给你想要的答案。说白了，提示词就是你手里的方向盘，你指的方向越清楚，LLM这辆车才越不会跑偏。&lt;/p&gt;
+&lt;h2 id=&#34;dice-框架提示词的四个核心组成&#34;&gt;D.I.C.E. 框架：提示词的四个核心组成
+&lt;/h2&gt;&lt;p&gt;给LLM下指令（提示词），就跟让新同事帮你办事一样。你要是只说“把这个弄一下”，他肯定一头雾水，办事的结果也不如你所愿。你得告诉他前因后果、他该扮什么角色、具体要做什么、最后交出什么成果，这样才能达到你预期的目的。这里有个特别好用的方法，是美国人 Michael Blank 提出了一个超实用的D.I.C.E.方法，将任务拆成四个重点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;D — 背景信息（DATA）&lt;/strong&gt;
+告诉LLM，你要做什么，为什么要做。帮助它把任务放在正确的“道路”上。
+例：“我运营一家B2B软件公司，每月接触200个潜客，转化率只有8%，我想提高销售效率。”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;I — 角色定位（IDENTIFY）&lt;/strong&gt;
+给LLM戴上“专业帽”，限定它的身份和专业方向。
+例：“请你扮演一位有10年经验的SaaS资深销售顾问，专长是优化中小企业销售流程。”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C — 澄清细节（CLARIFY）&lt;/strong&gt;
+别急着一次给完全部信息。最好让LLM先提一个问题，确认重点，避免误解。
+例：“开始分析前，请先问我一个关键的销售环节问题。”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;E — 明确交付（EXECUTE）&lt;/strong&gt;
+告诉LLM你想要什么样的结果，输出格式、风格、长度等都要明确。
+例：“在我答复后，请给我一份30天销售改进计划，格式为一步步执行的清单。”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;用了这样的方式提示，LLM才不会给你泛泛而谈的建议，而是一份专业且可执行的行动方案。&lt;/p&gt;
+&lt;h2 id=&#34;clear-原则判断提示词质量的五个标准&#34;&gt;C.L.E.A.R. 原则：判断提示词质量的五个标准
+&lt;/h2&gt;&lt;p&gt;如果说D.I.C.E.给提示词搭起了“骨架”，那么Lovable公司提出的C.L.E.A.R.原则就是帮你把骨架的“肌肉和皮肤”打磨完整，让任务说明干净、有效、有活力。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;原则&lt;/th&gt;
+          &lt;th&gt;含义&lt;/th&gt;
+          &lt;th&gt;实践要点&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;C 简洁（Concise）&lt;/td&gt;
+          &lt;td&gt;去掉多余客套和废话，直奔重点&lt;/td&gt;
+          &lt;td&gt;不说“谢谢”“麻烦了”这类无关紧要的话&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;L 有逻辑（Logical）&lt;/td&gt;
+          &lt;td&gt;任务分解清楚，步骤合理&lt;/td&gt;
+          &lt;td&gt;任务执行顺序是否合理，比如先分析再建议&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;E 明确（Explicit）&lt;/td&gt;
+          &lt;td&gt;明确说明要什么和不要什么&lt;/td&gt;
+          &lt;td&gt;指定风格、字数限制，禁止内容&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;A 可调（Adaptive）&lt;/td&gt;
+          &lt;td&gt;支持后续调整和优化&lt;/td&gt;
+          &lt;td&gt;留有调整空间，不要锁死边界&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;R 可反思（Reflective）&lt;/td&gt;
+          &lt;td&gt;鼓励LLM总结反馈，提升提示词&lt;/td&gt;
+          &lt;td&gt;让LLM指出哪里还能更明确或优化&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;提示词的框架与准则&#34;&gt;提示词的框架与准则
+&lt;/h2&gt;&lt;p&gt;D.I.C.E. 是提示词的结构框架，它定义了一个提示词该“长成什么样”； C.L.E.A.R. 是质量准则，它确保这个结构内部的逻辑、语言与目标保持清晰一致。&lt;/p&gt;
+&lt;p&gt;在实际提示词设计中，我们先用 D.I.C.E. 打底——明确目标、设定角色、补充上下文、定义评估标准； 再以 C.L.E.A.R. 打磨——检视表达是否清晰（Clear）、逻辑是否连贯（Logical）、依据是否可验证（Empirical）、行动是否可执行（Actionable）、反思是否充分（Reflective）。&lt;/p&gt;
+&lt;p&gt;这种“两层式”方法能显著提升提示词的稳定性与可复用性： 结构清晰使大模型“理解你要什么”， 质量准则则让输出更贴近“你真正需要的”。&lt;/p&gt;
+&lt;h2 id=&#34;你是-llm-的导航员帮它锁定方向提升效率&#34;&gt;你是 LLM 的“导航员”：帮它锁定方向，提升效率
+&lt;/h2&gt;&lt;p&gt;LLM不会主动“懂”你，它只能根据你给的信息猜测答案。你设计的提示词就像导航系统，帮它锁定正确方向，避免它在海量的可能中胡乱“试探”。&lt;/p&gt;
+&lt;p&gt;每一次清晰、有结构的提示输入，都是在缩小它自由发挥的范围，以带来更精准有效的回应。掌握了D.I.C.E.框架和C.L.E.A.R.原则，就让你能更好使用LLM，从“使用者”升级为“驾驭者”，彻底释放LLM的生产力。&lt;/p&gt;
+&lt;h2 id=&#34;diceclear示范模板&#34;&gt;D.I.C.E.+C.L.E.A.R.示范模板
+&lt;/h2&gt;&lt;h3 id=&#34;自驾游计划&#34;&gt;自驾游计划
+&lt;/h3&gt;&lt;p&gt;生成一份适合一家三口的国庆假期自驾游计划，涵盖路线、每日安排、住宿建议与注意事项。&lt;/p&gt;
+&lt;h4 id=&#34;dice-框架提示词可粘贴到大模型里看看输出&#34;&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#DATA#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;我们是一家三口（两位成人，一位10岁孩子），计划在2025年10月2日至10月7日国庆假期期间自驾从郑州前往重庆旅游。希望行程轻松、有趣，适合家庭出行。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#IDENTIFY#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;请你扮演一位经验丰富的国内亲子旅行规划师，熟悉中西部城市间自驾路线、家庭友好型景点与节假日出行建议。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#CLARIFY#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;你可以先问我一个问题，以确认我们对住宿预算、每日驾驶时长或景点偏好的具体要求。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#EXECUTE#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;请根据我们的时间安排，生成一份6天的行程计划，包括：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 每日路线与预计行驶时间；
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 推荐景点（适合孩子）与活动安排；
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 住宿建议（中等价位，安全舒适）；
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 每日注意事项（如交通、天气、节假高峰）。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;输出格式为分日条列，每日标题为“Day X：城市名”，语言使用简体中文。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;clear-原则优化&#34;&gt;C.L.E.A.R. 原则优化
+&lt;/h4&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;原则&lt;/th&gt;
+          &lt;th&gt;应用说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;简洁（Concise）&lt;/td&gt;
+          &lt;td&gt;去除冗余描述，直接说明时间、地点、人数、目标。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;有逻辑（Logical）&lt;/td&gt;
+          &lt;td&gt;明确起止时间、路线方向、每日安排，避免“重庆周边推荐”这类模糊任务。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;明确（Explicit）&lt;/td&gt;
+          &lt;td&gt;指定输出格式（分日条列）、语言（简体中文）、住宿类型（中等价位）、人群（亲子）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;可调（Adaptive）&lt;/td&gt;
+          &lt;td&gt;通过 CLARIFY 模块引导 LLM 提问，便于后续补充预算、偏好等信息。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;可反思（Reflective）&lt;/td&gt;
+          &lt;td&gt;可在输出后追加一句：“如需调整行程节奏或加入特定景点，请告诉我，我可以重新规划。”&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;学术论文写作辅助&#34;&gt;学术论文写作辅助
+&lt;/h3&gt;&lt;p&gt;撰写一篇关于人工智能伦理的学术论文，目标是投稿至国际期刊。希望获得结构优化建议与引用规范指导，强调逻辑严密、表达规范、支持多轮修订。&lt;/p&gt;
+&lt;h4 id=&#34;dice-框架提示词可粘贴到大模型里看看输出-1&#34;&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#DATA#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;我正在撰写一篇关于人工智能伦理的学术论文，主题聚焦于算法偏见与责任归属问题。目标是投稿至国际科技伦理期刊，要求逻辑清晰、论证严密、引用格式符合国际标准（如 APA 或 IEEE）。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#IDENTIFY#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;请你扮演一位资深学术编辑，熟悉科技伦理领域，具备国际期刊审稿经验，了解常见结构问题与引用规范。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#CLARIFY#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在开始修改前，请先提出一个关于文章论点结构的关键问题，以确认我是否已建立清晰的中心论点与支持层次。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#EXECUTE#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;请根据我的主题与目标，提出具体的章节重组建议，包括：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 推荐的章节划分与标题；
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 每章应承担的论证任务；
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 引用格式建议（如文内引用、参考文献排列方式）；
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 总结建议不超过 500 字，使用中文表达，风格正式、学术。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;clear-原则优化-1&#34;&gt;C.L.E.A.R. 原则优化
+&lt;/h4&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;原则&lt;/th&gt;
+          &lt;th&gt;应用说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;简洁（Concise）&lt;/td&gt;
+          &lt;td&gt;去除口语化表达，直接说明论文主题、目标期刊、引用要求。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;有逻辑（Logical）&lt;/td&gt;
+          &lt;td&gt;明确任务流程：先澄清论点结构，再提出章节建议与引用规范。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;明确（Explicit）&lt;/td&gt;
+          &lt;td&gt;指定输出格式（中文总结、500 字以内）、引用风格（APA 或 IEEE）、角色设定（学术编辑）。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;可调（Adaptive）&lt;/td&gt;
+          &lt;td&gt;通过 CLARIFY 模块引导模型提问，支持后续补充论文摘要、章节草稿等内容。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;可反思（Reflective）&lt;/td&gt;
+          &lt;td&gt;鼓励模型在输出后提供“如需进一步细化章节内容或补充文献引用，请继续提供草稿内容”之类的反馈建议。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;参考资料：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.entrepreneur.com/leadership/i-used-chatgpt-to-transform-my-business-with-these-prompts/497180&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;D.I.C.E.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.lovable.dev/prompting/prompting-one&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;C.L.E.A.R.&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>效率幻觉：为什么 AI 让我们看似更快，实则更慢？</title>
+        <link>https://blog.fallleaf.net/p/ai-efficiency-illusion/</link>
+        <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/ai-efficiency-illusion/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/ai-efficiency-illusion/cover.jpg" alt="Featured image of post 效率幻觉：为什么 AI 让我们看似更快，实则更慢？" /&gt;&lt;h2 id=&#34;ai-生产力陷阱为什么团队越用-ai效率反而越低&#34;&gt;AI 生产力陷阱：为什么团队越用 AI，效率反而越低？
+&lt;/h2&gt;&lt;p&gt;过去两年，AI 工具的应用呈现出爆发式增长。从撰写邮件、起草报告，到生成代码和设计初稿，AI 已经快速进入了日常工作流程。&lt;/p&gt;
+&lt;p&gt;然而， &lt;strong&gt;一项由麻省理工学院（MIT）与德克萨斯大学奥斯汀分校联合开展的研究&lt;/strong&gt; 提醒我们：AI 并非天然的效率加速器。在许多情况下，它可能制造出一种新的低效形式—— &lt;strong&gt;“无效产出”（Workslop）&lt;/strong&gt; ，并逐步削弱团队的协作质量与整体生产力。&lt;/p&gt;
+&lt;h2 id=&#34;什么是无效产出workslop&#34;&gt;什么是“无效产出”（Workslop）？
+&lt;/h2&gt;&lt;p&gt;研究人员观察到，AI 的高产出特性带来了大量内容的快速生成，但其中不少缺乏深度、准确性或应用价值。他们将这类内容定义为 &lt;strong&gt;Workslop&lt;/strong&gt; ，即“无效产出”或“虚假工作泡沫”。&lt;/p&gt;
+&lt;p&gt;其主要表现包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;形式完整但缺乏实质&lt;/strong&gt; ：结构清晰、语言流畅，但逻辑和价值不足。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;言之凿凿但事实失真&lt;/strong&gt; ：看似专业，实则缺乏可靠的依据或数据支持。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;内容过剩但信息稀缺&lt;/strong&gt; ：重复、模板化和冗余内容堆积，导致有用信息匮乏。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些内容往往让人误以为工作已经完成，但团队在处理时需要投入额外的时间与精力来筛选和修正，从而延长了实际工作周期。&lt;/p&gt;
+&lt;h2 id=&#34;为什么无效产出会降低效率&#34;&gt;为什么“无效产出”会降低效率？
+&lt;/h2&gt;&lt;p&gt;研究指出，AI 生成内容在以下几个方面对组织效率造成负面影响：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;1. &lt;strong&gt;信息过载&lt;/strong&gt;
+AI 生成的内容量过大，超出人类的处理能力，反而使得决策过程被拖慢。&lt;/li&gt;
+&lt;li&gt;2. &lt;strong&gt;二次加工成本增加&lt;/strong&gt;
+由于缺乏事实核查和上下文理解，团队成员需要反复验证和修改，抵消了原本节省的时间。&lt;/li&gt;
+&lt;li&gt;3. &lt;strong&gt;协作信任下降&lt;/strong&gt;
+当员工怀疑同事提交的成果未经审慎处理而直接来自 AI，跨团队合作的信任度会明显降低。&lt;/li&gt;
+&lt;li&gt;4. &lt;strong&gt;思维依赖性增强&lt;/strong&gt;
+长期依赖 AI 完成常规工作，可能导致主动思考和创造性解决问题的能力下降。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何更有效地使用-ai&#34;&gt;如何更有效地使用 AI？
+&lt;/h2&gt;&lt;p&gt;研究并未否认 AI 的价值，而是提出了更合理的使用路径：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;1. &lt;strong&gt;划定应用范围&lt;/strong&gt;
+适合 AI 的是结构化、标准化的工作，例如初稿撰写、数据整理或格式处理。涉及战略判断、客户沟通或创意构思的任务应仍由人主导。&lt;/li&gt;
+&lt;li&gt;2. &lt;strong&gt;建立复核机制&lt;/strong&gt;
+将 AI 输出视为“草稿”，必须经过事实核查和逻辑验证后，才能作为正式成果使用。&lt;/li&gt;
+&lt;li&gt;3. &lt;strong&gt;强调质量而非数量&lt;/strong&gt;
+应将 AI 用作提升分析、整合与创新的辅助工具，而不是依赖它生成大量表面完整的内容。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语
+&lt;/h2&gt;&lt;p&gt;AI 是工具，而非答案。它能否提升生产力，取决于使用者如何设定边界和制定流程。研究者指出： &lt;strong&gt;AI 不会自动创造效率，它更可能放大既有的习惯——好的更高效，差的更低效。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于个人和组织而言，真正的效率提升，不在于 AI 的使用范围，而在于如何在人机协同中保持专业判断和清晰分工。&lt;/p&gt;
+&lt;p&gt;参考文章 ：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化</title>
+        <link>https://blog.fallleaf.net/p/ai-llm-dependence-critical-thinking-degrade/</link>
+        <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/ai-llm-dependence-critical-thinking-degrade/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/ai-llm-dependence-critical-thinking-degrade/cover.jpg" alt="Featured image of post 别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化" /&gt;&lt;h2 id=&#34;引子&#34;&gt;引子
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;网络段子：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用了AI后，共情了领导:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;聪明但不干活的工贼deepseek ，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;愚蠢但勤劳的牛马豆包 ，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不加预算请不起的留子chatgpt，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;裁不掉的关系户文心一言 ，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;而我成为了那个一分钟改五版的领导 。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;从助手到主宰你真的还在独立思考吗&#34;&gt;从“助手”到“主宰”：你真的还在独立思考吗？
+&lt;/h2&gt;&lt;p&gt;你有没有这样的瞬间：打开空白文档，不是自己列提纲，而是本能地问AI“怎么写”？&lt;/p&gt;
+&lt;p&gt;自从 LLM（大语言模型）出现，我们的工作效率确实被拉满。它能帮你列提纲、做总结、提炼标题，像一个万能的智能副驾。但我们正面临一个深刻的悖论： 我们以为在用工具，工具却在重塑我们的大脑 。&lt;/p&gt;
+&lt;p&gt;这种“ 智能依赖 ”正在悄悄侵蚀我们最核心的几项能力：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;耐心的丧失&lt;/strong&gt; ： 我们习惯了AI的“ &lt;strong&gt;丝滑输出&lt;/strong&gt; ”，不再愿意忍受信息获取和逻辑梳理的“ &lt;strong&gt;延迟&lt;/strong&gt; ”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;批判的退化&lt;/strong&gt; ： 当LLM给出的答案过于完整和流畅时，我们放弃了深度质疑和查证的动力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;创造力的固化&lt;/strong&gt; ： 我们将“ &lt;strong&gt;思考&lt;/strong&gt; ”降级为“ &lt;strong&gt;提示词&lt;/strong&gt; ”，从亲手创造者退化为发号施令的“ &lt;strong&gt;提示工程师&lt;/strong&gt; ”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这不是进步，而是一种“ &lt;strong&gt;快捷键取代思考键&lt;/strong&gt; ”的被动适应。我们正用对速度的追求，交换对思维的掌控。&lt;/p&gt;
+&lt;h2 id=&#34;效率的甜蜜毒药llm如何重塑我们的行为模式&#34;&gt;效率的“甜蜜毒药”：LLM如何重塑我们的行为模式
+&lt;/h2&gt;&lt;p&gt;技术的本质是放大器。LLM极大地放大了个体的产出速度，但同时也放大了一个“ &lt;strong&gt;浅尝辄止&lt;/strong&gt; ”的巨大趋势。&lt;/p&gt;
+&lt;p&gt;在一个内容爆炸的时代，数量正在压倒质量。当AI可以无限、批量地生成内容时，我们对价值的衡量标准发生了变化：我们开始追求“ &lt;strong&gt;AI卷出来的数量&lt;/strong&gt; ”，而非“ &lt;strong&gt;人类打磨的洞察&lt;/strong&gt; ”。&lt;/p&gt;
+&lt;p&gt;一个残酷的例子或许能说明问题： 在某些内容创作平台，有研究显示，AI生成内容的比例已急剧上升，但其用户互动率和转发深度却在下降。因为机器可以模仿逻辑，但无法模拟共情、情感和独一无二的生命体验。&lt;/p&gt;
+&lt;p&gt;如果人人都问AI相同的问题，得到的答案也将趋向平庸和同质化。这种“集体无意识”的平庸，正在模糊我们作为个体独特性和价值创造的边界。我们以为自己掌握着方向盘，却发现车速和方向都被“ &lt;strong&gt;高效&lt;/strong&gt; ”的牵引绳所控制。&lt;/p&gt;
+&lt;h2 id=&#34;人是目的ai是手段如何守住我们不可替代的核心竞争力&#34;&gt;人是目的，AI是手段：如何守住我们不可替代的核心竞争力？
+&lt;/h2&gt;&lt;p&gt;LLM可以是最好的助手，但绝不能成为我们思考的主人。它能帮你跑得更快，但无法取代人类的判断力、情感表达和价值创造。&lt;/p&gt;
+&lt;p&gt;真正的进步，是人与工具的深度协作，而非人的全面退让。面对这股浪潮，我们必须清醒地给自己设置思维“ &lt;strong&gt;防火墙&lt;/strong&gt; &lt;strong&gt;行动&lt;/strong&gt; ”：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;反思区行动&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目的 ： 找回批判性思维 。&lt;/p&gt;
+&lt;p&gt;行动 ： 每次使用 AI 辅助产出后，强制自己写一段人工总结： AI的输出里，哪句话是你的原创洞察？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;独特性坚守&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目的 ：摆脱同质化平庸。&lt;/p&gt;
+&lt;p&gt;行动 ： 每周进行一次“ 无AI创作练习 ”：刻意选择一个主题，从零开始自己动手列大纲、找论据，用“费力”的方式激活你的思考肌肉。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;主导权回归&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目的 ： 将LLM视为工具，而非终点 。&lt;/p&gt;
+&lt;p&gt;行动： 倒置工作流： 先由你思考并完成30%的初稿和核心论点，再用AI来优化表达、补充素材；绝不从一个空白提示词开始你的工作。&lt;/p&gt;
+&lt;p&gt;AI时代，我们不拒绝智能，但我们更需要清醒地保有对真理的求索欲，对世界的情感共鸣。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请不要让你的大脑，成为被机器淘汰的第一个器官。&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>-48v on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/-48v/</link>
+        <description>Recent content in -48v on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Sun, 30 Jul 2023 11:25:17 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/-48v/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>为什么通信设备使用–48V这样的负电源系统</title>
+        <link>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</link>
+        <pubDate>Wed, 21 Dec 2005 11:25:17 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</guid>
+        <description>&lt;p&gt;在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。&lt;/p&gt;
+&lt;p&gt;整理：邓兴昌&lt;/p&gt;
+&lt;p&gt;A：这里面包含2 个意思：&lt;/p&gt;
+&lt;p&gt;（1） 极性为何是负电源（也就是正接地）？&lt;/p&gt;
+&lt;p&gt;（2） 电压为何为-48V（-36~ -72V）？&lt;/p&gt;
+&lt;p&gt;先说一下第2个问题。使用-48V电源是历史原因造成的。使用最早的通讯网是电话网，话机是由电讯局供电的，选48V是在当时的条件下尽可能提高用户到端局的距离（36V是安全电压，超过太多不安全）。后来为了兼容早期设备、降低成本考虑，局端通讯设备还是用-48V电源。&lt;/p&gt;
+&lt;p&gt;同样，采用负电源系统，正极接地只是约定俗成。原来有个说法是空气中有大量的负电荷，根据电化学知识，正极接地可以吸附空气中的负离子，从而保护电信设备的外壳不被锈蚀。其实这种说法不是很对。原电池反应和电解反应是会导致设备生锈，但是因为它们在设备上是以微观形式存在的，几乎没有影响。例如非通讯系统的网络都是负极接地（例如您正在使用的计算机），但是并没有生锈。并且-48V内部都通过DC/DC隔离，DC/DC输出的就是负极接地，也没有看到单板腐蚀生锈。所以不论哪个极接地，都是一样的。&lt;/p&gt;
+&lt;p&gt;至于设备的外壳接地（接PGND），这是出于保护性的目的，将设备上累积的电荷快速泻放到大地，从而不会损伤设备和工作人员。&lt;/p&gt;
+&lt;p&gt;我们的产品基本上都是使用-48V 电源系统，一般测到的实际电压是–53.5V。这是因为出于可靠考虑， 通讯设备都带有备用电池（-48v），为了保证电池的可靠充电，供电电压需要略高于电池电压。&lt;/p&gt;
+&lt;p&gt;通过媒介可能还会了解到有使用-24V电源系统的设备，这是现代一些内部设备为设计方便而使用的。一般测量到电源的输出电压26.8V。&lt;/p&gt;
+&lt;p&gt;一般要求设备在电压波动范围±20%内工作正常。对-48V系统设备就是要求工作电压范围-38.4V ~ 57.6V，但是我们实际上一般要求工作范围–36V ~ -72V。主要是考虑-48V 系统设备要兼容–60V电源系统，它要求–48~ -72V。这样取合集就是就是要求工作电压范围约-36V ~ -72V。&lt;/p&gt;
+&lt;p&gt;顺便提一下，-48V 电源系统只是我国和大部分国家采用的通信电源标准， 并非所有国家都使用这个标准，例如俄罗斯会使用-60V 的电源系统，还有某些国家使用-24V 的电源系统。如果产品要在这些地区销售，就要兼顾这些不同的标准。&lt;/p&gt;
+&lt;p&gt;市电的标准在世界范围内也是不同的，例如我国和欧洲等采用220V 的市电系统，美国、日本等是110V 的市电。&lt;/p&gt;
+&lt;p&gt;从华为的资料中找到为什么是正极接地的解释，作为补充解释：&lt;/p&gt;
+&lt;p&gt;正极接地主要是为了防止电极的腐蚀。电话局蓄电池组-48V或-24V是正极接地，其原因是减少由于继电器或电缆金属外皮绝缘不良时产生的电蚀作用，使继电器和电缆金属外皮受到损坏。因为在电蚀时，金属离子在化学反应下是由正极向负极移动的。继电器线圈和铁芯之间的绝缘不良，就有小电流流过，电池组负极接地时，线圈的导线有可能蚀断。反之，如电池组正极接地，虽然铁芯也会受到电蚀，但线圈的导线不会腐蚀，铁芯的质量较大，不会招致可察觉的后果。正极接地也可以使外线电缆的芯线在绝缘不良时免受腐蚀。（注：隐含条件是继电器铁芯接地）&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>单纤多向 on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/%E5%8D%95%E7%BA%A4%E5%A4%9A%E5%90%91/</link>
+        <description>Recent content in 单纤多向 on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Fri, 26 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E5%8D%95%E7%BA%A4%E5%A4%9A%E5%90%91/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>单纤多向：让前传更极简</title>
+        <link>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</link>
+        <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/cover.jpg" alt="Featured image of post 单纤多向：让前传更极简" /&gt;&lt;p&gt;在移动基站的建设中，无线前传网络却一直面临着一个&amp;quot;老大难&amp;quot;问题——光缆投资过大。随着CRAN（集中式无线接入网）模式成为主流，BBU（基带处理单元）集中部署，BBU与RRU（射频拉远单元）之间需要大量光缆纤芯连接，导致前传光缆投资成为电信运营商难以承受之重。&lt;/p&gt;
+&lt;h2 id=&#34;前传之痛光缆投资为何居高不下&#34;&gt;前传之痛：光缆投资为何居高不下？
+&lt;/h2&gt;&lt;p&gt;传统的无线前传采用双纤双向光模块直连方式，每站需要占用6芯光纤。在CRAN模式下，虽然BBU集中部署带来了设备利用率提升、节省机房空间和降低能耗等优势，但也导致了前传光缆需求激增的问题。面对成千上万的基站建设，光缆投资已成为运营商网络建设中不可忽视的成本。&lt;/p&gt;
+&lt;h2 id=&#34;现有方案的局限&#34;&gt;现有方案的局限
+&lt;/h2&gt;&lt;p&gt;为了解决前传光缆投资问题，业界曾提出几种方案，但各有局限：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BiDi光模块：将纤芯占用减半，但仍需3芯/站，投资依然较高&lt;/li&gt;
+&lt;li&gt;RRU级联：可将纤芯降至1芯，但可靠性差，且不适用于高配基站&lt;/li&gt;
+&lt;li&gt;前传WDM系统：纤芯占用少，但增加了&amp;quot;波分盒子&amp;quot;设备，故障点多、维护难
+这些方案要么投资仍高，要么带来了新的问题，无法从根本上解决前传网络的痛点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;单纤多向前传网络的极简&#34;&gt;单纤多向：前传网络的&amp;quot;极简&amp;quot;
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块直驱技术，正是为解决前传痛点而生的创新方案。它的核心理念是：在不增加额外设备的前提下，将多路光信号合并到1芯光纤中传输。&lt;/p&gt;
+&lt;h2 id=&#34;什么是单纤多向光模块&#34;&gt;什么是单纤多向光模块？
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块相较于传统光模块，主要新增了两个特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置了&amp;quot;光上联口&amp;quot;和&amp;quot;光下联口&amp;quot;两个光接口&lt;/li&gt;
+&lt;li&gt;增加了&amp;quot;单纤多向光组件&amp;quot;，实现多波长信号的处理
+这种光模块巧妙地利用不同波长实现多路信号在单根光纤中的 传输，同时通过无源器件处理方式，确保上游光模块故障不会影响下游信号传输。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;单纤多向光模块构成示意&#34;&gt;单纤多向光模块构成示意
+&lt;/h4&gt;&lt;h2 id=&#34;单纤多向如何工作&#34;&gt;单纤多向如何工作？
+&lt;/h2&gt;&lt;p&gt;以3个RRU组成的系统为例：&lt;/p&gt;
+&lt;p&gt;每个RRU配对一个尾端光模块，BBU侧配对相应数量的头端光模块，所有光模块通过1根光纤串联，不同光模块使用不同波长，互不干扰。&lt;/p&gt;
+&lt;p&gt;（图示：普通宏站场景下，3个RRU通过单纤多向光模块仅需1芯光纤连接）&lt;/p&gt;
+&lt;h2 id=&#34;为何说它更极简&#34;&gt;为何说它&amp;quot;更极简&amp;quot;？
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块方案带来了多重&amp;quot;极简&amp;quot;优势：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;资源极简：将每站占用光缆纤芯数量降至1芯，大幅减少光缆投资&lt;/li&gt;
+&lt;li&gt;设备极简：无需额外的&amp;quot;波分盒子&amp;quot;等设备，中间无独立合分波器&lt;/li&gt;
+&lt;li&gt;维护极简：与传统光模块维护方式一致，不改变原有维护界面&lt;/li&gt;
+&lt;li&gt;管理极简：可通过无线网管直接管理，无需额外网管系统&lt;/li&gt;
+&lt;li&gt;施工极简：连接方式固定，无需多人配合核实光路，施工简单快捷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;典型场景应用&#34;&gt;典型场景应用
+&lt;/h2&gt;&lt;p&gt;单纤多向技术适用于多种场景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;1. 普通宏站/高流量室分：3个RRU组成1个单纤多向系统，仅需1芯光纤&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/sz_mmbiz_png/B95B1kesBUBc2trfKPY3f3UWkJyDKh3gZu6SEQyyibyr4VQUeIg9SO9sxkGCvLHelXtLwoWGAQSdom1XzwdYqRQ/640?wx_fmt=png&amp;amp;from=appmsg&amp;amp;watermark=1&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1#imgIndex=2&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;图片&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;2. 低流量室分：可与RRU级联结合，进一步减少纤芯占用&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;图片&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;3. 高铁/地铁覆盖：多站级联组网，减少切换，简化网络结构&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;图片&#34;
+	
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;该产品已在多个省应用。日前，重庆联通发布了单纤多向的招标公告。&lt;/p&gt;
+&lt;h2 id=&#34;结语让前传回归简单&#34;&gt;结语：让前传回归简单
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块直驱技术，不仅解决了前传光缆投资大的痛点，更实现了前传网络的&amp;quot;极简&amp;quot;。它既保留了光模块直驱方案的可靠性与易维护性，又大幅降低了纤芯资源占用，是当前最符合现网需求的前传技术。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;简单，才是最复杂的技术。单纤多向，让前传更极简，让网络更高效。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

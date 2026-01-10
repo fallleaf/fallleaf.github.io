@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>选型 on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/%E9%80%89%E5%9E%8B/</link>
+        <description>Recent content in 选型 on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Sun, 30 Jul 2023 11:36:47 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E9%80%89%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MSTP传输设备选型谈判需要注意的几个问题</title>
+        <link>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</link>
+        <pubDate>Mon, 20 Mar 2006 11:36:47 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</guid>
+        <description>&lt;p&gt;传输设备谈判中需要注意以下几个问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;设备的高、低阶交叉连接能力及其结构、限制条件；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2Mb/s支路板再定时能力及配置情况；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DCC处理能力，分配、限制条件；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;支路保护能力及保护比例；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设备配置（面板）的各种限制；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;多光口板或主板上的光接口单独更换能力；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以太网板的汇聚能力、背板容量；不同以太网板之间能否互通和混合组网；本次供货以太网板和现网上以太网板在功能实现上能否互通；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;现有设备和新版本设备的区别，升级能力；说明在网设备的升级方式、具体步骤，需要更换的板卡，对业务的具体影响，新、旧版本的主要差异及在网设备升级后达到的效果。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

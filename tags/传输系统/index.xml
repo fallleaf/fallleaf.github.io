@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>传输系统 on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/%E4%BC%A0%E8%BE%93%E7%B3%BB%E7%BB%9F/</link>
+        <description>Recent content in 传输系统 on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Fri, 12 Dec 2025 09:35:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E4%BC%A0%E8%BE%93%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析</title>
+        <link>https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/</link>
+        <pubDate>Fri, 12 Dec 2025 09:35:00 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/cover.jpeg" alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析" /&gt;&lt;p&gt;承载关键业务电路时，选择何种方式是一个涉及技术、成本与风险的重大决策。是采用 &lt;strong&gt;简单直接的光纤直驱&lt;/strong&gt; ，还是选择 &lt;strong&gt;具备冗余保护的传输系统承载&lt;/strong&gt; 呢？大概大部分人都会选择最“ &lt;strong&gt;安全&lt;/strong&gt; ”的方式，就是上传输系统。&lt;/p&gt;
+&lt;p&gt;但是，是否真是这样呢？&lt;/p&gt;
+&lt;h2 id=&#34;核心问题如何实现高可靠性&#34;&gt;核心问题：如何实现高可靠性？
+&lt;/h2&gt;&lt;p&gt;我们对两种主要的承载方式进行可靠性分析，其中，可靠性（Reliability）用$R$来表示，它代表系统在给定时间内无故障运行的概率。&lt;/p&gt;
+&lt;p&gt;我们假设：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;光缆的可靠性&lt;/strong&gt;为$p$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;传输设备的可靠性&lt;/strong&gt;为$q$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;方式-1光纤直驱&#34;&gt;方式 1：光纤直驱
+&lt;/h3&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph TD;
+    A[业务输入] --&amp;gt; B(光缆 $$p$$);
+    B --&amp;gt; C[业务输出];
+    style B fill:#f9f,stroke:#333,stroke-width:2px;&lt;/pre&gt;
+&lt;p&gt;这是最简洁的方式，电路直接通过一根光缆承载。&lt;/p&gt;
+&lt;h3 id=&#34;方式-2传输系统承载&#34;&gt;方式 2：传输系统承载
+&lt;/h3&gt;&lt;p&gt;我们简化模型为： &lt;strong&gt;一个传输设备&lt;/strong&gt; 与 &lt;strong&gt;两条并联的光缆&lt;/strong&gt; 串联组成。&lt;/p&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;graph TD
+    D[业务输入] --&amp;gt; E{传输设备 $$q$$};
+    E --&amp;gt; F;
+    F --&amp;gt; G([光缆 $$p$$]);
+    F --&amp;gt; H([光缆 $$p$$]);
+    G --&amp;gt; I;
+    H --&amp;gt; I;
+    I --&amp;gt; J[业务输出];
+
+    subgraph 并联光缆组
+        F(分路)
+        G
+        H
+        I(合路)
+    end
+    
+    style E fill:#ccf,stroke:#333,stroke-width:2px
+    style G fill:#f9f,stroke:#333,stroke-width:2px
+    style H fill:#f9f,stroke:#333,stroke-width:2px&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;并联光缆的可靠性：&lt;/strong&gt; 两条光缆并联，只有当两条光缆同时失效时，光缆承载才失效。&lt;/p&gt;
+$$ R_{光缆并联} = 1 - (1-p)(1-p) = 2p - p^2$$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;系统总可靠性：&lt;/strong&gt; 将光缆并联体与传输设备 $q$ 串联起来。&lt;/p&gt;
+$$ R_{方式2} = R_{光缆并联} \times q = (2p - p^2) \times q$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;可靠性的决胜局谁更优&#34;&gt;可靠性的“决胜局”：谁更优？
+&lt;/h2&gt;&lt;p&gt;通过数学比较 $R_{方式2}$ 和 $R_{方式1}$ 的大小，我们得出了一个&lt;strong&gt;关键的临界值&lt;/strong&gt;，它决定了你的选择：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;临界条件&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;可靠性比较&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;决策建议&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;当 $q &amp;gt; \frac{1}{2-p}$ 时&lt;/td&gt;
+          &lt;td&gt;$R_{方式2} &amp;gt; R_{方式1}$&lt;/td&gt;
+          &lt;td&gt;传输系统承载更优&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;当 $q &amp;lt; \frac{1}{2-p}$ 时&lt;/td&gt;
+          &lt;td&gt;$R_{方式1} &amp;gt; R_{方式2}$&lt;/td&gt;
+          &lt;td&gt;光纤直驱更优&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;当 $q = \frac{1}{2-p}$ 时&lt;/td&gt;
+          &lt;td&gt;$R_{方式1} \approx R_{方式2}$&lt;/td&gt;
+          &lt;td&gt;两者可靠性相当&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;临界值-q_临界--frac12-p-的分析&#34;&gt;临界值 $Q_{临界} = \frac{1}{2-p}$ 的分析
+&lt;/h3&gt;&lt;h4 id=&#34;1-当光缆-p-极高时接近完美&#34;&gt;1. 当光缆 $p$ 极高时（接近完美）
+&lt;/h4&gt;&lt;p&gt;假设你的光缆质量非常好， $p = 0.99$。&lt;/p&gt;
+$$Q_{临界} = \frac{1}{2 - 0.99} = \frac{1}{1.01} \approx 0.9901$$&lt;p&gt;这意味着，除非你的传输设备 $q$ 的可靠性&lt;strong&gt;高于 99.01%&lt;/strong&gt;，否则方式1（直驱）的可靠性反而更高！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解读：&lt;/strong&gt; 当基础的光缆本身已经足够可靠时，再引入高昂的传输设备，其带来的&lt;strong&gt;故障风险 ($1-q$)&lt;/strong&gt; 甚至可能超过两条并联光缆带来的冗余收益。额外的投资换来的可能是可靠性的&lt;strong&gt;下降&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;2-当光缆-p-较低时&#34;&gt;2. 当光缆 $p$ 较低时
+&lt;/h4&gt;&lt;p&gt;假设你的光缆环境较差， $p = 0.8$。&lt;/p&gt;
+$$Q_{临界} = \frac{1}{2 - 0.8} = \frac{1}{1.2} \approx 0.833$$&lt;p&gt;在这种情况下，只要你的传输设备 $q$ 的可靠性&lt;strong&gt;高于 83.3%&lt;/strong&gt;，方式2就会优于方式1。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解读：&lt;/strong&gt; 当基础链路可靠性不足时，冗余的光缆并联结构（方式2的核心优势）可以显著提升整体可靠性，即便引入的设备风险较大，也是值得的。&lt;/p&gt;
+&lt;h3 id=&#34;工程抉择投资与安全的平衡&#34;&gt;工程抉择：投资与安全的平衡
+&lt;/h3&gt;&lt;p&gt;分析结果清晰地告诉我们： &lt;strong&gt;业务电路承载的可靠性选择，绝不能一概而论。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;方式2（传输系统承载）固然提供了强大的光缆冗余保护，但也带来了 &lt;strong&gt;巨大的投资增加&lt;/strong&gt; 和 &lt;strong&gt;新的故障点（传输设备 ）&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h2 id=&#34;结论最贵的不一定就是最好的&#34;&gt;结论：最贵的，不一定就是最好的
+&lt;/h2&gt;&lt;p&gt;构建高可靠性的通信网络，需要从 “可靠性” 和 “投资有效性” 两个维度进行评估。&lt;/p&gt;
+&lt;p&gt;我们应该避免用巨大的、不经济的投资，去换取微量的安全提升。只有通过精确的数学模型分析和对具体工程环境（$p$ 和 $q$ 的实际值）的深入理解，才能找到真正符合业务需求、且最具成本效益的承载方案。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最可靠的方案，是平衡了成本与风险的方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

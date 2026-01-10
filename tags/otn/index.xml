@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>OTN on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/otn/</link>
+        <description>Recent content in OTN on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Tue, 16 Sep 2025 07:35:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/otn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>搅动一池春水：模块化波分如何重塑光传输江湖</title>
+        <link>https://blog.fallleaf.net/p/notes-modular-wdm-reshape-optical-transmission/</link>
+        <pubDate>Tue, 16 Sep 2025 07:35:00 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/notes-modular-wdm-reshape-optical-transmission/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-modular-wdm-reshape-optical-transmission/cover.webp" alt="Featured image of post 搅动一池春水：模块化波分如何重塑光传输江湖" /&gt;&lt;p&gt;在光传输这个看似平静的江湖里，一股新的力量正在悄然崛起。它就是—— &lt;strong&gt;模块化波分&lt;/strong&gt; 。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;电信称为“DCI-BOX”，移动称为“极简OTN”，联通称为“模块化波分”，个人认为联通的叫法最准确。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;与传统设备的封闭“黑盒”不同，模块化波分主打 &lt;strong&gt;标准化接口&lt;/strong&gt; 和 &lt;strong&gt;解耦架构&lt;/strong&gt; 。它的出现，并不是要把老牌厂商彻底挤出局，而是像一条“鲇鱼”，在池水中激起涟漪，让僵化的市场重新活跃起来。&lt;/p&gt;
+&lt;h2 id=&#34;三方博弈谁是变革的主角&#34;&gt;三方博弈：谁是变革的主角？
+&lt;/h2&gt;&lt;p&gt;当下的模块化波分市场，可以说是一场“三国演义”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;新兴的模块化厂家&lt;/strong&gt;
+这些新玩家是搅动局面的急先锋。依靠开放灵活的设计和更具竞争力的价格，他们迅速赢得运营商的关注，直接挑战传统格局。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;老牌设备厂商&lt;/strong&gt;
+并非没有相关产品，但这些产品大多卖给政企或海外客户，而不提供给国内的运营商。面对运营商引入“鲇鱼”的策略，他们有点尴尬：是坚守高利润的封闭模式，还是顺应趋势，把模块化波分真正引入国内运营商市场？&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;运营商的研究机构&lt;/strong&gt;
+商业化目的较弱，但积极投身研发。他们要掌握核心技术、引领标准，确保市场不会被单一阵营垄断。某种意义上，这些研究机构像一个“稳定器”，既不追求做大，却能保持市场活力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;三方角色互相牵制：新兴厂商不断进攻，研究机构推动开放，传统厂商则左右为难。整个生态因此处在动态博弈之中。&lt;/p&gt;
+&lt;h2 id=&#34;运营商的考量不仅是省钱&#34;&gt;运营商的考量：不仅是“省钱”
+&lt;/h2&gt;&lt;p&gt;很多人以为，运营商引入模块化波分是为了压缩成本。诚然，但背后有着更深层的逻辑。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;摆脱被锁定的风险&lt;/strong&gt;
+传统设备的绑定效应太强，而模块化波分能让运营商自由的选择光层和电层，告别“一家独大”的局面。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;优化全生命周期成本&lt;/strong&gt;
+不只是买设备便宜。更重要的是，模块化波分支持按需组合、快速升级，长期看能大幅降低运维成本。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平衡创新与稳健&lt;/strong&gt;
+新兴厂家带来灵活与低价，但运营商仍看重老牌厂商的技术积累和运维保障。理想的状态，是老牌厂商也能提供更开放的产品，让创新与稳定兼得。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;模块化波分的进击&#34;&gt;模块化波分的进击
+&lt;/h2&gt;&lt;p&gt;老牌设备厂商固守自身领域，面对运营商的需求毫不退让。这为模块化波分新兴厂家带来了天赐良机。与此同时，上层网络业务需求转向以大颗粒的点到点业务为主，电层交叉需求锐减，网络承载特点随之改变，这都为模块化波分的应用提供了良好契机。&lt;/p&gt;
+&lt;p&gt;模块化波分正逐步蚕食老牌厂商的领域。从最初的本地网内点到点应用，到环形组网，再到干线热点分流；从IDC互连，到承载业务网络互连，直至核心局/关口局互连，模块化波分的应用场景不断扩展。更有甚者，直接利用了老牌厂商的光层，通过模块化波分的电层开通本地及省内的大颗粒电路。模块化波分开放解耦的特点，让运营商通过自研的管控系统，用模块化波分搭建统一管控的光层底座，成为了一种可能。&lt;/p&gt;
+&lt;h2 id=&#34;结语开放才是未来&#34;&gt;结语：开放才是未来
+&lt;/h2&gt;&lt;p&gt;模块化波分的崛起并不是一场颠覆，而是一场 &lt;strong&gt;赛道重构&lt;/strong&gt; 。它通过“鲇鱼效应”，让市场更开放、更灵活，逼着所有玩家都必须参与进来。&lt;/p&gt;
+&lt;p&gt;未来的光传输产业，必然走向一个更加多元化、更具竞争力的新格局。对老牌厂商来说，这既是挑战，也是机会：谁能顺势而为，谁就能在新的游戏规则里继续占据核心。当年的光传输江湖，也曾有过“屠龙少年”，他们用创新打破旧的藩篱，创造了今天的高速网络。然而，当年的少年，是否已在岁月流转中，成为了自己曾经挑战的巨龙？&lt;/p&gt;
+&lt;p&gt;开放虽痛，却是未来唯一的船票。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。\n">
+<title>5G承载中回传新接口:50GE</title>
+
+<link rel='canonical' href='https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/'>
+
+<link rel="stylesheet" href="/scss/style.min.613380e828aecb9eecf17f919ae65fe9f7d8afb8a8e41598bfb6572364a3a7b2.css"><meta property='og:title' content="5G承载中回传新接口:50GE">
+<meta property='og:description' content="在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。\n">
+<meta property='og:url' content='https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/'>
+<meta property='og:site_name' content='Reading,Thinking And Writing'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='回传' /><meta property='article:tag' content='50GE' /><meta property='article:tag' content='5G' /><meta property='article:published_time' content='2019-12-13T08:49:28&#43;08:00'/><meta property='article:modified_time' content='2023-07-30T08:49:28&#43;08:00'/>
+<meta name="twitter:title" content="5G承载中回传新接口:50GE">
+<meta name="twitter:description" content="在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。\n"><script
+  src="https://code.jquery.com/jquery-latest.min.js"
+  crossorigin="anonymous"></script>
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_5644df797013a54f.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Reading,Thinking And Writing</a></h1>
+            <h2 class="site-description">我是一颗蛋，一颗红旗下的蛋</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>存档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>标签</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#50g相关以太网光接口标准">50G相关以太网光接口标准</a></li>
+    <li><a href="#为什么是pam4">为什么是PAM4</a></li>
+    <li><a href="#pam4是什么">PAM4是什么</a></li>
+    <li><a href="#50g光收发模块原理及功率预算">50G光收发模块原理及功率预算</a></li>
+    <li><a href="#50g光收发模块相关技术">50G光收发模块相关技术</a></li>
+    <li><a href="#50ge的应用及展望">50GE的应用及展望</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/tech/" >
+                技术与实践
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/tech-50ge-interface-5g-backhaul/">5G承载中回传新接口:50GE</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2019-12-13T08:49:28&#43;08:00'>2019年12月13日</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 10 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。</p>
+<h2 id="50g相关以太网光接口标准">50G相关以太网光接口标准
+</h2><p>IEEE的两个标准：IEEE 802.3 bs(400G，200G) 和802.3 cd（200G，100G，50G） 定义了50G，100G，200G，400G以太网的媒体访问控制层（MAC）以及物理层（PHY）的相关参数。主要的光接口类型以及采用的调制格式如下表：</p>
+<p>可以看到，在实现50G以上的高速以太网接口时，主要采用了50G比特速率（波特26.6GBaud），PAM4调制方式。</p>
+<h2 id="为什么是pam4">为什么是PAM4
+</h2><p>光传输一直在追求更高的传输速率，但速率越高，所面临的问题也就越多，诸如色散、发光功率、信噪比、光收发器的线性度及灵敏度、技术成熟度、成本等。提高速率的方式有多种，包括通过频率、振幅、相位等变化的调制方式。</p>
+<p>NRZ（不归零码，Non-Return-to-Zero）调制方式一直是光通信采用的主要技术，随着速率的提升，如 200G/400G，NRZ调制在色散影响、光电转换带宽和成本上遇到了较大的困难。对于25G以上的波特率，在中长距传输时，色散的影响显著；光电转换带宽在60Gbit/s以上出现了技术瓶颈。对于高速接口，每通道数据速率要提高到50Gbps以上，如果仍然采用NRZ技术，由于每个符号周期只有不到20ps，对于收发芯片的时间裕量以及传输链路的损耗要求更加苛刻， 若能既保持较低的波特率，又提高每一波特的信息量，就能大大降低光器件的带宽要求，从而可以降低光器件成本。而PAM4调制方式极大的满足了上述要求，是继NRZ后热门的信号调制技术，也是多阶调制技术的代表。</p>
+<h2 id="pam4是什么">PAM4是什么
+</h2><p>PAM即脉冲幅度调制（Pulse Amplitude Modulation）。NRZ调制方式采用高、低两种信号电平来表示要传输的数字逻辑信号的1、0信息，每个信号符号周期可以传输1bit的逻辑信息，实际上NRZ方式可也叫做PAM2，2表示的是有2种电平信号。那么PAM4调制方式就是采用4个不同的信号电平来进行数据传输，每个符号周期可以表示2bit的逻辑信息（00、01、10、11）。由于 PAM4 信号每个符号周期可以传输2bit的信息，因此要实现同样的信号传输能力，PAM4信号的符号速率（波特率）只有NRZ信号的一半，换而言之，采用同样的波特速率，PAM4的信号比特率是NRZ信号的2倍，比如利用25G波特率，PAM4调制方式，可以传输50G比特率的信息。NRZ和PAM4信号典型波形如下图所示，右侧为NRZ和PAM4的光眼图对比，NRZ为单眼波形，PAM4为三眼波形（Y轴方向存在3个眼状图形）。</p>
+<p>其实多阶PAM调制的概念并不新鲜，比如最普遍使用的100MBase-T以太网，就使用3种电平进行信号传输；而在无线通信领域中普遍使用的16QAM调制、32QAM调制、64QAM调制等，也都是采用多电平的基带信号对载波信号进行调制。此外还有PAM5（802.3ab），PAM8（802.3bm）等。</p>
+<p>在2014年发布的100G背板标准802.3 bj中，同时定义了两种信号传输方式：4组25.78G波特率的NRZ信号，或者4组13.6G波特率的PAM4信号。由于芯片技术以及PCB板材和连接器技术的快速发展，25G波特率的NRZ技术很快实现商用应用，但PAM4由于当时技术成熟度和成本的原因，并没有在100G以太网的技术中被真正应用。随着IEEE 802.3 bs 和802.3 cd的发布，PAM4将越来越多的大规模应用起来。
+50G相关标准进展</p>
+<p>IEEE 802.3 bs标准批准时间为2017年12月，该标准覆盖了400GE/200GE两种以太网接口速率。其中400GE定义了LR8 (10km)/FR8 (2km)/DR4 (500m)/SR16 (100m)等PMD子层规格以及多种AUI电接口。LR8/FR8采用了50G PAM4技术，成为以太网标准中首个采用该技术接口标准，为PAM4技术开启广泛商用打开了大门。</p>
+<p>IEEE 802.3 cd标准批准时间为2018年12月，标准覆盖了50GBASE-LR/KR/SR PMD子层，所有PMD子层都采用了50G PAM4技术，50GE是PAM4技术应用最广泛的以太网接口速率。</p>
+<p>以上标准定义的50GE传输距离都在10km以下，2018年4月IEEE成立了Beyond 10km工作组，对50G在40km传输距离范围内，100G、200G、400G在40km及80km传输范围的技术进行研究，2018年9月更改为P802.3 cn工作组，计划规范批准时间节点为2020年6月。</p>
+<h2 id="50g光收发模块原理及功率预算">50G光收发模块原理及功率预算
+</h2><p>基于50G PAM4光模块运用PAM4编码技术，每个采样周期的传输信息量提升了一倍，可以利用一对25G发射和接收器件实现50G传输速率，降低了模块的成本。50G PAM4可有多种应用场景，除了单通道的50GE PAM4光模块，还有4通道的200GE（4×50G）光模块和8通道的400GE（8×50G）光模块。</p>
+<p>下面以单通道50G PAM4即50GE光模块为例，介绍各模块功能。</p>
+<p>发送方向：数据经过50GE MAC、PCS、PMA后，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到50GE光模块，经过PAM4 DSP编解码芯片进行速率和码型转换，从2通道转换为1通道，调制码型转换成为PAM4，速率为26.5625G波特率，激光器驱动芯片将PAM4信号放大，驱动25G激光器将电信号转换为单波长25GBaud（50Gbps）光信号。</p>
+<p>接收方向，接受器将单波长25GBaud光信号转换为电信号，整形放大后输出至PAM4 DSP编解码芯片，PAM4编解码芯片再将该信号转换为2*25G NRZ信号，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到以太网处理芯片。</p>
+<p>目前50GE PAM4模块的封装形式为QSFP28，计划的封装为SFP56，光口类型为LC，使用单模光纤，中心波长为1311nm，传输距离为10km/40km，模块的最大功耗为4.5W。有关功率预算关键技术参数如下表：</p>
+<p>和传输距离相关的主要是通道插损，即光纤以及光纤连接器引入的插损之和。IEEE目前定义50G LR场景，极限情况下是1304.5nm，按0.43dB/km计算，即0.43dB/km×10km=4.3dB，还有6.3-4.3=2dB余量是给光纤连接、以及熔纤导致的插损。</p>
+<h2 id="50g光收发模块相关技术">50G光收发模块相关技术
+</h2><p>PAM4相比传统的NRZ信号，从2阶变为4阶，眼图从单眼变成3眼。在承载bit效率方面虽然提升了1倍，但也引入了对噪声、线性度敏感的问题，因此不能简单的利用已经成熟的25G光电模块，还需根据PAM4的特性进行相应的改变。</p>
+<ul>
+<li>发送机线性要求</li>
+</ul>
+<p>由于多电平调制，PAM4 对器件的线性度有要求。当线性度差时，PAM4 输出眼图的3 个眼高度不一样，容易造成误判，增加了误码率。电器件比较容易满足上述要求，10 km 规格能采用直接调制激光器（DML）实现，同时也保证了低成本。40km规格则需要使用电吸收调制激光器(EML)和雪崩光电探测器。另一方面，10km和40km的规格均对高线性度的激光器驱动器和跨阻放大器有需求。</p>
+<ul>
+<li>光功率预算</li>
+</ul>
+<p>功率预算主要考虑出光功率、光调制幅度（OMA）、光链路损耗、发射机和色散眼图闭合度（TDECQ）、多径干扰（MPI）和接收灵敏度等，PAM4在功率预算计算上与NRZ 类似。对于同样的接收信号幅度，由于PAM4发送4 个电平，最小信号眼图眼高比NRZ 的小5 dB 左右。因此，相比于NRZ 方式，PAM4 存在着5dB左右的调制代价。激光器的发射功率相对采用NRZ的25G激光器需要提高。</p>
+<ul>
+<li>PAM4 DSP芯片</li>
+</ul>
+<p>由于PAM4编码有4种电平逻辑，所以要求模块内部的Driver和TIA芯片都具备线性输出功能，而NRZ模块使用限幅输出的方案即可。PAM4模块需要使用DSP来完成50G PAM4和2×25G NRZ信号的转换，而NRZ模块只需要使用传统的CDR芯片即可完成数据传输。</p>
+<h2 id="50ge的应用及展望">50GE的应用及展望
+</h2><p>50GE除了在数据中心的交换机以及服务器互联中大量采用，随着5G承载网建设的日益临近，其在承载网接入层中的应用也越来越多的得到运营商的关注。</p>
+<p>在运营商方面：</p>
+<ul>
+<li>中国移动：</li>
+</ul>
+<p>李晗表示，在技术推动上，中国移动选择“两条腿走路”——既完善SPN的相关标准，推动其成熟，又发挥中国移动产业影响力，积极与光芯片、光器件、光模块等厂家合作，降低光层整体成本。SPN接入层采用50G PAM4 BiDi光模块，更好地满足带宽、同步等指标，需进一步推进产业成熟和降低成本。据悉，50GE光模块支持10km、100km DiBi方案，已有可商用产品，而50G较25G成本增加主要是PAM4电芯片，预计量产后50G PAM4较25G光模块贵10%-20%以内，预计单比特成本下降35%-45%。</p>
+<ul>
+<li>中国电信：</li>
+</ul>
+<p>张成良指出，4G和5G相比，不仅是承载网络架构发生变化，对核心网、中传/回传、前传等都提出了更高的要求。核心网需要更高速的光模块（200G/400G）、更大的容量的光传输、更灵活的组网、更高效的光层调度。中传/回传需要更高速的光模块（50G/100G）、更大的网络带宽和更灵活的网络以及更好的性能。中国电信在STN招标里，要求STN-A2，STN-B设备“承诺支持50GE/25GE 接口”。</p>
+<ul>
+<li>中国联通</li>
+</ul>
+<p>中国联通网络技术研究院沈世奎表示：“中国联通在5G承载网的建设已有较为清晰的方向，务实为本，采用产业链中更加成熟的技术；成本为主，以综合成本和TCO最低为目标。25G光层产业链已经完善，基于PAM4技术和25G光收发器实现的50GE更具性价比优势。”</p>
+<p>50GE光模块的应用需要整个产业链的共同促进，其中运营商的需求是决定因素，据目前的信息，中国移动在推进50GE的应用最积极，其次是中国电信，以中国移动的需求量，或许能够加速整个产业链的发展。</p>
+<p>国内传统通信设备厂商华为、中兴、烽火也都宣称5G承载网设备支持50G接口。华为一直在牵头做技术推动，2018年联合上下游企业发布了《50G PAM4技术白皮书》。在2019年4月，华为宣称通过了中国移动研究院组织开展的50GE单纤双向新技术测试，其在技术交流资料中，更是介绍了采用FlexE技术将50GE平滑升级成100G的方案。</p>
+<p>50GE在5G回传接入层的应用，主要取决于接入层流量预测以及50GE光收发器的价格。</p>
+<p>据测算，目前4G基站单站平均流速大概0.08Gb/s，结合目前运营商的建设指导意见，一个接入环大概带4个BBU集中点，一个BBU集中点大约带10个左右的基站，若按5G基站平均流速是4G的10倍计算，则一个环的总流速大概为0.08×10×4×10=32Gb/s，这种情况下采用50GE是比较合适的，但考虑初期50GE成本问题，建设初期可采用10GE建设，随着流量增加进行10GE捆绑方式扩容（实际上，也可考虑采用前传采用的25GE速率）。假若50GE的价格能够达到10GE价格的2-3倍时（这一点在数通的报价体系内估计很难达到），或100GE的1/3以下时，采用50GE是一个优选的方案，可以达到TCO的最优。n×10GE捆绑方式，除了考虑光模块的价格，还要把维护量的增加、数据配置的复杂、对光纤的占用都纳入TCO的评估中。据相关资料，现有4G回传接入层有30%-44%采用的40km10G光模块，因此50GE 40km光模块的价格对其应用也是至关重要的。</p>
+<p>126.6GBaud实为26.5625GBaud，在使用PAM4调制时，采用前向纠错编码RS-FEC（544，514）以及线路编码256b257b将25G变为26.5625G，25G×（544÷514）×（257÷256）＝26.5625G。</p>
+<p>225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/backhaul/">回传</a>
+        
+            <a href="/tags/50ge/">50GE</a>
+        
+            <a href="/tags/5g/">5G</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2023年7月30日 08:49
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/tech-pcdn-overview/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-pcdn-overview/cover.1156c9f3f569e8d3ac9cbf929a79ef9b_hu_980ce765dbf164b2.webp"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post PCDN现象初探及浅见"
+                        data-key="tech-pcdn-overview" 
+                        data-hash="md5-EVbJ8/Vp6NOsnL&#43;Smnnvmw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">PCDN现象初探及浅见</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-fiber-direct-vs-transport-reliability/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-fiber-direct-vs-transport-reliability/cover.2064044f6fc5c751b663100afb5e69c8_hu_900d920fe45bec80.jpeg"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析"
+                        data-key="tech-fiber-direct-vs-transport-reliability" 
+                        data-hash="md5-IGQET2/Fx1G2YxAK&#43;15pyA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-fiber-more-longer-more-fail/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-fiber-more-longer-more-fail/cover.4ec3f6df839bd2a452ae0b39ba8d1b6e_hu_f17ab5316111ee52.jpeg"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post 距离越长，光缆就越容易出故障吗？"
+                        data-key="tech-fiber-more-longer-more-fail" 
+                        data-hash="md5-TsP234Ob0qRSrgs5uo0bbg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">距离越长，光缆就越容易出故障吗？</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-cpo-data-center-energy-efficiency-revolution/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-cpo-data-center-energy-efficiency-revolution/cover.8a22e44ba63615020ee2b875923d9421_hu_a3d71ce2c0d563ad.jpg"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命"
+                        data-key="tech-cpo-data-center-energy-efficiency-revolution" 
+                        data-hash="md5-iiLkS6Y2FQIO4rh1kj2UIQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">光电共封装（CPO）：数据中心的下一场“能效革命</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-optical-network-digital-twin/">
+
+        
+            <div class="article-image">
+                <img src="/p/tech-optical-network-digital-twin/cover.801869565a89df8186fde71ed40c042d_hu_4a4c5e0545aa00a1.jpg"
+                        width="250"
+                        height="150"
+                        loading="lazy"
+                        alt="Featured image of post 光网络数字孪生：让网络在虚拟世界先跑一遍"
+                        data-key="tech-optical-network-digital-twin" 
+                        data-hash="md5-gBhpVlqJ34GG/ece1AwELQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">光网络数字孪生：让网络在虚拟世界先跑一遍</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof Waline !== 'undefined') {
+            Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Admin","placeholder":null},"pageview":true,"requiredMeta":["name","email"],"serverURL":"https://comments.fallleaf.net"});
+        } else {
+            
+            const script = document.querySelector('script[src*="waline.js"]');
+            script.addEventListener('load', function() {
+                Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Admin","placeholder":null},"pageview":true,"requiredMeta":["name","email"],"serverURL":"https://comments.fallleaf.net"});
+            });
+        }
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2004 - 
+        
+        2026 红旗下的蛋
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"
+      crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"
+        crossorigin="anonymous">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/mhchem.min.js"
+        crossorigin="anonymous">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"
+       crossorigin="anonymous"
+       onload='renderMathInElement(document.body, null);'>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"
+        crossorigin="anonymous"></script>
+<script src="/js/main.min.beed1be94ebe04a73a3d983583046daf3fd8ac54857fa72d94a1e83c470d9eaf.js" integrity="sha256-vu0b6U6&#43;BKc6PZg1gwRtrz/YrFSFf6ctlKHoPEcNnq8=" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

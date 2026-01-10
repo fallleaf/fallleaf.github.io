@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>RAN on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/ran/</link>
+        <description>Recent content in RAN on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Sun, 30 Jul 2023 16:39:27 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/ran/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>LTE下的RAN</title>
+        <link>https://blog.fallleaf.net/p/tech-lte-ran/</link>
+        <pubDate>Mon, 12 Jul 2010 16:39:27 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-lte-ran/</guid>
+        <description>&lt;p&gt;R5版本的RAN，NODE B到RNC之间只有Iub接口，基站间没有互联，Iub可以看做是一个端到端的链接，目前采用PTN传送，已经没有异议了，但在LTE环境下，eNODE到MME/S-GW是S1接口，类似Iub接口，但相邻的eNODE之间有了X2互联接口，那么LTE环境下的RAN该采用何种技术？PTN是否仍然合适？是否需要新建一个基于三层技术的IP RAN呢？&lt;/p&gt;
+&lt;p&gt;E2E时延： S1&amp;lt;10ms X2&amp;lt;20ms —–3GPP TR R3.018&lt;/p&gt;
+&lt;p&gt;流量： S1站97%以上，X2小于3%；&lt;/p&gt;
+&lt;p&gt;需要二层PTN吗？ 还是需要三层PTN? X2的时延，QOS？ EVPLAN EVPLINE&lt;/p&gt;
+&lt;p&gt;LTE新的逻辑接口X2主要用于切换，由于这个接口的出现，基站出现了逻辑部分MESH互连的承载难题，对传统点到点的传输网络架构提出了挑战。但进一步分析可以发现，实际X2接口带宽需求不会很大（最大不会超过S1接口的3%），X2业务面传输时延要求端到端50－100ms，信令面传输时延要求约 10－20ms，这个要求比S1用户面时延5ms宽松了许多。&lt;/p&gt;
+&lt;p&gt;LTE系统由核心网(EPC)、基站(eNodeB)和用户设备(UE)3部分组成。其中eNodeB负责无线接入网部分，称为E- UTRAN；EPC(EnvolvedPacketCore)是核心网部分，EPC信令处理部分称MME，数据处理部分称为SAE-Gateway。&lt;/p&gt;
+&lt;p&gt;eNodeB与EPC通过S1接口连接，eNodeB间通过X2接口连接，UE与eNodeB通过Uu接口连接。和TD-SCDMA相比，X2接口类似于Iur接口，S1 接口类似于Iu接口，但有较大简化。由于英电和RNC融合为网元eNodeB，LTE比WCDMA和TD-SCDMA少了Iub接口。&lt;/p&gt;
+&lt;p&gt;那么采用PTN接入的时候X2接口间的电路数量过多，在VLAN 上将会处理较为麻烦，而且PTN的LSP数量极剧增加，如果采用PTN传输是不是很麻烦，有一种说法是CE布置到汇聚层，完善数据城域网，接入层由传输负责，个人感觉还是比较好，X2的电路还是路由器调度比较方便，但是目前的机房条件好像再放路由器很难了，而且还有具有OTN。比较困难。不知道那位高手怎么看？&lt;/p&gt;
+&lt;p&gt;“下面我们就来看还有一个困扰PTN的发展，就是LTE提出了X2接口，整个基站是扁平化的网络，这时候就趋向了包括S1Flex动态归属需求，基站和基站之间互联。现在我们在中国电信内部讨论PTN有很大的问题，第一就是对LTE的情况下，三层功能比较弱，另外解决大客户用的时候也是不能提供的。这是我们的 IP RAN承载方案，路由器方案、PTN接入路由器方案、PTN+路由器方案。我认为PTN+路由器方案是最糟糕的方案，但实际运用中也不尽然，可能运作中 PTN+路由器还是比较多的方案。如果你放在综合承载，PTN不仅仅是基站，而是综合的承载基站，你考虑LTE更复杂的网络拓扑，这时候提到这个方案还是有一定道理的，所以我们并没有排除这个方案，让用户来选择是最好的。“ –张成良&lt;/p&gt;
+&lt;p&gt;若读者有什么想法，尽可留言。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

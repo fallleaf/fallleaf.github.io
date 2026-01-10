@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>无源波分 on Reading,Thinking And Writing</title>
+        <link>https://blog.fallleaf.net/tags/%E6%97%A0%E6%BA%90%E6%B3%A2%E5%88%86/</link>
+        <description>Recent content in 无源波分 on Reading,Thinking And Writing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>红旗下的蛋</copyright>
+        <lastBuildDate>Sun, 30 Jul 2023 13:15:13 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%97%A0%E6%BA%90%E6%B3%A2%E5%88%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>无源波分前传分场景解决方案</title>
+        <link>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</link>
+        <pubDate>Sat, 12 Oct 2019 13:15:13 +0800</pubDate>
+        
+        <guid>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</guid>
+        <description>&lt;p&gt;ITU-T G.694.2规范在1270~1610nm范围内，建议了波长间隔为20nm的18个可用波长，如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands.png&#34;
+	width=&#34;644&#34;
+	height=&#34;381&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_3fa9f97b5b0e8bb4.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_f7bf9e430e6806b7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;波长间隔&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;169&#34;
+		data-flex-basis=&#34;405px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;由于G.652 A/B光纤有水峰，一般都用1471~1611nm这8个波，对于G.652 C/D光纤，18个波均可使用。&lt;/p&gt;
+&lt;p&gt;4G建设时期，前传主要采用光纤直驱方式，建设了大量接入主干和配线光缆。由于5G基站大量与4G共站，均有配线光缆接入，采用无源波分方式能最大化提高现有光缆的利用效能，为光缆网络增值，降低接入成本，是5G前传建设时需要重点考虑建设方式。&lt;/p&gt;
+&lt;p&gt;目前用于5G前传的无源波分方案，主要有两种方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;6波25G方案
+&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm.png&#34;
+	width=&#34;635&#34;
+	height=&#34;216&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_7ec511bd24c29957.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_3d1c40472e5480a2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;6波25G方案&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;293&#34;
+		data-flex-basis=&#34;705px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12波方案（6波10G+6波25G）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm.png&#34;
+	width=&#34;728&#34;
+	height=&#34;380&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_3a7852639b34d685.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_13260c9272093a0e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;12波方案&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;191&#34;
+		data-flex-basis=&#34;459px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;近期的上海移动5G无源波分招标，包含12波25G的无源波分方案，据推测，可能是采用移动的OPEN-WDM彩光方案，25G彩光模块前6波采用比较成熟的1271nm，1291nm，1311nm，1331nm，1351nm，1371nm，后6波选用目前较少采用的1471nm，1491nm，1511nm，1531nm，1551nm，1571nm这6个波长，后期需跟踪用于室外的12波25G彩光模块的整体成熟度和成本是否能降下来。&lt;/p&gt;
+&lt;p&gt;在目前的5G前传建设中，也有采用25G单纤双向光模块，这种方式可以看作是一种光模块集成的CWDM方式，对于减轻主干、配线光缆的压力，起了很大的作用，在纤芯不紧张时，可以采用该方式。目前共享5G的前传接口需求尚不明确，若采用2×25G接口方案时，对光缆网纤芯的需求将是2倍的需求。&lt;/p&gt;
+&lt;p&gt;针对不同的5G前传接入场景，6波和12波有不同的组合方案。&lt;/p&gt;
+&lt;p&gt;场景1：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;新建5G站址，配线光缆新建，接入主干利旧&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×2+25G彩光模块×6&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1.png&#34;
+	width=&#34;730&#34;
+	height=&#34;283&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_a2590217cc373d5e.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_5dd4f1bfdb3169c6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;scenario1&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;257&#34;
+		data-flex-basis=&#34;619px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;场景2：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5G与4G共站址，有少量纤芯，4G前传方式不变，5G采用无源波分&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×2+25G彩光模块×6&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2.png&#34;
+	width=&#34;1163&#34;
+	height=&#34;441&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_9ebe4334e1415067.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_c6b959f6c812c9d5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;scenario2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;263&#34;
+		data-flex-basis=&#34;632px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;场景3：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5G与4G共站址，有少量纤芯，4G前传采用无源波分，5G采裸光纤&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×2+10G彩光模块×6（比场景2成本低一些，但需割接4G基站）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario3.png&#34;
+	width=&#34;1163&#34;
+	height=&#34;441&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario3_hu_392b91fd6841a395.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario3_hu_adc76057fa27a0e1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;scenario3&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;263&#34;
+		data-flex-basis=&#34;632px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;场景4：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5G与4G共站址，无纤芯，4G、5G前传采用无源波分，腾退纤芯&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×4+10G彩光模块×6+25G彩光模块×6&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4.png&#34;
+	width=&#34;1163&#34;
+	height=&#34;441&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_766a119f1d1253ea.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_d0e13dc706d7fa39.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;scenario4&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;263&#34;
+		data-flex-basis=&#34;632px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;场景5：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5G与4G共站址，无纤芯，4G、5G前传采用无源波分，腾退纤芯&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源12波合分波器×2+10G彩光模块×6+25G彩光模块×6&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5.png&#34;
+	width=&#34;1163&#34;
+	height=&#34;441&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_9aa88302118194f9.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_cb55a6a699231918.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;scenario5&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;263&#34;
+		data-flex-basis=&#34;632px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;场景6：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;联通电信共享5G，与4G共址，少量纤芯，5G前传采用无源波分&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×4+25G彩光模块×12&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b&gt;假设每个AAU需要2个25G接口&lt;/b&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6.png&#34;
+	width=&#34;1163&#34;
+	height=&#34;395&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_fbfecdbc1bd6e853.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_1209a613594f5736.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;scenario6&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;294&#34;
+		data-flex-basis=&#34;706px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;还有其他组合方式，就不一一列举了。总之，采用无源波分，主要目的就是腾退已占用纤芯和减少纤芯占用，对于4G前传RRU采用级联的情况，采用无源波分主要是减少5G前传纤芯占用。&lt;/p&gt;
+&lt;p&gt;根据上海移动5G无源波分的招标公告以及中标公示，6波25G无源波分限价4000元/套（不含税），平均中标折扣率为70.18%，12波25G无源波分限价10600元/套（不含税），平均中标折扣率为79%。&lt;/p&gt;
+&lt;p&gt;上海移动招标的是10公里光模块，最大线路损耗为11dB，也就是在11dB这个范围内，采用无源波分的成本是固定的，而新建光缆或使用光纤的成本和距离成正比关系，有一个成本交叉的临界点，如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian.png&#34;
+	width=&#34;327&#34;
+	height=&#34;214&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_99cf66348420def8.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_7136d011b44653a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;成本变化&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;152&#34;
+		data-flex-basis=&#34;366px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;各本地网可以根据自己的情况进行测算，测算时应同时考虑主干与配线的综合成本，确定无源波分应用的最佳场景。&lt;/p&gt;
+&lt;p&gt;有关材料显示近三年各运营商无源波分招标规模如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji.png&#34;
+	width=&#34;555&#34;
+	height=&#34;286&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_6260f80fec4bb3e.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_873d30be7dbbbb61.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;招标规模&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;465px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在现有的采购模式下，5G基站设备的采购和无源波分的采购是两个独立的项目，但都含有前传光模块的采购内容。如果前传采用无源波分方案，那么5G基站设备采购的光模块就重复了，带来资金的浪费，建议统一由一个项目来采购前传的光模块及CWDM合分波模块，降低整体的5G建设成本。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
