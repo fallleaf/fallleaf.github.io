@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>CPO on Reading,Thinking And Writing</title>
+        <title>CPO on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/cpo/</link>
-        <description>Recent content in CPO on Reading,Thinking And Writing</description>
+        <description>Recent content in CPO on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/cover.jpg" alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命" /&gt;&lt;h2 id=&#34;为何cpo光电共封装成为焦点&#34;&gt;为何CPO（光电共封装）成为焦点？
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/cover.webp" alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命" /&gt;&lt;h2 id=&#34;为何cpo光电共封装成为焦点&#34;&gt;为何CPO（光电共封装）成为焦点？
 &lt;/h2&gt;&lt;p&gt;近年来，AI大模型、云计算、自动驾驶和高性能计算（HPC）对数据中心带宽和算力需求激增。芯片算力不断强化，传输速率从100G、400G提升至800G乃至1.6T，但随之而来的是能耗和带宽瓶颈的新挑战。&lt;/p&gt;
 &lt;p&gt;传统架构中，交换芯片（ASIC）与光模块分离，光模块通过电连接器插在设备前面板上。这种“可插拔光模块”虽然灵活，速率提升后因电连接距离长，导致功耗高、信号衰减严重，且占用宝贵的前面板空间。&lt;/p&gt;
 &lt;p&gt;CPO的创新在于把光引擎与交换芯片直接封装，将电信号在极短距离内转换为光信号，极大减少能耗与信号损失，实现了光通信不再是外围，而是芯片核心部分。这一设计被视为突破数据中心能效和带宽瓶颈的关键。&lt;/p&gt;

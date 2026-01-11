@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>单纤多向 on Reading,Thinking And Writing</title>
+        <title>单纤多向 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/%E5%8D%95%E7%BA%A4%E5%A4%9A%E5%90%91/</link>
-        <description>Recent content in 单纤多向 on Reading,Thinking And Writing</description>
+        <description>Recent content in 单纤多向 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/cover.jpg" alt="Featured image of post 单纤多向：让前传更极简" /&gt;&lt;p&gt;在移动基站的建设中，无线前传网络却一直面临着一个&amp;quot;老大难&amp;quot;问题——光缆投资过大。随着CRAN（集中式无线接入网）模式成为主流，BBU（基带处理单元）集中部署，BBU与RRU（射频拉远单元）之间需要大量光缆纤芯连接，导致前传光缆投资成为电信运营商难以承受之重。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/cover.webp" alt="Featured image of post 单纤多向：让前传更极简" /&gt;&lt;p&gt;在移动基站的建设中，无线前传网络却一直面临着一个&amp;quot;老大难&amp;quot;问题——光缆投资过大。随着CRAN（集中式无线接入网）模式成为主流，BBU（基带处理单元）集中部署，BBU与RRU（射频拉远单元）之间需要大量光缆纤芯连接，导致前传光缆投资成为电信运营商难以承受之重。&lt;/p&gt;
 &lt;h2 id=&#34;前传之痛光缆投资为何居高不下&#34;&gt;前传之痛：光缆投资为何居高不下？
 &lt;/h2&gt;&lt;p&gt;传统的无线前传采用双纤双向光模块直连方式，每站需要占用6芯光纤。在CRAN模式下，虽然BBU集中部署带来了设备利用率提升、节省机房空间和降低能耗等优势，但也导致了前传光缆需求激增的问题。面对成千上万的基站建设，光缆投资已成为运营商网络建设中不可忽视的成本。&lt;/p&gt;
 &lt;h2 id=&#34;现有方案的局限&#34;&gt;现有方案的局限

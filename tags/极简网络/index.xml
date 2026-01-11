@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>极简网络 on Reading,Thinking And Writing</title>
+        <title>极简网络 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/%E6%9E%81%E7%AE%80%E7%BD%91%E7%BB%9C/</link>
-        <description>Recent content in 极简网络 on Reading,Thinking And Writing</description>
+        <description>Recent content in 极简网络 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Wed, 03 Sep 2025 07:32:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/cover.jpeg" alt="Featured image of post 移动近10亿招标“极简网络”，联通将其升华为网络哲学，背后有何玄机？" /&gt;&lt;p&gt;一场关于“极简”的本质之争，正在三大运营商之间悄然上演。近期，广东移动近10亿元的“极简网络改造技术支撑”项目招标，再次将“极简”推向风口浪尖。然而，当我们深入剖析三大运营商在这一领域的实施路径时，却发现了一个令人深思的现象： &lt;strong&gt;名称相同，但理念和做法却大相径庭。&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/cover.webp" alt="Featured image of post 移动近10亿招标“极简网络”，联通将其升华为网络哲学，背后有何玄机？" /&gt;&lt;p&gt;一场关于“极简”的本质之争，正在三大运营商之间悄然上演。近期，广东移动近10亿元的“极简网络改造技术支撑”项目招标，再次将“极简”推向风口浪尖。然而，当我们深入剖析三大运营商在这一领域的实施路径时，却发现了一个令人深思的现象： &lt;strong&gt;名称相同，但理念和做法却大相径庭。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;移动与电信项目式的减法工程&#34;&gt;移动与电信：项目式的“减法工程”
 &lt;/h2&gt;&lt;p&gt;移动和电信对“极简”的理解，更倾向于一个具体的工程项目。他们的招标项目通常直接、明确，预算和改造站点数量清晰可见，主要聚焦移动基站及配套的精简。这是一种典型的项目化运作模式，聚焦于物理层面的设备简化，例如采用刀片电池和刀片电源，将基站CRAN化，从而减少机房和配套设施。这种模式的优点是目标明确、执行高效，能够迅速看到网络运营成本的降低和效能的提升，但其本质是一场“减法工程”，旨在解决眼前的问题。&lt;/p&gt;
 &lt;h2 id=&#34;联通理念化的重构哲学&#34;&gt;联通：理念化的“重构哲学”

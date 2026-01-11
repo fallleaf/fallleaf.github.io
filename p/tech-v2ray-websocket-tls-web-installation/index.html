@@ -6,17 +6,13 @@
 
 <link rel='canonical' href='https://blog.fallleaf.net/p/tech-v2ray-websocket-tls-web-installation/'>
 
-<link rel="stylesheet" href="/scss/style.min.613380e828aecb9eecf17f919ae65fe9f7d8afb8a8e41598bfb6572364a3a7b2.css"><meta property='og:title' content="V2ray的WebSocket+TLS+Web安装记录">
+<link rel="stylesheet" href="/scss/style.min.96aa598ae451080d70d3518cd7e7808769eff1f34660224534440e2f84c6aeab.css"><meta property='og:title' content="V2ray的WebSocket+TLS+Web安装记录">
 <meta property='og:description' content="一些vpn或代理的特征比较明显容易被识别，虽然是加密的，看不到内容，但知道是vpn，容易被block，采用websoket+tls+web，虽然也是加密的，但和正常web访问类似，不易被block。\n">
 <meta property='og:url' content='https://blog.fallleaf.net/p/tech-v2ray-websocket-tls-web-installation/'>
-<meta property='og:site_name' content='Reading,Thinking And Writing'>
+<meta property='og:site_name' content='Reading, Thinking and Writing'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='v2ray' /><meta property='article:tag' content='websock' /><meta property='article:published_time' content='2019-09-28T15:41:27&#43;08:00'/><meta property='article:modified_time' content='2023-07-30T15:41:27&#43;08:00'/>
 <meta name="twitter:title" content="V2ray的WebSocket+TLS+Web安装记录">
-<meta name="twitter:description" content="一些vpn或代理的特征比较明显容易被识别，虽然是加密的，看不到内容，但知道是vpn，容易被block，采用websoket+tls+web，虽然也是加密的，但和正常web访问类似，不易被block。\n"><script
-  src="https://code.jquery.com/jquery-latest.min.js"
-  crossorigin="anonymous"></script>
-
-
+<meta name="twitter:description" content="一些vpn或代理的特征比较明显容易被识别，虽然是加密的，看不到内容，但知道是vpn，容易被block，采用websoket+tls+web，虽然也是加密的，但和正常web访问类似，不易被block。\n">
     </head>
     <body class="
     article-page
@@ -73,7 +69,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">Reading,Thinking And Writing</a></h1>
+            <h1 class="site-name"><a href="/">Reading, Thinking and Writing</a></h1>
             <h2 class="site-description">我是一颗蛋，一颗红旗下的蛋</h2>
         </div>
     </header><ol class="menu" id="main-menu">
@@ -341,218 +337,145 @@
 <p>bash &lt;(curl -L -s <a class="link" href="https://install.direct/go.sh"  target="_blank" rel="noopener"
     >https://install.direct/go.sh</a>)</p>
 <h2 id="2-修改服务器端配置">2. 修改服务器端配置
-</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
-</span></span><span class="line"><span class="cl">  &#34;inbounds&#34;: [{
-</span></span><span class="line"><span class="cl">    &#34;port&#34;: xxxxx, //端口
-</span></span><span class="line"><span class="cl">    &#34;Listen&#34;: &#34;127.0.0.1&#34;,  //本机环回地址，防止外部访问
-</span></span><span class="line"><span class="cl">    &#34;protocol&#34;: &#34;vmess&#34;,
-</span></span><span class="line"><span class="cl">    &#34;settings&#34;: {
-</span></span><span class="line"><span class="cl">      &#34;clients&#34;: [
-</span></span><span class="line"><span class="cl">        {
-</span></span><span class="line"><span class="cl">          &#34;id&#34;: &#34;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&#34;, //uuid，客户端一致
-</span></span><span class="line"><span class="cl">          &#34;level&#34;: 1,
-</span></span><span class="line"><span class="cl">          &#34;alterId&#34;: 64
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">      ]
-</span></span><span class="line"><span class="cl">    },
-</span></span><span class="line"><span class="cl">    &#34;streamSettings&#34;: {
-</span></span><span class="line"><span class="cl">        &#34;network&#34;: &#34;ws&#34;,
-</span></span><span class="line"><span class="cl">        &#34;wsSettings&#34;: {
-</span></span><span class="line"><span class="cl">        &#34;path&#34;: &#34;/ray&#34;
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">      }
-</span></span><span class="line"><span class="cl">  }],
-</span></span><span class="line"><span class="cl">  &#34;outbounds&#34;: [{
-</span></span><span class="line"><span class="cl">    &#34;protocol&#34;: &#34;freedom&#34;,
-</span></span><span class="line"><span class="cl">    &#34;settings&#34;: {}
-</span></span><span class="line"><span class="cl">  },{
-</span></span><span class="line"><span class="cl">    &#34;protocol&#34;: &#34;blackhole&#34;,
-</span></span><span class="line"><span class="cl">    &#34;settings&#34;: {},
-</span></span><span class="line"><span class="cl">    &#34;tag&#34;: &#34;blocked&#34;
-</span></span><span class="line"><span class="cl">  }],
-</span></span><span class="line"><span class="cl">  &#34;routing&#34;: {
-</span></span><span class="line"><span class="cl">    &#34;rules&#34;: [
-</span></span><span class="line"><span class="cl">      {
-</span></span><span class="line"><span class="cl">        &#34;type&#34;: &#34;field&#34;,
-</span></span><span class="line"><span class="cl">        &#34;ip&#34;: [&#34;geoip:private&#34;],
-</span></span><span class="line"><span class="cl">        &#34;outboundTag&#34;: &#34;blocked&#34;
-</span></span><span class="line"><span class="cl">      }
-</span></span><span class="line"><span class="cl">    ]
-</span></span><span class="line"><span class="cl">  }
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="3-安装caddy">3. 安装caddy
+</h2><pre tabindex="0"><code>{
+  &#34;inbounds&#34;: [{
+    &#34;port&#34;: xxxxx, //端口
+    &#34;Listen&#34;: &#34;127.0.0.1&#34;,  //本机环回地址，防止外部访问
+    &#34;protocol&#34;: &#34;vmess&#34;,
+    &#34;settings&#34;: {
+      &#34;clients&#34;: [
+        {
+          &#34;id&#34;: &#34;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&#34;, //uuid，客户端一致
+          &#34;level&#34;: 1,
+          &#34;alterId&#34;: 64
+        }
+      ]
+    },
+    &#34;streamSettings&#34;: {
+        &#34;network&#34;: &#34;ws&#34;,
+        &#34;wsSettings&#34;: {
+        &#34;path&#34;: &#34;/ray&#34;
+        }
+      }
+  }],
+  &#34;outbounds&#34;: [{
+    &#34;protocol&#34;: &#34;freedom&#34;,
+    &#34;settings&#34;: {}
+  },{
+    &#34;protocol&#34;: &#34;blackhole&#34;,
+    &#34;settings&#34;: {},
+    &#34;tag&#34;: &#34;blocked&#34;
+  }],
+  &#34;routing&#34;: {
+    &#34;rules&#34;: [
+      {
+        &#34;type&#34;: &#34;field&#34;,
+        &#34;ip&#34;: [&#34;geoip:private&#34;],
+        &#34;outboundTag&#34;: &#34;blocked&#34;
+      }
+    ]
+  }
+}
+</code></pre><h2 id="3-安装caddy">3. 安装caddy
 </h2><p>wget -N &ndash;no-check-certificate <a class="link" href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh"  target="_blank" rel="noopener"
     >https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh</a> &amp;&amp; chmod +x caddy_install.sh &amp;&amp; bash caddy_install.sh install</p>
 <h2 id="4-修改caddy配置">4. 修改caddy配置
-</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span> <span class="o">//</span><span class="err">域名</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="n">tls</span> <span class="n">xxx</span><span class="err">@</span><span class="n">xxx</span><span class="o">.</span><span class="n">com</span>  <span class="o">//</span><span class="err">修改为邮箱</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">log</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">caddy</span><span class="o">.</span><span class="n">log</span>
-</span></span><span class="line"><span class="cl">  <span class="n">proxy</span> <span class="o">/</span><span class="n">ray</span> <span class="n">localhost</span><span class="p">:</span><span class="n">xxxx</span> <span class="p">{</span>  <span class="o">//</span><span class="err">和</span><span class="n">v2ray的端口好对应</span>
-</span></span><span class="line"><span class="cl">    <span class="n">websocket</span>
-</span></span><span class="line"><span class="cl">    <span class="n">header_upstream</span> <span class="o">-</span><span class="n">Origin</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="5-重启动服务端">5. 重启动服务端
+</h2><pre tabindex="0"><code>xxx.xxx.xxx //域名
+{
+  tls xxx@xxx.com  //修改为邮箱
+  log /var/log/caddy.log
+  proxy /ray localhost:xxxx {  //和v2ray的端口好对应
+    websocket
+    header_upstream -Origin
+  }
+}
+</code></pre><h2 id="5-重启动服务端">5. 重启动服务端
 </h2><p>service caddy restart
 service v2ray restart</p>
 <h2 id="6-客户端安装v2ray">6. 客户端安装v2ray
 </h2><p>见网络教程</p>
 <h2 id="7-修改v2ray客户端配置">7. 修改v2ray客户端配置
-</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
-</span></span><span class="line"><span class="cl">  &#34;inbounds&#34;: [
-</span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl">      &#34;port&#34;: 1080,
-</span></span><span class="line"><span class="cl">      &#34;listen&#34;: &#34;127.0.0.1&#34;,
-</span></span><span class="line"><span class="cl">      &#34;protocol&#34;: &#34;socks&#34;,
-</span></span><span class="line"><span class="cl">      &#34;sniffing&#34;: {
-</span></span><span class="line"><span class="cl">        &#34;enabled&#34;: true,
-</span></span><span class="line"><span class="cl">        &#34;destOverride&#34;: [&#34;http&#34;, &#34;tls&#34;]
-</span></span><span class="line"><span class="cl">      },
-</span></span><span class="line"><span class="cl">      &#34;settings&#34;: {
-</span></span><span class="line"><span class="cl">        &#34;auth&#34;: &#34;noauth&#34;,
-</span></span><span class="line"><span class="cl">        &#34;udp&#34;: false
-</span></span><span class="line"><span class="cl">      }
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">  ],
-</span></span><span class="line"><span class="cl">  &#34;outbounds&#34;: [
-</span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl">      &#34;protocol&#34;: &#34;vmess&#34;,
-</span></span><span class="line"><span class="cl">      &#34;settings&#34;: {
-</span></span><span class="line"><span class="cl">        &#34;vnext&#34;: [
-</span></span><span class="line"><span class="cl">          {
-</span></span><span class="line"><span class="cl">            &#34;address&#34;: &#34;xxx.xxx.xxx&#34;, //v2ray服务器域名
-</span></span><span class="line"><span class="cl">            &#34;port&#34;: 443,
-</span></span><span class="line"><span class="cl">            &#34;users&#34;: [
-</span></span><span class="line"><span class="cl">              {
-</span></span><span class="line"><span class="cl">                &#34;id&#34;: &#34;xxxxxxxxx-xxxx-xxxx-xxxxxxxx&#34;,//和服务器uuid一致
-</span></span><span class="line"><span class="cl">                &#34;alterId&#34;: 64
-</span></span><span class="line"><span class="cl">              }
-</span></span><span class="line"><span class="cl">            ]
-</span></span><span class="line"><span class="cl">          }
-</span></span><span class="line"><span class="cl">        ]
-</span></span><span class="line"><span class="cl">      },
-</span></span><span class="line"><span class="cl">      &#34;streamSettings&#34;: {
-</span></span><span class="line"><span class="cl">        &#34;network&#34;: &#34;ws&#34;,
-</span></span><span class="line"><span class="cl">        &#34;security&#34;: &#34;tls&#34;,
-</span></span><span class="line"><span class="cl">        &#34;wsSettings&#34;: {
-</span></span><span class="line"><span class="cl">          &#34;path&#34;: &#34;/ray&#34;
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">      }
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">  ]
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="8-上网">8. 上网
+</h2><pre tabindex="0"><code>{
+  &#34;inbounds&#34;: [
+    {
+      &#34;port&#34;: 1080,
+      &#34;listen&#34;: &#34;127.0.0.1&#34;,
+      &#34;protocol&#34;: &#34;socks&#34;,
+      &#34;sniffing&#34;: {
+        &#34;enabled&#34;: true,
+        &#34;destOverride&#34;: [&#34;http&#34;, &#34;tls&#34;]
+      },
+      &#34;settings&#34;: {
+        &#34;auth&#34;: &#34;noauth&#34;,
+        &#34;udp&#34;: false
+      }
+    }
+  ],
+  &#34;outbounds&#34;: [
+    {
+      &#34;protocol&#34;: &#34;vmess&#34;,
+      &#34;settings&#34;: {
+        &#34;vnext&#34;: [
+          {
+            &#34;address&#34;: &#34;xxx.xxx.xxx&#34;, //v2ray服务器域名
+            &#34;port&#34;: 443,
+            &#34;users&#34;: [
+              {
+                &#34;id&#34;: &#34;xxxxxxxxx-xxxx-xxxx-xxxxxxxx&#34;,//和服务器uuid一致
+                &#34;alterId&#34;: 64
+              }
+            ]
+          }
+        ]
+      },
+      &#34;streamSettings&#34;: {
+        &#34;network&#34;: &#34;ws&#34;,
+        &#34;security&#34;: &#34;tls&#34;,
+        &#34;wsSettings&#34;: {
+          &#34;path&#34;: &#34;/ray&#34;
+        }
+      }
+    }
+  ]
+}
+</code></pre><h2 id="8-上网">8. 上网
 </h2><p>启动客户端v2ray，上网设置为socks，地址127.0.0.1，端口1080</p>
+
+    
+        <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+            <footer class="article-time">
+                <div>
+                    <?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path fill="#F9EBB2" d="M32,54.004c-19.686,0-28.677-19.123-29.917-22.001C3.321,29.121,12.288,10.004,32,10.004
+		c19.686,0,28.677,19.123,29.917,22.001C60.679,34.887,51.712,54.004,32,54.004z"/>
+	<circle fill="#45AAB8" cx="32" cy="32.004" r="14"/>
+	<circle fill="#506C7F" cx="32" cy="32.008" r="6"/>
+	<g>
+		<path fill="#394240" d="M63.934,31.645c-0.015-0.037-0.256-0.646-0.74-1.648C60.597,24.627,51.02,8.004,32,8.004
+			c-22.568,0-31.842,23.404-31.934,23.641c-0.089,0.231-0.089,0.487,0,0.719C0.158,32.6,9.432,56.004,32,56.004
+			c19.01,0,28.587-16.605,31.189-21.983c0.486-1.007,0.729-1.62,0.744-1.657C64.022,32.132,64.022,31.876,63.934,31.645z M32,54.004
+			c-19.686,0-28.677-19.123-29.917-22.001C3.321,29.121,12.288,10.004,32,10.004c19.686,0,28.677,19.123,29.917,22.001
+			C60.679,34.887,51.712,54.004,32,54.004z"/>
+		<path fill="#394240" d="M32,16.008c-8.837,0-16,7.163-16,16s7.163,16,16,16s16-7.163,16-16S40.837,16.008,32,16.008z M32,46.008
+			c-7.732,0-14-6.268-14-14s6.268-14,14-14s14,6.268,14,14S39.732,46.008,32,46.008z"/>
+		<path fill="#394240" d="M32,24.008c-4.418,0-8,3.582-8,8s3.582,8,8,8s8-3.582,8-8S36.418,24.008,32,24.008z M32,38.008
+			c-3.313,0-6-2.687-6-6s2.687-6,6-6s6,2.687,6,6S35.313,38.008,32,38.008z"/>
+		<path fill="#394240" d="M32,28.004c-0.553,0-1,0.447-1,1s0.447,1,1,1c1.104,0,2,0.896,2,2c0,0.553,0.447,1,1,1s1-0.447,1-1
+			C36,29.795,34.209,28.004,32,28.004z"/>
+	</g>
+</g>
+</svg>
+                    <span title="阅读次数" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="waline-pageview-count" data-path="/p/tech-v2ray-websocket-tls-web-installation/" /></span>
+                </div>
+            </footer>
+        </div>
+    
 
 </section>
 
@@ -578,7 +501,7 @@ service v2ray restart</p>
 
 
 
-        <span>Licensed under CC BY-NC-SA 4.0</span>
+        <span>CC BY-NC-SA 4.0</span>
     </section>
     <section class="article-lastmod">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -642,12 +565,12 @@ service v2ray restart</p>
                 
 <article class="has-image">
     <a href="/p/tech-pcdn-overview/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-pcdn-overview/cover.1156c9f3f569e8d3ac9cbf929a79ef9b_hu_980ce765dbf164b2.webp"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-pcdn-overview/cover.1156c9f3f569e8d3ac9cbf929a79ef9b_hu_980ce765dbf164b2.webp" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post PCDN现象初探及浅见"
                         data-key="tech-pcdn-overview" 
@@ -666,16 +589,16 @@ service v2ray restart</p>
                 
 <article class="has-image">
     <a href="/p/tech-fiber-direct-vs-transport-reliability/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-fiber-direct-vs-transport-reliability/cover.2064044f6fc5c751b663100afb5e69c8_hu_900d920fe45bec80.jpeg"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-fiber-direct-vs-transport-reliability/cover.0dac2d5e8ad2a8103e36b1ba120f5d7b_hu_c393f9e28a4fe86c.webp" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析"
                         data-key="tech-fiber-direct-vs-transport-reliability" 
-                        data-hash="md5-IGQET2/Fx1G2YxAK&#43;15pyA==">
+                        data-hash="md5-DawtXorSqBA&#43;NrG6Eg9dew==">
                 
             </div>
         
@@ -690,16 +613,16 @@ service v2ray restart</p>
                 
 <article class="has-image">
     <a href="/p/tech-fiber-more-longer-more-fail/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-fiber-more-longer-more-fail/cover.4ec3f6df839bd2a452ae0b39ba8d1b6e_hu_f17ab5316111ee52.jpeg"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-fiber-more-longer-more-fail/cover.fa35bf5f58d78ea2923c16d7bd431725_hu_830589a5addcde42.webp" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post 距离越长，光缆就越容易出故障吗？"
                         data-key="tech-fiber-more-longer-more-fail" 
-                        data-hash="md5-TsP234Ob0qRSrgs5uo0bbg==">
+                        data-hash="md5-&#43;jW/X1jXjqKSPBbXvUMXJQ==">
                 
             </div>
         
@@ -714,16 +637,16 @@ service v2ray restart</p>
                 
 <article class="has-image">
     <a href="/p/tech-cpo-data-center-energy-efficiency-revolution/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-cpo-data-center-energy-efficiency-revolution/cover.8a22e44ba63615020ee2b875923d9421_hu_a3d71ce2c0d563ad.jpg"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-cpo-data-center-energy-efficiency-revolution/cover.7866bdb957712bfc1a436dd0d13780ac_hu_6c1a798e1b4fb226.webp" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命"
                         data-key="tech-cpo-data-center-energy-efficiency-revolution" 
-                        data-hash="md5-iiLkS6Y2FQIO4rh1kj2UIQ==">
+                        data-hash="md5-eGa9uVdxK/waQ23Q0TeArA==">
                 
             </div>
         
@@ -738,16 +661,16 @@ service v2ray restart</p>
                 
 <article class="has-image">
     <a href="/p/tech-optical-network-digital-twin/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-optical-network-digital-twin/cover.801869565a89df8186fde71ed40c042d_hu_4a4c5e0545aa00a1.jpg"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-optical-network-digital-twin/cover.db47d7624e39c26d69b33759781b4780_hu_73368ea005674e7b.webp" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post 光网络数字孪生：让网络在虚拟世界先跑一遍"
                         data-key="tech-optical-network-digital-twin" 
-                        data-hash="md5-gBhpVlqJ34GG/ece1AwELQ==">
+                        data-hash="md5-20fXYk45wm1pszdZeBtHgA==">
                 
             </div>
         

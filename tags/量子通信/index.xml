@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>量子通信 on Reading,Thinking And Writing</title>
+        <title>量子通信 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/%E9%87%8F%E5%AD%90%E9%80%9A%E4%BF%A1/</link>
-        <description>Recent content in 量子通信 on Reading,Thinking And Writing</description>
+        <description>Recent content in 量子通信 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/cover.jpg" alt="Featured image of post 量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输" /&gt;&lt;p&gt;最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/cover.webp" alt="Featured image of post 量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输" /&gt;&lt;p&gt;最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。&lt;/p&gt;
 &lt;h2 id=&#34;核心技术q-chip让量子信号搭车互联网&#34;&gt;核心技术：Q-chip，让量子信号“搭车”互联网
 &lt;/h2&gt;&lt;p&gt;这项成果的核心，是一个名为 &lt;strong&gt;Q-chip&lt;/strong&gt; 的集成芯片。它的神奇之处在于——可以让量子信号在现有的光纤网络中“穿行”，而不被破坏。&lt;/p&gt;
 &lt;p&gt;Q-chip 的工作原理是“量子-经典混合”：&lt;/p&gt;

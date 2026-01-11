@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>激光器 on Reading,Thinking And Writing</title>
+        <title>激光器 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/%E6%BF%80%E5%85%89%E5%99%A8/</link>
-        <description>Recent content in 激光器 on Reading,Thinking And Writing</description>
+        <description>Recent content in 激光器 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-moil-tise-single-chip-laser-coherent-optics/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-moil-tise-single-chip-laser-coherent-optics/cover.jpg" alt="Featured image of post 单芯片激光器的突破：从 MHz 到 Hz，MOIL-TISE 改写相干光通信的游戏规则" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-moil-tise-single-chip-laser-coherent-optics/cover.webp" alt="Featured image of post 单芯片激光器的突破：从 MHz 到 Hz，MOIL-TISE 改写相干光通信的游戏规则" /&gt;&lt;blockquote&gt;
 &lt;p&gt;写在前面：在光通信、量子通信、精密计量等领域，稳定、窄线宽的激光光源一直是长期瓶颈。格拉斯哥大学的一项新研究，将这一瓶颈大幅推后。本文将带你拆解这项成果的技术原理、性能优势与未来应用。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;什么是线宽为什么要越窄越好&#34;&gt;什么是线宽，为什么要越窄越好？

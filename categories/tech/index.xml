@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>技术与实践 on Reading,Thinking And Writing</title>
+        <title>技术与实践 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/categories/tech/</link>
-        <description>Recent content in 技术与实践 on Reading,Thinking And Writing</description>
+        <description>Recent content in 技术与实践 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -107,7 +107,7 @@
         <pubDate>Fri, 12 Dec 2025 09:35:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/cover.jpeg" alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析" /&gt;&lt;p&gt;承载关键业务电路时，选择何种方式是一个涉及技术、成本与风险的重大决策。是采用 &lt;strong&gt;简单直接的光纤直驱&lt;/strong&gt; ，还是选择 &lt;strong&gt;具备冗余保护的传输系统承载&lt;/strong&gt; 呢？大概大部分人都会选择最“ &lt;strong&gt;安全&lt;/strong&gt; ”的方式，就是上传输系统。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/cover.webp" alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析" /&gt;&lt;p&gt;承载关键业务电路时，选择何种方式是一个涉及技术、成本与风险的重大决策。是采用 &lt;strong&gt;简单直接的光纤直驱&lt;/strong&gt; ，还是选择 &lt;strong&gt;具备冗余保护的传输系统承载&lt;/strong&gt; 呢？大概大部分人都会选择最“ &lt;strong&gt;安全&lt;/strong&gt; ”的方式，就是上传输系统。&lt;/p&gt;
 &lt;p&gt;但是，是否真是这样呢？&lt;/p&gt;
 &lt;h2 id=&#34;核心问题如何实现高可靠性&#34;&gt;核心问题：如何实现高可靠性？
 &lt;/h2&gt;&lt;p&gt;我们对两种主要的承载方式进行可靠性分析，其中，可靠性（Reliability）用$R$来表示，它代表系统在给定时间内无故障运行的概率。&lt;/p&gt;
@@ -205,7 +205,7 @@ $$Q_{临界} = \frac{1}{2 - 0.8} = \frac{1}{1.2} \approx 0.833$$&lt;p&gt;在这�
         <pubDate>Sat, 11 Oct 2025 07:45:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/cover.jpeg" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/cover.webp" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;乍听之下，这似乎不用讨论——当然越长越容易坏了，线路越长，风险点越多，还有一个指标可以通过反算来说明这个问题。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;平均百皮长公里故障次数 = 障碍总次数 ÷ 光缆线路总长度 × 100&lt;/p&gt;
@@ -265,7 +265,7 @@ $$Q_{临界} = \frac{1}{2 - 0.8} = \frac{1}{1.2} \approx 0.833$$&lt;p&gt;在这�
         <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/cover.jpg" alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命" /&gt;&lt;h2 id=&#34;为何cpo光电共封装成为焦点&#34;&gt;为何CPO（光电共封装）成为焦点？
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/cover.webp" alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命" /&gt;&lt;h2 id=&#34;为何cpo光电共封装成为焦点&#34;&gt;为何CPO（光电共封装）成为焦点？
 &lt;/h2&gt;&lt;p&gt;近年来，AI大模型、云计算、自动驾驶和高性能计算（HPC）对数据中心带宽和算力需求激增。芯片算力不断强化，传输速率从100G、400G提升至800G乃至1.6T，但随之而来的是能耗和带宽瓶颈的新挑战。&lt;/p&gt;
 &lt;p&gt;传统架构中，交换芯片（ASIC）与光模块分离，光模块通过电连接器插在设备前面板上。这种“可插拔光模块”虽然灵活，速率提升后因电连接距离长，导致功耗高、信号衰减严重，且占用宝贵的前面板空间。&lt;/p&gt;
 &lt;p&gt;CPO的创新在于把光引擎与交换芯片直接封装，将电信号在极短距离内转换为光信号，极大减少能耗与信号损失，实现了光通信不再是外围，而是芯片核心部分。这一设计被视为突破数据中心能效和带宽瓶颈的关键。&lt;/p&gt;
@@ -341,7 +341,7 @@ $$Q_{临界} = \frac{1}{2 - 0.8} = \frac{1}{1.2} \approx 0.833$$&lt;p&gt;在这�
         <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-optical-network-digital-twin/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-optical-network-digital-twin/cover.jpg" alt="Featured image of post 光网络数字孪生：让网络在虚拟世界先跑一遍" /&gt;&lt;p&gt;未来的光网络，不再仅仅是由光纤、电路和节点构成的物理系统，而是包含了物理系统的一个 可感知、可预测、可自我演化 的智能体。
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-optical-network-digital-twin/cover.webp" alt="Featured image of post 光网络数字孪生：让网络在虚拟世界先跑一遍" /&gt;&lt;p&gt;未来的光网络，不再仅仅是由光纤、电路和节点构成的物理系统，而是包含了物理系统的一个 可感知、可预测、可自我演化 的智能体。
 支撑这一变革的关键技术之一，正是—— 光网络数字孪生（Digital Twin for Optical Network）。&lt;/p&gt;
 &lt;h2 id=&#34;为什么光网络需要孪生体&#34;&gt;为什么光网络需要“孪生体”
 &lt;/h2&gt;&lt;p&gt;过去的几十年里，光传送网（OTN/WDM）在带宽、稳定性和成本上不断突破，但其管理方式仍停留在传统阶段：&lt;/p&gt;
@@ -451,7 +451,7 @@ $$Q_{临界} = \frac{1}{2 - 0.8} = \frac{1}{1.2} \approx 0.833$$&lt;p&gt;在这�
         <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/cover.jpg" alt="Featured image of post 量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输" /&gt;&lt;p&gt;最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/cover.webp" alt="Featured image of post 量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输" /&gt;&lt;p&gt;最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。&lt;/p&gt;
 &lt;h2 id=&#34;核心技术q-chip让量子信号搭车互联网&#34;&gt;核心技术：Q-chip，让量子信号“搭车”互联网
 &lt;/h2&gt;&lt;p&gt;这项成果的核心，是一个名为 &lt;strong&gt;Q-chip&lt;/strong&gt; 的集成芯片。它的神奇之处在于——可以让量子信号在现有的光纤网络中“穿行”，而不被破坏。&lt;/p&gt;
 &lt;p&gt;Q-chip 的工作原理是“量子-经典混合”：&lt;/p&gt;
@@ -524,7 +524,7 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/cover.jpg" alt="Featured image of post 单纤多向：让前传更极简" /&gt;&lt;p&gt;在移动基站的建设中，无线前传网络却一直面临着一个&amp;quot;老大难&amp;quot;问题——光缆投资过大。随着CRAN（集中式无线接入网）模式成为主流，BBU（基带处理单元）集中部署，BBU与RRU（射频拉远单元）之间需要大量光缆纤芯连接，导致前传光缆投资成为电信运营商难以承受之重。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/cover.webp" alt="Featured image of post 单纤多向：让前传更极简" /&gt;&lt;p&gt;在移动基站的建设中，无线前传网络却一直面临着一个&amp;quot;老大难&amp;quot;问题——光缆投资过大。随着CRAN（集中式无线接入网）模式成为主流，BBU（基带处理单元）集中部署，BBU与RRU（射频拉远单元）之间需要大量光缆纤芯连接，导致前传光缆投资成为电信运营商难以承受之重。&lt;/p&gt;
 &lt;h2 id=&#34;前传之痛光缆投资为何居高不下&#34;&gt;前传之痛：光缆投资为何居高不下？
 &lt;/h2&gt;&lt;p&gt;传统的无线前传采用双纤双向光模块直连方式，每站需要占用6芯光纤。在CRAN模式下，虽然BBU集中部署带来了设备利用率提升、节省机房空间和降低能耗等优势，但也导致了前传光缆需求激增的问题。面对成千上万的基站建设，光缆投资已成为运营商网络建设中不可忽视的成本。&lt;/p&gt;
 &lt;h2 id=&#34;现有方案的局限&#34;&gt;现有方案的局限
@@ -609,7 +609,7 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-cmis/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cmis/cover.jpg" alt="Featured image of post CMIS：从“看”到“管”，光网络开放解耦的隐性基石" /&gt;&lt;p&gt;在光通信的世界里，我们总能听到那些令人振奋的数字：400G、800G、1.6T……它们代表着速度的极限和带宽的无限可能。但如果我告诉你，决定未来网络能否真正开放、智能、可编程的关键，并不在于这些数字里，而在于一个听起来有些陌生的名字——CMIS，你信吗？&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cmis/cover.webp" alt="Featured image of post CMIS：从“看”到“管”，光网络开放解耦的隐性基石" /&gt;&lt;p&gt;在光通信的世界里，我们总能听到那些令人振奋的数字：400G、800G、1.6T……它们代表着速度的极限和带宽的无限可能。但如果我告诉你，决定未来网络能否真正开放、智能、可编程的关键，并不在于这些数字里，而在于一个听起来有些陌生的名字——CMIS，你信吗？&lt;/p&gt;
 &lt;p&gt;今天，我们就来聊聊这个在幕后默默发挥作用的“隐藏英雄”。&lt;/p&gt;
 &lt;h2 id=&#34;故事的开端一个只看数据无法指挥的时代&#34;&gt;故事的开端：一个“只看数据，无法指挥”的时代
 &lt;/h2&gt;&lt;p&gt;想象一下，你是一位光网络运维工程师，你的工作是确保网络稳定运行。在 CMIS 出现之前，你手中的“工具”主要是 SFF-8472。&lt;/p&gt;
@@ -653,7 +653,7 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-moil-tise-single-chip-laser-coherent-optics/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-moil-tise-single-chip-laser-coherent-optics/cover.jpg" alt="Featured image of post 单芯片激光器的突破：从 MHz 到 Hz，MOIL-TISE 改写相干光通信的游戏规则" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-moil-tise-single-chip-laser-coherent-optics/cover.webp" alt="Featured image of post 单芯片激光器的突破：从 MHz 到 Hz，MOIL-TISE 改写相干光通信的游戏规则" /&gt;&lt;blockquote&gt;
 &lt;p&gt;写在前面：在光通信、量子通信、精密计量等领域，稳定、窄线宽的激光光源一直是长期瓶颈。格拉斯哥大学的一项新研究，将这一瓶颈大幅推后。本文将带你拆解这项成果的技术原理、性能优势与未来应用。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;什么是线宽为什么要越窄越好&#34;&gt;什么是线宽，为什么要越窄越好？
@@ -765,7 +765,7 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-microsoft-architecture-ai-financial-revolution/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-microsoft-architecture-ai-financial-revolution/cover.jpg" alt="Featured image of post GPU之后的算力革命?微软新架构让AI推理与金融优化&#34;一机双飞&#34;" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-microsoft-architecture-ai-financial-revolution/cover.webp" alt="Featured image of post GPU之后的算力革命?微软新架构让AI推理与金融优化&#34;一机双飞&#34;" /&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;你有没有想过——&lt;/strong&gt;
 &lt;strong&gt;未来训练一个大模型，可能不再需要耗电如“小电站”的GPU集群？&lt;/strong&gt;
 &lt;strong&gt;处理一笔复杂的跨国金融结算，可能不需要数小时的服务器运算？&lt;/strong&gt;
@@ -922,7 +922,7 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/cover.jpg" alt="Featured image of post 极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！" /&gt;&lt;p&gt;在数字化转型加速的今天，网络稳定性与运维效率成为运营商的核心竞争力。中国联通子公司中讯设计，推出全新自研产品—— &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; ，正式在 &lt;strong&gt;智慧供应链科创转化专区&lt;/strong&gt; 上线，助力光缆网络运维迈入智能化新时代！&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/cover.webp" alt="Featured image of post 极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！" /&gt;&lt;p&gt;在数字化转型加速的今天，网络稳定性与运维效率成为运营商的核心竞争力。中国联通子公司中讯设计，推出全新自研产品—— &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; ，正式在 &lt;strong&gt;智慧供应链科创转化专区&lt;/strong&gt; 上线，助力光缆网络运维迈入智能化新时代！&lt;/p&gt;
 &lt;h2 id=&#34;产品概览一眼看懂光缆健康&#34;&gt;产品概览：一眼看懂光缆健康
 &lt;/h2&gt;&lt;p&gt;系统首页集成了 &lt;strong&gt;故障告警分析、光缆健康度评价、故障工单指标、光缆运行全景视图&lt;/strong&gt; 等功能，基于GIS地图与OTDR探测能力，实现 &lt;strong&gt;光缆故障精准定位&lt;/strong&gt; ，让运维人员一目了然，快速响应。&lt;/p&gt;
 &lt;h2 id=&#34;软硬一体自主产权性能卓越&#34;&gt;软硬一体：自主产权，性能卓越
@@ -1028,7 +1028,7 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-odf-automatic-maintance/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/cover.jpeg" alt="Featured image of post ODF智能运维：机器人自动维护的未来不是梦" /&gt;&lt;p&gt;你是否曾想过，未来光纤配线架的维护会是什么样子？不再需要工程师们亲临现场，手动完成繁琐的接线操作，而是由智能机器人精准、高效地处理一切。这并非科幻场景，而是国际电联（ITU）发布的 ITU-T M.3368 建议书所描绘的未来。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/cover.webp" alt="Featured image of post ODF智能运维：机器人自动维护的未来不是梦" /&gt;&lt;p&gt;你是否曾想过，未来光纤配线架的维护会是什么样子？不再需要工程师们亲临现场，手动完成繁琐的接线操作，而是由智能机器人精准、高效地处理一切。这并非科幻场景，而是国际电联（ITU）发布的 ITU-T M.3368 建议书所描绘的未来。&lt;/p&gt;
 &lt;h2 id=&#34;核心挑战传统odf维护的困境&#34;&gt;核心挑战：传统ODF维护的困境
 &lt;/h2&gt;&lt;p&gt;ODF是光通信网络中用于端接、连接和分配光缆的关键物理基础设施 。传统上，所有光纤跳接、改接或网络重构都需要维护人员亲临现场手动操作。这种模式不仅耗费大量的人力和时间成本 ，而且在日益密集和复杂的连接环境中，极易发生人为错误，另外，操作后的信息变更，经常缺失，导致光纤的连接信息不准确。因此，建立一套能够远程化、自动化、智能化的维护体系，成为业界迫切的需求。&lt;/p&gt;
 &lt;h2 id=&#34;什么是-odf-智能维护&#34;&gt;什么是 ODF 智能维护？
@@ -1151,7 +1151,7 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         <pubDate>Thu, 04 Sep 2025 10:45:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/ai-second-brain-with-n8n/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-second-brain-with-n8n/cover.jpeg" alt="Featured image of post 【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/ai-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎 配套资源 ，获取一键导入的 n8n 配置文件。在导入之前，确保 n8n、ollama 和 Qwen 都正常运行，相关安装方法，见网上教程。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1162,15 +1162,8 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
 &lt;p&gt;现在，是时候兑现承诺了。&lt;/p&gt;
 &lt;p&gt;本文将带您 &lt;strong&gt;从零开始，用开源工具本地搭建一个可用的“第二大脑”&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;一个基于 n8n + Ollama + Qwen 的智能系统，流程如下图：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;战略生成流程知识库模块读取目录文件切分文本Ollama 向量化存入 Simple Vector Store任务输入感知模块融合模块查询 Vector Store Tool生成模块输出初稿专家介入
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;战略生成流程知识库模块读取目录文件切分文本Ollama 向量化存入 Simple Vector Store任务输入感知模块融合模块查询 Vector Store Tool生成模块输出初稿专家介入
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;• &lt;strong&gt;知识库模块&lt;/strong&gt; ：构建企业“战略记忆中枢”，将散落的文档转化为可检索、可追溯、可进化的智能资产。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;感知模块&lt;/strong&gt; ：听懂任务背后的“弦外之音”，解析出关键词与战略意图。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;融合模块&lt;/strong&gt; ：激活企业“沉睡的知识资产”，实现跨文档、跨时间的语义关联。&lt;/li&gt;
@@ -1187,25 +1180,13 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
 &lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;资料输入&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;节点类型&lt;/strong&gt; ： &lt;code&gt;n8n-nodes-base.readWriteFile&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;fileSelector&amp;#34;: &amp;#34;d:\\\\second_brain_demo\\\\*&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;options&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;fileExtension&amp;#34;: &amp;#34;.txt&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;fileSelector&amp;#34;: &amp;#34;d:\\\\second_brain_demo\\\\*&amp;#34;,
+  &amp;#34;options&amp;#34;: {
+    &amp;#34;fileExtension&amp;#34;: &amp;#34;.txt&amp;#34;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;功能&lt;/strong&gt; ：扫描 &lt;code&gt;d:\second_brain_demo\&lt;/code&gt; 目录下所有 &lt;code&gt;.txt&lt;/code&gt; 文件，支持通配符。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;输出&lt;/strong&gt; ：以二进制形式返回每个文件内容。&lt;/li&gt;
 &lt;/ul&gt;
@@ -1217,21 +1198,11 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Recursive Character Text Splitter&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;chunkSize&amp;#34;: 100,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;chunkOverlap&amp;#34;: 20
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;chunkSize&amp;#34;: 100,
+  &amp;#34;chunkOverlap&amp;#34;: 20
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;作用&lt;/strong&gt; ：将长文本按字符递归切分为小片段，避免超出模型上下文。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;切分逻辑&lt;/strong&gt; ：优先按 &lt;code&gt;\n\n&lt;/code&gt; 、 &lt;code&gt;\n&lt;/code&gt; 、 、&lt;code&gt;.&lt;/code&gt; 分割。&lt;/li&gt;
 &lt;/ul&gt;
@@ -1243,33 +1214,17 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Embeddings Ollama&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;model&amp;#34;: &amp;#34;dengcao/bge-large-zh-v1.5:latest&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;model&amp;#34;: &amp;#34;dengcao/bge-large-zh-v1.5:latest&amp;#34;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;功能&lt;/strong&gt; ：调用本地 Ollama 服务，使用中文优化的 &lt;code&gt;bge-large-zh&lt;/code&gt; 模型生成向量。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;优势&lt;/strong&gt; ：专为中文语义设计，在“领导讲话”“试点报告”等场景表现优异。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;✅ 需提前运行：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama pull dengcao/bge-large-zh-v1.5
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ollama pull dengcao/bge-large-zh-v1.5
+&lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;4-节点-4存入向量数据库simple-vector-store&#34;&gt;4. 节点 4：存入向量数据库（Simple Vector Store）
 &lt;/h3&gt;&lt;ul&gt;
@@ -1348,29 +1303,15 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
 &lt;li&gt;• &lt;strong&gt;记忆机制&lt;/strong&gt; ： &lt;code&gt;Window Buffer Memory&lt;/code&gt; （保留上下文）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;-系统提示词system-message&#34;&gt;📌 系统提示词（System Message）
-&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;你是一名通信网络战略规划专家以及专业的任务分析助手。你的职责是分析用户的要求：&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;json&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chatInput&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}}&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，根据查询知识库&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;company_documents_tool&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;中的相关内容&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;输出框架大纲。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;请严格遵守以下规则：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;内容从知识库&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;company_documents_tool&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;获取&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;输出内容只包含“需要做什么”，不得加入额外解释&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;3.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;输出格式为&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;JSON&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，必须包含：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;task&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;一句话说明要完成的具体任务&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;requirements&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;要求1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;要求2&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;-工具绑定&#34;&gt;📌 工具绑定
+&lt;/h4&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;你是一名通信网络战略规划专家以及专业的任务分析助手。你的职责是分析用户的要求：{{$json.chatInput}}，根据查询知识库 company_documents_tool 中的相关内容, 输出框架大纲。
+
+请严格遵守以下规则：
+1. 内容从知识库 company_documents_tool 获取
+2. 输出内容只包含“需要做什么”，不得加入额外解释
+3. 输出格式为 JSON，必须包含：
+   - &amp;#34;task&amp;#34;: &amp;#34;一句话说明要完成的具体任务&amp;#34;
+   - &amp;#34;requirements&amp;#34;: [&amp;#34;要求1&amp;#34;, &amp;#34;要求2&amp;#34;, ...]
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;-工具绑定&#34;&gt;📌 工具绑定
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;• &lt;strong&gt;Vector Store Tool&lt;/strong&gt; ： &lt;code&gt;company_documents_tool&lt;/code&gt; ，用于检索知识库&lt;/li&gt;
 &lt;/ul&gt;
@@ -1389,29 +1330,15 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
 &lt;li&gt;• &lt;strong&gt;类型&lt;/strong&gt; ： &lt;code&gt;@n8n/n8n-nodes-langchain.agent&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;系统提示词&lt;/strong&gt; ：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;你是一名通信网络战略规划专家。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;你是一个专业的文档编写助手。你的任务是根据任务要求，仅使用知识库&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;company_documents_tool&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;提供的内容，生成最终文档。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;请严格遵守以下规则：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;所有内容必须来自知识库，不得引入外部信息&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;可以在知识库范围内进行归纳、整合，但不得编造&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;3.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;如果某项信息未找到，请写“相关信息未在知识库中找到”&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;4.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;文风：简洁、正式、专业&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;你是一名通信网络战略规划专家。
+你是一个专业的文档编写助手。你的任务是根据任务要求，仅使用知识库 company_documents_tool 提供的内容，生成最终文档。
+
+请严格遵守以下规则：
+1. 所有内容必须来自知识库，不得引入外部信息
+2. 可以在知识库范围内进行归纳、整合，但不得编造
+3. 如果某项信息未找到，请写“相关信息未在知识库中找到”
+4. 文风：简洁、正式、专业
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;✅ 输入来自“感知模块”的结构化任务框架，输出完整方案初稿。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
@@ -1630,7 +1557,7 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/ai-second-brain-introduce/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-second-brain-introduce/cover.jpg" alt="Featured image of post 【人工智能&#43;】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑" /&gt;&lt;h2 id=&#34;引子一次典型的战略突袭&#34;&gt;引子：一次典型的“战略突袭”
+        <description>&lt;img src="https://blog.fallleaf.net/p/ai-second-brain-introduce/cover.webp" alt="Featured image of post 【人工智能&#43;】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑" /&gt;&lt;h2 id=&#34;引子一次典型的战略突袭&#34;&gt;引子：一次典型的“战略突袭”
 &lt;/h2&gt;&lt;p&gt;我们通信人，尤其是做网络规划和顶层设计的同事，对下面这个场景一定不陌生：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;周五下午四点半，领导的即时消息弹出，转发了更高层领导聊天记录，内容是“根据三年前集团发布的《XX网络2025-2027年演进白皮书》，结合近一年各省分公司的试点结果和当前行业技术趋势，重新评估并制定下一阶段网络演进的战略路径和部署方案。下周三提交汇报版PPT。”&lt;/strong&gt;&lt;/p&gt;
@@ -2270,217 +2197,108 @@ iptables -A FORWARD -i zt7u3fcxwr(zerotier虚拟网卡) -o enp123s0f0(物理网�
 &lt;p&gt;bash &amp;lt;(curl -L -s &lt;a class=&#34;link&#34; href=&#34;https://install.direct/go.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://install.direct/go.sh&lt;/a&gt;)&lt;/p&gt;
 &lt;h2 id=&#34;2-修改服务器端配置&#34;&gt;2. 修改服务器端配置
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;inbounds&amp;#34;: [{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;port&amp;#34;: xxxxx, //端口
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;Listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;,  //本机环回地址，防止外部访问
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;settings&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;clients&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;id&amp;#34;: &amp;#34;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&amp;#34;, //uuid，客户端一致
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;level&amp;#34;: 1,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;alterId&amp;#34;: 64
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;streamSettings&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;wsSettings&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;path&amp;#34;: &amp;#34;/ray&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  }],
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;outbounds&amp;#34;: [{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;protocol&amp;#34;: &amp;#34;freedom&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;settings&amp;#34;: {}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  },{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;protocol&amp;#34;: &amp;#34;blackhole&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;settings&amp;#34;: {},
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;tag&amp;#34;: &amp;#34;blocked&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  }],
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;routing&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;rules&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;type&amp;#34;: &amp;#34;field&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;ip&amp;#34;: [&amp;#34;geoip:private&amp;#34;],
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;outboundTag&amp;#34;: &amp;#34;blocked&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;3-安装caddy&#34;&gt;3. 安装caddy
+&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;inbounds&amp;#34;: [{
+    &amp;#34;port&amp;#34;: xxxxx, //端口
+    &amp;#34;Listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;,  //本机环回地址，防止外部访问
+    &amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
+    &amp;#34;settings&amp;#34;: {
+      &amp;#34;clients&amp;#34;: [
+        {
+          &amp;#34;id&amp;#34;: &amp;#34;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&amp;#34;, //uuid，客户端一致
+          &amp;#34;level&amp;#34;: 1,
+          &amp;#34;alterId&amp;#34;: 64
+        }
+      ]
+    },
+    &amp;#34;streamSettings&amp;#34;: {
+        &amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;,
+        &amp;#34;wsSettings&amp;#34;: {
+        &amp;#34;path&amp;#34;: &amp;#34;/ray&amp;#34;
+        }
+      }
+  }],
+  &amp;#34;outbounds&amp;#34;: [{
+    &amp;#34;protocol&amp;#34;: &amp;#34;freedom&amp;#34;,
+    &amp;#34;settings&amp;#34;: {}
+  },{
+    &amp;#34;protocol&amp;#34;: &amp;#34;blackhole&amp;#34;,
+    &amp;#34;settings&amp;#34;: {},
+    &amp;#34;tag&amp;#34;: &amp;#34;blocked&amp;#34;
+  }],
+  &amp;#34;routing&amp;#34;: {
+    &amp;#34;rules&amp;#34;: [
+      {
+        &amp;#34;type&amp;#34;: &amp;#34;field&amp;#34;,
+        &amp;#34;ip&amp;#34;: [&amp;#34;geoip:private&amp;#34;],
+        &amp;#34;outboundTag&amp;#34;: &amp;#34;blocked&amp;#34;
+      }
+    ]
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-安装caddy&#34;&gt;3. 安装caddy
 &lt;/h2&gt;&lt;p&gt;wget -N &amp;ndash;no-check-certificate &lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh&lt;/a&gt; &amp;amp;&amp;amp; chmod +x caddy_install.sh &amp;amp;&amp;amp; bash caddy_install.sh install&lt;/p&gt;
 &lt;h2 id=&#34;4-修改caddy配置&#34;&gt;4. 修改caddy配置
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;xxx&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xxx&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xxx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;域名&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;tls&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xxx&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xxx&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;  &lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;修改为邮箱&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nb&#34;&gt;log&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;caddy&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;log&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;proxy&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ray&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;localhost&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xxxx&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  &lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;和&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v2ray的端口好对应&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;websocket&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;header_upstream&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Origin&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;5-重启动服务端&#34;&gt;5. 重启动服务端
+&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;xxx.xxx.xxx //域名
+{
+  tls xxx@xxx.com  //修改为邮箱
+  log /var/log/caddy.log
+  proxy /ray localhost:xxxx {  //和v2ray的端口好对应
+    websocket
+    header_upstream -Origin
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;5-重启动服务端&#34;&gt;5. 重启动服务端
 &lt;/h2&gt;&lt;p&gt;service caddy restart
 service v2ray restart&lt;/p&gt;
 &lt;h2 id=&#34;6-客户端安装v2ray&#34;&gt;6. 客户端安装v2ray
 &lt;/h2&gt;&lt;p&gt;见网络教程&lt;/p&gt;
 &lt;h2 id=&#34;7-修改v2ray客户端配置&#34;&gt;7. 修改v2ray客户端配置
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;inbounds&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;port&amp;#34;: 1080,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;protocol&amp;#34;: &amp;#34;socks&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;sniffing&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;enabled&amp;#34;: true,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;destOverride&amp;#34;: [&amp;#34;http&amp;#34;, &amp;#34;tls&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      },
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;settings&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;auth&amp;#34;: &amp;#34;noauth&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;udp&amp;#34;: false
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ],
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;outbounds&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;settings&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;vnext&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;address&amp;#34;: &amp;#34;xxx.xxx.xxx&amp;#34;, //v2ray服务器域名
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;port&amp;#34;: 443,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;users&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &amp;#34;id&amp;#34;: &amp;#34;xxxxxxxxx-xxxx-xxxx-xxxxxxxx&amp;#34;,//和服务器uuid一致
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &amp;#34;alterId&amp;#34;: 64
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            ]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        ]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      },
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;#34;streamSettings&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;security&amp;#34;: &amp;#34;tls&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;wsSettings&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;#34;path&amp;#34;: &amp;#34;/ray&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;8-上网&#34;&gt;8. 上网
+&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;inbounds&amp;#34;: [
+    {
+      &amp;#34;port&amp;#34;: 1080,
+      &amp;#34;listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;,
+      &amp;#34;protocol&amp;#34;: &amp;#34;socks&amp;#34;,
+      &amp;#34;sniffing&amp;#34;: {
+        &amp;#34;enabled&amp;#34;: true,
+        &amp;#34;destOverride&amp;#34;: [&amp;#34;http&amp;#34;, &amp;#34;tls&amp;#34;]
+      },
+      &amp;#34;settings&amp;#34;: {
+        &amp;#34;auth&amp;#34;: &amp;#34;noauth&amp;#34;,
+        &amp;#34;udp&amp;#34;: false
+      }
+    }
+  ],
+  &amp;#34;outbounds&amp;#34;: [
+    {
+      &amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
+      &amp;#34;settings&amp;#34;: {
+        &amp;#34;vnext&amp;#34;: [
+          {
+            &amp;#34;address&amp;#34;: &amp;#34;xxx.xxx.xxx&amp;#34;, //v2ray服务器域名
+            &amp;#34;port&amp;#34;: 443,
+            &amp;#34;users&amp;#34;: [
+              {
+                &amp;#34;id&amp;#34;: &amp;#34;xxxxxxxxx-xxxx-xxxx-xxxxxxxx&amp;#34;,//和服务器uuid一致
+                &amp;#34;alterId&amp;#34;: 64
+              }
+            ]
+          }
+        ]
+      },
+      &amp;#34;streamSettings&amp;#34;: {
+        &amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;,
+        &amp;#34;security&amp;#34;: &amp;#34;tls&amp;#34;,
+        &amp;#34;wsSettings&amp;#34;: {
+          &amp;#34;path&amp;#34;: &amp;#34;/ray&amp;#34;
+        }
+      }
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;8-上网&#34;&gt;8. 上网
 &lt;/h2&gt;&lt;p&gt;启动客户端v2ray，上网设置为socks，地址127.0.0.1，端口1080&lt;/p&gt;
 </description>
         </item>
@@ -2731,35 +2549,18 @@ ThemeChoice = &amp;ldquo;bw&amp;rdquo;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;例如上面例子中用的数据框为：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;data
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;##    company   year income
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 1 CompanyA 2018年    232
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 2 CompanyA 2019年    261
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 3 CompanyB 2018年    111
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 4 CompanyB 2019年    425
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 5 CompanyC 2018年    266
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 6 CompanyC 2019年    217
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 7 CompanyD 2018年    431
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 8 CompanyD 2019年    329
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这是一个带列名称的数据框data，第一列就是Grouping，表明每个斜线的类别，第二列是Times，表明X轴上的两个时间点，第三列是“Measurement”，表明每列别对应X轴在Y轴上的位置。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;data
+
+##    company   year income
+## 1 CompanyA 2018年    232
+## 2 CompanyA 2019年    261
+## 3 CompanyB 2018年    111
+## 4 CompanyB 2019年    425
+## 5 CompanyC 2018年    266
+## 6 CompanyC 2019年    217
+## 7 CompanyD 2018年    431
+## 8 CompanyD 2019年    329
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这是一个带列名称的数据框data，第一列就是Grouping，表明每个斜线的类别，第二列是Times，表明X轴上的两个时间点，第三列是“Measurement”，表明每列别对应X轴在Y轴上的位置。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Title：标题，可选，当Title = NULL时，没有标题，当Title = “”时，一个空标题，但在图形中占据位置。&lt;/p&gt;
@@ -2832,43 +2633,22 @@ ThemeChoice = &amp;ldquo;bw&amp;rdquo;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;下面展示一个完整的函数参数以及创建的图形，注意，X轴和Y轴均倒置了。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;newggslopegraph(
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  data, year, income, company,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Title = &amp;#34;This is Title&amp;#34;, SubTitle = &amp;#34;This is subTitle&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Caption = &amp;#34;This is Caption\nSecond line&amp;#34;, XTextSize = 14, YTextSize = 4,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  TitleTextSize = 14, SubTitleTextSize = 12, CaptionTextSize = 10,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  TitleJustify = &amp;#34;L&amp;#34;, SubTitleJustify = &amp;#34;R&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  CaptionJustify = &amp;#34;C&amp;#34;, LineThickness = 2,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  LineColor = c(&amp;#34;CompanyD&amp;#34; = &amp;#34;seagreen&amp;#34;,&amp;#34;CompanyA&amp;#34; = &amp;#34;green&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &amp;#34;CompanyB&amp;#34; = &amp;#34;tomato&amp;#34;,&amp;#34;CompanyC&amp;#34; = &amp;#34;orange&amp;#34;),
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DataTextSize = 4, DataTextColor = &amp;#34;red&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DataLabelPadding = 0.2, DataLabelLineSize = 0.5,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DataLabelFillColor = &amp;#34;gray&amp;#34;, WiderLabels = FALSE,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ThemeChoice = &amp;#34;tufte&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  )
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/demo-1.png&#34;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;newggslopegraph(
+  data, year, income, company,
+  Title = &amp;#34;This is Title&amp;#34;, SubTitle = &amp;#34;This is subTitle&amp;#34;,
+  Caption = &amp;#34;This is Caption\nSecond line&amp;#34;, XTextSize = 14, YTextSize = 4,
+  TitleTextSize = 14, SubTitleTextSize = 12, CaptionTextSize = 10,
+  TitleJustify = &amp;#34;L&amp;#34;, SubTitleJustify = &amp;#34;R&amp;#34;,
+  CaptionJustify = &amp;#34;C&amp;#34;, LineThickness = 2,
+  LineColor = c(&amp;#34;CompanyD&amp;#34; = &amp;#34;seagreen&amp;#34;,&amp;#34;CompanyA&amp;#34; = &amp;#34;green&amp;#34;,
+                &amp;#34;CompanyB&amp;#34; = &amp;#34;tomato&amp;#34;,&amp;#34;CompanyC&amp;#34; = &amp;#34;orange&amp;#34;),
+  DataTextSize = 4, DataTextColor = &amp;#34;red&amp;#34;,
+  DataLabelPadding = 0.2, DataLabelLineSize = 0.5,
+  DataLabelFillColor = &amp;#34;gray&amp;#34;, WiderLabels = FALSE,
+  ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
+  ThemeChoice = &amp;#34;tufte&amp;#34;
+  )
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/demo-1.png&#34;
 	width=&#34;1344&#34;
 	height=&#34;960&#34;
 	srcset=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/demo-1_hu_153722d17bfd0605.png 480w, https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/demo-1_hu_4642e331e6113107.png 1024w&#34;
@@ -2909,362 +2689,147 @@ ThemeChoice = &amp;ldquo;bw&amp;rdquo;
 这是我第一次开始用python语言编写稍微复杂些的程序。对于有一定编程经验的人，采用实现一个功能的方式编程能够很快熟悉该语言，是一种很好的学习方式。&lt;/p&gt;
 &lt;p&gt;以下是我编写的程序以及简单的注释。&lt;/p&gt;
 &lt;p&gt;由于要对图像进行数值处理，所以采用opencv以及numpy库。首先是加载库，datetime是用于计算程序运行时间，os是用于获得文件路径，sys是用于获得命令行参数，cv2是opencv库，numpy是python的数组库。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import datetime
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import os
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import sys
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import cv2
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import numpy as np
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;保证程序本身直接执行，而不是被调用，如果直接执行，则调用main()函数。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;if __name__ == &amp;#34;__main__&amp;#34;:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    main()
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;一个python文件就可以看作是一个python的模块，这个python模块（.py文件）有两种使用方式：直接运行使用和作为模块被其他模块调用。 每一个模块都有一个内置属性__name__。而__name__的值取决与python模块（.py文件）的使用方式。如果是直接运行使用，那么这个模块的__name__值就是“main”；如果是作为模块被其他模块调用，那么这个模块（.py文件）的__name__值就是该模块（.py文件）的文件名且不带路径和文件扩展名，如果dice_portrait_cv.py被其他python程序import dice_portrait_cv，则__name__为dice_portrait_cv。 main()函数，主要功能流程的执行，分别是：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import datetime
+import os
+import sys
+import cv2
+import numpy as np
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;保证程序本身直接执行，而不是被调用，如果直接执行，则调用main()函数。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if __name__ == &amp;#34;__main__&amp;#34;:
+    main()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;一个python文件就可以看作是一个python的模块，这个python模块（.py文件）有两种使用方式：直接运行使用和作为模块被其他模块调用。 每一个模块都有一个内置属性__name__。而__name__的值取决与python模块（.py文件）的使用方式。如果是直接运行使用，那么这个模块的__name__值就是“main”；如果是作为模块被其他模块调用，那么这个模块（.py文件）的__name__值就是该模块（.py文件）的文件名且不带路径和文件扩展名，如果dice_portrait_cv.py被其他python程序import dice_portrait_cv，则__name__为dice_portrait_cv。 main()函数，主要功能流程的执行，分别是：&lt;/p&gt;
 &lt;p&gt;1.初始化文件路径&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def main():
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    start_time = datetime.datetime.now() #设置程序运行开始时间
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #初始化文件路径
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    EXEC_PATH = os.getcwd()
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    DICEPATH = EXEC_PATH + &amp;#39;\\dice_image\\&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    OUTPUTPATH = EXEC_PATH + &amp;#39;\\output\\&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    if not (os.path.exists(OUTPUTPATH)):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       os.mkdir(OUTPUTPATH)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;2.获得命令行参数，调用自定义函数getvalue()，返回输入图片文件名，色子列数，是否旋转&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    imagefile, DICE_WIDTH, ROTATE = getvalue()
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;3.读取要渲染的图片及色子图片&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    im = cv2.imread(imagefile, 0)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    dice = getDice(DICEPATH)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;4.调用自定义函数，调整图片大小，返回图片数组&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    im = AjustImage(DICE_WIDTH, im)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;5.定义灰色度数值对应色子1-6点的分组，用了list，也可以用numpy的数组&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    p = [60, 80, 110, 150, 190, 220]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    #使用numpy数组
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    p = np.array([60, 80, 110, 150, 190, 220])
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;6.对图像进行16x16图块分割，并计算灰度，对应色子1-6，并将图片转换成色子点阵图，调用自定义函数，获得处理后的图像以及色子点数文件。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    im, dice_data = calculateDice(im, imagefile, p, dice, ROTATE)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;7.保存图片及色子点数文件&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    write_Dice(im, OUTPUTPATH, imagefile, dice_data)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;8.打印运行时间以及色子图片，按任意键退出&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    end_time = datetime.datetime.now()
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    print(&amp;#39;程序运行时间:&amp;#39;, end_time - start_time,&amp;#39;秒&amp;#39;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    cv2.imshow(imagefile, im)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    cv2.waitKey(0)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;下面是自定义函数。 1.获得命令行变量，返回变量：imagefile（输入文件名）, DICE_WIDTH（色子列数）, ROTATE（色子2，3，6是否旋转） def getvalue():&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    if (len(sys.argv) &amp;lt; 2 or len(sys.argv) &amp;gt; 4):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        print(&amp;#34;Error, invalid arguments!&amp;#34;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        print(&amp;#34;Call with &amp;#34; + sys.argv[0] + &amp;#34; inputimage [tile-size] &amp;#34;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        sys.exit(1)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ROTATE = False
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    DICE_WIDTH = 50
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    if len(sys.argv) == 2:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        imagefile = sys.argv[1]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    elif len(sys.argv) == 3:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        imagefile = sys.argv[1]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        DICE_WIDTH = int(sys.argv[2])
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        if (DICE_WIDTH &amp;gt; 150 or DICE_WIDTH &amp;lt; 30):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            print(&amp;#34;色子列数不正确，应在30-150之间&amp;#34;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            sys.exit(1)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    else:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        imagefile = sys.argv[1]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        DICE_WIDTH = int(sys.argv[2])
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        if (DICE_WIDTH &amp;gt; 150 or DICE_WIDTH &amp;lt; 30):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            print(&amp;#34;Dice quality not avialiabe. It betweet 30 and 150&amp;#34;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            sys.exit(1)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        if (sys.argv[3] == &amp;#39;0&amp;#39; or sys.argv[3] == &amp;#39;1&amp;#39;):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            ROTATE = bool(int(sys.argv[3]))
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        else:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            print(&amp;#34;1:色子旋转, 0:色子不旋转&amp;#34;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            sys.exit(1)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    return imagefile, DICE_WIDTH, ROTATE
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;2.调整图片，图片宽度为色子列数*16，返回调整后的图像数组，自定义函数输入变量为DICE_WIDTH（色子列数），image（输入的图像数组）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def AjustImage(DICE_WIDTH, image):  # 调整图片
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    hight, width = image.shape[:2]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ratio = DICE_WIDTH * 16 / width
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    width = int(width * ratio)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    hight = int(hight * ratio)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    image = cv2.resize(image, (width, hight))
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    return image
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;3.读入色子图形&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def getDice(DICEPATH):  # 读入色子图形文件
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    dice = np.zeros((9, 16, 16),dtype=&amp;#39;u8&amp;#39;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    for i in range(9):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        dice[i] = cv2.imread(&amp;#39;./dice_image/&amp;#39; + str(i + 1) + &amp;#39;w.png&amp;#39;, 0)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    return dice
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;4.对图像进行处理，输入参数：im（图像数组）, imagefile（图片文件名）, p（灰色度分组数组）, dice（色子图片数组）, ROTATE（色子2，3，6是否旋转），返回处理后的图片数组im，以及色子点数数组image_data&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def calculateDice(im, imagefile, p, dice, ROTATE):  # 处理图片
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    x_max = int((im.shape[1]/16))
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    y_max = int((im.shape[0]/16))
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    dice_data = np.arange(y_max * x_max, dtype=&amp;#34;u8&amp;#34;).reshape(y_max, x_max)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    dice2_rotate = False
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    dice3_rotate = False
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    dice6_rotate = False
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    cv2.namedWindow(imagefile, 0)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    cv2.resizeWindow(imagefile, 640, int(640 * y_max / x_max))
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    for j in range(y_max):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        for i in range(x_max):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            # 获得16x16图片的色度平均值mean或中位数median
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            image_data = int(np.mean(im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16]))
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            # 根据色度值确定色子点数
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            if (image_data &amp;lt; p[0]):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                n = 5
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                if (ROTATE):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                    dice6_rotate = not (dice6_rotate)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                    if (dice6_rotate):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                        n = 8
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            elif (image_data &amp;gt;= p[0]) and (image_data &amp;lt; p[1]):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                n = 4
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            elif (image_data &amp;gt;= p[1]) and (image_data &amp;lt; p[2]):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                n = 3
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            elif (image_data &amp;gt;= p[2]) and (image_data &amp;lt; p[3]):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                n = 2
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                if (ROTATE):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                    dice3_rotate = not (dice3_rotate)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                    if (dice3_rotate):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                        n = 7
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            elif (image_data &amp;gt;= p[3]) and (image_data &amp;lt; p[4]):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                n = 1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                if (ROTATE):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                    dice2_rotate = not (dice2_rotate)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                    if (dice2_rotate):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                        n = 6
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            else:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                n = 0
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            #将色子图片写入原图片
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16] = dice[n]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            dice_data[j, i] = n + 1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            #显示色子覆盖原图片步骤
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            cv2.imshow(imagefile, im)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            cv2.waitKey(1)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    return im, dice_data
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;5.保存图片及色子点数文件&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def write_Dice(im, OUTPUTPATH, imagefile, dice_data):  # 将色子点数写入文件
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    y_max, x_max = np.shape(dice_data)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    DICE_WIDTH = x_max
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    print(&amp;#34;色子数量&amp;#34;, y_max, &amp;#39;*&amp;#39;, x_max, &amp;#39;=&amp;#39;, x_max * y_max)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    cv2.imwrite(OUTPUTPATH + str(DICE_WIDTH) + &amp;#39;_hist_&amp;#39; + imagefile, im)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    f = open(OUTPUTPATH + str(DICE_WIDTH) + &amp;#39;_hist_&amp;#39; + imagefile + &amp;#39;.txt&amp;#39;, &amp;#39;wt&amp;#39;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        for y in range(y_max):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        f.write((str(y + 1) + &amp;#39;:&amp;#39;))
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        for x in range(x_max):
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            f.write(str(dice_data[y, x]) + &amp;#39;,&amp;#39;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        f.write(&amp;#39;\n&amp;#39;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    f.close()
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    print(&amp;#39;文件保存完毕!&amp;#39;)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    return
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;采用numpy，对数组进行运算非常方便。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;def main():
+    start_time = datetime.datetime.now() #设置程序运行开始时间
+    #初始化文件路径
+    EXEC_PATH = os.getcwd()
+    DICEPATH = EXEC_PATH + &amp;#39;\\dice_image\\&amp;#39;
+    OUTPUTPATH = EXEC_PATH + &amp;#39;\\output\\&amp;#39;
+    if not (os.path.exists(OUTPUTPATH)):
+       os.mkdir(OUTPUTPATH)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.获得命令行参数，调用自定义函数getvalue()，返回输入图片文件名，色子列数，是否旋转&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    imagefile, DICE_WIDTH, ROTATE = getvalue()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.读取要渲染的图片及色子图片&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    im = cv2.imread(imagefile, 0)
+    dice = getDice(DICEPATH)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.调用自定义函数，调整图片大小，返回图片数组&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    im = AjustImage(DICE_WIDTH, im)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;5.定义灰色度数值对应色子1-6点的分组，用了list，也可以用numpy的数组&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    p = [60, 80, 110, 150, 190, 220]
+    #使用numpy数组
+    p = np.array([60, 80, 110, 150, 190, 220])
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;6.对图像进行16x16图块分割，并计算灰度，对应色子1-6，并将图片转换成色子点阵图，调用自定义函数，获得处理后的图像以及色子点数文件。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    im, dice_data = calculateDice(im, imagefile, p, dice, ROTATE)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;7.保存图片及色子点数文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    write_Dice(im, OUTPUTPATH, imagefile, dice_data)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;8.打印运行时间以及色子图片，按任意键退出&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    end_time = datetime.datetime.now()
+    print(&amp;#39;程序运行时间:&amp;#39;, end_time - start_time,&amp;#39;秒&amp;#39;)
+    cv2.imshow(imagefile, im)
+    cv2.waitKey(0)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下面是自定义函数。 1.获得命令行变量，返回变量：imagefile（输入文件名）, DICE_WIDTH（色子列数）, ROTATE（色子2，3，6是否旋转） def getvalue():&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    if (len(sys.argv) &amp;lt; 2 or len(sys.argv) &amp;gt; 4):
+        print(&amp;#34;Error, invalid arguments!&amp;#34;)
+        print(&amp;#34;Call with &amp;#34; + sys.argv[0] + &amp;#34; inputimage [tile-size] &amp;#34;)
+        sys.exit(1)
+    ROTATE = False
+    DICE_WIDTH = 50
+    if len(sys.argv) == 2:
+        imagefile = sys.argv[1]
+    elif len(sys.argv) == 3:
+        imagefile = sys.argv[1]
+        DICE_WIDTH = int(sys.argv[2])
+        if (DICE_WIDTH &amp;gt; 150 or DICE_WIDTH &amp;lt; 30):
+            print(&amp;#34;色子列数不正确，应在30-150之间&amp;#34;)
+            sys.exit(1)
+    else:
+        imagefile = sys.argv[1]
+        DICE_WIDTH = int(sys.argv[2])
+        if (DICE_WIDTH &amp;gt; 150 or DICE_WIDTH &amp;lt; 30):
+            print(&amp;#34;Dice quality not avialiabe. It betweet 30 and 150&amp;#34;)
+            sys.exit(1)
+        if (sys.argv[3] == &amp;#39;0&amp;#39; or sys.argv[3] == &amp;#39;1&amp;#39;):
+            ROTATE = bool(int(sys.argv[3]))
+        else:
+            print(&amp;#34;1:色子旋转, 0:色子不旋转&amp;#34;)
+            sys.exit(1)
+    return imagefile, DICE_WIDTH, ROTATE
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.调整图片，图片宽度为色子列数*16，返回调整后的图像数组，自定义函数输入变量为DICE_WIDTH（色子列数），image（输入的图像数组）&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;def AjustImage(DICE_WIDTH, image):  # 调整图片
+    hight, width = image.shape[:2]
+    ratio = DICE_WIDTH * 16 / width
+    width = int(width * ratio)
+    hight = int(hight * ratio)
+    image = cv2.resize(image, (width, hight))
+    return image
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.读入色子图形&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;def getDice(DICEPATH):  # 读入色子图形文件
+    dice = np.zeros((9, 16, 16),dtype=&amp;#39;u8&amp;#39;)
+    for i in range(9):
+        dice[i] = cv2.imread(&amp;#39;./dice_image/&amp;#39; + str(i + 1) + &amp;#39;w.png&amp;#39;, 0)
+    return dice
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.对图像进行处理，输入参数：im（图像数组）, imagefile（图片文件名）, p（灰色度分组数组）, dice（色子图片数组）, ROTATE（色子2，3，6是否旋转），返回处理后的图片数组im，以及色子点数数组image_data&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;def calculateDice(im, imagefile, p, dice, ROTATE):  # 处理图片
+    x_max = int((im.shape[1]/16))
+    y_max = int((im.shape[0]/16))
+    dice_data = np.arange(y_max * x_max, dtype=&amp;#34;u8&amp;#34;).reshape(y_max, x_max)
+    dice2_rotate = False
+    dice3_rotate = False
+    dice6_rotate = False
+    cv2.namedWindow(imagefile, 0)
+    cv2.resizeWindow(imagefile, 640, int(640 * y_max / x_max))
+    for j in range(y_max):
+        for i in range(x_max):
+            # 获得16x16图片的色度平均值mean或中位数median
+            image_data = int(np.mean(im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16]))
+            # 根据色度值确定色子点数
+            if (image_data &amp;lt; p[0]):
+                n = 5
+                if (ROTATE):
+                    dice6_rotate = not (dice6_rotate)
+                    if (dice6_rotate):
+                        n = 8
+            elif (image_data &amp;gt;= p[0]) and (image_data &amp;lt; p[1]):
+                n = 4
+            elif (image_data &amp;gt;= p[1]) and (image_data &amp;lt; p[2]):
+                n = 3
+            elif (image_data &amp;gt;= p[2]) and (image_data &amp;lt; p[3]):
+                n = 2
+                if (ROTATE):
+                    dice3_rotate = not (dice3_rotate)
+                    if (dice3_rotate):
+                        n = 7
+            elif (image_data &amp;gt;= p[3]) and (image_data &amp;lt; p[4]):
+                n = 1
+                if (ROTATE):
+                    dice2_rotate = not (dice2_rotate)
+                    if (dice2_rotate):
+                        n = 6
+            else:
+                n = 0
+            #将色子图片写入原图片
+            im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16] = dice[n]
+            dice_data[j, i] = n + 1
+            #显示色子覆盖原图片步骤
+            cv2.imshow(imagefile, im)
+            cv2.waitKey(1)
+    return im, dice_data
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;5.保存图片及色子点数文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;def write_Dice(im, OUTPUTPATH, imagefile, dice_data):  # 将色子点数写入文件
+    y_max, x_max = np.shape(dice_data)
+    DICE_WIDTH = x_max
+    print(&amp;#34;色子数量&amp;#34;, y_max, &amp;#39;*&amp;#39;, x_max, &amp;#39;=&amp;#39;, x_max * y_max)
+    cv2.imwrite(OUTPUTPATH + str(DICE_WIDTH) + &amp;#39;_hist_&amp;#39; + imagefile, im)
+    f = open(OUTPUTPATH + str(DICE_WIDTH) + &amp;#39;_hist_&amp;#39; + imagefile + &amp;#39;.txt&amp;#39;, &amp;#39;wt&amp;#39;)
+        for y in range(y_max):
+        f.write((str(y + 1) + &amp;#39;:&amp;#39;))
+        for x in range(x_max):
+            f.write(str(dice_data[y, x]) + &amp;#39;,&amp;#39;)
+        f.write(&amp;#39;\n&amp;#39;)
+    f.close()
+    print(&amp;#39;文件保存完毕!&amp;#39;)
+    return
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;采用numpy，对数组进行运算非常方便。&lt;/p&gt;
 &lt;p&gt;程序放到了GitHub上，也可以直接用&lt;/p&gt;
 &lt;p&gt;git clone &lt;a class=&#34;link&#34; href=&#34;https://github.com/fallleaf/dice_portrait.git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/fallleaf/dice_portrait.git&lt;/a&gt;&lt;/p&gt;

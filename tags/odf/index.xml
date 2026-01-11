@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>ODF on Reading,Thinking And Writing</title>
+        <title>ODF on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/odf/</link>
-        <description>Recent content in ODF on Reading,Thinking And Writing</description>
+        <description>Recent content in ODF on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-odf-automatic-maintance/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/cover.jpeg" alt="Featured image of post ODF智能运维：机器人自动维护的未来不是梦" /&gt;&lt;p&gt;你是否曾想过，未来光纤配线架的维护会是什么样子？不再需要工程师们亲临现场，手动完成繁琐的接线操作，而是由智能机器人精准、高效地处理一切。这并非科幻场景，而是国际电联（ITU）发布的 ITU-T M.3368 建议书所描绘的未来。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/cover.webp" alt="Featured image of post ODF智能运维：机器人自动维护的未来不是梦" /&gt;&lt;p&gt;你是否曾想过，未来光纤配线架的维护会是什么样子？不再需要工程师们亲临现场，手动完成繁琐的接线操作，而是由智能机器人精准、高效地处理一切。这并非科幻场景，而是国际电联（ITU）发布的 ITU-T M.3368 建议书所描绘的未来。&lt;/p&gt;
 &lt;h2 id=&#34;核心挑战传统odf维护的困境&#34;&gt;核心挑战：传统ODF维护的困境
 &lt;/h2&gt;&lt;p&gt;ODF是光通信网络中用于端接、连接和分配光缆的关键物理基础设施 。传统上，所有光纤跳接、改接或网络重构都需要维护人员亲临现场手动操作。这种模式不仅耗费大量的人力和时间成本 ，而且在日益密集和复杂的连接环境中，极易发生人为错误，另外，操作后的信息变更，经常缺失，导致光纤的连接信息不准确。因此，建立一套能够远程化、自动化、智能化的维护体系，成为业界迫切的需求。&lt;/p&gt;
 &lt;h2 id=&#34;什么是-odf-智能维护&#34;&gt;什么是 ODF 智能维护？

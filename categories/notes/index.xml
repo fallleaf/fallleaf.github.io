@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>随笔与观察 on Reading,Thinking And Writing</title>
+        <title>随笔与观察 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/categories/notes/</link>
-        <description>Recent content in 随笔与观察 on Reading,Thinking And Writing</description>
+        <description>Recent content in 随笔与观察 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/cover.jpeg" alt="Featured image of post 中国联通与中国电信2026年度工作会议对比解读" /&gt;&lt;h2 id=&#34;站在规划交汇点的信息通信业&#34;&gt;站在规划交汇点的信息通信业
+        <description>&lt;img src="https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/cover.webp" alt="Featured image of post 中国联通与中国电信2026年度工作会议对比解读" /&gt;&lt;h2 id=&#34;站在规划交汇点的信息通信业&#34;&gt;站在规划交汇点的信息通信业
 &lt;/h2&gt;&lt;p&gt;2026年，是中国信息通信业一个极具标志意义的年份。&lt;/p&gt;
 &lt;p&gt;这一年，国家“十四五”规划圆满收官，“十五五”规划全面启幕；这一年，人工智能、算力网络、5G-A（5G-Advanced）、量子通信等前沿技术，正从技术验证阶段加速走向规模化、体系化应用；这一年，电信运营商的角色，也正在发生根本性变化。&lt;/p&gt;
 &lt;p&gt;以中国电信、中国联通为代表的基础电信企业，正在从传统意义上的&lt;strong&gt;通信服务提供商&lt;/strong&gt;，加速转型为&lt;strong&gt;数字化综合服务的国家队与主力军&lt;/strong&gt;。
@@ -140,7 +140,7 @@
         <pubDate>Thu, 23 Oct 2025 07:45:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-paid-upload-bandwidth-future/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-paid-upload-bandwidth-future/cover.jpeg" alt="Featured image of post 终结“下载思维”：付费上传，才是宽带服务的未来" /&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;../tech-broadband-upload-speed-future&#34; &gt;《别被宽带数字忽悠了：上传速度，才是未来的分水岭》&lt;/a&gt; 中，我们说明了用户上网行为的变化，促使运营商要在上行速率业务上多做文章，才能实现差异化服务。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-paid-upload-bandwidth-future/cover.webp" alt="Featured image of post 终结“下载思维”：付费上传，才是宽带服务的未来" /&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;../tech-broadband-upload-speed-future&#34; &gt;《别被宽带数字忽悠了：上传速度，才是未来的分水岭》&lt;/a&gt; 中，我们说明了用户上网行为的变化，促使运营商要在上行速率业务上多做文章，才能实现差异化服务。&lt;/p&gt;
 &lt;p&gt;目前一个核心问题是当用户的上网行为逐渐从 &lt;strong&gt;“看”（消费）&lt;/strong&gt; 转向 &lt;strong&gt;“发”（生产、交互、AI训练）&lt;/strong&gt; 的时候，付费模式仍是上个时代的固定订阅制，没有做改变，这将束缚住新时代的 &lt;strong&gt;上传潜力&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;目前主流的宽带付费方式是 &lt;strong&gt;融合套餐制&lt;/strong&gt; ，本质上是一种“固定订阅”。这种模式在内容消费时代运行良好，但面对直播、远程办公、AI数据上传等场景，上传需求呈现出 &lt;strong&gt;突发性、非连续性和高带宽瞬时需求&lt;/strong&gt; 的特征。 &lt;strong&gt;用固定的“大水管”去满足不规律的“水枪式”爆发需求，注定是低效的。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;必须要采用一种新的计费方式与新兴的上行业务适配了。&lt;/strong&gt;&lt;/p&gt;
@@ -237,7 +237,7 @@
         <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-broadband-upload-speed-future/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-broadband-upload-speed-future/cover.jpg" alt="Featured image of post 别被宽带数字忽悠了：上传速度，才是未来的分水岭" /&gt;&lt;h2 id=&#34;宽带升级的下一个关键上行能力不容忽视&#34;&gt;宽带升级的下一个关键：上行能力不容忽视
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-broadband-upload-speed-future/cover.webp" alt="Featured image of post 别被宽带数字忽悠了：上传速度，才是未来的分水岭" /&gt;&lt;h2 id=&#34;宽带升级的下一个关键上行能力不容忽视&#34;&gt;宽带升级的下一个关键：上行能力不容忽视
 &lt;/h2&gt;&lt;p&gt;过去十年，宽带行业在下行速率上取得了显著进展。从百兆到千兆，再到如今的万兆接入，用户的下载体验不断提升，高清视频、大型文件传输、在线娱乐都变得更加流畅。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;但与此同时，用户的使用模式也在发生深刻变化。用户上网，不再是被动的接受信息，而是主动参与到互联网流量的生产中。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;远程办公、视频会议、直播创作、智能安防等新兴应用，对上传能力提出了更高要求。但受制上传带宽的限制，部分业务体验不佳， &lt;strong&gt;上行带宽，正逐步成为影响用户体验的重要因素。&lt;/strong&gt;&lt;/p&gt;
@@ -282,7 +282,7 @@
         <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/notes-learn-replicable-success-critical-illusion/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-learn-replicable-success-critical-illusion/cover.jpg" alt="Featured image of post 批判“可复制的成功学”：为何模仿只是幻觉" /&gt;&lt;h2 id=&#34;伪装成通往成功的通用秘籍&#34;&gt;伪装成通往成功的“通用秘籍”
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-learn-replicable-success-critical-illusion/cover.webp" alt="Featured image of post 批判“可复制的成功学”：为何模仿只是幻觉" /&gt;&lt;h2 id=&#34;伪装成通往成功的通用秘籍&#34;&gt;伪装成通往成功的“通用秘籍”
 &lt;/h2&gt;&lt;p&gt;当前的传媒，无论是视频平台、公众号还是付费课程，普遍热衷于推销“ &lt;strong&gt;可操作的成功学”&lt;/strong&gt; 。它们将成功简化为一套流程：学会某个工具即能提高效率，掌握某个概念即能实现自律。这种叙事模式的核心是承诺结果可复制，使听众产生一种错觉，以为自己已掌握了通往成功的钥匙，只待执行力就能登顶。&lt;/p&gt;
 &lt;p&gt;然而，现实是大多数人照搬这些方法后并未成功，甚至无法准确找出失败的原因。这并非因为执行力不足，而是因为模仿的基础是错误的—— &lt;strong&gt;你模仿的不是方法，而是幻觉。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;传媒商业逻辑下的成功神话&#34;&gt;传媒商业逻辑下的成功神话
@@ -308,7 +308,7 @@
         <pubDate>Wed, 08 Oct 2025 11:27:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/life-last-holiday-quiet/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/life-last-holiday-quiet/cover.jpeg" alt="Featured image of post 长假最后一天，请把自己“关”进安静里" /&gt;&lt;p&gt;长假最后一天，别急着约饭，也别用刷视频填满它。这一天，最适合安静地和自己相处，慢慢把心收回来。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/life-last-holiday-quiet/cover.webp" alt="Featured image of post 长假最后一天，请把自己“关”进安静里" /&gt;&lt;p&gt;长假最后一天，别急着约饭，也别用刷视频填满它。这一天，最适合安静地和自己相处，慢慢把心收回来。&lt;/p&gt;
 &lt;p&gt;整理假期拍的照片，清一清有点乱的桌面，把散了一地的思绪也轻轻捡起。推掉“最后一顿”的饭局，留出一整个下午给自己——哪怕只是发会儿呆，也好过在喧闹中把最后一点心力耗尽。&lt;/p&gt;
 &lt;p&gt;你可以读几页书，在小区里散个步，或泡杯茶，看窗外的天色一寸寸暗下来。让身心从假期的松弛中缓缓“醒”来，像一只猫，轻巧地从阳台跳回屋里——不惊扰谁，也不被打扰。&lt;/p&gt;
 &lt;p&gt;这不是逃避，更像一种温柔的仪式。如同演出散场，灯光熄灭，演员需要回到后台，卸妆、换衣、沉淀。我们也需要这样一段时间，把假期的热闹轻轻放下，为明天的工作腾出空间。&lt;/p&gt;
@@ -337,7 +337,7 @@
         <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/work-deloitte-ai-misuse-consulting-trust-crisis/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/work-deloitte-ai-misuse-consulting-trust-crisis/cover.jpeg" alt="Featured image of post 德勤退还澳政府款项：生成式AI误用引发咨询行业信任危机" /&gt;&lt;p&gt;德勤澳大利亚分公司近日同意向联邦政府退还44万澳元咨询费用，原因是其提交的一份社会福利合规报告中存在严重内容造假，且这些错误源于未经充分监督的生成式人工智能工具的使用。此事件被广泛视为政府咨询领域迄今最具代表性的人工智能问责案例之一，暴露了AI技术在专业服务中的系统性风险。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/work-deloitte-ai-misuse-consulting-trust-crisis/cover.webp" alt="Featured image of post 德勤退还澳政府款项：生成式AI误用引发咨询行业信任危机" /&gt;&lt;p&gt;德勤澳大利亚分公司近日同意向联邦政府退还44万澳元咨询费用，原因是其提交的一份社会福利合规报告中存在严重内容造假，且这些错误源于未经充分监督的生成式人工智能工具的使用。此事件被广泛视为政府咨询领域迄今最具代表性的人工智能问责案例之一，暴露了AI技术在专业服务中的系统性风险。&lt;/p&gt;
 &lt;h2 id=&#34;事件概述ai生成内容导致虚假信息&#34;&gt;事件概述：AI生成内容导致虚假信息
 &lt;/h2&gt;&lt;p&gt;根据澳大利亚就业与劳资关系部的确认，德勤在2024年7月提交的报告中使用了大型语言模型（Azure OpenAI GPT-4o）以“填补文档空白”。然而，该技术的使用并未在初稿中披露，且直接导致以下关键错误：&lt;/p&gt;
 &lt;ul&gt;
@@ -375,7 +375,7 @@
         <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/ai-efficiency-illusion/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-efficiency-illusion/cover.jpg" alt="Featured image of post 效率幻觉：为什么 AI 让我们看似更快，实则更慢？" /&gt;&lt;h2 id=&#34;ai-生产力陷阱为什么团队越用-ai效率反而越低&#34;&gt;AI 生产力陷阱：为什么团队越用 AI，效率反而越低？
+        <description>&lt;img src="https://blog.fallleaf.net/p/ai-efficiency-illusion/cover.webp" alt="Featured image of post 效率幻觉：为什么 AI 让我们看似更快，实则更慢？" /&gt;&lt;h2 id=&#34;ai-生产力陷阱为什么团队越用-ai效率反而越低&#34;&gt;AI 生产力陷阱：为什么团队越用 AI，效率反而越低？
 &lt;/h2&gt;&lt;p&gt;过去两年，AI 工具的应用呈现出爆发式增长。从撰写邮件、起草报告，到生成代码和设计初稿，AI 已经快速进入了日常工作流程。&lt;/p&gt;
 &lt;p&gt;然而， &lt;strong&gt;一项由麻省理工学院（MIT）与德克萨斯大学奥斯汀分校联合开展的研究&lt;/strong&gt; 提醒我们：AI 并非天然的效率加速器。在许多情况下，它可能制造出一种新的低效形式—— &lt;strong&gt;“无效产出”（Workslop）&lt;/strong&gt; ，并逐步削弱团队的协作质量与整体生产力。&lt;/p&gt;
 &lt;h2 id=&#34;什么是无效产出workslop&#34;&gt;什么是“无效产出”（Workslop）？
@@ -457,7 +457,7 @@ AI 生成的内容量过大，超出人类的处理能力，反而使得决策�
         <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/ai-llm-dependence-critical-thinking-degrade/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-llm-dependence-critical-thinking-degrade/cover.jpg" alt="Featured image of post 别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化" /&gt;&lt;h2 id=&#34;引子&#34;&gt;引子
+        <description>&lt;img src="https://blog.fallleaf.net/p/ai-llm-dependence-critical-thinking-degrade/cover.webp" alt="Featured image of post 别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化" /&gt;&lt;h2 id=&#34;引子&#34;&gt;引子
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;网络段子：&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -522,7 +522,7 @@ AI 生成的内容量过大，超出人类的处理能力，反而使得决策�
         <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/notes-social-media-end-era-new-start/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-social-media-end-era-new-start/cover.jpg" alt="Featured image of post 社交媒体的“最后时刻”：喧嚣退潮，新的开始？" /&gt;&lt;h2 id=&#34;导语&#34;&gt;导语
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-social-media-end-era-new-start/cover.webp" alt="Featured image of post 社交媒体的“最后时刻”：喧嚣退潮，新的开始？" /&gt;&lt;h2 id=&#34;导语&#34;&gt;导语
 &lt;/h2&gt;&lt;p&gt;每天刷着信息流，你是不是也有这样的感觉： &lt;strong&gt;内容越来越多，但真正值得停留的越来越少？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;近日，Noema 杂志刊登了一篇文章《 &lt;strong&gt;The Last Days of Social Media&lt;/strong&gt; 》，作者 James O’Sullivan 提出一个大胆观点： &lt;strong&gt;社交媒体正在走向“最后时刻”&lt;/strong&gt; 。这不是某个平台马上倒下，而是整个模式正遭遇瓶颈。&lt;/p&gt;
 &lt;h2 id=&#34;社交媒体怎么了&#34;&gt;社交媒体怎么了？
@@ -570,7 +570,7 @@ AI 生成的内容量过大，超出人类的处理能力，反而使得决策�
         <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/work-telecom-15th-strategy/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/work-telecom-15th-strategy/cover.jpg" alt="Featured image of post 一场事关未来的“大考”：新规下的电信运营商，如何谋划“十五五”？" /&gt;&lt;p&gt;2025年，一个特殊的年份。它既是“十四五”规划的收官之年，也是“十五五”战略布局的开局之年。对于中国电信、中国移动、中国联通这三大央企运营商来说，这一刻尤为关键。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/work-telecom-15th-strategy/cover.webp" alt="Featured image of post 一场事关未来的“大考”：新规下的电信运营商，如何谋划“十五五”？" /&gt;&lt;p&gt;2025年，一个特殊的年份。它既是“十四五”规划的收官之年，也是“十五五”战略布局的开局之年。对于中国电信、中国移动、中国联通这三大央企运营商来说，这一刻尤为关键。&lt;/p&gt;
 &lt;p&gt;过去五年，三大运营商在千兆光网、5G、算力网络等新型基础设施建设上成果斐然，不仅巩固了全球领先的网络优势，更肩负起“东数西算”、算网融合等国家数字化战略的重任。&lt;/p&gt;
 &lt;p&gt;然而，新的挑战也接踵而至：AI、6G等前沿技术的酝酿突破，产业数字化需求井喷，以及复杂多变的国际环境。运营商们不仅要守住基础网络的“主阵地”，更要在算力、平台、应用和安全等新赛道上实现突破。&lt;/p&gt;
 &lt;p&gt;就在这个关键节点，国务院国资委印发了新版《中央企业发展规划管理办法》（以下简称“《办法》”）。这不只是一份文件，更是指导运营商谋划“十五五”大计、实现战略转型的制度利器。&lt;/p&gt;
@@ -707,7 +707,7 @@ AI 生成的内容量过大，超出人类的处理能力，反而使得决策�
         <pubDate>Thu, 11 Sep 2025 00:39:23 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/latecomer-broadband-odn-breakthrough-strategy/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/latecomer-broadband-odn-breakthrough-strategy/cover.jpeg" alt="Featured image of post 不争“一时之快”，要谋“长久之道”，一个宽带后发者的破局逻辑" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/latecomer-broadband-odn-breakthrough-strategy/cover.webp" alt="Featured image of post 不争“一时之快”，要谋“长久之道”，一个宽带后发者的破局逻辑" /&gt;&lt;blockquote&gt;
 &lt;p&gt;在这个言必称“万兆”的时代，我们选择了一条更为沉静的道路——不追逐表面的技术光环，而是俯身深耕，致力于为每一个小区、每一栋楼宇，铺设一条足以支撑20年演进的光纤网络。
 因为我们深信： &lt;strong&gt;真正的宽带竞争力，不在于今日速度的巅峰，而在于明日能否持续稳健地奔跑。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -929,7 +929,7 @@ AI 生成的内容量过大，超出人类的处理能力，反而使得决策�
         <pubDate>Wed, 03 Sep 2025 07:32:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/cover.jpeg" alt="Featured image of post 移动近10亿招标“极简网络”，联通将其升华为网络哲学，背后有何玄机？" /&gt;&lt;p&gt;一场关于“极简”的本质之争，正在三大运营商之间悄然上演。近期，广东移动近10亿元的“极简网络改造技术支撑”项目招标，再次将“极简”推向风口浪尖。然而，当我们深入剖析三大运营商在这一领域的实施路径时，却发现了一个令人深思的现象： &lt;strong&gt;名称相同，但理念和做法却大相径庭。&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/cover.webp" alt="Featured image of post 移动近10亿招标“极简网络”，联通将其升华为网络哲学，背后有何玄机？" /&gt;&lt;p&gt;一场关于“极简”的本质之争，正在三大运营商之间悄然上演。近期，广东移动近10亿元的“极简网络改造技术支撑”项目招标，再次将“极简”推向风口浪尖。然而，当我们深入剖析三大运营商在这一领域的实施路径时，却发现了一个令人深思的现象： &lt;strong&gt;名称相同，但理念和做法却大相径庭。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;移动与电信项目式的减法工程&#34;&gt;移动与电信：项目式的“减法工程”
 &lt;/h2&gt;&lt;p&gt;移动和电信对“极简”的理解，更倾向于一个具体的工程项目。他们的招标项目通常直接、明确，预算和改造站点数量清晰可见，主要聚焦移动基站及配套的精简。这是一种典型的项目化运作模式，聚焦于物理层面的设备简化，例如采用刀片电池和刀片电源，将基站CRAN化，从而减少机房和配套设施。这种模式的优点是目标明确、执行高效，能够迅速看到网络运营成本的降低和效能的提升，但其本质是一场“减法工程”，旨在解决眼前的问题。&lt;/p&gt;
 &lt;h2 id=&#34;联通理念化的重构哲学&#34;&gt;联通：理念化的“重构哲学”
@@ -1041,7 +1041,7 @@ AI 生成的内容量过大，超出人类的处理能力，反而使得决策�
         <pubDate>Thu, 28 Aug 2025 00:32:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/notes-2024-consulting-leaders-shakeup/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-2024-consulting-leaders-shakeup/cover.jpeg" alt="Featured image of post 2024工程咨询排名出炉：移动院领跑，老牌劲旅意外“失踪”" /&gt;&lt;p&gt;近日，中国工程咨询协会发布了2024年度工程咨询单位的权威排名。作为通信行业的从业者，我们最关心的是：在这份榜单中，通信领域的咨询设计单位表现如何？谁是真正的行业王者？又有哪些巨头意外“缺席”？&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-2024-consulting-leaders-shakeup/cover.webp" alt="Featured image of post 2024工程咨询排名出炉：移动院领跑，老牌劲旅意外“失踪”" /&gt;&lt;p&gt;近日，中国工程咨询协会发布了2024年度工程咨询单位的权威排名。作为通信行业的从业者，我们最关心的是：在这份榜单中，通信领域的咨询设计单位表现如何？谁是真正的行业王者？又有哪些巨头意外“缺席”？&lt;/p&gt;
 &lt;p&gt;这份排名涵盖了多个榜单，不仅有总营业收入百强，还有智库影响力50强、不含工程施工业务收入的百强等 。&lt;/p&gt;
 &lt;h2 id=&#34;重磅榜单发布总排名-vs-纯咨询排名区别巨大&#34;&gt;重磅榜单发布：总排名 vs. “纯咨询”排名，区别巨大！
 &lt;/h2&gt;&lt;p&gt;首先，我们必须搞清楚这份榜单的“游戏规则”。协会发布了两份核心的营业收入排名，它们的评价重点大不相同：&lt;/p&gt;
@@ -1113,7 +1113,7 @@ AI 生成的内容量过大，超出人类的处理能力，反而使得决策�
         <pubDate>Sat, 23 Aug 2025 11:08:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/work-wiring-zone-or-not/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/work-wiring-zone-or-not/cover.jpg" alt="Featured image of post “配线区”为何译作 Wiring Zone？于细微处见证中国标准的自信" /&gt;&lt;p&gt;在网络运维与技术交流中，一个细节或许能引发深思：“配线区”这一术语，在中国国家标准中被明确翻译为 Wiring Zone。这并非偶然的翻译差异，而是深植于中国庞大的工程实践和日益增强的标准话语权。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/work-wiring-zone-or-not/cover.webp" alt="Featured image of post “配线区”为何译作 Wiring Zone？于细微处见证中国标准的自信" /&gt;&lt;p&gt;在网络运维与技术交流中，一个细节或许能引发深思：“配线区”这一术语，在中国国家标准中被明确翻译为 Wiring Zone。这并非偶然的翻译差异，而是深植于中国庞大的工程实践和日益增强的标准话语权。&lt;/p&gt;
 &lt;h2 id=&#34;标准溯源白纸黑字的官方定义&#34;&gt;标准溯源：白纸黑字的“官方定义”
 &lt;/h2&gt;&lt;p&gt;首先，我们核查两项关键的中国国家标准，原文的引用是准确的：&lt;/p&gt;
 &lt;ol&gt;

@@ -6,17 +6,13 @@
 
 <link rel='canonical' href='https://blog.fallleaf.net/p/tech-dice-portrait-python/'>
 
-<link rel="stylesheet" href="/scss/style.min.613380e828aecb9eecf17f919ae65fe9f7d8afb8a8e41598bfb6572364a3a7b2.css"><meta property='og:title' content="色子肖像--Python程序">
+<link rel="stylesheet" href="/scss/style.min.96aa598ae451080d70d3518cd7e7808769eff1f34660224534440e2f84c6aeab.css"><meta property='og:title' content="色子肖像--Python程序">
 <meta property='og:description' content="上一篇色子肖像介绍了把图像变成色子点阵图的基本思路，用python语言采用PIL库写了一个程序，后来发现opencv更加简便合适，就采用numpy以及opencv库，进行了优化。 这是我第一次开始用python语言编写稍微复杂些的程序。对于有一定编程经验的人，采用实现一个功能的方式编程能够很快熟悉该语言，是一种很好的学习方式。\n">
 <meta property='og:url' content='https://blog.fallleaf.net/p/tech-dice-portrait-python/'>
-<meta property='og:site_name' content='Reading,Thinking And Writing'>
+<meta property='og:site_name' content='Reading, Thinking and Writing'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='肖像' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2017-12-28T15:49:14&#43;08:00'/><meta property='article:modified_time' content='2023-07-30T15:49:14&#43;08:00'/>
 <meta name="twitter:title" content="色子肖像--Python程序">
-<meta name="twitter:description" content="上一篇色子肖像介绍了把图像变成色子点阵图的基本思路，用python语言采用PIL库写了一个程序，后来发现opencv更加简便合适，就采用numpy以及opencv库，进行了优化。 这是我第一次开始用python语言编写稍微复杂些的程序。对于有一定编程经验的人，采用实现一个功能的方式编程能够很快熟悉该语言，是一种很好的学习方式。\n"><script
-  src="https://code.jquery.com/jquery-latest.min.js"
-  crossorigin="anonymous"></script>
-
-
+<meta name="twitter:description" content="上一篇色子肖像介绍了把图像变成色子点阵图的基本思路，用python语言采用PIL库写了一个程序，后来发现opencv更加简便合适，就采用numpy以及opencv库，进行了优化。 这是我第一次开始用python语言编写稍微复杂些的程序。对于有一定编程经验的人，采用实现一个功能的方式编程能够很快熟悉该语言，是一种很好的学习方式。\n">
     </head>
     <body class="
     article-page
@@ -73,7 +69,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">Reading,Thinking And Writing</a></h1>
+            <h1 class="site-name"><a href="/">Reading, Thinking and Writing</a></h1>
             <h2 class="site-description">我是一颗蛋，一颗红旗下的蛋</h2>
         </div>
     </header><ol class="menu" id="main-menu">
@@ -300,366 +296,187 @@
 这是我第一次开始用python语言编写稍微复杂些的程序。对于有一定编程经验的人，采用实现一个功能的方式编程能够很快熟悉该语言，是一种很好的学习方式。</p>
 <p>以下是我编写的程序以及简单的注释。</p>
 <p>由于要对图像进行数值处理，所以采用opencv以及numpy库。首先是加载库，datetime是用于计算程序运行时间，os是用于获得文件路径，sys是用于获得命令行参数，cv2是opencv库，numpy是python的数组库。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import datetime
-</span></span><span class="line"><span class="cl">import os
-</span></span><span class="line"><span class="cl">import sys
-</span></span><span class="line"><span class="cl">import cv2
-</span></span><span class="line"><span class="cl">import numpy as np
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>保证程序本身直接执行，而不是被调用，如果直接执行，则调用main()函数。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">if __name__ == &#34;__main__&#34;:
-</span></span><span class="line"><span class="cl">    main()
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>一个python文件就可以看作是一个python的模块，这个python模块（.py文件）有两种使用方式：直接运行使用和作为模块被其他模块调用。 每一个模块都有一个内置属性__name__。而__name__的值取决与python模块（.py文件）的使用方式。如果是直接运行使用，那么这个模块的__name__值就是“main”；如果是作为模块被其他模块调用，那么这个模块（.py文件）的__name__值就是该模块（.py文件）的文件名且不带路径和文件扩展名，如果dice_portrait_cv.py被其他python程序import dice_portrait_cv，则__name__为dice_portrait_cv。 main()函数，主要功能流程的执行，分别是：</p>
+<pre tabindex="0"><code>import datetime
+import os
+import sys
+import cv2
+import numpy as np
+</code></pre><p>保证程序本身直接执行，而不是被调用，如果直接执行，则调用main()函数。</p>
+<pre tabindex="0"><code>if __name__ == &#34;__main__&#34;:
+    main()
+</code></pre><p>一个python文件就可以看作是一个python的模块，这个python模块（.py文件）有两种使用方式：直接运行使用和作为模块被其他模块调用。 每一个模块都有一个内置属性__name__。而__name__的值取决与python模块（.py文件）的使用方式。如果是直接运行使用，那么这个模块的__name__值就是“main”；如果是作为模块被其他模块调用，那么这个模块（.py文件）的__name__值就是该模块（.py文件）的文件名且不带路径和文件扩展名，如果dice_portrait_cv.py被其他python程序import dice_portrait_cv，则__name__为dice_portrait_cv。 main()函数，主要功能流程的执行，分别是：</p>
 <p>1.初始化文件路径</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def main():
-</span></span><span class="line"><span class="cl">    start_time = datetime.datetime.now() #设置程序运行开始时间
-</span></span><span class="line"><span class="cl">    #初始化文件路径
-</span></span><span class="line"><span class="cl">    EXEC_PATH = os.getcwd()
-</span></span><span class="line"><span class="cl">    DICEPATH = EXEC_PATH + &#39;\\dice_image\\&#39;
-</span></span><span class="line"><span class="cl">    OUTPUTPATH = EXEC_PATH + &#39;\\output\\&#39;
-</span></span><span class="line"><span class="cl">    if not (os.path.exists(OUTPUTPATH)):
-</span></span><span class="line"><span class="cl">       os.mkdir(OUTPUTPATH)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>2.获得命令行参数，调用自定义函数getvalue()，返回输入图片文件名，色子列数，是否旋转</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    imagefile, DICE_WIDTH, ROTATE = getvalue()
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>3.读取要渲染的图片及色子图片</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    im = cv2.imread(imagefile, 0)
-</span></span><span class="line"><span class="cl">    dice = getDice(DICEPATH)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>4.调用自定义函数，调整图片大小，返回图片数组</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    im = AjustImage(DICE_WIDTH, im)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>5.定义灰色度数值对应色子1-6点的分组，用了list，也可以用numpy的数组</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    p = [60, 80, 110, 150, 190, 220]
-</span></span><span class="line"><span class="cl">    #使用numpy数组
-</span></span><span class="line"><span class="cl">    p = np.array([60, 80, 110, 150, 190, 220])
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>6.对图像进行16x16图块分割，并计算灰度，对应色子1-6，并将图片转换成色子点阵图，调用自定义函数，获得处理后的图像以及色子点数文件。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    im, dice_data = calculateDice(im, imagefile, p, dice, ROTATE)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>7.保存图片及色子点数文件</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    write_Dice(im, OUTPUTPATH, imagefile, dice_data)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>8.打印运行时间以及色子图片，按任意键退出</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    end_time = datetime.datetime.now()
-</span></span><span class="line"><span class="cl">    print(&#39;程序运行时间:&#39;, end_time - start_time,&#39;秒&#39;)
-</span></span><span class="line"><span class="cl">    cv2.imshow(imagefile, im)
-</span></span><span class="line"><span class="cl">    cv2.waitKey(0)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>下面是自定义函数。 1.获得命令行变量，返回变量：imagefile（输入文件名）, DICE_WIDTH（色子列数）, ROTATE（色子2，3，6是否旋转） def getvalue():</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    if (len(sys.argv) &lt; 2 or len(sys.argv) &gt; 4):
-</span></span><span class="line"><span class="cl">        print(&#34;Error, invalid arguments!&#34;)
-</span></span><span class="line"><span class="cl">        print(&#34;Call with &#34; + sys.argv[0] + &#34; inputimage [tile-size] &#34;)
-</span></span><span class="line"><span class="cl">        sys.exit(1)
-</span></span><span class="line"><span class="cl">    ROTATE = False
-</span></span><span class="line"><span class="cl">    DICE_WIDTH = 50
-</span></span><span class="line"><span class="cl">    if len(sys.argv) == 2:
-</span></span><span class="line"><span class="cl">        imagefile = sys.argv[1]
-</span></span><span class="line"><span class="cl">    elif len(sys.argv) == 3:
-</span></span><span class="line"><span class="cl">        imagefile = sys.argv[1]
-</span></span><span class="line"><span class="cl">        DICE_WIDTH = int(sys.argv[2])
-</span></span><span class="line"><span class="cl">        if (DICE_WIDTH &gt; 150 or DICE_WIDTH &lt; 30):
-</span></span><span class="line"><span class="cl">            print(&#34;色子列数不正确，应在30-150之间&#34;)
-</span></span><span class="line"><span class="cl">            sys.exit(1)
-</span></span><span class="line"><span class="cl">    else:
-</span></span><span class="line"><span class="cl">        imagefile = sys.argv[1]
-</span></span><span class="line"><span class="cl">        DICE_WIDTH = int(sys.argv[2])
-</span></span><span class="line"><span class="cl">        if (DICE_WIDTH &gt; 150 or DICE_WIDTH &lt; 30):
-</span></span><span class="line"><span class="cl">            print(&#34;Dice quality not avialiabe. It betweet 30 and 150&#34;)
-</span></span><span class="line"><span class="cl">            sys.exit(1)
-</span></span><span class="line"><span class="cl">        if (sys.argv[3] == &#39;0&#39; or sys.argv[3] == &#39;1&#39;):
-</span></span><span class="line"><span class="cl">            ROTATE = bool(int(sys.argv[3]))
-</span></span><span class="line"><span class="cl">        else:
-</span></span><span class="line"><span class="cl">            print(&#34;1:色子旋转, 0:色子不旋转&#34;)
-</span></span><span class="line"><span class="cl">            sys.exit(1)
-</span></span><span class="line"><span class="cl">    return imagefile, DICE_WIDTH, ROTATE
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>2.调整图片，图片宽度为色子列数*16，返回调整后的图像数组，自定义函数输入变量为DICE_WIDTH（色子列数），image（输入的图像数组）</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def AjustImage(DICE_WIDTH, image):  # 调整图片
-</span></span><span class="line"><span class="cl">    hight, width = image.shape[:2]
-</span></span><span class="line"><span class="cl">    ratio = DICE_WIDTH * 16 / width
-</span></span><span class="line"><span class="cl">    width = int(width * ratio)
-</span></span><span class="line"><span class="cl">    hight = int(hight * ratio)
-</span></span><span class="line"><span class="cl">    image = cv2.resize(image, (width, hight))
-</span></span><span class="line"><span class="cl">    return image
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>3.读入色子图形</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def getDice(DICEPATH):  # 读入色子图形文件
-</span></span><span class="line"><span class="cl">    dice = np.zeros((9, 16, 16),dtype=&#39;u8&#39;)
-</span></span><span class="line"><span class="cl">    for i in range(9):
-</span></span><span class="line"><span class="cl">        dice[i] = cv2.imread(&#39;./dice_image/&#39; + str(i + 1) + &#39;w.png&#39;, 0)
-</span></span><span class="line"><span class="cl">    return dice
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>4.对图像进行处理，输入参数：im（图像数组）, imagefile（图片文件名）, p（灰色度分组数组）, dice（色子图片数组）, ROTATE（色子2，3，6是否旋转），返回处理后的图片数组im，以及色子点数数组image_data</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def calculateDice(im, imagefile, p, dice, ROTATE):  # 处理图片
-</span></span><span class="line"><span class="cl">    x_max = int((im.shape[1]/16))
-</span></span><span class="line"><span class="cl">    y_max = int((im.shape[0]/16))
-</span></span><span class="line"><span class="cl">    dice_data = np.arange(y_max * x_max, dtype=&#34;u8&#34;).reshape(y_max, x_max)
-</span></span><span class="line"><span class="cl">    dice2_rotate = False
-</span></span><span class="line"><span class="cl">    dice3_rotate = False
-</span></span><span class="line"><span class="cl">    dice6_rotate = False
-</span></span><span class="line"><span class="cl">    cv2.namedWindow(imagefile, 0)
-</span></span><span class="line"><span class="cl">    cv2.resizeWindow(imagefile, 640, int(640 * y_max / x_max))
-</span></span><span class="line"><span class="cl">    for j in range(y_max):
-</span></span><span class="line"><span class="cl">        for i in range(x_max):
-</span></span><span class="line"><span class="cl">            # 获得16x16图片的色度平均值mean或中位数median
-</span></span><span class="line"><span class="cl">            image_data = int(np.mean(im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16]))
-</span></span><span class="line"><span class="cl">            # 根据色度值确定色子点数
-</span></span><span class="line"><span class="cl">            if (image_data &lt; p[0]):
-</span></span><span class="line"><span class="cl">                n = 5
-</span></span><span class="line"><span class="cl">                if (ROTATE):
-</span></span><span class="line"><span class="cl">                    dice6_rotate = not (dice6_rotate)
-</span></span><span class="line"><span class="cl">                    if (dice6_rotate):
-</span></span><span class="line"><span class="cl">                        n = 8
-</span></span><span class="line"><span class="cl">            elif (image_data &gt;= p[0]) and (image_data &lt; p[1]):
-</span></span><span class="line"><span class="cl">                n = 4
-</span></span><span class="line"><span class="cl">            elif (image_data &gt;= p[1]) and (image_data &lt; p[2]):
-</span></span><span class="line"><span class="cl">                n = 3
-</span></span><span class="line"><span class="cl">            elif (image_data &gt;= p[2]) and (image_data &lt; p[3]):
-</span></span><span class="line"><span class="cl">                n = 2
-</span></span><span class="line"><span class="cl">                if (ROTATE):
-</span></span><span class="line"><span class="cl">                    dice3_rotate = not (dice3_rotate)
-</span></span><span class="line"><span class="cl">                    if (dice3_rotate):
-</span></span><span class="line"><span class="cl">                        n = 7
-</span></span><span class="line"><span class="cl">            elif (image_data &gt;= p[3]) and (image_data &lt; p[4]):
-</span></span><span class="line"><span class="cl">                n = 1
-</span></span><span class="line"><span class="cl">                if (ROTATE):
-</span></span><span class="line"><span class="cl">                    dice2_rotate = not (dice2_rotate)
-</span></span><span class="line"><span class="cl">                    if (dice2_rotate):
-</span></span><span class="line"><span class="cl">                        n = 6
-</span></span><span class="line"><span class="cl">            else:
-</span></span><span class="line"><span class="cl">                n = 0
-</span></span><span class="line"><span class="cl">            #将色子图片写入原图片
-</span></span><span class="line"><span class="cl">            im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16] = dice[n]
-</span></span><span class="line"><span class="cl">            dice_data[j, i] = n + 1
-</span></span><span class="line"><span class="cl">            #显示色子覆盖原图片步骤
-</span></span><span class="line"><span class="cl">            cv2.imshow(imagefile, im)
-</span></span><span class="line"><span class="cl">            cv2.waitKey(1)
-</span></span><span class="line"><span class="cl">    return im, dice_data
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>5.保存图片及色子点数文件</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def write_Dice(im, OUTPUTPATH, imagefile, dice_data):  # 将色子点数写入文件
-</span></span><span class="line"><span class="cl">    y_max, x_max = np.shape(dice_data)
-</span></span><span class="line"><span class="cl">    DICE_WIDTH = x_max
-</span></span><span class="line"><span class="cl">    print(&#34;色子数量&#34;, y_max, &#39;*&#39;, x_max, &#39;=&#39;, x_max * y_max)
-</span></span><span class="line"><span class="cl">    cv2.imwrite(OUTPUTPATH + str(DICE_WIDTH) + &#39;_hist_&#39; + imagefile, im)
-</span></span><span class="line"><span class="cl">    f = open(OUTPUTPATH + str(DICE_WIDTH) + &#39;_hist_&#39; + imagefile + &#39;.txt&#39;, &#39;wt&#39;)
-</span></span><span class="line"><span class="cl">        for y in range(y_max):
-</span></span><span class="line"><span class="cl">        f.write((str(y + 1) + &#39;:&#39;))
-</span></span><span class="line"><span class="cl">        for x in range(x_max):
-</span></span><span class="line"><span class="cl">            f.write(str(dice_data[y, x]) + &#39;,&#39;)
-</span></span><span class="line"><span class="cl">        f.write(&#39;\n&#39;)
-</span></span><span class="line"><span class="cl">    f.close()
-</span></span><span class="line"><span class="cl">    print(&#39;文件保存完毕!&#39;)
-</span></span><span class="line"><span class="cl">    return
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>采用numpy，对数组进行运算非常方便。</p>
+<pre tabindex="0"><code>def main():
+    start_time = datetime.datetime.now() #设置程序运行开始时间
+    #初始化文件路径
+    EXEC_PATH = os.getcwd()
+    DICEPATH = EXEC_PATH + &#39;\\dice_image\\&#39;
+    OUTPUTPATH = EXEC_PATH + &#39;\\output\\&#39;
+    if not (os.path.exists(OUTPUTPATH)):
+       os.mkdir(OUTPUTPATH)
+</code></pre><p>2.获得命令行参数，调用自定义函数getvalue()，返回输入图片文件名，色子列数，是否旋转</p>
+<pre tabindex="0"><code>    imagefile, DICE_WIDTH, ROTATE = getvalue()
+</code></pre><p>3.读取要渲染的图片及色子图片</p>
+<pre tabindex="0"><code>    im = cv2.imread(imagefile, 0)
+    dice = getDice(DICEPATH)
+</code></pre><p>4.调用自定义函数，调整图片大小，返回图片数组</p>
+<pre tabindex="0"><code>    im = AjustImage(DICE_WIDTH, im)
+</code></pre><p>5.定义灰色度数值对应色子1-6点的分组，用了list，也可以用numpy的数组</p>
+<pre tabindex="0"><code>    p = [60, 80, 110, 150, 190, 220]
+    #使用numpy数组
+    p = np.array([60, 80, 110, 150, 190, 220])
+</code></pre><p>6.对图像进行16x16图块分割，并计算灰度，对应色子1-6，并将图片转换成色子点阵图，调用自定义函数，获得处理后的图像以及色子点数文件。</p>
+<pre tabindex="0"><code>    im, dice_data = calculateDice(im, imagefile, p, dice, ROTATE)
+</code></pre><p>7.保存图片及色子点数文件</p>
+<pre tabindex="0"><code>    write_Dice(im, OUTPUTPATH, imagefile, dice_data)
+</code></pre><p>8.打印运行时间以及色子图片，按任意键退出</p>
+<pre tabindex="0"><code>    end_time = datetime.datetime.now()
+    print(&#39;程序运行时间:&#39;, end_time - start_time,&#39;秒&#39;)
+    cv2.imshow(imagefile, im)
+    cv2.waitKey(0)
+</code></pre><p>下面是自定义函数。 1.获得命令行变量，返回变量：imagefile（输入文件名）, DICE_WIDTH（色子列数）, ROTATE（色子2，3，6是否旋转） def getvalue():</p>
+<pre tabindex="0"><code>    if (len(sys.argv) &lt; 2 or len(sys.argv) &gt; 4):
+        print(&#34;Error, invalid arguments!&#34;)
+        print(&#34;Call with &#34; + sys.argv[0] + &#34; inputimage [tile-size] &#34;)
+        sys.exit(1)
+    ROTATE = False
+    DICE_WIDTH = 50
+    if len(sys.argv) == 2:
+        imagefile = sys.argv[1]
+    elif len(sys.argv) == 3:
+        imagefile = sys.argv[1]
+        DICE_WIDTH = int(sys.argv[2])
+        if (DICE_WIDTH &gt; 150 or DICE_WIDTH &lt; 30):
+            print(&#34;色子列数不正确，应在30-150之间&#34;)
+            sys.exit(1)
+    else:
+        imagefile = sys.argv[1]
+        DICE_WIDTH = int(sys.argv[2])
+        if (DICE_WIDTH &gt; 150 or DICE_WIDTH &lt; 30):
+            print(&#34;Dice quality not avialiabe. It betweet 30 and 150&#34;)
+            sys.exit(1)
+        if (sys.argv[3] == &#39;0&#39; or sys.argv[3] == &#39;1&#39;):
+            ROTATE = bool(int(sys.argv[3]))
+        else:
+            print(&#34;1:色子旋转, 0:色子不旋转&#34;)
+            sys.exit(1)
+    return imagefile, DICE_WIDTH, ROTATE
+</code></pre><p>2.调整图片，图片宽度为色子列数*16，返回调整后的图像数组，自定义函数输入变量为DICE_WIDTH（色子列数），image（输入的图像数组）</p>
+<pre tabindex="0"><code>def AjustImage(DICE_WIDTH, image):  # 调整图片
+    hight, width = image.shape[:2]
+    ratio = DICE_WIDTH * 16 / width
+    width = int(width * ratio)
+    hight = int(hight * ratio)
+    image = cv2.resize(image, (width, hight))
+    return image
+</code></pre><p>3.读入色子图形</p>
+<pre tabindex="0"><code>def getDice(DICEPATH):  # 读入色子图形文件
+    dice = np.zeros((9, 16, 16),dtype=&#39;u8&#39;)
+    for i in range(9):
+        dice[i] = cv2.imread(&#39;./dice_image/&#39; + str(i + 1) + &#39;w.png&#39;, 0)
+    return dice
+</code></pre><p>4.对图像进行处理，输入参数：im（图像数组）, imagefile（图片文件名）, p（灰色度分组数组）, dice（色子图片数组）, ROTATE（色子2，3，6是否旋转），返回处理后的图片数组im，以及色子点数数组image_data</p>
+<pre tabindex="0"><code>def calculateDice(im, imagefile, p, dice, ROTATE):  # 处理图片
+    x_max = int((im.shape[1]/16))
+    y_max = int((im.shape[0]/16))
+    dice_data = np.arange(y_max * x_max, dtype=&#34;u8&#34;).reshape(y_max, x_max)
+    dice2_rotate = False
+    dice3_rotate = False
+    dice6_rotate = False
+    cv2.namedWindow(imagefile, 0)
+    cv2.resizeWindow(imagefile, 640, int(640 * y_max / x_max))
+    for j in range(y_max):
+        for i in range(x_max):
+            # 获得16x16图片的色度平均值mean或中位数median
+            image_data = int(np.mean(im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16]))
+            # 根据色度值确定色子点数
+            if (image_data &lt; p[0]):
+                n = 5
+                if (ROTATE):
+                    dice6_rotate = not (dice6_rotate)
+                    if (dice6_rotate):
+                        n = 8
+            elif (image_data &gt;= p[0]) and (image_data &lt; p[1]):
+                n = 4
+            elif (image_data &gt;= p[1]) and (image_data &lt; p[2]):
+                n = 3
+            elif (image_data &gt;= p[2]) and (image_data &lt; p[3]):
+                n = 2
+                if (ROTATE):
+                    dice3_rotate = not (dice3_rotate)
+                    if (dice3_rotate):
+                        n = 7
+            elif (image_data &gt;= p[3]) and (image_data &lt; p[4]):
+                n = 1
+                if (ROTATE):
+                    dice2_rotate = not (dice2_rotate)
+                    if (dice2_rotate):
+                        n = 6
+            else:
+                n = 0
+            #将色子图片写入原图片
+            im[j * 16:(j + 1) * 16, i * 16:(i + 1) * 16] = dice[n]
+            dice_data[j, i] = n + 1
+            #显示色子覆盖原图片步骤
+            cv2.imshow(imagefile, im)
+            cv2.waitKey(1)
+    return im, dice_data
+</code></pre><p>5.保存图片及色子点数文件</p>
+<pre tabindex="0"><code>def write_Dice(im, OUTPUTPATH, imagefile, dice_data):  # 将色子点数写入文件
+    y_max, x_max = np.shape(dice_data)
+    DICE_WIDTH = x_max
+    print(&#34;色子数量&#34;, y_max, &#39;*&#39;, x_max, &#39;=&#39;, x_max * y_max)
+    cv2.imwrite(OUTPUTPATH + str(DICE_WIDTH) + &#39;_hist_&#39; + imagefile, im)
+    f = open(OUTPUTPATH + str(DICE_WIDTH) + &#39;_hist_&#39; + imagefile + &#39;.txt&#39;, &#39;wt&#39;)
+        for y in range(y_max):
+        f.write((str(y + 1) + &#39;:&#39;))
+        for x in range(x_max):
+            f.write(str(dice_data[y, x]) + &#39;,&#39;)
+        f.write(&#39;\n&#39;)
+    f.close()
+    print(&#39;文件保存完毕!&#39;)
+    return
+</code></pre><p>采用numpy，对数组进行运算非常方便。</p>
 <p>程序放到了GitHub上，也可以直接用</p>
 <p>git clone <a class="link" href="https://github.com/fallleaf/dice_portrait.git"  target="_blank" rel="noopener"
     >https://github.com/fallleaf/dice_portrait.git</a></p>
 <p>图框和色子都准备好了，这将是18年的第一个项目。</p>
+
+    
+        <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+            <footer class="article-time">
+                <div>
+                    <?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="800px" height="800px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path fill="#F9EBB2" d="M32,54.004c-19.686,0-28.677-19.123-29.917-22.001C3.321,29.121,12.288,10.004,32,10.004
+		c19.686,0,28.677,19.123,29.917,22.001C60.679,34.887,51.712,54.004,32,54.004z"/>
+	<circle fill="#45AAB8" cx="32" cy="32.004" r="14"/>
+	<circle fill="#506C7F" cx="32" cy="32.008" r="6"/>
+	<g>
+		<path fill="#394240" d="M63.934,31.645c-0.015-0.037-0.256-0.646-0.74-1.648C60.597,24.627,51.02,8.004,32,8.004
+			c-22.568,0-31.842,23.404-31.934,23.641c-0.089,0.231-0.089,0.487,0,0.719C0.158,32.6,9.432,56.004,32,56.004
+			c19.01,0,28.587-16.605,31.189-21.983c0.486-1.007,0.729-1.62,0.744-1.657C64.022,32.132,64.022,31.876,63.934,31.645z M32,54.004
+			c-19.686,0-28.677-19.123-29.917-22.001C3.321,29.121,12.288,10.004,32,10.004c19.686,0,28.677,19.123,29.917,22.001
+			C60.679,34.887,51.712,54.004,32,54.004z"/>
+		<path fill="#394240" d="M32,16.008c-8.837,0-16,7.163-16,16s7.163,16,16,16s16-7.163,16-16S40.837,16.008,32,16.008z M32,46.008
+			c-7.732,0-14-6.268-14-14s6.268-14,14-14s14,6.268,14,14S39.732,46.008,32,46.008z"/>
+		<path fill="#394240" d="M32,24.008c-4.418,0-8,3.582-8,8s3.582,8,8,8s8-3.582,8-8S36.418,24.008,32,24.008z M32,38.008
+			c-3.313,0-6-2.687-6-6s2.687-6,6-6s6,2.687,6,6S35.313,38.008,32,38.008z"/>
+		<path fill="#394240" d="M32,28.004c-0.553,0-1,0.447-1,1s0.447,1,1,1c1.104,0,2,0.896,2,2c0,0.553,0.447,1,1,1s1-0.447,1-1
+			C36,29.795,34.209,28.004,32,28.004z"/>
+	</g>
+</g>
+</svg>
+                    <span title="阅读次数" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="waline-pageview-count" data-path="/p/tech-dice-portrait-python/" /></span>
+                </div>
+            </footer>
+        </div>
+    
 
 </section>
 
@@ -685,7 +502,7 @@
 
 
 
-        <span>Licensed under CC BY-NC-SA 4.0</span>
+        <span>CC BY-NC-SA 4.0</span>
     </section>
     <section class="article-lastmod">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -749,12 +566,12 @@
                 
 <article class="has-image">
     <a href="/p/tech-dice-portrait/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-dice-portrait/cecilia_small.5ac5fc7929d995977aca38b64b188b2e_hu_288e43a00f7afabc.png"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-dice-portrait/cecilia_small.5ac5fc7929d995977aca38b64b188b2e_hu_288e43a00f7afabc.png" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post 色子肖像"
                         data-key="tech-dice-portrait" 
@@ -773,12 +590,12 @@
                 
 <article class="has-image">
     <a href="/p/tech-pcdn-overview/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-pcdn-overview/cover.1156c9f3f569e8d3ac9cbf929a79ef9b_hu_980ce765dbf164b2.webp"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-pcdn-overview/cover.1156c9f3f569e8d3ac9cbf929a79ef9b_hu_980ce765dbf164b2.webp" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post PCDN现象初探及浅见"
                         data-key="tech-pcdn-overview" 
@@ -797,16 +614,16 @@
                 
 <article class="has-image">
     <a href="/p/tech-fiber-direct-vs-transport-reliability/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-fiber-direct-vs-transport-reliability/cover.2064044f6fc5c751b663100afb5e69c8_hu_900d920fe45bec80.jpeg"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-fiber-direct-vs-transport-reliability/cover.0dac2d5e8ad2a8103e36b1ba120f5d7b_hu_c393f9e28a4fe86c.webp" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析"
                         data-key="tech-fiber-direct-vs-transport-reliability" 
-                        data-hash="md5-IGQET2/Fx1G2YxAK&#43;15pyA==">
+                        data-hash="md5-DawtXorSqBA&#43;NrG6Eg9dew==">
                 
             </div>
         
@@ -821,16 +638,16 @@
                 
 <article class="has-image">
     <a href="/p/tech-fiber-more-longer-more-fail/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-fiber-more-longer-more-fail/cover.4ec3f6df839bd2a452ae0b39ba8d1b6e_hu_f17ab5316111ee52.jpeg"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-fiber-more-longer-more-fail/cover.fa35bf5f58d78ea2923c16d7bd431725_hu_830589a5addcde42.webp" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post 距离越长，光缆就越容易出故障吗？"
                         data-key="tech-fiber-more-longer-more-fail" 
-                        data-hash="md5-TsP234Ob0qRSrgs5uo0bbg==">
+                        data-hash="md5-&#43;jW/X1jXjqKSPBbXvUMXJQ==">
                 
             </div>
         
@@ -845,16 +662,16 @@
                 
 <article class="has-image">
     <a href="/p/tech-cpo-data-center-energy-efficiency-revolution/">
-
+        
         
             <div class="article-image">
-                <img src="/p/tech-cpo-data-center-energy-efficiency-revolution/cover.8a22e44ba63615020ee2b875923d9421_hu_a3d71ce2c0d563ad.jpg"
-                        width="250"
-                        height="150"
+                <img src="/p/tech-cpo-data-center-energy-efficiency-revolution/cover.7866bdb957712bfc1a436dd0d13780ac_hu_6c1a798e1b4fb226.webp" 
+                        width="250" 
+                        height="150" 
                         loading="lazy"
                         alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命"
                         data-key="tech-cpo-data-center-energy-efficiency-revolution" 
-                        data-hash="md5-iiLkS6Y2FQIO4rh1kj2UIQ==">
+                        data-hash="md5-eGa9uVdxK/waQ23Q0TeArA==">
                 
             </div>
         

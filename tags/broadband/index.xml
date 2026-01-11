@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>宽带 on Reading,Thinking And Writing</title>
+        <title>宽带 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/broadband/</link>
-        <description>Recent content in 宽带 on Reading,Thinking And Writing</description>
+        <description>Recent content in 宽带 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -107,7 +107,7 @@
         <pubDate>Thu, 23 Oct 2025 07:45:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-paid-upload-bandwidth-future/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-paid-upload-bandwidth-future/cover.jpeg" alt="Featured image of post 终结“下载思维”：付费上传，才是宽带服务的未来" /&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;../tech-broadband-upload-speed-future&#34; &gt;《别被宽带数字忽悠了：上传速度，才是未来的分水岭》&lt;/a&gt; 中，我们说明了用户上网行为的变化，促使运营商要在上行速率业务上多做文章，才能实现差异化服务。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-paid-upload-bandwidth-future/cover.webp" alt="Featured image of post 终结“下载思维”：付费上传，才是宽带服务的未来" /&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;../tech-broadband-upload-speed-future&#34; &gt;《别被宽带数字忽悠了：上传速度，才是未来的分水岭》&lt;/a&gt; 中，我们说明了用户上网行为的变化，促使运营商要在上行速率业务上多做文章，才能实现差异化服务。&lt;/p&gt;
 &lt;p&gt;目前一个核心问题是当用户的上网行为逐渐从 &lt;strong&gt;“看”（消费）&lt;/strong&gt; 转向 &lt;strong&gt;“发”（生产、交互、AI训练）&lt;/strong&gt; 的时候，付费模式仍是上个时代的固定订阅制，没有做改变，这将束缚住新时代的 &lt;strong&gt;上传潜力&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;目前主流的宽带付费方式是 &lt;strong&gt;融合套餐制&lt;/strong&gt; ，本质上是一种“固定订阅”。这种模式在内容消费时代运行良好，但面对直播、远程办公、AI数据上传等场景，上传需求呈现出 &lt;strong&gt;突发性、非连续性和高带宽瞬时需求&lt;/strong&gt; 的特征。 &lt;strong&gt;用固定的“大水管”去满足不规律的“水枪式”爆发需求，注定是低效的。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;必须要采用一种新的计费方式与新兴的上行业务适配了。&lt;/strong&gt;&lt;/p&gt;
@@ -204,7 +204,7 @@
         <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-broadband-upload-speed-future/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-broadband-upload-speed-future/cover.jpg" alt="Featured image of post 别被宽带数字忽悠了：上传速度，才是未来的分水岭" /&gt;&lt;h2 id=&#34;宽带升级的下一个关键上行能力不容忽视&#34;&gt;宽带升级的下一个关键：上行能力不容忽视
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-broadband-upload-speed-future/cover.webp" alt="Featured image of post 别被宽带数字忽悠了：上传速度，才是未来的分水岭" /&gt;&lt;h2 id=&#34;宽带升级的下一个关键上行能力不容忽视&#34;&gt;宽带升级的下一个关键：上行能力不容忽视
 &lt;/h2&gt;&lt;p&gt;过去十年，宽带行业在下行速率上取得了显著进展。从百兆到千兆，再到如今的万兆接入，用户的下载体验不断提升，高清视频、大型文件传输、在线娱乐都变得更加流畅。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;但与此同时，用户的使用模式也在发生深刻变化。用户上网，不再是被动的接受信息，而是主动参与到互联网流量的生产中。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;远程办公、视频会议、直播创作、智能安防等新兴应用，对上传能力提出了更高要求。但受制上传带宽的限制，部分业务体验不佳， &lt;strong&gt;上行带宽，正逐步成为影响用户体验的重要因素。&lt;/strong&gt;&lt;/p&gt;
@@ -249,7 +249,7 @@
         <pubDate>Thu, 11 Sep 2025 00:39:23 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/latecomer-broadband-odn-breakthrough-strategy/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/latecomer-broadband-odn-breakthrough-strategy/cover.jpeg" alt="Featured image of post 不争“一时之快”，要谋“长久之道”，一个宽带后发者的破局逻辑" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/latecomer-broadband-odn-breakthrough-strategy/cover.webp" alt="Featured image of post 不争“一时之快”，要谋“长久之道”，一个宽带后发者的破局逻辑" /&gt;&lt;blockquote&gt;
 &lt;p&gt;在这个言必称“万兆”的时代，我们选择了一条更为沉静的道路——不追逐表面的技术光环，而是俯身深耕，致力于为每一个小区、每一栋楼宇，铺设一条足以支撑20年演进的光纤网络。
 因为我们深信： &lt;strong&gt;真正的宽带竞争力，不在于今日速度的巅峰，而在于明日能否持续稳健地奔跑。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;

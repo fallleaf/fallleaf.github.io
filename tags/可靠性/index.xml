@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>可靠性 on Reading,Thinking And Writing</title>
+        <title>可靠性 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</link>
-        <description>Recent content in 可靠性 on Reading,Thinking And Writing</description>
+        <description>Recent content in 可靠性 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Fri, 12 Dec 2025 09:35:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/cover.jpeg" alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析" /&gt;&lt;p&gt;承载关键业务电路时，选择何种方式是一个涉及技术、成本与风险的重大决策。是采用 &lt;strong&gt;简单直接的光纤直驱&lt;/strong&gt; ，还是选择 &lt;strong&gt;具备冗余保护的传输系统承载&lt;/strong&gt; 呢？大概大部分人都会选择最“ &lt;strong&gt;安全&lt;/strong&gt; ”的方式，就是上传输系统。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/cover.webp" alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析" /&gt;&lt;p&gt;承载关键业务电路时，选择何种方式是一个涉及技术、成本与风险的重大决策。是采用 &lt;strong&gt;简单直接的光纤直驱&lt;/strong&gt; ，还是选择 &lt;strong&gt;具备冗余保护的传输系统承载&lt;/strong&gt; 呢？大概大部分人都会选择最“ &lt;strong&gt;安全&lt;/strong&gt; ”的方式，就是上传输系统。&lt;/p&gt;
 &lt;p&gt;但是，是否真是这样呢？&lt;/p&gt;
 &lt;h2 id=&#34;核心问题如何实现高可靠性&#34;&gt;核心问题：如何实现高可靠性？
 &lt;/h2&gt;&lt;p&gt;我们对两种主要的承载方式进行可靠性分析，其中，可靠性（Reliability）用$R$来表示，它代表系统在给定时间内无故障运行的概率。&lt;/p&gt;
@@ -111,7 +111,7 @@ $$Q_{临界} = \frac{1}{2 - 0.8} = \frac{1}{1.2} \approx 0.833$$&lt;p&gt;在这�
         <pubDate>Sat, 11 Oct 2025 07:45:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/cover.jpeg" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/cover.webp" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;乍听之下，这似乎不用讨论——当然越长越容易坏了，线路越长，风险点越多，还有一个指标可以通过反算来说明这个问题。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;平均百皮长公里故障次数 = 障碍总次数 ÷ 光缆线路总长度 × 100&lt;/p&gt;

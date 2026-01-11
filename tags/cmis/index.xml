@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>CMIS on Reading,Thinking And Writing</title>
+        <title>CMIS on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/cmis/</link>
-        <description>Recent content in CMIS on Reading,Thinking And Writing</description>
+        <description>Recent content in CMIS on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-cmis/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cmis/cover.jpg" alt="Featured image of post CMIS：从“看”到“管”，光网络开放解耦的隐性基石" /&gt;&lt;p&gt;在光通信的世界里，我们总能听到那些令人振奋的数字：400G、800G、1.6T……它们代表着速度的极限和带宽的无限可能。但如果我告诉你，决定未来网络能否真正开放、智能、可编程的关键，并不在于这些数字里，而在于一个听起来有些陌生的名字——CMIS，你信吗？&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cmis/cover.webp" alt="Featured image of post CMIS：从“看”到“管”，光网络开放解耦的隐性基石" /&gt;&lt;p&gt;在光通信的世界里，我们总能听到那些令人振奋的数字：400G、800G、1.6T……它们代表着速度的极限和带宽的无限可能。但如果我告诉你，决定未来网络能否真正开放、智能、可编程的关键，并不在于这些数字里，而在于一个听起来有些陌生的名字——CMIS，你信吗？&lt;/p&gt;
 &lt;p&gt;今天，我们就来聊聊这个在幕后默默发挥作用的“隐藏英雄”。&lt;/p&gt;
 &lt;h2 id=&#34;故事的开端一个只看数据无法指挥的时代&#34;&gt;故事的开端：一个“只看数据，无法指挥”的时代
 &lt;/h2&gt;&lt;p&gt;想象一下，你是一位光网络运维工程师，你的工作是确保网络稳定运行。在 CMIS 出现之前，你手中的“工具”主要是 SFF-8472。&lt;/p&gt;

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>运维 on Reading,Thinking And Writing</title>
+        <title>运维 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/%E8%BF%90%E7%BB%B4/</link>
-        <description>Recent content in 运维 on Reading,Thinking And Writing</description>
+        <description>Recent content in 运维 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/cover.jpg" alt="Featured image of post 极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！" /&gt;&lt;p&gt;在数字化转型加速的今天，网络稳定性与运维效率成为运营商的核心竞争力。中国联通子公司中讯设计，推出全新自研产品—— &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; ，正式在 &lt;strong&gt;智慧供应链科创转化专区&lt;/strong&gt; 上线，助力光缆网络运维迈入智能化新时代！&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/cover.webp" alt="Featured image of post 极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！" /&gt;&lt;p&gt;在数字化转型加速的今天，网络稳定性与运维效率成为运营商的核心竞争力。中国联通子公司中讯设计，推出全新自研产品—— &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; ，正式在 &lt;strong&gt;智慧供应链科创转化专区&lt;/strong&gt; 上线，助力光缆网络运维迈入智能化新时代！&lt;/p&gt;
 &lt;h2 id=&#34;产品概览一眼看懂光缆健康&#34;&gt;产品概览：一眼看懂光缆健康
 &lt;/h2&gt;&lt;p&gt;系统首页集成了 &lt;strong&gt;故障告警分析、光缆健康度评价、故障工单指标、光缆运行全景视图&lt;/strong&gt; 等功能，基于GIS地图与OTDR探测能力，实现 &lt;strong&gt;光缆故障精准定位&lt;/strong&gt; ，让运维人员一目了然，快速响应。&lt;/p&gt;
 &lt;h2 id=&#34;软硬一体自主产权性能卓越&#34;&gt;软硬一体：自主产权，性能卓越

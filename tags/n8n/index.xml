@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>N8n on Reading,Thinking And Writing</title>
+        <title>N8n on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/n8n/</link>
-        <description>Recent content in N8n on Reading,Thinking And Writing</description>
+        <description>Recent content in N8n on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Thu, 04 Sep 2025 10:45:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/ai-second-brain-with-n8n/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-second-brain-with-n8n/cover.jpeg" alt="Featured image of post 【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/ai-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎 配套资源 ，获取一键导入的 n8n 配置文件。在导入之前，确保 n8n、ollama 和 Qwen 都正常运行，相关安装方法，见网上教程。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -24,15 +24,8 @@
 &lt;p&gt;现在，是时候兑现承诺了。&lt;/p&gt;
 &lt;p&gt;本文将带您 &lt;strong&gt;从零开始，用开源工具本地搭建一个可用的“第二大脑”&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;一个基于 n8n + Ollama + Qwen 的智能系统，流程如下图：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;战略生成流程知识库模块读取目录文件切分文本Ollama 向量化存入 Simple Vector Store任务输入感知模块融合模块查询 Vector Store Tool生成模块输出初稿专家介入
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;战略生成流程知识库模块读取目录文件切分文本Ollama 向量化存入 Simple Vector Store任务输入感知模块融合模块查询 Vector Store Tool生成模块输出初稿专家介入
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;• &lt;strong&gt;知识库模块&lt;/strong&gt; ：构建企业“战略记忆中枢”，将散落的文档转化为可检索、可追溯、可进化的智能资产。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;感知模块&lt;/strong&gt; ：听懂任务背后的“弦外之音”，解析出关键词与战略意图。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;融合模块&lt;/strong&gt; ：激活企业“沉睡的知识资产”，实现跨文档、跨时间的语义关联。&lt;/li&gt;
@@ -49,25 +42,13 @@
 &lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;资料输入&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;节点类型&lt;/strong&gt; ： &lt;code&gt;n8n-nodes-base.readWriteFile&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;fileSelector&amp;#34;: &amp;#34;d:\\\\second_brain_demo\\\\*&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;options&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;fileExtension&amp;#34;: &amp;#34;.txt&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  }
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;fileSelector&amp;#34;: &amp;#34;d:\\\\second_brain_demo\\\\*&amp;#34;,
+  &amp;#34;options&amp;#34;: {
+    &amp;#34;fileExtension&amp;#34;: &amp;#34;.txt&amp;#34;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;功能&lt;/strong&gt; ：扫描 &lt;code&gt;d:\second_brain_demo\&lt;/code&gt; 目录下所有 &lt;code&gt;.txt&lt;/code&gt; 文件，支持通配符。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;输出&lt;/strong&gt; ：以二进制形式返回每个文件内容。&lt;/li&gt;
 &lt;/ul&gt;
@@ -79,21 +60,11 @@
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Recursive Character Text Splitter&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;chunkSize&amp;#34;: 100,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;chunkOverlap&amp;#34;: 20
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;chunkSize&amp;#34;: 100,
+  &amp;#34;chunkOverlap&amp;#34;: 20
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;作用&lt;/strong&gt; ：将长文本按字符递归切分为小片段，避免超出模型上下文。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;切分逻辑&lt;/strong&gt; ：优先按 &lt;code&gt;\n\n&lt;/code&gt; 、 &lt;code&gt;\n&lt;/code&gt; 、 、&lt;code&gt;.&lt;/code&gt; 分割。&lt;/li&gt;
 &lt;/ul&gt;
@@ -105,33 +76,17 @@
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Embeddings Ollama&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;#34;model&amp;#34;: &amp;#34;dengcao/bge-large-zh-v1.5:latest&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;model&amp;#34;: &amp;#34;dengcao/bge-large-zh-v1.5:latest&amp;#34;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;功能&lt;/strong&gt; ：调用本地 Ollama 服务，使用中文优化的 &lt;code&gt;bge-large-zh&lt;/code&gt; 模型生成向量。&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;优势&lt;/strong&gt; ：专为中文语义设计，在“领导讲话”“试点报告”等场景表现优异。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;✅ 需提前运行：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama pull dengcao/bge-large-zh-v1.5
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ollama pull dengcao/bge-large-zh-v1.5
+&lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;4-节点-4存入向量数据库simple-vector-store&#34;&gt;4. 节点 4：存入向量数据库（Simple Vector Store）
 &lt;/h3&gt;&lt;ul&gt;
@@ -210,29 +165,15 @@
 &lt;li&gt;• &lt;strong&gt;记忆机制&lt;/strong&gt; ： &lt;code&gt;Window Buffer Memory&lt;/code&gt; （保留上下文）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;-系统提示词system-message&#34;&gt;📌 系统提示词（System Message）
-&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;你是一名通信网络战略规划专家以及专业的任务分析助手。你的职责是分析用户的要求：&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;json&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chatInput&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}}&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，根据查询知识库&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;company_documents_tool&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;中的相关内容&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;输出框架大纲。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;请严格遵守以下规则：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;内容从知识库&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;company_documents_tool&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;获取&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;输出内容只包含“需要做什么”，不得加入额外解释&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;3.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;输出格式为&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;JSON&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，必须包含：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;task&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;一句话说明要完成的具体任务&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;requirements&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;要求1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;要求2&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;-工具绑定&#34;&gt;📌 工具绑定
+&lt;/h4&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;你是一名通信网络战略规划专家以及专业的任务分析助手。你的职责是分析用户的要求：{{$json.chatInput}}，根据查询知识库 company_documents_tool 中的相关内容, 输出框架大纲。
+
+请严格遵守以下规则：
+1. 内容从知识库 company_documents_tool 获取
+2. 输出内容只包含“需要做什么”，不得加入额外解释
+3. 输出格式为 JSON，必须包含：
+   - &amp;#34;task&amp;#34;: &amp;#34;一句话说明要完成的具体任务&amp;#34;
+   - &amp;#34;requirements&amp;#34;: [&amp;#34;要求1&amp;#34;, &amp;#34;要求2&amp;#34;, ...]
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;-工具绑定&#34;&gt;📌 工具绑定
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;• &lt;strong&gt;Vector Store Tool&lt;/strong&gt; ： &lt;code&gt;company_documents_tool&lt;/code&gt; ，用于检索知识库&lt;/li&gt;
 &lt;/ul&gt;
@@ -251,29 +192,15 @@
 &lt;li&gt;• &lt;strong&gt;类型&lt;/strong&gt; ： &lt;code&gt;@n8n/n8n-nodes-langchain.agent&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;系统提示词&lt;/strong&gt; ：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;你是一名通信网络战略规划专家。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;你是一个专业的文档编写助手。你的任务是根据任务要求，仅使用知识库&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;company_documents_tool&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;提供的内容，生成最终文档。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;请严格遵守以下规则：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;所有内容必须来自知识库，不得引入外部信息&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;可以在知识库范围内进行归纳、整合，但不得编造&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;3.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;如果某项信息未找到，请写“相关信息未在知识库中找到”&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;4.&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;文风：简洁、正式、专业&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;你是一名通信网络战略规划专家。
+你是一个专业的文档编写助手。你的任务是根据任务要求，仅使用知识库 company_documents_tool 提供的内容，生成最终文档。
+
+请严格遵守以下规则：
+1. 所有内容必须来自知识库，不得引入外部信息
+2. 可以在知识库范围内进行归纳、整合，但不得编造
+3. 如果某项信息未找到，请写“相关信息未在知识库中找到”
+4. 文风：简洁、正式、专业
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;✅ 输入来自“感知模块”的结构化任务框架，输出完整方案初稿。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>成长与学习 on Reading,Thinking And Writing</title>
+        <title>成长与学习 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/categories/growth/</link>
-        <description>Recent content in 成长与学习 on Reading,Thinking And Writing</description>
+        <description>Recent content in 成长与学习 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.jpeg" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id=&#34;年长者的逆袭&#34;&gt;年长者的逆袭
+        <description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id=&#34;年长者的逆袭&#34;&gt;年长者的逆袭
 &lt;/h2&gt;&lt;p&gt;在人工智能的使用方式上，年轻人与年长者之间出现了一种有趣的分化：年轻人更喜欢把LLM当成生活顾问，频繁提问；而年长者则倾向于将其用作知识验证的工具，提问更精准。这种差异揭示了一个重要事实——在AI时代，使用频率并不代表掌握程度。&lt;/p&gt;
 &lt;p&gt;过去的每一次技术革命几乎都属于年轻人，他们学习快、敢尝试、没有心理包袱。然而这一次的AI浪潮，规律似乎正在反转。AI并不是一个简单的工具升级，而是一个 &lt;strong&gt;“垃圾进、垃圾出”&lt;/strong&gt; 的黑箱系统，输入的质量决定了输出的价值。&lt;/p&gt;
 &lt;p&gt;在这样的体系中，经验第一次成为决定性的筹码。AI不提供真理，它只是模仿逻辑的镜像。输入者如果缺乏判断力，再先进的模型也只能制造幻觉。&lt;/p&gt;
@@ -156,7 +156,7 @@
         <pubDate>Tue, 07 Oct 2025 08:15:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/cover.jpeg" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id=&#34;为什么llm总跑偏先搞清它其实不会懂你&#34;&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
+        <description>&lt;img src="https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/cover.webp" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id=&#34;为什么llm总跑偏先搞清它其实不会懂你&#34;&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
 &lt;/h2&gt;&lt;p&gt;你有没有遇到过这样的情况：问LLM一个问题，有时候它回答得像个专家，精准又到位；有时候它就好像刚学会说话的小孩，答非所问，甚至自说自话。难道LLM在“抽风”？其实不完全是。&lt;/p&gt;
 &lt;p&gt;LLM的本质其实是个超级“猜词机器”：它并不真正理解你说话的深意，而是在它庞大的学习数据中，预测“下一句最可能出现的词”是什么。换句话说，它靠概率输出内容。&lt;/p&gt;
 &lt;p&gt;当你给它的提示话很模糊时，它只能在无数的可能中猜答案，自然容易“跑偏”。&lt;/p&gt;
@@ -233,45 +233,23 @@
 &lt;/h2&gt;&lt;h3 id=&#34;自驾游计划&#34;&gt;自驾游计划
 &lt;/h3&gt;&lt;p&gt;生成一份适合一家三口的国庆假期自驾游计划，涵盖路线、每日安排、住宿建议与注意事项。&lt;/p&gt;
 &lt;h4 id=&#34;dice-框架提示词可粘贴到大模型里看看输出&#34;&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
-&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#DATA#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;我们是一家三口（两位成人，一位10岁孩子），计划在2025年10月2日至10月7日国庆假期期间自驾从郑州前往重庆旅游。希望行程轻松、有趣，适合家庭出行。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#IDENTIFY#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;请你扮演一位经验丰富的国内亲子旅行规划师，熟悉中西部城市间自驾路线、家庭友好型景点与节假日出行建议。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#CLARIFY#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;你可以先问我一个问题，以确认我们对住宿预算、每日驾驶时长或景点偏好的具体要求。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#EXECUTE#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;请根据我们的时间安排，生成一份6天的行程计划，包括：
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 每日路线与预计行驶时间；
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 推荐景点（适合孩子）与活动安排；
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 住宿建议（中等价位，安全舒适）；
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 每日注意事项（如交通、天气、节假高峰）。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;输出格式为分日条列，每日标题为“Day X：城市名”，语言使用简体中文。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;clear-原则优化&#34;&gt;C.L.E.A.R. 原则优化
+&lt;/h4&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#DATA#
+我们是一家三口（两位成人，一位10岁孩子），计划在2025年10月2日至10月7日国庆假期期间自驾从郑州前往重庆旅游。希望行程轻松、有趣，适合家庭出行。
+
+#IDENTIFY#
+请你扮演一位经验丰富的国内亲子旅行规划师，熟悉中西部城市间自驾路线、家庭友好型景点与节假日出行建议。
+
+#CLARIFY#
+你可以先问我一个问题，以确认我们对住宿预算、每日驾驶时长或景点偏好的具体要求。
+
+#EXECUTE#
+请根据我们的时间安排，生成一份6天的行程计划，包括：
+- 每日路线与预计行驶时间；
+- 推荐景点（适合孩子）与活动安排；
+- 住宿建议（中等价位，安全舒适）；
+- 每日注意事项（如交通、天气、节假高峰）。
+输出格式为分日条列，每日标题为“Day X：城市名”，语言使用简体中文。
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;clear-原则优化&#34;&gt;C.L.E.A.R. 原则优化
 &lt;/h4&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -305,43 +283,22 @@
 &lt;h3 id=&#34;学术论文写作辅助&#34;&gt;学术论文写作辅助
 &lt;/h3&gt;&lt;p&gt;撰写一篇关于人工智能伦理的学术论文，目标是投稿至国际期刊。希望获得结构优化建议与引用规范指导，强调逻辑严密、表达规范、支持多轮修订。&lt;/p&gt;
 &lt;h4 id=&#34;dice-框架提示词可粘贴到大模型里看看输出-1&#34;&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
-&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#DATA#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;我正在撰写一篇关于人工智能伦理的学术论文，主题聚焦于算法偏见与责任归属问题。目标是投稿至国际科技伦理期刊，要求逻辑清晰、论证严密、引用格式符合国际标准（如 APA 或 IEEE）。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#IDENTIFY#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;请你扮演一位资深学术编辑，熟悉科技伦理领域，具备国际期刊审稿经验，了解常见结构问题与引用规范。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#CLARIFY#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在开始修改前，请先提出一个关于文章论点结构的关键问题，以确认我是否已建立清晰的中心论点与支持层次。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#EXECUTE#
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;请根据我的主题与目标，提出具体的章节重组建议，包括：
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 推荐的章节划分与标题；
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 每章应承担的论证任务；
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 引用格式建议（如文内引用、参考文献排列方式）；
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- 总结建议不超过 500 字，使用中文表达，风格正式、学术。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;clear-原则优化-1&#34;&gt;C.L.E.A.R. 原则优化
+&lt;/h4&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#DATA#
+我正在撰写一篇关于人工智能伦理的学术论文，主题聚焦于算法偏见与责任归属问题。目标是投稿至国际科技伦理期刊，要求逻辑清晰、论证严密、引用格式符合国际标准（如 APA 或 IEEE）。
+
+#IDENTIFY#
+请你扮演一位资深学术编辑，熟悉科技伦理领域，具备国际期刊审稿经验，了解常见结构问题与引用规范。
+
+#CLARIFY#
+在开始修改前，请先提出一个关于文章论点结构的关键问题，以确认我是否已建立清晰的中心论点与支持层次。
+
+#EXECUTE#
+请根据我的主题与目标，提出具体的章节重组建议，包括：
+- 推荐的章节划分与标题；
+- 每章应承担的论证任务；
+- 引用格式建议（如文内引用、参考文献排列方式）；
+- 总结建议不超过 500 字，使用中文表达，风格正式、学术。
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;clear-原则优化-1&#34;&gt;C.L.E.A.R. 原则优化
 &lt;/h4&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -385,7 +342,7 @@
         <pubDate>Thu, 02 Oct 2025 20:43:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/growth-how-to-use-llm/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-how-to-use-llm/cover.jpeg" alt="Featured image of post 我们该如何使用大语言模型" /&gt;&lt;h2 id=&#34;大语言模型的基本原理与本质&#34;&gt;大语言模型的基本原理与本质
+        <description>&lt;img src="https://blog.fallleaf.net/p/growth-how-to-use-llm/cover.webp" alt="Featured image of post 我们该如何使用大语言模型" /&gt;&lt;h2 id=&#34;大语言模型的基本原理与本质&#34;&gt;大语言模型的基本原理与本质
 &lt;/h2&gt;&lt;p&gt;许多人在使用大语言模型（LLM）时，会产生一种直观的错觉：模型的输出好像是经过深思熟虑的“思考结果”。这种感受并不奇怪，因为 LLM 生成的文字往往流畅、有逻辑，常常给你新的思路，甚至带有推理色彩，让人联想到“它在思考”。这其实源于人类对语言的天然信任——我们习惯把清晰有序的表达与真实的认知挂钩。&lt;/p&gt;
 &lt;p&gt;然而，LLM 并没有意识、意图或理解能力。它既不会判断对错，也不会形成观点。它的核心运作机制，并不是“理解”语言，而是基于海量文本训练出的概率预测系统。它通过庞大的参数系统，学习语言中词与词之间的常见搭配与使用规律。当我们输入一段文字时，模型会根据上下文计算出最可能出现的下一个词，并以此逐字生成连贯的文字。&lt;/p&gt;
 &lt;p&gt;因此，LLM 的本质是一个 &lt;strong&gt;概率驱动的语言生成系统&lt;/strong&gt; 。它的“知识”来自于训练数据的模式，而不是对现实世界的认知。它所谓的“创造力”，其实是对语言的多样组合与概率探索。当我们看到 LLM 给出新颖的答案时，实质上是它利用已学到的规律，组合出你未曾尝试过的表达路径，而不是在进行真正的思考。&lt;/p&gt;
@@ -449,7 +406,7 @@
         <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/cover.jpg" alt="Featured image of post 月光--吉他曲（索尔）" /&gt;&lt;p&gt;索尔（Fernando Sor, 1778–1839）是西班牙19世纪早期最重要的吉他作曲家与演奏家之一，被后人誉为“吉他之父”，西班牙人称他为“吉他的贝多芬”，是吉他古典时期的代表人物。&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/cover.webp" alt="Featured image of post 月光--吉他曲（索尔）" /&gt;&lt;p&gt;索尔（Fernando Sor, 1778–1839）是西班牙19世纪早期最重要的吉他作曲家与演奏家之一，被后人誉为“吉他之父”，西班牙人称他为“吉他的贝多芬”，是吉他古典时期的代表人物。&lt;/p&gt;
 &lt;p&gt;《月光》（Moonlight）是他创作的一首著名吉他小品，原名为《B小调练习曲》（Étude in B minor, Op. 29, No. 13）。这首作品最初并非以“月光”为题，而是后人因其旋律宁静、柔和、富有诗意，联想到月夜的意境，遂赋予其“月光”这一浪漫化的标题，成为古典吉他曲目中最广为流传的小品之一。据说曲名《月光》是日本人出版时所取。如同贝多芬的《升C小调钢琴奏鸣曲》，又称“月光奏鸣曲”一样，都是后人加的，不一定能真正反映当时作曲者所表达的思想，到不如不加别名。&lt;/p&gt;
 &lt;p&gt;我演奏的作品，请欣赏：&lt;/p&gt;
 &lt;audio controls style=&#34;width: 100%;&#34;&gt;

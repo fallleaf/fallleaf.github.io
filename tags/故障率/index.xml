@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>故障率 on Reading,Thinking And Writing</title>
+        <title>故障率 on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/%E6%95%85%E9%9A%9C%E7%8E%87/</link>
-        <description>Recent content in 故障率 on Reading,Thinking And Writing</description>
+        <description>Recent content in 故障率 on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Sat, 11 Oct 2025 07:45:00 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/cover.jpeg" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/cover.webp" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;乍听之下，这似乎不用讨论——当然越长越容易坏了，线路越长，风险点越多，还有一个指标可以通过反算来说明这个问题。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;平均百皮长公里故障次数 = 障碍总次数 ÷ 光缆线路总长度 × 100&lt;/p&gt;

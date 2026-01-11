@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>AOC on Reading,Thinking And Writing</title>
+        <title>AOC on Reading, Thinking and Writing</title>
         <link>https://blog.fallleaf.net/tags/aoc/</link>
-        <description>Recent content in AOC on Reading,Thinking And Writing</description>
+        <description>Recent content in AOC on Reading, Thinking and Writing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
@@ -13,7 +13,7 @@
         <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-microsoft-architecture-ai-financial-revolution/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-microsoft-architecture-ai-financial-revolution/cover.jpg" alt="Featured image of post GPU之后的算力革命?微软新架构让AI推理与金融优化&#34;一机双飞&#34;" /&gt;&lt;blockquote&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-microsoft-architecture-ai-financial-revolution/cover.webp" alt="Featured image of post GPU之后的算力革命?微软新架构让AI推理与金融优化&#34;一机双飞&#34;" /&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;你有没有想过——&lt;/strong&gt;
 &lt;strong&gt;未来训练一个大模型，可能不再需要耗电如“小电站”的GPU集群？&lt;/strong&gt;
 &lt;strong&gt;处理一笔复杂的跨国金融结算，可能不需要数小时的服务器运算？&lt;/strong&gt;
