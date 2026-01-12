@@ -305,59 +305,59 @@
         </item>
         <item>
         <title>效率幻觉：为什么 AI 让我们看似更快，实则更慢？</title>
-        <link>https://blog.fallleaf.net/p/ai-efficiency-illusion/</link>
+        <link>https://blog.fallleaf.net/p/notes-efficiency-illusion/</link>
         <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.fallleaf.net/p/ai-efficiency-illusion/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-efficiency-illusion/cover.webp" alt="Featured image of post 效率幻觉：为什么 AI 让我们看似更快，实则更慢？" /&gt;&lt;h2 id=&#34;ai-生产力陷阱为什么团队越用-ai效率反而越低&#34;&gt;AI 生产力陷阱：为什么团队越用 AI，效率反而越低？
+        <guid>https://blog.fallleaf.net/p/notes-efficiency-illusion/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-efficiency-illusion/cover.webp" alt="Featured image of post 效率幻觉：为什么 AI 让我们看似更快，实则更慢？" /&gt;&lt;h2 id=&#34;ai-生产力陷阱为什么团队越用-ai效率反而越低&#34;&gt;AI 生产力陷阱：为什么团队越用 AI，效率反而越低？
 &lt;/h2&gt;&lt;p&gt;过去两年，AI 工具的应用呈现出爆发式增长。从撰写邮件、起草报告，到生成代码和设计初稿，AI 已经快速进入了日常工作流程。&lt;/p&gt;
 &lt;p&gt;然而， &lt;strong&gt;一项由麻省理工学院（MIT）与德克萨斯大学奥斯汀分校联合开展的研究&lt;/strong&gt; 提醒我们：AI 并非天然的效率加速器。在许多情况下，它可能制造出一种新的低效形式—— &lt;strong&gt;“无效产出”（Workslop）&lt;/strong&gt; ，并逐步削弱团队的协作质量与整体生产力。&lt;/p&gt;
 &lt;h2 id=&#34;什么是无效产出workslop&#34;&gt;什么是“无效产出”（Workslop）？
 &lt;/h2&gt;&lt;p&gt;研究人员观察到，AI 的高产出特性带来了大量内容的快速生成，但其中不少缺乏深度、准确性或应用价值。他们将这类内容定义为 &lt;strong&gt;Workslop&lt;/strong&gt; ，即“无效产出”或“虚假工作泡沫”。&lt;/p&gt;
 &lt;p&gt;其主要表现包括：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;• &lt;strong&gt;形式完整但缺乏实质&lt;/strong&gt; ：结构清晰、语言流畅，但逻辑和价值不足。&lt;/li&gt;
-&lt;li&gt;• &lt;strong&gt;言之凿凿但事实失真&lt;/strong&gt; ：看似专业，实则缺乏可靠的依据或数据支持。&lt;/li&gt;
-&lt;li&gt;• &lt;strong&gt;内容过剩但信息稀缺&lt;/strong&gt; ：重复、模板化和冗余内容堆积，导致有用信息匮乏。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;形式完整但缺乏实质&lt;/strong&gt; ：结构清晰、语言流畅，但逻辑和价值不足。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;言之凿凿但事实失真&lt;/strong&gt; ：看似专业，实则缺乏可靠的依据或数据支持。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内容过剩但信息稀缺&lt;/strong&gt; ：重复、模板化和冗余内容堆积，导致有用信息匮乏。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这些内容往往让人误以为工作已经完成，但团队在处理时需要投入额外的时间与精力来筛选和修正，从而延长了实际工作周期。&lt;/p&gt;
 &lt;h2 id=&#34;为什么无效产出会降低效率&#34;&gt;为什么“无效产出”会降低效率？
 &lt;/h2&gt;&lt;p&gt;研究指出，AI 生成内容在以下几个方面对组织效率造成负面影响：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;1. &lt;strong&gt;信息过载&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;信息过载&lt;/strong&gt;
 AI 生成的内容量过大，超出人类的处理能力，反而使得决策过程被拖慢。&lt;/li&gt;
-&lt;li&gt;2. &lt;strong&gt;二次加工成本增加&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;二次加工成本增加&lt;/strong&gt;
 由于缺乏事实核查和上下文理解，团队成员需要反复验证和修改，抵消了原本节省的时间。&lt;/li&gt;
-&lt;li&gt;3. &lt;strong&gt;协作信任下降&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;协作信任下降&lt;/strong&gt;
 当员工怀疑同事提交的成果未经审慎处理而直接来自 AI，跨团队合作的信任度会明显降低。&lt;/li&gt;
-&lt;li&gt;4. &lt;strong&gt;思维依赖性增强&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;思维依赖性增强&lt;/strong&gt;
 长期依赖 AI 完成常规工作，可能导致主动思考和创造性解决问题的能力下降。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;如何更有效地使用-ai&#34;&gt;如何更有效地使用 AI？
 &lt;/h2&gt;&lt;p&gt;研究并未否认 AI 的价值，而是提出了更合理的使用路径：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;1. &lt;strong&gt;划定应用范围&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;划定应用范围&lt;/strong&gt;
 适合 AI 的是结构化、标准化的工作，例如初稿撰写、数据整理或格式处理。涉及战略判断、客户沟通或创意构思的任务应仍由人主导。&lt;/li&gt;
-&lt;li&gt;2. &lt;strong&gt;建立复核机制&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;建立复核机制&lt;/strong&gt;
 将 AI 输出视为“草稿”，必须经过事实核查和逻辑验证后，才能作为正式成果使用。&lt;/li&gt;
-&lt;li&gt;3. &lt;strong&gt;强调质量而非数量&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;强调质量而非数量&lt;/strong&gt;
 应将 AI 用作提升分析、整合与创新的辅助工具，而不是依赖它生成大量表面完整的内容。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;结语&#34;&gt;结语
 &lt;/h2&gt;&lt;p&gt;AI 是工具，而非答案。它能否提升生产力，取决于使用者如何设定边界和制定流程。研究者指出： &lt;strong&gt;AI 不会自动创造效率，它更可能放大既有的习惯——好的更高效，差的更低效。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;对于个人和组织而言，真正的效率提升，不在于 AI 的使用范围，而在于如何在人机协同中保持专业判断和清晰分工。&lt;/p&gt;
 &lt;p&gt;参考文章 ：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(&lt;a class=&#34;link&#34; href=&#34;https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity&lt;/a&gt;)&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化</title>
-        <link>https://blog.fallleaf.net/p/ai-llm-dependence-critical-thinking-degrade/</link>
+        <link>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</link>
         <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.fallleaf.net/p/ai-llm-dependence-critical-thinking-degrade/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-llm-dependence-critical-thinking-degrade/cover.webp" alt="Featured image of post 别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化" /&gt;&lt;h2 id=&#34;引子&#34;&gt;引子
+        <guid>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/cover.webp" alt="Featured image of post 别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化" /&gt;&lt;h2 id=&#34;引子&#34;&gt;引子
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;网络段子：&lt;/p&gt;
 &lt;/blockquote&gt;

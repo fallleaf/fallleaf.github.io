@@ -81,10 +81,10 @@
         </item>
         <item>
         <title>通信设计院杂谈</title>
-        <link>https://blog.fallleaf.net/p/work-something-about-telecom-design-institue/</link>
+        <link>https://blog.fallleaf.net/p/notes-something-about-telecom-design-institue/</link>
         <pubDate>Thu, 07 Dec 2006 15:03:09 +0800</pubDate>
         
-        <guid>https://blog.fallleaf.net/p/work-something-about-telecom-design-institue/</guid>
+        <guid>https://blog.fallleaf.net/p/notes-something-about-telecom-design-institue/</guid>
         <description>&lt;p&gt;在TelReading的BBS 上，网友shejiyuan 写了一片关于设计院间比较的文章，挺不错的， 摘录给大家阅读。&lt;/p&gt;
 &lt;p&gt;原文链接地址为http://bbs.telreading.com/thread-3820-1-1.html 。&lt;/p&gt;
 &lt;p&gt;因为在设计行业里面干了一些日子，对各个设计院有一些浅显的了解，有不当之处也请各位弟兄们海涵。&lt;/p&gt;
@@ -107,10 +107,10 @@
         </item>
         <item>
         <title>关于通信设计的思考</title>
-        <link>https://blog.fallleaf.net/p/work-thinking-about-telecom-design/</link>
+        <link>https://blog.fallleaf.net/p/notes-thinking-about-telecom-design/</link>
         <pubDate>Tue, 14 Feb 2006 12:03:09 +0800</pubDate>
         
-        <guid>https://blog.fallleaf.net/p/work-thinking-about-telecom-design/</guid>
+        <guid>https://blog.fallleaf.net/p/notes-thinking-about-telecom-design/</guid>
         <description>&lt;p&gt;经常上一些通信的BBS，也看看了不少帖子。谈论起设计院，似乎有这样的观点，就是设计院无用，设计院只有盖章的功能，设计院迟早要被厂家替代等等言论，附和的人不少，维护设计院的人寥寥无几，在孤军奋战。到底设计院的作用是什么呢？我想，这是每个设计人员，尤其是初入此门的设计人员的最为关心的。&lt;/p&gt;
 &lt;p&gt;通信设计到底是什么概念呢？由于我是做传输设计的，就从我的视角上来说一说。通信设计，也就是设计人员根据对通信网络的理解，采用自己所掌握的专业知识，完成某一需求所做的能够指导工程实施的一系列工作，最终的产品就是设计文件。通信设计到底包括哪些方面呢？很多人的观念中好像搞设计的就是画画平面图，确定一下设备位置，安排一下走线路由，仅此而已，而这些工作好象设备厂家都可完成，比如华为公司，在设备发货前一般都要他的第三方去工勘，收集一些数据，比如安装方式、线缆长度等以便下料发货，但有些设备厂家，大多是国外厂家，往往要根据设计院的图纸进行下料。这些工作，实际上是设计工作的一小部分，设计的内容应该包括方案设计和安装设计两方面的内容。方案设计，在设计工作中最重要也是最有技术含量的，设计人员对网络的理解，对专业技术的掌握，对网络现状的熟悉，对业务需求的分析，会出现不同的设计思路和方案，这对运营商的网络及其发展会带来很大的影响。&lt;/p&gt;
 &lt;p&gt;目前设计院所做的方案设计，感觉定性的东西多，定量的东西少，各种能够比较的方案不多，这些都是设计人员今后要改进的地方。这个阶段一般是在可研阶段，但对于一些不大的工程，也有做一阶段设计的。这个阶段的设计，是指导网络建设，设备选型、设备配置的，一般也都是运营商的计划发展部门以及设备厂商的售前参与。这对设计人员水平的要求很高，需要洞察各厂家设备及方案的优缺点以及一些隐藏的条件。&lt;/p&gt;

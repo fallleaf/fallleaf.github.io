@@ -7,19 +7,8 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Thu, 08 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/about/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>关于这个blog</title>
-        <link>https://blog.fallleaf.net/about/about-blog/</link>
-        <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/about/about-blog/</guid>
-        <description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
-&lt;p&gt;这个网站，采用过joomla，wordpress，typecho，最终采用了RStudio+blogdown+hugo+github+coding这种形式。文章以markdow的文本形式保存，避免了采用数据库存储时迁移的一些问题。&lt;/p&gt;
-&lt;p&gt;我的网站，从04年开始，起先是用的二级域名，后来申请了自己的域名，断断续续，时停时开，记录了我的一段经历，中间，有高达上万的访问量，也有访问无页面的时刻，回头看来，有不少不能成为博客，只能是一种记录，总之，这个博客不为别的，只为了表明在网络世界里，我来了，我存在。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>我的五大分类体系：写作的结构与边界</title>
+        <lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/about/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>博文的分类方法</title>
         <link>https://blog.fallleaf.net/about/about-categories/</link>
         <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
         
@@ -36,7 +25,7 @@
 &lt;/ul&gt;
 &lt;p&gt;它们构成了我博客的基础结构，也构成了我记录世界的方式。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;1-为什么需要分类体系&#34;&gt;1. 为什么需要分类体系
+&lt;h2 id=&#34;为什么需要分类体系&#34;&gt;为什么需要分类体系
 &lt;/h2&gt;&lt;p&gt;分类体系的意义不在于“管理文章”，而在于：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;帮助我在写作前快速定位主题&lt;/li&gt;
@@ -45,9 +34,8 @@
 &lt;li&gt;帮助博客在长期演化中保持结构稳定&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;一个好的分类体系应该 &lt;strong&gt;边界清晰、互不重叠、十年不过时&lt;/strong&gt;。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;2-我的五大分类&#34;&gt;2. 我的五大分类
-&lt;/h2&gt;&lt;h3 id=&#34;21-成长与学习growth&#34;&gt;2.1 成长与学习（Growth）
+&lt;h2 id=&#34;我的五大分类&#34;&gt;我的五大分类
+&lt;/h2&gt;&lt;h3 id=&#34;成长与学习growth&#34;&gt;成长与学习（Growth）
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
 关于个人能力、认知、方法论、职业成长的内容。
 本质是“让自己变得更好”。&lt;/p&gt;
@@ -61,8 +49,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
 如果文章的核心是 &lt;strong&gt;提升自我能力 / 思维 / 方法&lt;/strong&gt; → 属于这里。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;22-技术与实践tech--making&#34;&gt;2.2 技术与实践（Tech &amp;amp; Making）
+&lt;h3 id=&#34;技术与实践tech--making&#34;&gt;技术与实践（Tech &amp;amp; Making）
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
 关于技术、工程、工具、系统搭建、实操经验。
 本质是“解决问题、构建系统”。&lt;/p&gt;
@@ -76,8 +63,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
 如果文章围绕 &lt;strong&gt;技术本身&lt;/strong&gt; 或 &lt;strong&gt;技术实践&lt;/strong&gt; 展开 → 属于这里。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;23-生活与日常daily-life&#34;&gt;2.3 生活与日常（Daily Life）
+&lt;h3 id=&#34;生活与日常daily-life&#34;&gt;生活与日常（Daily Life）
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
 关于日常生活、家庭、家务、植物、水培、生活方式改善。
 本质是“生活本身”。&lt;/p&gt;
@@ -90,8 +76,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
 如果文章主要描述 &lt;strong&gt;生活本身&lt;/strong&gt; → 属于这里。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;24-行走与体验outdoor--travel&#34;&gt;2.4 行走与体验（Outdoor &amp;amp; Travel）
+&lt;h3 id=&#34;行走与体验outdoor--travel&#34;&gt;行走与体验（Outdoor &amp;amp; Travel）
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
 关于旅行、城市印象、户外体验、走过的地方。
 本质是“在路上”。&lt;/p&gt;
@@ -105,8 +90,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
 如果文章描述 &lt;strong&gt;地点 / 行走 / 体验&lt;/strong&gt; → 属于这里。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;25-随笔与观察essays--thoughts&#34;&gt;2.5 随笔与观察（Essays &amp;amp; Thoughts）
+&lt;h3 id=&#34;随笔与观察essays--thoughts&#34;&gt;随笔与观察（Essays &amp;amp; Thoughts）
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
 关于思考、观察、抽象感受、非主题性的文字。
 本质是“表达与观察”。&lt;/p&gt;
@@ -120,7 +104,7 @@
 &lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
 如果文章难以归入前四类，或更像“写给自己看的文字” → 属于这里。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;3-分类的判断方法&#34;&gt;3. 分类的判断方法
+&lt;h2 id=&#34;分类的判断方法&#34;&gt;分类的判断方法
 &lt;/h2&gt;&lt;p&gt;写文章前问自己一句：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;这篇文章的“核心动作”是什么？&lt;/strong&gt;&lt;/p&gt;
@@ -133,8 +117,7 @@
 &lt;li&gt;&lt;strong&gt;表达感受 → 随笔与观察&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;只要抓住“核心动作”，分类永远不会混乱。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;4-分类体系的设计原则&#34;&gt;4. 分类体系的设计原则
+&lt;h2 id=&#34;分类体系的设计原则&#34;&gt;分类体系的设计原则
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;边界清晰&lt;/strong&gt;：每类都有明确的核心动作&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;互不重叠&lt;/strong&gt;：同一篇文章不会在两个分类之间摇摆&lt;/li&gt;
@@ -142,8 +125,7 @@
 &lt;li&gt;&lt;strong&gt;可扩展&lt;/strong&gt;：未来可以在每类下继续细分标签&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;与写作习惯一致&lt;/strong&gt;：符合我记录生活与思考的方式&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;5-未来可能的扩展&#34;&gt;5. 未来可能的扩展
+&lt;h2 id=&#34;未来可能的扩展&#34;&gt;未来可能的扩展
 &lt;/h2&gt;&lt;p&gt;未来我可能会为每个分类增加：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;专属封面插画&lt;/li&gt;
@@ -153,11 +135,131 @@
 &lt;li&gt;更细粒度的子分类（如必要）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;但五大分类本身会保持稳定。&lt;/p&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;结语&#34;&gt;结语
 &lt;/h2&gt;&lt;p&gt;分类不是限制，而是帮助我更清晰地理解自己。
 它们像五个方向，让我在写作时知道自己正在走向哪里，也知道每篇文章属于哪一块土地。&lt;/p&gt;
 &lt;p&gt;未来的文章会继续在这五个维度中生长，而我也会在写作中不断更新它们。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>关于这个blog</title>
+        <link>https://blog.fallleaf.net/about/about-blog/</link>
+        <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.fallleaf.net/about/about-blog/</guid>
+        <description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
+&lt;p&gt;这个网站，采用过joomla，wordpress，typecho，最终采用了hugo+github+cloudflare这种形式。文章以markdow的文本形式保存，避免了采用数据库存储时迁移的一些问题。&lt;/p&gt;
+&lt;p&gt;我的网站，从04年开始，起先是用的二级域名，后来申请了自己的域名，断断续续，时停时开，记录了我的一段经历，中间，有高达上万的访问量，也有访问无页面的时刻，回头看来，有不少不能成为博客，只能是一种记录，总之，这个博客不为别的，只为了表明在网络世界里，我来了，我存在。&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul class=&#34;timeline-container&#34;&gt;
+  
+    &lt;li class=&#34;timeline-item&#34;&gt;
+  &lt;div class=&#34;timeline-marker&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;timeline-content&#34;&gt;
+      &lt;p class=&#34;timeline-date&#34;&gt;2026-01&lt;/p&gt;
+      &lt;div class=&#34;timeline-text&#34;&gt;
+    借鉴(https://liuhouliang.com)，实现时间线。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+    &lt;li class=&#34;timeline-item&#34;&gt;
+  &lt;div class=&#34;timeline-marker&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;timeline-content&#34;&gt;
+      &lt;p class=&#34;timeline-date&#34;&gt;2025-12&lt;/p&gt;
+      &lt;div class=&#34;timeline-text&#34;&gt;
+    博客改用hugo+stack+github+cloudflare。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+
+    &lt;li class=&#34;timeline-item&#34;&gt;
+  &lt;div class=&#34;timeline-marker&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;timeline-content&#34;&gt;
+      &lt;p class=&#34;timeline-date&#34;&gt;2023-01&lt;/p&gt;
+      &lt;div class=&#34;timeline-text&#34;&gt;
+    博客改用hugo+jane。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+    &lt;li class=&#34;timeline-item&#34;&gt;
+  &lt;div class=&#34;timeline-marker&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;timeline-content&#34;&gt;
+      &lt;p class=&#34;timeline-date&#34;&gt;2013-08&lt;/p&gt;
+      &lt;div class=&#34;timeline-text&#34;&gt;
+    网址改为blog.fallleaf.net。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+    &lt;li class=&#34;timeline-item&#34;&gt;
+  &lt;div class=&#34;timeline-marker&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;timeline-content&#34;&gt;
+      &lt;p class=&#34;timeline-date&#34;&gt;2010-01&lt;/p&gt;
+      &lt;div class=&#34;timeline-text&#34;&gt;
+    网站采用wordpress框架。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+    &lt;li class=&#34;timeline-item&#34;&gt;
+  &lt;div class=&#34;timeline-marker&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;timeline-content&#34;&gt;
+      &lt;p class=&#34;timeline-date&#34;&gt;2007-01&lt;/p&gt;
+      &lt;div class=&#34;timeline-text&#34;&gt;
+    网站改名：红旗下的蛋。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+    &lt;li class=&#34;timeline-item&#34;&gt;
+  &lt;div class=&#34;timeline-marker&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;timeline-content&#34;&gt;
+      &lt;p class=&#34;timeline-date&#34;&gt;2006-01&lt;/p&gt;
+      &lt;div class=&#34;timeline-text&#34;&gt;
+    网站名：通信设计人家，网址修改为：www.fallleaf.net。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+    &lt;li class=&#34;timeline-item&#34;&gt;
+  &lt;div class=&#34;timeline-marker&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;timeline-content&#34;&gt;
+      &lt;p class=&#34;timeline-date&#34;&gt;2005-11-23&lt;/p&gt;
+      &lt;div class=&#34;timeline-text&#34;&gt;
+    注册域名：fallleaf.net。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+    &lt;li class=&#34;timeline-item&#34;&gt;
+  &lt;div class=&#34;timeline-marker&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;timeline-content&#34;&gt;
+      &lt;p class=&#34;timeline-date&#34;&gt;2004-01&lt;/p&gt;
+      &lt;div class=&#34;timeline-text&#34;&gt;
+    开始学习网站搭建，采用Joomla框架，网站名：通信设计人家，二级域名。
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+
+
+&lt;/ul&gt;
+
 </description>
         </item>
         

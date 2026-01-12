@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://blog.fallleaf.net/p/tech-lte-ran/'>
 
-<link rel="stylesheet" href="/scss/style.min.96aa598ae451080d70d3518cd7e7808769eff1f34660224534440e2f84c6aeab.css"><meta property='og:title' content="LTE下的RAN">
+<link rel="stylesheet" href="/scss/style.min.d853033c7a335efe8ff4e071a72b01404da960b5f183f6db8d0d5af37a44e3f0.css"><meta property='og:title' content="LTE下的RAN">
 <meta property='og:description' content="R5版本的RAN，NODE B到RNC之间只有Iub接口，基站间没有互联，Iub可以看做是一个端到端的链接，目前采用PTN传送，已经没有异议了，但在LTE环境下，eNODE到MME/S-GW是S1接口，类似Iub接口，但相邻的eNODE之间有了X2互联接口，那么LTE环境下的RAN该采用何种技术？PTN是否仍然合适？是否需要新建一个基于三层技术的IP RAN呢？\n">
 <meta property='og:url' content='https://blog.fallleaf.net/p/tech-lte-ran/'>
 <meta property='og:site_name' content='Reading, Thinking and Writing'>
@@ -213,7 +213,7 @@
 
 
 
-                        <span>暗色模式</span>
+                        <span>深色模式</span>
                     </li>
                 
             </ol>
@@ -302,42 +302,6 @@
 <p>那么采用PTN接入的时候X2接口间的电路数量过多，在VLAN 上将会处理较为麻烦，而且PTN的LSP数量极剧增加，如果采用PTN传输是不是很麻烦，有一种说法是CE布置到汇聚层，完善数据城域网，接入层由传输负责，个人感觉还是比较好，X2的电路还是路由器调度比较方便，但是目前的机房条件好像再放路由器很难了，而且还有具有OTN。比较困难。不知道那位高手怎么看？</p>
 <p>“下面我们就来看还有一个困扰PTN的发展，就是LTE提出了X2接口，整个基站是扁平化的网络，这时候就趋向了包括S1Flex动态归属需求，基站和基站之间互联。现在我们在中国电信内部讨论PTN有很大的问题，第一就是对LTE的情况下，三层功能比较弱，另外解决大客户用的时候也是不能提供的。这是我们的 IP RAN承载方案，路由器方案、PTN接入路由器方案、PTN+路由器方案。我认为PTN+路由器方案是最糟糕的方案，但实际运用中也不尽然，可能运作中 PTN+路由器还是比较多的方案。如果你放在综合承载，PTN不仅仅是基站，而是综合的承载基站，你考虑LTE更复杂的网络拓扑，这时候提到这个方案还是有一定道理的，所以我们并没有排除这个方案，让用户来选择是最好的。“ –张成良</p>
 <p>若读者有什么想法，尽可留言。</p>
-
-    
-        <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
-            <footer class="article-time">
-                <div>
-                    <?xml version="1.0" encoding="utf-8"?>
-
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="800px" height="800px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-<g>
-	<path fill="#F9EBB2" d="M32,54.004c-19.686,0-28.677-19.123-29.917-22.001C3.321,29.121,12.288,10.004,32,10.004
-		c19.686,0,28.677,19.123,29.917,22.001C60.679,34.887,51.712,54.004,32,54.004z"/>
-	<circle fill="#45AAB8" cx="32" cy="32.004" r="14"/>
-	<circle fill="#506C7F" cx="32" cy="32.008" r="6"/>
-	<g>
-		<path fill="#394240" d="M63.934,31.645c-0.015-0.037-0.256-0.646-0.74-1.648C60.597,24.627,51.02,8.004,32,8.004
-			c-22.568,0-31.842,23.404-31.934,23.641c-0.089,0.231-0.089,0.487,0,0.719C0.158,32.6,9.432,56.004,32,56.004
-			c19.01,0,28.587-16.605,31.189-21.983c0.486-1.007,0.729-1.62,0.744-1.657C64.022,32.132,64.022,31.876,63.934,31.645z M32,54.004
-			c-19.686,0-28.677-19.123-29.917-22.001C3.321,29.121,12.288,10.004,32,10.004c19.686,0,28.677,19.123,29.917,22.001
-			C60.679,34.887,51.712,54.004,32,54.004z"/>
-		<path fill="#394240" d="M32,16.008c-8.837,0-16,7.163-16,16s7.163,16,16,16s16-7.163,16-16S40.837,16.008,32,16.008z M32,46.008
-			c-7.732,0-14-6.268-14-14s6.268-14,14-14s14,6.268,14,14S39.732,46.008,32,46.008z"/>
-		<path fill="#394240" d="M32,24.008c-4.418,0-8,3.582-8,8s3.582,8,8,8s8-3.582,8-8S36.418,24.008,32,24.008z M32,38.008
-			c-3.313,0-6-2.687-6-6s2.687-6,6-6s6,2.687,6,6S35.313,38.008,32,38.008z"/>
-		<path fill="#394240" d="M32,28.004c-0.553,0-1,0.447-1,1s0.447,1,1,1c1.104,0,2,0.896,2,2c0,0.553,0.447,1,1,1s1-0.447,1-1
-			C36,29.795,34.209,28.004,32,28.004z"/>
-	</g>
-</g>
-</svg>
-                    <span title="阅读次数" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="waline-pageview-count" data-path="/p/tech-lte-ran/" /></span>
-                </div>
-            </footer>
-        </div>
-    
 
 </section>
 

@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这片文章，主要是介绍如何在 n8n 上建立一个&quot; 第二大脑&quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章">
+<title>【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”</title>
+
+<link rel='canonical' href='https://blog.fallleaf.net/p/tech-second-brain-with-n8n/'>
+
+<link rel="stylesheet" href="/scss/style.min.d853033c7a335efe8ff4e071a72b01404da960b5f183f6db8d0d5af37a44e3f0.css"><meta property='og:title' content="【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”">
+<meta property='og:description' content="这片文章，主要是介绍如何在 n8n 上建立一个&quot; 第二大脑&quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章">
+<meta property='og:url' content='https://blog.fallleaf.net/p/tech-second-brain-with-n8n/'>
+<meta property='og:site_name' content='Reading, Thinking and Writing'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='n8n' /><meta property='article:tag' content='LLM' /><meta property='article:published_time' content='2025-09-04T10:45:00&#43;08:00'/><meta property='article:modified_time' content='2025-09-04T10:45:00&#43;08:00'/><meta property='og:image' content='https://blog.fallleaf.net/p/tech-second-brain-with-n8n/cover.webp' />
+<meta name="twitter:title" content="【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”">
+<meta name="twitter:description" content="这片文章，主要是介绍如何在 n8n 上建立一个&quot; 第二大脑&quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.fallleaf.net/p/tech-second-brain-with-n8n/cover.webp' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_5644df797013a54f.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Reading, Thinking and Writing</a></h1>
+            <h2 class="site-description">我是一颗蛋，一颗红旗下的蛋</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>存档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>标签</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>深色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#引言我们为什么需要第二大脑">引言：我们为什么需要“第二大脑”？</a></li>
+    <li><a href="#步骤-1打造可进化的战略知识库">步骤 1：打造可进化的“战略知识库”</a>
+      <ol>
+        <li><a href="#1-节点-1读取指定目录下的所有文本文件readwrite-file">1. 节点 1：读取指定目录下的所有文本文件（Read/Write File）</a></li>
+        <li><a href="#2-节点-2文本切分recursive-character-text-splitter">2. 节点 2：文本切分（Recursive Character Text Splitter）</a></li>
+        <li><a href="#3-节点-3调用-ollama-进行向量化embeddings-ollama">3. 节点 3：调用 Ollama 进行向量化（Embeddings Ollama）</a></li>
+        <li><a href="#4-节点-4存入向量数据库simple-vector-store">4. 节点 4：存入向量数据库（Simple Vector Store）</a></li>
+        <li><a href="#-知识库构建流程总结">✅ 知识库构建流程总结</a></li>
+      </ol>
+    </li>
+    <li><a href="#步骤-2构建懂战略的-ai-生成引擎">步骤 2：构建“懂战略”的 AI 生成引擎</a>
+      <ol>
+        <li><a href="#1-节点-1任务输入chat-trigger">1. 节点 1：任务输入（Chat Trigger）</a></li>
+        <li><a href="#2-节点-2感知模块ai-agent--知识检索">2. 节点 2：感知模块（AI Agent + 知识检索）</a></li>
+        <li><a href="#3-节点-3生成模块ai-agent--文档生成">3. 节点 3：生成模块（AI Agent + 文档生成）</a></li>
+        <li><a href="#-战略生成流程总结">✅ 战略生成流程总结</a></li>
+      </ol>
+    </li>
+    <li><a href="#三关键连接模块如何协同工作">三、关键连接：模块如何协同工作？</a></li>
+    <li><a href="#-知识库演示内容">📁 知识库演示内容</a></li>
+    <li><a href="#-重要说明与边界">⚠️ 重要说明与边界</a></li>
+    <li><a href="#实战演示以县乡传输网演进为例">实战演示：以“县乡传输网演进”为例</a></li>
+    <li><a href="#结语从建力到用智通信人的-ai-新使命">结语：从“建力”到“用智”，通信人的 AI 新使命</a></li>
+    <li><a href="#-配套资源">📎 配套资源</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/tech-second-brain-with-n8n/">
+                <img src="/p/tech-second-brain-with-n8n/cover_hu_8be9501aa9cb3991.webp"
+                        srcset="/p/tech-second-brain-with-n8n/cover_hu_8be9501aa9cb3991.webp 800w, /p/tech-second-brain-with-n8n/cover_hu_a4c980d4d1149c8e.webp 1600w"
+                        width="800" 
+                        height="341" 
+                        loading="lazy"
+                        alt="Featured image of post 【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/tech/" >
+                技术与实践
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/tech-second-brain-with-n8n/">【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            这片文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2025-09-04T10:45:00&#43;08:00'>2025年9月4日</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 9 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>这篇文章，主要是介绍如何在 n8n 上建立一个&quot; 第二大脑&quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎</p>
+<blockquote>
+<p><strong>这篇文章，主要是介绍如何在 n8n 上建立一个&quot; 第二大脑&quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎 配套资源 ，获取一键导入的 n8n 配置文件。在导入之前，确保 n8n、ollama 和 Qwen 都正常运行，相关安装方法，见网上教程。</strong></p>
+</blockquote>
+<h2 id="引言我们为什么需要第二大脑">引言：我们为什么需要“第二大脑”？
+</h2><p>在通信行业，每一份战略规划都承载着对未来的判断。它不仅要基于历史经验、试点反馈，更要精准对齐高层意图，并洞察竞争格局。</p>
+<p>然而，信息散落在 OA、本地磁盘、会议纪要中，专家常常陷入“找资料比写方案还累”的困境。</p>
+<p>而我们在上篇提出的解决方案是：打造一个能“ <strong>感知任务、融合知识、生成框架</strong> ”的“战略型第二大脑”。</p>
+<p>现在，是时候兑现承诺了。</p>
+<p>本文将带您 <strong>从零开始，用开源工具本地搭建一个可用的“第二大脑”</strong> 。</p>
+<p>一个基于 n8n + Ollama + Qwen 的智能系统，流程如下图：</p>
+<pre tabindex="0"><code>战略生成流程知识库模块读取目录文件切分文本Ollama 向量化存入 Simple Vector Store任务输入感知模块融合模块查询 Vector Store Tool生成模块输出初稿专家介入
+</code></pre><ul>
+<li>• <strong>知识库模块</strong> ：构建企业“战略记忆中枢”，将散落的文档转化为可检索、可追溯、可进化的智能资产。</li>
+<li>• <strong>感知模块</strong> ：听懂任务背后的“弦外之音”，解析出关键词与战略意图。</li>
+<li>• <strong>融合模块</strong> ：激活企业“沉睡的知识资产”，实现跨文档、跨时间的语义关联。</li>
+<li>• <strong>生成模块</strong> ：基于上下文，自动生成逻辑清晰、结构完整的方案初稿。</li>
+<li>• <strong>专家介入</strong> ：最终决策与洞见注入，人机协同产出真正有价值的方案。</li>
+</ul>
+<p>这套系统能否成功，80% 取决于知识库的质量，20% 取决于技术实现的合理性。接下来，我们就来一步步构建它。</p>
+<h2 id="步骤-1打造可进化的战略知识库">步骤 1：打造可进化的“战略知识库”
+</h2><blockquote>
+<p>🎯 目标：将分散的 <code>.txt</code> 文件自动转化为结构化、可语义检索的知识资产。</p>
+</blockquote>
+<h3 id="1-节点-1读取指定目录下的所有文本文件readwrite-file">1. 节点 1：读取指定目录下的所有文本文件（Read/Write File）
+</h3><ul>
+<li>• <strong>节点名称</strong> ： <code>资料输入</code></li>
+<li>• <strong>节点类型</strong> ： <code>n8n-nodes-base.readWriteFile</code></li>
+<li>• <strong>配置</strong> ：
+<pre tabindex="0"><code>{
+  &#34;fileSelector&#34;: &#34;d:\\\\second_brain_demo\\\\*&#34;,
+  &#34;options&#34;: {
+    &#34;fileExtension&#34;: &#34;.txt&#34;
+  }
+}
+</code></pre></li>
+<li>• <strong>功能</strong> ：扫描 <code>d:\second_brain_demo\</code> 目录下所有 <code>.txt</code> 文件，支持通配符。</li>
+<li>• <strong>输出</strong> ：以二进制形式返回每个文件内容。</li>
+</ul>
+<blockquote>
+<p>💡 可扩展支持 <code>.pdf</code> 、<code>.docx</code> ，但需确保 Ollama 支持解析。</p>
+</blockquote>
+<hr>
+<h3 id="2-节点-2文本切分recursive-character-text-splitter">2. 节点 2：文本切分（Recursive Character Text Splitter）
+</h3><ul>
+<li>• <strong>节点名称</strong> ： <code>Recursive Character Text Splitter</code></li>
+<li>• <strong>配置</strong> ：
+<pre tabindex="0"><code>{
+  &#34;chunkSize&#34;: 100,
+  &#34;chunkOverlap&#34;: 20
+}
+</code></pre></li>
+<li>• <strong>作用</strong> ：将长文本按字符递归切分为小片段，避免超出模型上下文。</li>
+<li>• <strong>切分逻辑</strong> ：优先按 <code>\n\n</code> 、 <code>\n</code> 、 、<code>.</code> 分割。</li>
+</ul>
+<blockquote>
+<p>⚠️ 注意：当前版本中，切分由该节点控制，而非 <code>Simple Vector Store</code> 内置。</p>
+</blockquote>
+<hr>
+<h3 id="3-节点-3调用-ollama-进行向量化embeddings-ollama">3. 节点 3：调用 Ollama 进行向量化（Embeddings Ollama）
+</h3><ul>
+<li>• <strong>节点名称</strong> ： <code>Embeddings Ollama</code></li>
+<li>• <strong>配置</strong> ：
+<pre tabindex="0"><code>{
+  &#34;model&#34;: &#34;dengcao/bge-large-zh-v1.5:latest&#34;
+}
+</code></pre></li>
+<li>• <strong>功能</strong> ：调用本地 Ollama 服务，使用中文优化的 <code>bge-large-zh</code> 模型生成向量。</li>
+<li>• <strong>优势</strong> ：专为中文语义设计，在“领导讲话”“试点报告”等场景表现优异。</li>
+</ul>
+<blockquote>
+<p>✅ 需提前运行：</p>
+<pre tabindex="0"><code>ollama pull dengcao/bge-large-zh-v1.5
+</code></pre></blockquote>
+<hr>
+<h3 id="4-节点-4存入向量数据库simple-vector-store">4. 节点 4：存入向量数据库（Simple Vector Store）
+</h3><ul>
+<li>• <strong>节点名称</strong> ： <code>Simple Vector Store</code></li>
+<li>• <strong>配置</strong> ：</li>
+<li>• Mode: <code>insert</code>
+<ul>
+<li>• Memory Key: <code>vector_store_key</code></li>
+</ul>
+</li>
+<li>• <strong>连接</strong> ：</li>
+<li>• 输入文档 → <code>Default Data Loader</code>
+<ul>
+<li>• 切分器 → <code>Recursive Character Text Splitter</code></li>
+<li>• 嵌入模型 → <code>Embeddings Ollama</code></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>✅ 数据将持久化在内存中，供后续查询使用。</p>
+</blockquote>
+<hr>
+<h3 id="-知识库构建流程总结">✅ 知识库构建流程总结
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>节点</th>
+          <th>功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>资料输入</code></td>
+          <td>扫描目录，读取 <code>.txt</code> 文件</td>
+      </tr>
+      <tr>
+          <td><code>Recursive Character Text Splitter</code></td>
+          <td>按设定规则切分文本</td>
+      </tr>
+      <tr>
+          <td><code>Embeddings Ollama</code></td>
+          <td>使用 <code>bge-large-zh</code> 生成中文向量</td>
+      </tr>
+      <tr>
+          <td><code>Simple Vector Store</code></td>
+          <td>存储为可检索的知识片段</td>
+      </tr>
+  </tbody>
+</table></div>
+<blockquote>
+<p>🔄 此流程可绑定 <code>Cron Trigger</code> ，实现 <strong>每日自动更新知识库</strong> 。</p>
+</blockquote>
+<hr>
+<h2 id="步骤-2构建懂战略的-ai-生成引擎">步骤 2：构建“懂战略”的 AI 生成引擎
+</h2><blockquote>
+<p>🎯 目标：用户输入任务，AI 自动调用知识库，生成专业方案初稿。</p>
+</blockquote>
+<h3 id="1-节点-1任务输入chat-trigger">1. 节点 1：任务输入（Chat Trigger）
+</h3><ul>
+<li>• <strong>节点名称</strong> ： <code>任务输入</code></li>
+<li>• <strong>类型</strong> ： <code>@n8n/n8n-nodes-langchain.chatTrigger</code></li>
+<li>• <strong>作用</strong> ：接收用户输入的任务指令，如：
+“请基于历史方案和试点反馈，制定县乡传输网低成本演进路径”</li>
+</ul>
+<hr>
+<h3 id="2-节点-2感知模块ai-agent--知识检索">2. 节点 2：感知模块（AI Agent + 知识检索）
+</h3><ul>
+<li>• <strong>节点名称</strong> ： <code>感知模块</code></li>
+<li>• <strong>类型</strong> ： <code>@n8n/n8n-nodes-langchain.agent</code></li>
+<li>• <strong>核心配置</strong> ：</li>
+</ul>
+<h4 id="-使用的模型">📌 使用的模型
+</h4><ul>
+<li>• <strong>语言模型</strong> ： <code>Qwen Turbo</code> （通过 API 调用）</li>
+<li>• <strong>嵌入模型</strong> ： <code>Ollama</code> （用于检索）</li>
+<li>• <strong>记忆机制</strong> ： <code>Window Buffer Memory</code> （保留上下文）</li>
+</ul>
+<h4 id="-系统提示词system-message">📌 系统提示词（System Message）
+</h4><pre tabindex="0"><code>你是一名通信网络战略规划专家以及专业的任务分析助手。你的职责是分析用户的要求：{{$json.chatInput}}，根据查询知识库 company_documents_tool 中的相关内容, 输出框架大纲。
+
+请严格遵守以下规则：
+1. 内容从知识库 company_documents_tool 获取
+2. 输出内容只包含“需要做什么”，不得加入额外解释
+3. 输出格式为 JSON，必须包含：
+   - &#34;task&#34;: &#34;一句话说明要完成的具体任务&#34;
+   - &#34;requirements&#34;: [&#34;要求1&#34;, &#34;要求2&#34;, ...]
+</code></pre><h4 id="-工具绑定">📌 工具绑定
+</h4><ul>
+<li>• <strong>Vector Store Tool</strong> ： <code>company_documents_tool</code> ，用于检索知识库</li>
+</ul>
+<blockquote>
+<p>✅ 该模块将：</p>
+<ul>
+<li>• 解析用户意图</li>
+<li>• 自动调用知识库检索相关资料</li>
+<li>• 输出结构化任务框架</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="3-节点-3生成模块ai-agent--文档生成">3. 节点 3：生成模块（AI Agent + 文档生成）
+</h3><ul>
+<li>• <strong>节点名称</strong> ： <code>生成模块</code></li>
+<li>• <strong>类型</strong> ： <code>@n8n/n8n-nodes-langchain.agent</code></li>
+<li>• <strong>系统提示词</strong> ：</li>
+</ul>
+<pre tabindex="0"><code>你是一名通信网络战略规划专家。
+你是一个专业的文档编写助手。你的任务是根据任务要求，仅使用知识库 company_documents_tool 提供的内容，生成最终文档。
+
+请严格遵守以下规则：
+1. 所有内容必须来自知识库，不得引入外部信息
+2. 可以在知识库范围内进行归纳、整合，但不得编造
+3. 如果某项信息未找到，请写“相关信息未在知识库中找到”
+4. 文风：简洁、正式、专业
+</code></pre><blockquote>
+<p>✅ 输入来自“感知模块”的结构化任务框架，输出完整方案初稿。</p>
+</blockquote>
+<hr>
+<h3 id="-战略生成流程总结">✅ 战略生成流程总结
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>节点</th>
+          <th>功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>任务输入</code></td>
+          <td>接收用户指令</td>
+      </tr>
+      <tr>
+          <td><code>感知模块</code></td>
+          <td>解析意图，调用知识库，输出任务框架</td>
+      </tr>
+      <tr>
+          <td><code>生成模块</code></td>
+          <td>基于框架与知识，生成专业文档</td>
+      </tr>
+  </tbody>
+</table></div>
+<blockquote>
+<p>🔁 整个流程无需人工干预，AI 自主完成“理解 → 检索 → 生成”。</p>
+</blockquote>
+<hr>
+<h2 id="三关键连接模块如何协同工作">三、关键连接：模块如何协同工作？
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>连接</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>资料输入</code>  → <code>Simple Vector Store</code></td>
+          <td>触发知识入库</td>
+      </tr>
+      <tr>
+          <td><code>Embeddings Ollama</code>  → <code>Simple Vector Store</code></td>
+          <td>提供中文向量能力</td>
+      </tr>
+      <tr>
+          <td><code>Vector Store Tool</code>  ←→ <code>感知模块</code> &amp; <code>生成模块</code></td>
+          <td>提供语义检索能力</td>
+      </tr>
+      <tr>
+          <td><code>Qwen</code>  ←→ 所有 AI Agent 节点</td>
+          <td>提供大模型推理能力</td>
+      </tr>
+      <tr>
+          <td><code>Window Buffer Memory</code>  ←→ 两个 Agent</td>
+          <td>支持多轮对话上下文</td>
+      </tr>
+  </tbody>
+</table></div>
+<blockquote>
+<p>✅ 所有 AI 能力通过标准接口连接，模块化、可替换、可扩展。</p>
+</blockquote>
+<hr>
+<h2 id="-知识库演示内容">📁 知识库演示内容
+</h2><p>为确保 AI 能生成高质量方案，建议知识库包含以下五个测试文件, 均由 LLM 生成：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>文件名</th>
+          <th>内容重点</th>
+          <th>示例片段</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>白皮书摘要.txt</code></td>
+          <td>战略目标、技术路径</td>
+          <td>“2027 年实现县乡 100% 光缆覆盖”</td>
+      </tr>
+      <tr>
+          <td><code>试点报告.txt</code></td>
+          <td>成功/ 失败经验</td>
+          <td>“FgOTN 设备成本高达 45 万元”</td>
+      </tr>
+      <tr>
+          <td><code>领导讲话.txt</code></td>
+          <td>战略偏好</td>
+          <td>“要注重投资效益，避免重复建设”</td>
+      </tr>
+      <tr>
+          <td><code>友商应用情况.txt</code></td>
+          <td>竞争情报</td>
+          <td>“B 运营商采用 DCI-BOX，部署效率提升”</td>
+      </tr>
+      <tr>
+          <td><code>设备对比资料.txt</code></td>
+          <td>技术依据</td>
+          <td>“DCI-BOX 成本比 OTN 低 30%-50%”</td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="-重要说明与边界">⚠️ 重要说明与边界
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>项目</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Ollama 必须运行</strong></td>
+          <td><code>ollama serve</code>  需常驻后台</td>
+      </tr>
+      <tr>
+          <td><strong>嵌入模型必须加载</strong></td>
+          <td><code>ollama pull dengcao/bge-large-zh-v1.5</code></td>
+      </tr>
+      <tr>
+          <td><strong>Qwen Turbo 需 API 密钥</strong></td>
+          <td>通过阿里云百炼平台获取</td>
+      </tr>
+      <tr>
+          <td><strong>向量库存储在内存中</strong></td>
+          <td>如需持久化，建议升级为 ChromaDB 或 FAISS</td>
+      </tr>
+      <tr>
+          <td><strong>必须人工审核</strong></td>
+          <td>⚠️ AI 输出仅作参考，不可直接用于决策</td>
+      </tr>
+  </tbody>
+</table></div>
+<hr>
+<h2 id="实战演示以县乡传输网演进为例">实战演示：以“县乡传输网演进”为例
+</h2><p>让我们用一个真实场景验证系统效果。</p>
+<p><strong>任务输入</strong> ：</p>
+<blockquote>
+<p>请结合《XX 网络 2025-2027 年演进白皮书》和DCI-BOX以及FgOTN试点情况，研究县乡本地传输网的演进方向。重点考虑低成本、可持续性和与国家‘新基建’政策的契合度。参考近期领导在务虚会上关于‘网络精简’和‘区域均衡’的讲话精神。</p>
+</blockquote>
+<p><strong>感知模块调用融合模块输出</strong> ：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">AI</span><span class="o">:</span> <span class="p">{</span><span class="err">&#34;task&#34;:</span> <span class="err">&#34;编制县乡本地传输网发展建设指导意见&#34;,&#34;requirements&#34;:</span> <span class="err">[&#34;结合《XX</span> <span class="err">网络</span> <span class="err">2025-2027</span> <span class="err">年演进白皮书》的内容&#34;,&#34;分析DCI-BOX和FgOTN试点情况&#34;,&#34;制定县乡本地传输网发展建设指导意见&#34;,&#34;重点考虑低成本、可持续性&#34;,&#34;确保与国家‘新基建’政策的契合度&#34;,&#34;参考近期领导在务虚会上关于‘网络精简’和‘区域均衡’的讲话精神&#34;],&#34;rule&#34;:</span> <span class="err">&#34;必须采用company_documents_tool内的信息&#34;</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>生成模块调用融合模块输出初稿（语言模型不同，输出也不同）</strong> ：</p>
+<p>县乡本地传输网发展建设指导意见</p>
+<p>一、总体目标</p>
+<p>根据《XX 网络 2025-2027 年演进白皮书》的指导思想，结合DCI-BOX和FgOTN试点情况，推动县乡本地传输网的高质量发展。以低成本、可持续性为核心，确保与国家“新基建”政策的契合度，同时落实领导在务虚会上关于“网络精简”和“区域均衡”的讲话精神。</p>
+<p>二、基本原则</p>
+<p>低成本：优先采用成熟、经济的技术方案，降低建设和运维成本。</p>
+<p>可持续性：注重资源的合理利用，确保网络长期稳定运行。</p>
+<p>政策契合度：紧密结合国家“新基建”政策，推动技术与政策的深度融合。</p>
+<p>网络精简：优化网络结构，提升效率，减少冗余。</p>
+<p>区域均衡：实现城乡网络协调发展，缩小数字鸿沟。</p>
+<p>三、重点任务</p>
+<p>技术选型</p>
+<p>推广DCI-BOX和FgOTN等先进技术，提升传输效率和灵活性。</p>
+<p>结合试点经验，逐步推广适用于县乡地区的解决方案。</p>
+<p>网络规划</p>
+<p>根据区域发展需求，制定合理的网络布局，确保覆盖全面。</p>
+<p>强化骨干网与接入网的协同，提升整体性能。</p>
+<p>政策支持</p>
+<p>积极争取国家“新基建”政策的支持，争取专项资金。</p>
+<p>推动地方政策与国家政策的对接，形成合力。</p>
+<p>管理机制</p>
+<p>建立健全网络维护和管理机制，确保网络运行的稳定性。</p>
+<p>加强人才培训，提升运维水平。</p>
+<p>四、实施步骤</p>
+<p>调研分析：深入调研县乡地区网络现状及需求，形成详细报告。</p>
+<p>方案设计：基于调研结果，制定具体实施方案。</p>
+<p>试点推进：选择典型区域进行试点，积累经验。</p>
+<p>全面推广：总结试点经验，逐步推广至全县乡范围。</p>
+<p>五、保障措施</p>
+<p>组织保障：成立专项工作组，明确责任分工。</p>
+<p>资金保障：多渠道筹措资金，确保项目顺利实施。</p>
+<p>监督评估：建立监督评估机制，定期检查项目进展。</p>
+<p>六、结语</p>
+<p>县乡本地传输网的发展是推动乡村振兴和数字化转型的重要基础。通过科学规划、技术创新和政策支持，努力构建一个高效、经济、可持续的县乡传输网络，为实现“网络强国”目标贡献力量。</p>
+<p>相关信息未在知识库中找到</p>
+<h2 id="结语从建力到用智通信人的-ai-新使命">结语：从“建力”到“用智”，通信人的 AI 新使命
+</h2><p>在上一篇文章的结尾，我们提到：</p>
+<blockquote>
+<p>“在下一篇中，我将分享如何利用开源工具，在本地环境中一步步搭建起这套能解码战略的智能系统。”</p>
+</blockquote>
+<p>今天，我们兑现了这个承诺。</p>
+<p>这套系统原型，还不能真正的实用,仅仅是一个最小的简单RAG系统 ， 但让我们认识到：人工智能，不再遥远，而是每一位战略规划专家都 <strong>用得上、用得起、用得安心</strong> 的生产力工具。</p>
+<p>它让我们：</p>
+<ul>
+<li>• 从 “信息搬运工” 转变为 “战略架构师” ；</li>
+<li>• 从 “被动响应” 升级为 “主动洞察” ；</li>
+<li>• 从 “经验驱动” 迈向 “数据+ 智能驱动” 。</li>
+</ul>
+<p>更重要的是，它提醒我们：
+作为通信人，我们不仅是 <strong>算力的建设者</strong> ，更应成为 <strong>智能的应用者</strong> 。
+国家推动“人工智能+”，不仅是让我们建更多的数据中心，更是鼓励我们 <strong>率先在自身业务中实践 AI 的价值</strong> 。</p>
+<h2 id="-配套资源">📎 配套资源
+</h2><p>关注公众号，回复“ <strong>第二大脑</strong> ”（不是文章留言!），获取：</p>
+<ul>
+<li>• <strong>本文对应的工作流 JSON 文件（可直接导入）</strong></li>
+<li>• <strong>5 份示例资料（.txt）</strong></li>
+<li>• <strong>示例资料默认存储在&quot;D:\second_brain_demo&quot; 目录下</strong></li>
+<li>• <strong>由于笔记本算力不足, 语言模型用阿里的免费 Qwen 模型，可以去申请免费 API_KEY</strong></li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/n8n/">N8n</a>
+        
+            <a href="/tags/llm/">LLM</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/tech-second-brain-introduce/">
+        
+        
+            <div class="article-image">
+                <img src="/p/tech-second-brain-introduce/cover.86719a0ab7b4bb9574bda992fb4ff5c4_hu_614dd7604e945fc8.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 【人工智能&#43;】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑"
+                        data-key="tech-second-brain-introduce" 
+                        data-hash="md5-hnGaCre0u5V0vamS&#43;0/1xA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【人工智能&#43;】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-pcdn-overview/">
+        
+        
+            <div class="article-image">
+                <img src="/p/tech-pcdn-overview/cover.1156c9f3f569e8d3ac9cbf929a79ef9b_hu_980ce765dbf164b2.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post PCDN现象初探及浅见"
+                        data-key="tech-pcdn-overview" 
+                        data-hash="md5-EVbJ8/Vp6NOsnL&#43;Smnnvmw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">PCDN现象初探及浅见</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-fiber-direct-vs-transport-reliability/">
+        
+        
+            <div class="article-image">
+                <img src="/p/tech-fiber-direct-vs-transport-reliability/cover.0dac2d5e8ad2a8103e36b1ba120f5d7b_hu_c393f9e28a4fe86c.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析"
+                        data-key="tech-fiber-direct-vs-transport-reliability" 
+                        data-hash="md5-DawtXorSqBA&#43;NrG6Eg9dew==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-fiber-more-longer-more-fail/">
+        
+        
+            <div class="article-image">
+                <img src="/p/tech-fiber-more-longer-more-fail/cover.fa35bf5f58d78ea2923c16d7bd431725_hu_830589a5addcde42.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 距离越长，光缆就越容易出故障吗？"
+                        data-key="tech-fiber-more-longer-more-fail" 
+                        data-hash="md5-&#43;jW/X1jXjqKSPBbXvUMXJQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">距离越长，光缆就越容易出故障吗？</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/tech-cpo-data-center-energy-efficiency-revolution/">
+        
+        
+            <div class="article-image">
+                <img src="/p/tech-cpo-data-center-energy-efficiency-revolution/cover.7866bdb957712bfc1a436dd0d13780ac_hu_6c1a798e1b4fb226.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命"
+                        data-key="tech-cpo-data-center-energy-efficiency-revolution" 
+                        data-hash="md5-eGa9uVdxK/waQ23Q0TeArA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">光电共封装（CPO）：数据中心的下一场“能效革命</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof Waline !== 'undefined') {
+            Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Admin","placeholder":null},"pageview":true,"requiredMeta":["name","email"],"serverURL":"https://comments.fallleaf.net"});
+        } else {
+            
+            const script = document.querySelector('script[src*="waline.js"]');
+            script.addEventListener('load', function() {
+                Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Admin","placeholder":null},"pageview":true,"requiredMeta":["name","email"],"serverURL":"https://comments.fallleaf.net"});
+            });
+        }
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2004 - 
+        
+        2026 红旗下的蛋
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"
+      crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"
+        crossorigin="anonymous">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/mhchem.min.js"
+        crossorigin="anonymous">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"
+       crossorigin="anonymous"
+       onload='renderMathInElement(document.body, null);'>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"
+        crossorigin="anonymous"></script>
+<script src="/js/main.min.beed1be94ebe04a73a3d983583046daf3fd8ac54857fa72d94a1e83c470d9eaf.js" integrity="sha256-vu0b6U6&#43;BKc6PZg1gwRtrz/YrFSFf6ctlKHoPEcNnq8=" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

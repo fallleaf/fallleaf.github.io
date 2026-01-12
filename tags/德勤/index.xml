@@ -9,11 +9,11 @@
         <copyright>红旗下的蛋</copyright>
         <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E5%BE%B7%E5%8B%A4/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>德勤退还澳政府款项：生成式AI误用引发咨询行业信任危机</title>
-        <link>https://blog.fallleaf.net/p/work-deloitte-ai-misuse-consulting-trust-crisis/</link>
+        <link>https://blog.fallleaf.net/p/notes-deloitte-ai-misuse-consulting-trust-crisis/</link>
         <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.fallleaf.net/p/work-deloitte-ai-misuse-consulting-trust-crisis/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/work-deloitte-ai-misuse-consulting-trust-crisis/cover.webp" alt="Featured image of post 德勤退还澳政府款项：生成式AI误用引发咨询行业信任危机" /&gt;&lt;p&gt;德勤澳大利亚分公司近日同意向联邦政府退还44万澳元咨询费用，原因是其提交的一份社会福利合规报告中存在严重内容造假，且这些错误源于未经充分监督的生成式人工智能工具的使用。此事件被广泛视为政府咨询领域迄今最具代表性的人工智能问责案例之一，暴露了AI技术在专业服务中的系统性风险。&lt;/p&gt;
+        <guid>https://blog.fallleaf.net/p/notes-deloitte-ai-misuse-consulting-trust-crisis/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/notes-deloitte-ai-misuse-consulting-trust-crisis/cover.webp" alt="Featured image of post 德勤退还澳政府款项：生成式AI误用引发咨询行业信任危机" /&gt;&lt;p&gt;德勤澳大利亚分公司近日同意向联邦政府退还44万澳元咨询费用，原因是其提交的一份社会福利合规报告中存在严重内容造假，且这些错误源于未经充分监督的生成式人工智能工具的使用。此事件被广泛视为政府咨询领域迄今最具代表性的人工智能问责案例之一，暴露了AI技术在专业服务中的系统性风险。&lt;/p&gt;
 &lt;h2 id=&#34;事件概述ai生成内容导致虚假信息&#34;&gt;事件概述：AI生成内容导致虚假信息
 &lt;/h2&gt;&lt;p&gt;根据澳大利亚就业与劳资关系部的确认，德勤在2024年7月提交的报告中使用了大型语言模型（Azure OpenAI GPT-4o）以“填补文档空白”。然而，该技术的使用并未在初稿中披露，且直接导致以下关键错误：&lt;/p&gt;
 &lt;ul&gt;

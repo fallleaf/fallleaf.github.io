@@ -1147,11 +1147,11 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         </item>
         <item>
         <title>【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”</title>
-        <link>https://blog.fallleaf.net/p/ai-second-brain-with-n8n/</link>
+        <link>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</link>
         <pubDate>Thu, 04 Sep 2025 10:45:00 +0800</pubDate>
         
-        <guid>https://blog.fallleaf.net/p/ai-second-brain-with-n8n/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
+        <guid>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎 配套资源 ，获取一键导入的 n8n 配置文件。在导入之前，确保 n8n、ollama 和 Qwen 都正常运行，相关安装方法，见网上教程。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1553,11 +1553,11 @@ Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-fo
         </item>
         <item>
         <title>【人工智能&#43;】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑</title>
-        <link>https://blog.fallleaf.net/p/ai-second-brain-introduce/</link>
+        <link>https://blog.fallleaf.net/p/tech-second-brain-introduce/</link>
         <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.fallleaf.net/p/ai-second-brain-introduce/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-second-brain-introduce/cover.webp" alt="Featured image of post 【人工智能&#43;】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑" /&gt;&lt;h2 id=&#34;引子一次典型的战略突袭&#34;&gt;引子：一次典型的“战略突袭”
+        <guid>https://blog.fallleaf.net/p/tech-second-brain-introduce/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-second-brain-introduce/cover.webp" alt="Featured image of post 【人工智能&#43;】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑" /&gt;&lt;h2 id=&#34;引子一次典型的战略突袭&#34;&gt;引子：一次典型的“战略突袭”
 &lt;/h2&gt;&lt;p&gt;我们通信人，尤其是做网络规划和顶层设计的同事，对下面这个场景一定不陌生：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;周五下午四点半，领导的即时消息弹出，转发了更高层领导聊天记录，内容是“根据三年前集团发布的《XX网络2025-2027年演进白皮书》，结合近一年各省分公司的试点结果和当前行业技术趋势，重新评估并制定下一阶段网络演进的战略路径和部署方案。下周三提交汇报版PPT。”&lt;/strong&gt;&lt;/p&gt;
@@ -3106,15 +3106,15 @@ f.close()&lt;/p&gt;
         <pubDate>Tue, 01 Feb 2011 09:48:27 +0800</pubDate>
         
         <guid>https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/runwaycrackdown.jpg" alt="Featured image of post 走线架垮塌事件分析" /&gt;&lt;p&gt;某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑：&lt;/p&gt;
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/cover.webp" alt="Featured image of post 走线架垮塌事件分析" /&gt;&lt;p&gt;某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑：&lt;/p&gt;
 &lt;h2 id=&#34;材料方面&#34;&gt;材料方面
 &lt;/h2&gt;&lt;p&gt;从现场情况看，吊杆与天花板未脱落，吊杆亦未发生拉伸变形及断裂，可认为吊杆的强度是足够的，主要问题就在于吊杆与走线架的连接件上。&lt;/p&gt;
 &lt;p&gt;连接件作为连接与支持走线架的零件，受力要比走线架大得多，所使用材料强度应高于走线架所用材料的强度，从现场来看，所使用材料均为同一规格，厚度为2mm。按YD5026-95和YD/T5026-2005《电信机房铁架安装设计标准》的要求，所采用铁件一般为50x50x5mm。&lt;/p&gt;
 &lt;p&gt;从螺栓与连接件的紧固方式看，连接件的受力面积主要是螺栓垫片与连接件的接触面积，从照片上看，螺栓垫圈小，致使连接件单位面积受力过大，超过连接件的受力特性，造成了螺孔槽受压力作用变形并扩张。目前走线架所用螺栓规格为M6，规范要求的螺栓规格为M8和M10和M12，
-&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1.png&#34;
+&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1.webp&#34;
 	width=&#34;640&#34;
 	height=&#34;480&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_f538447e9f9aecdd.png 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_5259ea1600d507e2.png 1024w&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_9640c548afff0dfc.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_14bee3a46e103979.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -3123,10 +3123,10 @@ f.close()&lt;/p&gt;
 		data-flex-basis=&#34;320px&#34;
 	
 &gt;
-&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2.png&#34;
+&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2.webp&#34;
 	width=&#34;640&#34;
 	height=&#34;480&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_9b2568e1b8576cc8.png 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_50d0e3f57fc07ce3.png 1024w&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_dbba45ab0fa38515.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_80c29e00c574e8ce.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -3137,10 +3137,10 @@ f.close()&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;地震及受力的影响&#34;&gt;地震及受力的影响
 &lt;/h2&gt;&lt;p&gt;从512大地震以来，该地区陆续发生了大大小小的上百次的余震。大地震和余震产生地震波，使走线架上下及左右震动，长期处于一种不稳定状态。螺栓、螺母与连接件的紧固，是靠螺栓、螺母以及垫片与紧固件间的摩擦力固紧的，同时，由于部分螺母、螺栓安装时没有加弹簧垫圈（见下图），经过512大地震以及上百次余震的冲击波后，非常容易使螺母与螺栓松动。
-&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3.png&#34;
+&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3.webp&#34;
 	width=&#34;640&#34;
 	height=&#34;480&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_71d1be1edb33bdb.png 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_dc704261ff2c1942.png 1024w&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_9d8d063b61e28ed9.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_8d8b10ed7f565e7d.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -3149,10 +3149,10 @@ f.close()&lt;/p&gt;
 		data-flex-basis=&#34;320px&#34;
 	
 &gt;
-&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4.png&#34;
+&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4.webp&#34;
 	width=&#34;640&#34;
 	height=&#34;480&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_8bac096b0e7dfb96.png 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_1d582bdc46b5a6ba.png 1024w&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_2d2bc90ae72cbd2d.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_153779037fdc72be.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -3166,10 +3166,10 @@ f.close()&lt;/p&gt;
 &lt;p&gt;现场塌垮的走线架，是维护和施工通道一侧走线架发生侧翻，而不是走线架整体垮塌，在施工中，由于外力扰动，走线架受力不平衡，维护和施工通道一侧走线架连接件受力过大也是一个原因。&lt;/p&gt;
 &lt;h2 id=&#34;连接加固方式&#34;&gt;连接加固方式
 &lt;/h2&gt;&lt;p&gt;现场走线架吊挂有两种方式，一种为龙门架，龙门架的横担支撑两层走线架的重量，另外一种为吊挂上层走线架梁上，如下图所示&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5.webp&#34;
 	width=&#34;640&#34;
 	height=&#34;853&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_14cd7d545c59b0ac.png 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_8fb4989a9f5d14ff.png 1024w&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_b9c8d6e40e233bbb.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_54fd8281f5a18881.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -3179,10 +3179,10 @@ f.close()&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;按一般要求，对于双层走线架，每层都应与吊挂连接（见下图），以免连接件集中受力，现场的走线架只有最下一层与吊挂连接，导致所有线缆的重量都压在横梁上，也导致连接件的受力过大。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6.webp&#34;
 	width=&#34;800&#34;
 	height=&#34;600&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_aba9ef4e1c09d445.jpg 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_45f07a099b94e246.jpg 1024w&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_83fed71ff9b412e5.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_21c3b6184c8e8122.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -3192,10 +3192,10 @@ f.close()&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;现场走线架另外一种的吊挂方式，这种方式致使只有连接件的螺栓受力，而整个连接件不受力，也会导致螺孔槽所受压力过大，以致变形，若连接件承托上梁下放，则受力为整个连接件以及螺栓（见下图）。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7.webp&#34;
 	width=&#34;235&#34;
 	height=&#34;180&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_411e2f75dc43ac8a.png 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_27d4646c837e71a9.png 1024w&#34;
+	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_fddd72f4d4720887.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_b30bb3dd1c32c5b1.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	

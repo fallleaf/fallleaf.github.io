@@ -9,11 +9,11 @@
         <copyright>红旗下的蛋</copyright>
         <lastBuildDate>Thu, 04 Sep 2025 10:45:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/n8n/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”</title>
-        <link>https://blog.fallleaf.net/p/ai-second-brain-with-n8n/</link>
+        <link>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</link>
         <pubDate>Thu, 04 Sep 2025 10:45:00 +0800</pubDate>
         
-        <guid>https://blog.fallleaf.net/p/ai-second-brain-with-n8n/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/ai-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
+        <guid>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</guid>
+        <description>&lt;img src="https://blog.fallleaf.net/p/tech-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能&#43;】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎 配套资源 ，获取一键导入的 n8n 配置文件。在导入之前，确保 n8n、ollama 和 Qwen 都正常运行，相关安装方法，见网上教程。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
