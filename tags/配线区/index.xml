@@ -1,20 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>配线区 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E9%85%8D%E7%BA%BF%E5%8C%BA/</link>
-        <description>Recent content in 配线区 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sat, 23 Aug 2025 11:08:22 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E9%85%8D%E7%BA%BF%E5%8C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>“配线区”为何译作 Wiring Zone？于细微处见证中国标准的自信</title>
-        <link>https://blog.fallleaf.net/p/notes-wiring-zone-or-not/</link>
-        <pubDate>Sat, 23 Aug 2025 11:08:00 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/notes-wiring-zone-or-not/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-wiring-zone-or-not/cover.webp" alt="Featured image of post “配线区”为何译作 Wiring Zone？于细微处见证中国标准的自信" /&gt;&lt;p&gt;在网络运维与技术交流中，一个细节或许能引发深思：“配线区”这一术语，在中国国家标准中被明确翻译为 Wiring Zone。这并非偶然的翻译差异，而是深植于中国庞大的工程实践和日益增强的标准话语权。&lt;/p&gt;
-&lt;h2 id=&#34;标准溯源白纸黑字的官方定义&#34;&gt;标准溯源：白纸黑字的“官方定义”
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>配线区 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E9%85%8D%E7%BA%BF%E5%8C%BA/</link><description>Recent content in 配线区 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sat, 23 Aug 2025 11:08:22 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E9%85%8D%E7%BA%BF%E5%8C%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>“配线区”为何译作 Wiring Zone？于细微处见证中国标准的自信</title><link>https://blog.fallleaf.net/p/notes-wiring-zone-or-not/</link><pubDate>Sat, 23 Aug 2025 11:08:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-wiring-zone-or-not/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-wiring-zone-or-not/cover.webp" alt="Featured image of post “配线区”为何译作 Wiring Zone？于细微处见证中国标准的自信" /&gt;&lt;p&gt;在网络运维与技术交流中，一个细节或许能引发深思：“配线区”这一术语，在中国国家标准中被明确翻译为 Wiring Zone。这并非偶然的翻译差异，而是深植于中国庞大的工程实践和日益增强的标准话语权。&lt;/p&gt;
+&lt;h2 id="标准溯源白纸黑字的官方定义"&gt;标准溯源：白纸黑字的“官方定义”
 &lt;/h2&gt;&lt;p&gt;首先，我们核查两项关键的中国国家标准，原文的引用是准确的：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;《综合布线系统工程设计规范》（GB 50311-2016）&lt;/strong&gt; ：&lt;/li&gt;
@@ -26,14 +11,14 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
+&lt;ol start="3"&gt;
 &lt;li&gt;&lt;strong&gt;《住宅区和住宅建筑内光纤到户通信设施工程设计规范》（GB 50846-2012）&lt;/strong&gt; ：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;术语 2.0.14&lt;/strong&gt; 定义“配线区 (Wiring Zone)”为：“设置在住宅建筑内，用于住宅建筑主干光缆与用户引入光缆进行端接、跳接的区域。”&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这两份权威的国家标准，分别覆盖了商业建筑的综合布线和住宅的光纤到户（FTTH）两大核心场景。它们一致地将“配线区”的官方英文确定为 &lt;strong&gt;Wiring Zone&lt;/strong&gt; ，这为我们的讨论奠定了坚实的基础。&lt;/p&gt;
-&lt;h2 id=&#34;国际视角distribution-area-的逻辑功能&#34;&gt;国际视角：Distribution Area 的逻辑功能
+&lt;h2 id="国际视角distribution-area-的逻辑功能"&gt;国际视角：Distribution Area 的逻辑功能
 &lt;/h2&gt;&lt;p&gt;将目光转向国际标准体系，我们发现其术语逻辑确实有所不同。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;ISO/IEC 11801《信息技术-用户建筑通用布线》系列标准&lt;/strong&gt; ：这是全球综合布线领域的基础性标准。它定义了分级的布线架构，其中的关键节点被称为 &lt;strong&gt;“Distributor”（配线设备）&lt;/strong&gt; 。例如，楼层分配设备（Floor Distributor, FD）、建筑分配设备（Building Distributor, BD）。这些 Distributor 所在的物理空间，在功能上对应中国的“配线区”，但其命名更侧重于逻辑层级的“分配”角色。因此，从业者习惯性地将这片区域理解为 &lt;strong&gt;Distribution Area&lt;/strong&gt; 或 &lt;strong&gt;Distribution Point&lt;/strong&gt; 。&lt;/li&gt;
@@ -45,7 +30,7 @@
 &lt;li&gt;&lt;strong&gt;Distribution Area (国际惯例)&lt;/strong&gt; ：这是一个 &lt;strong&gt;网络架构视角&lt;/strong&gt; 的术语。它强调的是一个在网络拓扑中承担“分发”功能的 &lt;strong&gt;逻辑单元&lt;/strong&gt; 。它关注的是信号如何从主干（Feeder）分配到分支（Drop），是一个以“ &lt;strong&gt;实现什么功能&lt;/strong&gt; ”为导向的逻辑节点概念。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;两者并非相互矛盾，而是观察维度不同。中国标准的选择，更贴近一线施工和运维的物理现实。&lt;/p&gt;
-&lt;h2 id=&#34;不只是翻译更是实践经验的凝练与话语权的体现&#34;&gt;不只是翻译，更是实践经验的凝练与话语权的体现
+&lt;h2 id="不只是翻译更是实践经验的凝练与话语权的体现"&gt;不只是翻译，更是实践经验的凝练与话语权的体现
 &lt;/h2&gt;&lt;p&gt;为何中国标准要“另起炉灶”？这背后是中国通信产业，特别是FTTH建设的独特实践和巨大体量。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;无与伦比的实践规模&lt;/strong&gt; ：&lt;/li&gt;
@@ -53,7 +38,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;事实核查&lt;/strong&gt; ：根据中国工业和信息化部（MIIT）发布的《2023年通信业统计公报》，截至2023年末，中国光纤接入（FTTH/O）用户已达 &lt;strong&gt;6.07亿户&lt;/strong&gt; ，占固定互联网宽带接入用户总数的94.8%。光缆线路总长度达到 &lt;strong&gt;6432万公里&lt;/strong&gt; 。原文中“超5亿用户”、“超6000万公里”的数据是准确且略偏保守的。如此庞大和高密度的网络建设，催生了大量标准化的、注重效率和可维护性的工程方法论。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
+&lt;ol start="3"&gt;
 &lt;li&gt;&lt;strong&gt;中国特色的工程需求&lt;/strong&gt; ：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
@@ -64,7 +49,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;因此，“Wiring Zone”并非误译，而是对中国独特网络部署和运维模式的精准提炼与术语固化。它体现了一种标准制定的自觉： &lt;strong&gt;当我们的实践已经走在世界前列时，我们有能力、也有必要定义自己的技术语言，使其更精确地反映我们的现实。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;从跟跑到领跑中国术语的全球潜力&#34;&gt;从跟跑到领跑：中国术语的全球潜力
+&lt;h2 id="从跟跑到领跑中国术语的全球潜力"&gt;从跟跑到领跑：中国术语的全球潜力
 &lt;/h2&gt;&lt;p&gt;一个技术术语能否成为全球通用语，取决于其背后所代表的技术范式和市场影响力。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;历史的镜鉴&lt;/strong&gt; ：近年来由中国企业和标准组织主导的概念，如华为提出的 &lt;strong&gt;CloudRAN&lt;/strong&gt; 、 &lt;strong&gt;5G-Oriented Core Network Architecture&lt;/strong&gt; 等，正越来越多地被3GPP、ITU等国际组织讨论和采纳。中国的“ &lt;strong&gt;双千兆网络（Dual-Gigabit Network）&lt;/strong&gt; ”、“ &lt;strong&gt;全光城市（All-Optical City）&lt;/strong&gt; ”等政策和市场概念，也开始出现在国际报告和行业交流中。&lt;/li&gt;
@@ -74,12 +59,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;Note: This functional area, particularly within building premises, is also referred to as the Wiring Zone in standards like China&amp;rsquo;s GB 50311.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;结语小术语大自信&#34;&gt;结语：小术语，大自信
+&lt;h2 id="结语小术语大自信"&gt;结语：小术语，大自信
 &lt;/h2&gt;&lt;p&gt;从“Distribution Area”到“Wiring Zone”，这并非简单的词汇替换，而是一次深刻的身份转变。它标志着中国通信行业正从国际标准的被动接受者，成长为基于自身最佳实践的积极贡献者和定义者。&lt;/p&gt;
 &lt;p&gt;这背后，是中国技术实力的厚积薄发，更是文化自信在科技领域的有力投射。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;规则，终将由最富经验的实践者来书写。&lt;/strong&gt;&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;&lt;strong&gt;规则，终将由最富经验的实践者来书写。&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

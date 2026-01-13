@@ -1,55 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>沟通 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E6%B2%9F%E9%80%9A/</link>
-        <description>Recent content in 沟通 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Thu, 16 Oct 2025 14:26:23 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%B2%9F%E9%80%9A/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>对LLM客气，纯属自找麻烦</title>
-        <link>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</link>
-        <pubDate>Thu, 16 Oct 2025 14:26:23 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/cover.webp" alt="Featured image of post 对LLM客气，纯属自找麻烦" /&gt;&lt;h2 id=&#34;实验结果越客气llm越糊涂&#34;&gt;实验结果：越客气，LLM越糊涂
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>沟通 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E6%B2%9F%E9%80%9A/</link><description>Recent content in 沟通 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Thu, 16 Oct 2025 14:26:23 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%B2%9F%E9%80%9A/index.xml" rel="self" type="application/rss+xml"/><item><title>对LLM客气，纯属自找麻烦</title><link>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</link><pubDate>Thu, 16 Oct 2025 14:26:23 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/cover.webp" alt="Featured image of post 对LLM客气，纯属自找麻烦" /&gt;&lt;h2 id="实验结果越客气llm越糊涂"&gt;实验结果：越客气，LLM越糊涂
 &lt;/h2&gt;&lt;p&gt;最近有篇论文做了个实验，结论让人哭笑不得：你对ChatGPT越客气，它答题越不准。&lt;/p&gt;
 &lt;p&gt;研究者出了50道多选题，用五种语气问ChatGPT-4o——从“请您帮忙解答一下”到“快给我答案”。结果如下：&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;语气&lt;/th&gt;
-          &lt;th&gt;正确率&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;非常礼貌&lt;/td&gt;
-          &lt;td&gt;80.8%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;礼貌&lt;/td&gt;
-          &lt;td&gt;81.4%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;中性&lt;/td&gt;
-          &lt;td&gt;82.2%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;粗鲁&lt;/td&gt;
-          &lt;td&gt;82.8%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;非常粗鲁&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;84.8%&lt;/strong&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语气&lt;/th&gt;
+&lt;th&gt;正确率&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;非常礼貌&lt;/td&gt;
+&lt;td&gt;80.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;礼貌&lt;/td&gt;
+&lt;td&gt;81.4%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中性&lt;/td&gt;
+&lt;td&gt;82.2%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;粗鲁&lt;/td&gt;
+&lt;td&gt;82.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;非常粗鲁&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;84.8%&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;越不客气，越准确。
 这不是段子，而是统计检验后的真实结果。&lt;/p&gt;
 &lt;p&gt;换句话说——LLM（&lt;strong&gt;语言大模型&lt;/strong&gt;）不吃“客气”那一套。&lt;/p&gt;
-&lt;h2 id=&#34;为什么客气反而坏事&#34;&gt;为什么客气反而坏事？
+&lt;h2 id="为什么客气反而坏事"&gt;为什么客气反而坏事？
 &lt;/h2&gt;&lt;p&gt;别以为LLM真懂“礼貌”。
 它不过是一台概率机器，所有输入的字，对它而言只是数据。&lt;/p&gt;
 &lt;p&gt;“请”“麻烦您”“谢谢”这些词，对人来说表示尊重，对LLM来说只是 &lt;strong&gt;冗余的噪音&lt;/strong&gt; 。它无法感受到情绪，却要在冗余语言中找出你真正的问题。结果是—— &lt;strong&gt;它被你的客气话搞糊涂了。&lt;/strong&gt;&lt;/p&gt;
@@ -57,7 +42,7 @@
 在有限的上下文窗口（Context Window）中，你的客气话占据了 &lt;strong&gt;宝贵的Token数量&lt;/strong&gt; 。每一个Token都应该用于传递关键的指令信息，而不是用于寒暄。ChatGPT这类模型的训练数据中，大量来自论坛、技术问答等。模型在这些语境下习惯处理简洁、命令式句子，而不是文绉绉的礼貌表达。换句话说，它对“直白的命令”更熟悉，对“客气的请求”反而陌生。&lt;/p&gt;
 &lt;p&gt;当你绕弯子时，它反而要花更多算力去猜你的真实意图。
 结果就像说话绕圈子，让对方瞎猜，准确率自然下降了。&lt;/p&gt;
-&lt;h2 id=&#34;别把llm当人看警惕粗鲁的边界&#34;&gt;别把LLM当人看（警惕“粗鲁”的边界）
+&lt;h2 id="别把llm当人看警惕粗鲁的边界"&gt;别把LLM当人看（警惕“粗鲁”的边界）
 &lt;/h2&gt;&lt;p&gt;很多人用LLM时，总喜欢装出一副“礼貌至上”的样子：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“请帮我详细而准确地回答以下问题，麻烦您了，谢谢～”&lt;/p&gt;
@@ -68,37 +53,37 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;【重要提醒】&lt;/strong&gt; 实验中的“非常粗鲁”指的是 &lt;strong&gt;指令的绝对直白和省略客套&lt;/strong&gt; 。我们不鼓励使用侮辱或攻击性词汇。真正的侮辱性内容会触发LLM的 &lt;strong&gt;安全过滤机制（GuardrLLMls）&lt;/strong&gt; ，反而会导致拒绝回答或输出质量下降。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;对llm发指令追求清晰度&#34;&gt;对LLM发指令，追求清晰度
+&lt;h2 id="对llm发指令追求清晰度"&gt;对LLM发指令，追求清晰度
 &lt;/h2&gt;&lt;p&gt;这项研究其实提醒我们一个朴素的道理：
 &lt;strong&gt;和LLM打交道，关键不是态度，而是表达的清晰度。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;好的提示词要像指令，不像寒暄。越简洁，越容易让LLM锁定任务。&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;低效寒暄式&lt;/th&gt;
-          &lt;th&gt;高效指令式&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;请问您能帮我解一下这个复杂的方程吗？&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;解方程，输出步骤。&lt;/strong&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;请帮我总结一下《红楼梦》的主要人物，要详细哦。&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;指令：提炼《红楼梦》前80回五位核心人物，格式：姓名/关系/主要性格特征。&lt;/strong&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;低效寒暄式&lt;/th&gt;
+&lt;th&gt;高效指令式&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;请问您能帮我解一下这个复杂的方程吗？&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;解方程，输出步骤。&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;请帮我总结一下《红楼梦》的主要人物，要详细哦。&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;指令：提炼《红楼梦》前80回五位核心人物，格式：姓名/关系/主要性格特征。&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;人与人的沟通追求“情商”，人与LLM的交互追求“指令清晰度”。&lt;/strong&gt; 这是人机协作的准则，无关态度，只关效率。&lt;/p&gt;
-&lt;h2 id=&#34;别被llm的懂礼貌假象骗了&#34;&gt;别被LLM的“懂礼貌”假象骗了
+&lt;h2 id="别被llm的懂礼貌假象骗了"&gt;别被LLM的“懂礼貌”假象骗了
 &lt;/h2&gt;&lt;p&gt;很多人说：“ChatGPT挺懂人情世故啊，还会说谢谢。”
 这是错觉。&lt;/p&gt;
 &lt;p&gt;LLM的礼貌，是模仿出来的。
 它从无数人类对话中学到“客气话的模式”，
 却从未理解“礼貌的意义”。&lt;/p&gt;
 &lt;p&gt;它只是鹦鹉学舌，说“请”“谢谢”只是语言表演，不是情感反应。如果你以为那是“温度”，那不过是 &lt;strong&gt;统计学拟合出的幻觉。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;真正的礼貌是对人&#34;&gt;真正的礼貌，是对人
+&lt;h2 id="真正的礼貌是对人"&gt;真正的礼貌，是对人
 &lt;/h2&gt;&lt;p&gt;对LLM客气，不仅没用，还可能降低效率。
 它不会感激，也不会回礼。&lt;/p&gt;
 &lt;p&gt;真正该讲礼貌的对象，是人——而不是算法。
@@ -107,16 +92,11 @@
 别说“麻烦帮我”，直接说“生成报告，800字，总结重点”。&lt;/p&gt;
 &lt;p&gt;这不是没礼貌，而是理性。
 因为LLM不需要礼貌，它只需要清晰。&lt;/p&gt;
-&lt;h2 id=&#34;结语&#34;&gt;结语
+&lt;h2 id="结语"&gt;结语
 &lt;/h2&gt;&lt;p&gt;LLM越进步，人越容易把它“人化”。
 但别忘了，它不是思想者，只是概率引擎。&lt;/p&gt;
 &lt;p&gt;我们要做的，不是讨好它，而是让它听懂。
 &lt;strong&gt;把话说清楚，比说得好听更重要。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;论文链接：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/pdf/2510.04950&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;《Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy》&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;&lt;a class="link" href="https://arxiv.org/pdf/2510.04950" target="_blank" rel="noopener"
+&gt;《Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy》&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

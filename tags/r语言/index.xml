@@ -1,141 +1,104 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>R语言 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/</link>
-        <description>Recent content in R语言 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 15:12:17 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>用R语言做斜线图</title>
-        <link>https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/</link>
-        <pubDate>Sun, 21 Jul 2019 15:12:17 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/</guid>
-        <description>&lt;h2 id=&#34;什么是斜线图&#34;&gt;什么是斜线图
-&lt;/h2&gt;&lt;p&gt;斜线图，英文为Slopegraph，是近年来比较流行的数据可视化的表现形式，是反映不同观测对象在两个固定点，如今年和去年、某一事件之前和之后的数据变化（比如排名，百分比，数值等），或者两个不同的维度数据之间的联系，由于本质是折线图，所以制作斜线图的软件很多，最常用的是Excel、tableau、R语言等。&lt;/p&gt;
-&lt;p&gt;Edward Tufte在1983年的著作《The Visual Display of Quantitative Information》第一次提到了斜线图，2011年6月1日他在论坛里把这种表示方式正式命名为slopegraph。前期很少有人使用，不过近期使用多了起来。&lt;/p&gt;
-&lt;p&gt;先看看几个斜线图的实例。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph_boycott.jpg&#34;
-	width=&#34;1080&#34;
-	height=&#34;965&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph_boycott_hu_2181ced2abad8803.jpg 480w, https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph_boycott_hu_24a6653509f9fb1d.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;FT图例&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;111&#34;
-		data-flex-basis=&#34;268px&#34;
-	
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>R语言 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/</link><description>Recent content in R语言 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml"/><item><title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title><link>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</guid><description>&lt;h2 id="什么是斜线图"&gt;什么是斜线图
+&lt;/h2&gt;&lt;p&gt;斜线图（Slopegraph）是一种用于展示同一组观测对象在两个固定状态之间变化关系的数据可视化形式。
+这两个状态可以是不同时间（如今年与去年、事件前后），也可以是不同维度（如总体与子群体），其度量可以是排名、比例或数值。&lt;/p&gt;
+&lt;p&gt;从表现形式上看，斜线图属于折线图的一个特例，但其设计目标并不是描绘连续变化过程，而是强调两个状态之间的相对变化结构。因此，无论是 Excel、Tableau 还是 R，只要支持折线图的工具都可以绘制斜线图。&lt;/p&gt;
+&lt;p&gt;Edward Tufte 在 1983 年出版的《The Visual Display of Quantitative Information》中首次系统性讨论了这种表达方式，并在 2011 年 6 月 1 日的论坛中正式将其命名为 slopegraph。早期应用并不广泛，但随着数据新闻和分析型可视化的发展，斜线图近年来逐渐成为常用工具。&lt;/p&gt;
+&lt;p&gt;下面是几个典型的斜线图示例。
+&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott.webp"
+width="1080"
+height="965"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_a3e4ab5f789f691d.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_59b7c3e89008846a.webp 1024w"
+loading="lazy"
+alt="FT图例"
+class="gallery-image"
+data-flex-grow="111"
+data-flex-basis="268px"
 &gt;&lt;/p&gt;
-&lt;p&gt;这是FT所作的一个关于中国消费者抵制美国品牌商品态度的变化的斜线图。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph_time.png&#34;
-	width=&#34;404&#34;
-	height=&#34;634&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph_time_hu_708b5a92e56f3d9c.png 480w, https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph_time_hu_45447135dde188d7.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;网易图例&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;63&#34;
-		data-flex-basis=&#34;152px&#34;
-	
+&lt;p&gt;这是《Financial Times》绘制的一个斜线图，用于展示中国消费者对美国品牌商品抵制态度的变化情况。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time.webp"
+width="404"
+height="634"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_20e05bf5a266a1df.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_264cc8b81c03f11f.webp 1024w"
+loading="lazy"
+alt="网易图例"
+class="gallery-image"
+data-flex-grow="63"
+data-flex-basis="152px"
 &gt;&lt;/p&gt;
-&lt;p&gt;这张是网易的一个斜线图，X轴有1990年和2017年两个时间点，Y轴按慢性病伤残调整寿命年排序，显而易见，很容易看出从1990年到2017年，哪些慢性病成为了主要死因，以及这些死因排序的变化情况。一般来说，斜线图适合时间跨度比较大的数据展示。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph_group.png&#34;
-	width=&#34;376&#34;
-	height=&#34;443&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph_group_hu_28dd940f4b910f73.png 480w, https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph_group_hu_32f39f5723db32e9.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Employee Feedback&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;84&#34;
-		data-flex-basis=&#34;203px&#34;
-	
+&lt;p&gt;这张图来自网易，X 轴为 1990 年和 2017 年两个时间点，Y 轴为慢性病伤残调整寿命年（DALY）的排名。通过斜线的交叉和排序变化，可以直观看出哪些慢性病在这 27 年间上升为主要死因，以及不同病种之间地位的变化。这种跨时间跨度较大的对比，正是斜线图&lt;strong&gt;最典型&lt;/strong&gt;的应用场景。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group.webp"
+width="376"
+height="443"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_dd48f3d75baea9b2.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_64d89214951880a0.webp 1024w"
+loading="lazy"
+alt="Employee Feedback"
+class="gallery-image"
+data-flex-grow="84"
+data-flex-basis="203px"
 &gt;&lt;/p&gt;
-&lt;p&gt;这张是引自stroytellingwithdata中一篇文章more on slopegraphs的图，展示的是一份调查数据不同分组情况变化的斜线图，X轴是两个分组，一个是整体的（Company），一个是整体中的一部分（Team X），Y轴是不同调查内容的得分情况，可以看出某项指标在总体和个体中所处于的地位以及变化情况。&lt;/p&gt;
-&lt;h2 id=&#34;什么时候用斜线图&#34;&gt;什么时候用斜线图
-&lt;/h2&gt;&lt;p&gt;在Edward Tufte6月1日的帖子里，他总结了slopegraph的用法：&lt;/p&gt;
+&lt;p&gt;该图引自 storytellingwithdata 网站的文章 More on slopegraphs。X 轴表示两个分组（Company 与 Team X），Y 轴表示调查指标得分。斜线图在这里用于展示同一指标在&lt;strong&gt;总体与子群体&lt;/strong&gt;中的相对位置与变化情况。&lt;/p&gt;
+&lt;h2 id="什么时候用斜线图"&gt;什么时候用斜线图
+&lt;/h2&gt;&lt;p&gt;Edward Tufte 在 6 月 1 日的帖子中对斜线图的用途做了高度概括：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;blockquote
-“Slopegraphs compare changes over time for a list of nouns located on an ordinal or interval scale.”&lt;/p&gt;
+&lt;p&gt;“Slopegraphs compare changes over time for a list of nouns located on an ordinal or interval scale.”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;意思就是Slopegraphs是用来比较不同时间的一组指标的变化。&lt;/p&gt;
-&lt;p&gt;在用到折线图或柱状图数据可视化的情况，斜线图都是一种不错的选择。例如下面分别用柱状图和斜线图表示4个公司2018年和2019年收入情况。&lt;/p&gt;
-&lt;p&gt;柱状图表示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/bar1-1.png&#34;
-	width=&#34;960&#34;
-	height=&#34;960&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/bar1-1_hu_5b0639aca3329797.png 480w, https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/bar1-1_hu_ddb17306c9f03787.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;bar1&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;100&#34;
-		data-flex-basis=&#34;240px&#34;
-	
+&lt;p&gt;即：斜线图用于比较&lt;strong&gt;一组可排序或可度量对象在不同状态之间的变化&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;因此，在原本会使用柱状图或折线图进行“两点对比”的场景中，斜线图往往是更高效的表达方式。例如，以下是用柱状图表示四家公司 2018 年和 2019 年收入的情况。
+柱状图表示：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1.webp"
+width="960"
+height="960"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_4220d2c8b959ef73.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_d7f2463eaa4adb43.webp 1024w"
+loading="lazy"
+alt="柱状图示例"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
 &gt;&lt;/p&gt;
 &lt;p&gt;或者：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/bar2-1.png&#34;
-	width=&#34;960&#34;
-	height=&#34;960&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/bar2-1_hu_9513b98bcf1a0a0a.png 480w, https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/bar2-1_hu_45122e0262c1f564.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;bar2&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;100&#34;
-		data-flex-basis=&#34;240px&#34;
-	
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1.webp"
+width="960"
+height="960"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_39414b2dd2fbf857.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_8fb406bedf84b6d0.webp 1024w"
+loading="lazy"
+alt="另一种柱状图示例"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
 &gt;&lt;/p&gt;
 &lt;p&gt;用斜线图表示，如下&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph-1.png&#34;
-	width=&#34;1344&#34;
-	height=&#34;960&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph-1_hu_659124b7bd565976.png 480w, https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/slopegraph-1_hu_ed809302a47504ee.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;斜线图&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;140&#34;
-		data-flex-basis=&#34;336px&#34;
-	
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1.webp"
+width="1344"
+height="960"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_2412b24114d9707.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_fb2506ae2fd5ba04.webp 1024w"
+loading="lazy"
+alt="斜线图示例"
+class="gallery-image"
+data-flex-grow="140"
+data-flex-basis="336px"
 &gt;&lt;/p&gt;
-&lt;p&gt;比较上面三个图表，显然斜线图更能给受众更加直观、清晰的可视数据。柱状图只是吧数据进行的展示，并没有在图中同时直观的展示出各公司收入的排名和收入变化的幅度，而斜线图上则把收入、排名、变化幅度都同时直观的展示出来了。&lt;/p&gt;
-&lt;p&gt;对比上面的柱状图和斜线图，最大的差别是柱状图的Y轴数值一般是从0开始，这也是在做折线图、柱状图的一个基本要求，如果不从零开始，就会放大变化的幅度。而斜线图的Y轴并不是从0开始的，所以更适合比较名次的变化或相对数值的变化，而不是绝对数值的变化。&lt;/p&gt;
-&lt;h2 id=&#34;怎么用r语言作斜线图&#34;&gt;怎么用R语言作斜线图
+&lt;p&gt;对比这三种表达方式可以发现：
+柱状图只能呈现绝对数值，而斜线图能够在同一视图中同时表达收入水平、排名以及变化幅度。读者不需要额外计算或比较，就可以理解企业之间的相对变化。&lt;/p&gt;
+&lt;p&gt;柱状图与斜线图在设计上的一个关键差异在于：柱状图的 Y 轴必须从 0 开始，否则会夸大差异；而斜线图的 Y 轴并不要求从 0 开始，因此更适合用来比较排名变化或相对变化结构，而不是绝对规模。&lt;/p&gt;
+&lt;h2 id="怎么用r语言作斜线图"&gt;怎么用R语言作斜线图
 &lt;/h2&gt;&lt;p&gt;由于斜线图就是折线图的一种变形，所以，只要能够制作折线图的软件都能制作斜线图，这里介绍一下在R语言环境下制作斜线图的方法。&lt;/p&gt;
 &lt;p&gt;GitHub有一个R语言库项目：CGPfunctions，提供了制作斜线图的函数newggslopegraph()。上面的斜线图就是用这个函数做出来的。&lt;/p&gt;
 &lt;p&gt;库文件的安装详见网页说明，最新版本是0.5.8，包含了新增加的一些函数参数，这里只把这个函数的参数用中文解释一下。&lt;/p&gt;
 &lt;p&gt;用法：&lt;/p&gt;
-&lt;p&gt;newggslopegraph(
+&lt;pre tabindex="0"&gt;&lt;code&gt;newggslopegraph(
 dataframe, Times, Measurement, Grouping,
-Title = &amp;ldquo;No title given&amp;rdquo;, SubTitle = &amp;ldquo;No subtitle given&amp;rdquo;,
-Caption = &amp;ldquo;No caption given&amp;rdquo;, XTextSize = 12, YTextSize = 3,
+Title = &amp;#34;No title given&amp;#34;, SubTitle = &amp;#34;No subtitle given&amp;#34;,
+Caption = &amp;#34;No caption given&amp;#34;, XTextSize = 12, YTextSize = 3,
 TitleTextSize = 14, SubTitleTextSize = 10, CaptionTextSize = 8,
-TitleJustify = &amp;ldquo;left&amp;rdquo;, SubTitleJustify = &amp;ldquo;left&amp;rdquo;,
-CaptionJustify = &amp;ldquo;right&amp;rdquo;, LineThickness = 1, LineColor = &amp;ldquo;ByGroup&amp;rdquo;,
-DataTextSize = 2.5, DataTextColor = &amp;ldquo;black&amp;rdquo;,
+TitleJustify = &amp;#34;left&amp;#34;, SubTitleJustify = &amp;#34;left&amp;#34;,
+CaptionJustify = &amp;#34;right&amp;#34;, LineThickness = 1, LineColor = &amp;#34;ByGroup&amp;#34;,
+DataTextSize = 2.5, DataTextColor = &amp;#34;black&amp;#34;,
 DataLabelPadding = 0.05, DataLabelLineSize = 0,
-DataLabelFillColor = &amp;ldquo;white&amp;rdquo;, WiderLabels = FALSE,
+DataLabelFillColor = &amp;#34;white&amp;#34;, WiderLabels = FALSE,
 ReverseYAxis = FALSE, ReverseXAxis = FALSE, RemoveMissing = TRUE,
-ThemeChoice = &amp;ldquo;bw&amp;rdquo;
-)&lt;/p&gt;
-&lt;p&gt;参数：&lt;/p&gt;
+ThemeChoice = &amp;#34;bw&amp;#34;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;参数：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;dataframe：一个数据框类型的数据组，tidy data格式。会检查一些基本的错误，如检查是否存在列名称。&lt;/p&gt;
@@ -151,17 +114,16 @@ ThemeChoice = &amp;ldquo;bw&amp;rdquo;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;例如上面例子中用的数据框为：&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;data
-
-##    company   year income
-## 1 CompanyA 2018年    232
-## 2 CompanyA 2019年    261
-## 3 CompanyB 2018年    111
-## 4 CompanyB 2019年    425
-## 5 CompanyC 2018年    266
-## 6 CompanyC 2019年    217
-## 7 CompanyD 2018年    431
-## 8 CompanyD 2019年    329
+&lt;pre tabindex="0"&gt;&lt;code&gt;data
+## company year income
+## 1 CompanyA 2018年 232
+## 2 CompanyA 2019年 261
+## 3 CompanyB 2018年 111
+## 4 CompanyB 2019年 425
+## 5 CompanyC 2018年 266
+## 6 CompanyC 2019年 217
+## 7 CompanyD 2018年 431
+## 8 CompanyD 2019年 329
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这是一个带列名称的数据框data，第一列就是Grouping，表明每个斜线的类别，第二列是Times，表明X轴上的两个时间点，第三列是“Measurement”，表明每列别对应X轴在Y轴上的位置。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -235,52 +197,40 @@ ThemeChoice = &amp;ldquo;bw&amp;rdquo;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;下面展示一个完整的函数参数以及创建的图形，注意，X轴和Y轴均倒置了。&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;newggslopegraph(
-  data, year, income, company,
-  Title = &amp;#34;This is Title&amp;#34;, SubTitle = &amp;#34;This is subTitle&amp;#34;,
-  Caption = &amp;#34;This is Caption\nSecond line&amp;#34;, XTextSize = 14, YTextSize = 4,
-  TitleTextSize = 14, SubTitleTextSize = 12, CaptionTextSize = 10,
-  TitleJustify = &amp;#34;L&amp;#34;, SubTitleJustify = &amp;#34;R&amp;#34;,
-  CaptionJustify = &amp;#34;C&amp;#34;, LineThickness = 2,
-  LineColor = c(&amp;#34;CompanyD&amp;#34; = &amp;#34;seagreen&amp;#34;,&amp;#34;CompanyA&amp;#34; = &amp;#34;green&amp;#34;,
-                &amp;#34;CompanyB&amp;#34; = &amp;#34;tomato&amp;#34;,&amp;#34;CompanyC&amp;#34; = &amp;#34;orange&amp;#34;),
-  DataTextSize = 4, DataTextColor = &amp;#34;red&amp;#34;,
-  DataLabelPadding = 0.2, DataLabelLineSize = 0.5,
-  DataLabelFillColor = &amp;#34;gray&amp;#34;, WiderLabels = FALSE,
-  ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
-  ThemeChoice = &amp;#34;tufte&amp;#34;
-  )
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/demo-1.png&#34;
-	width=&#34;1344&#34;
-	height=&#34;960&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/demo-1_hu_153722d17bfd0605.png 480w, https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/demo-1_hu_4642e331e6113107.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;斜线图&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;140&#34;
-		data-flex-basis=&#34;336px&#34;
-	
+&lt;pre tabindex="0"&gt;&lt;code&gt;newggslopegraph(
+data, year, income, company,
+Title = &amp;#34;This is Title&amp;#34;, SubTitle = &amp;#34;This is subTitle&amp;#34;,
+Caption = &amp;#34;This is Caption\nSecond line&amp;#34;, XTextSize = 14, YTextSize = 4,
+TitleTextSize = 14, SubTitleTextSize = 12, CaptionTextSize = 10,
+TitleJustify = &amp;#34;L&amp;#34;, SubTitleJustify = &amp;#34;R&amp;#34;,
+CaptionJustify = &amp;#34;C&amp;#34;, LineThickness = 2,
+LineColor = c(&amp;#34;CompanyD&amp;#34; = &amp;#34;seagreen&amp;#34;,&amp;#34;CompanyA&amp;#34; = &amp;#34;green&amp;#34;,
+&amp;#34;CompanyB&amp;#34; = &amp;#34;tomato&amp;#34;,&amp;#34;CompanyC&amp;#34; = &amp;#34;orange&amp;#34;),
+DataTextSize = 4, DataTextColor = &amp;#34;red&amp;#34;,
+DataLabelPadding = 0.2, DataLabelLineSize = 0.5,
+DataLabelFillColor = &amp;#34;gray&amp;#34;, WiderLabels = FALSE,
+ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
+ThemeChoice = &amp;#34;tufte&amp;#34;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/demo-1.png"
+width="1344"
+height="960"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/demo-1_hu_153722d17bfd0605.png 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/demo-1_hu_4642e331e6113107.png 1024w"
+loading="lazy"
+alt="斜线图"
+class="gallery-image"
+data-flex-grow="140"
+data-flex-basis="336px"
 &gt;&lt;/p&gt;
-&lt;p&gt;一般来说，斜线图是比较两个时间点或两组分类的数据可视图，但也可以用来比较多个时间点，但一般不要过多，一般三、四个，时间跨度最好大一些。如下图。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/chinaunicom-1.png&#34;
-	width=&#34;1344&#34;
-	height=&#34;960&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/chinaunicom-1_hu_64b9f441aebae402.png 480w, https://blog.fallleaf.net/p/tech-r-slope-chart-tutorial/chinaunicom-1_hu_6d9401f1ce5549d8.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;中国联通&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;140&#34;
-		data-flex-basis=&#34;336px&#34;
-	
+&lt;p&gt;一般而言，斜线图最适合用于比较两个时间点或两个分组的数据，也可以扩展到三至四个时间点，但不宜过多，否则应改用传统折线图。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/chinaunicom-1.png"
+width="1344"
+height="960"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/chinaunicom-1_hu_64b9f441aebae402.png 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/chinaunicom-1_hu_6d9401f1ce5549d8.png 1024w"
+loading="lazy"
+alt="中国联通"
+class="gallery-image"
+data-flex-grow="140"
+data-flex-basis="336px"
 &gt;&lt;/p&gt;
-&lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;</description></item></channel></rss>

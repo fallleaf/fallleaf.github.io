@@ -1,130 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>V2ray on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/v2ray/</link>
-        <description>Recent content in V2ray on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 15:41:27 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/v2ray/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>V2ray的WebSocket&#43;TLS&#43;Web安装记录</title>
-        <link>https://blog.fallleaf.net/p/tech-v2ray-websocket-tls-web-installation/</link>
-        <pubDate>Sat, 28 Sep 2019 15:41:27 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-v2ray-websocket-tls-web-installation/</guid>
-        <description>&lt;p&gt;一些vpn或代理的特征比较明显容易被识别，虽然是加密的，看不到内容，但知道是vpn，容易被block，采用websoket+tls+web，虽然也是加密的，但和正常web访问类似，不易被block。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>V2ray on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/v2ray/</link><description>Recent content in V2ray on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 15:41:27 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/v2ray/index.xml" rel="self" type="application/rss+xml"/><item><title>V2ray的WebSocket+TLS+Web安装记录</title><link>https://blog.fallleaf.net/p/tech-v2ray-websocket-tls-web-installation/</link><pubDate>Sat, 28 Sep 2019 15:41:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-v2ray-websocket-tls-web-installation/</guid><description>&lt;p&gt;一些vpn或代理的特征比较明显容易被识别，虽然是加密的，看不到内容，但知道是vpn，容易被block，采用websoket+tls+web，虽然也是加密的，但和正常web访问类似，不易被block。&lt;/p&gt;
 &lt;p&gt;整个过程比较简单，前提是要有一个墙外的VPS。&lt;/p&gt;
-&lt;h2 id=&#34;1-vps安装v2ray服务端&#34;&gt;1. vps安装v2ray（服务端）
+&lt;h2 id="1-vps安装v2ray服务端"&gt;1. vps安装v2ray（服务端）
 &lt;/h2&gt;&lt;p&gt;root权限下执行：&lt;/p&gt;
-&lt;p&gt;bash &amp;lt;(curl -L -s &lt;a class=&#34;link&#34; href=&#34;https://install.direct/go.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://install.direct/go.sh&lt;/a&gt;)&lt;/p&gt;
-&lt;h2 id=&#34;2-修改服务器端配置&#34;&gt;2. 修改服务器端配置
-&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-  &amp;#34;inbounds&amp;#34;: [{
-    &amp;#34;port&amp;#34;: xxxxx, //端口
-    &amp;#34;Listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;,  //本机环回地址，防止外部访问
-    &amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
-    &amp;#34;settings&amp;#34;: {
-      &amp;#34;clients&amp;#34;: [
-        {
-          &amp;#34;id&amp;#34;: &amp;#34;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&amp;#34;, //uuid，客户端一致
-          &amp;#34;level&amp;#34;: 1,
-          &amp;#34;alterId&amp;#34;: 64
-        }
-      ]
-    },
-    &amp;#34;streamSettings&amp;#34;: {
-        &amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;,
-        &amp;#34;wsSettings&amp;#34;: {
-        &amp;#34;path&amp;#34;: &amp;#34;/ray&amp;#34;
-        }
-      }
-  }],
-  &amp;#34;outbounds&amp;#34;: [{
-    &amp;#34;protocol&amp;#34;: &amp;#34;freedom&amp;#34;,
-    &amp;#34;settings&amp;#34;: {}
-  },{
-    &amp;#34;protocol&amp;#34;: &amp;#34;blackhole&amp;#34;,
-    &amp;#34;settings&amp;#34;: {},
-    &amp;#34;tag&amp;#34;: &amp;#34;blocked&amp;#34;
-  }],
-  &amp;#34;routing&amp;#34;: {
-    &amp;#34;rules&amp;#34;: [
-      {
-        &amp;#34;type&amp;#34;: &amp;#34;field&amp;#34;,
-        &amp;#34;ip&amp;#34;: [&amp;#34;geoip:private&amp;#34;],
-        &amp;#34;outboundTag&amp;#34;: &amp;#34;blocked&amp;#34;
-      }
-    ]
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-安装caddy&#34;&gt;3. 安装caddy
-&lt;/h2&gt;&lt;p&gt;wget -N &amp;ndash;no-check-certificate &lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh&lt;/a&gt; &amp;amp;&amp;amp; chmod +x caddy_install.sh &amp;amp;&amp;amp; bash caddy_install.sh install&lt;/p&gt;
-&lt;h2 id=&#34;4-修改caddy配置&#34;&gt;4. 修改caddy配置
-&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;xxx.xxx.xxx //域名
+&lt;p&gt;bash &amp;lt;(curl -L -s &lt;a class="link" href="https://install.direct/go.sh" target="_blank" rel="noopener"
+&gt;https://install.direct/go.sh&lt;/a&gt;)&lt;/p&gt;
+&lt;h2 id="2-修改服务器端配置"&gt;2. 修改服务器端配置
+&lt;/h2&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;{
+&amp;#34;inbounds&amp;#34;: [{
+&amp;#34;port&amp;#34;: xxxxx, //端口
+&amp;#34;Listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;, //本机环回地址，防止外部访问
+&amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
+&amp;#34;settings&amp;#34;: {
+&amp;#34;clients&amp;#34;: [
 {
-  tls xxx@xxx.com  //修改为邮箱
-  log /var/log/caddy.log
-  proxy /ray localhost:xxxx {  //和v2ray的端口好对应
-    websocket
-    header_upstream -Origin
-  }
+&amp;#34;id&amp;#34;: &amp;#34;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&amp;#34;, //uuid，客户端一致
+&amp;#34;level&amp;#34;: 1,
+&amp;#34;alterId&amp;#34;: 64
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;5-重启动服务端&#34;&gt;5. 重启动服务端
+]
+},
+&amp;#34;streamSettings&amp;#34;: {
+&amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;,
+&amp;#34;wsSettings&amp;#34;: {
+&amp;#34;path&amp;#34;: &amp;#34;/ray&amp;#34;
+}
+}
+}],
+&amp;#34;outbounds&amp;#34;: [{
+&amp;#34;protocol&amp;#34;: &amp;#34;freedom&amp;#34;,
+&amp;#34;settings&amp;#34;: {}
+},{
+&amp;#34;protocol&amp;#34;: &amp;#34;blackhole&amp;#34;,
+&amp;#34;settings&amp;#34;: {},
+&amp;#34;tag&amp;#34;: &amp;#34;blocked&amp;#34;
+}],
+&amp;#34;routing&amp;#34;: {
+&amp;#34;rules&amp;#34;: [
+{
+&amp;#34;type&amp;#34;: &amp;#34;field&amp;#34;,
+&amp;#34;ip&amp;#34;: [&amp;#34;geoip:private&amp;#34;],
+&amp;#34;outboundTag&amp;#34;: &amp;#34;blocked&amp;#34;
+}
+]
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="3-安装caddy"&gt;3. 安装caddy
+&lt;/h2&gt;&lt;p&gt;wget -N &amp;ndash;no-check-certificate &lt;a class="link" href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh" target="_blank" rel="noopener"
+&gt;https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh&lt;/a&gt; &amp;amp;&amp;amp; chmod +x caddy_install.sh &amp;amp;&amp;amp; bash caddy_install.sh install&lt;/p&gt;
+&lt;h2 id="4-修改caddy配置"&gt;4. 修改caddy配置
+&lt;/h2&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;xxx.xxx.xxx //域名
+{
+tls xxx@xxx.com //修改为邮箱
+log /var/log/caddy.log
+proxy /ray localhost:xxxx { //和v2ray的端口好对应
+websocket
+header_upstream -Origin
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="5-重启动服务端"&gt;5. 重启动服务端
 &lt;/h2&gt;&lt;p&gt;service caddy restart
 service v2ray restart&lt;/p&gt;
-&lt;h2 id=&#34;6-客户端安装v2ray&#34;&gt;6. 客户端安装v2ray
+&lt;h2 id="6-客户端安装v2ray"&gt;6. 客户端安装v2ray
 &lt;/h2&gt;&lt;p&gt;见网络教程&lt;/p&gt;
-&lt;h2 id=&#34;7-修改v2ray客户端配置&#34;&gt;7. 修改v2ray客户端配置
-&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-  &amp;#34;inbounds&amp;#34;: [
-    {
-      &amp;#34;port&amp;#34;: 1080,
-      &amp;#34;listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;,
-      &amp;#34;protocol&amp;#34;: &amp;#34;socks&amp;#34;,
-      &amp;#34;sniffing&amp;#34;: {
-        &amp;#34;enabled&amp;#34;: true,
-        &amp;#34;destOverride&amp;#34;: [&amp;#34;http&amp;#34;, &amp;#34;tls&amp;#34;]
-      },
-      &amp;#34;settings&amp;#34;: {
-        &amp;#34;auth&amp;#34;: &amp;#34;noauth&amp;#34;,
-        &amp;#34;udp&amp;#34;: false
-      }
-    }
-  ],
-  &amp;#34;outbounds&amp;#34;: [
-    {
-      &amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
-      &amp;#34;settings&amp;#34;: {
-        &amp;#34;vnext&amp;#34;: [
-          {
-            &amp;#34;address&amp;#34;: &amp;#34;xxx.xxx.xxx&amp;#34;, //v2ray服务器域名
-            &amp;#34;port&amp;#34;: 443,
-            &amp;#34;users&amp;#34;: [
-              {
-                &amp;#34;id&amp;#34;: &amp;#34;xxxxxxxxx-xxxx-xxxx-xxxxxxxx&amp;#34;,//和服务器uuid一致
-                &amp;#34;alterId&amp;#34;: 64
-              }
-            ]
-          }
-        ]
-      },
-      &amp;#34;streamSettings&amp;#34;: {
-        &amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;,
-        &amp;#34;security&amp;#34;: &amp;#34;tls&amp;#34;,
-        &amp;#34;wsSettings&amp;#34;: {
-          &amp;#34;path&amp;#34;: &amp;#34;/ray&amp;#34;
-        }
-      }
-    }
-  ]
+&lt;h2 id="7-修改v2ray客户端配置"&gt;7. 修改v2ray客户端配置
+&lt;/h2&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;{
+&amp;#34;inbounds&amp;#34;: [
+{
+&amp;#34;port&amp;#34;: 1080,
+&amp;#34;listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;,
+&amp;#34;protocol&amp;#34;: &amp;#34;socks&amp;#34;,
+&amp;#34;sniffing&amp;#34;: {
+&amp;#34;enabled&amp;#34;: true,
+&amp;#34;destOverride&amp;#34;: [&amp;#34;http&amp;#34;, &amp;#34;tls&amp;#34;]
+},
+&amp;#34;settings&amp;#34;: {
+&amp;#34;auth&amp;#34;: &amp;#34;noauth&amp;#34;,
+&amp;#34;udp&amp;#34;: false
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;8-上网&#34;&gt;8. 上网
-&lt;/h2&gt;&lt;p&gt;启动客户端v2ray，上网设置为socks，地址127.0.0.1，端口1080&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+}
+],
+&amp;#34;outbounds&amp;#34;: [
+{
+&amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
+&amp;#34;settings&amp;#34;: {
+&amp;#34;vnext&amp;#34;: [
+{
+&amp;#34;address&amp;#34;: &amp;#34;xxx.xxx.xxx&amp;#34;, //v2ray服务器域名
+&amp;#34;port&amp;#34;: 443,
+&amp;#34;users&amp;#34;: [
+{
+&amp;#34;id&amp;#34;: &amp;#34;xxxxxxxxx-xxxx-xxxx-xxxxxxxx&amp;#34;,//和服务器uuid一致
+&amp;#34;alterId&amp;#34;: 64
+}
+]
+}
+]
+},
+&amp;#34;streamSettings&amp;#34;: {
+&amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;,
+&amp;#34;security&amp;#34;: &amp;#34;tls&amp;#34;,
+&amp;#34;wsSettings&amp;#34;: {
+&amp;#34;path&amp;#34;: &amp;#34;/ray&amp;#34;
+}
+}
+}
+]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="8-上网"&gt;8. 上网
+&lt;/h2&gt;&lt;p&gt;启动客户端v2ray，上网设置为socks，地址127.0.0.1，端口1080&lt;/p&gt;</description></item></channel></rss>

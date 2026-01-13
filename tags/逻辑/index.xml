@@ -1,22 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>逻辑 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E9%80%BB%E8%BE%91/</link>
-        <description>Recent content in 逻辑 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 16:37:27 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E9%80%BB%E8%BE%91/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>宗教和逻辑</title>
-        <link>https://blog.fallleaf.net/p/note-religion-logic/</link>
-        <pubDate>Thu, 08 Jul 2010 16:37:27 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/note-religion-logic/</guid>
-        <description>&lt;p&gt;对于基督、穆斯林信徒来说，必须回答“神是存在的。”，倘若回答了不存在，那就是无神论者。但佛教信徒则不同，即便回答“佛不存在”，“哪里会有佛”，“佛不过是草芥”，也可能是地地道道的佛教徒。&lt;/p&gt;
-&lt;p&gt;引自《给讨厌数学的人：数学的奥秘和生活》&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>逻辑 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E9%80%BB%E8%BE%91/</link><description>Recent content in 逻辑 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 16:37:27 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E9%80%BB%E8%BE%91/index.xml" rel="self" type="application/rss+xml"/><item><title>宗教和逻辑</title><link>https://blog.fallleaf.net/p/note-religion-logic/</link><pubDate>Thu, 08 Jul 2010 16:37:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/note-religion-logic/</guid><description>&lt;p&gt;对于基督、穆斯林信徒来说，必须回答“神是存在的。”，倘若回答了不存在，那就是无神论者。但佛教信徒则不同，即便回答“佛不存在”，“哪里会有佛”，“佛不过是草芥”，也可能是地地道道的佛教徒。&lt;/p&gt;
+&lt;p&gt;引自《给讨厌数学的人：数学的奥秘和生活》&lt;/p&gt;</description></item></channel></rss>

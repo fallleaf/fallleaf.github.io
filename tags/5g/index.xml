@@ -1,26 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>5G on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/5g/</link>
-        <description>Recent content in 5G on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 08:49:28 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/5g/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>5G承载中回传新接口:50GE</title>
-        <link>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</link>
-        <pubDate>Fri, 13 Dec 2019 08:49:28 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</guid>
-        <description>&lt;p&gt;在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。&lt;/p&gt;
-&lt;h2 id=&#34;50g相关以太网光接口标准&#34;&gt;50G相关以太网光接口标准
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>5G on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/5g/</link><description>Recent content in 5G on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 08:49:28 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/5g/index.xml" rel="self" type="application/rss+xml"/><item><title>5G承载中回传新接口:50GE</title><link>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</link><pubDate>Fri, 13 Dec 2019 08:49:28 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</guid><description>&lt;p&gt;在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。&lt;/p&gt;
+&lt;h2 id="50g相关以太网光接口标准"&gt;50G相关以太网光接口标准
 &lt;/h2&gt;&lt;p&gt;IEEE的两个标准：IEEE 802.3 bs(400G，200G) 和802.3 cd（200G，100G，50G） 定义了50G，100G，200G，400G以太网的媒体访问控制层（MAC）以及物理层（PHY）的相关参数。主要的光接口类型以及采用的调制格式如下表：&lt;/p&gt;
 &lt;p&gt;可以看到，在实现50G以上的高速以太网接口时，主要采用了50G比特速率（波特26.6GBaud），PAM4调制方式。&lt;/p&gt;
-&lt;h2 id=&#34;为什么是pam4&#34;&gt;为什么是PAM4
+&lt;h2 id="为什么是pam4"&gt;为什么是PAM4
 &lt;/h2&gt;&lt;p&gt;光传输一直在追求更高的传输速率，但速率越高，所面临的问题也就越多，诸如色散、发光功率、信噪比、光收发器的线性度及灵敏度、技术成熟度、成本等。提高速率的方式有多种，包括通过频率、振幅、相位等变化的调制方式。&lt;/p&gt;
 &lt;p&gt;NRZ（不归零码，Non-Return-to-Zero）调制方式一直是光通信采用的主要技术，随着速率的提升，如 200G/400G，NRZ调制在色散影响、光电转换带宽和成本上遇到了较大的困难。对于25G以上的波特率，在中长距传输时，色散的影响显著；光电转换带宽在60Gbit/s以上出现了技术瓶颈。对于高速接口，每通道数据速率要提高到50Gbps以上，如果仍然采用NRZ技术，由于每个符号周期只有不到20ps，对于收发芯片的时间裕量以及传输链路的损耗要求更加苛刻， 若能既保持较低的波特率，又提高每一波特的信息量，就能大大降低光器件的带宽要求，从而可以降低光器件成本。而PAM4调制方式极大的满足了上述要求，是继NRZ后热门的信号调制技术，也是多阶调制技术的代表。&lt;/p&gt;
-&lt;h2 id=&#34;pam4是什么&#34;&gt;PAM4是什么
+&lt;h2 id="pam4是什么"&gt;PAM4是什么
 &lt;/h2&gt;&lt;p&gt;PAM即脉冲幅度调制（Pulse Amplitude Modulation）。NRZ调制方式采用高、低两种信号电平来表示要传输的数字逻辑信号的1、0信息，每个信号符号周期可以传输1bit的逻辑信息，实际上NRZ方式可也叫做PAM2，2表示的是有2种电平信号。那么PAM4调制方式就是采用4个不同的信号电平来进行数据传输，每个符号周期可以表示2bit的逻辑信息（00、01、10、11）。由于 PAM4 信号每个符号周期可以传输2bit的信息，因此要实现同样的信号传输能力，PAM4信号的符号速率（波特率）只有NRZ信号的一半，换而言之，采用同样的波特速率，PAM4的信号比特率是NRZ信号的2倍，比如利用25G波特率，PAM4调制方式，可以传输50G比特率的信息。NRZ和PAM4信号典型波形如下图所示，右侧为NRZ和PAM4的光眼图对比，NRZ为单眼波形，PAM4为三眼波形（Y轴方向存在3个眼状图形）。&lt;/p&gt;
 &lt;p&gt;其实多阶PAM调制的概念并不新鲜，比如最普遍使用的100MBase-T以太网，就使用3种电平进行信号传输；而在无线通信领域中普遍使用的16QAM调制、32QAM调制、64QAM调制等，也都是采用多电平的基带信号对载波信号进行调制。此外还有PAM5（802.3ab），PAM8（802.3bm）等。&lt;/p&gt;
 &lt;p&gt;在2014年发布的100G背板标准802.3 bj中，同时定义了两种信号传输方式：4组25.78G波特率的NRZ信号，或者4组13.6G波特率的PAM4信号。由于芯片技术以及PCB板材和连接器技术的快速发展，25G波特率的NRZ技术很快实现商用应用，但PAM4由于当时技术成熟度和成本的原因，并没有在100G以太网的技术中被真正应用。随着IEEE 802.3 bs 和802.3 cd的发布，PAM4将越来越多的大规模应用起来。
@@ -28,14 +13,14 @@
 &lt;p&gt;IEEE 802.3 bs标准批准时间为2017年12月，该标准覆盖了400GE/200GE两种以太网接口速率。其中400GE定义了LR8 (10km)/FR8 (2km)/DR4 (500m)/SR16 (100m)等PMD子层规格以及多种AUI电接口。LR8/FR8采用了50G PAM4技术，成为以太网标准中首个采用该技术接口标准，为PAM4技术开启广泛商用打开了大门。&lt;/p&gt;
 &lt;p&gt;IEEE 802.3 cd标准批准时间为2018年12月，标准覆盖了50GBASE-LR/KR/SR PMD子层，所有PMD子层都采用了50G PAM4技术，50GE是PAM4技术应用最广泛的以太网接口速率。&lt;/p&gt;
 &lt;p&gt;以上标准定义的50GE传输距离都在10km以下，2018年4月IEEE成立了Beyond 10km工作组，对50G在40km传输距离范围内，100G、200G、400G在40km及80km传输范围的技术进行研究，2018年9月更改为P802.3 cn工作组，计划规范批准时间节点为2020年6月。&lt;/p&gt;
-&lt;h2 id=&#34;50g光收发模块原理及功率预算&#34;&gt;50G光收发模块原理及功率预算
+&lt;h2 id="50g光收发模块原理及功率预算"&gt;50G光收发模块原理及功率预算
 &lt;/h2&gt;&lt;p&gt;基于50G PAM4光模块运用PAM4编码技术，每个采样周期的传输信息量提升了一倍，可以利用一对25G发射和接收器件实现50G传输速率，降低了模块的成本。50G PAM4可有多种应用场景，除了单通道的50GE PAM4光模块，还有4通道的200GE（4×50G）光模块和8通道的400GE（8×50G）光模块。&lt;/p&gt;
 &lt;p&gt;下面以单通道50G PAM4即50GE光模块为例，介绍各模块功能。&lt;/p&gt;
 &lt;p&gt;发送方向：数据经过50GE MAC、PCS、PMA后，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到50GE光模块，经过PAM4 DSP编解码芯片进行速率和码型转换，从2通道转换为1通道，调制码型转换成为PAM4，速率为26.5625G波特率，激光器驱动芯片将PAM4信号放大，驱动25G激光器将电信号转换为单波长25GBaud（50Gbps）光信号。&lt;/p&gt;
 &lt;p&gt;接收方向，接受器将单波长25GBaud光信号转换为电信号，整形放大后输出至PAM4 DSP编解码芯片，PAM4编解码芯片再将该信号转换为2*25G NRZ信号，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到以太网处理芯片。&lt;/p&gt;
 &lt;p&gt;目前50GE PAM4模块的封装形式为QSFP28，计划的封装为SFP56，光口类型为LC，使用单模光纤，中心波长为1311nm，传输距离为10km/40km，模块的最大功耗为4.5W。有关功率预算关键技术参数如下表：&lt;/p&gt;
 &lt;p&gt;和传输距离相关的主要是通道插损，即光纤以及光纤连接器引入的插损之和。IEEE目前定义50G LR场景，极限情况下是1304.5nm，按0.43dB/km计算，即0.43dB/km×10km=4.3dB，还有6.3-4.3=2dB余量是给光纤连接、以及熔纤导致的插损。&lt;/p&gt;
-&lt;h2 id=&#34;50g光收发模块相关技术&#34;&gt;50G光收发模块相关技术
+&lt;h2 id="50g光收发模块相关技术"&gt;50G光收发模块相关技术
 &lt;/h2&gt;&lt;p&gt;PAM4相比传统的NRZ信号，从2阶变为4阶，眼图从单眼变成3眼。在承载bit效率方面虽然提升了1倍，但也引入了对噪声、线性度敏感的问题，因此不能简单的利用已经成熟的25G光电模块，还需根据PAM4的特性进行相应的改变。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;发送机线性要求&lt;/li&gt;
@@ -49,7 +34,7 @@
 &lt;li&gt;PAM4 DSP芯片&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;由于PAM4编码有4种电平逻辑，所以要求模块内部的Driver和TIA芯片都具备线性输出功能，而NRZ模块使用限幅输出的方案即可。PAM4模块需要使用DSP来完成50G PAM4和2×25G NRZ信号的转换，而NRZ模块只需要使用传统的CDR芯片即可完成数据传输。&lt;/p&gt;
-&lt;h2 id=&#34;50ge的应用及展望&#34;&gt;50GE的应用及展望
+&lt;h2 id="50ge的应用及展望"&gt;50GE的应用及展望
 &lt;/h2&gt;&lt;p&gt;50GE除了在数据中心的交换机以及服务器互联中大量采用，随着5G承载网建设的日益临近，其在承载网接入层中的应用也越来越多的得到运营商的关注。&lt;/p&gt;
 &lt;p&gt;在运营商方面：&lt;/p&gt;
 &lt;ul&gt;
@@ -69,9 +54,4 @@
 &lt;p&gt;50GE在5G回传接入层的应用，主要取决于接入层流量预测以及50GE光收发器的价格。&lt;/p&gt;
 &lt;p&gt;据测算，目前4G基站单站平均流速大概0.08Gb/s，结合目前运营商的建设指导意见，一个接入环大概带4个BBU集中点，一个BBU集中点大约带10个左右的基站，若按5G基站平均流速是4G的10倍计算，则一个环的总流速大概为0.08×10×4×10=32Gb/s，这种情况下采用50GE是比较合适的，但考虑初期50GE成本问题，建设初期可采用10GE建设，随着流量增加进行10GE捆绑方式扩容（实际上，也可考虑采用前传采用的25GE速率）。假若50GE的价格能够达到10GE价格的2-3倍时（这一点在数通的报价体系内估计很难达到），或100GE的1/3以下时，采用50GE是一个优选的方案，可以达到TCO的最优。n×10GE捆绑方式，除了考虑光模块的价格，还要把维护量的增加、数据配置的复杂、对光纤的占用都纳入TCO的评估中。据相关资料，现有4G回传接入层有30%-44%采用的40km10G光模块，因此50GE 40km光模块的价格对其应用也是至关重要的。&lt;/p&gt;
 &lt;p&gt;126.6GBaud实为26.5625GBaud，在使用PAM4调制时，采用前向纠错编码RS-FEC（544，514）以及线路编码256b257b将25G变为26.5625G，25G×（544÷514）×（257÷256）＝26.5625G。&lt;/p&gt;
-&lt;p&gt;225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。&lt;/p&gt;</description></item></channel></rss>

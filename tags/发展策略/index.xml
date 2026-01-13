@@ -1,28 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>发展策略 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E5%8F%91%E5%B1%95%E7%AD%96%E7%95%A5/</link>
-        <description>Recent content in 发展策略 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Thu, 11 Sep 2025 00:01:23 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E5%8F%91%E5%B1%95%E7%AD%96%E7%95%A5/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>不争“一时之快”，要谋“长久之道”，一个宽带后发者的破局逻辑</title>
-        <link>https://blog.fallleaf.net/p/notes-latecomer-broadband-odn-breakthrough-strategy/</link>
-        <pubDate>Thu, 11 Sep 2025 00:39:23 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/notes-latecomer-broadband-odn-breakthrough-strategy/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-latecomer-broadband-odn-breakthrough-strategy/cover.webp" alt="Featured image of post 不争“一时之快”，要谋“长久之道”，一个宽带后发者的破局逻辑" /&gt;&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>发展策略 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E5%8F%91%E5%B1%95%E7%AD%96%E7%95%A5/</link><description>Recent content in 发展策略 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Thu, 11 Sep 2025 00:01:23 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E5%8F%91%E5%B1%95%E7%AD%96%E7%95%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>不争“一时之快”，要谋“长久之道”，一个宽带后发者的破局逻辑</title><link>https://blog.fallleaf.net/p/notes-latecomer-broadband-odn-breakthrough-strategy/</link><pubDate>Thu, 11 Sep 2025 00:39:23 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-latecomer-broadband-odn-breakthrough-strategy/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-latecomer-broadband-odn-breakthrough-strategy/cover.webp" alt="Featured image of post 不争“一时之快”，要谋“长久之道”，一个宽带后发者的破局逻辑" /&gt;&lt;blockquote&gt;
 &lt;p&gt;在这个言必称“万兆”的时代，我们选择了一条更为沉静的道路——不追逐表面的技术光环，而是俯身深耕，致力于为每一个小区、每一栋楼宇，铺设一条足以支撑20年演进的光纤网络。
 因为我们深信： &lt;strong&gt;真正的宽带竞争力，不在于今日速度的巅峰，而在于明日能否持续稳健地奔跑。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;引言当万兆成为潮流我们应去向何方&#34;&gt;引言：当万兆成为潮流，我们应去向何方？
+&lt;h2 id="引言当万兆成为潮流我们应去向何方"&gt;引言：当万兆成为潮流，我们应去向何方？
 &lt;/h2&gt;&lt;p&gt;2025年，“万兆小区”、“万兆工厂”、“50G PON”已成为行业热点。主流运营商争相展示技术实力，似乎不提“万兆”便落后于时代。&lt;/p&gt;
 &lt;p&gt;然而，作为一家后发运营商，资源有限，我们更需要冷静思考： &lt;strong&gt;是否必须即刻追随“万兆”？用户最核心的需求究竟是什么？又该如何在技术迭代中稳健立足？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;答案可能出乎意料： &lt;strong&gt;当前最紧迫的，并非提速，而是重构底层逻辑。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我们选择了一条逆向路径—— &lt;strong&gt;不求最快，但求最稳&lt;/strong&gt; 。将焦点从“当下能提供多高的速率”转向“未来20年能否持续支撑技术演进”。这不仅是务实之举，更是战略上的清醒。&lt;/p&gt;
-&lt;h2 id=&#34;困境一线营销为何难以回应客户&#34;&gt;困境：一线营销为何难以回应客户？
+&lt;h2 id="困境一线营销为何难以回应客户"&gt;困境：一线营销为何难以回应客户？
 &lt;/h2&gt;&lt;p&gt;“你们宽带什么时候能覆盖我们小区？”
 “有千兆吗？支持全屋Wi-Fi（FTTR）吗？”
 “别人都万兆了，你们才千兆，是不是太慢了？”&lt;/p&gt;
@@ -36,52 +21,52 @@
 不断为短期需求投入，却忽视了长期能力的构建；
 忙于更换“电梯”，却未夯实“大楼地基”。&lt;/p&gt;
 &lt;p&gt;这不仅是执行层面的问题，更是战略方向的偏差。&lt;/p&gt;
-&lt;h2 id=&#34;本质思考固定宽带的核心价值是什么&#34;&gt;本质思考：固定宽带的核心价值是什么？
+&lt;h2 id="本质思考固定宽带的核心价值是什么"&gt;本质思考：固定宽带的核心价值是什么？
 &lt;/h2&gt;&lt;p&gt;要突破困局，必须回归本质： &lt;strong&gt;固定宽带的根本价值何在？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我们认为其价值可分为三层，层层递进：&lt;/p&gt;
-&lt;h3 id=&#34;覆盖可用性是服务的基石&#34;&gt;覆盖：可用性是服务的基石
+&lt;h3 id="覆盖可用性是服务的基石"&gt;覆盖：可用性是服务的基石
 &lt;/h3&gt;&lt;p&gt;没有覆盖，一切无从谈起。用户若无法接入，再快的速率也只是空谈。尤其在家庭市场， &lt;strong&gt;“有无”永远先于“快慢”&lt;/strong&gt; 。&lt;/p&gt;
-&lt;h3 id=&#34;服务良好体验决定用户留存&#34;&gt;服务：良好体验决定用户留存
+&lt;h3 id="服务良好体验决定用户留存"&gt;服务：良好体验决定用户留存
 &lt;/h3&gt;&lt;p&gt;宽带与移动网络不同，承载的是家庭全天候连接、远程办公、在线教育及智能设备互联等刚性需求。用户对安装效率、故障响应、网络稳定性抱有极高期望。
 &lt;strong&gt;服务即口碑，即留存率，即ARPU值的保障。&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;速率重要但非决定性因素&#34;&gt;速率：重要但非决定性因素
+&lt;h3 id="速率重要但非决定性因素"&gt;速率：重要但非决定性因素
 &lt;/h3&gt;&lt;p&gt;速率是基础能力，但对大多数家庭用户，500M与1000M的实际体验差异并不明显。据宽带发展联盟2024年第四季度报告，固定宽带平均下载速率（用户体验）仅为99.14Mbit/s。过度追求“万兆”乃至“千兆”，犹如为家用车配备F1引擎——成本高昂而利用率低。&lt;/p&gt;
 &lt;p&gt;更关键的是，速率发挥依赖于底层网络架构。若根基不固，再强的OLT也难以施展全力。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;结论：作为后发者，宽带发展应遵循——覆盖优先，服务并重，速率适度。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;现实挑战我们具备足够的实力吗&#34;&gt;现实挑战：我们具备足够的实力吗？
+&lt;h2 id="现实挑战我们具备足够的实力吗"&gt;现实挑战：我们具备足够的实力吗？
 &lt;/h2&gt;&lt;p&gt;必须正视现实，从基础数据看，我们仍处明显劣势：&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;指标&lt;/th&gt;
-          &lt;th&gt;我方现状&lt;/th&gt;
-          &lt;th&gt;行业头部&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;宽带用户占比&lt;/td&gt;
-          &lt;td&gt;&amp;lt;5%&lt;/td&gt;
-          &lt;td&gt;&amp;gt;30%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;千兆用户占比&lt;/td&gt;
-          &lt;td&gt;&amp;lt;1%&lt;/td&gt;
-          &lt;td&gt;&amp;gt;15%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;住宅覆盖率&lt;/td&gt;
-          &lt;td&gt;刚达及格线&lt;/td&gt;
-          &lt;td&gt;接近99%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;OLT端口规模&lt;/td&gt;
-          &lt;td&gt;不足行业1/10&lt;/td&gt;
-          &lt;td&gt;大规模部署&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指标&lt;/th&gt;
+&lt;th&gt;我方现状&lt;/th&gt;
+&lt;th&gt;行业头部&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;宽带用户占比&lt;/td&gt;
+&lt;td&gt;&amp;lt;5%&lt;/td&gt;
+&lt;td&gt;&amp;gt;30%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;千兆用户占比&lt;/td&gt;
+&lt;td&gt;&amp;lt;1%&lt;/td&gt;
+&lt;td&gt;&amp;gt;15%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;住宅覆盖率&lt;/td&gt;
+&lt;td&gt;刚达及格线&lt;/td&gt;
+&lt;td&gt;接近99%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OLT端口规模&lt;/td&gt;
+&lt;td&gt;不足行业1/10&lt;/td&gt;
+&lt;td&gt;大规模部署&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;更严峻的是， &lt;strong&gt;宽带端口利用率偏低&lt;/strong&gt; ，表明当前投资尚未形成有效产出。与此同时，头部运营商已大规模推进FTTR、50G PON试点，通过融合套餐构建“网络+内容+服务”生态壁垒。&lt;/p&gt;
 &lt;p&gt;我们面临三重压力：&lt;/p&gt;
@@ -94,7 +79,7 @@
 &lt;p&gt;我们并非输在当下，而是输在过去的布局。
 而今天的选择，将决定我们能否拥有未来。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;战略选择双线并行缺一不可&#34;&gt;战略选择：双线并行，缺一不可
+&lt;h2 id="战略选择双线并行缺一不可"&gt;战略选择：双线并行，缺一不可
 &lt;/h2&gt;&lt;p&gt;或许有人提议：既然差距显著，是否应放弃固网，专注移动？&lt;/p&gt;
 &lt;p&gt;答案明确： &lt;strong&gt;不可偏废。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;运营商的可持续发展需依靠“双轮驱动”：&lt;/p&gt;
@@ -105,7 +90,7 @@
 &lt;p&gt;缺失任一，都如在5G-A、6G、边缘计算及家庭AI终端爆发的时代独脚前行，必然失衡。&lt;/p&gt;
 &lt;p&gt;固网不仅是管道，更是 &lt;strong&gt;数字家庭入口、智慧城市底座、算力网络锚点&lt;/strong&gt; 。未来的“云宽带”、“AI宽带”及“确定性网络”皆需以高质量光纤接入为基础。&lt;/p&gt;
 &lt;p&gt;因此，我们必须坚定投入固网，但 &lt;strong&gt;绝非盲目投入，而是战略性的精准投入&lt;/strong&gt; 。&lt;/p&gt;
-&lt;h2 id=&#34;启示何谓真正的地基&#34;&gt;启示：何谓真正的“地基”？
+&lt;h2 id="启示何谓真正的地基"&gt;启示：何谓真正的“地基”？
 &lt;/h2&gt;&lt;p&gt;将宽带建设比作盖楼，则：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;光纤配线网（ODN）&lt;/strong&gt; 如同楼的 &lt;strong&gt;钢筋结构&lt;/strong&gt; ，深埋地下，穿墙入户，一旦建成可使用15-20年，决定了楼的稳固性与未来扩展性。&lt;/li&gt;
@@ -118,45 +103,45 @@
 &lt;p&gt;&lt;strong&gt;最好的技术升级，是让升级本身变得简单。&lt;/strong&gt;
 而让升级简单的前提，是拥有面向未来的物理网络底座。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;破局战略面向未来构建可持续光网&#34;&gt;破局战略：面向未来，构建可持续光网
+&lt;h2 id="破局战略面向未来构建可持续光网"&gt;破局战略：面向未来，构建可持续光网
 &lt;/h2&gt;&lt;p&gt;基于以上思考，我们提出后发者的破局战略： &lt;strong&gt;“覆盖先行、服务驱动、弹性演进”&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;覆盖先行确保用户随时接入&#34;&gt;覆盖先行：确保用户“随时接入”
-&lt;/h3&gt;&lt;h4 id=&#34;1聚焦高需求区域&#34;&gt;1.聚焦高需求区域
+&lt;h3 id="覆盖先行确保用户随时接入"&gt;覆盖先行：确保用户“随时接入”
+&lt;/h3&gt;&lt;h4 id="1聚焦高需求区域"&gt;1.聚焦高需求区域
 &lt;/h4&gt;&lt;p&gt;将有限资源集中于城市区域，这些地区需求密集，利于快速形成规模覆盖，积累用户基础与市场口碑。&lt;/p&gt;
-&lt;h4 id=&#34;连片建设形成局部优势&#34;&gt;连片建设，形成局部优势
+&lt;h4 id="连片建设形成局部优势"&gt;连片建设，形成局部优势
 &lt;/h4&gt;&lt;p&gt;采取“集中开荒”策略，在选定的区域实现连续、完整覆盖，避免零散投入。此举可提升资源效率，降低运营成本，并快速建立区域品牌影响力。&lt;/p&gt;
-&lt;h4 id=&#34;完善覆盖保障快速接入&#34;&gt;完善覆盖，保障快速接入
+&lt;h4 id="完善覆盖保障快速接入"&gt;完善覆盖，保障快速接入
 &lt;/h4&gt;&lt;p&gt;确保用户提出需求时能够迅速响应与安装，缩短等待时间。 “即插即用” 的体验对于获取新用户、提升满意度至关重要。&lt;/p&gt;
-&lt;h4 id=&#34;高标准建设奠定长远基础&#34;&gt;高标准建设，奠定长远基础
+&lt;h4 id="高标准建设奠定长远基础"&gt;高标准建设，奠定长远基础
 &lt;/h4&gt;&lt;p&gt;ODN是宽带网络的“地基”，按最高标准建设，确保低故障率、高稳定性及未来升级能力。虽初期投入增加，但长期看可降低维护成本，避免重复建设，实现 “一次投入，长期受益” 。&lt;/p&gt;
-&lt;h3 id=&#34;服务驱动以用心赢得用户&#34;&gt;服务驱动：以“用心”赢得用户
-&lt;/h3&gt;&lt;h4 id=&#34;1-精细化运营化覆盖为口碑&#34;&gt;1. 精细化运营，化覆盖为口碑
+&lt;h3 id="服务驱动以用心赢得用户"&gt;服务驱动：以“用心”赢得用户
+&lt;/h3&gt;&lt;h4 id="1-精细化运营化覆盖为口碑"&gt;1. 精细化运营，化覆盖为口碑
 &lt;/h4&gt;&lt;p&gt;在覆盖区域重点确保用户“用得好”：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;高效维护&lt;/strong&gt; ：建立定期巡检机制，保障网络稳定，最大限度降低故障率。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;快速响应&lt;/strong&gt; ：优化安装与维修流程，及时响应用户需求，打造“随时在身边”的服务体验。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;主动服务&lt;/strong&gt; ：定期回访，了解使用情况，提供个性化建议，变“一锤子买卖”为“长期关系”。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;2-差异化宣传强调可靠性而非速率&#34;&gt;2. 差异化宣传：强调可靠性而非速率
+&lt;h4 id="2-差异化宣传强调可靠性而非速率"&gt;2. 差异化宣传：强调可靠性而非速率
 &lt;/h4&gt;&lt;p&gt;在“万兆”喧哗中，独树一帜：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;调整重心&lt;/strong&gt; ：宣传从“速率领先”转向 “覆盖全面、服务优质、价格实惠” ，突出可靠性。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;理性引导&lt;/strong&gt; ：倡导 “够用即可，按需升级” ，传递“我们优先保障您能接入”的理念。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3-灵活定价抢占市场入口&#34;&gt;3. 灵活定价，抢占市场入口
+&lt;h4 id="3-灵活定价抢占市场入口"&gt;3. 灵活定价，抢占市场入口
 &lt;/h4&gt;&lt;p&gt;不参与速率竞赛，意味着可投入更多资源至 &lt;strong&gt;更具竞争力的资费&lt;/strong&gt; ：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;核心是“接入权”&lt;/strong&gt; ：以优惠价格提供可靠网络，快速获取用户，夯实基础。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;扩大用户规模&lt;/strong&gt; ：在速率感知差异不大的当下，价格成为重要选择因素，优惠资费是拓展市场的有效方式。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4-突出长期价值一张光网支撑未来&#34;&gt;4. 突出长期价值：一张光网，支撑未来
+&lt;h4 id="4-突出长期价值一张光网支撑未来"&gt;4. 突出长期价值：一张光网，支撑未来
 &lt;/h4&gt;&lt;p&gt;宣传聚焦网络基础设施的持久价值：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;彰显ODN优势&lt;/strong&gt; ：告诉用户我们打造的是 “百年基业” ，是高标准、可升级的物理网络。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;描绘演进蓝图&lt;/strong&gt; ：清晰展示网络潜力—— “今日百兆，明日千兆，未来万兆，皆为可能” ，既体现价值，也管理预期，同时传递发展信心。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;弹性演进以智慧规划未来&#34;&gt;弹性演进：以“智慧”规划未来
-&lt;/h3&gt;&lt;h4 id=&#34;1-优化olt布局集中部署提升效率&#34;&gt;1. 优化OLT布局：集中部署，提升效率
+&lt;h3 id="弹性演进以智慧规划未来"&gt;弹性演进：以“智慧”规划未来
+&lt;/h3&gt;&lt;h4 id="1-优化olt布局集中部署提升效率"&gt;1. 优化OLT布局：集中部署，提升效率
 &lt;/h4&gt;&lt;p&gt;不追求OLT数量，而是构建 “广覆盖、少局点、高效率” 的网络：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;集中化逻辑&lt;/strong&gt; ：借鉴“精耕细作”思路，依托优质ODN，将OLT集中部署，通过主干光缆连接，OLT局点覆盖更广区域，提升效率。&lt;/li&gt;
@@ -169,13 +154,13 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;逐步整合&lt;/strong&gt; ：对现有OLT局点，逐步实施 &lt;strong&gt;拆并割接&lt;/strong&gt; ，迁移用户至新局点，淘汰老旧设备，避免运维负担，确保架构统一。仅在无法割接时，评估后作为过渡部署。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;2-需求导向的设备采购兼顾现状与未来&#34;&gt;2. 需求导向的设备采购：兼顾现状与未来
+&lt;h4 id="2-需求导向的设备采购兼顾现状与未来"&gt;2. 需求导向的设备采购：兼顾现状与未来
 &lt;/h4&gt;&lt;p&gt;采购原则是 “按需购买，前瞻布局” ：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;充分利用现有GPON&lt;/strong&gt; ：在不再强调极致速率的策略下， &lt;strong&gt;现有GPON设备可充分满足需求&lt;/strong&gt; ，显著减轻投资压力，同时ODN为未来升级预留空间。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;新购设备标准：支持向50G演进&lt;/strong&gt; ：确需新购OLT时， &lt;strong&gt;必须选择具备50G PON升级能力的10G PON设备&lt;/strong&gt; （可通过更换模块或“50G Ready”设计实现）。确保未来50G PON规模应用时，能以低成本升级，避免重复投资。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;总结从速度追赶到战略突围&#34;&gt;总结：从“速度追赶”到“战略突围”
+&lt;h2 id="总结从速度追赶到战略突围"&gt;总结：从“速度追赶”到“战略突围”
 &lt;/h2&gt;&lt;p&gt;在这个人人谈论“万兆”的时代，我们选择了一条不同的路——
 &lt;strong&gt;不急于炫技，而是沉下心来，为每一个小区、每一栋楼宇，铺设一条能用20年的光纤之路。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;因为我们相信：&lt;/p&gt;
@@ -184,36 +169,36 @@
 &lt;/blockquote&gt;
 &lt;p&gt;我们的破局之道，归结为三大战略支柱：&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;战略维度&lt;/th&gt;
-          &lt;th&gt;核心理念&lt;/th&gt;
-          &lt;th&gt;关键举措&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;覆盖先行&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;先筑最稳的地基&lt;/td&gt;
-          &lt;td&gt;聚焦城区、连片建设、高标准ODN、“即插即用”&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;服务驱动&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;用“用心”赢下用户&lt;/td&gt;
-          &lt;td&gt;精细化运维、快速响应、差异化宣传、价格优势&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;弹性演进&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;用“智慧”赢得未来&lt;/td&gt;
-          &lt;td&gt;少而精OLT布局、利旧整合、采购支持50G升级的10G设备&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;战略维度&lt;/th&gt;
+&lt;th&gt;核心理念&lt;/th&gt;
+&lt;th&gt;关键举措&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;覆盖先行&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;先筑最稳的地基&lt;/td&gt;
+&lt;td&gt;聚焦城区、连片建设、高标准ODN、“即插即用”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;服务驱动&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;用“用心”赢下用户&lt;/td&gt;
+&lt;td&gt;精细化运维、快速响应、差异化宣传、价格优势&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;弹性演进&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;用“智慧”赢得未来&lt;/td&gt;
+&lt;td&gt;少而精OLT布局、利旧整合、采购支持50G升级的10G设备&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;最终目标：&lt;/strong&gt;
 通过 “覆盖、服务、演进” 三步走，在宽带市场走出一条 &lt;strong&gt;差异化、低成本、可持续&lt;/strong&gt; 的突围之路。&lt;/p&gt;
 &lt;p&gt;我们不求一步登天，但求步步为营。
 只要地基打得牢，服务做得细，未来的“万兆”之路，我们才能走得更远、更稳。&lt;/p&gt;
-&lt;h2 id=&#34;后记坚持就是胜利&#34;&gt;后记：坚持就是胜利
+&lt;h2 id="后记坚持就是胜利"&gt;后记：坚持就是胜利
 &lt;/h2&gt;&lt;p&gt;宽带建设，从来不是一场短跑。&lt;/p&gt;
 &lt;p&gt;它会遭遇指标压力、投资限制、短期诱惑。
 有人质疑：“你们还在搞千兆？
@@ -226,9 +211,4 @@
 &lt;p&gt;&lt;strong&gt;我们铺设的不只是光纤，
 更是一条通往未来的路。&lt;/strong&gt;
 ——致每一位默默耕耘的宽带建设者&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;/blockquote&gt;</description></item></channel></rss>

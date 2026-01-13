@@ -1,25 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>DOM on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/dom/</link>
-        <description>Recent content in DOM on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sat, 29 Jul 2023 21:18:45 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/dom/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>DDM,DOM是什么</title>
-        <link>https://blog.fallleaf.net/p/tech-what-is-ddm-dom/</link>
-        <pubDate>Sat, 14 Dec 2019 21:35:45 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-what-is-ddm-dom/</guid>
-        <description>&lt;h2 id=&#34;ddm的定义&#34;&gt;DDM的定义
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DOM on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/dom/</link><description>Recent content in DOM on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sat, 29 Jul 2023 21:18:45 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/dom/index.xml" rel="self" type="application/rss+xml"/><item><title>DDM,DOM是什么</title><link>https://blog.fallleaf.net/p/tech-what-is-ddm-dom/</link><pubDate>Sat, 14 Dec 2019 21:35:45 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-what-is-ddm-dom/</guid><description>&lt;h2 id="ddm的定义"&gt;DDM的定义
 &lt;/h2&gt;&lt;p&gt;DDM(Digital Diagnostic Monitoring)即数字诊断监控，由SFF-8472定义。&lt;/p&gt;
 &lt;p&gt;SFF-8472(Specification for Management Interface for SFP+)是一个关于SFP管理接口的规范，由行业组织存储网络工业协会 (SNIA)下的SFF(Small Form Factor)技术工作组制定。这种协议最初是为了给便携式电脑定义新型磁盘驱动器的外形而成立的，第一个版本是在2001年发布，最新的版本是2018年7月发布的Rev.12.3。&lt;/p&gt;
 &lt;p&gt;制定SFF-8472规范的一个主要目的是定义光模块的数字诊断监控功能（DDM），它是应用在GBIC/SFP/SFP+光模块中一项功能，用来监控光模块工作中的实时参数，如工作电压、工作电流、激光器偏置电流、激光器发光功率和收光功率，这些信息被存储在标准的内存结构中，并提供了标准访问接口地址，该内存结构除了提供参数监测信息外，还定义了报警标志或告警条件。&lt;/p&gt;
 &lt;p&gt;DDM通常也叫做DOM(Digital Optical Monitoring )，即数字光学检测。&lt;/p&gt;
 &lt;p&gt;DDM相关信息存储在I2C从设备的1010001X开始的存储段内，如下图。&lt;/p&gt;
-&lt;h2 id=&#34;ddm的参数&#34;&gt;DDM的参数
+&lt;h2 id="ddm的参数"&gt;DDM的参数
 &lt;/h2&gt;&lt;p&gt;DDM实时监测工作温度、工作电压、偏置电流、发射功率、接收功率这5个参数，经过A/D转换，将模拟量变为数字量，并通过校准，将数字量写入EEPROM特定地址段A2H，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -38,17 +23,12 @@
 &lt;p&gt;接收功率：可采用平均功率或OMA类型的接收功率。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;哪些光模块支持ddm&#34;&gt;哪些光模块支持DDM
+&lt;h2 id="哪些光模块支持ddm"&gt;哪些光模块支持DDM
 &lt;/h2&gt;&lt;p&gt;目前大部分的SFP、SFP+模块都支撑DDM功能，在模块的规格信息里，常常注明DDM或DOM。&lt;/p&gt;
-&lt;h2 id=&#34;ddm能做什么&#34;&gt;DDM能做什么
+&lt;h2 id="ddm能做什么"&gt;DDM能做什么
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;预测光模块的使用寿命：一般来讲，光模块的输出功率都是稳定的，这是通过不断调整激光发射器的偏置电流来实现的，但是随着运行时间的增加，发射激光器的量子效率会降低，因此用户可以通过监控激光发射器的的偏置电流来预测光模块的使用寿命。&lt;/li&gt;
 &lt;li&gt;故障定位：在光通信系统中，精准地找到故障点具有重要意义。通过分析收发功率以及i电压电流可以进行故障定位。&lt;/li&gt;
 &lt;li&gt;兼容性测试：兼容性测试即检测光模块是否可以在某一网络设备上正常使用，而光模块不兼容的常见情况有电压超过光模块的规格、温度超过光模块的规格、接收到的光功率过载或低于光接收器的的接收范围等。而使用具有数字诊断监控功能（DDM）的光模块能直观的反映这些不兼容情况。&lt;/li&gt;
 &lt;li&gt;监测光纤性能：通过对接收功率以及发送功率的分析，辅助光纤长度等信息，可大致判断光路的衰减是否在正常范围内。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;/ul&gt;</description></item></channel></rss>

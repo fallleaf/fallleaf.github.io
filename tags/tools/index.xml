@@ -1,24 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>工具 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/tools/</link>
-        <description>Recent content in 工具 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Tue, 07 Oct 2025 08:15:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/tools/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>驾驭你的LLM：从提示词新手到“指令设计师”的极简指南</title>
-        <link>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</link>
-        <pubDate>Tue, 07 Oct 2025 08:15:00 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/cover.webp" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id=&#34;为什么llm总跑偏先搞清它其实不会懂你&#34;&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/tools/</link><description>Recent content in 工具 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Tue, 07 Oct 2025 08:15:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>驾驭你的LLM：从提示词新手到“指令设计师”的极简指南</title><link>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</link><pubDate>Tue, 07 Oct 2025 08:15:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/cover.webp" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id="为什么llm总跑偏先搞清它其实不会懂你"&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
 &lt;/h2&gt;&lt;p&gt;你有没有遇到过这样的情况：问LLM一个问题，有时候它回答得像个专家，精准又到位；有时候它就好像刚学会说话的小孩，答非所问，甚至自说自话。难道LLM在“抽风”？其实不完全是。&lt;/p&gt;
 &lt;p&gt;LLM的本质其实是个超级“猜词机器”：它并不真正理解你说话的深意，而是在它庞大的学习数据中，预测“下一句最可能出现的词”是什么。换句话说，它靠概率输出内容。&lt;/p&gt;
 &lt;p&gt;当你给它的提示话很模糊时，它只能在无数的可能中猜答案，自然容易“跑偏”。&lt;/p&gt;
 &lt;p&gt;所以，想让LLM表现得聪明，关键不在问得多，而在于问得 &lt;strong&gt;准&lt;/strong&gt; 。你的问题越模糊，LLM就越容易瞎猜；问题越精准，它就越能给你想要的答案。说白了，提示词就是你手里的方向盘，你指的方向越清楚，LLM这辆车才越不会跑偏。&lt;/p&gt;
-&lt;h2 id=&#34;dice-框架提示词的四个核心组成&#34;&gt;D.I.C.E. 框架：提示词的四个核心组成
+&lt;h2 id="dice-框架提示词的四个核心组成"&gt;D.I.C.E. 框架：提示词的四个核心组成
 &lt;/h2&gt;&lt;p&gt;给LLM下指令（提示词），就跟让新同事帮你办事一样。你要是只说“把这个弄一下”，他肯定一头雾水，办事的结果也不如你所愿。你得告诉他前因后果、他该扮什么角色、具体要做什么、最后交出什么成果，这样才能达到你预期的目的。这里有个特别好用的方法，是美国人 Michael Blank 提出了一个超实用的D.I.C.E.方法，将任务拆成四个重点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;D — 背景信息（DATA）&lt;/strong&gt;
@@ -35,70 +20,67 @@
 例：“在我答复后，请给我一份30天销售改进计划，格式为一步步执行的清单。”&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;用了这样的方式提示，LLM才不会给你泛泛而谈的建议，而是一份专业且可执行的行动方案。&lt;/p&gt;
-&lt;h2 id=&#34;clear-原则判断提示词质量的五个标准&#34;&gt;C.L.E.A.R. 原则：判断提示词质量的五个标准
+&lt;h2 id="clear-原则判断提示词质量的五个标准"&gt;C.L.E.A.R. 原则：判断提示词质量的五个标准
 &lt;/h2&gt;&lt;p&gt;如果说D.I.C.E.给提示词搭起了“骨架”，那么Lovable公司提出的C.L.E.A.R.原则就是帮你把骨架的“肌肉和皮肤”打磨完整，让任务说明干净、有效、有活力。&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;原则&lt;/th&gt;
-          &lt;th&gt;含义&lt;/th&gt;
-          &lt;th&gt;实践要点&lt;/th&gt;
-          &lt;th&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;C 简洁（Concise）&lt;/td&gt;
-          &lt;td&gt;去掉多余客套和废话，直奔重点&lt;/td&gt;
-          &lt;td&gt;不说“谢谢”“麻烦了”这类无关紧要的话&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;L 有逻辑（Logical）&lt;/td&gt;
-          &lt;td&gt;任务分解清楚，步骤合理&lt;/td&gt;
-          &lt;td&gt;任务执行顺序是否合理，比如先分析再建议&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;E 明确（Explicit）&lt;/td&gt;
-          &lt;td&gt;明确说明要什么和不要什么&lt;/td&gt;
-          &lt;td&gt;指定风格、字数限制，禁止内容&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;A 可调（Adaptive）&lt;/td&gt;
-          &lt;td&gt;支持后续调整和优化&lt;/td&gt;
-          &lt;td&gt;留有调整空间，不要锁死边界&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;R 可反思（Reflective）&lt;/td&gt;
-          &lt;td&gt;鼓励LLM总结反馈，提升提示词&lt;/td&gt;
-          &lt;td&gt;让LLM指出哪里还能更明确或优化&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原则&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;th&gt;实践要点&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;C 简洁（Concise）&lt;/td&gt;
+&lt;td&gt;去掉多余客套和废话，直奔重点&lt;/td&gt;
+&lt;td&gt;不说“谢谢”“麻烦了”这类无关紧要的话&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L 有逻辑（Logical）&lt;/td&gt;
+&lt;td&gt;任务分解清楚，步骤合理&lt;/td&gt;
+&lt;td&gt;任务执行顺序是否合理，比如先分析再建议&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;E 明确（Explicit）&lt;/td&gt;
+&lt;td&gt;明确说明要什么和不要什么&lt;/td&gt;
+&lt;td&gt;指定风格、字数限制，禁止内容&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A 可调（Adaptive）&lt;/td&gt;
+&lt;td&gt;支持后续调整和优化&lt;/td&gt;
+&lt;td&gt;留有调整空间，不要锁死边界&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R 可反思（Reflective）&lt;/td&gt;
+&lt;td&gt;鼓励LLM总结反馈，提升提示词&lt;/td&gt;
+&lt;td&gt;让LLM指出哪里还能更明确或优化&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;提示词的框架与准则&#34;&gt;提示词的框架与准则
+&lt;h2 id="提示词的框架与准则"&gt;提示词的框架与准则
 &lt;/h2&gt;&lt;p&gt;D.I.C.E. 是提示词的结构框架，它定义了一个提示词该“长成什么样”； C.L.E.A.R. 是质量准则，它确保这个结构内部的逻辑、语言与目标保持清晰一致。&lt;/p&gt;
 &lt;p&gt;在实际提示词设计中，我们先用 D.I.C.E. 打底——明确目标、设定角色、补充上下文、定义评估标准； 再以 C.L.E.A.R. 打磨——检视表达是否清晰（Clear）、逻辑是否连贯（Logical）、依据是否可验证（Empirical）、行动是否可执行（Actionable）、反思是否充分（Reflective）。&lt;/p&gt;
 &lt;p&gt;这种“两层式”方法能显著提升提示词的稳定性与可复用性： 结构清晰使大模型“理解你要什么”， 质量准则则让输出更贴近“你真正需要的”。&lt;/p&gt;
-&lt;h2 id=&#34;你是-llm-的导航员帮它锁定方向提升效率&#34;&gt;你是 LLM 的“导航员”：帮它锁定方向，提升效率
+&lt;h2 id="你是-llm-的导航员帮它锁定方向提升效率"&gt;你是 LLM 的“导航员”：帮它锁定方向，提升效率
 &lt;/h2&gt;&lt;p&gt;LLM不会主动“懂”你，它只能根据你给的信息猜测答案。你设计的提示词就像导航系统，帮它锁定正确方向，避免它在海量的可能中胡乱“试探”。&lt;/p&gt;
 &lt;p&gt;每一次清晰、有结构的提示输入，都是在缩小它自由发挥的范围，以带来更精准有效的回应。掌握了D.I.C.E.框架和C.L.E.A.R.原则，就让你能更好使用LLM，从“使用者”升级为“驾驭者”，彻底释放LLM的生产力。&lt;/p&gt;
-&lt;h2 id=&#34;diceclear示范模板&#34;&gt;D.I.C.E.+C.L.E.A.R.示范模板
-&lt;/h2&gt;&lt;h3 id=&#34;自驾游计划&#34;&gt;自驾游计划
+&lt;h2 id="diceclear示范模板"&gt;D.I.C.E.+C.L.E.A.R.示范模板
+&lt;/h2&gt;&lt;h3 id="自驾游计划"&gt;自驾游计划
 &lt;/h3&gt;&lt;p&gt;生成一份适合一家三口的国庆假期自驾游计划，涵盖路线、每日安排、住宿建议与注意事项。&lt;/p&gt;
-&lt;h4 id=&#34;dice-框架提示词可粘贴到大模型里看看输出&#34;&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
-&lt;/h4&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#DATA#
+&lt;h4 id="dice-框架提示词可粘贴到大模型里看看输出"&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
+&lt;/h4&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;#DATA#
 我们是一家三口（两位成人，一位10岁孩子），计划在2025年10月2日至10月7日国庆假期期间自驾从郑州前往重庆旅游。希望行程轻松、有趣，适合家庭出行。
-
 #IDENTIFY#
 请你扮演一位经验丰富的国内亲子旅行规划师，熟悉中西部城市间自驾路线、家庭友好型景点与节假日出行建议。
-
 #CLARIFY#
 你可以先问我一个问题，以确认我们对住宿预算、每日驾驶时长或景点偏好的具体要求。
-
 #EXECUTE#
 请根据我们的时间安排，生成一份6天的行程计划，包括：
 - 每日路线与预计行驶时间；
@@ -106,93 +88,85 @@
 - 住宿建议（中等价位，安全舒适）；
 - 每日注意事项（如交通、天气、节假高峰）。
 输出格式为分日条列，每日标题为“Day X：城市名”，语言使用简体中文。
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;clear-原则优化&#34;&gt;C.L.E.A.R. 原则优化
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id="clear-原则优化"&gt;C.L.E.A.R. 原则优化
 &lt;/h4&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;原则&lt;/th&gt;
-          &lt;th&gt;应用说明&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;简洁（Concise）&lt;/td&gt;
-          &lt;td&gt;去除冗余描述，直接说明时间、地点、人数、目标。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;有逻辑（Logical）&lt;/td&gt;
-          &lt;td&gt;明确起止时间、路线方向、每日安排，避免“重庆周边推荐”这类模糊任务。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;明确（Explicit）&lt;/td&gt;
-          &lt;td&gt;指定输出格式（分日条列）、语言（简体中文）、住宿类型（中等价位）、人群（亲子）。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;可调（Adaptive）&lt;/td&gt;
-          &lt;td&gt;通过 CLARIFY 模块引导 LLM 提问，便于后续补充预算、偏好等信息。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;可反思（Reflective）&lt;/td&gt;
-          &lt;td&gt;可在输出后追加一句：“如需调整行程节奏或加入特定景点，请告诉我，我可以重新规划。”&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原则&lt;/th&gt;
+&lt;th&gt;应用说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;简洁（Concise）&lt;/td&gt;
+&lt;td&gt;去除冗余描述，直接说明时间、地点、人数、目标。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有逻辑（Logical）&lt;/td&gt;
+&lt;td&gt;明确起止时间、路线方向、每日安排，避免“重庆周边推荐”这类模糊任务。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;明确（Explicit）&lt;/td&gt;
+&lt;td&gt;指定输出格式（分日条列）、语言（简体中文）、住宿类型（中等价位）、人群（亲子）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可调（Adaptive）&lt;/td&gt;
+&lt;td&gt;通过 CLARIFY 模块引导 LLM 提问，便于后续补充预算、偏好等信息。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可反思（Reflective）&lt;/td&gt;
+&lt;td&gt;可在输出后追加一句：“如需调整行程节奏或加入特定景点，请告诉我，我可以重新规划。”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;学术论文写作辅助&#34;&gt;学术论文写作辅助
+&lt;h3 id="学术论文写作辅助"&gt;学术论文写作辅助
 &lt;/h3&gt;&lt;p&gt;撰写一篇关于人工智能伦理的学术论文，目标是投稿至国际期刊。希望获得结构优化建议与引用规范指导，强调逻辑严密、表达规范、支持多轮修订。&lt;/p&gt;
-&lt;h4 id=&#34;dice-框架提示词可粘贴到大模型里看看输出-1&#34;&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
-&lt;/h4&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#DATA#
+&lt;h4 id="dice-框架提示词可粘贴到大模型里看看输出-1"&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
+&lt;/h4&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;#DATA#
 我正在撰写一篇关于人工智能伦理的学术论文，主题聚焦于算法偏见与责任归属问题。目标是投稿至国际科技伦理期刊，要求逻辑清晰、论证严密、引用格式符合国际标准（如 APA 或 IEEE）。
-
 #IDENTIFY#
 请你扮演一位资深学术编辑，熟悉科技伦理领域，具备国际期刊审稿经验，了解常见结构问题与引用规范。
-
 #CLARIFY#
 在开始修改前，请先提出一个关于文章论点结构的关键问题，以确认我是否已建立清晰的中心论点与支持层次。
-
 #EXECUTE#
 请根据我的主题与目标，提出具体的章节重组建议，包括：
 - 推荐的章节划分与标题；
 - 每章应承担的论证任务；
 - 引用格式建议（如文内引用、参考文献排列方式）；
 - 总结建议不超过 500 字，使用中文表达，风格正式、学术。
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;clear-原则优化-1&#34;&gt;C.L.E.A.R. 原则优化
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id="clear-原则优化-1"&gt;C.L.E.A.R. 原则优化
 &lt;/h4&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;原则&lt;/th&gt;
-          &lt;th&gt;应用说明&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;简洁（Concise）&lt;/td&gt;
-          &lt;td&gt;去除口语化表达，直接说明论文主题、目标期刊、引用要求。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;有逻辑（Logical）&lt;/td&gt;
-          &lt;td&gt;明确任务流程：先澄清论点结构，再提出章节建议与引用规范。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;明确（Explicit）&lt;/td&gt;
-          &lt;td&gt;指定输出格式（中文总结、500 字以内）、引用风格（APA 或 IEEE）、角色设定（学术编辑）。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;可调（Adaptive）&lt;/td&gt;
-          &lt;td&gt;通过 CLARIFY 模块引导模型提问，支持后续补充论文摘要、章节草稿等内容。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;可反思（Reflective）&lt;/td&gt;
-          &lt;td&gt;鼓励模型在输出后提供“如需进一步细化章节内容或补充文献引用，请继续提供草稿内容”之类的反馈建议。&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原则&lt;/th&gt;
+&lt;th&gt;应用说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;简洁（Concise）&lt;/td&gt;
+&lt;td&gt;去除口语化表达，直接说明论文主题、目标期刊、引用要求。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有逻辑（Logical）&lt;/td&gt;
+&lt;td&gt;明确任务流程：先澄清论点结构，再提出章节建议与引用规范。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;明确（Explicit）&lt;/td&gt;
+&lt;td&gt;指定输出格式（中文总结、500 字以内）、引用风格（APA 或 IEEE）、角色设定（学术编辑）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可调（Adaptive）&lt;/td&gt;
+&lt;td&gt;通过 CLARIFY 模块引导模型提问，支持后续补充论文摘要、章节草稿等内容。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可反思（Reflective）&lt;/td&gt;
+&lt;td&gt;鼓励模型在输出后提供“如需进一步细化章节内容或补充文献引用，请继续提供草稿内容”之类的反馈建议。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;参考资料：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.entrepreneur.com/leadership/i-used-chatgpt-to-transform-my-business-with-these-prompts/497180&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;D.I.C.E.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.lovable.dev/prompting/prompting-one&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;C.L.E.A.R.&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;&lt;a class="link" href="https://www.entrepreneur.com/leadership/i-used-chatgpt-to-transform-my-business-with-these-prompts/497180" target="_blank" rel="noopener"
+&gt;D.I.C.E.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.lovable.dev/prompting/prompting-one" target="_blank" rel="noopener"
+&gt;C.L.E.A.R.&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

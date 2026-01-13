@@ -1,32 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>判断力 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E5%88%A4%E6%96%AD%E5%8A%9B/</link>
-        <description>Recent content in 判断力 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Fri, 31 Oct 2025 07:36:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E5%88%A4%E6%96%AD%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>AI时代的真正壁垒，不是技术，而是判断</title>
-        <link>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</link>
-        <pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id=&#34;年长者的逆袭&#34;&gt;年长者的逆袭
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>判断力 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E5%88%A4%E6%96%AD%E5%8A%9B/</link><description>Recent content in 判断力 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Fri, 31 Oct 2025 07:36:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E5%88%A4%E6%96%AD%E5%8A%9B/index.xml" rel="self" type="application/rss+xml"/><item><title>AI时代的真正壁垒，不是技术，而是判断</title><link>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</link><pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id="年长者的逆袭"&gt;年长者的逆袭
 &lt;/h2&gt;&lt;p&gt;在人工智能的使用方式上，年轻人与年长者之间出现了一种有趣的分化：年轻人更喜欢把LLM当成生活顾问，频繁提问；而年长者则倾向于将其用作知识验证的工具，提问更精准。这种差异揭示了一个重要事实——在AI时代，使用频率并不代表掌握程度。&lt;/p&gt;
 &lt;p&gt;过去的每一次技术革命几乎都属于年轻人，他们学习快、敢尝试、没有心理包袱。然而这一次的AI浪潮，规律似乎正在反转。AI并不是一个简单的工具升级，而是一个 &lt;strong&gt;“垃圾进、垃圾出”&lt;/strong&gt; 的黑箱系统，输入的质量决定了输出的价值。&lt;/p&gt;
 &lt;p&gt;在这样的体系中，经验第一次成为决定性的筹码。AI不提供真理，它只是模仿逻辑的镜像。输入者如果缺乏判断力，再先进的模型也只能制造幻觉。&lt;/p&gt;
-&lt;h2 id=&#34;经验的价值与噪声过滤器&#34;&gt;经验的价值与“噪声过滤器”
+&lt;h2 id="经验的价值与噪声过滤器"&gt;经验的价值与“噪声过滤器”
 &lt;/h2&gt;&lt;p&gt;年轻人擅长掌握操作技巧，懂得提示词、插件、脚本的使用，却往往缺乏对输出真伪的识别力。他们容易将AI的回答视为权威，而忘记那只是概率语言模型的产物，它没有理解，只有统计。&lt;/p&gt;
 &lt;p&gt;相较之下，那些经过多年训练、熟悉事实与逻辑的年长者，更能看穿AI的幻觉。他们的经验像是一种 &lt;strong&gt;“噪声过滤器”&lt;/strong&gt; ，能在表面合理的回答中辨认出不合逻辑的部分。&lt;/p&gt;
 &lt;p&gt;这意味着，AI不仅没有削弱经验的价值，反而让经验成为一种新的算力。判断力正在成为稀缺资源，而判断力的来源正是被时间沉淀下来的经验。&lt;/p&gt;
-&lt;h2 id=&#34;逆转的格局与提问力&#34;&gt;逆转的格局与提问力
+&lt;h2 id="逆转的格局与提问力"&gt;逆转的格局与提问力
 &lt;/h2&gt;&lt;p&gt;“长江后浪拍前浪”的格局在这场变革中出现了逆转。年轻人依旧敏捷，但真正的掌舵人，却往往是那些懂得观察与质疑、能在潮流中保持冷静的“前浪”。&lt;/p&gt;
 &lt;p&gt;对于他们来说，AI不再是万能的救世主，而是一种理性合作的伙伴。他们不会盲信模型，而是利用AI去验证思路、拓展论据、节省资料整理的时间。AI对他们而言，是效率的放大器；但对缺乏判断力的人而言，却成为思维的稀释器。&lt;/p&gt;
 &lt;p&gt;AI使用中最关键的能力其实是 &lt;strong&gt;“提问”&lt;/strong&gt; 。然而提问的质量取决于是否理解问题的上下文。一个没有清晰背景意识的提问者，只能得到模糊的答案。&lt;/p&gt;
 &lt;p&gt;比如问“为什么长时间看手机眼睛会疲劳”，AI的回答大多停留在“因为用眼过度”这样的表层；但若补充条件“是否与蓝光刺激、眨眼频率降低有关”，模型才会给出涉及视疲劳机制的深入解释。差距不在AI，而在于提问者是否清楚自己在问什么。&lt;/p&gt;
-&lt;h2 id=&#34;知识的壁垒与认知的不可取代性&#34;&gt;知识的壁垒与认知的不可取代性
+&lt;h2 id="知识的壁垒与认知的不可取代性"&gt;知识的壁垒与认知的不可取代性
 &lt;/h2&gt;&lt;p&gt;AI能让新手的产出迅速达到八十分的水准，实现“合格”的普遍化，却无法凭空创造卓越。真正的卓越来自非结构化的经验——那些长期积累的判断、人脉、直觉和行业理解。&lt;/p&gt;
 &lt;p&gt;例如记者如果能获得如黄仁勋这样的企业家的私下见解，其报道的价值将立刻脱颖而出。AI无法触及这种基于信任和真实互动形成的 &lt;strong&gt;“隐性知识”&lt;/strong&gt; ，而这恰恰是经验者的核心优势。&lt;/p&gt;
 &lt;p&gt;AI提高了效率，却无法取代认知。没有先验知识的支撑，AI生成的内容就像无根之水——它能写，却不懂。真正决定AI价值的，不是操作技巧，而是使用者的世界观。&lt;/p&gt;
@@ -34,12 +19,7 @@
 &lt;p&gt;那些缺乏思维框架的人，用AI写得再多，也只是文字的堆砌；而拥有知识体系和逻辑秩序的人，即便使用同样的工具，也能写出结构清晰、推理严谨的成果。区别不在AI，而在人。&lt;/p&gt;
 &lt;p&gt;经验不是数据的堆叠，而是对因果关系的认知。它来自真实世界中一次次的失败与修正。机器可以预测，却不能犯错；而人类的智慧恰恰源自 &lt;strong&gt;“犯错之后的反思”&lt;/strong&gt; 。AI能模仿智慧，但永远无法生成智慧。&lt;/p&gt;
 &lt;p&gt;许多人以为AI是捷径，结果走得更慢。因为他们省略了思考，只留下操作。经验的价值正在于此——它迫使人重新审视问题的结构，而不是依赖答案的速度。&lt;/p&gt;
-&lt;h2 id=&#34;弯道超车的核心逻辑&#34;&gt;弯道超车的核心逻辑
+&lt;h2 id="弯道超车的核心逻辑"&gt;弯道超车的核心逻辑
 &lt;/h2&gt;&lt;p&gt;AI时代的弯道超车，不在于谁掌握了更多工具，而在于谁能把经验转化为提问力。懂得如何提问、为什么提问的人，才真正掌握了AI的核心逻辑。&lt;/p&gt;
 &lt;p&gt;经验不是时代的包袱，而是认知的资本。&lt;/p&gt;
-&lt;p&gt;AI 时代，真正珍贵的，不是信息，而是判断。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;AI 时代，真正珍贵的，不是信息，而是判断。&lt;/p&gt;</description></item></channel></rss>

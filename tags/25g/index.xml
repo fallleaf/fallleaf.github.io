@@ -1,50 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>25G on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/25g/</link>
-        <description>Recent content in 25G on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 13:34:59 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/25g/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>25G单纤双向收发合一光模块</title>
-        <link>https://blog.fallleaf.net/p/tech-25g-bidi-module/</link>
-        <pubDate>Sat, 03 Aug 2019 13:34:59 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-25g-bidi-module/</guid>
-        <description>&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>25G on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/25g/</link><description>Recent content in 25G on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 13:34:59 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/25g/index.xml" rel="self" type="application/rss+xml"/><item><title>25G单纤双向收发合一光模块</title><link>https://blog.fallleaf.net/p/tech-25g-bidi-module/</link><pubDate>Sat, 03 Aug 2019 13:34:59 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-25g-bidi-module/</guid><description>&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
 &lt;p&gt;2016年5月IEEE通过了802.3by-2016规范，定义了25Gb/s应用媒质接入控制参数、物理层要求，2017年12月通过了802.3cc-2017标准以太网修正：物理层和管理参数，用于通过单模光纤实现串行25 Gbps以太网，2018年10月通过PAR，开展制定10Gb/s，25Gb/s，50Gb/s单纤双向物理层规范，项目号为P802.3cp。中国于2018年6月开始制定用于基站的25Gb/s单纤双向光收发合一模块技术规范，2018年11月发出征求意见稿，预计2019年完成标准制定工作。&lt;/p&gt;
 &lt;p&gt;单纤双向方式可以节省50%的纤芯资源，大大节省了光缆线路的投资，同时由于上下行等距可有效保证高精度时间同步，因此，是5G前传的一种主要模式。&lt;/p&gt;
 &lt;p&gt;下图是optech发布的一款25G单纤双向光模块，采用SFP28封装方式：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx.png&#34;
-	width=&#34;747&#34;
-	height=&#34;440&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_6a25122a0aa0eee8.png 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_d4df3311bff97740.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;光模块&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;169&#34;
-		data-flex-basis=&#34;407px&#34;
-	
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx.png"
+width="747"
+height="440"
+srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_6a25122a0aa0eee8.png 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_d4df3311bff97740.png 1024w"
+loading="lazy"
+alt="光模块"
+class="gallery-image"
+data-flex-grow="169"
+data-flex-basis="407px"
 &gt;&lt;/p&gt;
 &lt;p&gt;下图是25G单纤双向光模块的原理图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver.png&#34;
-	width=&#34;943&#34;
-	height=&#34;365&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_de18b75e7bb20ba.png 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_7a0e8055c48a2745.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;原理框图&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;258&#34;
-		data-flex-basis=&#34;620px&#34;
-	
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver.png"
+width="943"
+height="365"
+srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_de18b75e7bb20ba.png 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_7a0e8055c48a2745.png 1024w"
+loading="lazy"
+alt="原理框图"
+class="gallery-image"
+data-flex-grow="258"
+data-flex-basis="620px"
 &gt;&lt;/p&gt;
 &lt;p&gt;25Gbit/s单纤双向光模块采用的波长业界有1270nm/1310nm和1270nm/1330nm两种方案，征求意见稿中初步确定采用1270nm/1330nm方案。&lt;/p&gt;
 &lt;p&gt;25Gbit/s单纤双向光模块最高速率为25.78Gb/s，按传输距离分类可分为两种:&lt;/p&gt;
@@ -95,9 +72,4 @@ $$M—— 维护冗余,工程中维护冗余按 3dB 计算。$$&lt;/li&gt;
 $$P_o−S_i−E=4.0−2.7−(−13)=14.4dB$$&lt;ul&gt;
 &lt;li&gt;15km模块最大线路衰减：&lt;/li&gt;
 &lt;/ul&gt;
-$$P_o−S_i−E=6.0−2.7−(−13)=17.4dB$$&lt;p&gt;即当光缆线路端到端衰减大于14.4dB时，应选用15km单纤双向光模块。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+$$P_o−S_i−E=6.0−2.7−(−13)=17.4dB$$&lt;p&gt;即当光缆线路端到端衰减大于14.4dB时，应选用15km单纤双向光模块。&lt;/p&gt;</description></item></channel></rss>

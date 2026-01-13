@@ -1,50 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>电力线 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E7%94%B5%E5%8A%9B%E7%BA%BF/</link>
-        <description>Recent content in 电力线 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 16:27:04 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E7%94%B5%E5%8A%9B%E7%BA%BF/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>电源头柜电力线径的计算方法</title>
-        <link>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</link>
-        <pubDate>Mon, 27 Mar 2006 16:27:04 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</guid>
-        <description>&lt;p&gt;查询了网站的统计信息，发现搜索电力线缆计算方法的还不少，我根据以往经验，参照其他人写的文章，归纳了一下，供大家参考。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电力线 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E7%94%B5%E5%8A%9B%E7%BA%BF/</link><description>Recent content in 电力线 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 16:27:04 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E7%94%B5%E5%8A%9B%E7%BA%BF/index.xml" rel="self" type="application/rss+xml"/><item><title>电源头柜电力线径的计算方法</title><link>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</link><pubDate>Mon, 27 Mar 2006 16:27:04 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</guid><description>&lt;p&gt;查询了网站的统计信息，发现搜索电力线缆计算方法的还不少，我根据以往经验，参照其他人写的文章，归纳了一下，供大家参考。&lt;/p&gt;
 &lt;p&gt;对于小工程来说，或者一个工程的配套部分，电源头柜至电源分支柜或直流屏这段导线的线径可按照固定压降发，根据以下公式计算，其计算公式如下：&lt;/p&gt;
 &lt;p&gt;S=(ΣIL)/(rΔU)&lt;/p&gt;
 &lt;p&gt;上式中： - S — 导线截面面积(mm2)，&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ΣI — 流过导线的电流(A)，实际上是头柜允许的最大电流，
-
 L — 导线回路长度(m),注意，是回路，即一来一回的长度，
-
 r — 导体导电系数(m/Ω·mm2)，一般铜取57，铝取34，
-
 ΔU — 除掉配电设备等压降后在导线上允许的压降(V)。
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;现在要确认的是ΔU的数值，ΔU根据不同的电源系统设计，取值也不同，需向电源专业了解ΔU的取值，如果了解不到，可以按以下直流放电回路全程压降分配的情况取定。（要注意的是，这种分配方法只是其中的一种，还有其他的方法）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1.jpg&#34;
-	width=&#34;500&#34;
-	height=&#34;172&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1_hu_a455c9aedc6b0d91.jpg 480w, https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1_hu_74ba8459562556ff.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;压降分配&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;290&#34;
-		data-flex-basis=&#34;697px&#34;
-	
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1.jpg"
+width="500"
+height="172"
+srcset="https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1_hu_a455c9aedc6b0d91.jpg 480w, https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1_hu_74ba8459562556ff.jpg 1024w"
+loading="lazy"
+alt="压降分配"
+class="gallery-image"
+data-flex-grow="290"
+data-flex-basis="697px"
 &gt;&lt;/p&gt;
 &lt;p&gt;按此算出电力线线径，并向上取相近的电缆规格，保护地可取小一号线径。&lt;/p&gt;
 &lt;p&gt;在不同机房之间选用铜芯聚氯乙烯绝缘聚氯乙烯护套电力电缆（阻燃）（RVVZ系列），在同一机房内选用铜芯聚氯乙烯绝缘电力电缆（阻燃）（RVZ系列）。&lt;/p&gt;
-&lt;p&gt;设计中常见的直流用电力线按截面分有如下几种：1×6、1×10、1×16、1×35、1×50、1×70、1×95、1×120、1×150、1×185、1×240（mm2）。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;设计中常见的直流用电力线按截面分有如下几种：1×6、1×10、1×16、1×35、1×50、1×70、1×95、1×120、1×150、1×185、1×240（mm2）。&lt;/p&gt;</description></item></channel></rss>

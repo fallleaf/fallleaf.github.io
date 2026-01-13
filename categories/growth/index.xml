@@ -1,32 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>成长与学习 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/categories/growth/</link>
-        <description>Recent content in 成长与学习 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Fri, 31 Oct 2025 07:36:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/categories/growth/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>AI时代的真正壁垒，不是技术，而是判断</title>
-        <link>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</link>
-        <pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id=&#34;年长者的逆袭&#34;&gt;年长者的逆袭
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>成长与学习 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/categories/growth/</link><description>Recent content in 成长与学习 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Fri, 31 Oct 2025 07:36:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/categories/growth/index.xml" rel="self" type="application/rss+xml"/><item><title>AI时代的真正壁垒，不是技术，而是判断</title><link>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</link><pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id="年长者的逆袭"&gt;年长者的逆袭
 &lt;/h2&gt;&lt;p&gt;在人工智能的使用方式上，年轻人与年长者之间出现了一种有趣的分化：年轻人更喜欢把LLM当成生活顾问，频繁提问；而年长者则倾向于将其用作知识验证的工具，提问更精准。这种差异揭示了一个重要事实——在AI时代，使用频率并不代表掌握程度。&lt;/p&gt;
 &lt;p&gt;过去的每一次技术革命几乎都属于年轻人，他们学习快、敢尝试、没有心理包袱。然而这一次的AI浪潮，规律似乎正在反转。AI并不是一个简单的工具升级，而是一个 &lt;strong&gt;“垃圾进、垃圾出”&lt;/strong&gt; 的黑箱系统，输入的质量决定了输出的价值。&lt;/p&gt;
 &lt;p&gt;在这样的体系中，经验第一次成为决定性的筹码。AI不提供真理，它只是模仿逻辑的镜像。输入者如果缺乏判断力，再先进的模型也只能制造幻觉。&lt;/p&gt;
-&lt;h2 id=&#34;经验的价值与噪声过滤器&#34;&gt;经验的价值与“噪声过滤器”
+&lt;h2 id="经验的价值与噪声过滤器"&gt;经验的价值与“噪声过滤器”
 &lt;/h2&gt;&lt;p&gt;年轻人擅长掌握操作技巧，懂得提示词、插件、脚本的使用，却往往缺乏对输出真伪的识别力。他们容易将AI的回答视为权威，而忘记那只是概率语言模型的产物，它没有理解，只有统计。&lt;/p&gt;
 &lt;p&gt;相较之下，那些经过多年训练、熟悉事实与逻辑的年长者，更能看穿AI的幻觉。他们的经验像是一种 &lt;strong&gt;“噪声过滤器”&lt;/strong&gt; ，能在表面合理的回答中辨认出不合逻辑的部分。&lt;/p&gt;
 &lt;p&gt;这意味着，AI不仅没有削弱经验的价值，反而让经验成为一种新的算力。判断力正在成为稀缺资源，而判断力的来源正是被时间沉淀下来的经验。&lt;/p&gt;
-&lt;h2 id=&#34;逆转的格局与提问力&#34;&gt;逆转的格局与提问力
+&lt;h2 id="逆转的格局与提问力"&gt;逆转的格局与提问力
 &lt;/h2&gt;&lt;p&gt;“长江后浪拍前浪”的格局在这场变革中出现了逆转。年轻人依旧敏捷，但真正的掌舵人，却往往是那些懂得观察与质疑、能在潮流中保持冷静的“前浪”。&lt;/p&gt;
 &lt;p&gt;对于他们来说，AI不再是万能的救世主，而是一种理性合作的伙伴。他们不会盲信模型，而是利用AI去验证思路、拓展论据、节省资料整理的时间。AI对他们而言，是效率的放大器；但对缺乏判断力的人而言，却成为思维的稀释器。&lt;/p&gt;
 &lt;p&gt;AI使用中最关键的能力其实是 &lt;strong&gt;“提问”&lt;/strong&gt; 。然而提问的质量取决于是否理解问题的上下文。一个没有清晰背景意识的提问者，只能得到模糊的答案。&lt;/p&gt;
 &lt;p&gt;比如问“为什么长时间看手机眼睛会疲劳”，AI的回答大多停留在“因为用眼过度”这样的表层；但若补充条件“是否与蓝光刺激、眨眼频率降低有关”，模型才会给出涉及视疲劳机制的深入解释。差距不在AI，而在于提问者是否清楚自己在问什么。&lt;/p&gt;
-&lt;h2 id=&#34;知识的壁垒与认知的不可取代性&#34;&gt;知识的壁垒与认知的不可取代性
+&lt;h2 id="知识的壁垒与认知的不可取代性"&gt;知识的壁垒与认知的不可取代性
 &lt;/h2&gt;&lt;p&gt;AI能让新手的产出迅速达到八十分的水准，实现“合格”的普遍化，却无法凭空创造卓越。真正的卓越来自非结构化的经验——那些长期积累的判断、人脉、直觉和行业理解。&lt;/p&gt;
 &lt;p&gt;例如记者如果能获得如黄仁勋这样的企业家的私下见解，其报道的价值将立刻脱颖而出。AI无法触及这种基于信任和真实互动形成的 &lt;strong&gt;“隐性知识”&lt;/strong&gt; ，而这恰恰是经验者的核心优势。&lt;/p&gt;
 &lt;p&gt;AI提高了效率，却无法取代认知。没有先验知识的支撑，AI生成的内容就像无根之水——它能写，却不懂。真正决定AI价值的，不是操作技巧，而是使用者的世界观。&lt;/p&gt;
@@ -34,55 +19,46 @@
 &lt;p&gt;那些缺乏思维框架的人，用AI写得再多，也只是文字的堆砌；而拥有知识体系和逻辑秩序的人，即便使用同样的工具，也能写出结构清晰、推理严谨的成果。区别不在AI，而在人。&lt;/p&gt;
 &lt;p&gt;经验不是数据的堆叠，而是对因果关系的认知。它来自真实世界中一次次的失败与修正。机器可以预测，却不能犯错；而人类的智慧恰恰源自 &lt;strong&gt;“犯错之后的反思”&lt;/strong&gt; 。AI能模仿智慧，但永远无法生成智慧。&lt;/p&gt;
 &lt;p&gt;许多人以为AI是捷径，结果走得更慢。因为他们省略了思考，只留下操作。经验的价值正在于此——它迫使人重新审视问题的结构，而不是依赖答案的速度。&lt;/p&gt;
-&lt;h2 id=&#34;弯道超车的核心逻辑&#34;&gt;弯道超车的核心逻辑
+&lt;h2 id="弯道超车的核心逻辑"&gt;弯道超车的核心逻辑
 &lt;/h2&gt;&lt;p&gt;AI时代的弯道超车，不在于谁掌握了更多工具，而在于谁能把经验转化为提问力。懂得如何提问、为什么提问的人，才真正掌握了AI的核心逻辑。&lt;/p&gt;
 &lt;p&gt;经验不是时代的包袱，而是认知的资本。&lt;/p&gt;
-&lt;p&gt;AI 时代，真正珍贵的，不是信息，而是判断。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>对LLM客气，纯属自找麻烦</title>
-        <link>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</link>
-        <pubDate>Thu, 16 Oct 2025 14:26:23 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/cover.webp" alt="Featured image of post 对LLM客气，纯属自找麻烦" /&gt;&lt;h2 id=&#34;实验结果越客气llm越糊涂&#34;&gt;实验结果：越客气，LLM越糊涂
+&lt;p&gt;AI 时代，真正珍贵的，不是信息，而是判断。&lt;/p&gt;</description></item><item><title>对LLM客气，纯属自找麻烦</title><link>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</link><pubDate>Thu, 16 Oct 2025 14:26:23 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/cover.webp" alt="Featured image of post 对LLM客气，纯属自找麻烦" /&gt;&lt;h2 id="实验结果越客气llm越糊涂"&gt;实验结果：越客气，LLM越糊涂
 &lt;/h2&gt;&lt;p&gt;最近有篇论文做了个实验，结论让人哭笑不得：你对ChatGPT越客气，它答题越不准。&lt;/p&gt;
 &lt;p&gt;研究者出了50道多选题，用五种语气问ChatGPT-4o——从“请您帮忙解答一下”到“快给我答案”。结果如下：&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;语气&lt;/th&gt;
-          &lt;th&gt;正确率&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;非常礼貌&lt;/td&gt;
-          &lt;td&gt;80.8%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;礼貌&lt;/td&gt;
-          &lt;td&gt;81.4%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;中性&lt;/td&gt;
-          &lt;td&gt;82.2%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;粗鲁&lt;/td&gt;
-          &lt;td&gt;82.8%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;非常粗鲁&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;84.8%&lt;/strong&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语气&lt;/th&gt;
+&lt;th&gt;正确率&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;非常礼貌&lt;/td&gt;
+&lt;td&gt;80.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;礼貌&lt;/td&gt;
+&lt;td&gt;81.4%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中性&lt;/td&gt;
+&lt;td&gt;82.2%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;粗鲁&lt;/td&gt;
+&lt;td&gt;82.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;非常粗鲁&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;84.8%&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;越不客气，越准确。
 这不是段子，而是统计检验后的真实结果。&lt;/p&gt;
 &lt;p&gt;换句话说——LLM（&lt;strong&gt;语言大模型&lt;/strong&gt;）不吃“客气”那一套。&lt;/p&gt;
-&lt;h2 id=&#34;为什么客气反而坏事&#34;&gt;为什么客气反而坏事？
+&lt;h2 id="为什么客气反而坏事"&gt;为什么客气反而坏事？
 &lt;/h2&gt;&lt;p&gt;别以为LLM真懂“礼貌”。
 它不过是一台概率机器，所有输入的字，对它而言只是数据。&lt;/p&gt;
 &lt;p&gt;“请”“麻烦您”“谢谢”这些词，对人来说表示尊重，对LLM来说只是 &lt;strong&gt;冗余的噪音&lt;/strong&gt; 。它无法感受到情绪，却要在冗余语言中找出你真正的问题。结果是—— &lt;strong&gt;它被你的客气话搞糊涂了。&lt;/strong&gt;&lt;/p&gt;
@@ -90,7 +66,7 @@
 在有限的上下文窗口（Context Window）中，你的客气话占据了 &lt;strong&gt;宝贵的Token数量&lt;/strong&gt; 。每一个Token都应该用于传递关键的指令信息，而不是用于寒暄。ChatGPT这类模型的训练数据中，大量来自论坛、技术问答等。模型在这些语境下习惯处理简洁、命令式句子，而不是文绉绉的礼貌表达。换句话说，它对“直白的命令”更熟悉，对“客气的请求”反而陌生。&lt;/p&gt;
 &lt;p&gt;当你绕弯子时，它反而要花更多算力去猜你的真实意图。
 结果就像说话绕圈子，让对方瞎猜，准确率自然下降了。&lt;/p&gt;
-&lt;h2 id=&#34;别把llm当人看警惕粗鲁的边界&#34;&gt;别把LLM当人看（警惕“粗鲁”的边界）
+&lt;h2 id="别把llm当人看警惕粗鲁的边界"&gt;别把LLM当人看（警惕“粗鲁”的边界）
 &lt;/h2&gt;&lt;p&gt;很多人用LLM时，总喜欢装出一副“礼貌至上”的样子：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“请帮我详细而准确地回答以下问题，麻烦您了，谢谢～”&lt;/p&gt;
@@ -101,37 +77,37 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;【重要提醒】&lt;/strong&gt; 实验中的“非常粗鲁”指的是 &lt;strong&gt;指令的绝对直白和省略客套&lt;/strong&gt; 。我们不鼓励使用侮辱或攻击性词汇。真正的侮辱性内容会触发LLM的 &lt;strong&gt;安全过滤机制（GuardrLLMls）&lt;/strong&gt; ，反而会导致拒绝回答或输出质量下降。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;对llm发指令追求清晰度&#34;&gt;对LLM发指令，追求清晰度
+&lt;h2 id="对llm发指令追求清晰度"&gt;对LLM发指令，追求清晰度
 &lt;/h2&gt;&lt;p&gt;这项研究其实提醒我们一个朴素的道理：
 &lt;strong&gt;和LLM打交道，关键不是态度，而是表达的清晰度。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;好的提示词要像指令，不像寒暄。越简洁，越容易让LLM锁定任务。&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;低效寒暄式&lt;/th&gt;
-          &lt;th&gt;高效指令式&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;请问您能帮我解一下这个复杂的方程吗？&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;解方程，输出步骤。&lt;/strong&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;请帮我总结一下《红楼梦》的主要人物，要详细哦。&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;strong&gt;指令：提炼《红楼梦》前80回五位核心人物，格式：姓名/关系/主要性格特征。&lt;/strong&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;低效寒暄式&lt;/th&gt;
+&lt;th&gt;高效指令式&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;请问您能帮我解一下这个复杂的方程吗？&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;解方程，输出步骤。&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;请帮我总结一下《红楼梦》的主要人物，要详细哦。&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;指令：提炼《红楼梦》前80回五位核心人物，格式：姓名/关系/主要性格特征。&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;人与人的沟通追求“情商”，人与LLM的交互追求“指令清晰度”。&lt;/strong&gt; 这是人机协作的准则，无关态度，只关效率。&lt;/p&gt;
-&lt;h2 id=&#34;别被llm的懂礼貌假象骗了&#34;&gt;别被LLM的“懂礼貌”假象骗了
+&lt;h2 id="别被llm的懂礼貌假象骗了"&gt;别被LLM的“懂礼貌”假象骗了
 &lt;/h2&gt;&lt;p&gt;很多人说：“ChatGPT挺懂人情世故啊，还会说谢谢。”
 这是错觉。&lt;/p&gt;
 &lt;p&gt;LLM的礼貌，是模仿出来的。
 它从无数人类对话中学到“客气话的模式”，
 却从未理解“礼貌的意义”。&lt;/p&gt;
 &lt;p&gt;它只是鹦鹉学舌，说“请”“谢谢”只是语言表演，不是情感反应。如果你以为那是“温度”，那不过是 &lt;strong&gt;统计学拟合出的幻觉。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;真正的礼貌是对人&#34;&gt;真正的礼貌，是对人
+&lt;h2 id="真正的礼貌是对人"&gt;真正的礼貌，是对人
 &lt;/h2&gt;&lt;p&gt;对LLM客气，不仅没用，还可能降低效率。
 它不会感激，也不会回礼。&lt;/p&gt;
 &lt;p&gt;真正该讲礼貌的对象，是人——而不是算法。
@@ -140,28 +116,19 @@
 别说“麻烦帮我”，直接说“生成报告，800字，总结重点”。&lt;/p&gt;
 &lt;p&gt;这不是没礼貌，而是理性。
 因为LLM不需要礼貌，它只需要清晰。&lt;/p&gt;
-&lt;h2 id=&#34;结语&#34;&gt;结语
+&lt;h2 id="结语"&gt;结语
 &lt;/h2&gt;&lt;p&gt;LLM越进步，人越容易把它“人化”。
 但别忘了，它不是思想者，只是概率引擎。&lt;/p&gt;
 &lt;p&gt;我们要做的，不是讨好它，而是让它听懂。
 &lt;strong&gt;把话说清楚，比说得好听更重要。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;论文链接：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/pdf/2510.04950&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;《Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy》&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>驾驭你的LLM：从提示词新手到“指令设计师”的极简指南</title>
-        <link>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</link>
-        <pubDate>Tue, 07 Oct 2025 08:15:00 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/cover.webp" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id=&#34;为什么llm总跑偏先搞清它其实不会懂你&#34;&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
+&lt;p&gt;&lt;a class="link" href="https://arxiv.org/pdf/2510.04950" target="_blank" rel="noopener"
+&gt;《Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy》&lt;/a&gt;&lt;/p&gt;</description></item><item><title>驾驭你的LLM：从提示词新手到“指令设计师”的极简指南</title><link>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</link><pubDate>Tue, 07 Oct 2025 08:15:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/cover.webp" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id="为什么llm总跑偏先搞清它其实不会懂你"&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
 &lt;/h2&gt;&lt;p&gt;你有没有遇到过这样的情况：问LLM一个问题，有时候它回答得像个专家，精准又到位；有时候它就好像刚学会说话的小孩，答非所问，甚至自说自话。难道LLM在“抽风”？其实不完全是。&lt;/p&gt;
 &lt;p&gt;LLM的本质其实是个超级“猜词机器”：它并不真正理解你说话的深意，而是在它庞大的学习数据中，预测“下一句最可能出现的词”是什么。换句话说，它靠概率输出内容。&lt;/p&gt;
 &lt;p&gt;当你给它的提示话很模糊时，它只能在无数的可能中猜答案，自然容易“跑偏”。&lt;/p&gt;
 &lt;p&gt;所以，想让LLM表现得聪明，关键不在问得多，而在于问得 &lt;strong&gt;准&lt;/strong&gt; 。你的问题越模糊，LLM就越容易瞎猜；问题越精准，它就越能给你想要的答案。说白了，提示词就是你手里的方向盘，你指的方向越清楚，LLM这辆车才越不会跑偏。&lt;/p&gt;
-&lt;h2 id=&#34;dice-框架提示词的四个核心组成&#34;&gt;D.I.C.E. 框架：提示词的四个核心组成
+&lt;h2 id="dice-框架提示词的四个核心组成"&gt;D.I.C.E. 框架：提示词的四个核心组成
 &lt;/h2&gt;&lt;p&gt;给LLM下指令（提示词），就跟让新同事帮你办事一样。你要是只说“把这个弄一下”，他肯定一头雾水，办事的结果也不如你所愿。你得告诉他前因后果、他该扮什么角色、具体要做什么、最后交出什么成果，这样才能达到你预期的目的。这里有个特别好用的方法，是美国人 Michael Blank 提出了一个超实用的D.I.C.E.方法，将任务拆成四个重点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;D — 背景信息（DATA）&lt;/strong&gt;
@@ -178,70 +145,67 @@
 例：“在我答复后，请给我一份30天销售改进计划，格式为一步步执行的清单。”&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;用了这样的方式提示，LLM才不会给你泛泛而谈的建议，而是一份专业且可执行的行动方案。&lt;/p&gt;
-&lt;h2 id=&#34;clear-原则判断提示词质量的五个标准&#34;&gt;C.L.E.A.R. 原则：判断提示词质量的五个标准
+&lt;h2 id="clear-原则判断提示词质量的五个标准"&gt;C.L.E.A.R. 原则：判断提示词质量的五个标准
 &lt;/h2&gt;&lt;p&gt;如果说D.I.C.E.给提示词搭起了“骨架”，那么Lovable公司提出的C.L.E.A.R.原则就是帮你把骨架的“肌肉和皮肤”打磨完整，让任务说明干净、有效、有活力。&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;原则&lt;/th&gt;
-          &lt;th&gt;含义&lt;/th&gt;
-          &lt;th&gt;实践要点&lt;/th&gt;
-          &lt;th&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;C 简洁（Concise）&lt;/td&gt;
-          &lt;td&gt;去掉多余客套和废话，直奔重点&lt;/td&gt;
-          &lt;td&gt;不说“谢谢”“麻烦了”这类无关紧要的话&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;L 有逻辑（Logical）&lt;/td&gt;
-          &lt;td&gt;任务分解清楚，步骤合理&lt;/td&gt;
-          &lt;td&gt;任务执行顺序是否合理，比如先分析再建议&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;E 明确（Explicit）&lt;/td&gt;
-          &lt;td&gt;明确说明要什么和不要什么&lt;/td&gt;
-          &lt;td&gt;指定风格、字数限制，禁止内容&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;A 可调（Adaptive）&lt;/td&gt;
-          &lt;td&gt;支持后续调整和优化&lt;/td&gt;
-          &lt;td&gt;留有调整空间，不要锁死边界&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;R 可反思（Reflective）&lt;/td&gt;
-          &lt;td&gt;鼓励LLM总结反馈，提升提示词&lt;/td&gt;
-          &lt;td&gt;让LLM指出哪里还能更明确或优化&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原则&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;th&gt;实践要点&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;C 简洁（Concise）&lt;/td&gt;
+&lt;td&gt;去掉多余客套和废话，直奔重点&lt;/td&gt;
+&lt;td&gt;不说“谢谢”“麻烦了”这类无关紧要的话&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L 有逻辑（Logical）&lt;/td&gt;
+&lt;td&gt;任务分解清楚，步骤合理&lt;/td&gt;
+&lt;td&gt;任务执行顺序是否合理，比如先分析再建议&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;E 明确（Explicit）&lt;/td&gt;
+&lt;td&gt;明确说明要什么和不要什么&lt;/td&gt;
+&lt;td&gt;指定风格、字数限制，禁止内容&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A 可调（Adaptive）&lt;/td&gt;
+&lt;td&gt;支持后续调整和优化&lt;/td&gt;
+&lt;td&gt;留有调整空间，不要锁死边界&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R 可反思（Reflective）&lt;/td&gt;
+&lt;td&gt;鼓励LLM总结反馈，提升提示词&lt;/td&gt;
+&lt;td&gt;让LLM指出哪里还能更明确或优化&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;提示词的框架与准则&#34;&gt;提示词的框架与准则
+&lt;h2 id="提示词的框架与准则"&gt;提示词的框架与准则
 &lt;/h2&gt;&lt;p&gt;D.I.C.E. 是提示词的结构框架，它定义了一个提示词该“长成什么样”； C.L.E.A.R. 是质量准则，它确保这个结构内部的逻辑、语言与目标保持清晰一致。&lt;/p&gt;
 &lt;p&gt;在实际提示词设计中，我们先用 D.I.C.E. 打底——明确目标、设定角色、补充上下文、定义评估标准； 再以 C.L.E.A.R. 打磨——检视表达是否清晰（Clear）、逻辑是否连贯（Logical）、依据是否可验证（Empirical）、行动是否可执行（Actionable）、反思是否充分（Reflective）。&lt;/p&gt;
 &lt;p&gt;这种“两层式”方法能显著提升提示词的稳定性与可复用性： 结构清晰使大模型“理解你要什么”， 质量准则则让输出更贴近“你真正需要的”。&lt;/p&gt;
-&lt;h2 id=&#34;你是-llm-的导航员帮它锁定方向提升效率&#34;&gt;你是 LLM 的“导航员”：帮它锁定方向，提升效率
+&lt;h2 id="你是-llm-的导航员帮它锁定方向提升效率"&gt;你是 LLM 的“导航员”：帮它锁定方向，提升效率
 &lt;/h2&gt;&lt;p&gt;LLM不会主动“懂”你，它只能根据你给的信息猜测答案。你设计的提示词就像导航系统，帮它锁定正确方向，避免它在海量的可能中胡乱“试探”。&lt;/p&gt;
 &lt;p&gt;每一次清晰、有结构的提示输入，都是在缩小它自由发挥的范围，以带来更精准有效的回应。掌握了D.I.C.E.框架和C.L.E.A.R.原则，就让你能更好使用LLM，从“使用者”升级为“驾驭者”，彻底释放LLM的生产力。&lt;/p&gt;
-&lt;h2 id=&#34;diceclear示范模板&#34;&gt;D.I.C.E.+C.L.E.A.R.示范模板
-&lt;/h2&gt;&lt;h3 id=&#34;自驾游计划&#34;&gt;自驾游计划
+&lt;h2 id="diceclear示范模板"&gt;D.I.C.E.+C.L.E.A.R.示范模板
+&lt;/h2&gt;&lt;h3 id="自驾游计划"&gt;自驾游计划
 &lt;/h3&gt;&lt;p&gt;生成一份适合一家三口的国庆假期自驾游计划，涵盖路线、每日安排、住宿建议与注意事项。&lt;/p&gt;
-&lt;h4 id=&#34;dice-框架提示词可粘贴到大模型里看看输出&#34;&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
-&lt;/h4&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#DATA#
+&lt;h4 id="dice-框架提示词可粘贴到大模型里看看输出"&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
+&lt;/h4&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;#DATA#
 我们是一家三口（两位成人，一位10岁孩子），计划在2025年10月2日至10月7日国庆假期期间自驾从郑州前往重庆旅游。希望行程轻松、有趣，适合家庭出行。
-
 #IDENTIFY#
 请你扮演一位经验丰富的国内亲子旅行规划师，熟悉中西部城市间自驾路线、家庭友好型景点与节假日出行建议。
-
 #CLARIFY#
 你可以先问我一个问题，以确认我们对住宿预算、每日驾驶时长或景点偏好的具体要求。
-
 #EXECUTE#
 请根据我们的时间安排，生成一份6天的行程计划，包括：
 - 每日路线与预计行驶时间；
@@ -249,112 +213,100 @@
 - 住宿建议（中等价位，安全舒适）；
 - 每日注意事项（如交通、天气、节假高峰）。
 输出格式为分日条列，每日标题为“Day X：城市名”，语言使用简体中文。
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;clear-原则优化&#34;&gt;C.L.E.A.R. 原则优化
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id="clear-原则优化"&gt;C.L.E.A.R. 原则优化
 &lt;/h4&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;原则&lt;/th&gt;
-          &lt;th&gt;应用说明&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;简洁（Concise）&lt;/td&gt;
-          &lt;td&gt;去除冗余描述，直接说明时间、地点、人数、目标。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;有逻辑（Logical）&lt;/td&gt;
-          &lt;td&gt;明确起止时间、路线方向、每日安排，避免“重庆周边推荐”这类模糊任务。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;明确（Explicit）&lt;/td&gt;
-          &lt;td&gt;指定输出格式（分日条列）、语言（简体中文）、住宿类型（中等价位）、人群（亲子）。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;可调（Adaptive）&lt;/td&gt;
-          &lt;td&gt;通过 CLARIFY 模块引导 LLM 提问，便于后续补充预算、偏好等信息。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;可反思（Reflective）&lt;/td&gt;
-          &lt;td&gt;可在输出后追加一句：“如需调整行程节奏或加入特定景点，请告诉我，我可以重新规划。”&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原则&lt;/th&gt;
+&lt;th&gt;应用说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;简洁（Concise）&lt;/td&gt;
+&lt;td&gt;去除冗余描述，直接说明时间、地点、人数、目标。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有逻辑（Logical）&lt;/td&gt;
+&lt;td&gt;明确起止时间、路线方向、每日安排，避免“重庆周边推荐”这类模糊任务。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;明确（Explicit）&lt;/td&gt;
+&lt;td&gt;指定输出格式（分日条列）、语言（简体中文）、住宿类型（中等价位）、人群（亲子）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可调（Adaptive）&lt;/td&gt;
+&lt;td&gt;通过 CLARIFY 模块引导 LLM 提问，便于后续补充预算、偏好等信息。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可反思（Reflective）&lt;/td&gt;
+&lt;td&gt;可在输出后追加一句：“如需调整行程节奏或加入特定景点，请告诉我，我可以重新规划。”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;学术论文写作辅助&#34;&gt;学术论文写作辅助
+&lt;h3 id="学术论文写作辅助"&gt;学术论文写作辅助
 &lt;/h3&gt;&lt;p&gt;撰写一篇关于人工智能伦理的学术论文，目标是投稿至国际期刊。希望获得结构优化建议与引用规范指导，强调逻辑严密、表达规范、支持多轮修订。&lt;/p&gt;
-&lt;h4 id=&#34;dice-框架提示词可粘贴到大模型里看看输出-1&#34;&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
-&lt;/h4&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#DATA#
+&lt;h4 id="dice-框架提示词可粘贴到大模型里看看输出-1"&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
+&lt;/h4&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;#DATA#
 我正在撰写一篇关于人工智能伦理的学术论文，主题聚焦于算法偏见与责任归属问题。目标是投稿至国际科技伦理期刊，要求逻辑清晰、论证严密、引用格式符合国际标准（如 APA 或 IEEE）。
-
 #IDENTIFY#
 请你扮演一位资深学术编辑，熟悉科技伦理领域，具备国际期刊审稿经验，了解常见结构问题与引用规范。
-
 #CLARIFY#
 在开始修改前，请先提出一个关于文章论点结构的关键问题，以确认我是否已建立清晰的中心论点与支持层次。
-
 #EXECUTE#
 请根据我的主题与目标，提出具体的章节重组建议，包括：
 - 推荐的章节划分与标题；
 - 每章应承担的论证任务；
 - 引用格式建议（如文内引用、参考文献排列方式）；
 - 总结建议不超过 500 字，使用中文表达，风格正式、学术。
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;clear-原则优化-1&#34;&gt;C.L.E.A.R. 原则优化
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id="clear-原则优化-1"&gt;C.L.E.A.R. 原则优化
 &lt;/h4&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;原则&lt;/th&gt;
-          &lt;th&gt;应用说明&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;简洁（Concise）&lt;/td&gt;
-          &lt;td&gt;去除口语化表达，直接说明论文主题、目标期刊、引用要求。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;有逻辑（Logical）&lt;/td&gt;
-          &lt;td&gt;明确任务流程：先澄清论点结构，再提出章节建议与引用规范。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;明确（Explicit）&lt;/td&gt;
-          &lt;td&gt;指定输出格式（中文总结、500 字以内）、引用风格（APA 或 IEEE）、角色设定（学术编辑）。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;可调（Adaptive）&lt;/td&gt;
-          &lt;td&gt;通过 CLARIFY 模块引导模型提问，支持后续补充论文摘要、章节草稿等内容。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;可反思（Reflective）&lt;/td&gt;
-          &lt;td&gt;鼓励模型在输出后提供“如需进一步细化章节内容或补充文献引用，请继续提供草稿内容”之类的反馈建议。&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原则&lt;/th&gt;
+&lt;th&gt;应用说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;简洁（Concise）&lt;/td&gt;
+&lt;td&gt;去除口语化表达，直接说明论文主题、目标期刊、引用要求。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有逻辑（Logical）&lt;/td&gt;
+&lt;td&gt;明确任务流程：先澄清论点结构，再提出章节建议与引用规范。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;明确（Explicit）&lt;/td&gt;
+&lt;td&gt;指定输出格式（中文总结、500 字以内）、引用风格（APA 或 IEEE）、角色设定（学术编辑）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可调（Adaptive）&lt;/td&gt;
+&lt;td&gt;通过 CLARIFY 模块引导模型提问，支持后续补充论文摘要、章节草稿等内容。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可反思（Reflective）&lt;/td&gt;
+&lt;td&gt;鼓励模型在输出后提供“如需进一步细化章节内容或补充文献引用，请继续提供草稿内容”之类的反馈建议。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;参考资料：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.entrepreneur.com/leadership/i-used-chatgpt-to-transform-my-business-with-these-prompts/497180&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;D.I.C.E.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.lovable.dev/prompting/prompting-one&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;C.L.E.A.R.&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>我们该如何使用大语言模型</title>
-        <link>https://blog.fallleaf.net/p/growth-how-to-use-llm/</link>
-        <pubDate>Thu, 02 Oct 2025 20:43:00 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-how-to-use-llm/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-how-to-use-llm/cover.webp" alt="Featured image of post 我们该如何使用大语言模型" /&gt;&lt;h2 id=&#34;大语言模型的基本原理与本质&#34;&gt;大语言模型的基本原理与本质
+&lt;p&gt;&lt;a class="link" href="https://www.entrepreneur.com/leadership/i-used-chatgpt-to-transform-my-business-with-these-prompts/497180" target="_blank" rel="noopener"
+&gt;D.I.C.E.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.lovable.dev/prompting/prompting-one" target="_blank" rel="noopener"
+&gt;C.L.E.A.R.&lt;/a&gt;&lt;/p&gt;</description></item><item><title>我们该如何使用大语言模型</title><link>https://blog.fallleaf.net/p/growth-how-to-use-llm/</link><pubDate>Thu, 02 Oct 2025 20:43:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-how-to-use-llm/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-how-to-use-llm/cover.webp" alt="Featured image of post 我们该如何使用大语言模型" /&gt;&lt;h2 id="大语言模型的基本原理与本质"&gt;大语言模型的基本原理与本质
 &lt;/h2&gt;&lt;p&gt;许多人在使用大语言模型（LLM）时，会产生一种直观的错觉：模型的输出好像是经过深思熟虑的“思考结果”。这种感受并不奇怪，因为 LLM 生成的文字往往流畅、有逻辑，常常给你新的思路，甚至带有推理色彩，让人联想到“它在思考”。这其实源于人类对语言的天然信任——我们习惯把清晰有序的表达与真实的认知挂钩。&lt;/p&gt;
 &lt;p&gt;然而，LLM 并没有意识、意图或理解能力。它既不会判断对错，也不会形成观点。它的核心运作机制，并不是“理解”语言，而是基于海量文本训练出的概率预测系统。它通过庞大的参数系统，学习语言中词与词之间的常见搭配与使用规律。当我们输入一段文字时，模型会根据上下文计算出最可能出现的下一个词，并以此逐字生成连贯的文字。&lt;/p&gt;
 &lt;p&gt;因此，LLM 的本质是一个 &lt;strong&gt;概率驱动的语言生成系统&lt;/strong&gt; 。它的“知识”来自于训练数据的模式，而不是对现实世界的认知。它所谓的“创造力”，其实是对语言的多样组合与概率探索。当我们看到 LLM 给出新颖的答案时，实质上是它利用已学到的规律，组合出你未曾尝试过的表达路径，而不是在进行真正的思考。&lt;/p&gt;
 &lt;p&gt;所以，LLM 并不是思考者，而是生成器；不是认知系统，而是语言模式的高效重组器。理解这一点至关重要，因为这能帮助我们正确定位它的角色：它并不是替代人类思考的主体，而是 &lt;strong&gt;思考的补充与放大器&lt;/strong&gt; 。&lt;/p&gt;
-&lt;h2 id=&#34;人类思维与-llm-输出的根本差异&#34;&gt;人类思维与 LLM 输出的根本差异
+&lt;h2 id="人类思维与-llm-输出的根本差异"&gt;人类思维与 LLM 输出的根本差异
 &lt;/h2&gt;&lt;p&gt;尽管 LLM 能生成看似合理的回答，但它与人类思维存在结构性差异：&lt;/p&gt;
-&lt;h3 id=&#34;相似之处&#34;&gt;相似之处
+&lt;h3 id="相似之处"&gt;相似之处
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;都能快速生成“合乎上下文”的表达；&lt;/li&gt;
 &lt;li&gt;都能组合已有元素，产出新颖的语言或创意联想。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;根本差异&#34;&gt;根本差异
+&lt;h3 id="根本差异"&gt;根本差异
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;驱动力不同&lt;/strong&gt; ：人类思考由目标、经验、情感与价值观驱动；LLM 的输出仅由输入提示与统计概率决定。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;可靠性不同&lt;/strong&gt; ：人类会依据逻辑、常识与现实约束修正错误；LLM 可能生成 &lt;strong&gt;自洽却完全虚构的内容&lt;/strong&gt; ——这种现象被称为“幻觉”（Hallucination），源于其缺乏对真实世界的理解。&lt;/li&gt;
@@ -362,24 +314,24 @@
 &lt;li&gt;&lt;strong&gt;责任归属不同&lt;/strong&gt; ：人类对其言论与决策负有道德与法律责任；LLM 本身没有责任意识，也无法承担后果。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;正因如此， &lt;strong&gt;我们永远是最终的判断者&lt;/strong&gt; 。LLM 的输出应被视为“初稿”“素材”或“灵感来源”，而非权威答案——尤其在涉及事实核查、专业判断或伦理决策时，必须进行人工验证。&lt;/p&gt;
-&lt;h2 id=&#34;如何正确利用-llm&#34;&gt;如何正确利用 LLM
+&lt;h2 id="如何正确利用-llm"&gt;如何正确利用 LLM
 &lt;/h2&gt;&lt;p&gt;显然 LLM 不是一个思考者，而是一个高效的生成器，我们该如何与之协作？关键在于要明确它扮演的角色—— &lt;strong&gt;LL&lt;/strong&gt; &lt;strong&gt;M 负责提供&lt;/strong&gt; “素材” &lt;strong&gt;和&lt;/strong&gt; “可能性” &lt;strong&gt;，你负责&lt;/strong&gt; “筛选-加工-整合” 。&lt;/p&gt;
 &lt;p&gt;LLM 能在信息获取和初步构思上提供极大的效率优势。无论是写作、编程还是研究，它都可以快速生成多样化的初稿、思路和表达，帮助人类突破惯性思维。人类必须扮演“审校者”和“决策者”的角色，我们要对 LLM 的输出进行甄别、筛选和改写，将其中有价值的部分吸收进自己的思考框架中，而不是不加辨别地照单全收。更重要的是：LLM 的真正价值不在于替代，而在于扩展。它让我们能够更快地走出“已知的路径”，看到潜在的可能性。但最终的方向感、价值判断和创造性的落地，仍然只能由人类来完成。&lt;/p&gt;
 &lt;p&gt;换句话说，LLM 不是思维的终点，而是 &lt;strong&gt;思维的助推器&lt;/strong&gt; 。当我们学会将它当作探索的工具，而不是答案的来源时，才能真正发挥它的力量。&lt;/p&gt;
-&lt;h2 id=&#34;几个最有效的使用场景&#34;&gt;几个最有效的使用场景
-&lt;/h2&gt;&lt;h3 id=&#34;快速表达&#34;&gt;快速表达
+&lt;h2 id="几个最有效的使用场景"&gt;几个最有效的使用场景
+&lt;/h2&gt;&lt;h3 id="快速表达"&gt;快速表达
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：将零散想法、口语提纲转化为结构清晰、语言规范的初稿，如邮件、公文、说明文档。
 &lt;strong&gt;输出处理&lt;/strong&gt; ：根据受众身份、场合语境调整语气与措辞，避免机械套话或语言错位。&lt;/p&gt;
-&lt;h3 id=&#34;发散思维&#34;&gt;发散思维
+&lt;h3 id="发散思维"&gt;发散思维
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：为产品命名、营销策略、活动策划等提供多个创意选项，充当“数字头脑风暴伙伴”。
 &lt;strong&gt;输出处理&lt;/strong&gt; ：剔除脱离实际、违背品牌风格或逻辑断裂的方案，保留可落地的方向。&lt;/p&gt;
-&lt;h3 id=&#34;总结概括&#34;&gt;总结概括
+&lt;h3 id="总结概括"&gt;总结概括
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：从长篇报告、会议记录或学术论文中提取关键信息，生成摘要或框架。
 &lt;strong&gt;输出处理&lt;/strong&gt; ：核对核心事实与数据，补充必要背景，警惕因压缩导致的 &lt;strong&gt;片面化或误读&lt;/strong&gt; 。&lt;/p&gt;
-&lt;h3 id=&#34;初步写作&#34;&gt;初步写作
+&lt;h3 id="初步写作"&gt;初步写作
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：快速搭建文章结构、演讲提纲或项目方案草稿，突破“空白页焦虑”。
 &lt;strong&gt;输出处理&lt;/strong&gt; ：优化逻辑链条，注入个人见解，润色语言风格，形成真正属于“你”的作品。&lt;/p&gt;
-&lt;h3 id=&#34;灵感触发&#34;&gt;灵感触发
+&lt;h3 id="灵感触发"&gt;灵感触发
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：通过类比、跨领域联想或非常规视角，为科研、工程、艺术创作提供新思路。
 &lt;strong&gt;输出处理&lt;/strong&gt; ：甄别哪些启发具有实质价值，避免牵强附会，并在实践中迭代验证。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -389,7 +341,7 @@
 &lt;li&gt;在高风险决策中，LLM 仅可作为信息辅助工具，不可替代专业判断。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结
+&lt;h2 id="总结"&gt;总结
 &lt;/h2&gt;&lt;p&gt;大语言模型是一种强大的认知工具，但它既不是万能的答案机器，也不是思考主体。理解它的本质与边界，才能让我们在使用时保持清醒。&lt;/p&gt;
 &lt;p&gt;它的最佳定位，不是“替代者”，而是“ 思维助推器 ”。我们清晰地了解其本质特点，就能在未来的工作与生活中，更加从容的驾驭这种新型智能力量。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -397,21 +349,12 @@
 &lt;strong&gt;你创造，它生成；&lt;/strong&gt;
 &lt;strong&gt;你判断，它佐证；&lt;/strong&gt;
 &lt;strong&gt;你突破，它追随。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        </item>
-        <item>
-        <title>月光--吉他曲（索尔）</title>
-        <link>https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/</link>
-        <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/cover.webp" alt="Featured image of post 月光--吉他曲（索尔）" /&gt;&lt;p&gt;索尔（Fernando Sor, 1778–1839）是西班牙19世纪早期最重要的吉他作曲家与演奏家之一，被后人誉为“吉他之父”，西班牙人称他为“吉他的贝多芬”，是吉他古典时期的代表人物。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>月光--吉他曲（索尔）</title><link>https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/</link><pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/cover.webp" alt="Featured image of post 月光--吉他曲（索尔）" /&gt;&lt;p&gt;索尔（Fernando Sor, 1778–1839）是西班牙19世纪早期最重要的吉他作曲家与演奏家之一，被后人誉为“吉他之父”，西班牙人称他为“吉他的贝多芬”，是吉他古典时期的代表人物。&lt;/p&gt;
 &lt;p&gt;《月光》（Moonlight）是他创作的一首著名吉他小品，原名为《B小调练习曲》（Étude in B minor, Op. 29, No. 13）。这首作品最初并非以“月光”为题，而是后人因其旋律宁静、柔和、富有诗意，联想到月夜的意境，遂赋予其“月光”这一浪漫化的标题，成为古典吉他曲目中最广为流传的小品之一。据说曲名《月光》是日本人出版时所取。如同贝多芬的《升C小调钢琴奏鸣曲》，又称“月光奏鸣曲”一样，都是后人加的，不一定能真正反映当时作曲者所表达的思想，到不如不加别名。&lt;/p&gt;
 &lt;p&gt;我演奏的作品，请欣赏：&lt;/p&gt;
-&lt;audio controls style=&#34;width: 100%;&#34;&gt;
-  &lt;source src=&#34;moonlight.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-  Your browser does not support the audio element.
+&lt;audio controls style="width: 100%;"&gt;
+&lt;source src="moonlight.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;p&gt;曲谱解析：&lt;/p&gt;
 &lt;p&gt;月光&lt;/p&gt;
@@ -446,86 +389,63 @@
 &lt;/li&gt;
 &lt;li&gt;记得有人说演奏此曲时应该突出旋律声部，否则就是错误的，现在您还会同意吗？充分发挥您的想象力吧，开放您的思维模式，您会得到更多的东西，但，这一切都离不开对作品合理的分析和理解！ 最后，您可能会感觉到，所谓的技巧被您心中的音乐带走了。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;sor-fernando-op-35-n-22-etude-en-si-mineur.pdf&#34; &gt;月光吉他五线谱下载&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Per-Olov Kindgren的作品演奏</title>
-        <link>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</link>
-        <pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</guid>
-        <description>&lt;h2 id=&#34;关于-per-olov-kindgren&#34;&gt;关于 Per-Olov Kindgren
+&lt;p&gt;&lt;a class="link" href="sor-fernando-op-35-n-22-etude-en-si-mineur.pdf" &gt;月光吉他五线谱下载&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Per-Olov Kindgren的作品演奏</title><link>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</link><pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</guid><description>&lt;h2 id="关于-per-olov-kindgren"&gt;关于 Per-Olov Kindgren
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Per-Olov Kindgren&lt;/strong&gt; 是一位出生于哥伦比亚、在瑞典成长的知名古典吉他演奏家和作曲家。&lt;/p&gt;
 &lt;p&gt;他最显著的标签是**“情感的编织者”&lt;strong&gt;。与许多追求极致演奏速度和复杂技巧的古典吉他手不同，Kindgren 的作品以&lt;/strong&gt;旋律性、空间感和极简主义**见长。他的音乐风格横跨古典、爵士与现代流行元素，因其在社交媒体上分享的极具氛围感的演奏视频而享誉全球。&lt;/p&gt;
-&lt;h2 id=&#34;作品逐一解析&#34;&gt;作品逐一解析
+&lt;h2 id="作品逐一解析"&gt;作品逐一解析
 &lt;/h2&gt;&lt;p&gt;我花了一段时间试着弹奏了他的五首曲子，只能算是把音符弹了出来，没有感情、没有技巧，可以听听，评论一下。&lt;/p&gt;
-&lt;h3 id=&#34;i-miss-you-思念&#34;&gt;《I Miss You》 (思念)
-&lt;/h3&gt;&lt;audio controls style=&#34;width: 100%;&#34;&gt;
-  &lt;source src=&#34;I_Miss_You.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-  Your browser does not support the audio element.
+&lt;h3 id="i-miss-you-思念"&gt;《I Miss You》 (思念)
+&lt;/h3&gt;&lt;audio controls style="width: 100%;"&gt;
+&lt;source src="I_Miss_You.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;p&gt;这是他流传最广的作品之一。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;听感&lt;/strong&gt;：像是一封深夜未寄出的情书。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;特色&lt;/strong&gt;：旋律非常平稳，没有剧烈的起伏，这种“克制”反而表现出思念的漫长与无奈。它利用了吉他中音区的温暖特质，反复回旋的旋律线模拟了脑海中挥之不去的记忆。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;a-touch-of-love-爱之触碰&#34;&gt;《A Touch of Love》 (爱之触碰)
-&lt;/h3&gt;&lt;audio controls style=&#34;width: 100%;&#34;&gt;
-  &lt;source src=&#34;A_Touch_Of_Love.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-  Your browser does not support the audio element.
+&lt;h3 id="a-touch-of-love-爱之触碰"&gt;《A Touch of Love》 (爱之触碰)
+&lt;/h3&gt;&lt;audio controls style="width: 100%;"&gt;
+&lt;source src="A_Touch_Of_Love.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;听感&lt;/strong&gt;：极其轻盈、柔和，仿佛羽毛掠过水面。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;特色&lt;/strong&gt;：这首曲子强调的是 &lt;strong&gt;“触感” (Touch)&lt;/strong&gt;。音符之间的连接非常紧凑且圆润，运用了大量的圆滑音（Slurs）。它不表达热烈的爱，而是一种守护式的、安静的爱意，音色明亮且充满了希望感。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;why-为何&#34;&gt;《Why》 (为何)
-&lt;/h3&gt;&lt;audio controls style=&#34;width: 100%;&#34;&gt;
-  &lt;source src=&#34;Why.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-  Your browser does not support the audio element.
+&lt;h3 id="why-为何"&gt;《Why》 (为何)
+&lt;/h3&gt;&lt;audio controls style="width: 100%;"&gt;
+&lt;source src="Why.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;听感&lt;/strong&gt;：带有强烈的哲学色彩和孤独感。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;特色&lt;/strong&gt;：曲式结构非常简洁，通过不断重复一个简单的动机（Motif）来营造一种 **“追问”**的氛围。每一遍重复在力度上都有微小的变化，像是人在不同心境下对同一个问题的反复思考，充满了忧郁的自我对话感。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;sea-of-nectar-甘露之海&#34;&gt;《Sea of Nectar》 (甘露之海)
-&lt;/h3&gt;&lt;audio controls style=&#34;width: 100%;&#34;&gt;
-  &lt;source src=&#34;Sea_of_Nectar.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-  Your browser does not support the audio element.
+&lt;h3 id="sea-of-nectar-甘露之海"&gt;《Sea of Nectar》 (甘露之海)
+&lt;/h3&gt;&lt;audio controls style="width: 100%;"&gt;
+&lt;source src="Sea_of_Nectar.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;听感&lt;/strong&gt;：开阔、空灵，具有强烈的画面感。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;特色&lt;/strong&gt;：这首歌的灵感来自月球上的“甘露海”。Kindgren 运用了大量连贯的&lt;strong&gt;分解和弦（Arpeggios）&lt;/strong&gt;，模仿液体的流动。曲子打破了明确的节奏律动，营造出一种在太空中漂浮、失重的感觉，是其作品中极简主义美学的巅峰之作。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;it-hurts-to-leave-and-it-hurts-to-stay-离散之痛&#34;&gt;《It Hurts to Leave and It Hurts to Stay》 (离散之痛)
-&lt;/h3&gt;&lt;audio controls style=&#34;width: 100%;&#34;&gt;
-  &lt;source src=&#34;It_hurts_to_leave_and_it_hurts_to_stay.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-  Your browser does not support the audio element.
+&lt;h3 id="it-hurts-to-leave-and-it-hurts-to-stay-离散之痛"&gt;《It Hurts to Leave and It Hurts to Stay》 (离散之痛)
+&lt;/h3&gt;&lt;audio controls style="width: 100%;"&gt;
+&lt;source src="It_hurts_to_leave_and_it_hurts_to_stay.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;听感&lt;/strong&gt;：纠结、沉重，充满戏剧性的张力。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;特色&lt;/strong&gt;：曲名本身就是对音乐最好的注释。旋律在和谐与不和谐音程之间游走，反映了心理上的&lt;strong&gt;矛盾感&lt;/strong&gt;。相比前几首的平稳，这首曲子的低音部分更为厚重，通过低音弦的震动传达出一种内心的挣扎与隐痛。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;艺术风格总结&#34;&gt;艺术风格总结
+&lt;h2 id="艺术风格总结"&gt;艺术风格总结
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;技术服务于情感&lt;/strong&gt;：他从不为了炫技而作曲，每一处装饰音都是为了情感表达。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;留白的艺术&lt;/strong&gt;：他敢于在乐句之间留下沉默（休止符），让听众有思考的空间。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;现代性&lt;/strong&gt;：他的作品虽然使用古典吉他演奏，但听感上非常符合现代人的审美，常被作为疗愈系音乐。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>我和吉他</title>
-        <link>https://blog.fallleaf.net/p/growth-guitar-and-me/</link>
-        <pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-guitar-and-me/</guid>
-        <description>&lt;p&gt;初三的时候喜欢上了吉他，当时学习一点儿也不卷，也没有那么大的压力，赶时髦，伙同同学找关系去本市的一个乐器厂买了一把，由于五音不全，没法自弹自唱，只好学习古典和指弹，当时的条件不可能找老师学，也就买些吉他杂志看着自学，比葫芦画瓢。&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>我和吉他</title><link>https://blog.fallleaf.net/p/growth-guitar-and-me/</link><pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/growth-guitar-and-me/</guid><description>&lt;p&gt;初三的时候喜欢上了吉他，当时学习一点儿也不卷，也没有那么大的压力，赶时髦，伙同同学找关系去本市的一个乐器厂买了一把，由于五音不全，没法自弹自唱，只好学习古典和指弹，当时的条件不可能找老师学，也就买些吉他杂志看着自学，比葫芦画瓢。&lt;/p&gt;
 &lt;p&gt;高中的时候也是断断续续的，没啥长进，就是能把音阶按熟练了。一上大学，就参加了新生的吉他兴趣组，在大一迎新会上配合别人弹了一个二重奏曲子《伏尔塔瓦河》，不过我只是伴奏，弹简单的和弦，因此购买了一把吉他，为了省钱，连续两个星期都是白糖沾馍吃。后来不再为谁而弹了，兴趣就逐渐消失，等工作后，就不再触及了。&lt;/p&gt;
-&lt;p&gt;现在，又有机会再次捡起曾经的兴趣。好在网上有了各种资源和视频，学习起来不那么难了。以后陆陆续续学弹了一些曲子，留作纪念，自娱自乐。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;现在，又有机会再次捡起曾经的兴趣。好在网上有了各种资源和视频，学习起来不那么难了。以后陆陆续续学弹了一些曲子，留作纪念，自娱自乐。&lt;/p&gt;</description></item></channel></rss>

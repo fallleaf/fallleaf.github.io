@@ -1,33 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>SFP on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/sfp/</link>
-        <description>Recent content in SFP on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sat, 29 Jul 2023 21:31:51 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/sfp/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>SFP模块的兼容性</title>
-        <link>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</link>
-        <pubDate>Sat, 14 Dec 2019 21:31:51 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</guid>
-        <description>&lt;h2 id=&#34;sfp光模块的生产&#34;&gt;SFP光模块的生产
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SFP on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/sfp/</link><description>Recent content in SFP on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sat, 29 Jul 2023 21:31:51 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/sfp/index.xml" rel="self" type="application/rss+xml"/><item><title>SFP模块的兼容性</title><link>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</link><pubDate>Sat, 14 Dec 2019 21:31:51 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</guid><description>&lt;h2 id="sfp光模块的生产"&gt;SFP光模块的生产
 &lt;/h2&gt;&lt;p&gt;SFP光模块的组成如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp.jpg&#34;
-	width=&#34;1080&#34;
-	height=&#34;724&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_e510d0723e9932a0.jpg 480w, https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_5f9f614b9a3d7768.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;SFP光模块&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;149&#34;
-		data-flex-basis=&#34;358px&#34;
-	
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp.jpg"
+width="1080"
+height="724"
+srcset="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_e510d0723e9932a0.jpg 480w, https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_5f9f614b9a3d7768.jpg 1024w"
+loading="lazy"
+alt="SFP光模块"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="358px"
 &gt;&lt;/p&gt;
 &lt;p&gt;实际上，所有光模块，不管是原厂还是第三方，都是由类似的元器件组装而成。&lt;/p&gt;
 &lt;p&gt;光模块供应商生产基本是三种模式：&lt;/p&gt;
@@ -44,13 +25,13 @@
 &lt;/ul&gt;
 &lt;p&gt;具备从芯片制造到模块封装能力的供应商，全球屈指可数的，大部分的供应商都是外购元器件进行封装生产，国内更甚。光模块产品的区别主要体现在不同的元器件来源、生产质量及成本的管控方面。&lt;/p&gt;
 &lt;p&gt;大部分兼容光模块其实也是由生产原厂光模块的厂家生产，甚至采用相同技术指标、生产工艺，也仅仅是商标的不同。&lt;/p&gt;
-&lt;h2 id=&#34;sfp光模块兼容性&#34;&gt;SFP光模块兼容性
+&lt;h2 id="sfp光模块兼容性"&gt;SFP光模块兼容性
 &lt;/h2&gt;&lt;p&gt;根据MSA标准设计制造生产的SFP光模块，兼容性是不言而喻的。&lt;/p&gt;
 &lt;p&gt;MSA（Multi-Source Agreement）是一个多供应商规范，相比IEEE算是一个民间的非官方组织形式，针对不同的光模块（SFP、SFP+、QSFP等）标准会形成不同的MSA协议，可以理解是产业内企业联盟行为。MSA除了定义光模块的结构封装（包括外形尺寸，电连接器，引脚分配等），也定义了电接口、光接口，从而形成完整的光模块标准。理论上，遵循MSA协议生产的光模块均可兼容。
 供应商陷阱&lt;/p&gt;
 &lt;p&gt;一些主导地位的通信设备、数据设备供应商，常常采用“Vendor Lock-in“（供应商陷阱，供应商套牢，厂商泥潭）的策略，宣称在设备上用原厂的SFP模块才能正常工作，让用户产生不必要的担忧，使用了远远高过市场价的原厂光模块。当然，不考虑成本的话，原厂光模块自然是首选。当成本占据主要因素时，利用兼容光模块就成了首要考虑的问题。&lt;/p&gt;
 &lt;p&gt;这些供应商通常在光模块的固件、硬件以及EEPROM里设置一些数据，比如供应商名称、序列号，认证码等等。当设备发觉光模块插入插槽中，就会读取光模块某些特定地址的（A0h）数据，如果和预先设定的数据不一致，便认为不是原厂模块，不工作或发出告警。即便模块能正常工作，模块的DDM功能也可能不正常使用。SFF-8472规范里，规定了数字诊断检测接口（A2h），其中存储了光模块的发光功率、收光功率以及告警、警报的门限值等，如果兼容模块的DDM信息中的一些门限参数和原厂不一致，也会造成网管的频繁告警或警报。&lt;/p&gt;
-&lt;h2 id=&#34;怎么用兼容sfp模块&#34;&gt;怎么用兼容SFP模块
+&lt;h2 id="怎么用兼容sfp模块"&gt;怎么用兼容SFP模块
 &lt;/h2&gt;&lt;p&gt;光模块中的EEPROM信息可以通过专用设备进行修改，大量兼容模块厂家也根据原厂模块的一些参数进行了适配，兼容性更强了。在某些主导厂家的设备商，也可进行命令设置，取消原厂模块认证功能，让设备或网管能够识别及监测兼容光模块。&lt;/p&gt;
 &lt;p&gt;使用兼容光模块，在法律上，也可看作一种反垄断的举措。通过选择合适的兼容模块供应商，可以即保证性能，又降低成本。这必将会对设备供应商的报价策略产生影响，报价策略通常是把接口板或设备与光模块捆绑在一起，价格此消彼长。不过，让模块归于模块，让板卡归于板卡，价格体系理顺，不是更好吗？
 如何选择兼容光模块&lt;/p&gt;
@@ -70,9 +51,4 @@
 &lt;li&gt;
 &lt;p&gt;模块的零部件来源是否是可信任&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;/ul&gt;</description></item></channel></rss>

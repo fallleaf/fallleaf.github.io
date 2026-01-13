@@ -1,118 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>走线架 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E8%B5%B0%E7%BA%BF%E6%9E%B6/</link>
-        <description>Recent content in 走线架 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 09:48:27 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E8%B5%B0%E7%BA%BF%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>走线架垮塌事件分析</title>
-        <link>https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/</link>
-        <pubDate>Tue, 01 Feb 2011 09:48:27 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/cover.webp" alt="Featured image of post 走线架垮塌事件分析" /&gt;&lt;p&gt;某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑：&lt;/p&gt;
-&lt;h2 id=&#34;材料方面&#34;&gt;材料方面
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>走线架 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E8%B5%B0%E7%BA%BF%E6%9E%B6/</link><description>Recent content in 走线架 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 09:48:27 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E8%B5%B0%E7%BA%BF%E6%9E%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>走线架垮塌事件分析</title><link>https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/</link><pubDate>Tue, 01 Feb 2011 09:48:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/cover.webp" alt="Featured image of post 走线架垮塌事件分析" /&gt;&lt;p&gt;某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑：&lt;/p&gt;
+&lt;h2 id="材料方面"&gt;材料方面
 &lt;/h2&gt;&lt;p&gt;从现场情况看，吊杆与天花板未脱落，吊杆亦未发生拉伸变形及断裂，可认为吊杆的强度是足够的，主要问题就在于吊杆与走线架的连接件上。&lt;/p&gt;
 &lt;p&gt;连接件作为连接与支持走线架的零件，受力要比走线架大得多，所使用材料强度应高于走线架所用材料的强度，从现场来看，所使用材料均为同一规格，厚度为2mm。按YD5026-95和YD/T5026-2005《电信机房铁架安装设计标准》的要求，所采用铁件一般为50x50x5mm。&lt;/p&gt;
 &lt;p&gt;从螺栓与连接件的紧固方式看，连接件的受力面积主要是螺栓垫片与连接件的接触面积，从照片上看，螺栓垫圈小，致使连接件单位面积受力过大，超过连接件的受力特性，造成了螺孔槽受压力作用变形并扩张。目前走线架所用螺栓规格为M6，规范要求的螺栓规格为M8和M10和M12，
-&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1.webp&#34;
-	width=&#34;640&#34;
-	height=&#34;480&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_9640c548afff0dfc.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_14bee3a46e103979.webp 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
+&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1.webp"
+width="640"
+height="480"
+srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_9640c548afff0dfc.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_14bee3a46e103979.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
 &gt;
-&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2.webp&#34;
-	width=&#34;640&#34;
-	height=&#34;480&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_dbba45ab0fa38515.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_80c29e00c574e8ce.webp 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
+&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2.webp"
+width="640"
+height="480"
+srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_dbba45ab0fa38515.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_80c29e00c574e8ce.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;地震及受力的影响&#34;&gt;地震及受力的影响
+&lt;h2 id="地震及受力的影响"&gt;地震及受力的影响
 &lt;/h2&gt;&lt;p&gt;从512大地震以来，该地区陆续发生了大大小小的上百次的余震。大地震和余震产生地震波，使走线架上下及左右震动，长期处于一种不稳定状态。螺栓、螺母与连接件的紧固，是靠螺栓、螺母以及垫片与紧固件间的摩擦力固紧的，同时，由于部分螺母、螺栓安装时没有加弹簧垫圈（见下图），经过512大地震以及上百次余震的冲击波后，非常容易使螺母与螺栓松动。
-&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3.webp&#34;
-	width=&#34;640&#34;
-	height=&#34;480&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_9d8d063b61e28ed9.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_8d8b10ed7f565e7d.webp 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
+&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3.webp"
+width="640"
+height="480"
+srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_9d8d063b61e28ed9.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_8d8b10ed7f565e7d.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
 &gt;
-&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4.webp&#34;
-	width=&#34;640&#34;
-	height=&#34;480&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_2d2bc90ae72cbd2d.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_153779037fdc72be.webp 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
+&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4.webp"
+width="640"
+height="480"
+srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_2d2bc90ae72cbd2d.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_153779037fdc72be.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
 &gt;&lt;/p&gt;
 &lt;p&gt;走线架安装后，也经过了若干次的施工，在敷设电缆的过程中，走线架不是一个静态、缓慢受力的过程，而是受到线缆自重、拖拉线缆以及施工人员操作时产生的冲击力，这也会对螺栓螺母等紧固件产生影响，加速松动的过程。&lt;/p&gt;
 &lt;p&gt;螺栓、螺母与连接件间的松动，使得连接件间有了空隙，同时由于走线架重量的缘故，使得连接件螺栓槽有了变形的空间，一旦受到外界一定的冲击力，超过其承受程度，就会使得变形加速，造成走线架的脱落。&lt;/p&gt;
 &lt;p&gt;现场塌垮的走线架，是维护和施工通道一侧走线架发生侧翻，而不是走线架整体垮塌，在施工中，由于外力扰动，走线架受力不平衡，维护和施工通道一侧走线架连接件受力过大也是一个原因。&lt;/p&gt;
-&lt;h2 id=&#34;连接加固方式&#34;&gt;连接加固方式
+&lt;h2 id="连接加固方式"&gt;连接加固方式
 &lt;/h2&gt;&lt;p&gt;现场走线架吊挂有两种方式，一种为龙门架，龙门架的横担支撑两层走线架的重量，另外一种为吊挂上层走线架梁上，如下图所示&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5.webp&#34;
-	width=&#34;640&#34;
-	height=&#34;853&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_b9c8d6e40e233bbb.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_54fd8281f5a18881.webp 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;75&#34;
-		data-flex-basis=&#34;180px&#34;
-	
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5.webp"
+width="640"
+height="853"
+srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_b9c8d6e40e233bbb.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_54fd8281f5a18881.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
 &gt;&lt;/p&gt;
 &lt;p&gt;按一般要求，对于双层走线架，每层都应与吊挂连接（见下图），以免连接件集中受力，现场的走线架只有最下一层与吊挂连接，导致所有线缆的重量都压在横梁上，也导致连接件的受力过大。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6.webp&#34;
-	width=&#34;800&#34;
-	height=&#34;600&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_83fed71ff9b412e5.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_21c3b6184c8e8122.webp 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6.webp"
+width="800"
+height="600"
+srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_83fed71ff9b412e5.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_21c3b6184c8e8122.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
 &gt;&lt;/p&gt;
 &lt;p&gt;现场走线架另外一种的吊挂方式，这种方式致使只有连接件的螺栓受力，而整个连接件不受力，也会导致螺孔槽所受压力过大，以致变形，若连接件承托上梁下放，则受力为整个连接件以及螺栓（见下图）。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7.webp&#34;
-	width=&#34;235&#34;
-	height=&#34;180&#34;
-	srcset=&#34;https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_fddd72f4d4720887.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_b30bb3dd1c32c5b1.webp 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;130&#34;
-		data-flex-basis=&#34;313px&#34;
-	
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7.webp"
+width="235"
+height="180"
+srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_fddd72f4d4720887.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_b30bb3dd1c32c5b1.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="130"
+data-flex-basis="313px"
 &gt;&lt;/p&gt;
 &lt;p&gt;现场的走线架投入使用已多年，期间经历了512大地震以及前后若干次地震、施工布放线缆等，对走线架，尤其是连接件部位的可靠性、安全性产生了较大的影响，加上最后一次施工过程中产生外力的影响，以及吊挂件的材料与安装方式的不合理因素，导致此次事件的发生。同时，由于现场走线架是近年来采用新型材料，以往相关的规范未提及该种材料，还需对该种走线架应有的各项指标要求进行不断的实践和探索。&lt;/p&gt;
-&lt;h2 id=&#34;有关走线架的规范注意需核实规范的有效期&#34;&gt;有关走线架的规范（注意：需核实规范的有效期）
+&lt;h2 id="有关走线架的规范注意需核实规范的有效期"&gt;有关走线架的规范（注意：需核实规范的有效期）
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;YD 5026-1996《长途通信传输机房铁架槽道安装设计标准》（被YD/T 5026-2005替代）&lt;/li&gt;
 &lt;li&gt;YD 5059-98《通信设备安装抗震设计规范》（被YD 5059-2005替代）&lt;/li&gt;
@@ -120,9 +84,4 @@
 &lt;li&gt;YD/T 5026-2005《电信机房铁架安装设计标准》&lt;/li&gt;
 &lt;li&gt;YD 5059-2005《电信设备安装抗震设计规范》&lt;/li&gt;
 &lt;li&gt;YD 5060-2010《通信设备安装抗震设计图集》&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;/ul&gt;</description></item></channel></rss>

@@ -1,40 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Zerotier on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/zerotier/</link>
-        <description>Recent content in Zerotier on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sat, 29 Jul 2023 20:59:15 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/zerotier/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>ZEROTIER内网穿透实践</title>
-        <link>https://blog.fallleaf.net/p/tech-zerotier-nat-traversal-practice/</link>
-        <pubDate>Wed, 30 Dec 2020 20:59:15 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-zerotier-nat-traversal-practice/</guid>
-        <description>&lt;p&gt;内网和外网计算机组成一个局域网，相互能访问，并能访问内网资源。&lt;/p&gt;
-&lt;h3 id=&#34;应用环境&#34;&gt;应用环境
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zerotier on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/zerotier/</link><description>Recent content in Zerotier on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sat, 29 Jul 2023 20:59:15 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/zerotier/index.xml" rel="self" type="application/rss+xml"/><item><title>ZEROTIER内网穿透实践</title><link>https://blog.fallleaf.net/p/tech-zerotier-nat-traversal-practice/</link><pubDate>Wed, 30 Dec 2020 20:59:15 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-zerotier-nat-traversal-practice/</guid><description>&lt;p&gt;内网和外网计算机组成一个局域网，相互能访问，并能访问内网资源。&lt;/p&gt;
+&lt;h3 id="应用环境"&gt;应用环境
 &lt;/h3&gt;&lt;p&gt;公司内网：一台运行linux的NAS,一台win10笔记本电脑&lt;/p&gt;
 &lt;p&gt;外网：linux的VPS&lt;/p&gt;
 &lt;p&gt;家：Win10一台电脑&lt;/p&gt;
 &lt;p&gt;个人：Android手机&lt;/p&gt;
-&lt;h3 id=&#34;需求&#34;&gt;需求
+&lt;h3 id="需求"&gt;需求
 &lt;/h3&gt;&lt;p&gt;在外网，笔记本电脑、家中的电脑和手机均能访问内网NAS上的云存储，在外网能通过NAS访问内网资源。&lt;/p&gt;
-&lt;h3 id=&#34;方案&#34;&gt;方案
+&lt;h3 id="方案"&gt;方案
 &lt;/h3&gt;&lt;p&gt;在各个终端上安装zerotier，设置VPS为moon，在NAS开启转发。&lt;/p&gt;
 &lt;p&gt;zerotier的设置可上网查询，记录一下NAS设置转发的命令（网卡名称据实更改）:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;设置/etc/sysctl.conf中的net.ipv4.ip_forward=1
-
 iptables -t nat -A POSTROUTING -o enp123s0f0(物理网卡) -j MASQUERADE
-
 iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
-
 iptables -A FORWARD -i zt7u3fcxwr(zerotier虚拟网卡) -o enp123s0f0(物理网卡) -j ACCEPT
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;如果访问内网资源需要用内部域名，需对访问设备的虚拟卡配置dns地址&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;如果访问内网资源需要用内部域名，需对访问设备的虚拟卡配置dns地址&lt;/p&gt;</description></item></channel></rss>

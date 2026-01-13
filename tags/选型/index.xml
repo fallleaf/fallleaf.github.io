@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>选型 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E9%80%89%E5%9E%8B/</link>
-        <description>Recent content in 选型 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 11:36:47 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E9%80%89%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>MSTP传输设备选型谈判需要注意的几个问题</title>
-        <link>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</link>
-        <pubDate>Mon, 20 Mar 2006 11:36:47 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</guid>
-        <description>&lt;p&gt;传输设备谈判中需要注意以下几个问题：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>选型 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E9%80%89%E5%9E%8B/</link><description>Recent content in 选型 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 11:36:47 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E9%80%89%E5%9E%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>MSTP传输设备选型谈判需要注意的几个问题</title><link>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</link><pubDate>Mon, 20 Mar 2006 11:36:47 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</guid><description>&lt;p&gt;传输设备谈判中需要注意以下几个问题：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;设备的高、低阶交叉连接能力及其结构、限制条件；&lt;/p&gt;
@@ -39,9 +24,4 @@
 &lt;li&gt;
 &lt;p&gt;现有设备和新版本设备的区别，升级能力；说明在网设备的升级方式、具体步骤，需要更换的板卡，对业务的具体影响，新、旧版本的主要差异及在网设备升级后达到的效果。&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;/ul&gt;</description></item></channel></rss>

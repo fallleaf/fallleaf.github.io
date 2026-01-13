@@ -1,21 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>数字孪生 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</link>
-        <description>Recent content in 数字孪生 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>光网络数字孪生：让网络在虚拟世界先跑一遍</title>
-        <link>https://blog.fallleaf.net/p/tech-optical-network-digital-twin/</link>
-        <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-optical-network-digital-twin/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-optical-network-digital-twin/cover.webp" alt="Featured image of post 光网络数字孪生：让网络在虚拟世界先跑一遍" /&gt;&lt;p&gt;未来的光网络，不再仅仅是由光纤、电路和节点构成的物理系统，而是包含了物理系统的一个 可感知、可预测、可自我演化 的智能体。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数字孪生 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</link><description>Recent content in 数字孪生 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Thu, 09 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/index.xml" rel="self" type="application/rss+xml"/><item><title>光网络数字孪生：让网络在虚拟世界先跑一遍</title><link>https://blog.fallleaf.net/p/tech-optical-network-digital-twin/</link><pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-optical-network-digital-twin/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-optical-network-digital-twin/cover.webp" alt="Featured image of post 光网络数字孪生：让网络在虚拟世界先跑一遍" /&gt;&lt;p&gt;未来的光网络，不再仅仅是由光纤、电路和节点构成的物理系统，而是包含了物理系统的一个 可感知、可预测、可自我演化 的智能体。
 支撑这一变革的关键技术之一，正是—— 光网络数字孪生（Digital Twin for Optical Network）。&lt;/p&gt;
-&lt;h2 id=&#34;为什么光网络需要孪生体&#34;&gt;为什么光网络需要“孪生体”
+&lt;h2 id="为什么光网络需要孪生体"&gt;为什么光网络需要“孪生体”
 &lt;/h2&gt;&lt;p&gt;过去的几十年里，光传送网（OTN/WDM）在带宽、稳定性和成本上不断突破，但其管理方式仍停留在传统阶段：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;网络配置依赖人工经验；&lt;/li&gt;
@@ -25,7 +10,7 @@
 &lt;p&gt;随着全光网络、云计算、AI流量和算力调度的兴起，网络变得更加复杂与动态。传统的“静态管理”模式已难以支撑“实时 + 智能”的新需求。&lt;/p&gt;
 &lt;p&gt;数字孪生的引入改变了这一切。它让网络的规划、仿真、调优和自愈，都可以 &lt;strong&gt;先在虚拟世界中运行一遍，再在现实网络中执行&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;换言之，运维决策从“ 凭经验 ”变为“ 凭数据 ”。&lt;/p&gt;
-&lt;h2 id=&#34;什么是光网络数字孪生&#34;&gt;什么是光网络数字孪生
+&lt;h2 id="什么是光网络数字孪生"&gt;什么是光网络数字孪生
 &lt;/h2&gt;&lt;p&gt;光网络数字孪生，是在数字空间中创建一个与真实网络（光缆、设备 ） 高度对应的虚拟副本 。
 它融合了光学建模、实时数据同步与AI预测分析，构建出一个“可感知、可演化”的网络镜像。&lt;/p&gt;
 &lt;p&gt;核心机制包括三项：&lt;/p&gt;
@@ -36,42 +21,42 @@
 &lt;/ol&gt;
 &lt;p&gt;由此形成一个闭环系统——
 在孪生网络中提前发现问题、验证方案，再下发优化策略。&lt;/p&gt;
-&lt;h2 id=&#34;系统架构从数据到决策&#34;&gt;系统架构：从数据到决策
+&lt;h2 id="系统架构从数据到决策"&gt;系统架构：从数据到决策
 &lt;/h2&gt;&lt;p&gt;数字孪生光网络通常由四个层级构成：&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;层级&lt;/th&gt;
-          &lt;th&gt;功能&lt;/th&gt;
-          &lt;th&gt;关键技术&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;数据采集层&lt;/td&gt;
-          &lt;td&gt;获取光功率、误码率、损耗等实时数据&lt;/td&gt;
-          &lt;td&gt;Telemetry、OTDR、智能光模块&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;建模层&lt;/td&gt;
-          &lt;td&gt;构建拓扑及光学特性模型&lt;/td&gt;
-          &lt;td&gt;QoT建模、机器学习建模&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;分析预测层&lt;/td&gt;
-          &lt;td&gt;进行性能评估、故障预测、路径优化&lt;/td&gt;
-          &lt;td&gt;AI算法、强化学习、时序分析&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;控制与反馈层&lt;/td&gt;
-          &lt;td&gt;将优化决策下发，实现自适应调度&lt;/td&gt;
-          &lt;td&gt;SDN控制器、AIOps引擎&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;层级&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;关键技术&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;数据采集层&lt;/td&gt;
+&lt;td&gt;获取光功率、误码率、损耗等实时数据&lt;/td&gt;
+&lt;td&gt;Telemetry、OTDR、智能光模块&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;建模层&lt;/td&gt;
+&lt;td&gt;构建拓扑及光学特性模型&lt;/td&gt;
+&lt;td&gt;QoT建模、机器学习建模&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;分析预测层&lt;/td&gt;
+&lt;td&gt;进行性能评估、故障预测、路径优化&lt;/td&gt;
+&lt;td&gt;AI算法、强化学习、时序分析&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;控制与反馈层&lt;/td&gt;
+&lt;td&gt;将优化决策下发，实现自适应调度&lt;/td&gt;
+&lt;td&gt;SDN控制器、AIOps引擎&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;这一体系实现了从“被动响应”到“主动预测”的跨越，
 使光网络向真正的 &lt;strong&gt;自治化（Autonomous）&lt;/strong&gt; 演进。&lt;/p&gt;
-&lt;h2 id=&#34;应用场景从规划到自愈&#34;&gt;应用场景：从规划到自愈
+&lt;h2 id="应用场景从规划到自愈"&gt;应用场景：从规划到自愈
 &lt;/h2&gt;&lt;p&gt;光网络数字孪生的价值已在多个环节体现：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;规划优化&lt;/strong&gt; ：仿真不同部署方案，平衡光功率与QoT，避免过度设计；&lt;/li&gt;
@@ -80,7 +65,7 @@
 &lt;li&gt;&lt;strong&gt;智能调度&lt;/strong&gt; ：在虚拟环境中验证波长重分配、路径调整，再安全执行；&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;跨域协同&lt;/strong&gt; ：与“数字孪生计算”联动，实现计算、网络与能源一体化优化。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;挑战与发展&#34;&gt;挑战与发展
+&lt;h2 id="挑战与发展"&gt;挑战与发展
 &lt;/h2&gt;&lt;p&gt;要让数字孪生真正落地，还需解决几个关键问题：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;建模精度不足&lt;/strong&gt; ：光纤非线性、偏振、温漂等因素复杂；&lt;/li&gt;
@@ -94,9 +79,9 @@
 &lt;li&gt;推动 &lt;strong&gt;标准化接口（Open API）&lt;/strong&gt; ，实现多厂商互通；&lt;/li&gt;
 &lt;li&gt;采用 &lt;strong&gt;云原生孪生架构&lt;/strong&gt; ，结合算力网络实现分布式仿真。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;各国运营商也在积极探索，NTT 已在其 IOWN 架构中实现基于孪生的光链路性能预测；中国移动研究院发布了“数字孪生网络基础框架”成果，启动了Open-DTN开源合作计划； &lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s?__biz=MzIzMDc4MDk4Mw==&amp;amp;mid=2247484380&amp;amp;idx=1&amp;amp;sn=aaed132f3d0a5f9428b13b11719a2446&amp;amp;scene=21#wechat_redirect&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;中国联通近期也推出全光网络数字孪生平台&lt;/a&gt; 。&lt;/p&gt;
-&lt;h2 id=&#34;前瞻迈向自治光网络aon&#34;&gt;前瞻：迈向自治光网络（AON）
+&lt;p&gt;各国运营商也在积极探索，NTT 已在其 IOWN 架构中实现基于孪生的光链路性能预测；中国移动研究院发布了“数字孪生网络基础框架”成果，启动了Open-DTN开源合作计划； &lt;a class="link" href="https://mp.weixin.qq.com/s?__biz=MzIzMDc4MDk4Mw==&amp;amp;mid=2247484380&amp;amp;idx=1&amp;amp;sn=aaed132f3d0a5f9428b13b11719a2446&amp;amp;scene=21#wechat_redirect" target="_blank" rel="noopener"
+&gt;中国联通近期也推出全光网络数字孪生平台&lt;/a&gt; 。&lt;/p&gt;
+&lt;h2 id="前瞻迈向自治光网络aon"&gt;前瞻：迈向自治光网络（AON）
 &lt;/h2&gt;&lt;p&gt;数字孪生不仅是网络的“镜子”，更是迈向自治的“桥梁”。&lt;/p&gt;
 &lt;p&gt;未来，数字孪生网络将具备三种核心能力：&lt;/p&gt;
 &lt;ul&gt;
@@ -105,7 +90,7 @@
 &lt;li&gt;&lt;strong&gt;自决策&lt;/strong&gt; ：自动生成并执行最优调整策略。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这正是迈向 &lt;strong&gt;Autonomous Optical Network（AON）&lt;/strong&gt; 的关键一步。&lt;/p&gt;
-&lt;h2 id=&#34;结语从经验到智能&#34;&gt;结语：从经验到智能
+&lt;h2 id="结语从经验到智能"&gt;结语：从经验到智能
 &lt;/h2&gt;&lt;p&gt;数字孪生并非“另一个网络”，而是网络智能化的镜像。
 它让我们第一次真正“看见”光网络的动态演化， 并以数据为依据做出更稳健、更高效的决策。&lt;/p&gt;
 &lt;p&gt;对运营商而言，这意味着：&lt;/p&gt;
@@ -114,9 +99,4 @@
 &lt;li&gt;从被动响应到预测管理；&lt;/li&gt;
 &lt;li&gt;从静态运维到智能自治。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;在迈向“全光智能时代”的路上， &lt;strong&gt;数字孪生，正成为光网络转型的关键引擎。&lt;/strong&gt;&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;在迈向“全光智能时代”的路上， &lt;strong&gt;数字孪生，正成为光网络转型的关键引擎。&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

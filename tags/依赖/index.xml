@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>“依赖&#34; on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E4%BE%9D%E8%B5%96/</link>
-        <description>Recent content in “依赖&#34; on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sat, 27 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E4%BE%9D%E8%B5%96/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化</title>
-        <link>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</link>
-        <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/cover.webp" alt="Featured image of post 别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化" /&gt;&lt;h2 id=&#34;引子&#34;&gt;引子
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>“依赖" on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E4%BE%9D%E8%B5%96/</link><description>Recent content in “依赖" on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sat, 27 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E4%BE%9D%E8%B5%96/index.xml" rel="self" type="application/rss+xml"/><item><title>别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化</title><link>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</link><pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/cover.webp" alt="Featured image of post 别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化" /&gt;&lt;h2 id="引子"&gt;引子
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;网络段子：&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -35,7 +20,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;而我成为了那个一分钟改五版的领导 。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;从助手到主宰你真的还在独立思考吗&#34;&gt;从“助手”到“主宰”：你真的还在独立思考吗？
+&lt;h2 id="从助手到主宰你真的还在独立思考吗"&gt;从“助手”到“主宰”：你真的还在独立思考吗？
 &lt;/h2&gt;&lt;p&gt;你有没有这样的瞬间：打开空白文档，不是自己列提纲，而是本能地问AI“怎么写”？&lt;/p&gt;
 &lt;p&gt;自从 LLM（大语言模型）出现，我们的工作效率确实被拉满。它能帮你列提纲、做总结、提炼标题，像一个万能的智能副驾。但我们正面临一个深刻的悖论： 我们以为在用工具，工具却在重塑我们的大脑 。&lt;/p&gt;
 &lt;p&gt;这种“ 智能依赖 ”正在悄悄侵蚀我们最核心的几项能力：&lt;/p&gt;
@@ -45,12 +30,12 @@
 &lt;li&gt;&lt;strong&gt;创造力的固化&lt;/strong&gt; ： 我们将“ &lt;strong&gt;思考&lt;/strong&gt; ”降级为“ &lt;strong&gt;提示词&lt;/strong&gt; ”，从亲手创造者退化为发号施令的“ &lt;strong&gt;提示工程师&lt;/strong&gt; ”。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这不是进步，而是一种“ &lt;strong&gt;快捷键取代思考键&lt;/strong&gt; ”的被动适应。我们正用对速度的追求，交换对思维的掌控。&lt;/p&gt;
-&lt;h2 id=&#34;效率的甜蜜毒药llm如何重塑我们的行为模式&#34;&gt;效率的“甜蜜毒药”：LLM如何重塑我们的行为模式
+&lt;h2 id="效率的甜蜜毒药llm如何重塑我们的行为模式"&gt;效率的“甜蜜毒药”：LLM如何重塑我们的行为模式
 &lt;/h2&gt;&lt;p&gt;技术的本质是放大器。LLM极大地放大了个体的产出速度，但同时也放大了一个“ &lt;strong&gt;浅尝辄止&lt;/strong&gt; ”的巨大趋势。&lt;/p&gt;
 &lt;p&gt;在一个内容爆炸的时代，数量正在压倒质量。当AI可以无限、批量地生成内容时，我们对价值的衡量标准发生了变化：我们开始追求“ &lt;strong&gt;AI卷出来的数量&lt;/strong&gt; ”，而非“ &lt;strong&gt;人类打磨的洞察&lt;/strong&gt; ”。&lt;/p&gt;
 &lt;p&gt;一个残酷的例子或许能说明问题： 在某些内容创作平台，有研究显示，AI生成内容的比例已急剧上升，但其用户互动率和转发深度却在下降。因为机器可以模仿逻辑，但无法模拟共情、情感和独一无二的生命体验。&lt;/p&gt;
 &lt;p&gt;如果人人都问AI相同的问题，得到的答案也将趋向平庸和同质化。这种“集体无意识”的平庸，正在模糊我们作为个体独特性和价值创造的边界。我们以为自己掌握着方向盘，却发现车速和方向都被“ &lt;strong&gt;高效&lt;/strong&gt; ”的牵引绳所控制。&lt;/p&gt;
-&lt;h2 id=&#34;人是目的ai是手段如何守住我们不可替代的核心竞争力&#34;&gt;人是目的，AI是手段：如何守住我们不可替代的核心竞争力？
+&lt;h2 id="人是目的ai是手段如何守住我们不可替代的核心竞争力"&gt;人是目的，AI是手段：如何守住我们不可替代的核心竞争力？
 &lt;/h2&gt;&lt;p&gt;LLM可以是最好的助手，但绝不能成为我们思考的主人。它能帮你跑得更快，但无法取代人类的判断力、情感表达和价值创造。&lt;/p&gt;
 &lt;p&gt;真正的进步，是人与工具的深度协作，而非人的全面退让。面对这股浪潮，我们必须清醒地给自己设置思维“ &lt;strong&gt;防火墙&lt;/strong&gt; &lt;strong&gt;行动&lt;/strong&gt; ”：&lt;/p&gt;
 &lt;ul&gt;
@@ -69,9 +54,4 @@
 &lt;p&gt;目的 ： 将LLM视为工具，而非终点 。&lt;/p&gt;
 &lt;p&gt;行动： 倒置工作流： 先由你思考并完成30%的初稿和核心论点，再用AI来优化表达、补充素材；绝不从一个空白提示词开始你的工作。&lt;/p&gt;
 &lt;p&gt;AI时代，我们不拒绝智能，但我们更需要清醒地保有对真理的求索欲，对世界的情感共鸣。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;请不要让你的大脑，成为被机器淘汰的第一个器官。&lt;/strong&gt;&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;&lt;strong&gt;请不要让你的大脑，成为被机器淘汰的第一个器官。&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

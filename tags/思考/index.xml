@@ -1,32 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>思考 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E6%80%9D%E8%80%83/</link>
-        <description>Recent content in 思考 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Fri, 31 Oct 2025 07:36:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>AI时代的真正壁垒，不是技术，而是判断</title>
-        <link>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</link>
-        <pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id=&#34;年长者的逆袭&#34;&gt;年长者的逆袭
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>思考 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E6%80%9D%E8%80%83/</link><description>Recent content in 思考 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Fri, 31 Oct 2025 07:36:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml"/><item><title>AI时代的真正壁垒，不是技术，而是判断</title><link>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</link><pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id="年长者的逆袭"&gt;年长者的逆袭
 &lt;/h2&gt;&lt;p&gt;在人工智能的使用方式上，年轻人与年长者之间出现了一种有趣的分化：年轻人更喜欢把LLM当成生活顾问，频繁提问；而年长者则倾向于将其用作知识验证的工具，提问更精准。这种差异揭示了一个重要事实——在AI时代，使用频率并不代表掌握程度。&lt;/p&gt;
 &lt;p&gt;过去的每一次技术革命几乎都属于年轻人，他们学习快、敢尝试、没有心理包袱。然而这一次的AI浪潮，规律似乎正在反转。AI并不是一个简单的工具升级，而是一个 &lt;strong&gt;“垃圾进、垃圾出”&lt;/strong&gt; 的黑箱系统，输入的质量决定了输出的价值。&lt;/p&gt;
 &lt;p&gt;在这样的体系中，经验第一次成为决定性的筹码。AI不提供真理，它只是模仿逻辑的镜像。输入者如果缺乏判断力，再先进的模型也只能制造幻觉。&lt;/p&gt;
-&lt;h2 id=&#34;经验的价值与噪声过滤器&#34;&gt;经验的价值与“噪声过滤器”
+&lt;h2 id="经验的价值与噪声过滤器"&gt;经验的价值与“噪声过滤器”
 &lt;/h2&gt;&lt;p&gt;年轻人擅长掌握操作技巧，懂得提示词、插件、脚本的使用，却往往缺乏对输出真伪的识别力。他们容易将AI的回答视为权威，而忘记那只是概率语言模型的产物，它没有理解，只有统计。&lt;/p&gt;
 &lt;p&gt;相较之下，那些经过多年训练、熟悉事实与逻辑的年长者，更能看穿AI的幻觉。他们的经验像是一种 &lt;strong&gt;“噪声过滤器”&lt;/strong&gt; ，能在表面合理的回答中辨认出不合逻辑的部分。&lt;/p&gt;
 &lt;p&gt;这意味着，AI不仅没有削弱经验的价值，反而让经验成为一种新的算力。判断力正在成为稀缺资源，而判断力的来源正是被时间沉淀下来的经验。&lt;/p&gt;
-&lt;h2 id=&#34;逆转的格局与提问力&#34;&gt;逆转的格局与提问力
+&lt;h2 id="逆转的格局与提问力"&gt;逆转的格局与提问力
 &lt;/h2&gt;&lt;p&gt;“长江后浪拍前浪”的格局在这场变革中出现了逆转。年轻人依旧敏捷，但真正的掌舵人，却往往是那些懂得观察与质疑、能在潮流中保持冷静的“前浪”。&lt;/p&gt;
 &lt;p&gt;对于他们来说，AI不再是万能的救世主，而是一种理性合作的伙伴。他们不会盲信模型，而是利用AI去验证思路、拓展论据、节省资料整理的时间。AI对他们而言，是效率的放大器；但对缺乏判断力的人而言，却成为思维的稀释器。&lt;/p&gt;
 &lt;p&gt;AI使用中最关键的能力其实是 &lt;strong&gt;“提问”&lt;/strong&gt; 。然而提问的质量取决于是否理解问题的上下文。一个没有清晰背景意识的提问者，只能得到模糊的答案。&lt;/p&gt;
 &lt;p&gt;比如问“为什么长时间看手机眼睛会疲劳”，AI的回答大多停留在“因为用眼过度”这样的表层；但若补充条件“是否与蓝光刺激、眨眼频率降低有关”，模型才会给出涉及视疲劳机制的深入解释。差距不在AI，而在于提问者是否清楚自己在问什么。&lt;/p&gt;
-&lt;h2 id=&#34;知识的壁垒与认知的不可取代性&#34;&gt;知识的壁垒与认知的不可取代性
+&lt;h2 id="知识的壁垒与认知的不可取代性"&gt;知识的壁垒与认知的不可取代性
 &lt;/h2&gt;&lt;p&gt;AI能让新手的产出迅速达到八十分的水准，实现“合格”的普遍化，却无法凭空创造卓越。真正的卓越来自非结构化的经验——那些长期积累的判断、人脉、直觉和行业理解。&lt;/p&gt;
 &lt;p&gt;例如记者如果能获得如黄仁勋这样的企业家的私下见解，其报道的价值将立刻脱颖而出。AI无法触及这种基于信任和真实互动形成的 &lt;strong&gt;“隐性知识”&lt;/strong&gt; ，而这恰恰是经验者的核心优势。&lt;/p&gt;
 &lt;p&gt;AI提高了效率，却无法取代认知。没有先验知识的支撑，AI生成的内容就像无根之水——它能写，却不懂。真正决定AI价值的，不是操作技巧，而是使用者的世界观。&lt;/p&gt;
@@ -34,25 +19,16 @@
 &lt;p&gt;那些缺乏思维框架的人，用AI写得再多，也只是文字的堆砌；而拥有知识体系和逻辑秩序的人，即便使用同样的工具，也能写出结构清晰、推理严谨的成果。区别不在AI，而在人。&lt;/p&gt;
 &lt;p&gt;经验不是数据的堆叠，而是对因果关系的认知。它来自真实世界中一次次的失败与修正。机器可以预测，却不能犯错；而人类的智慧恰恰源自 &lt;strong&gt;“犯错之后的反思”&lt;/strong&gt; 。AI能模仿智慧，但永远无法生成智慧。&lt;/p&gt;
 &lt;p&gt;许多人以为AI是捷径，结果走得更慢。因为他们省略了思考，只留下操作。经验的价值正在于此——它迫使人重新审视问题的结构，而不是依赖答案的速度。&lt;/p&gt;
-&lt;h2 id=&#34;弯道超车的核心逻辑&#34;&gt;弯道超车的核心逻辑
+&lt;h2 id="弯道超车的核心逻辑"&gt;弯道超车的核心逻辑
 &lt;/h2&gt;&lt;p&gt;AI时代的弯道超车，不在于谁掌握了更多工具，而在于谁能把经验转化为提问力。懂得如何提问、为什么提问的人，才真正掌握了AI的核心逻辑。&lt;/p&gt;
 &lt;p&gt;经验不是时代的包袱，而是认知的资本。&lt;/p&gt;
-&lt;p&gt;AI 时代，真正珍贵的，不是信息，而是判断。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>批判“可复制的成功学”：为何模仿只是幻觉</title>
-        <link>https://blog.fallleaf.net/p/notes-learn-replicable-success-critical-illusion/</link>
-        <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/notes-learn-replicable-success-critical-illusion/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-learn-replicable-success-critical-illusion/cover.webp" alt="Featured image of post 批判“可复制的成功学”：为何模仿只是幻觉" /&gt;&lt;h2 id=&#34;伪装成通往成功的通用秘籍&#34;&gt;伪装成通往成功的“通用秘籍”
+&lt;p&gt;AI 时代，真正珍贵的，不是信息，而是判断。&lt;/p&gt;</description></item><item><title>批判“可复制的成功学”：为何模仿只是幻觉</title><link>https://blog.fallleaf.net/p/notes-learn-replicable-success-critical-illusion/</link><pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/notes-learn-replicable-success-critical-illusion/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-learn-replicable-success-critical-illusion/cover.webp" alt="Featured image of post 批判“可复制的成功学”：为何模仿只是幻觉" /&gt;&lt;h2 id="伪装成通往成功的通用秘籍"&gt;伪装成通往成功的“通用秘籍”
 &lt;/h2&gt;&lt;p&gt;当前的传媒，无论是视频平台、公众号还是付费课程，普遍热衷于推销“ &lt;strong&gt;可操作的成功学”&lt;/strong&gt; 。它们将成功简化为一套流程：学会某个工具即能提高效率，掌握某个概念即能实现自律。这种叙事模式的核心是承诺结果可复制，使听众产生一种错觉，以为自己已掌握了通往成功的钥匙，只待执行力就能登顶。&lt;/p&gt;
 &lt;p&gt;然而，现实是大多数人照搬这些方法后并未成功，甚至无法准确找出失败的原因。这并非因为执行力不足，而是因为模仿的基础是错误的—— &lt;strong&gt;你模仿的不是方法，而是幻觉。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;传媒商业逻辑下的成功神话&#34;&gt;传媒商业逻辑下的成功神话
+&lt;h2 id="传媒商业逻辑下的成功神话"&gt;传媒商业逻辑下的成功神话
 &lt;/h2&gt;&lt;p&gt;传媒偏爱成功故事，其根本原因在于 &lt;strong&gt;商业和传播的逻辑&lt;/strong&gt; 。成功可以被高度简化、剪辑成短平快的内容，便于贴标签和市场化。失败的叙事则成本高昂，它涉及复杂的背景变量、随机性、情绪波动和多重归因的混乱，难以标准化为“可销售的产品”，因此被媒体系统性地忽略。这导致成功被包装成一种清晰的、可付费学习的神话，而失败的复杂教训则被悄悄隐去。&lt;/p&gt;
 &lt;p&gt;但必须知道， &lt;strong&gt;成功没有公式&lt;/strong&gt; 。它仅仅是某个人在 &lt;strong&gt;特定经济周期、行业壁垒、资源投入和偶然因素&lt;/strong&gt; 交织下的临时性方式。你所见是最终的结果，却看不见支撑结果的复杂环境。如果盲目照搬他人的路径，而忽略了自身的资源禀赋、所处的时间点和市场环境差异，那么模仿的就不是可复制的经验，而是“成功”的假象。&lt;/p&gt;
-&lt;h2 id=&#34;真正的知识增量复盘失败&#34;&gt;真正的知识增量：复盘失败
+&lt;h2 id="真正的知识增量复盘失败"&gt;真正的知识增量：复盘失败
 &lt;/h2&gt;&lt;p&gt;真正有价值的知识增量，是来自于对 &lt;strong&gt;失败的复盘&lt;/strong&gt; 。在科学史和工程史上，重大突破往往源于对 &lt;strong&gt;错误和漏洞的持续修正&lt;/strong&gt; 。例如， &lt;strong&gt;爱迪生团队对数千种灯丝材料失败原因的分析&lt;/strong&gt; ，远比第一次成功点亮更有价值。成功只能证明“这在特定条件下有效”，而失败则提供了 &lt;strong&gt;负向知识&lt;/strong&gt; ，它告诉你“它为什么有效、在哪些地方会失效”，并划定了方法的 &lt;strong&gt;适用边界和潜在风险&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;模仿成功无法奏效，其原因可归纳为以下几点：&lt;/p&gt;
 &lt;ul&gt;
@@ -60,12 +36,7 @@
 &lt;li&gt;&lt;strong&gt;认知差异（理解差）：&lt;/strong&gt; 模仿者通常只看到方法的表面操作，却未能理解其 &lt;strong&gt;底层逻辑或产生背景&lt;/strong&gt; 。他们知道“怎么做”，却不知道“为什么这么做”。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;目的混淆（动机差）：&lt;/strong&gt; 原创者是为了解决一个真实而紧迫的问题才创造出方法，以结果为导向；而模仿者只是以“模仿”本身为目的，缺乏对核心问题的洞察与真正的驱动力。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;放弃模仿聚焦复盘&#34;&gt;放弃模仿，聚焦复盘
+&lt;h2 id="放弃模仿聚焦复盘"&gt;放弃模仿，聚焦复盘
 &lt;/h2&gt;&lt;p&gt;因此，不要对成功光环的盲目崇拜。面对任何一个所谓成功的理念或方法，我们应采取 &lt;strong&gt;控制变量的思维&lt;/strong&gt; 进行分析。首先追问：它最初是为了解决什么问题而产生的？其次，去思考它在哪些外部情境下会失效？最后，对照自身的资源和环境，识别在哪些关键环节上存在风险或决策失误的可能。&lt;/p&gt;
 &lt;p&gt;“失败是成功之母”是一种正确的常识，但少有人去深入分析这位“母亲”的教育价值。一个成熟的学习者不应追求成功的表象，而应通过 &lt;strong&gt;系统性分析失败过程&lt;/strong&gt; 来获取更深层次的负向知识。因为成功只是在特定条件下偶发的结果，而失败揭示了方法的 &lt;strong&gt;边界条件和机制&lt;/strong&gt; ，这才是我们在不同情境下做出合理判断和调整的依据。&lt;/p&gt;
-&lt;p&gt;当那些“成功学大师”继续兜售他们的通用的“成功秘籍”时，应当明白，你购买的并非通往巅峰的钥匙，而是一张 &lt;strong&gt;失败游戏的入场券&lt;/strong&gt; 。只有拆解和复盘自己和别人的失败，才能看清方法的适用机制。 &lt;strong&gt;放弃模仿，复盘失败&lt;/strong&gt; ，才是通往更少失败、更大概率成功的唯一途径。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;当那些“成功学大师”继续兜售他们的通用的“成功秘籍”时，应当明白，你购买的并非通往巅峰的钥匙，而是一张 &lt;strong&gt;失败游戏的入场券&lt;/strong&gt; 。只有拆解和复盘自己和别人的失败，才能看清方法的适用机制。 &lt;strong&gt;放弃模仿，复盘失败&lt;/strong&gt; ，才是通往更少失败、更大概率成功的唯一途径。&lt;/p&gt;</description></item></channel></rss>

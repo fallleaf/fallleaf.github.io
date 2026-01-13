@@ -1,21 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>CMIS on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/cmis/</link>
-        <description>Recent content in CMIS on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/cmis/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>CMIS：从“看”到“管”，光网络开放解耦的隐性基石</title>
-        <link>https://blog.fallleaf.net/p/tech-cmis/</link>
-        <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-cmis/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cmis/cover.webp" alt="Featured image of post CMIS：从“看”到“管”，光网络开放解耦的隐性基石" /&gt;&lt;p&gt;在光通信的世界里，我们总能听到那些令人振奋的数字：400G、800G、1.6T……它们代表着速度的极限和带宽的无限可能。但如果我告诉你，决定未来网络能否真正开放、智能、可编程的关键，并不在于这些数字里，而在于一个听起来有些陌生的名字——CMIS，你信吗？&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CMIS on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/cmis/</link><description>Recent content in CMIS on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/cmis/index.xml" rel="self" type="application/rss+xml"/><item><title>CMIS：从“看”到“管”，光网络开放解耦的隐性基石</title><link>https://blog.fallleaf.net/p/tech-cmis/</link><pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-cmis/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-cmis/cover.webp" alt="Featured image of post CMIS：从“看”到“管”，光网络开放解耦的隐性基石" /&gt;&lt;p&gt;在光通信的世界里，我们总能听到那些令人振奋的数字：400G、800G、1.6T……它们代表着速度的极限和带宽的无限可能。但如果我告诉你，决定未来网络能否真正开放、智能、可编程的关键，并不在于这些数字里，而在于一个听起来有些陌生的名字——CMIS，你信吗？&lt;/p&gt;
 &lt;p&gt;今天，我们就来聊聊这个在幕后默默发挥作用的“隐藏英雄”。&lt;/p&gt;
-&lt;h2 id=&#34;故事的开端一个只看数据无法指挥的时代&#34;&gt;故事的开端：一个“只看数据，无法指挥”的时代
+&lt;h2 id="故事的开端一个只看数据无法指挥的时代"&gt;故事的开端：一个“只看数据，无法指挥”的时代
 &lt;/h2&gt;&lt;p&gt;想象一下，你是一位光网络运维工程师，你的工作是确保网络稳定运行。在 CMIS 出现之前，你手中的“工具”主要是 SFF-8472。&lt;/p&gt;
 &lt;p&gt;SFF-8472 就像是光模块的“诊断报告”。它让你能看到模块的实时运行数据：温度、电压、收发光功率。你很清楚模块是否“健康”，但如果你想对它进行更深层次的控制——比如，动态调整功率模式，或者远程重置模块——SFF-8472 却无能为力。&lt;/p&gt;
 &lt;p&gt;在这个时代，光模块就像一个“ &lt;strong&gt;黑盒&lt;/strong&gt; ” 。它能告诉你它在干什么，但你无法对其发号施令。更糟糕的是，每个设备厂商都有自己的私有接口，这导致：&lt;/p&gt;
@@ -23,7 +8,7 @@
 &lt;li&gt;• 运维复杂： 你的团队需要掌握无数种“方言”。&lt;/li&gt;
 &lt;li&gt;• 锁定效应： 你被单一供应商牢牢锁住，失去了选择权和议价能力。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;cmis-的革命从诊断报告到可编程大脑&#34;&gt;CMIS 的革命：从“诊断报告”到“可编程大脑”
+&lt;h2 id="cmis-的革命从诊断报告到可编程大脑"&gt;CMIS 的革命：从“诊断报告”到“可编程大脑”
 &lt;/h2&gt;&lt;p&gt;为了打破这种僵局，CMIS 诞生了。CMIS（Common Management Interface Specification，通用管理接口规范）是由 OIF（Optical Internetworking Forum） 制定的行业规范，旨在为高速可插拔光模块（如 400G、800G 以及未来的 1.6T 模块）提供统一的管理与控制接口。它定义了：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;• 寄存器映射：统一的寄存器结构和访问方式；&lt;/li&gt;
@@ -33,7 +18,7 @@
 &lt;/ul&gt;
 &lt;p&gt;通过这一统一规范，主机设备（交换机、路由器、传输设备）无需依赖厂商自定义的驱动程序，就能以一致的方式管理不同厂商的模块。这种标准化，是后续一切开放创新的基石。&lt;/p&gt;
 &lt;p&gt;如果说 SFF-8472 让你能“ &lt;strong&gt;看&lt;/strong&gt; ”到光模块，那么 CMIS 则赋予了你“ &lt;strong&gt;管理&lt;/strong&gt; ”和“ &lt;strong&gt;指挥&lt;/strong&gt; ”的能力。它彻底改变了光模块的地位，使其从一个被动的“诊断设备”变成了可编程、可控的网络资源。&lt;/p&gt;
-&lt;h2 id=&#34;黄金搭档cmis--netconfyang-的分层解耦战略&#34;&gt;黄金搭档：CMIS + NETCONF/YANG 的分层解耦战略
+&lt;h2 id="黄金搭档cmis--netconfyang-的分层解耦战略"&gt;黄金搭档：CMIS + NETCONF/YANG 的分层解耦战略
 &lt;/h2&gt;&lt;p&gt;光模块的解耦只是第一步。真正的价值在于，CMIS 与上层网络管理协议的完美结合，共同构建了一个分层解耦的开放网络架构。&lt;/p&gt;
 &lt;p&gt;我们可以用一个简单的比喻来理解这种关系：&lt;/p&gt;
 &lt;ul&gt;
@@ -44,13 +29,8 @@
 &lt;p&gt;&lt;strong&gt;1. 降本提效&lt;/strong&gt; ： 运维团队不再需要适配不同厂商的私有协议。他们只需对接一套统一的 NETCONF/YANG 模型，就能管理所有符合标准的设备和光模块。这极大地简化了运维流程，降低了人力和时间成本。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. 掌控主动权&lt;/strong&gt; ： 运营商摆脱了单一供应商的锁定。他们可以自由选择最符合需求的光模块，并通过一套统一的管理系统进行管理。这种供应链的灵活性，使得运营商真正掌握了网络建设和运营的主动权。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3. 赋能智能&lt;/strong&gt; ： CMIS 让光模块的每一个细节都变得“可见”和“可控”。这意味着光模块可以无缝融入到端到端的自动化编排体系中。未来，网络控制器可以根据流量负载，自动调整模块的功率模式，实现动态节能和性能优化，为“极简网络”和“算力网络”打下坚实基础。&lt;/p&gt;
-&lt;h2 id=&#34;一句话总结&#34;&gt;一句话总结
+&lt;h2 id="一句话总结"&gt;一句话总结
 &lt;/h2&gt;&lt;p&gt;CMIS 的出现，将光模块从一个“黑盒”转变为可编程、可管理的网络资源，并与 NETCONF/YANG 共同构筑了光网络分层解耦的黄金架构。它不只是一个技术标准，更是光网络从“封闭”走向“开放”的战略杠杆。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CMIS规范链接:&lt;/strong&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://www.oiforum.com/wp-content/uploads/OIF-CMIS-05.3.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.oiforum.com/wp-content/uploads/OIF-CMIS-05.3.pdf&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;a class="link" href="https://www.oiforum.com/wp-content/uploads/OIF-CMIS-05.3.pdf" target="_blank" rel="noopener"
+&gt;https://www.oiforum.com/wp-content/uploads/OIF-CMIS-05.3.pdf&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

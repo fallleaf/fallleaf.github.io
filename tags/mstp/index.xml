@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>MSTP on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/mstp/</link>
-        <description>Recent content in MSTP on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 11:36:47 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/mstp/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>MSTP传输设备选型谈判需要注意的几个问题</title>
-        <link>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</link>
-        <pubDate>Mon, 20 Mar 2006 11:36:47 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</guid>
-        <description>&lt;p&gt;传输设备谈判中需要注意以下几个问题：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MSTP on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/mstp/</link><description>Recent content in MSTP on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 11:36:47 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/mstp/index.xml" rel="self" type="application/rss+xml"/><item><title>MSTP传输设备选型谈判需要注意的几个问题</title><link>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</link><pubDate>Mon, 20 Mar 2006 11:36:47 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</guid><description>&lt;p&gt;传输设备谈判中需要注意以下几个问题：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;设备的高、低阶交叉连接能力及其结构、限制条件；&lt;/p&gt;
@@ -39,16 +24,7 @@
 &lt;li&gt;
 &lt;p&gt;现有设备和新版本设备的区别，升级能力；说明在网设备的升级方式、具体步骤，需要更换的板卡，对业务的具体影响，新、旧版本的主要差异及在网设备升级后达到的效果。&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>C-FOL论坛上一个关于MSTP的讨论</title>
-        <link>https://blog.fallleaf.net/p/tech-discuss-mstp-cfol/</link>
-        <pubDate>Mon, 07 Nov 2005 09:11:59 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-discuss-mstp-cfol/</guid>
-        <description>&lt;p&gt;晚上和同事用IM讨论一个软课题，顺便到[[C-FOL论坛]]上查找资料，ASON的一个“MSTP上提供三层路由的功能有用吗？ “的帖子引起了长达一年的讨 论，开始于2004年1月，目前截至于2005年月。这个帖子的讨论对我帮助很大，今天凑空把讨论的内容整理一下，留做纪念。&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>C-FOL论坛上一个关于MSTP的讨论</title><link>https://blog.fallleaf.net/p/tech-discuss-mstp-cfol/</link><pubDate>Mon, 07 Nov 2005 09:11:59 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-discuss-mstp-cfol/</guid><description>&lt;p&gt;晚上和同事用IM讨论一个软课题，顺便到[[C-FOL论坛]]上查找资料，ASON的一个“MSTP上提供三层路由的功能有用吗？ “的帖子引起了长达一年的讨 论，开始于2004年1月，目前截至于2005年月。这个帖子的讨论对我帮助很大，今天凑空把讨论的内容整理一下，留做纪念。&lt;/p&gt;
 &lt;p&gt;ASON:&lt;/p&gt;
 &lt;p&gt;问题:MSTP上提供三层路由的功能有用吗？&lt;/p&gt;
 &lt;p&gt;有的厂家在MSTP上提供三层的处理能力，有的厂家说没有需要，有的厂家在开发，大家讨论讨论，在MSTP上如果提供路由功能，可以带来什么好处呢？&lt;/p&gt;
@@ -151,9 +127,4 @@
 &lt;p&gt;3)引入时应充分考虑与城域IP网、本地SDH网的统筹规划,&lt;/p&gt;
 &lt;p&gt;tianzd:&lt;/p&gt;
 &lt;p&gt;MSTP现象：&lt;/p&gt;
-&lt;p&gt;1、专家、厂家推动多，运营商应用少。特别是试用多，规模商用少。 2、新兴运营商的网络应用多，主流运营商网络应用少。因为业务总量、种类需求不一样。 3、专家、厂家倡导技术走向，文章多（大同小异），运营商只是关注技术走向，注重网络综合效果、设备性价比、投资回报等等，文章自然少。 4、运营商传输的希望多应用（如我等），数据的说用MSTP投资高，网络的业务管理等功能、可维护性还不如数据设备。 各位大侠，能否提供各主流厂商MSTP规模应用的实例（网络的网元数量超100，设备具备主要的MSTP功能，最好有RPR、MPLS）&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;1、专家、厂家推动多，运营商应用少。特别是试用多，规模商用少。 2、新兴运营商的网络应用多，主流运营商网络应用少。因为业务总量、种类需求不一样。 3、专家、厂家倡导技术走向，文章多（大同小异），运营商只是关注技术走向，注重网络综合效果、设备性价比、投资回报等等，文章自然少。 4、运营商传输的希望多应用（如我等），数据的说用MSTP投资高，网络的业务管理等功能、可维护性还不如数据设备。 各位大侠，能否提供各主流厂商MSTP规模应用的实例（网络的网元数量超100，设备具备主要的MSTP功能，最好有RPR、MPLS）&lt;/p&gt;</description></item></channel></rss>

@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>-48v on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/-48v/</link>
-        <description>Recent content in -48v on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Sun, 30 Jul 2023 11:25:17 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/-48v/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>为什么通信设备使用–48V这样的负电源系统</title>
-        <link>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</link>
-        <pubDate>Wed, 21 Dec 2005 11:25:17 +0800</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</guid>
-        <description>&lt;p&gt;在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>-48v on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/-48v/</link><description>Recent content in -48v on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 11:25:17 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/-48v/index.xml" rel="self" type="application/rss+xml"/><item><title>为什么通信设备使用–48V这样的负电源系统</title><link>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</link><pubDate>Wed, 21 Dec 2005 11:25:17 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</guid><description>&lt;p&gt;在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。&lt;/p&gt;
 &lt;p&gt;整理：邓兴昌&lt;/p&gt;
 &lt;p&gt;A：这里面包含2 个意思：&lt;/p&gt;
 &lt;p&gt;（1） 极性为何是负电源（也就是正接地）？&lt;/p&gt;
@@ -27,9 +12,4 @@
 &lt;p&gt;顺便提一下，-48V 电源系统只是我国和大部分国家采用的通信电源标准， 并非所有国家都使用这个标准，例如俄罗斯会使用-60V 的电源系统，还有某些国家使用-24V 的电源系统。如果产品要在这些地区销售，就要兼顾这些不同的标准。&lt;/p&gt;
 &lt;p&gt;市电的标准在世界范围内也是不同的，例如我国和欧洲等采用220V 的市电系统，美国、日本等是110V 的市电。&lt;/p&gt;
 &lt;p&gt;从华为的资料中找到为什么是正极接地的解释，作为补充解释：&lt;/p&gt;
-&lt;p&gt;正极接地主要是为了防止电极的腐蚀。电话局蓄电池组-48V或-24V是正极接地，其原因是减少由于继电器或电缆金属外皮绝缘不良时产生的电蚀作用，使继电器和电缆金属外皮受到损坏。因为在电蚀时，金属离子在化学反应下是由正极向负极移动的。继电器线圈和铁芯之间的绝缘不良，就有小电流流过，电池组负极接地时，线圈的导线有可能蚀断。反之，如电池组正极接地，虽然铁芯也会受到电蚀，但线圈的导线不会腐蚀，铁芯的质量较大，不会招致可察觉的后果。正极接地也可以使外线电缆的芯线在绝缘不良时免受腐蚀。（注：隐含条件是继电器铁芯接地）&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;正极接地主要是为了防止电极的腐蚀。电话局蓄电池组-48V或-24V是正极接地，其原因是减少由于继电器或电缆金属外皮绝缘不良时产生的电蚀作用，使继电器和电缆金属外皮受到损坏。因为在电蚀时，金属离子在化学反应下是由正极向负极移动的。继电器线圈和铁芯之间的绝缘不良，就有小电流流过，电池组负极接地时，线圈的导线有可能蚀断。反之，如电池组正极接地，虽然铁芯也会受到电蚀，但线圈的导线不会腐蚀，铁芯的质量较大，不会招致可察觉的后果。正极接地也可以使外线电缆的芯线在绝缘不良时免受腐蚀。（注：隐含条件是继电器铁芯接地）&lt;/p&gt;</description></item></channel></rss>

@@ -1,108 +1,88 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>规划 on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/%E8%A7%84%E5%88%92/</link>
-        <description>Recent content in 规划 on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E8%A7%84%E5%88%92/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>一场事关未来的“大考”：新规下的电信运营商，如何谋划“十五五”？</title>
-        <link>https://blog.fallleaf.net/p/notes-telecom-15th-5years-plan/</link>
-        <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/notes-telecom-15th-5years-plan/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/notes-telecom-15th-5years-plan/cover.webp" alt="Featured image of post 一场事关未来的“大考”：新规下的电信运营商，如何谋划“十五五”？" /&gt;&lt;p&gt;2025年，一个特殊的年份。它既是“十四五”规划的收官之年，也是“十五五”战略布局的开局之年。对于中国电信、中国移动、中国联通这三大央企运营商来说，这一刻尤为关键。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>规划 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E8%A7%84%E5%88%92/</link><description>Recent content in 规划 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E8%A7%84%E5%88%92/index.xml" rel="self" type="application/rss+xml"/><item><title>一场事关未来的“大考”：新规下的电信运营商，如何谋划“十五五”？</title><link>https://blog.fallleaf.net/p/notes-telecom-15th-5years-plan/</link><pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/notes-telecom-15th-5years-plan/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-telecom-15th-5years-plan/cover.webp" alt="Featured image of post 一场事关未来的“大考”：新规下的电信运营商，如何谋划“十五五”？" /&gt;&lt;p&gt;2025年，一个特殊的年份。它既是“十四五”规划的收官之年，也是“十五五”战略布局的开局之年。对于中国电信、中国移动、中国联通这三大央企运营商来说，这一刻尤为关键。&lt;/p&gt;
 &lt;p&gt;过去五年，三大运营商在千兆光网、5G、算力网络等新型基础设施建设上成果斐然，不仅巩固了全球领先的网络优势，更肩负起“东数西算”、算网融合等国家数字化战略的重任。&lt;/p&gt;
 &lt;p&gt;然而，新的挑战也接踵而至：AI、6G等前沿技术的酝酿突破，产业数字化需求井喷，以及复杂多变的国际环境。运营商们不仅要守住基础网络的“主阵地”，更要在算力、平台、应用和安全等新赛道上实现突破。&lt;/p&gt;
 &lt;p&gt;就在这个关键节点，国务院国资委印发了新版《中央企业发展规划管理办法》（以下简称“《办法》”）。这不只是一份文件，更是指导运营商谋划“十五五”大计、实现战略转型的制度利器。&lt;/p&gt;
 &lt;p&gt;本文结合运营商的发展重点对 《办法》进行初步 解读。&lt;/p&gt;
-&lt;h2 id=&#34;办法核心运营商的战略施工图&#34;&gt;《办法》核心：运营商的“战略施工图”
+&lt;h2 id="办法核心运营商的战略施工图"&gt;《办法》核心：运营商的“战略施工图”
 &lt;/h2&gt;&lt;p&gt;新版《办法》构建了一套三级规划体系 + 闭环管理机制，其核心要点直指运营商未来的发展模式：&lt;/p&gt;
-&lt;h2 id=&#34;1-三级规划体系从集团到一线&#34;&gt;1. 三级规划体系，从集团到一线
+&lt;h2 id="1-三级规划体系从集团到一线"&gt;1. 三级规划体系，从集团到一线
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;总体发展规划：集团层面需将算力网络、6G前瞻、光传输升级、人工智能赋能等核心要素，清晰地纳入整体战略蓝图。&lt;/li&gt;
 &lt;li&gt;重点任务规划：针对专项任务，如“东数西算”枢纽工程、工业互联网平台、量子通信试点、IPv6规模部署等，需制定详细的执行方案。&lt;/li&gt;
 &lt;li&gt;企业子层级规划：各省公司、专业子公司要将集团的规划细化为可执行的落地路径，确保战略自上而下、一脉相承。
 这意味着，“十五五”的规划不再是躺在总部的“一份文件”，而是贯穿集团、省分、子公司、甚至每个项目团队的战略执行链条。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2-闭环管理确保战略-投资-考核三位一体&#34;&gt;2. 闭环管理，确保“战略-投资-考核”三位一体
+&lt;h2 id="2-闭环管理确保战略-投资-考核三位一体"&gt;2. 闭环管理，确保“战略-投资-考核”三位一体
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;编制环节：集团层面的发展战略必须经过专家论证和党委会/董事会的严格把关，杜绝“空心化”规划。&lt;/li&gt;
 &lt;li&gt;执行环节：年度投资和建设预算必须与发展规划紧密挂钩，避免盲目投资或低效扩张。&lt;/li&gt;
 &lt;li&gt;评估环节：中期（如十五五第三年）将进行强制性评估，如检验5G用户普及率、千兆/万兆光网覆盖率、算力部署规模等关键指标完成情况。&lt;/li&gt;
 &lt;li&gt;调整环节：面对外部技术突破（如AI、6G）或环境变化，规划需建立“ &lt;strong&gt;动态修正&lt;/strong&gt; ”机制。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;3-刚性约束规划成为考核的硬指标&#34;&gt;3. 刚性约束：规划成为考核的“硬指标”
+&lt;h2 id="3-刚性约束规划成为考核的硬指标"&gt;3. 刚性约束：规划成为考核的“硬指标”
 &lt;/h2&gt;&lt;p&gt;国资委将规划执行情况与负责人任期考核、投资监管、资本运作审批直接挂钩。对于那些规划滞后或偏离主业的行为（如非核心资产投资、低效多元扩张），将面临通报批评或约谈。
 新规明确，运营商董事长为规划执行的第一责任人，集团党委/董事会负有前置研究和决策责任。这大大提升了规划的严肃性和执行力。&lt;/p&gt;
-&lt;h2 id=&#34;从软指导到硬约束新规新在哪&#34;&gt;从“软指导”到“硬约束”：新规新在哪？
+&lt;h2 id="从软指导到硬约束新规新在哪"&gt;从“软指导”到“硬约束”：新规新在哪？
 &lt;/h2&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;维度&lt;/th&gt;
-          &lt;th&gt;2004年“十号令”&lt;/th&gt;
-          &lt;th&gt;2025年新版《办法》&lt;/th&gt;
-          &lt;th&gt;对运营商的影响&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;规划层级&lt;/td&gt;
-          &lt;td&gt;单一战略规划&lt;/td&gt;
-          &lt;td&gt;总体 + 重点 + 三级体系&lt;/td&gt;
-          &lt;td&gt;战略从总部落地到一线，形成闭环&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;考核机制&lt;/td&gt;
-          &lt;td&gt;约束较弱&lt;/td&gt;
-          &lt;td&gt;纳入预算、投资、绩效考核&lt;/td&gt;
-          &lt;td&gt;与经营指标强绑定，考核更严&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;评估调整&lt;/td&gt;
-          &lt;td&gt;制度较弱&lt;/td&gt;
-          &lt;td&gt;明确中期评估+调整机制&lt;/td&gt;
-          &lt;td&gt;可在6G研发、算力部署中灵活调整&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;责任追究&lt;/td&gt;
-          &lt;td&gt;操作性弱&lt;/td&gt;
-          &lt;td&gt;偏离主业/盲目投资可追责&lt;/td&gt;
-          &lt;td&gt;对多元化和资本运作设“紧箍咒”&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;监管方式&lt;/td&gt;
-          &lt;td&gt;以报送为主&lt;/td&gt;
-          &lt;td&gt;全过程、全链条监督&lt;/td&gt;
-          &lt;td&gt;数据化、透明化、强制化&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;维度&lt;/th&gt;
+&lt;th&gt;2004年“十号令”&lt;/th&gt;
+&lt;th&gt;2025年新版《办法》&lt;/th&gt;
+&lt;th&gt;对运营商的影响&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;规划层级&lt;/td&gt;
+&lt;td&gt;单一战略规划&lt;/td&gt;
+&lt;td&gt;总体 + 重点 + 三级体系&lt;/td&gt;
+&lt;td&gt;战略从总部落地到一线，形成闭环&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;考核机制&lt;/td&gt;
+&lt;td&gt;约束较弱&lt;/td&gt;
+&lt;td&gt;纳入预算、投资、绩效考核&lt;/td&gt;
+&lt;td&gt;与经营指标强绑定，考核更严&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;评估调整&lt;/td&gt;
+&lt;td&gt;制度较弱&lt;/td&gt;
+&lt;td&gt;明确中期评估+调整机制&lt;/td&gt;
+&lt;td&gt;可在6G研发、算力部署中灵活调整&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;责任追究&lt;/td&gt;
+&lt;td&gt;操作性弱&lt;/td&gt;
+&lt;td&gt;偏离主业/盲目投资可追责&lt;/td&gt;
+&lt;td&gt;对多元化和资本运作设“紧箍咒”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;监管方式&lt;/td&gt;
+&lt;td&gt;以报送为主&lt;/td&gt;
+&lt;td&gt;全过程、全链条监督&lt;/td&gt;
+&lt;td&gt;数据化、透明化、强制化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;由此可见，新《办法》对运营商的影响，是从“ &lt;strong&gt;文件式规划&lt;/strong&gt; ”转向“ &lt;strong&gt;执行型规划&lt;/strong&gt; ”，从“ &lt;strong&gt;软指导&lt;/strong&gt; ”转向“ &lt;strong&gt;硬约束&lt;/strong&gt; ”。&lt;/p&gt;
-&lt;h2 id=&#34;挑战与机遇戴上紧箍咒找到定盘星&#34;&gt;挑战与机遇：戴上“紧箍咒”，找到“定盘星”
+&lt;h2 id="挑战与机遇戴上紧箍咒找到定盘星"&gt;挑战与机遇：戴上“紧箍咒”，找到“定盘星”
 &lt;/h2&gt;&lt;p&gt;新规的到来，对运营商而言既是挑战，更是机遇。&lt;/p&gt;
-&lt;h2 id=&#34;机遇方向更聚焦执行力更强&#34;&gt;机遇：方向更聚焦，执行力更强
+&lt;h2 id="机遇方向更聚焦执行力更强"&gt;机遇：方向更聚焦，执行力更强
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;国家战略地位强化：算力网络、6G研发、AI基础设施等将明确写入“十五五”任务，运营商的战略定位更加清晰，也获得了更多政策支持。&lt;/li&gt;
 &lt;li&gt;投资方向更聚焦：资源不再“撒胡椒面”，而是集中在主责主业，有效避免了资源分散和低效扩张。&lt;/li&gt;
 &lt;li&gt;战略执行力显著提升：通过与预算、绩效、考核的深度绑定，规划不再停留在纸面，而是真正转化为实实在在的行动。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;挑战平衡与取舍的艺术&#34;&gt;挑战：平衡与取舍的艺术
+&lt;h2 id="挑战平衡与取舍的艺术"&gt;挑战：平衡与取舍的艺术
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;“刚性规划”与行业不确定性的张力：电信行业技术迭代迅速，6G、AI算力、卫星通信等随时可能出现颠覆性突破。如何在新规的刚性约束下，保留足够的“ &lt;strong&gt;战略弹性&lt;/strong&gt; ”，是摆在运营商面前的一道难题。&lt;/li&gt;
 &lt;li&gt;考核压力加大：集团高层，特别是董事长、总经理的任期考核，将直接与规划完成度挂钩，责任更重，压力更大。&lt;/li&gt;
 &lt;li&gt;中长期目标与短期市场压力的矛盾：资本市场关注短期财报和股东回报，而规划强调长期战略。运营商需要巧妙地平衡两者，找到可持续的发展路径。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;结语&#34;&gt;结语
+&lt;h2 id="结语"&gt;结语
 &lt;/h2&gt;&lt;p&gt;在“十四五”收官、“十五五”开局的关键时刻，新版《中央企业发展规划管理办法》为运营商行业提供了制度红线与发展方向。
 对三大运营商而言，这既是战略执行的“ &lt;strong&gt;紧箍咒&lt;/strong&gt; ”，更是引领转型升级、保障长期竞争力的“定盘星”。未来五年，谁能在这套“ &lt;strong&gt;规划—执行—评估&lt;/strong&gt; ”闭环中跑得更快、做得更实，谁就将在算力网络、6G、数字中国建设的宏伟蓝图中占据制高点。&lt;/p&gt;
 &lt;p&gt;中央企业发展规划管理办法：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.sasac.gov.cn/n2588035/c33689673/content.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://www.sasac.gov.cn/n2588035/c33689673/content.html&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;&lt;a class="link" href="http://www.sasac.gov.cn/n2588035/c33689673/content.html" target="_blank" rel="noopener"
+&gt;http://www.sasac.gov.cn/n2588035/c33689673/content.html&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

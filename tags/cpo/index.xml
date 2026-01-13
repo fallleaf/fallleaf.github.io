@@ -1,88 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>CPO on Reading, Thinking and Writing</title>
-        <link>https://blog.fallleaf.net/tags/cpo/</link>
-        <description>Recent content in CPO on Reading, Thinking and Writing</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>红旗下的蛋</copyright>
-        <lastBuildDate>Fri, 10 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/cpo/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>光电共封装（CPO）：数据中心的下一场“能效革命</title>
-        <link>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</link>
-        <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</guid>
-        <description>&lt;img src="https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/cover.webp" alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命" /&gt;&lt;h2 id=&#34;为何cpo光电共封装成为焦点&#34;&gt;为何CPO（光电共封装）成为焦点？
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CPO on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/cpo/</link><description>Recent content in CPO on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Fri, 10 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/cpo/index.xml" rel="self" type="application/rss+xml"/><item><title>光电共封装（CPO）：数据中心的下一场“能效革命</title><link>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</link><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/cover.webp" alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命" /&gt;&lt;h2 id="为何cpo光电共封装成为焦点"&gt;为何CPO（光电共封装）成为焦点？
 &lt;/h2&gt;&lt;p&gt;近年来，AI大模型、云计算、自动驾驶和高性能计算（HPC）对数据中心带宽和算力需求激增。芯片算力不断强化，传输速率从100G、400G提升至800G乃至1.6T，但随之而来的是能耗和带宽瓶颈的新挑战。&lt;/p&gt;
 &lt;p&gt;传统架构中，交换芯片（ASIC）与光模块分离，光模块通过电连接器插在设备前面板上。这种“可插拔光模块”虽然灵活，速率提升后因电连接距离长，导致功耗高、信号衰减严重，且占用宝贵的前面板空间。&lt;/p&gt;
 &lt;p&gt;CPO的创新在于把光引擎与交换芯片直接封装，将电信号在极短距离内转换为光信号，极大减少能耗与信号损失，实现了光通信不再是外围，而是芯片核心部分。这一设计被视为突破数据中心能效和带宽瓶颈的关键。&lt;/p&gt;
-&lt;h2 id=&#34;cpo技术演进从插拔到共生&#34;&gt;CPO技术演进：从插拔到共生
+&lt;h2 id="cpo技术演进从插拔到共生"&gt;CPO技术演进：从插拔到共生
 &lt;/h2&gt;&lt;p&gt;CPO的发展是光通信追求更高速率与能效的必然趋势：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;• 第一阶段：可插拔光模块。优点是灵活易维护，但速率超400G后，长距离电连接导致功耗激增和信号损耗。&lt;/li&gt;
 &lt;li&gt;• 第二阶段：近封装光学(Near-Packaged Optics)。光模块移近ASIC，采用短电缆连接，功耗有所下降，但光电器件依旧分离，能效提升有限。&lt;/li&gt;
 &lt;li&gt;• 第三阶段：光电共封装（CPO）。光芯片与ASIC共封装，电路径极短，数据即刻转为光信号，显著降低功耗并释放更多端口空间，完成了“电主光辅”向“电光共生”的结构转变。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;cpo核心价值更高带宽更低功耗更绿数据中心&#34;&gt;CPO核心价值：更高带宽、更低功耗、更绿数据中心
+&lt;h2 id="cpo核心价值更高带宽更低功耗更绿数据中心"&gt;CPO核心价值：更高带宽、更低功耗、更绿数据中心
 &lt;/h2&gt;&lt;p&gt;CPO解决了数据中心的三大痛点：&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;优势&lt;/th&gt;
-          &lt;th&gt;解决的问题&lt;/th&gt;
-          &lt;th&gt;实际意义&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;更低功耗&lt;/td&gt;
-          &lt;td&gt;电路径缩短，减少损耗&lt;/td&gt;
-          &lt;td&gt;降低系统整体能耗，减轻散热负担&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;更高带宽&lt;/td&gt;
-          &lt;td&gt;解放前面板空间&lt;/td&gt;
-          &lt;td&gt;支撑51.2T、102.4T级大容量交换机&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;更小延迟&lt;/td&gt;
-          &lt;td&gt;消除长距离电信号传输&lt;/td&gt;
-          &lt;td&gt;适应AI、HPC等计算密集型应用对时延的严苛需求&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;优势&lt;/th&gt;
+&lt;th&gt;解决的问题&lt;/th&gt;
+&lt;th&gt;实际意义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;更低功耗&lt;/td&gt;
+&lt;td&gt;电路径缩短，减少损耗&lt;/td&gt;
+&lt;td&gt;降低系统整体能耗，减轻散热负担&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;更高带宽&lt;/td&gt;
+&lt;td&gt;解放前面板空间&lt;/td&gt;
+&lt;td&gt;支撑51.2T、102.4T级大容量交换机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;更小延迟&lt;/td&gt;
+&lt;td&gt;消除长距离电信号传输&lt;/td&gt;
+&lt;td&gt;适应AI、HPC等计算密集型应用对时延的严苛需求&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;面对AI集群中CPU、GPU与交换机间频繁高速数据传输需求，CPO不仅保障高速通信，还显著节省能耗，是算力中心实现“每瓦算力”跃升的底层革命。&lt;/p&gt;
-&lt;h2 id=&#34;2025年cpo产业现状迈向实用化&#34;&gt;2025年CPO产业现状：迈向实用化
+&lt;h2 id="2025年cpo产业现状迈向实用化"&gt;2025年CPO产业现状：迈向实用化
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;• 芯片巨头布局积极：Broadcom、Marvell、Intel、NVIDIA均展示CPO样机，Broadcom Tomahawk 5验证了51.2Tbps级CPO系统。国内华为、中科院光电所等在硅光封装领域取得重要进展。&lt;/li&gt;
 &lt;li&gt;• 标准化稳步推进：OIF发布《CPO Implementation Agreement 1.0》，IEEE 802.3df/802.3dj推动1.6TbE、3.2TbE相关标准制定，为生态建设奠定基础。&lt;/li&gt;
 &lt;li&gt;• 制造生态形成：台积电、日月光、Amkor等封装厂已具备量产CPO封装能力，主流采用硅光与高密度封装技术（InFO、CoWoS、EMIB）。&lt;/li&gt;
 &lt;li&gt;• 应用初现端倪：CPO主要面向AI算力互连和超大规模数据中心核心交换，契合高带宽、低能耗、低延迟需求的典型场景。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;三大挑战热管理封装精度与维护&#34;&gt;三大挑战：热管理、封装精度与维护
+&lt;h2 id="三大挑战热管理封装精度与维护"&gt;三大挑战：热管理、封装精度与维护
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;• 散热难题：高功耗ASIC和光芯片共封装导致热密度高，光器件对温漂敏感。主流方案包括液冷微通道、分区散热和异构封装设计。&lt;/li&gt;
 &lt;li&gt;• 封装精度：光芯片对准误差需控制在微米级，自动化主动对准和光学测试助力提升良率。&lt;/li&gt;
 &lt;li&gt;• 维护复杂：CPO结构非传统可插拔，维护难度大。采用外置激光器（ELS）方案，将激光源独立外置，仅保留调制器在封装内，提高维护便捷度。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;全球生态与标准化协同共建&#34;&gt;全球生态与标准化：协同共建
+&lt;h2 id="全球生态与标准化协同共建"&gt;全球生态与标准化：协同共建
 &lt;/h2&gt;&lt;p&gt;CPO涉及光电芯片、材料、封装、散热及测试等多环节，需产业链高度协同：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;• 国际标准组织：OIF、COBO、IEEE、OCP等共同推动接口与封装标准制定。&lt;/li&gt;
 &lt;li&gt;• 产业合作网络：涵盖芯片设计、封装制造、光器件及系统厂商。&lt;/li&gt;
 &lt;li&gt;• 中国力量崛起：国内厂商从追赶者转向积极参与，推动生态与标准发展，彰显行业话语权提升。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;未来三步走&#34;&gt;未来三步走
+&lt;h2 id="未来三步走"&gt;未来三步走
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;• 短期（2025-2027）：小规模试用聚焦AI/HPC互连，外置激光方案主导，模块化系统逐步完善。&lt;/li&gt;
 &lt;li&gt;• 中期（2027-2030）：随102.4Tbps交换芯片商用，CPO进入主流，与NPO并行发展以满足多样化需求，光电协同设计工具链成熟。&lt;/li&gt;
 &lt;li&gt;• 长期（2030以后）：实现“光原生”数据中心架构，光电封装成为芯片设计常态，计算与通信深度融合。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;结语算力时代的能效转折点&#34;&gt;结语：算力时代的能效转折点
-&lt;/h2&gt;&lt;p&gt;CPO不仅是光模块的迭代，更是芯片与通信关系的重新定义。它将光通信从外围配件转变为算力系统核心，回应了AI计算时代对能效的极致追求。随着从可插拔到共封装的转变，CPO正引领数据中心迈向以光为底层语言的未来。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;h2 id="结语算力时代的能效转折点"&gt;结语：算力时代的能效转折点
+&lt;/h2&gt;&lt;p&gt;CPO不仅是光模块的迭代，更是芯片与通信关系的重新定义。它将光通信从外围配件转变为算力系统核心，回应了AI计算时代对能效的极致追求。随着从可插拔到共封装的转变，CPO正引领数据中心迈向以光为底层语言的未来。&lt;/p&gt;</description></item></channel></rss>
