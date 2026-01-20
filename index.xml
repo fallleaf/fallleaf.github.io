@@ -332,7 +332,7 @@
 &lt;p&gt;冬天之所以更容易出现这种“早蓝午灰”的过山车式变化，是因为大气的环境变了。北方的冬天就像一口盖了盖子的大锅，逆温现象频繁出现，死死压住了近地层空气的垂直对流，让污染物难以升空扩散；边界层高度整体偏低，污染物被挤在低空；再加上风力偏弱，地面升温慢，水平和垂直的扩散都不理想。如果这时候湿度再上来，颗粒物吸湿膨胀，光散射能力瞬间增强，视觉上的“白”和“灰”就会被无限放大。哪怕排放并没有突然激增，这套气象组合拳也足以让蓝天迅速“卸妆”。&lt;/p&gt;
 &lt;p&gt;把这一天的变化放在时间轴上看，规律更加清晰。清晨和上午，夜间累积在近地面的污染物，随着太阳升起边界层抬高，被稀释开来，浓度降低，天空便显得通透。可到了午后，光化学反应增强，氮氧化物与挥发性有机物转化生成更多的二次气溶胶；空气湿度上升让颗粒物吸湿变大，散射能力进一步增强；一旦逆温或弱风重新占据主导，混合层高度下降，污染物在近地面重新集结，视觉效果便迅速转向灰白。此时的太阳显得无力，远处建筑的轮廓也开始模糊，这正是郑州冬季晴天里最常见的“午后魔咒”。&lt;/p&gt;
 &lt;p&gt;北京与郑州在相同气象背景下表现迥异，根源在于地理结构与排放“底数”的不同。北京依山而建，背靠燕山与太行山，在冷空气活动频繁时，山谷风和通风廊道就像天然的抽风机，利于污染物输送出去，一场冷空气往往能换来数日好天。郑州身处华北平原腹地，地形开阔却缺乏这种立体的通风条件，本地排放与区域输送容易叠加，背景浓度本就偏高。再加上产业结构的差异，北京近年来压减了燃煤和高排放工业，污染多来自交通与区域传输；而郑州及周边在工业、能源、物流和冬季采暖方面仍有不小强度，排放基数大，在扩散条件相似时，灰霾自然更容易跨过肉眼可见的阈值。&lt;/p&gt;
-&lt;p&gt;抛开这些关于边界层、气溶胶和地理地形的科学解释，回归到生活的感知，北京的天空确实更令人心旷神怡，那种纯粹的通透感仿佛能洗去一路的疲惫。但郑州终究是我的归宿。这里的空气或许不够完美，夹杂着尘埃与煤烟味，却有着一种踏实的烟火气。那层午后笼罩的灰蒙，反倒像是一层滤镜，让街道上的喧嚣、叫卖声和冬日里特有的暖气味道显得更加真实可感。我或许会贪恋北京的晴空，但当列车驶入郑州，哪怕头顶没有那种极致的蓝，那种脚踩在土地上的安稳感，是再好的天气也替代不了的，这或许就是家的意义。&lt;/p&gt;</description></item><item><title>PCDN现象初探及浅见</title><link>https://blog.fallleaf.net/p/tech-pcdn-overview/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-pcdn-overview/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-pcdn-overview/cover.webp" alt="Featured image of post PCDN现象初探及浅见" /&gt;&lt;blockquote&gt;
+&lt;p&gt;抛开这些关于边界层、气溶胶和地理地形的科学解释，回归到生活的感知，北京的天空确实更令人心旷神怡，那种纯粹的通透感仿佛能洗去一路的疲惫。但郑州终究是我的归宿。这里的空气或许不够完美，夹杂着尘埃与煤烟味，却有着一种踏实的烟火气。那层午后笼罩的灰蒙，反倒像是一层滤镜，让街道上的喧嚣、叫卖声和冬日里特有的暖气味道显得更加真实可感。我或许会贪恋北京的晴空，但当列车驶入郑州，哪怕头顶没有那种极致的蓝，那种脚踩在土地上的安稳感，是再好的天气也替代不了的，这或许就是家的意义。&lt;/p&gt;</description></item><item><title>PCDN现象初探及浅见</title><link>https://blog.fallleaf.net/p/notes-pcdn-overview/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/notes-pcdn-overview/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-pcdn-overview/cover.webp" alt="Featured image of post PCDN现象初探及浅见" /&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;本人非专业人士，对PCDN现象仅作初步了解与粗浅梳理，理解难免有误、认识尚有不足，诚挚欢迎各位读者留言批评指正。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="家宽上行被限速投诉增多pcdn成为关键诱因"&gt;家宽上行被限速投诉增多：PCDN成为关键诱因
@@ -1778,16 +1778,16 @@ alt="图片"
 &lt;p&gt;SFF-8472 就像是光模块的“诊断报告”。它让你能看到模块的实时运行数据：温度、电压、收发光功率。你很清楚模块是否“健康”，但如果你想对它进行更深层次的控制——比如，动态调整功率模式，或者远程重置模块——SFF-8472 却无能为力。&lt;/p&gt;
 &lt;p&gt;在这个时代，光模块就像一个“ &lt;strong&gt;黑盒&lt;/strong&gt; ” 。它能告诉你它在干什么，但你无法对其发号施令。更糟糕的是，每个设备厂商都有自己的私有接口，这导致：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;• 运维复杂： 你的团队需要掌握无数种“方言”。&lt;/li&gt;
-&lt;li&gt;• 锁定效应： 你被单一供应商牢牢锁住，失去了选择权和议价能力。&lt;/li&gt;
+&lt;li&gt;运维复杂： 你的团队需要掌握无数种“方言”。&lt;/li&gt;
+&lt;li&gt;锁定效应： 你被单一供应商牢牢锁住，失去了选择权和议价能力。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="cmis-的革命从诊断报告到可编程大脑"&gt;CMIS 的革命：从“诊断报告”到“可编程大脑”
 &lt;/h2&gt;&lt;p&gt;为了打破这种僵局，CMIS 诞生了。CMIS（Common Management Interface Specification，通用管理接口规范）是由 OIF（Optical Internetworking Forum） 制定的行业规范，旨在为高速可插拔光模块（如 400G、800G 以及未来的 1.6T 模块）提供统一的管理与控制接口。它定义了：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;• 寄存器映射：统一的寄存器结构和访问方式；&lt;/li&gt;
-&lt;li&gt;• 状态机模型：模块启动、故障、恢复等状态定义；&lt;/li&gt;
-&lt;li&gt;• 告警与监控：标准化的温度、电压、光功率等监控指标；&lt;/li&gt;
-&lt;li&gt;• 配置与控制：速率切换、工作模式、功能使能等。&lt;/li&gt;
+&lt;li&gt;寄存器映射：统一的寄存器结构和访问方式；&lt;/li&gt;
+&lt;li&gt;状态机模型：模块启动、故障、恢复等状态定义；&lt;/li&gt;
+&lt;li&gt;告警与监控：标准化的温度、电压、光功率等监控指标；&lt;/li&gt;
+&lt;li&gt;配置与控制：速率切换、工作模式、功能使能等。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;通过这一统一规范，主机设备（交换机、路由器、传输设备）无需依赖厂商自定义的驱动程序，就能以一致的方式管理不同厂商的模块。这种标准化，是后续一切开放创新的基石。&lt;/p&gt;
 &lt;p&gt;如果说 SFF-8472 让你能“ &lt;strong&gt;看&lt;/strong&gt; ”到光模块，那么 CMIS 则赋予了你“ &lt;strong&gt;管理&lt;/strong&gt; ”和“ &lt;strong&gt;指挥&lt;/strong&gt; ”的能力。它彻底改变了光模块的地位，使其从一个被动的“诊断设备”变成了可编程、可控的网络资源。&lt;/p&gt;
@@ -1795,8 +1795,8 @@ alt="图片"
 &lt;/h2&gt;&lt;p&gt;光模块的解耦只是第一步。真正的价值在于，CMIS 与上层网络管理协议的完美结合，共同构建了一个分层解耦的开放网络架构。&lt;/p&gt;
 &lt;p&gt;我们可以用一个简单的比喻来理解这种关系：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;• CMIS 就像是光模块的“操作系统”。它负责和硬件打交道，并以标准化的方式暴露所有可管理的参数。&lt;/li&gt;
-&lt;li&gt;• NETCONF/YANG 就像是网络的“应用程序编程接口（API）”。它将 CMIS 提供的标准化数据模型，以更高级、更抽象的方式呈现给网络控制器或编排器。&lt;/li&gt;
+&lt;li&gt;CMIS 就像是光模块的“操作系统”。它负责和硬件打交道，并以标准化的方式暴露所有可管理的参数。&lt;/li&gt;
+&lt;li&gt;NETCONF/YANG 就像是网络的“应用程序编程接口（API）”。它将 CMIS 提供的标准化数据模型，以更高级、更抽象的方式呈现给网络控制器或编排器。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这种分层协同的模式，为运营商带来了前所未有的战略优势：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. 降本提效&lt;/strong&gt; ： 运维团队不再需要适配不同厂商的私有协议。他们只需对接一套统一的 NETCONF/YANG 模型，就能管理所有符合标准的设备和光模块。这极大地简化了运维流程，降低了人力和时间成本。&lt;/p&gt;
@@ -2450,10 +2450,10 @@ alt="图片"
 &lt;li&gt;&lt;strong&gt;ODF 智能维护系统 (OSMS)&lt;/strong&gt; ：一个远程软件系统，负责向 SHU 发出维护指令并进行交互，从而实现 ODF 的现场智能维护和 SHU 管理。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这套系统能够显著减少 ODF 现场维护中的手动操作工作量，节省大量的维护成本和时间。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms.png"
-width="1080"
-height="505"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms_hu_d513960cf550335b.png 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms_hu_b056470b68da5217.png 1024w"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms.webp"
+width="1952"
+height="913"
+srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms_hu_bed99e1a31a822e2.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms_hu_e44d82be4a540973.webp 1024w"
 loading="lazy"
 alt="OSMS"
 class="gallery-image"
@@ -2468,10 +2468,10 @@ data-flex-basis="513px"
 &lt;h2 id="odf-智能维护如何工作"&gt;ODF 智能维护如何工作？
 &lt;/h2&gt;&lt;p&gt;ODF 智能维护架构主要由两部分组成：位于现场通信机房的 &lt;strong&gt;ODF-SHU&lt;/strong&gt; 组合，以及远程的 &lt;strong&gt;OSMS&lt;/strong&gt; 。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;1. &lt;strong&gt;任务下达&lt;/strong&gt; ：OSMS 可以远程向多个 SHU 同时下达维护指令，并控制它们完成相应的 ODF 操作。&lt;/li&gt;
-&lt;li&gt;2. &lt;strong&gt;指令执行&lt;/strong&gt; ：SHU 的控制软件接收并解析来自 OSMS 的指令，然后控制移动机械臂执行光纤连接和切换等操作。&lt;/li&gt;
-&lt;li&gt;3. &lt;strong&gt;信息同步&lt;/strong&gt; ：SHU 的控制软件会自动记录 ODF 的光纤连接关系及其变化，并将这些信息同步到 OSMS，确保物理连接和数字记录的一致性。&lt;/li&gt;
-&lt;li&gt;4. &lt;strong&gt;资源管理&lt;/strong&gt; ：OSMS 负责管理和维护由 SHU 报告的 ODF 光纤连接关系表，从而实现对整个网络光纤资源连接拓扑的管理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;任务下达&lt;/strong&gt; ：OSMS 可以远程向多个 SHU 同时下达维护指令，并控制它们完成相应的 ODF 操作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;指令执行&lt;/strong&gt; ：SHU 的控制软件接收并解析来自 OSMS 的指令，然后控制移动机械臂执行光纤连接和切换等操作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;信息同步&lt;/strong&gt; ：SHU 的控制软件会自动记录 ODF 的光纤连接关系及其变化，并将这些信息同步到 OSMS，确保物理连接和数字记录的一致性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;资源管理&lt;/strong&gt; ：OSMS 负责管理和维护由 SHU 报告的 ODF 光纤连接关系表，从而实现对整个网络光纤资源连接拓扑的管理。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;这种协同工作模式实现了光纤连接的快速、精准切换，从而可以根据业务需求灵活地调整网络连接和数据关系。&lt;/p&gt;
 &lt;h2 id="智能维护的四大功能要求"&gt;智能维护的四大功能要求
@@ -2494,36 +2494,61 @@ data-flex-basis="513px"
 &lt;h2 id="智能odf的实践"&gt;智能ODF的实践
 &lt;/h2&gt;&lt;p&gt;建议书的发布并非空中楼阁，而是产业界多年探索、研发的结晶。如何有效的布放跳纤，避免形成“意大利面现象”（形容细线交织缠绕在一起的状态），是整套系统的难点和关键点。目前收集到的相关研究、产品简介如下：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;1. 2019年由北京邮电大学的杨正、魏世民等学者撰写的论文《Design and implementation of a small AODF》，发表于《The Journal of Engineering》。其核心目标是解决通信网络中光纤配线架（ODF）交叉连接这一尚未自动化的“痛点”，通过设计和实现一个 &lt;strong&gt;小型自动光纤配线架（AODF）原型&lt;/strong&gt; ，来降低运营商的运维成本并提升服务等级。论文的核心创新在于提出了一种新颖的结构模型和交叉连接方法，并成功制造了物理原型进行验证。&lt;/li&gt;
-&lt;li&gt;&lt;img src="https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+&lt;li&gt;2019年由北京邮电大学的杨正、魏世民等学者撰写的论文《Design and implementation of a small AODF》，发表于《The Journal of Engineering》。其核心目标是解决通信网络中光纤配线架（ODF）交叉连接这一尚未自动化的“痛点”，通过设计和实现一个 &lt;strong&gt;小型自动光纤配线架（AODF）原型&lt;/strong&gt; ，来降低运营商的运维成本并提升服务等级。论文的核心创新在于提出了一种新颖的结构模型和交叉连接方法，并成功制造了物理原型进行验证。
+&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-1.webp"
+width="562"
+height="463"
+srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-1_hu_9cab273fce528e7a.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-1_hu_d5c2b260a0c4048e.webp 1024w"
 loading="lazy"
 alt="图片"
-&gt;
-2. TeliSwitch的自动光纤配线架 (AODF)。该解决方案集成了硬件和软件，降低跳纤错误的风险，并减少运营商的运维时间与成本，已有商用。 该种方式也是建议书列出的参考用例。&lt;/li&gt;
+class="gallery-image"
+data-flex-grow="121"
+data-flex-basis="291px"
+&gt;&lt;/li&gt;
+&lt;li&gt;TeliSwitch的自动光纤配线架 (AODF)。该解决方案集成了硬件和软件，降低跳纤错误的风险，并减少运营商的运维时间与成本，已有商用。 该种方式也是建议书列出的参考用例。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;• &lt;strong&gt;核心硬件：&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;• &lt;strong&gt;圆形平台 (Circular Platforms):&lt;/strong&gt; 用于有序管理进入机柜的光缆，是系统的基础结构。
-- • &lt;strong&gt;微型滑轮 (Mini-Pulleys):&lt;/strong&gt; 精确控制跳线（patch cords）的移动。
-- • &lt;strong&gt;机械臂 (Robotic Arm):&lt;/strong&gt; 引导跳线，确保从输入到输出的连接过程完全可复制且高度可靠。
+&lt;li&gt;&lt;strong&gt;核心硬件：&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;圆形平台 (Circular Platforms):&lt;/strong&gt; 用于有序管理进入机柜的光缆，是系统的基础结构。
+- &lt;strong&gt;微型滑轮 (Mini-Pulleys):&lt;/strong&gt; 精确控制跳线（patch cords）的移动。
+- &lt;strong&gt;机械臂 (Robotic Arm):&lt;/strong&gt; 引导跳线，确保从输入到输出的连接过程完全可复制且高度可靠。
 &lt;ul&gt;
-&lt;li&gt;• &lt;strong&gt;专利技术：&lt;/strong&gt; AODF 采用了 TeliSwitch 的专利技术，能够在 &lt;strong&gt;5分钟内&lt;/strong&gt; 远程自动完成一次连接变更，极大地提升了效率。&lt;/li&gt;
-&lt;li&gt;• &lt;strong&gt;集成化功能：&lt;/strong&gt; 圆形平台可配备专用模块，直接进行 &lt;strong&gt;OTDR（光时域反射仪）测量&lt;/strong&gt; 。这使得运营商可以在连接前或维护时段，远程检测线路的连通性和质量，确保线路正常。&lt;/li&gt;
-&lt;li&gt;&lt;img src="https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+&lt;li&gt;&lt;strong&gt;专利技术：&lt;/strong&gt; AODF 采用了 TeliSwitch 的专利技术，能够在 &lt;strong&gt;5分钟内&lt;/strong&gt; 远程自动完成一次连接变更，极大地提升了效率。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;集成化功能：&lt;/strong&gt; 圆形平台可配备专用模块，直接进行 &lt;strong&gt;OTDR（光时域反射仪）测量&lt;/strong&gt; 。这使得运营商可以在连接前或维护时段，远程检测线路的连通性和质量，确保线路正常。
+&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-2.webp"
+width="1024"
+height="1320"
+srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-2_hu_4e29c4ac734f8d10.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-2_hu_ee636948dd71fe73.webp 1024w"
 loading="lazy"
 alt="图片"
-&gt; &lt;img src="https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+class="gallery-image"
+data-flex-grow="77"
+data-flex-basis="186px"
+&gt;
+&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-3.webp"
+width="354"
+height="556"
+srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-3_hu_f0c16bc38aec209f.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-3_hu_7b7c7a6829d1fe4d.webp 1024w"
 loading="lazy"
 alt="图片"
+class="gallery-image"
+data-flex-grow="63"
+data-flex-basis="152px"
 &gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol start="4"&gt;
-&lt;li&gt;3. 武汉赫尔墨斯的光纤机器人HAI ROBOT，是一款智能机器人光纤物理层交换机，使物理光纤连接变得自动、远程、 快速且无需人工现场干预。提供卓越的光学性能，低插入损耗，对传输协议、波长或者带宽速率透明。 全光网络架构，支持单纤双向，采用可视化的物理连接方式，支持级联构建大规模的智能网络。
-&lt;img src="https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+&lt;ol start="3"&gt;
+&lt;li&gt;武汉赫尔墨斯的光纤机器人HAI ROBOT，是一款智能机器人光纤物理层交换机，使物理光纤连接变得自动、远程、 快速且无需人工现场干预。提供卓越的光学性能，低插入损耗，对传输协议、波长或者带宽速率透明。 全光网络架构，支持单纤双向，采用可视化的物理连接方式，支持级联构建大规模的智能网络。
+&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-4.webp"
+width="599"
+height="442"
+srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-4_hu_e8a7f025eb20544f.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-4_hu_f35d9443844582a.webp 1024w"
 loading="lazy"
 alt="图片"
+class="gallery-image"
+data-flex-grow="135"
+data-flex-basis="325px"
 &gt;&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title>【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”</title><link>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</link><pubDate>Thu, 04 Sep 2025 10:45:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
 &lt;blockquote&gt;
@@ -4066,26 +4091,14 @@ DataLabelFillColor = &amp;#34;gray&amp;#34;, WiderLabels = FALSE,
 ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
 ThemeChoice = &amp;#34;tufte&amp;#34;
 )
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/demo-1.png"
-width="1344"
-height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/demo-1_hu_153722d17bfd0605.png 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/demo-1_hu_4642e331e6113107.png 1024w"
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/demo-1.png"
 loading="lazy"
 alt="斜线图"
-class="gallery-image"
-data-flex-grow="140"
-data-flex-basis="336px"
 &gt;&lt;/p&gt;
 &lt;p&gt;一般而言，斜线图最适合用于比较两个时间点或两个分组的数据，也可以扩展到三至四个时间点，但不宜过多，否则应改用传统折线图。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/chinaunicom-1.png"
-width="1344"
-height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/chinaunicom-1_hu_64b9f441aebae402.png 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/chinaunicom-1_hu_6d9401f1ce5549d8.png 1024w"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/chinaunicom-1.png"
 loading="lazy"
 alt="中国联通"
-class="gallery-image"
-data-flex-grow="140"
-data-flex-basis="336px"
 &gt;&lt;/p&gt;
 &lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;</description></item><item><title>Archives</title><link>https://blog.fallleaf.net/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/archives/</guid><description/></item><item><title>Tags</title><link>https://blog.fallleaf.net/tags/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/tags/</guid><description/></item><item><title>月光--吉他曲（索尔）</title><link>https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/</link><pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/cover.webp" alt="Featured image of post 月光--吉他曲（索尔）" /&gt;&lt;p&gt;索尔（Fernando Sor, 1778–1839）是西班牙19世纪早期最重要的吉他作曲家与演奏家之一，被后人誉为“吉他之父”，西班牙人称他为“吉他的贝多芬”，是吉他古典时期的代表人物。&lt;/p&gt;
 &lt;p&gt;《月光》（Moonlight）是他创作的一首著名吉他小品，原名为《B小调练习曲》（Étude in B minor, Op. 29, No. 13）。这首作品最初并非以“月光”为题，而是后人因其旋律宁静、柔和、富有诗意，联想到月夜的意境，遂赋予其“月光”这一浪漫化的标题，成为古典吉他曲目中最广为流传的小品之一。据说曲名《月光》是日本人出版时所取。如同贝多芬的《升C小调钢琴奏鸣曲》，又称“月光奏鸣曲”一样，都是后人加的，不一定能真正反映当时作曲者所表达的思想，到不如不加别名。&lt;/p&gt;
@@ -4472,7 +4485,7 @@ alt="2016年出差"
 class="gallery-image"
 data-flex-grow="69"
 data-flex-basis="166px"
-&gt;&lt;/p&gt;</description></item><item><title>Per-Olov Kindgren的作品演奏</title><link>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</link><pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</guid><description>&lt;h2 id="关于-per-olov-kindgren"&gt;关于 Per-Olov Kindgren
+&gt;&lt;/p&gt;</description></item><item><title>Per-Olov Kindgren的作品演奏</title><link>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</link><pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/cover.webp" alt="Featured image of post Per-Olov Kindgren的作品演奏" /&gt;&lt;h2 id="关于-per-olov-kindgren"&gt;关于 Per-Olov Kindgren
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Per-Olov Kindgren&lt;/strong&gt; 是一位出生于哥伦比亚、在瑞典成长的知名古典吉他演奏家和作曲家。&lt;/p&gt;
 &lt;p&gt;他最显著的标签是**“情感的编织者”&lt;strong&gt;。与许多追求极致演奏速度和复杂技巧的古典吉他手不同，Kindgren 的作品以&lt;/strong&gt;旋律性、空间感和极简主义**见长。他的音乐风格横跨古典、爵士与现代流行元素，因其在社交媒体上分享的极具氛围感的演奏视频而享誉全球。&lt;/p&gt;
 &lt;h2 id="作品逐一解析"&gt;作品逐一解析
@@ -4529,6 +4542,14 @@ Your browser does not support the audio element.
 &lt;li&gt;&lt;strong&gt;技术服务于情感&lt;/strong&gt;：他从不为了炫技而作曲，每一处装饰音都是为了情感表达。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;留白的艺术&lt;/strong&gt;：他敢于在乐句之间留下沉默（休止符），让听众有思考的空间。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;现代性&lt;/strong&gt;：他的作品虽然使用古典吉他演奏，但听感上非常符合现代人的审美，常被作为疗愈系音乐。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;乐谱下载：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="I_miss_you.pdf" &gt;I Miss You&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="A_Touch_of_Love.pdf" &gt;A Touch of Love&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="Why.pdf" &gt;Why&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="Sea_Of_Nectar.pdf" &gt;Sea of Nectar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="It-Hurts-to-Leave-It-Hurts-To-Stay_TAB.pdf" &gt;It Hurts to Leave and It Hurts to Stay&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>2014、2015年出差数据</title><link>https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/</link><pubDate>Wed, 27 Jul 2016 16:42:30 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/</guid><description>&lt;p&gt;用gephi以及excel做了一个2014年、2015年出差的图表。可以反映出工作的变化。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2014-trip.jpg"
 width="505"
@@ -4676,7 +4697,54 @@ data-flex-basis="313px"
 &lt;p&gt;那么采用PTN接入的时候X2接口间的电路数量过多，在VLAN 上将会处理较为麻烦，而且PTN的LSP数量极剧增加，如果采用PTN传输是不是很麻烦，有一种说法是CE布置到汇聚层，完善数据城域网，接入层由传输负责，个人感觉还是比较好，X2的电路还是路由器调度比较方便，但是目前的机房条件好像再放路由器很难了，而且还有具有OTN。比较困难。不知道那位高手怎么看？&lt;/p&gt;
 &lt;p&gt;“下面我们就来看还有一个困扰PTN的发展，就是LTE提出了X2接口，整个基站是扁平化的网络，这时候就趋向了包括S1Flex动态归属需求，基站和基站之间互联。现在我们在中国电信内部讨论PTN有很大的问题，第一就是对LTE的情况下，三层功能比较弱，另外解决大客户用的时候也是不能提供的。这是我们的 IP RAN承载方案，路由器方案、PTN接入路由器方案、PTN+路由器方案。我认为PTN+路由器方案是最糟糕的方案，但实际运用中也不尽然，可能运作中 PTN+路由器还是比较多的方案。如果你放在综合承载，PTN不仅仅是基站，而是综合的承载基站，你考虑LTE更复杂的网络拓扑，这时候提到这个方案还是有一定道理的，所以我们并没有排除这个方案，让用户来选择是最好的。“ –张成良&lt;/p&gt;
 &lt;p&gt;若读者有什么想法，尽可留言。&lt;/p&gt;</description></item><item><title>宗教和逻辑</title><link>https://blog.fallleaf.net/p/note-religion-logic/</link><pubDate>Thu, 08 Jul 2010 16:37:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/note-religion-logic/</guid><description>&lt;p&gt;对于基督、穆斯林信徒来说，必须回答“神是存在的。”，倘若回答了不存在，那就是无神论者。但佛教信徒则不同，即便回答“佛不存在”，“哪里会有佛”，“佛不过是草芥”，也可能是地地道道的佛教徒。&lt;/p&gt;
-&lt;p&gt;引自《给讨厌数学的人：数学的奥秘和生活》&lt;/p&gt;</description></item><item><title>卡宾达树皮</title><link>https://blog.fallleaf.net/p/outdoor-pau-de-cabinda/</link><pubDate>Sun, 05 Aug 2007 12:30:03 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-pau-de-cabinda/</guid><description>&lt;img src="https://blog.fallleaf.net/p/outdoor-pau-de-cabinda/cover.webp" alt="Featured image of post 卡宾达树皮" /&gt;&lt;p&gt;安哥拉盛产石油和原钻，不过一般人都带不走，其他还有黑木以及象牙首饰，这些东西其他非洲国家也有，而且还可能遇到假货或法律问题，那还有什么可以当做礼物的本地特产呢？答案是肯定的，而且越来越多来安哥拉的人点名要这个，越来越多的驻安中国公司把它当做礼物。这个东西就是–PAU DE CABINDA （卡宾达树皮）。估计以后就会“今年过年不送礼，要送就送老树皮”，至于它的作用，那是“谁用谁知道”。&lt;/p&gt;
+&lt;p&gt;引自《给讨厌数学的人：数学的奥秘和生活》&lt;/p&gt;</description></item><item><title>安哥拉记行-2</title><link>https://blog.fallleaf.net/p/outdoor-angola-record-2/</link><pubDate>Sat, 29 Dec 2007 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/outdoor-angola-record-2/</guid><description>&lt;img src="https://blog.fallleaf.net/p/outdoor-angola-record-2/1.webp" alt="Featured image of post 安哥拉记行-2" /&gt;&lt;p&gt;提起安哥拉，人们往往会想到战争、饥饿和疾病，仿佛这里是一个贫穷落后的可怕的地方，在这里生活完全没有乐趣。其实，当你置身在其中就会感到并非如此，我们在这里一年多的时间也能苦中作乐，寻找到各种手段丰富我们的业余生活。&lt;/p&gt;
+&lt;p&gt;宽扎河，安哥拉的母亲河，全长965公里，在首都LUANDA以南48公里处汇入大西洋。由于河水携带大量的有机物流入大海，宽扎河口可是一个钓鱼的好地方,同时，这里也有大片平坦的沙滩，适合晚上露营。我们一般是周六下午出发到宽扎河口，夜钓一晚，第二天早上返回。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-angola-record-2/1.webp"
+width="1600"
+height="1200"
+srcset="https://blog.fallleaf.net/p/outdoor-angola-record-2/1_hu_18c352d191800fb9.webp 480w, https://blog.fallleaf.net/p/outdoor-angola-record-2/1_hu_152d3ce4704c761b.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+&gt;
+夕阳西下，我们动手搭起了帐篷，这可是我第一次在大西洋的海边露营，还真是很兴奋呢。在我们忙着工作时，远处也有一伙安哥拉本地人开着越野车来钓鱼，还带来了烤炉准备现钓现烤。过了一会，又有人开车来宿营，是一家五口，其中还有个正在吃奶的婴儿，看来，安哥拉人还是挺会享受生活的。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-angola-record-2/2.webp"
+width="2048"
+height="1536"
+srcset="https://blog.fallleaf.net/p/outdoor-angola-record-2/2_hu_5d0fa11d41766859.webp 480w, https://blog.fallleaf.net/p/outdoor-angola-record-2/2_hu_423b99851f2c5598.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+&gt;
+垂钓是一个人的事情，顶多一群人围在一起默默看着河面。而在河边宿营的重头戏当然非捕鱼莫属了，别看捕鱼是由一个人来撒网，可是在一边做辅助工作的人倒挺多，有提桶装鱼的，有打手电筒照亮的，更多的人是喜欢当“教练”，在一旁指手划脚地指导捕鱼人撒网的动作，可是当轮到当教练的人亲自撒网时，不是渔网缠到一起，就是半条鱼都没打到，让人不仅想到中国有句老话叫纸上谈兵。
+不过，对于我们这些从没捕鱼经历的人来说，关键在于亲身体验一下捕鱼的乐趣，鱼网里收获的多少并没影响大家捕鱼的劲头。也许是河口的鱼多，或者是歪打正着，撒网捕的鱼比钓到鱼又多又大。很晚了很多人还感觉意犹未尽，据说，有人还撒网捕鱼一直到清晨。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-angola-record-2/3.webp"
+width="1600"
+height="1200"
+srcset="https://blog.fallleaf.net/p/outdoor-angola-record-2/3_hu_17c83e58783525e2.webp 480w, https://blog.fallleaf.net/p/outdoor-angola-record-2/3_hu_fe150adf1235cb65.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+&gt;
+第二天早上，我们满载这这次来安哥拉首次露营的战利品“鱼儿”回归驻地。安哥拉当地蔬菜水果是物以稀为贵，我们这些在国内素食为主的人在这里也不得不入乡随俗，在这里只能以肉类为主食了。这里做饭的主要燃料是木炭，因为树木多，容易就地取材，所以肉类一般都是烤着吃，我们也不例外，这次来个海鲜烧烤。烤炉很简单，也是就地取材，用废弃的汽车轮毂，再用钢条焊个架子就行了。调料很简单，只有盐，油，还有就是国内带来的极为珍贵的辣椒粉和孜然。除了钓的捕的鱼外，我们还买了些羊肉、鸡肉和小龙虾，虽然在安哥拉龙虾是很便宜的东西，但我们也很少有机会品尝，不过这一次我们可要放开肚子大吃一顿了。
+&lt;img src="https://blog.fallleaf.net/p/outdoor-angola-record-2/4.webp"
+width="1600"
+height="1200"
+srcset="https://blog.fallleaf.net/p/outdoor-angola-record-2/4_hu_8e809607f565f127.webp 480w, https://blog.fallleaf.net/p/outdoor-angola-record-2/4_hu_dbf9b429f8d4e64b.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+&gt;
+安哥拉人非常喜欢聚会，每到周六晚上，有条件的家庭就会支起烤炉，用气球装扮房间，把音乐声音放到最大，有的甚至还请来乐队现场演奏，大家聚到一起吃吃喝喝，玩玩跳跳，一直会进行到凌晨三四点钟，我们可是深受其害。不过这次我们也和安哥拉人一样了，先是烧烤，然后敞开喉咙放声高歌，起码要在声音上压过隔壁正在进行的PARTY。&lt;/p&gt;</description></item><item><title>安哥拉记行-1</title><link>https://blog.fallleaf.net/p/outdoor-angola-record-1/</link><pubDate>Wed, 07 Nov 2007 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/outdoor-angola-record-1/</guid><description>&lt;img src="https://blog.fallleaf.net/p/outdoor-angola-record-1/cover.webp" alt="Featured image of post 安哥拉记行-1" /&gt;&lt;p&gt;9月10日到9月22日，我们工程组对UIGE省几个地级市进行查勘，说是地级市，其实甚至比中国的一个县镇的规模还小。&lt;/p&gt;
+&lt;p&gt;威热省位于安哥拉东北，与本哥省、北广萨省、马兰哲省、扎伊尔省等省份及刚果民主共和国相邻。有原始森林和热点灌木草原覆盖，同时也是各种怪病的多发区，如昏睡病，马尔堡等。&lt;/p&gt;
+&lt;p&gt;由于战争，很多道路路面上弹坑累累，车辆只能压着路沿慢速形式，不过还得承认，那些战争没有破坏的道路，虽然30多年没有维修，路面依然完好，几乎没有沉降和开裂的迹象。我们查勘所走的路，由于山体滑坡，新开了一条土路，不下雨的时候还能开上去，如果下雨了，恐怕四驱都难上，这种土遇水变得很滑。&lt;/p&gt;
+&lt;p&gt;在SANTA CRUZ小镇查勘，从主路到这个镇约30公里的山路，来回6个小时，平均每小时10公里，不过，这不算最差的路。这个镇子交通不便，估计很少有外国人来，估计中国人也就我们是第一次到这里了。查勘的时候，“几大班子”的人都跟着陪同，有管行政的市长，还有估计是什么委员会的，还有警察局的头，还有MPLA党委的头，一大群人，场面还真隆重，足见这个工程在当地的重要地位。查勘前后半个小时，比花在路上的时间少多了。&lt;/p&gt;
+&lt;p&gt;在路上，我们一般是不停下来吃午饭的，一是赶时间，二也是没太多的东西可吃，也就吃些香蕉和饼干之类的。查完SANTA CRUZ回来的路上，当地政府的人去村里抓鸡，我们顺便吃了次午饭，这还真的留记忆的。饭很简单，面包加火腿肠，再配点咸菜。面包是2天前在UIGE市买的，下面的地方面包很少，木薯粉多，但据说在云南木薯都是当饲料的。黑人吃的也是面包，然后是鱼罐头和香肠罐头，不过鱼罐头有些腥味，香肠罐头看着有些油腻。&lt;/p&gt;
+&lt;p&gt;看来，我们真的与安哥拉人民同甘共苦了！&lt;/p&gt;</description></item><item><title>卡宾达树皮</title><link>https://blog.fallleaf.net/p/outdoor-pau-de-cabinda/</link><pubDate>Sun, 05 Aug 2007 12:30:03 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-pau-de-cabinda/</guid><description>&lt;img src="https://blog.fallleaf.net/p/outdoor-pau-de-cabinda/cover.webp" alt="Featured image of post 卡宾达树皮" /&gt;&lt;p&gt;安哥拉盛产石油和原钻，不过一般人都带不走，其他还有黑木以及象牙首饰，这些东西其他非洲国家也有，而且还可能遇到假货或法律问题，那还有什么可以当做礼物的本地特产呢？答案是肯定的，而且越来越多来安哥拉的人点名要这个，越来越多的驻安中国公司把它当做礼物。这个东西就是–PAU DE CABINDA （卡宾达树皮）。估计以后就会“今年过年不送礼，要送就送老树皮”，至于它的作用，那是“谁用谁知道”。&lt;/p&gt;
 &lt;p&gt;卡宾达树皮，产自安哥拉卡宾达省，据说世界上只有这个地方有这种树，才产这种树皮。当地部落把这种东西当做一种天然的春药，在一些部落里，还成为送给新婚人的礼物。&lt;/p&gt;
 &lt;p&gt;据说，卡宾达树皮，作用类似于伟哥，但比伟哥更好的是，一，它是纯天然的，二，男女通用。对于它的作用，有这样介绍的：&lt;/p&gt;
 &lt;ul&gt;
@@ -5154,4 +5222,4 @@ data-flex-basis="697px"
 &lt;p&gt;该回去了，火车卧铺票是个问题，一到日照就四处打听，可惜旅行社说票在票贩子那里，到车站找票贩子没碰见一个，可能那个本地司机说的是实话“日照几乎没有票贩子”。只好先买了坐票，等机会补票了。一行人来到火车西站，我到售票处等票，问售票员都说没卧铺，其间看见一个火车站工作人员领着一个人到窗口，没说 话，给了钱就拿了票，估计卧铺留得有票，继续等待。还好，有个人来退卧铺，到新乡的，二话不说，原价拿来，并退了一张硬座，继续等待，可惜往后没有那么幸运，一直到进站都没有退票的了，直到上车看看能不能补票。在车厢门口问了几个列车员（估计也包括列车长）都说没卧铺，只好上车等待。火车开了大约半小时，便到列车长室去看看，门口已经聚集了不少人，看见一个人走出来，手里拿了不少票，跟着他到了另来一节车厢，加了30元拿了一张上铺，是临沂到郑州的。不过还没法去卧铺车厢，必须到大站后，下车再上卧铺车厢才行。剩下两个大人占据三个位置，还算舒服，迷迷糊糊过一夜便回到郑州了。&lt;/p&gt;
 &lt;p&gt;后感&lt;/p&gt;
 &lt;p&gt;日照是个不错的地方，在森林公园里住几天是不错的休闲。下回到天热的时候还要去一次，只是希望到日照的往返票好买一些。在森林公园里每到其他酒店看看，也不知道环境和价格，感觉金海湾还是比较简陋。吃饭最好到农家吃饭，放心些。&lt;/p&gt;
-&lt;p&gt;旅游，对我来说就是休闲放松，所以都不愿跟团走，到了一处随心所欲，很自在，花费也可多可少。不象那些旅行团的，跟这导游的小旗，跑来跑去。有句话，很形象“上车睡觉，停车撒尿，下车拍照”。呵呵。&lt;/p&gt;</description></item><item><title>女儿生气了</title><link>https://blog.fallleaf.net/p/life-daughter-angry/</link><pubDate>Fri, 03 Dec 2004 12:01:23 +0800</pubDate><guid>https://blog.fallleaf.net/p/life-daughter-angry/</guid><description>&lt;p&gt;早上打车正好碰上同事就让她一起坐了,在车上嘉说要个巧克力豆吃,给了她一颗,一会她又说到幼儿园给老师带一颗吧,我说:“可以,但你不能再吃了,”然后我对同事说,:“嘉现在能的很,给老师的那颗老师肯定给她吃了,她现在想要什么总是变着法的得到,可能了,”过了一会,嘉嘉在旁边说,我生气了,你们两别说话了,一脸的严肃看来真生气了XIXI,我问她:“你为什么生气呀,我没说什么呀”.这时我同事在一边说:“咱把她想吃巧克力的小想法揭穿了,”哈,原来这样,我才想到刚才说的话,嘉又说:“你们都别说话了.”她现在很要面子呢。&lt;/p&gt;</description></item><item><title>Search</title><link>https://blog.fallleaf.net/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/search/</guid><description/></item><item><title>友情链接</title><link>https://blog.fallleaf.net/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/links/</guid><description/></item></channel></rss>
+&lt;p&gt;旅游，对我来说就是休闲放松，所以都不愿跟团走，到了一处随心所欲，很自在，花费也可多可少。不象那些旅行团的，跟这导游的小旗，跑来跑去。有句话，很形象“上车睡觉，停车撒尿，下车拍照”。呵呵。&lt;/p&gt;</description></item><item><title>女儿生气了</title><link>https://blog.fallleaf.net/p/life-daughter-angry/</link><pubDate>Fri, 03 Dec 2004 12:01:23 +0800</pubDate><guid>https://blog.fallleaf.net/p/life-daughter-angry/</guid><description>&lt;p&gt;早上打车正好碰上同事就让她一起坐了,在车上嘉说要个巧克力豆吃,给了她一颗,一会她又说到幼儿园给老师带一颗吧,我说:“可以,但你不能再吃了,”然后我对同事说,:“嘉现在能的很,给老师的那颗老师肯定给她吃了,她现在想要什么总是变着法的得到,可能了,”过了一会,嘉嘉在旁边说,我生气了,你们两别说话了,一脸的严肃看来真生气了XIXI,我问她:“你为什么生气呀,我没说什么呀”.这时我同事在一边说:“咱把她想吃巧克力的小想法揭穿了,”哈,原来这样,我才想到刚才说的话,嘉又说:“你们都别说话了.”她现在很要面子呢。&lt;/p&gt;</description></item><item><title>Search</title><link>https://blog.fallleaf.net/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/search/</guid><description/></item><item><title>思绪</title><link>https://blog.fallleaf.net/tags/thoughts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/tags/thoughts/</guid><description>&lt;img src="https://blog.fallleaf.net/growth-cover.jpg" alt="Featured image of post 思绪" /&gt;</description></item><item><title>友情链接</title><link>https://blog.fallleaf.net/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/links/</guid><description/></item></channel></rss>

@@ -212,25 +212,13 @@ DataLabelFillColor = &amp;#34;gray&amp;#34;, WiderLabels = FALSE,
 ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
 ThemeChoice = &amp;#34;tufte&amp;#34;
 )
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/demo-1.png"
-width="1344"
-height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/demo-1_hu_153722d17bfd0605.png 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/demo-1_hu_4642e331e6113107.png 1024w"
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/demo-1.png"
 loading="lazy"
 alt="斜线图"
-class="gallery-image"
-data-flex-grow="140"
-data-flex-basis="336px"
 &gt;&lt;/p&gt;
 &lt;p&gt;一般而言，斜线图最适合用于比较两个时间点或两个分组的数据，也可以扩展到三至四个时间点，但不宜过多，否则应改用传统折线图。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/chinaunicom-1.png"
-width="1344"
-height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/chinaunicom-1_hu_64b9f441aebae402.png 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/chinaunicom-1_hu_6d9401f1ce5549d8.png 1024w"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/chinaunicom-1.png"
 loading="lazy"
 alt="中国联通"
-class="gallery-image"
-data-flex-grow="140"
-data-flex-basis="336px"
 &gt;&lt;/p&gt;
 &lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;</description></item></channel></rss>
