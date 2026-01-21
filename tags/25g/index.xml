@@ -2,10 +2,10 @@
 &lt;p&gt;2016年5月IEEE通过了802.3by-2016规范，定义了25Gb/s应用媒质接入控制参数、物理层要求，2017年12月通过了802.3cc-2017标准以太网修正：物理层和管理参数，用于通过单模光纤实现串行25 Gbps以太网，2018年10月通过PAR，开展制定10Gb/s，25Gb/s，50Gb/s单纤双向物理层规范，项目号为P802.3cp。中国于2018年6月开始制定用于基站的25Gb/s单纤双向光收发合一模块技术规范，2018年11月发出征求意见稿，预计2019年完成标准制定工作。&lt;/p&gt;
 &lt;p&gt;单纤双向方式可以节省50%的纤芯资源，大大节省了光缆线路的投资，同时由于上下行等距可有效保证高精度时间同步，因此，是5G前传的一种主要模式。&lt;/p&gt;
 &lt;p&gt;下图是optech发布的一款25G单纤双向光模块，采用SFP28封装方式：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx.webp"
 width="747"
 height="440"
-srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_6a25122a0aa0eee8.png 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_d4df3311bff97740.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_a6f1cbd30437b995.webp 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_eac0f67620db50ab.webp 1024w"
 loading="lazy"
 alt="光模块"
 class="gallery-image"
@@ -13,10 +13,10 @@ data-flex-grow="169"
 data-flex-basis="407px"
 &gt;&lt;/p&gt;
 &lt;p&gt;下图是25G单纤双向光模块的原理图：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver.webp"
 width="943"
 height="365"
-srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_de18b75e7bb20ba.png 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_7a0e8055c48a2745.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_4e153485a631ccbc.webp 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_7d33a44214ee0c35.webp 1024w"
 loading="lazy"
 alt="原理框图"
 class="gallery-image"

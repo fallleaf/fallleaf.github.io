@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>无源波分 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/tags/%E6%97%A0%E6%BA%90%E6%B3%A2%E5%88%86/</link><description>Recent content in 无源波分 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sun, 30 Jul 2023 13:15:13 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%97%A0%E6%BA%90%E6%B3%A2%E5%88%86/index.xml" rel="self" type="application/rss+xml"/><item><title>无源波分前传分场景解决方案</title><link>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</link><pubDate>Sat, 12 Oct 2019 13:15:13 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</guid><description>&lt;p&gt;ITU-T G.694.2规范在1270~1610nm范围内，建议了波长间隔为20nm的18个可用波长，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands.webp"
 width="644"
 height="381"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_3fa9f97b5b0e8bb4.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_f7bf9e430e6806b7.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_28170b3aaa1787e.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_4a25cc7c4348340e.webp 1024w"
 loading="lazy"
 alt="波长间隔"
 class="gallery-image"
@@ -15,10 +15,10 @@ data-flex-basis="405px"
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;6波25G方案
-&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm.png"
+&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm.webp"
 width="635"
 height="216"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_7ec511bd24c29957.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_3d1c40472e5480a2.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_1eac7a1d8ecdc4fc.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_d3a58e77b4bbbe84.webp 1024w"
 loading="lazy"
 alt="6波25G方案"
 class="gallery-image"
@@ -30,10 +30,10 @@ data-flex-basis="705px"
 &lt;p&gt;12波方案（6波10G+6波25G）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm.webp"
 width="728"
 height="380"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_3a7852639b34d685.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_13260c9272093a0e.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_c2be703ac0e630af.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_88d8b9ac41a280c3.webp 1024w"
 loading="lazy"
 alt="12波方案"
 class="gallery-image"
@@ -43,7 +43,7 @@ data-flex-basis="459px"
 &lt;p&gt;近期的上海移动5G无源波分招标，包含12波25G的无源波分方案，据推测，可能是采用移动的OPEN-WDM彩光方案，25G彩光模块前6波采用比较成熟的1271nm，1291nm，1311nm，1331nm，1351nm，1371nm，后6波选用目前较少采用的1471nm，1491nm，1511nm，1531nm，1551nm，1571nm这6个波长，后期需跟踪用于室外的12波25G彩光模块的整体成熟度和成本是否能降下来。&lt;/p&gt;
 &lt;p&gt;在目前的5G前传建设中，也有采用25G单纤双向光模块，这种方式可以看作是一种光模块集成的CWDM方式，对于减轻主干、配线光缆的压力，起了很大的作用，在纤芯不紧张时，可以采用该方式。目前共享5G的前传接口需求尚不明确，若采用2×25G接口方案时，对光缆网纤芯的需求将是2倍的需求。&lt;/p&gt;
 &lt;p&gt;针对不同的5G前传接入场景，6波和12波有不同的组合方案。&lt;/p&gt;
-&lt;p&gt;场景1：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景1&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;新建5G站址，配线光缆新建，接入主干利旧&lt;/p&gt;
@@ -52,17 +52,17 @@ data-flex-basis="459px"
 &lt;p&gt;配置：无源6波合分波器×2+25G彩光模块×6&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1.webp"
 width="730"
 height="283"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_a2590217cc373d5e.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_5dd4f1bfdb3169c6.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_4ec819fdbb2c1fd1.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_733365c90d7359d3.webp 1024w"
 loading="lazy"
-alt="scenario1"
+alt="场景1"
 class="gallery-image"
 data-flex-grow="257"
 data-flex-basis="619px"
 &gt;&lt;/p&gt;
-&lt;p&gt;场景2：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景2&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;5G与4G共站址，有少量纤芯，4G前传方式不变，5G采用无源波分&lt;/p&gt;
@@ -71,17 +71,17 @@ data-flex-basis="619px"
 &lt;p&gt;配置：无源6波合分波器×2+25G彩光模块×6&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2.webp"
 width="1163"
 height="441"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_9ebe4334e1415067.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_c6b959f6c812c9d5.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_755ae6e485dc7c02.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_5817772904b08928.webp 1024w"
 loading="lazy"
-alt="scenario2"
+alt="场景2"
 class="gallery-image"
 data-flex-grow="263"
 data-flex-basis="632px"
 &gt;&lt;/p&gt;
-&lt;p&gt;场景3：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景3&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;5G与4G共站址，有少量纤芯，4G前传采用无源波分，5G采裸光纤&lt;/p&gt;
@@ -90,17 +90,11 @@ data-flex-basis="632px"
 &lt;p&gt;配置：无源6波合分波器×2+10G彩光模块×6（比场景2成本低一些，但需割接4G基站）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario3.png"
-width="1163"
-height="441"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario3_hu_392b91fd6841a395.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario3_hu_adc76057fa27a0e1.png 1024w"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/scenario3"
 loading="lazy"
-alt="scenario3"
-class="gallery-image"
-data-flex-grow="263"
-data-flex-basis="632px"
-&gt;&lt;/p&gt;
-&lt;p&gt;场景4：&lt;/p&gt;
+alt="场景3"
+&gt;3.webp)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景4&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;5G与4G共站址，无纤芯，4G、5G前传采用无源波分，腾退纤芯&lt;/p&gt;
@@ -109,17 +103,17 @@ data-flex-basis="632px"
 &lt;p&gt;配置：无源6波合分波器×4+10G彩光模块×6+25G彩光模块×6&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4.webp"
 width="1163"
 height="441"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_766a119f1d1253ea.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_d0e13dc706d7fa39.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_abc6da58c1bb05f1.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_93f8ab8a1b57b6a4.webp 1024w"
 loading="lazy"
-alt="scenario4"
+alt="场景4"
 class="gallery-image"
 data-flex-grow="263"
 data-flex-basis="632px"
 &gt;&lt;/p&gt;
-&lt;p&gt;场景5：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景5&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;5G与4G共站址，无纤芯，4G、5G前传采用无源波分，腾退纤芯&lt;/p&gt;
@@ -128,17 +122,17 @@ data-flex-basis="632px"
 &lt;p&gt;配置：无源12波合分波器×2+10G彩光模块×6+25G彩光模块×6&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5.webp"
 width="1163"
 height="441"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_9aa88302118194f9.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_cb55a6a699231918.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_71e132c9f426b9c5.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_f69c97395513119c.webp 1024w"
 loading="lazy"
-alt="scenario5"
+alt="场景5"
 class="gallery-image"
 data-flex-grow="263"
 data-flex-basis="632px"
 &gt;&lt;/p&gt;
-&lt;p&gt;场景6：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景6&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;联通电信共享5G，与4G共址，少量纤芯，5G前传采用无源波分&lt;/p&gt;
@@ -150,12 +144,12 @@ data-flex-basis="632px"
 &lt;p&gt;&lt;b&gt;假设每个AAU需要2个25G接口&lt;/b&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6.webp"
 width="1163"
 height="395"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_fbfecdbc1bd6e853.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_1209a613594f5736.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_df0bbef6f0b2bece.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_eef47a142fe6a3cf.webp 1024w"
 loading="lazy"
-alt="scenario6"
+alt="场景6"
 class="gallery-image"
 data-flex-grow="294"
 data-flex-basis="706px"
@@ -163,10 +157,10 @@ data-flex-basis="706px"
 &lt;p&gt;还有其他组合方式，就不一一列举了。总之，采用无源波分，主要目的就是腾退已占用纤芯和减少纤芯占用，对于4G前传RRU采用级联的情况，采用无源波分主要是减少5G前传纤芯占用。&lt;/p&gt;
 &lt;p&gt;根据上海移动5G无源波分的招标公告以及中标公示，6波25G无源波分限价4000元/套（不含税），平均中标折扣率为70.18%，12波25G无源波分限价10600元/套（不含税），平均中标折扣率为79%。&lt;/p&gt;
 &lt;p&gt;上海移动招标的是10公里光模块，最大线路损耗为11dB，也就是在11dB这个范围内，采用无源波分的成本是固定的，而新建光缆或使用光纤的成本和距离成正比关系，有一个成本交叉的临界点，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian.webp"
 width="327"
 height="214"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_99cf66348420def8.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_7136d011b44653a.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_4d0d317349b61d58.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_fb366ef6224960d6.webp 1024w"
 loading="lazy"
 alt="成本变化"
 class="gallery-image"
@@ -175,10 +169,10 @@ data-flex-basis="366px"
 &gt;&lt;/p&gt;
 &lt;p&gt;各本地网可以根据自己的情况进行测算，测算时应同时考虑主干与配线的综合成本，确定无源波分应用的最佳场景。&lt;/p&gt;
 &lt;p&gt;有关材料显示近三年各运营商无源波分招标规模如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji.png"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji.webp"
 width="555"
 height="286"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_6260f80fec4bb3e.png 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_873d30be7dbbbb61.png 1024w"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_66861a1ccc17955f.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_b193d2880aa3d1.webp 1024w"
 loading="lazy"
 alt="招标规模"
 class="gallery-image"
