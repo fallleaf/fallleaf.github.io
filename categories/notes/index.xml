@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>随笔与观察 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/categories/notes/</link><description>Recent content in 随笔与观察 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/categories/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>中国联通与中国电信2026年度工作会议对比解读</title><link>https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/</guid><description>&lt;img src="https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/cover.webp" alt="Featured image of post 中国联通与中国电信2026年度工作会议对比解读" /&gt;&lt;h2 id="站在规划交汇点的信息通信业"&gt;站在规划交汇点的信息通信业
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>随笔与观察 on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/categories/notes/</link><description>Recent content in 随笔与观察 on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/categories/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>从“搬设备”到“优网络”：OLT回撤如何真正实现极简网络的价值？</title><link>https://blog.fallleaf.net/p/notes-how-olt-withdrawal-method/</link><pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/notes-how-olt-withdrawal-method/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-how-olt-withdrawal-method/cover.webp" alt="Featured image of post 从“搬设备”到“优网络”：OLT回撤如何真正实现极简网络的价值？" /&gt;&lt;h2 id="olt回撤的本质"&gt;OLT回撤的本质
+&lt;/h2&gt;&lt;p&gt;推动网络架构极简化、实现设备集中部署，是运营商在投资约束趋紧、运维压力持续上升以及技术快速演进背景下的必然选择。将分散部署于非架构机房的 OLT 设备回撤至机房条件更优、配套保障更完善的架构机房，已成为接入网优化中的一项重要战略举措。&lt;/p&gt;
+&lt;p&gt;但必须清醒认识到，OLT 回撤的目标绝不应止步于设备位置的物理迁移或机房数量的简单减少。从接入网长周期演进的角度看，这一过程本质上是一项难得的 网络结构优化重构契机。如果仅停留在“设备搬迁”层面，回撤工作即使完成，也难以实现网络极简化应有的系统性价值。&lt;/p&gt;
+&lt;p&gt;因此，OLT 回撤必须实现从“搬设备”向“优网络”的认知转变：以目标架构为牵引，以终为始，对接入网的拓扑结构、ODN 层级和资源布局进行系统性优化重构，引导网络向结构更清晰、运行更稳健、演进更具弹性的方向持续发展。&lt;/p&gt;
+&lt;h2 id="风险剖析olt回撤的两大误区"&gt;风险剖析：OLT回撤的两大误区
+&lt;/h2&gt;&lt;p&gt;在实际推进过程中，受限于 KPI 压力、建设周期约束以及资源掌控能力不足等多重因素，OLT 回撤工作如果缺乏明确的目标规划和闭环管控，极易偏离其初衷，形成两类典型误区：一是在实施层面，将回撤简化为以“业务割通”为目标的设备搬迁工程；二是在布局层面，对农村及边缘节点撤并决策缺乏前瞻性的考虑。&lt;/p&gt;
+&lt;p&gt;这两类问题虽表现不同，但其本质却高度一致：以短期工程效率或局部成本优化，替代了对接入网整体结构质量和长期演进能力的系统规划。结果往往是，回撤工作在形式上推进了，网络在实质上却并未得到优化，甚至进一步固化了原有的历史问题。&lt;/p&gt;
+&lt;h3 id="误区一以连通为目标的简单搬迁割接"&gt;误区一：以“连通”为目标的简单搬迁割接
+&lt;/h3&gt;&lt;p&gt;在当前实践中，部分 OLT 回撤方案采用一种“最少工作量”的实施思路，仅以完成设备搬迁和业务割通为目标，其典型模式可概括为“原址设交、直连跳通”。&lt;/p&gt;
+&lt;p&gt;具体做法是：以地理邻近为唯一依据，选择最近的架构机房作为回撤句点，从该局点敷设一条光缆直达原 OLT 机房附近，新建光交接箱，将进入原机房的配线光缆整体入光交，并通过跳纤方式联通光路，完成业务迁移。该模式施工路径清晰、组织简单，能够在较短时间内完成回撤工作，因此是首选方案。&lt;/p&gt;
+&lt;p&gt;但从网络结构视角看，这种做法的局限性同样明显。它并未对既有驻地网结构进行重新审视和优化，原有驻地网的缺点被原样继承，甚至因新增光缆路由增加而进一步拉长光路、压缩光功率裕量。同时，新建光缆往往仅服务于“搬迁需求”，未能与沿途驻地网配线光缆形成结构性整合，错失了重构和利旧的机会。&lt;/p&gt;
+&lt;p&gt;其结果是：回撤在工程意义上完成了，但网络在结构意义上并未“变好”。短期内实现了连通，长期却增加了运维复杂度，削弱了网络的可管理性与技术演进弹性，为后续升级埋下隐患。&lt;/p&gt;
+&lt;h3 id="误区二以减量为目标的盲目农村撤点"&gt;误区二：以“减量”为目标的盲目农村撤点
+&lt;/h3&gt;&lt;p&gt;在农村及边缘区域，OLT 回撤工作更容易滑向另一类误区，即在缺乏OLT局点整体目标规划的前提下，对业务量低的非架构节点进行简单撤并。此类决策往往以单点运营成本或当前用户规模及覆盖为主要依据：机房租金高、维护困难、用户数量少，因而被视为“应当回撤”的对象，统一集中至距离更远的乡镇或县级局点。&lt;/p&gt;
+&lt;p&gt;单从现状来看，这种决策具有一定的合理性，能够在短期内降低机房数量，减少电费、租金及现场维护支出。但问题在于，这类回撤的出发点仅考虑了当前的情况，是在缺乏OLT目标局点布局规划条件下，以静态的数据支撑一次性判断，并未考虑近期乃至中远期的发展。&lt;/p&gt;
+&lt;p&gt;首先，过度回撤带来的光缆距离的增加将不可避免地带来光功率裕量持续压缩，使边远村落长期处于网络性能边缘，网络质量对线路老化、环境变化的敏感性显著增强。其次，一旦原区域出现新增人口聚集、产业引入或政策性建设需求或覆盖区域向外延伸，基于配线光缆建设成本以及光功率预算的考虑，只能通过重新下沉建设OLT局点来弥补，形成了“撤—建”的重复投资循环。&lt;/p&gt;
+&lt;p&gt;归根结底，农村OLT节点的取舍问题，本质不是“留与不留”的工程判断，而是该节点在OLT目标节点布局中处于何种角色的规划问题。只有在明确OLT节点目标布局蓝图的前提下，对节点功能进行分层定位，回撤与保留才能成为有方向、有边界的结构性优化行为，而非零散、短视的被动调整。&lt;/p&gt;
+&lt;h2 id="解决方法"&gt;解决方法
+&lt;/h2&gt;&lt;p&gt;上面两类误区，一个发生在实施层面，一个发生在布局层面。尽管其表现形式不同，但在具体工作中，二者往往交织出现，最终导致 OLT 回撤偏离网络结构优化的初衷。&lt;/p&gt;
+&lt;p&gt;OLT目标局点布局规划本身是一个系统性、长期性的规划议题，值得另行展开深入论述。这里基于一个前提假设：区域内已具备明确的目标布局或基本规划原则。在此基础上，主要考虑在具体回撤工作中，如何通过方法论和流程设计，避免两类典型误区的再次发生。&lt;/p&gt;
+&lt;h3 id="针对误区一避免-olt-回撤退化为简单搬迁割接的方法"&gt;针对误区一：避免 OLT 回撤退化为“简单搬迁割接”的方法
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;误区一的典型场景&lt;/strong&gt;是：在回撤任务压力下，以“最近架构机房 + 新设光交 + 原路跳接”为最省事方案，只追求业务快速恢复，用连通性替代结构合理性。&lt;/p&gt;
+&lt;p&gt;针对这一场景，需要在考虑回撤方案的时候，引入结构性思考顺序。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在设计回撤方案前，首先要回答一个基础问题：该局点的回撤，是否具备同步优化驻地网结构的条件：原驻地网是否存在明显的结构混乱，周边是否已有稳定、清晰的主干光交，原有的配线光缆是否具备割接整合空间？只有在具备上述条件之一时，回撤应该包含着一次结构性调整机会；若完全不具备，则应明确认定为“过渡性回撤”，并在方案中予以标注，而非默认等同对待。这一判断的目的，是避免所有回撤“一刀切”，同时防止本应重构的场景被简化处理。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以“回撤后网络形态”为设计起点，而非以单纯割接为起点。误区一的方案往往从“怎么把光路接通”开始设计，结果自然导向直连跳接。要从方案设计思路上进行纠偏，方法就是强制反向设计：先设想回撤完成后，驻地网应有的合理的网络结构，再来思考按这种结构，回撤方案该怎么做。哪怕只是一个简化的拓扑草图，也必须回答：原有的配线回局路由是否最优，配线光缆是否和新增回局光缆合理衔接等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对于确实因条件限制无法同步重构的回撤方案，并非一味否定，而是要求问题显性化。如在方案中明确标注“结构无明显优化”，同时列出可能带来的后果，如光路延长、管理复杂度上升等。该类方案需经过更高一层级的确认，而非默认通过。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这种方法的意义在于给出了有章可循的流程，防止“省事方案”在无意识中成为主流做法。&lt;/p&gt;
+&lt;h3 id="针对误区二避免农村节点盲目撤并的方法"&gt;针对误区二：避免农村节点盲目撤并的方法
+&lt;/h3&gt;&lt;p&gt;误区二的典型场景是：&lt;br&gt;
+以降低租金、电费和维护成本为直接目标，对农村或边远局点采取简单撤并策略，却忽视其在区域网络中的结构性作用。&lt;/p&gt;
+&lt;p&gt;针对这一场景，关键是在于先弄清这个节点在未来的网络里的到底起到什么作用。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;基本上每一个农村 OLT 节点，在网络中都至少承担以下三种角色之一：覆盖作用，保障当前用户接入；延伸作用，支撑未来覆盖或业务下沉；过渡节点，历史遗留、可被替代的。在任何撤并决策前，必须明确其角色属性。只有被明确判定为“过渡节点”的局点，才适合直接撤并；其余两类，则需要更谨慎的处理方式。&lt;/li&gt;
+&lt;li&gt;要用发展的眼光，考虑近期甚至中期，该区域业务发展或依托该区域扩大覆盖范围的情况下，该节点所起的作用。这一判定过程本身，并不依赖复杂模型，而依赖对区域网络结构、业务发展的基本认知。&lt;/li&gt;
+&lt;li&gt;将“短期节省”与“中期代价”同时呈现。误区二往往源于只看到当前账面节省，而看不到未来支出。在制定方案时，同时呈现两本账：一是当前撤并带来的成本下降，二是若未来延伸覆盖，新增业务，所需新增投资的大致量级。哪怕是粗略估算，也足以让决策从单维度转为双维度，避免在局部最优中反复试错。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="将olt回撤定义为网络能力的进阶"&gt;将OLT回撤定义为网络能力的进阶
+&lt;/h2&gt;&lt;p&gt;OLT回撤不应再被视作一次被动的、以成本削减为单一目标的“减法”操作，应该是一个积极的、创造长期网络价值的 &lt;strong&gt;“战略性重构”&lt;/strong&gt; 与 &lt;strong&gt;“能力进阶”&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;其成功的标尺，绝非仅仅是减少了几个机房或维护费用，而在于是否通过这次行动，使我们所运营的网络结构更清晰、资源更可视、演进更敏捷、韧性更强大。这要求我们告别“回撤就是割接，割接即完工”的旧有思维，坚定地走向“规划先行、重构为本”的新的网络发展思路。&lt;/p&gt;
+&lt;p&gt;前面多次提到的OLT目标局点布局规划，其实应该在接入网大建设时就该及早规划，等网络基本成型，再想优化调整，已经很难了，最大的可能就是针对原有的缺陷修修补补了。&lt;/p&gt;</description></item><item><title>中国联通与中国电信2026年度工作会议对比解读</title><link>https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/</guid><description>&lt;img src="https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/cover.webp" alt="Featured image of post 中国联通与中国电信2026年度工作会议对比解读" /&gt;&lt;h2 id="站在规划交汇点的信息通信业"&gt;站在规划交汇点的信息通信业
 &lt;/h2&gt;&lt;p&gt;2026年，是中国信息通信业一个极具标志意义的年份。&lt;/p&gt;
 &lt;p&gt;这一年，国家“十四五”规划圆满收官，“十五五”规划全面启幕；这一年，人工智能、算力网络、5G-A（5G-Advanced）、量子通信等前沿技术，正从技术验证阶段加速走向规模化、体系化应用；这一年，电信运营商的角色，也正在发生根本性变化。&lt;/p&gt;
 &lt;p&gt;以中国电信、中国联通为代表的基础电信企业，正在从传统意义上的&lt;strong&gt;通信服务提供商&lt;/strong&gt;，加速转型为&lt;strong&gt;数字化综合服务的国家队与主力军&lt;/strong&gt;。
