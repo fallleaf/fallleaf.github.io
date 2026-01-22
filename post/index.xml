@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Reading, Thinking and Writing</title><link>https://blog.fallleaf.net/post/</link><description>Recent content in Posts on Reading, Thinking and Writing</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>红旗下的蛋</copyright><lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>从“搬设备”到“优网络”：OLT回撤如何真正实现极简网络的价值？</title><link>https://blog.fallleaf.net/p/notes-how-olt-withdrawal-method/</link><pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/notes-how-olt-withdrawal-method/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-how-olt-withdrawal-method/cover.webp" alt="Featured image of post 从“搬设备”到“优网络”：OLT回撤如何真正实现极简网络的价值？" /&gt;&lt;h2 id="olt回撤的本质"&gt;OLT回撤的本质
 &lt;/h2&gt;&lt;p&gt;推动网络架构极简化、实现设备集中部署，是运营商在投资约束趋紧、运维压力持续上升以及技术快速演进背景下的必然选择。将分散部署于非架构机房的 OLT 设备回撤至机房条件更优、配套保障更完善的架构机房，已成为接入网优化中的一项重要战略举措。&lt;/p&gt;
-&lt;p&gt;但必须清醒认识到，OLT 回撤的目标绝不应止步于设备位置的物理迁移或机房数量的简单减少。从接入网长周期演进的角度看，这一过程本质上是一项难得的 网络结构优化重构契机。如果仅停留在“设备搬迁”层面，回撤工作即使完成，也难以实现网络极简化应有的系统性价值。&lt;/p&gt;
+&lt;p&gt;但必须清醒认识到，OLT回撤的目标绝不应止步于设备位置的物理迁移或机房数量的简单减少。从接入网长周期演进的角度看，这一过程本质上是一项难得的 网络结构优化重构契机。如果仅停留在“设备搬迁”层面，回撤工作即使完成，也难以实现网络极简化应有的系统性价值。&lt;/p&gt;
 &lt;p&gt;因此，OLT 回撤必须实现从“搬设备”向“优网络”的认知转变：以目标架构为牵引，以终为始，对接入网的拓扑结构、ODN 层级和资源布局进行系统性优化重构，引导网络向结构更清晰、运行更稳健、演进更具弹性的方向持续发展。&lt;/p&gt;
 &lt;h2 id="风险剖析olt回撤的两大误区"&gt;风险剖析：OLT回撤的两大误区
 &lt;/h2&gt;&lt;p&gt;在实际推进过程中，受限于 KPI 压力、建设周期约束以及资源掌控能力不足等多重因素，OLT 回撤工作如果缺乏明确的目标规划和闭环管控，极易偏离其初衷，形成两类典型误区：一是在实施层面，将回撤简化为以“业务割通”为目标的设备搬迁工程；二是在布局层面，对农村及边缘节点撤并决策缺乏前瞻性的考虑。&lt;/p&gt;
 &lt;p&gt;这两类问题虽表现不同，但其本质却高度一致：以短期工程效率或局部成本优化，替代了对接入网整体结构质量和长期演进能力的系统规划。结果往往是，回撤工作在形式上推进了，网络在实质上却并未得到优化，甚至进一步固化了原有的历史问题。&lt;/p&gt;
 &lt;h3 id="误区一以连通为目标的简单搬迁割接"&gt;误区一：以“连通”为目标的简单搬迁割接
 &lt;/h3&gt;&lt;p&gt;在当前实践中，部分 OLT 回撤方案采用一种“最少工作量”的实施思路，仅以完成设备搬迁和业务割通为目标，其典型模式可概括为“原址设交、直连跳通”。&lt;/p&gt;
-&lt;p&gt;具体做法是：以地理邻近为唯一依据，选择最近的架构机房作为回撤句点，从该局点敷设一条光缆直达原 OLT 机房附近，新建光交接箱，将进入原机房的配线光缆整体入光交，并通过跳纤方式联通光路，完成业务迁移。该模式施工路径清晰、组织简单，能够在较短时间内完成回撤工作，因此是首选方案。&lt;/p&gt;
+&lt;p&gt;具体做法是：以地理邻近为唯一依据，选择最近的架构机房作为回撤局点，从该局点敷设一条光缆直达原 OLT 机房附近，新建光交接箱，将进入原机房的配线光缆整体入光交，并通过跳纤方式联通光路，完成业务迁移。该模式施工路径清晰、组织简单，能够在较短时间内完成回撤工作，因此是首选方案。&lt;/p&gt;
 &lt;p&gt;但从网络结构视角看，这种做法的局限性同样明显。它并未对既有驻地网结构进行重新审视和优化，原有驻地网的缺点被原样继承，甚至因新增光缆路由增加而进一步拉长光路、压缩光功率裕量。同时，新建光缆往往仅服务于“搬迁需求”，未能与沿途驻地网配线光缆形成结构性整合，错失了重构和利旧的机会。&lt;/p&gt;
 &lt;p&gt;其结果是：回撤在工程意义上完成了，但网络在结构意义上并未“变好”。短期内实现了连通，长期却增加了运维复杂度，削弱了网络的可管理性与技术演进弹性，为后续升级埋下隐患。&lt;/p&gt;
 &lt;h3 id="误区二以减量为目标的盲目农村撤点"&gt;误区二：以“减量”为目标的盲目农村撤点
 &lt;/h3&gt;&lt;p&gt;在农村及边缘区域，OLT 回撤工作更容易滑向另一类误区，即在缺乏OLT局点整体目标规划的前提下，对业务量低的非架构节点进行简单撤并。此类决策往往以单点运营成本或当前用户规模及覆盖为主要依据：机房租金高、维护困难、用户数量少，因而被视为“应当回撤”的对象，统一集中至距离更远的乡镇或县级局点。&lt;/p&gt;
 &lt;p&gt;单从现状来看，这种决策具有一定的合理性，能够在短期内降低机房数量，减少电费、租金及现场维护支出。但问题在于，这类回撤的出发点仅考虑了当前的情况，是在缺乏OLT目标局点布局规划条件下，以静态的数据支撑一次性判断，并未考虑近期乃至中远期的发展。&lt;/p&gt;
-&lt;p&gt;首先，过度回撤带来的光缆距离的增加将不可避免地带来光功率裕量持续压缩，使边远村落长期处于网络性能边缘，网络质量对线路老化、环境变化的敏感性显著增强。其次，一旦原区域出现新增人口聚集、产业引入或政策性建设需求或覆盖区域向外延伸，基于配线光缆建设成本以及光功率预算的考虑，只能通过重新下沉建设OLT局点来弥补，形成了“撤—建”的重复投资循环。&lt;/p&gt;
+&lt;p&gt;首先，过度回撤带来的光缆距离的增加将不可避免地带来光功率裕量持续压缩，使边远村落长期处于网络性能边缘，网络质量对线路老化、环境变化的敏感性显著增强。其次，一旦原区域出现新增人口聚集、产业引入或政策性建设需求或覆盖区域向外延伸，基于配线光缆建设成本以及光功率预算的考虑，只能通过重新下沉建设OLT局点来弥补，形成了“建—撤—建”的重复投资循环。&lt;/p&gt;
 &lt;p&gt;归根结底，农村OLT节点的取舍问题，本质不是“留与不留”的工程判断，而是该节点在OLT目标节点布局中处于何种角色的规划问题。只有在明确OLT节点目标布局蓝图的前提下，对节点功能进行分层定位，回撤与保留才能成为有方向、有边界的结构性优化行为，而非零散、短视的被动调整。&lt;/p&gt;
 &lt;h2 id="解决方法"&gt;解决方法
 &lt;/h2&gt;&lt;p&gt;上面两类误区，一个发生在实施层面，一个发生在布局层面。尽管其表现形式不同，但在具体工作中，二者往往交织出现，最终导致 OLT 回撤偏离网络结构优化的初衷。&lt;/p&gt;
@@ -45,7 +45,7 @@
 &lt;h2 id="将olt回撤定义为网络能力的进阶"&gt;将OLT回撤定义为网络能力的进阶
 &lt;/h2&gt;&lt;p&gt;OLT回撤不应再被视作一次被动的、以成本削减为单一目标的“减法”操作，应该是一个积极的、创造长期网络价值的 &lt;strong&gt;“战略性重构”&lt;/strong&gt; 与 &lt;strong&gt;“能力进阶”&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;其成功的标尺，绝非仅仅是减少了几个机房或维护费用，而在于是否通过这次行动，使我们所运营的网络结构更清晰、资源更可视、演进更敏捷、韧性更强大。这要求我们告别“回撤就是割接，割接即完工”的旧有思维，坚定地走向“规划先行、重构为本”的新的网络发展思路。&lt;/p&gt;
-&lt;p&gt;前面多次提到的OLT目标局点布局规划，其实应该在接入网大建设时就该及早规划，等网络基本成型，再想优化调整，已经很难了，最大的可能就是针对原有的缺陷修修补补了。&lt;/p&gt;</description></item><item><title>中国联通与中国电信2026年度工作会议对比解读</title><link>https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/</guid><description>&lt;img src="https://blog.fallleaf.net/p/note-cu-ct-2026-work-meeting-explain/cover.webp" alt="Featured image of post 中国联通与中国电信2026年度工作会议对比解读" /&gt;&lt;h2 id="站在规划交汇点的信息通信业"&gt;站在规划交汇点的信息通信业
+&lt;p&gt;前面多次提到的OLT目标局点布局规划，其实应该在接入网大建设时就该及早规划，等网络基本成型，再想优化调整，已经很难了，最大的可能就是针对原有的缺陷修修补补了。&lt;/p&gt;</description></item><item><title>中国联通与中国电信2026年度工作会议对比解读</title><link>https://blog.fallleaf.net/p/notes-cu-ct-2026-work-meeting-explain/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/notes-cu-ct-2026-work-meeting-explain/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-cu-ct-2026-work-meeting-explain/cover.webp" alt="Featured image of post 中国联通与中国电信2026年度工作会议对比解读" /&gt;&lt;h2 id="站在规划交汇点的信息通信业"&gt;站在规划交汇点的信息通信业
 &lt;/h2&gt;&lt;p&gt;2026年，是中国信息通信业一个极具标志意义的年份。&lt;/p&gt;
 &lt;p&gt;这一年，国家“十四五”规划圆满收官，“十五五”规划全面启幕；这一年，人工智能、算力网络、5G-A（5G-Advanced）、量子通信等前沿技术，正从技术验证阶段加速走向规模化、体系化应用；这一年，电信运营商的角色，也正在发生根本性变化。&lt;/p&gt;
 &lt;p&gt;以中国电信、中国联通为代表的基础电信企业，正在从传统意义上的&lt;strong&gt;通信服务提供商&lt;/strong&gt;，加速转型为&lt;strong&gt;数字化综合服务的国家队与主力军&lt;/strong&gt;。
@@ -4306,10 +4306,10 @@ class="gallery-image"
 data-flex-grow="75"
 data-flex-basis="180px"
 &gt;&lt;/p&gt;
-&lt;p&gt;源代码放到了GitHub上，做了些改动，采用opencv做图像处理。&lt;/p&gt;</description></item><item><title>2016年出差数据</title><link>https://blog.fallleaf.net/p/outdoor-travel-data-2016/</link><pubDate>Tue, 03 Jan 2017 17:51:05 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-travel-data-2016/</guid><description>&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip.jpg"
+&lt;p&gt;源代码放到了GitHub上，做了些改动，采用opencv做图像处理。&lt;/p&gt;</description></item><item><title>2016年出差数据</title><link>https://blog.fallleaf.net/p/outdoor-travel-data-2016/</link><pubDate>Tue, 03 Jan 2017 17:51:05 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-travel-data-2016/</guid><description>&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip.webp"
 width="502"
 height="723"
-srcset="https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip_hu_edbf76ed3447739f.jpg 480w, https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip_hu_601128614522c2c8.jpg 1024w"
+srcset="https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip_hu_840dc143bcb66e6e.webp 480w, https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip_hu_145d292b979f30ae.webp 1024w"
 loading="lazy"
 alt="2016年出差"
 class="gallery-image"
@@ -4381,10 +4381,10 @@ Your browser does not support the audio element.
 &lt;li&gt;&lt;a class="link" href="Sea_Of_Nectar.pdf" &gt;Sea of Nectar&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="link" href="It-Hurts-to-Leave-It-Hurts-To-Stay_TAB.pdf" &gt;It Hurts to Leave and It Hurts to Stay&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>2014、2015年出差数据</title><link>https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/</link><pubDate>Wed, 27 Jul 2016 16:42:30 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/</guid><description>&lt;p&gt;用gephi以及excel做了一个2014年、2015年出差的图表。可以反映出工作的变化。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2014-trip.jpg"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2014-trip.webp"
 width="505"
 height="737"
-srcset="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2014-trip_hu_7270f93c072d17b.jpg 480w, https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2014-trip_hu_8a06982ed7a680c5.jpg 1024w"
+srcset="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2014-trip_hu_ef77db82d114e79a.webp 480w, https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2014-trip_hu_7f48448047a133cb.webp 1024w"
 loading="lazy"
 alt="2014年出差"
 class="gallery-image"
@@ -4392,10 +4392,10 @@ data-flex-grow="68"
 data-flex-basis="164px"
 &gt;&lt;/p&gt;
 &lt;p&gt;2014年是比较繁忙的一年，尤其是年底，基本是在飞机、宾馆、会议室之间穿梭。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2015-trip.jpg"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2015-trip.webp"
 width="504"
 height="738"
-srcset="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2015-trip_hu_fefbd24314dd9a07.jpg 480w, https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2015-trip_hu_ccadb017e451dffa.jpg 1024w"
+srcset="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2015-trip_hu_6c55a98ff64df8e8.webp 480w, https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2015-trip_hu_6a996c4b317eee2b.webp 1024w"
 loading="lazy"
 alt="2015年出差"
 class="gallery-image"
@@ -4815,10 +4815,10 @@ data-flex-basis="384px"
 &lt;p&gt;出去游玩不愿受拘束，不愿象走马灯一样去旅游，因此，这次还是自助游，全程坐长途客车和包车。&lt;/p&gt;
 &lt;p&gt;去之前上网查了查，决定去郭亮看看。一是据说风景不错，二是离家也近。&lt;/p&gt;
 &lt;p&gt;先附一张照片吧。（郭亮洞，悬崖上开凿的公路）&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/guoliang.jpg"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/guoliang.webp"
 width="700"
 height="510"
-srcset="https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/guoliang_hu_3275f4c7fa9123f8.jpg 480w, https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/guoliang_hu_6d0e4289ccf8a901.jpg 1024w"
+srcset="https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/guoliang_hu_4165f90ce8679ce3.webp 480w, https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/guoliang_hu_6e57cf579f3cedc1.webp 1024w"
 loading="lazy"
 alt="郭亮洞"
 class="gallery-image"
@@ -4847,10 +4847,10 @@ data-flex-basis="329px"
 &lt;p&gt;晚上，兴致颇高的几个网友又凑在一起FB了一顿。完后，又准备去OK一下。我感到有些累了，想找个宾馆休息一下，就没和他们一起去。打听了几个宾馆，均客满。打了几个定房的电话，均告之所有房型均都定出去了，我FAINT，难道晚上要睡马路了。白天的时候也想到宾馆可能紧张，没想到让我碰上了。仍不死心，在杭州师范学院旁找了一个网吧，2元一小时，上网去找找有没有家庭旅店之类的，按查询的结果拨打了几个电话，也都告之”无房“。如果今晚在这里住下去，还有一个办法，就是在浴室里过一晚上，不过没有这个经验，也不愿这么作，于是决定回上海，又在网上查了火车的时刻，最近的车次也在凌晨2点多，还有三个小时，不知怎么熬。不管这么多了，先在网吧混一会儿，再到火车站吧。&lt;/p&gt;
 &lt;p&gt;打的到了车站，打开车门，马上由5，6个人围上来，嘴里含着”上海“，”义乌”……，马上明白了，看来不必等火车了。问了一下价格，到到嘉兴50， 上海火车站80。于是跟着拉客的到了一个面包车前，拉开车门，只剩一个位置了，正好，来了就能走，车上还有一个军人，上校军衔，看来，安全也能保证了。上车。落座，开车，看看时间，11点半，一路上昏昏欲睡，车很快，2个小时后，已经到了上海火车站。打的，回家，不到2点。&lt;/p&gt;
 &lt;p&gt;看来，五一是不能到杭州玩了，那时候绝对是人看人了，而不是看景色了。到这些旅游景点，事先得把房间定好，票买好。到了旺季，估计花钱也找不到住处。&lt;/p&gt;</description></item><item><title>上海，我来了</title><link>https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/</link><pubDate>Fri, 31 Mar 2006 16:11:12 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/</guid><description>&lt;p&gt;在上海要呆上一阵子了，临时办公室还不错，外景看着挺宽阔的。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/shanghaioffice.jpg"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/shanghaioffice.webp"
 width="500"
 height="375"
-srcset="https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/shanghaioffice_hu_e020e85487814fa3.jpg 480w, https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/shanghaioffice_hu_680abb350463a036.jpg 1024w"
+srcset="https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/shanghaioffice_hu_6727de85784687b8.webp 480w, https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/shanghaioffice_hu_6c9bde5ec23c47d8.webp 1024w"
 loading="lazy"
 alt="上海办公室外景"
 class="gallery-image"
