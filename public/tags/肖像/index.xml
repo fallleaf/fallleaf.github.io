@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>肖像 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/%E8%82%96%E5%83%8F/</link><description>Recent content in 肖像 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sun, 30 Jul 2023 15:49:14 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E8%82%96%E5%83%8F/index.xml" rel="self" type="application/rss+xml"/><item><title>色子肖像--Python程序</title><link>https://blog.fallleaf.net/p/tech-dice-portrait-python/</link><pubDate>Thu, 28 Dec 2017 15:49:14 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-dice-portrait-python/</guid><description>&lt;p&gt;上一篇色子肖像介绍了把图像变成色子点阵图的基本思路，用python语言采用PIL库写了一个程序，后来发现opencv更加简便合适，就采用numpy以及opencv库，进行了优化。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>肖像 on 红旗下的蛋</title><link>http://localhost:1313/tags/%E8%82%96%E5%83%8F/</link><description>Recent content in 肖像 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sun, 30 Jul 2023 15:49:14 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%82%96%E5%83%8F/index.xml" rel="self" type="application/rss+xml"/><item><title>色子肖像--Python程序</title><link>http://localhost:1313/p/tech-dice-portrait-python/</link><pubDate>Thu, 28 Dec 2017 15:49:14 +0800</pubDate><guid>http://localhost:1313/p/tech-dice-portrait-python/</guid><description>&lt;p&gt;上一篇色子肖像介绍了把图像变成色子点阵图的基本思路，用python语言采用PIL库写了一个程序，后来发现opencv更加简便合适，就采用numpy以及opencv库，进行了优化。
 这是我第一次开始用python语言编写稍微复杂些的程序。对于有一定编程经验的人，采用实现一个功能的方式编程能够很快熟悉该语言，是一种很好的学习方式。&lt;/p&gt;
 &lt;p&gt;以下是我编写的程序以及简单的注释。&lt;/p&gt;
 &lt;p&gt;由于要对图像进行数值处理，所以采用opencv以及numpy库。首先是加载库，datetime是用于计算程序运行时间，os是用于获得文件路径，sys是用于获得命令行参数，cv2是opencv库，numpy是python的数组库。&lt;/p&gt;
@@ -361,11 +361,11 @@
 &lt;p&gt;程序放到了GitHub上，也可以直接用&lt;/p&gt;
 &lt;p&gt;git clone &lt;a class="link" href="https://github.com/fallleaf/dice_portrait.git" target="_blank" rel="noopener"
 &gt;https://github.com/fallleaf/dice_portrait.git&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;图框和色子都准备好了，这将是18年的第一个项目。&lt;/p&gt;</description></item><item><title>色子肖像</title><link>https://blog.fallleaf.net/p/tech-dice-portrait/</link><pubDate>Tue, 12 Dec 2017 10:02:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-dice-portrait/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_small.png" alt="Featured image of post 色子肖像" /&gt;&lt;p&gt;2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/caroline_portrait.png"
+&lt;p&gt;图框和色子都准备好了，这将是18年的第一个项目。&lt;/p&gt;</description></item><item><title>色子肖像</title><link>http://localhost:1313/p/tech-dice-portrait/</link><pubDate>Tue, 12 Dec 2017 10:02:27 +0800</pubDate><guid>http://localhost:1313/p/tech-dice-portrait/</guid><description>&lt;img src="http://localhost:1313/p/tech-dice-portrait/cecilia_small.png" alt="Featured image of post 色子肖像" /&gt;&lt;p&gt;2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-dice-portrait/caroline_portrait.png"
 width="512"
 height="273"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/caroline_portrait_hu_c2c495ea3cda6d25.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/caroline_portrait_hu_f70e9b7b7c26cbf2.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/caroline_portrait_hu_c2c495ea3cda6d25.png 480w, http://localhost:1313/p/tech-dice-portrait/caroline_portrait_hu_f70e9b7b7c26cbf2.png 1024w"
 loading="lazy"
 alt="caroline_portrait"
 class="gallery-image"
@@ -373,10 +373,10 @@ data-flex-grow="187"
 data-flex-basis="450px"
 &gt;&lt;/p&gt;
 &lt;p&gt;他用了2560（40x60）个16mm的色子，制作了一个64cmx96cm的色子肖像，如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/caroline.jpg"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-dice-portrait/caroline.jpg"
 width="529"
 height="542"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/caroline_hu_fbdcc507a223342c.jpg 480w, https://blog.fallleaf.net/p/tech-dice-portrait/caroline_hu_4ade5e8f384b2656.jpg 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/caroline_hu_fbdcc507a223342c.jpg 480w, http://localhost:1313/p/tech-dice-portrait/caroline_hu_4ade5e8f384b2656.jpg 1024w"
 loading="lazy"
 alt="caroline"
 class="gallery-image"
@@ -387,10 +387,10 @@ data-flex-basis="234px"
 &lt;p&gt;思路是先对图像进行灰度处理，然后把图片分割成16x16像素的单元图块，再对图块中256个点的灰度取平均值，对平均值分组用1-6数值代替。色度值范围0-255，亮度从深到浅，颜色从黑到白。数值1-6对应色子的点数，对于黑底白点的色子，色度值和点数正比例关系，对于白底黑点的色子，色度值和点数反比例关系。最后按色子点数做出图。&lt;/p&gt;
 &lt;p&gt;我用了三种16x16的图块，如下：&lt;/p&gt;
 &lt;p&gt;灰度色块：
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/graydice.png"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/graydice.png"
 width="96"
 height="16"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/graydice_hu_2a8cd17567e55e06.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/graydice_hu_9af2030d95ba904e.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/graydice_hu_2a8cd17567e55e06.png 480w, http://localhost:1313/p/tech-dice-portrait/graydice_hu_9af2030d95ba904e.png 1024w"
 loading="lazy"
 alt="graydice"
 class="gallery-image"
@@ -398,10 +398,10 @@ data-flex-grow="600"
 data-flex-basis="1440px"
 &gt;&lt;/p&gt;
 &lt;p&gt;黑底白点色子：
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/blackdice.png"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/blackdice.png"
 width="96"
 height="16"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/blackdice_hu_1630946f4df10da0.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/blackdice_hu_126e36a88e9ee30.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/blackdice_hu_1630946f4df10da0.png 480w, http://localhost:1313/p/tech-dice-portrait/blackdice_hu_126e36a88e9ee30.png 1024w"
 loading="lazy"
 alt="blackdice"
 class="gallery-image"
@@ -409,10 +409,10 @@ data-flex-grow="600"
 data-flex-basis="1440px"
 &gt;&lt;/p&gt;
 &lt;p&gt;白底黑点色子：
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/whitedice.png"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/whitedice.png"
 width="96"
 height="16"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/whitedice_hu_6797ae34ca853fb0.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/whitedice_hu_a220206ef32465ae.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/whitedice_hu_6797ae34ca853fb0.png 480w, http://localhost:1313/p/tech-dice-portrait/whitedice_hu_a220206ef32465ae.png 1024w"
 loading="lazy"
 alt="whitedice"
 class="gallery-image"
@@ -485,10 +485,10 @@ f.write(&amp;rsquo;\n&amp;rsquo;)
 f.close()&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;按以上方法生成了三种处理后的图片，第一个是原图，第二个是灰度色块，第三个是黑底白点，第四个是白底黑点。如下图：
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_small.png"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/cecilia_small.png"
 width="1120"
 height="1584"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_small_hu_542dd8651340c7dd.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_small_hu_e475395d559590d0.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/cecilia_small_hu_542dd8651340c7dd.png 480w, http://localhost:1313/p/tech-dice-portrait/cecilia_small_hu_e475395d559590d0.png 1024w"
 loading="lazy"
 alt="cecilia"
 class="gallery-image"
@@ -496,30 +496,30 @@ data-flex-grow="70"
 data-flex-basis="169px"
 &gt;&lt;/p&gt;
 &lt;p&gt;所用原始图片的大小为1120x1584，一共生成色子数量为70x99=6930块,若用8mm的色子制作，大小为56cmx79.2cm。 亚洲人的面部没有欧洲人立体感强，选择照片时需挑选立体感强，色差比较鲜明的图片，这样，分辨率可以低一些，色子的数量可以减少一些。另外，1-6的分组值也需要进一步优化。下图是分辨率变化的情况。
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliag_gif.gif"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/ceciliag_gif.gif"
 width="280"
 height="396"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliag_gif_hu_5e4c2dfb41ced0d2.gif 480w, https://blog.fallleaf.net/p/tech-dice-portrait/ceciliag_gif_hu_8bfeb71e387b1d48.gif 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/ceciliag_gif_hu_5e4c2dfb41ced0d2.gif 480w, http://localhost:1313/p/tech-dice-portrait/ceciliag_gif_hu_8bfeb71e387b1d48.gif 1024w"
 loading="lazy"
 alt="ceciliag"
 class="gallery-image"
 data-flex-grow="70"
 data-flex-basis="169px"
 &gt;
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliaw_gif.gif"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/ceciliaw_gif.gif"
 width="280"
 height="396"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliaw_gif_hu_b692e8d90f563c54.gif 480w, https://blog.fallleaf.net/p/tech-dice-portrait/ceciliaw_gif_hu_85051bd5a762ed50.gif 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/ceciliaw_gif_hu_b692e8d90f563c54.gif 480w, http://localhost:1313/p/tech-dice-portrait/ceciliaw_gif_hu_85051bd5a762ed50.gif 1024w"
 loading="lazy"
 alt="ceciliaw"
 class="gallery-image"
 data-flex-grow="70"
 data-flex-basis="169px"
 &gt;
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliab_gif.gif"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/ceciliab_gif.gif"
 width="280"
 height="396"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliab_gif_hu_2bf96734fa72f743.gif 480w, https://blog.fallleaf.net/p/tech-dice-portrait/ceciliab_gif_hu_d881b7438a7385eb.gif 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/ceciliab_gif_hu_2bf96734fa72f743.gif 480w, http://localhost:1313/p/tech-dice-portrait/ceciliab_gif_hu_d881b7438a7385eb.gif 1024w"
 loading="lazy"
 alt="ceciliab"
 class="gallery-image"
@@ -529,20 +529,20 @@ data-flex-basis="169px"
 &lt;p&gt;这个项目正在进行中，等色子及图框到后再把制作的全过程展示一下。&lt;/p&gt;
 &lt;p&gt;续：&lt;/p&gt;
 &lt;p&gt;购买了2000个色子，用纸盒盖子做框，摆成一个肖像，远看效果好些&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice1.jpg"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-dice-portrait/cecilia_dice1.jpg"
 width="1080"
 height="1440"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice1_hu_9afffa2e6bcab57.jpg 480w, https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice1_hu_79421af38ba3cd23.jpg 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/cecilia_dice1_hu_9afffa2e6bcab57.jpg 480w, http://localhost:1313/p/tech-dice-portrait/cecilia_dice1_hu_79421af38ba3cd23.jpg 1024w"
 loading="lazy"
 alt="cecilia1"
 class="gallery-image"
 data-flex-grow="75"
 data-flex-basis="180px"
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice2.jpg"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-dice-portrait/cecilia_dice2.jpg"
 width="1080"
 height="1440"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice2_hu_3f405b5235b9b71e.jpg 480w, https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice2_hu_49d2120084624dfc.jpg 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/cecilia_dice2_hu_3f405b5235b9b71e.jpg 480w, http://localhost:1313/p/tech-dice-portrait/cecilia_dice2_hu_49d2120084624dfc.jpg 1024w"
 loading="lazy"
 alt="cecilia2"
 class="gallery-image"

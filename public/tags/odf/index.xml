@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ODF on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/odf/</link><description>Recent content in ODF on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/odf/index.xml" rel="self" type="application/rss+xml"/><item><title>ODF智能运维：机器人自动维护的未来不是梦</title><link>https://blog.fallleaf.net/p/tech-odf-automatic-maintance/</link><pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-odf-automatic-maintance/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/cover.webp" alt="Featured image of post ODF智能运维：机器人自动维护的未来不是梦" /&gt;&lt;p&gt;你是否曾想过，未来光纤配线架的维护会是什么样子？不再需要工程师们亲临现场，手动完成繁琐的接线操作，而是由智能机器人精准、高效地处理一切。这并非科幻场景，而是国际电联（ITU）发布的 ITU-T M.3368 建议书所描绘的未来。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ODF on 红旗下的蛋</title><link>http://localhost:1313/tags/odf/</link><description>Recent content in ODF on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/odf/index.xml" rel="self" type="application/rss+xml"/><item><title>ODF智能运维：机器人自动维护的未来不是梦</title><link>http://localhost:1313/p/tech-odf-automatic-maintance/</link><pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-odf-automatic-maintance/</guid><description>&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/cover.webp" alt="Featured image of post ODF智能运维：机器人自动维护的未来不是梦" /&gt;&lt;p&gt;你是否曾想过，未来光纤配线架的维护会是什么样子？不再需要工程师们亲临现场，手动完成繁琐的接线操作，而是由智能机器人精准、高效地处理一切。这并非科幻场景，而是国际电联（ITU）发布的 ITU-T M.3368 建议书所描绘的未来。&lt;/p&gt;
 &lt;h2 id="核心挑战传统odf维护的困境"&gt;核心挑战：传统ODF维护的困境
 &lt;/h2&gt;&lt;p&gt;ODF是光通信网络中用于端接、连接和分配光缆的关键物理基础设施 。传统上，所有光纤跳接、改接或网络重构都需要维护人员亲临现场手动操作。这种模式不仅耗费大量的人力和时间成本 ，而且在日益密集和复杂的连接环境中，极易发生人为错误，另外，操作后的信息变更，经常缺失，导致光纤的连接信息不准确。因此，建立一套能够远程化、自动化、智能化的维护体系，成为业界迫切的需求。&lt;/p&gt;
 &lt;h2 id="什么是-odf-智能维护"&gt;什么是 ODF 智能维护？
@@ -9,10 +9,10 @@
 &lt;li&gt;&lt;strong&gt;ODF 智能维护系统 (OSMS)&lt;/strong&gt; ：一个远程软件系统，负责向 SHU 发出维护指令并进行交互，从而实现 ODF 的现场智能维护和 SHU 管理。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这套系统能够显著减少 ODF 现场维护中的手动操作工作量，节省大量的维护成本和时间。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/osms.webp"
 width="1952"
 height="913"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms_hu_bed99e1a31a822e2.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms_hu_e44d82be4a540973.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/osms_hu_bed99e1a31a822e2.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/osms_hu_e44d82be4a540973.webp 1024w"
 loading="lazy"
 alt="OSMS"
 class="gallery-image"
@@ -54,10 +54,10 @@ data-flex-basis="513px"
 &lt;/h2&gt;&lt;p&gt;建议书的发布并非空中楼阁，而是产业界多年探索、研发的结晶。如何有效的布放跳纤，避免形成“意大利面现象”（形容细线交织缠绕在一起的状态），是整套系统的难点和关键点。目前收集到的相关研究、产品简介如下：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;2019年由北京邮电大学的杨正、魏世民等学者撰写的论文《Design and implementation of a small AODF》，发表于《The Journal of Engineering》。其核心目标是解决通信网络中光纤配线架（ODF）交叉连接这一尚未自动化的“痛点”，通过设计和实现一个 &lt;strong&gt;小型自动光纤配线架（AODF）原型&lt;/strong&gt; ，来降低运营商的运维成本并提升服务等级。论文的核心创新在于提出了一种新颖的结构模型和交叉连接方法，并成功制造了物理原型进行验证。
-&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-1.webp"
+&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/640-1.webp"
 width="562"
 height="463"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-1_hu_9cab273fce528e7a.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-1_hu_d5c2b260a0c4048e.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/640-1_hu_9cab273fce528e7a.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/640-1_hu_d5c2b260a0c4048e.webp 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"
@@ -74,20 +74,20 @@ data-flex-basis="291px"
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;专利技术：&lt;/strong&gt; AODF 采用了 TeliSwitch 的专利技术，能够在 &lt;strong&gt;5分钟内&lt;/strong&gt; 远程自动完成一次连接变更，极大地提升了效率。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;集成化功能：&lt;/strong&gt; 圆形平台可配备专用模块，直接进行 &lt;strong&gt;OTDR（光时域反射仪）测量&lt;/strong&gt; 。这使得运营商可以在连接前或维护时段，远程检测线路的连通性和质量，确保线路正常。
-&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-2.webp"
+&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/640-2.webp"
 width="1024"
 height="1320"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-2_hu_4e29c4ac734f8d10.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-2_hu_ee636948dd71fe73.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/640-2_hu_4e29c4ac734f8d10.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/640-2_hu_ee636948dd71fe73.webp 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"
 data-flex-grow="77"
 data-flex-basis="186px"
 &gt;
-&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-3.webp"
+&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/640-3.webp"
 width="354"
 height="556"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-3_hu_f0c16bc38aec209f.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-3_hu_7b7c7a6829d1fe4d.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/640-3_hu_f0c16bc38aec209f.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/640-3_hu_7b7c7a6829d1fe4d.webp 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"
@@ -99,10 +99,10 @@ data-flex-basis="152px"
 &lt;/ul&gt;
 &lt;ol start="3"&gt;
 &lt;li&gt;武汉赫尔墨斯的光纤机器人HAI ROBOT，是一款智能机器人光纤物理层交换机，使物理光纤连接变得自动、远程、 快速且无需人工现场干预。提供卓越的光学性能，低插入损耗，对传输协议、波长或者带宽速率透明。 全光网络架构，支持单纤双向，采用可视化的物理连接方式，支持级联构建大规模的智能网络。
-&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-4.webp"
+&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/640-4.webp"
 width="599"
 height="442"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-4_hu_e8a7f025eb20544f.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-4_hu_f35d9443844582a.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/640-4_hu_e8a7f025eb20544f.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/640-4_hu_f35d9443844582a.webp 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"

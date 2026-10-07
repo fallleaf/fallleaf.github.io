@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术与实践 on 红旗下的蛋</title><link>https://blog.fallleaf.net/categories/tech/</link><description>Recent content in 技术与实践 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Wed, 16 Sep 2026 16:54:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>从“承载”到“服务”：我对传输网络业务化的一点理解</title><link>https://blog.fallleaf.net/p/from-carray-to-server/</link><pubDate>Wed, 16 Sep 2026 16:54:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/from-carray-to-server/</guid><description>&lt;img src="https://blog.fallleaf.net/p/from-carray-to-server/cover.webp" alt="Featured image of post 从“承载”到“服务”：我对传输网络业务化的一点理解" /&gt;&lt;p&gt;最近参与一个材料的编写，反反复复被灌输“业务网”、“承载”、“客户需求”、“产品”、“能力”这些概念。同一个词，对不同的领导来说，或者概念不同，或者范围不同，搞得拼命去理解一个本以为了解的词的真正含义。不同的章节，用词也随意：有时“能力”和“产品”混着用，有时“承载”一会儿指网络、一会儿指网络干的事。材料改了好几轮，我也被绕了好几轮。刚好有个空隙，索性停下来，先把这些词的定义自己梳理一遍、理解一遍。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术与实践 on 红旗下的蛋</title><link>http://localhost:1313/categories/tech/</link><description>Recent content in 技术与实践 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Wed, 16 Sep 2026 16:54:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>从“承载”到“服务”：我对传输网络业务化的一点理解</title><link>http://localhost:1313/p/from-carray-to-server/</link><pubDate>Wed, 16 Sep 2026 16:54:00 +0000</pubDate><guid>http://localhost:1313/p/from-carray-to-server/</guid><description>&lt;img src="http://localhost:1313/p/from-carray-to-server/cover.webp" alt="Featured image of post 从“承载”到“服务”：我对传输网络业务化的一点理解" /&gt;&lt;p&gt;最近参与一个材料的编写，反反复复被灌输“业务网”、“承载”、“客户需求”、“产品”、“能力”这些概念。同一个词，对不同的领导来说，或者概念不同，或者范围不同，搞得拼命去理解一个本以为了解的词的真正含义。不同的章节，用词也随意：有时“能力”和“产品”混着用，有时“承载”一会儿指网络、一会儿指网络干的事。材料改了好几轮，我也被绕了好几轮。刚好有个空隙，索性停下来，先把这些词的定义自己梳理一遍、理解一遍。&lt;/p&gt;
 &lt;p&gt;先看“承载”。这个词含义应该很清楚：连接业务网元。5G 基站连BBU，OLT 连 BRAS，专线节点之间互联，IDC 之间打通。业务网在上面，传输网在下面；业务负责功能，传输负责连接。传输网回答的问题是：“业务网元之间怎么连？”这就是承载。&lt;/p&gt;
 &lt;h2 id="网络能力网络本身能做什么"&gt;网络能力：网络本身能做什么
 &lt;/h2&gt;&lt;p&gt;如果先不管上面的业务，只看传输网自己，会发现它其实有很多“本事”：能建端到端连接，能给不同带宽，能做小颗粒承载，能动态调带宽，能选低时延路径，能做保护和恢复，能给 QoS 保障，还能在光层、电层之间协同调度。&lt;/p&gt;
@@ -72,7 +72,7 @@
 &lt;li&gt;• 服务：让客户可以买到什么（TMF 的 Product）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;也许还不够严谨，但把这几个概念分开、再挂到 TMF 的框架上，以后读相关文档、想传输网怎么建、怎么开放、怎么支撑新业务，好像都比以前清楚了一些。&lt;/p&gt;
-&lt;p&gt;顺带记一笔：GSMA / Linux Foundation 的 CAMARA 项目（TM Forum 参与 API 规范）正在做网络能力开放，比如应用按需申请时延/带宽等级的 QoD API，算是“能力产品化”的最新实践，闲了可以去看看。&lt;/p&gt;</description></item><item><title>业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析</title><link>https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/</link><pubDate>Fri, 12 Dec 2025 09:35:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-direct-vs-transport-reliability/cover.webp" alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析" /&gt;&lt;p&gt;承载关键业务电路时，选择何种方式是一个涉及技术、成本与风险的重大决策。是采用 &lt;strong&gt;简单直接的光纤直驱&lt;/strong&gt; ，还是选择 &lt;strong&gt;具备冗余保护的传输系统承载&lt;/strong&gt; 呢？大概大部分人都会选择最“ &lt;strong&gt;安全&lt;/strong&gt; ”的方式，就是上传输系统。&lt;/p&gt;
+&lt;p&gt;顺带记一笔：GSMA / Linux Foundation 的 CAMARA 项目（TM Forum 参与 API 规范）正在做网络能力开放，比如应用按需申请时延/带宽等级的 QoD API，算是“能力产品化”的最新实践，闲了可以去看看。&lt;/p&gt;</description></item><item><title>业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析</title><link>http://localhost:1313/p/tech-fiber-direct-vs-transport-reliability/</link><pubDate>Fri, 12 Dec 2025 09:35:00 +0800</pubDate><guid>http://localhost:1313/p/tech-fiber-direct-vs-transport-reliability/</guid><description>&lt;img src="http://localhost:1313/p/tech-fiber-direct-vs-transport-reliability/cover.webp" alt="Featured image of post 业务电路承载：光纤直驱 vs. 传输系统？一个可靠性排序的分析" /&gt;&lt;p&gt;承载关键业务电路时，选择何种方式是一个涉及技术、成本与风险的重大决策。是采用 &lt;strong&gt;简单直接的光纤直驱&lt;/strong&gt; ，还是选择 &lt;strong&gt;具备冗余保护的传输系统承载&lt;/strong&gt; 呢？大概大部分人都会选择最“ &lt;strong&gt;安全&lt;/strong&gt; ”的方式，就是上传输系统。&lt;/p&gt;
 &lt;p&gt;但是，是否真是这样呢？&lt;/p&gt;
 &lt;h2 id="核心问题如何实现高可靠性"&gt;核心问题：如何实现高可靠性？
 &lt;/h2&gt;&lt;p&gt;我们对两种主要的承载方式进行可靠性分析，其中，可靠性（Reliability）用$R$来表示，它代表系统在给定时间内无故障运行的概率。&lt;/p&gt;
@@ -163,7 +163,7 @@ style H fill:#f9f,stroke:#333,stroke-width:2px&lt;/pre&gt;
 &lt;p&gt;我们应该避免用巨大的、不经济的投资，去换取微量的安全提升。只有通过精确的数学模型分析和对具体工程环境（$p$ 和 $q$ 的实际值）的深入理解，才能找到真正符合业务需求、且最具成本效益的承载方案。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;最可靠的方案，是平衡了成本与风险的方案。&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>距离越长，光缆就越容易出故障吗？</title><link>https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/</link><pubDate>Sat, 11 Oct 2025 07:45:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-fiber-more-longer-more-fail/cover.webp" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>距离越长，光缆就越容易出故障吗？</title><link>http://localhost:1313/p/tech-fiber-more-longer-more-fail/</link><pubDate>Sat, 11 Oct 2025 07:45:00 +0800</pubDate><guid>http://localhost:1313/p/tech-fiber-more-longer-more-fail/</guid><description>&lt;img src="http://localhost:1313/p/tech-fiber-more-longer-more-fail/cover.webp" alt="Featured image of post 距离越长，光缆就越容易出故障吗？" /&gt;&lt;p&gt;在通信网络优化中，BBU由DRAN方式改为CRAN方式，或将分散的OLT集中起来，会导致BBU到RRU或OLT到分光器的接入光缆距离变长，这就会引来一个运维比较关心的问题： &lt;strong&gt;光缆线路越长，故障次数是否越多？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;乍听之下，这似乎不用讨论——当然越长越容易坏了，线路越长，风险点越多，还有一个指标可以通过反算来说明这个问题。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;平均百皮长公里故障次数 = 障碍总次数 ÷ 光缆线路总长度 × 100&lt;/p&gt;
@@ -214,7 +214,7 @@ style H fill:#f9f,stroke:#333,stroke-width:2px&lt;/pre&gt;
 &lt;h2 id="拒绝平均的幻觉"&gt;拒绝“平均的幻觉”
 &lt;/h2&gt;&lt;p&gt;总的来说，平均数往往会让我们陷入“平均的幻觉”，看似简单合理，却掩盖了真实的光缆故障分布。只有通过分层、分档、分情境的细致分析，才能真正触及问题本质。做到这点，数据才有了洞察的力量，而不仅仅是枯燥的数字。&lt;/p&gt;
 &lt;h2 id="题外话"&gt;题外话
-&lt;/h2&gt;&lt;p&gt;数据的价值不只在于计算，更在于深入挖掘背后的故事。当平均数让视野模糊，我们要学会拆解与细致观察，逐层揭开真相。这种科学严谨的态度，正是面对复杂系统时最可靠的方法。 &lt;strong&gt;只是，收集和准备好这些详细的数据，是实践中最大的挑战&lt;/strong&gt; 。&lt;/p&gt;</description></item><item><title>光电共封装（CPO）：数据中心的下一场“能效革命</title><link>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</link><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/cover.webp" alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命" /&gt;&lt;h2 id="为何cpo光电共封装成为焦点"&gt;为何CPO（光电共封装）成为焦点？
+&lt;/h2&gt;&lt;p&gt;数据的价值不只在于计算，更在于深入挖掘背后的故事。当平均数让视野模糊，我们要学会拆解与细致观察，逐层揭开真相。这种科学严谨的态度，正是面对复杂系统时最可靠的方法。 &lt;strong&gt;只是，收集和准备好这些详细的数据，是实践中最大的挑战&lt;/strong&gt; 。&lt;/p&gt;</description></item><item><title>光电共封装（CPO）：数据中心的下一场“能效革命</title><link>http://localhost:1313/p/tech-cpo-data-center-energy-efficiency-revolution/</link><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-cpo-data-center-energy-efficiency-revolution/</guid><description>&lt;img src="http://localhost:1313/p/tech-cpo-data-center-energy-efficiency-revolution/cover.webp" alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命" /&gt;&lt;h2 id="为何cpo光电共封装成为焦点"&gt;为何CPO（光电共封装）成为焦点？
 &lt;/h2&gt;&lt;p&gt;近年来，AI大模型、云计算、自动驾驶和高性能计算（HPC）对数据中心带宽和算力需求激增。芯片算力不断强化，传输速率从100G、400G提升至800G乃至1.6T，但随之而来的是能耗和带宽瓶颈的新挑战。&lt;/p&gt;
 &lt;p&gt;传统架构中，交换芯片（ASIC）与光模块分离，光模块通过电连接器插在设备前面板上。这种“可插拔光模块”虽然灵活，速率提升后因电连接距离长，导致功耗高、信号衰减严重，且占用宝贵的前面板空间。&lt;/p&gt;
 &lt;p&gt;CPO的创新在于把光引擎与交换芯片直接封装，将电信号在极短距离内转换为光信号，极大减少能耗与信号损失，实现了光通信不再是外围，而是芯片核心部分。这一设计被视为突破数据中心能效和带宽瓶颈的关键。&lt;/p&gt;
@@ -281,7 +281,7 @@ style H fill:#f9f,stroke:#333,stroke-width:2px&lt;/pre&gt;
 &lt;li&gt;• 长期（2030以后）：实现“光原生”数据中心架构，光电封装成为芯片设计常态，计算与通信深度融合。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="结语算力时代的能效转折点"&gt;结语：算力时代的能效转折点
-&lt;/h2&gt;&lt;p&gt;CPO不仅是光模块的迭代，更是芯片与通信关系的重新定义。它将光通信从外围配件转变为算力系统核心，回应了AI计算时代对能效的极致追求。随着从可插拔到共封装的转变，CPO正引领数据中心迈向以光为底层语言的未来。&lt;/p&gt;</description></item><item><title>光网络数字孪生：让网络在虚拟世界先跑一遍</title><link>https://blog.fallleaf.net/p/tech-optical-network-digital-twin/</link><pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-optical-network-digital-twin/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-optical-network-digital-twin/cover.webp" alt="Featured image of post 光网络数字孪生：让网络在虚拟世界先跑一遍" /&gt;&lt;p&gt;未来的光网络，不再仅仅是由光纤、电路和节点构成的物理系统，而是包含了物理系统的一个 可感知、可预测、可自我演化 的智能体。
+&lt;/h2&gt;&lt;p&gt;CPO不仅是光模块的迭代，更是芯片与通信关系的重新定义。它将光通信从外围配件转变为算力系统核心，回应了AI计算时代对能效的极致追求。随着从可插拔到共封装的转变，CPO正引领数据中心迈向以光为底层语言的未来。&lt;/p&gt;</description></item><item><title>光网络数字孪生：让网络在虚拟世界先跑一遍</title><link>http://localhost:1313/p/tech-optical-network-digital-twin/</link><pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-optical-network-digital-twin/</guid><description>&lt;img src="http://localhost:1313/p/tech-optical-network-digital-twin/cover.webp" alt="Featured image of post 光网络数字孪生：让网络在虚拟世界先跑一遍" /&gt;&lt;p&gt;未来的光网络，不再仅仅是由光纤、电路和节点构成的物理系统，而是包含了物理系统的一个 可感知、可预测、可自我演化 的智能体。
 支撑这一变革的关键技术之一，正是—— 光网络数字孪生（Digital Twin for Optical Network）。&lt;/p&gt;
 &lt;h2 id="为什么光网络需要孪生体"&gt;为什么光网络需要“孪生体”
 &lt;/h2&gt;&lt;p&gt;过去的几十年里，光传送网（OTN/WDM）在带宽、稳定性和成本上不断突破，但其管理方式仍停留在传统阶段：&lt;/p&gt;
@@ -382,7 +382,7 @@ style H fill:#f9f,stroke:#333,stroke-width:2px&lt;/pre&gt;
 &lt;li&gt;从被动响应到预测管理；&lt;/li&gt;
 &lt;li&gt;从静态运维到智能自治。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;在迈向“全光智能时代”的路上， &lt;strong&gt;数字孪生，正成为光网络转型的关键引擎。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输</title><link>https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/</link><pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-q-chip-quantum-internet-commercial-fiber/cover.webp" alt="Featured image of post 量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输" /&gt;&lt;p&gt;最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。&lt;/p&gt;
+&lt;p&gt;在迈向“全光智能时代”的路上， &lt;strong&gt;数字孪生，正成为光网络转型的关键引擎。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输</title><link>http://localhost:1313/p/tech-q-chip-quantum-internet-commercial-fiber/</link><pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-q-chip-quantum-internet-commercial-fiber/</guid><description>&lt;img src="http://localhost:1313/p/tech-q-chip-quantum-internet-commercial-fiber/cover.webp" alt="Featured image of post 量子互联网迈出关键一步：Q-chip实现量子信号通过商用光纤传输" /&gt;&lt;p&gt;最近，宾夕法尼亚大学的工程师们在量子通信领域取得了突破性成果：他们首次成功地在商用光纤网络中，采用标准互联网IP协议，实现了量子信号可靠传输。这不仅是一次技术飞跃，更是量子互联网从理论走向现实的关键一步。&lt;/p&gt;
 &lt;h2 id="核心技术q-chip让量子信号搭车互联网"&gt;核心技术：Q-chip，让量子信号“搭车”互联网
 &lt;/h2&gt;&lt;p&gt;这项成果的核心，是一个名为 &lt;strong&gt;Q-chip&lt;/strong&gt; 的集成芯片。它的神奇之处在于——可以让量子信号在现有的光纤网络中“穿行”，而不被破坏。&lt;/p&gt;
 &lt;p&gt;Q-chip 的工作原理是“量子-经典混合”：&lt;/p&gt;
@@ -440,7 +440,7 @@ loading="lazy"
 alt="图片"
 &gt;&lt;/p&gt;
 &lt;p&gt;原文链接:
-Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-for-the-first-time/&lt;/p&gt;</description></item><item><title>单纤多向：让前传更极简</title><link>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</link><pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/cover.webp" alt="Featured image of post 单纤多向：让前传更极简" /&gt;&lt;p&gt;在移动基站的建设中，无线前传网络却一直面临着一个&amp;quot;老大难&amp;quot;问题——光缆投资过大。随着CRAN（集中式无线接入网）模式成为主流，BBU（基带处理单元）集中部署，BBU与RRU（射频拉远单元）之间需要大量光缆纤芯连接，导致前传光缆投资成为电信运营商难以承受之重。&lt;/p&gt;
+Https://scitechdaily.com/engineers-bring-quantum-internet-to-commercial-fiber-for-the-first-time/&lt;/p&gt;</description></item><item><title>单纤多向：让前传更极简</title><link>http://localhost:1313/p/tech-single-fiber-multi-directional-fronthaul/</link><pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-single-fiber-multi-directional-fronthaul/</guid><description>&lt;img src="http://localhost:1313/p/tech-single-fiber-multi-directional-fronthaul/cover.webp" alt="Featured image of post 单纤多向：让前传更极简" /&gt;&lt;p&gt;在移动基站的建设中，无线前传网络却一直面临着一个&amp;quot;老大难&amp;quot;问题——光缆投资过大。随着CRAN（集中式无线接入网）模式成为主流，BBU（基带处理单元）集中部署，BBU与RRU（射频拉远单元）之间需要大量光缆纤芯连接，导致前传光缆投资成为电信运营商难以承受之重。&lt;/p&gt;
 &lt;h2 id="前传之痛光缆投资为何居高不下"&gt;前传之痛：光缆投资为何居高不下？
 &lt;/h2&gt;&lt;p&gt;传统的无线前传采用双纤双向光模块直连方式，每站需要占用6芯光纤。在CRAN模式下，虽然BBU集中部署带来了设备利用率提升、节省机房空间和降低能耗等优势，但也导致了前传光缆需求激增的问题。面对成千上万的基站建设，光缆投资已成为运营商网络建设中不可忽视的成本。&lt;/p&gt;
 &lt;h2 id="现有方案的局限"&gt;现有方案的局限
@@ -498,7 +498,7 @@ alt="图片"
 &lt;/h2&gt;&lt;p&gt;单纤多向光模块直驱技术，不仅解决了前传光缆投资大的痛点，更实现了前传网络的&amp;quot;极简&amp;quot;。它既保留了光模块直驱方案的可靠性与易维护性，又大幅降低了纤芯资源占用，是当前最符合现网需求的前传技术。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;简单，才是最复杂的技术。单纤多向，让前传更极简，让网络更高效。&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>CMIS：从“看”到“管”，光网络开放解耦的隐性基石</title><link>https://blog.fallleaf.net/p/tech-cmis/</link><pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-cmis/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-cmis/cover.webp" alt="Featured image of post CMIS：从“看”到“管”，光网络开放解耦的隐性基石" /&gt;&lt;p&gt;在光通信的世界里，我们总能听到那些令人振奋的数字：400G、800G、1.6T……它们代表着速度的极限和带宽的无限可能。但如果我告诉你，决定未来网络能否真正开放、智能、可编程的关键，并不在于这些数字里，而在于一个听起来有些陌生的名字——CMIS，你信吗？&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>CMIS：从“看”到“管”，光网络开放解耦的隐性基石</title><link>http://localhost:1313/p/tech-cmis/</link><pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-cmis/</guid><description>&lt;img src="http://localhost:1313/p/tech-cmis/cover.webp" alt="Featured image of post CMIS：从“看”到“管”，光网络开放解耦的隐性基石" /&gt;&lt;p&gt;在光通信的世界里，我们总能听到那些令人振奋的数字：400G、800G、1.6T……它们代表着速度的极限和带宽的无限可能。但如果我告诉你，决定未来网络能否真正开放、智能、可编程的关键，并不在于这些数字里，而在于一个听起来有些陌生的名字——CMIS，你信吗？&lt;/p&gt;
 &lt;p&gt;今天，我们就来聊聊这个在幕后默默发挥作用的“隐藏英雄”。&lt;/p&gt;
 &lt;h2 id="故事的开端一个只看数据无法指挥的时代"&gt;故事的开端：一个“只看数据，无法指挥”的时代
 &lt;/h2&gt;&lt;p&gt;想象一下，你是一位光网络运维工程师，你的工作是确保网络稳定运行。在 CMIS 出现之前，你手中的“工具”主要是 SFF-8472。&lt;/p&gt;
@@ -533,7 +533,7 @@ alt="图片"
 &lt;/h2&gt;&lt;p&gt;CMIS 的出现，将光模块从一个“黑盒”转变为可编程、可管理的网络资源，并与 NETCONF/YANG 共同构筑了光网络分层解耦的黄金架构。它不只是一个技术标准，更是光网络从“封闭”走向“开放”的战略杠杆。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CMIS规范链接:&lt;/strong&gt;
 &lt;a class="link" href="https://www.oiforum.com/wp-content/uploads/OIF-CMIS-05.3.pdf" target="_blank" rel="noopener"
-&gt;https://www.oiforum.com/wp-content/uploads/OIF-CMIS-05.3.pdf&lt;/a&gt;&lt;/p&gt;</description></item><item><title>单芯片激光器的突破：从 MHz 到 Hz，MOIL-TISE 改写相干光通信的游戏规则</title><link>https://blog.fallleaf.net/p/tech-moil-tise-single-chip-laser-coherent-optics/</link><pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-moil-tise-single-chip-laser-coherent-optics/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-moil-tise-single-chip-laser-coherent-optics/cover.webp" alt="Featured image of post 单芯片激光器的突破：从 MHz 到 Hz，MOIL-TISE 改写相干光通信的游戏规则" /&gt;&lt;blockquote&gt;
+&gt;https://www.oiforum.com/wp-content/uploads/OIF-CMIS-05.3.pdf&lt;/a&gt;&lt;/p&gt;</description></item><item><title>单芯片激光器的突破：从 MHz 到 Hz，MOIL-TISE 改写相干光通信的游戏规则</title><link>http://localhost:1313/p/tech-moil-tise-single-chip-laser-coherent-optics/</link><pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-moil-tise-single-chip-laser-coherent-optics/</guid><description>&lt;img src="http://localhost:1313/p/tech-moil-tise-single-chip-laser-coherent-optics/cover.webp" alt="Featured image of post 单芯片激光器的突破：从 MHz 到 Hz，MOIL-TISE 改写相干光通信的游戏规则" /&gt;&lt;blockquote&gt;
 &lt;p&gt;写在前面：在光通信、量子通信、精密计量等领域，稳定、窄线宽的激光光源一直是长期瓶颈。格拉斯哥大学的一项新研究，将这一瓶颈大幅推后。本文将带你拆解这项成果的技术原理、性能优势与未来应用。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="什么是线宽为什么要越窄越好"&gt;什么是线宽，为什么要越窄越好？
@@ -630,7 +630,7 @@ alt="图片"
 &lt;/h2&gt;&lt;p&gt;MOIL-TISE 展示了单芯片激光器从 MHz 向 Hz 线宽跨越的可能。它不仅是科研创新的成果，更预示着产业架构的演进方向。未来的光通信系统，或许不再依赖模块堆叠，而是走向真正的芯片级集成。&lt;/p&gt;
 &lt;p&gt;原文参考：&lt;/p&gt;
 &lt;p&gt;&lt;a class="link" href="https://www.science.org/doi/10.1126/sciadv.ady8963" target="_blank" rel="noopener"
-&gt;https://www.science.org/doi/10.1126/sciadv.ady8963&lt;/a&gt;&lt;/p&gt;</description></item><item><title>GPU之后的算力革命?微软新架构让AI推理与金融优化"一机双飞"</title><link>https://blog.fallleaf.net/p/tech-microsoft-architecture-ai-financial-revolution/</link><pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-microsoft-architecture-ai-financial-revolution/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-microsoft-architecture-ai-financial-revolution/cover.webp" alt="Featured image of post GPU之后的算力革命?微软新架构让AI推理与金融优化"一机双飞"" /&gt;&lt;blockquote&gt;
+&gt;https://www.science.org/doi/10.1126/sciadv.ady8963&lt;/a&gt;&lt;/p&gt;</description></item><item><title>GPU之后的算力革命?微软新架构让AI推理与金融优化"一机双飞"</title><link>http://localhost:1313/p/tech-microsoft-architecture-ai-financial-revolution/</link><pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-microsoft-architecture-ai-financial-revolution/</guid><description>&lt;img src="http://localhost:1313/p/tech-microsoft-architecture-ai-financial-revolution/cover.webp" alt="Featured image of post GPU之后的算力革命?微软新架构让AI推理与金融优化"一机双飞"" /&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;你有没有想过——&lt;/strong&gt;
 &lt;strong&gt;未来训练一个大模型，可能不再需要耗电如“小电站”的GPU集群？&lt;/strong&gt;
 &lt;strong&gt;处理一笔复杂的跨国金融结算，可能不需要数小时的服务器运算？&lt;/strong&gt;
@@ -778,7 +778,7 @@ alt="图片"
 &lt;/blockquote&gt;
 &lt;p&gt;论文原文：(&lt;a class="link" href="https://doi.org/10.1038/s41586-025-09430-z" target="_blank" rel="noopener"
 &gt;https://doi.org/10.1038/s41586-025-09430-z&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;本文初稿使用AI协助编写，虽经人工校对，水平有限，请谅解。&lt;/p&gt;</description></item><item><title>极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！</title><link>https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/</link><pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/cover.webp" alt="Featured image of post 极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！" /&gt;&lt;p&gt;在数字化转型加速的今天，网络稳定性与运维效率成为运营商的核心竞争力。中国联通子公司中讯设计，推出全新自研产品—— &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; ，正式在 &lt;strong&gt;智慧供应链科创转化专区&lt;/strong&gt; 上线，助力光缆网络运维迈入智能化新时代！&lt;/p&gt;
+&lt;p&gt;本文初稿使用AI协助编写，虽经人工校对，水平有限，请谅解。&lt;/p&gt;</description></item><item><title>极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！</title><link>http://localhost:1313/p/tech-china-unicom-fiber-smart-operation-system/</link><pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-china-unicom-fiber-smart-operation-system/</guid><description>&lt;img src="http://localhost:1313/p/tech-china-unicom-fiber-smart-operation-system/cover.webp" alt="Featured image of post 极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！" /&gt;&lt;p&gt;在数字化转型加速的今天，网络稳定性与运维效率成为运营商的核心竞争力。中国联通子公司中讯设计，推出全新自研产品—— &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; ，正式在 &lt;strong&gt;智慧供应链科创转化专区&lt;/strong&gt; 上线，助力光缆网络运维迈入智能化新时代！&lt;/p&gt;
 &lt;h2 id="产品概览一眼看懂光缆健康"&gt;产品概览：一眼看懂光缆健康
 &lt;/h2&gt;&lt;p&gt;系统首页集成了 &lt;strong&gt;故障告警分析、光缆健康度评价、故障工单指标、光缆运行全景视图&lt;/strong&gt; 等功能，基于GIS地图与OTDR探测能力，实现 &lt;strong&gt;光缆故障精准定位&lt;/strong&gt; ，让运维人员一目了然，快速响应。&lt;/p&gt;
 &lt;h2 id="软硬一体自主产权性能卓越"&gt;软硬一体：自主产权，性能卓越
@@ -869,7 +869,7 @@ alt="图片"
 loading="lazy"
 alt="图片"
 &gt;&lt;/p&gt;
-&lt;p&gt;中国联通光纤智慧运营管理系统，以 &lt;strong&gt;自主产权、智能运维、高效管理&lt;/strong&gt; 为核心，助力构建更安全、更稳定、更智能的光网络基础设施。 &lt;strong&gt;智慧光网，联通未来！&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>ODF智能运维：机器人自动维护的未来不是梦</title><link>https://blog.fallleaf.net/p/tech-odf-automatic-maintance/</link><pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-odf-automatic-maintance/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/cover.webp" alt="Featured image of post ODF智能运维：机器人自动维护的未来不是梦" /&gt;&lt;p&gt;你是否曾想过，未来光纤配线架的维护会是什么样子？不再需要工程师们亲临现场，手动完成繁琐的接线操作，而是由智能机器人精准、高效地处理一切。这并非科幻场景，而是国际电联（ITU）发布的 ITU-T M.3368 建议书所描绘的未来。&lt;/p&gt;
+&lt;p&gt;中国联通光纤智慧运营管理系统，以 &lt;strong&gt;自主产权、智能运维、高效管理&lt;/strong&gt; 为核心，助力构建更安全、更稳定、更智能的光网络基础设施。 &lt;strong&gt;智慧光网，联通未来！&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>ODF智能运维：机器人自动维护的未来不是梦</title><link>http://localhost:1313/p/tech-odf-automatic-maintance/</link><pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-odf-automatic-maintance/</guid><description>&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/cover.webp" alt="Featured image of post ODF智能运维：机器人自动维护的未来不是梦" /&gt;&lt;p&gt;你是否曾想过，未来光纤配线架的维护会是什么样子？不再需要工程师们亲临现场，手动完成繁琐的接线操作，而是由智能机器人精准、高效地处理一切。这并非科幻场景，而是国际电联（ITU）发布的 ITU-T M.3368 建议书所描绘的未来。&lt;/p&gt;
 &lt;h2 id="核心挑战传统odf维护的困境"&gt;核心挑战：传统ODF维护的困境
 &lt;/h2&gt;&lt;p&gt;ODF是光通信网络中用于端接、连接和分配光缆的关键物理基础设施 。传统上，所有光纤跳接、改接或网络重构都需要维护人员亲临现场手动操作。这种模式不仅耗费大量的人力和时间成本 ，而且在日益密集和复杂的连接环境中，极易发生人为错误，另外，操作后的信息变更，经常缺失，导致光纤的连接信息不准确。因此，建立一套能够远程化、自动化、智能化的维护体系，成为业界迫切的需求。&lt;/p&gt;
 &lt;h2 id="什么是-odf-智能维护"&gt;什么是 ODF 智能维护？
@@ -880,10 +880,10 @@ alt="图片"
 &lt;li&gt;&lt;strong&gt;ODF 智能维护系统 (OSMS)&lt;/strong&gt; ：一个远程软件系统，负责向 SHU 发出维护指令并进行交互，从而实现 ODF 的现场智能维护和 SHU 管理。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这套系统能够显著减少 ODF 现场维护中的手动操作工作量，节省大量的维护成本和时间。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/osms.webp"
 width="1952"
 height="913"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms_hu_bed99e1a31a822e2.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/osms_hu_e44d82be4a540973.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/osms_hu_bed99e1a31a822e2.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/osms_hu_e44d82be4a540973.webp 1024w"
 loading="lazy"
 alt="OSMS"
 class="gallery-image"
@@ -925,10 +925,10 @@ data-flex-basis="513px"
 &lt;/h2&gt;&lt;p&gt;建议书的发布并非空中楼阁，而是产业界多年探索、研发的结晶。如何有效的布放跳纤，避免形成“意大利面现象”（形容细线交织缠绕在一起的状态），是整套系统的难点和关键点。目前收集到的相关研究、产品简介如下：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;2019年由北京邮电大学的杨正、魏世民等学者撰写的论文《Design and implementation of a small AODF》，发表于《The Journal of Engineering》。其核心目标是解决通信网络中光纤配线架（ODF）交叉连接这一尚未自动化的“痛点”，通过设计和实现一个 &lt;strong&gt;小型自动光纤配线架（AODF）原型&lt;/strong&gt; ，来降低运营商的运维成本并提升服务等级。论文的核心创新在于提出了一种新颖的结构模型和交叉连接方法，并成功制造了物理原型进行验证。
-&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-1.webp"
+&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/640-1.webp"
 width="562"
 height="463"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-1_hu_9cab273fce528e7a.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-1_hu_d5c2b260a0c4048e.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/640-1_hu_9cab273fce528e7a.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/640-1_hu_d5c2b260a0c4048e.webp 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"
@@ -945,20 +945,20 @@ data-flex-basis="291px"
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;专利技术：&lt;/strong&gt; AODF 采用了 TeliSwitch 的专利技术，能够在 &lt;strong&gt;5分钟内&lt;/strong&gt; 远程自动完成一次连接变更，极大地提升了效率。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;集成化功能：&lt;/strong&gt; 圆形平台可配备专用模块，直接进行 &lt;strong&gt;OTDR（光时域反射仪）测量&lt;/strong&gt; 。这使得运营商可以在连接前或维护时段，远程检测线路的连通性和质量，确保线路正常。
-&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-2.webp"
+&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/640-2.webp"
 width="1024"
 height="1320"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-2_hu_4e29c4ac734f8d10.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-2_hu_ee636948dd71fe73.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/640-2_hu_4e29c4ac734f8d10.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/640-2_hu_ee636948dd71fe73.webp 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"
 data-flex-grow="77"
 data-flex-basis="186px"
 &gt;
-&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-3.webp"
+&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/640-3.webp"
 width="354"
 height="556"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-3_hu_f0c16bc38aec209f.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-3_hu_7b7c7a6829d1fe4d.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/640-3_hu_f0c16bc38aec209f.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/640-3_hu_7b7c7a6829d1fe4d.webp 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"
@@ -970,17 +970,17 @@ data-flex-basis="152px"
 &lt;/ul&gt;
 &lt;ol start="3"&gt;
 &lt;li&gt;武汉赫尔墨斯的光纤机器人HAI ROBOT，是一款智能机器人光纤物理层交换机，使物理光纤连接变得自动、远程、 快速且无需人工现场干预。提供卓越的光学性能，低插入损耗，对传输协议、波长或者带宽速率透明。 全光网络架构，支持单纤双向，采用可视化的物理连接方式，支持级联构建大规模的智能网络。
-&lt;img src="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-4.webp"
+&lt;img src="http://localhost:1313/p/tech-odf-automatic-maintance/640-4.webp"
 width="599"
 height="442"
-srcset="https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-4_hu_e8a7f025eb20544f.webp 480w, https://blog.fallleaf.net/p/tech-odf-automatic-maintance/640-4_hu_f35d9443844582a.webp 1024w"
+srcset="http://localhost:1313/p/tech-odf-automatic-maintance/640-4_hu_e8a7f025eb20544f.webp 480w, http://localhost:1313/p/tech-odf-automatic-maintance/640-4_hu_f35d9443844582a.webp 1024w"
 loading="lazy"
 alt="图片"
 class="gallery-image"
 data-flex-grow="135"
 data-flex-basis="325px"
 &gt;&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”</title><link>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</link><pubDate>Thu, 04 Sep 2025 10:45:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
+&lt;/ol&gt;</description></item><item><title>【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”</title><link>http://localhost:1313/p/tech-second-brain-with-n8n/</link><pubDate>Thu, 04 Sep 2025 10:45:00 +0800</pubDate><guid>http://localhost:1313/p/tech-second-brain-with-n8n/</guid><description>&lt;img src="http://localhost:1313/p/tech-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎 配套资源 ，获取一键导入的 n8n 配置文件。在导入之前，确保 n8n、ollama 和 Qwen 都正常运行，相关安装方法，见网上教程。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1450,7 +1450,7 @@ data-flex-basis="325px"
 &lt;li&gt;• &lt;strong&gt;5 份示例资料（.txt）&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;示例资料默认存储在&amp;quot;D:\second_brain_demo&amp;quot; 目录下&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;• &lt;strong&gt;由于笔记本算力不足, 语言模型用阿里的免费 Qwen 模型，可以去申请免费 API_KEY&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>【人工智能+】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑</title><link>https://blog.fallleaf.net/p/tech-second-brain-introduce/</link><pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-second-brain-introduce/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-second-brain-introduce/cover.webp" alt="Featured image of post 【人工智能+】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑" /&gt;&lt;h2 id="引子一次典型的战略突袭"&gt;引子：一次典型的“战略突袭”
+&lt;/ul&gt;</description></item><item><title>【人工智能+】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑</title><link>http://localhost:1313/p/tech-second-brain-introduce/</link><pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-second-brain-introduce/</guid><description>&lt;img src="http://localhost:1313/p/tech-second-brain-introduce/cover.webp" alt="Featured image of post 【人工智能+】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑" /&gt;&lt;h2 id="引子一次典型的战略突袭"&gt;引子：一次典型的“战略突袭”
 &lt;/h2&gt;&lt;p&gt;我们通信人，尤其是做网络规划和顶层设计的同事，对下面这个场景一定不陌生：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;周五下午四点半，领导的即时消息弹出，转发了更高层领导聊天记录，内容是“根据三年前集团发布的《XX网络2025-2027年演进白皮书》，结合近一年各省分公司的试点结果和当前行业技术趋势，重新评估并制定下一阶段网络演进的战略路径和部署方案。下周三提交汇报版PPT。”&lt;/strong&gt;&lt;/p&gt;
@@ -1515,7 +1515,7 @@ alt="图片"
 &lt;blockquote&gt;
 &lt;p&gt;作为数字基础设施的构建者，我们比任何人都更懂数据的力量；作为网络技术的创新者，我们理应成为AI技术的最前沿应用者。让我们既做算力的“铺路人”，也做智能的“领航员”，在建设强大算力基础设施的同时，更率先探索其最具价值的应用场景，共同推动通信行业向智能化、高端化迈进。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;这条路，才刚刚开始。但每一个小小的实践，都是通往未来的一步。&lt;/p&gt;</description></item><item><title>5G回传承载网IPv6地址分配方案学习</title><link>https://blog.fallleaf.net/p/tech-5g-backhaul-ipv6-addressing/</link><pubDate>Tue, 08 Aug 2023 21:00:42 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-5g-backhaul-ipv6-addressing/</guid><description>&lt;h3 id="ipv6地址简介"&gt;IPv6地址简介
+&lt;p&gt;这条路，才刚刚开始。但每一个小小的实践，都是通往未来的一步。&lt;/p&gt;</description></item><item><title>5G回传承载网IPv6地址分配方案学习</title><link>http://localhost:1313/p/tech-5g-backhaul-ipv6-addressing/</link><pubDate>Tue, 08 Aug 2023 21:00:42 +0800</pubDate><guid>http://localhost:1313/p/tech-5g-backhaul-ipv6-addressing/</guid><description>&lt;h3 id="ipv6地址简介"&gt;IPv6地址简介
 &lt;/h3&gt;&lt;p&gt;IPv6地址采用共128二进制地址长度，分成8段，每16位1段，每段用4位16进制表示，分段间用“：”隔开。可采用压缩格式表示，即每段前导0可以删除，连续的“0”分段可以用“::”表示（只能出现一次）。&lt;/p&gt;
 &lt;p&gt;下面是二进制形式的IPv6地址：&lt;/p&gt;
 &lt;p&gt;0010000000000001 0000110110111000 0000000000000000 0010111100111011 0000001010101010 0000000011111111 1111111000101000 1001110001011010&lt;/p&gt;
@@ -1619,7 +1619,7 @@ alt="图片"
 &lt;li&gt;业务loopback地址，以/128前缀长度分配地址，&lt;/li&gt;
 &lt;li&gt;网络侧设备端口互联地址，以/127前缀长度分配地址，互联接口两端网络业务loopback地址小的取值/127中的0，网络业务loopback地址大的取值/127中的1，&lt;/li&gt;
 &lt;li&gt;业务接入设备端口互联地址，按业务接入设备的IPv6地址规划，以/127前缀长度分配地址，互联接口两端网络业务loopback地址小的取值/127中的0，网络业务loopback地址大的取值/127中的1。&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>ZEROTIER内网穿透实践</title><link>https://blog.fallleaf.net/p/tech-zerotier-nat-traversal-practice/</link><pubDate>Wed, 30 Dec 2020 20:59:15 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-zerotier-nat-traversal-practice/</guid><description>&lt;p&gt;内网和外网计算机组成一个局域网，相互能访问，并能访问内网资源。&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>ZEROTIER内网穿透实践</title><link>http://localhost:1313/p/tech-zerotier-nat-traversal-practice/</link><pubDate>Wed, 30 Dec 2020 20:59:15 +0800</pubDate><guid>http://localhost:1313/p/tech-zerotier-nat-traversal-practice/</guid><description>&lt;p&gt;内网和外网计算机组成一个局域网，相互能访问，并能访问内网资源。&lt;/p&gt;
 &lt;h3 id="应用环境"&gt;应用环境
 &lt;/h3&gt;&lt;p&gt;公司内网：一台运行linux的NAS,一台win10笔记本电脑&lt;/p&gt;
 &lt;p&gt;外网：linux的VPS&lt;/p&gt;
@@ -1635,7 +1635,7 @@ iptables -t nat -A POSTROUTING -o enp123s0f0(物理网卡) -j MASQUERADE
 iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 iptables -A FORWARD -i zt7u3fcxwr(zerotier虚拟网卡) -o enp123s0f0(物理网卡) -j ACCEPT
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;如果访问内网资源需要用内部域名，需对访问设备的虚拟卡配置dns地址&lt;/p&gt;</description></item><item><title>DDM,DOM是什么</title><link>https://blog.fallleaf.net/p/tech-what-is-ddm-dom/</link><pubDate>Sat, 14 Dec 2019 21:35:45 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-what-is-ddm-dom/</guid><description>&lt;h2 id="ddm的定义"&gt;DDM的定义
+&lt;p&gt;如果访问内网资源需要用内部域名，需对访问设备的虚拟卡配置dns地址&lt;/p&gt;</description></item><item><title>DDM,DOM是什么</title><link>http://localhost:1313/p/tech-what-is-ddm-dom/</link><pubDate>Sat, 14 Dec 2019 21:35:45 +0800</pubDate><guid>http://localhost:1313/p/tech-what-is-ddm-dom/</guid><description>&lt;h2 id="ddm的定义"&gt;DDM的定义
 &lt;/h2&gt;&lt;p&gt;DDM(Digital Diagnostic Monitoring)即数字诊断监控，由SFF-8472定义。&lt;/p&gt;
 &lt;p&gt;SFF-8472(Specification for Management Interface for SFP+)是一个关于SFP管理接口的规范，由行业组织存储网络工业协会 (SNIA)下的SFF(Small Form Factor)技术工作组制定。这种协议最初是为了给便携式电脑定义新型磁盘驱动器的外形而成立的，第一个版本是在2001年发布，最新的版本是2018年7月发布的Rev.12.3。&lt;/p&gt;
 &lt;p&gt;制定SFF-8472规范的一个主要目的是定义光模块的数字诊断监控功能（DDM），它是应用在GBIC/SFP/SFP+光模块中一项功能，用来监控光模块工作中的实时参数，如工作电压、工作电流、激光器偏置电流、激光器发光功率和收光功率，这些信息被存储在标准的内存结构中，并提供了标准访问接口地址，该内存结构除了提供参数监测信息外，还定义了报警标志或告警条件。&lt;/p&gt;
@@ -1668,12 +1668,12 @@ iptables -A FORWARD -i zt7u3fcxwr(zerotier虚拟网卡) -o enp123s0f0(物理网�
 &lt;li&gt;故障定位：在光通信系统中，精准地找到故障点具有重要意义。通过分析收发功率以及i电压电流可以进行故障定位。&lt;/li&gt;
 &lt;li&gt;兼容性测试：兼容性测试即检测光模块是否可以在某一网络设备上正常使用，而光模块不兼容的常见情况有电压超过光模块的规格、温度超过光模块的规格、接收到的光功率过载或低于光接收器的的接收范围等。而使用具有数字诊断监控功能（DDM）的光模块能直观的反映这些不兼容情况。&lt;/li&gt;
 &lt;li&gt;监测光纤性能：通过对接收功率以及发送功率的分析，辅助光纤长度等信息，可大致判断光路的衰减是否在正常范围内。&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>SFP模块的兼容性</title><link>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</link><pubDate>Sat, 14 Dec 2019 21:31:51 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</guid><description>&lt;h2 id="sfp光模块的生产"&gt;SFP光模块的生产
+&lt;/ul&gt;</description></item><item><title>SFP模块的兼容性</title><link>http://localhost:1313/p/tech-compatibility-sfp-module/</link><pubDate>Sat, 14 Dec 2019 21:31:51 +0800</pubDate><guid>http://localhost:1313/p/tech-compatibility-sfp-module/</guid><description>&lt;h2 id="sfp光模块的生产"&gt;SFP光模块的生产
 &lt;/h2&gt;&lt;p&gt;SFP光模块的组成如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-compatibility-sfp-module/sfp.webp"
 width="1080"
 height="724"
-srcset="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_2c8d41280072178b.webp 480w, https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_8cd4b58aecbc64e5.webp 1024w"
+srcset="http://localhost:1313/p/tech-compatibility-sfp-module/sfp_hu_2c8d41280072178b.webp 480w, http://localhost:1313/p/tech-compatibility-sfp-module/sfp_hu_8cd4b58aecbc64e5.webp 1024w"
 loading="lazy"
 alt="SFP光模块"
 class="gallery-image"
@@ -1721,7 +1721,7 @@ data-flex-basis="358px"
 &lt;li&gt;
 &lt;p&gt;模块的零部件来源是否是可信任&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>5G承载中回传新接口:50GE</title><link>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</link><pubDate>Fri, 13 Dec 2019 08:49:28 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</guid><description>&lt;p&gt;在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>5G承载中回传新接口:50GE</title><link>http://localhost:1313/p/tech-50ge-interface-5g-backhaul/</link><pubDate>Fri, 13 Dec 2019 08:49:28 +0800</pubDate><guid>http://localhost:1313/p/tech-50ge-interface-5g-backhaul/</guid><description>&lt;p&gt;在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。&lt;/p&gt;
 &lt;h2 id="50g相关以太网光接口标准"&gt;50G相关以太网光接口标准
 &lt;/h2&gt;&lt;p&gt;IEEE的两个标准：IEEE 802.3 bs(400G，200G) 和802.3 cd（200G，100G，50G） 定义了50G，100G，200G，400G以太网的媒体访问控制层（MAC）以及物理层（PHY）的相关参数。主要的光接口类型以及采用的调制格式如下表：&lt;/p&gt;
 &lt;p&gt;可以看到，在实现50G以上的高速以太网接口时，主要采用了50G比特速率（波特26.6GBaud），PAM4调制方式。&lt;/p&gt;
@@ -1777,11 +1777,11 @@ data-flex-basis="358px"
 &lt;p&gt;50GE在5G回传接入层的应用，主要取决于接入层流量预测以及50GE光收发器的价格。&lt;/p&gt;
 &lt;p&gt;据测算，目前4G基站单站平均流速大概0.08Gb/s，结合目前运营商的建设指导意见，一个接入环大概带4个BBU集中点，一个BBU集中点大约带10个左右的基站，若按5G基站平均流速是4G的10倍计算，则一个环的总流速大概为0.08×10×4×10=32Gb/s，这种情况下采用50GE是比较合适的，但考虑初期50GE成本问题，建设初期可采用10GE建设，随着流量增加进行10GE捆绑方式扩容（实际上，也可考虑采用前传采用的25GE速率）。假若50GE的价格能够达到10GE价格的2-3倍时（这一点在数通的报价体系内估计很难达到），或100GE的1/3以下时，采用50GE是一个优选的方案，可以达到TCO的最优。n×10GE捆绑方式，除了考虑光模块的价格，还要把维护量的增加、数据配置的复杂、对光纤的占用都纳入TCO的评估中。据相关资料，现有4G回传接入层有30%-44%采用的40km10G光模块，因此50GE 40km光模块的价格对其应用也是至关重要的。&lt;/p&gt;
 &lt;p&gt;126.6GBaud实为26.5625GBaud，在使用PAM4调制时，采用前向纠错编码RS-FEC（544，514）以及线路编码256b257b将25G变为26.5625G，25G×（544÷514）×（257÷256）＝26.5625G。&lt;/p&gt;
-&lt;p&gt;225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。&lt;/p&gt;</description></item><item><title>无源波分前传分场景解决方案</title><link>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</link><pubDate>Sat, 12 Oct 2019 13:15:13 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</guid><description>&lt;p&gt;ITU-T G.694.2规范在1270~1610nm范围内，建议了波长间隔为20nm的18个可用波长，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands.webp"
+&lt;p&gt;225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。&lt;/p&gt;</description></item><item><title>无源波分前传分场景解决方案</title><link>http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/</link><pubDate>Sat, 12 Oct 2019 13:15:13 +0800</pubDate><guid>http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/</guid><description>&lt;p&gt;ITU-T G.694.2规范在1270~1610nm范围内，建议了波长间隔为20nm的18个可用波长，如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands.webp"
 width="644"
 height="381"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_28170b3aaa1787e.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_4a25cc7c4348340e.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_28170b3aaa1787e.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_4a25cc7c4348340e.webp 1024w"
 loading="lazy"
 alt="波长间隔"
 class="gallery-image"
@@ -1794,10 +1794,10 @@ data-flex-basis="405px"
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;6波25G方案
-&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm.webp"
+&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm.webp"
 width="635"
 height="216"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_1eac7a1d8ecdc4fc.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_d3a58e77b4bbbe84.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_1eac7a1d8ecdc4fc.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_d3a58e77b4bbbe84.webp 1024w"
 loading="lazy"
 alt="6波25G方案"
 class="gallery-image"
@@ -1809,10 +1809,10 @@ data-flex-basis="705px"
 &lt;p&gt;12波方案（6波10G+6波25G）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm.webp"
 width="728"
 height="380"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_c2be703ac0e630af.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_88d8b9ac41a280c3.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_c2be703ac0e630af.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_88d8b9ac41a280c3.webp 1024w"
 loading="lazy"
 alt="12波方案"
 class="gallery-image"
@@ -1831,10 +1831,10 @@ data-flex-basis="459px"
 &lt;p&gt;配置：无源6波合分波器×2+25G彩光模块×6&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario1.webp"
 width="730"
 height="283"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_4ec819fdbb2c1fd1.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_733365c90d7359d3.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_4ec819fdbb2c1fd1.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_733365c90d7359d3.webp 1024w"
 loading="lazy"
 alt="场景1"
 class="gallery-image"
@@ -1850,10 +1850,10 @@ data-flex-basis="619px"
 &lt;p&gt;配置：无源6波合分波器×2+25G彩光模块×6&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario2.webp"
 width="1163"
 height="441"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_755ae6e485dc7c02.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_5817772904b08928.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_755ae6e485dc7c02.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_5817772904b08928.webp 1024w"
 loading="lazy"
 alt="场景2"
 class="gallery-image"
@@ -1869,7 +1869,7 @@ data-flex-basis="632px"
 &lt;p&gt;配置：无源6波合分波器×2+10G彩光模块×6（比场景2成本低一些，但需割接4G基站）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/scenario3"
+&lt;p&gt;&lt;img src="http://localhost:1313/scenario3"
 loading="lazy"
 alt="场景3"
 &gt;3.webp)&lt;/p&gt;
@@ -1882,10 +1882,10 @@ alt="场景3"
 &lt;p&gt;配置：无源6波合分波器×4+10G彩光模块×6+25G彩光模块×6&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario4.webp"
 width="1163"
 height="441"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_abc6da58c1bb05f1.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_93f8ab8a1b57b6a4.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_abc6da58c1bb05f1.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_93f8ab8a1b57b6a4.webp 1024w"
 loading="lazy"
 alt="场景4"
 class="gallery-image"
@@ -1901,10 +1901,10 @@ data-flex-basis="632px"
 &lt;p&gt;配置：无源12波合分波器×2+10G彩光模块×6+25G彩光模块×6&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario5.webp"
 width="1163"
 height="441"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_71e132c9f426b9c5.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_f69c97395513119c.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_71e132c9f426b9c5.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_f69c97395513119c.webp 1024w"
 loading="lazy"
 alt="场景5"
 class="gallery-image"
@@ -1923,10 +1923,10 @@ data-flex-basis="632px"
 &lt;p&gt;&lt;b&gt;假设每个AAU需要2个25G接口&lt;/b&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario6.webp"
 width="1163"
 height="395"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_df0bbef6f0b2bece.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_eef47a142fe6a3cf.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_df0bbef6f0b2bece.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_eef47a142fe6a3cf.webp 1024w"
 loading="lazy"
 alt="场景6"
 class="gallery-image"
@@ -1936,10 +1936,10 @@ data-flex-basis="706px"
 &lt;p&gt;还有其他组合方式，就不一一列举了。总之，采用无源波分，主要目的就是腾退已占用纤芯和减少纤芯占用，对于4G前传RRU采用级联的情况，采用无源波分主要是减少5G前传纤芯占用。&lt;/p&gt;
 &lt;p&gt;根据上海移动5G无源波分的招标公告以及中标公示，6波25G无源波分限价4000元/套（不含税），平均中标折扣率为70.18%，12波25G无源波分限价10600元/套（不含税），平均中标折扣率为79%。&lt;/p&gt;
 &lt;p&gt;上海移动招标的是10公里光模块，最大线路损耗为11dB，也就是在11dB这个范围内，采用无源波分的成本是固定的，而新建光缆或使用光纤的成本和距离成正比关系，有一个成本交叉的临界点，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/linjiedian.webp"
 width="327"
 height="214"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_4d0d317349b61d58.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_fb366ef6224960d6.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_4d0d317349b61d58.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_fb366ef6224960d6.webp 1024w"
 loading="lazy"
 alt="成本变化"
 class="gallery-image"
@@ -1948,17 +1948,17 @@ data-flex-basis="366px"
 &gt;&lt;/p&gt;
 &lt;p&gt;各本地网可以根据自己的情况进行测算，测算时应同时考虑主干与配线的综合成本，确定无源波分应用的最佳场景。&lt;/p&gt;
 &lt;p&gt;有关材料显示近三年各运营商无源波分招标规模如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/tongji.webp"
 width="555"
 height="286"
-srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_66861a1ccc17955f.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_b193d2880aa3d1.webp 1024w"
+srcset="http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_66861a1ccc17955f.webp 480w, http://localhost:1313/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_b193d2880aa3d1.webp 1024w"
 loading="lazy"
 alt="招标规模"
 class="gallery-image"
 data-flex-grow="194"
 data-flex-basis="465px"
 &gt;&lt;/p&gt;
-&lt;p&gt;在现有的采购模式下，5G基站设备的采购和无源波分的采购是两个独立的项目，但都含有前传光模块的采购内容。如果前传采用无源波分方案，那么5G基站设备采购的光模块就重复了，带来资金的浪费，建议统一由一个项目来采购前传的光模块及CWDM合分波模块，降低整体的5G建设成本。&lt;/p&gt;</description></item><item><title>V2ray的WebSocket+TLS+Web安装记录</title><link>https://blog.fallleaf.net/p/tech-v2ray-websocket-tls-web-installation/</link><pubDate>Sat, 28 Sep 2019 15:41:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-v2ray-websocket-tls-web-installation/</guid><description>&lt;p&gt;一些vpn或代理的特征比较明显容易被识别，虽然是加密的，看不到内容，但知道是vpn，容易被block，采用websoket+tls+web，虽然也是加密的，但和正常web访问类似，不易被block。&lt;/p&gt;
+&lt;p&gt;在现有的采购模式下，5G基站设备的采购和无源波分的采购是两个独立的项目，但都含有前传光模块的采购内容。如果前传采用无源波分方案，那么5G基站设备采购的光模块就重复了，带来资金的浪费，建议统一由一个项目来采购前传的光模块及CWDM合分波模块，降低整体的5G建设成本。&lt;/p&gt;</description></item><item><title>V2ray的WebSocket+TLS+Web安装记录</title><link>http://localhost:1313/p/tech-v2ray-websocket-tls-web-installation/</link><pubDate>Sat, 28 Sep 2019 15:41:27 +0800</pubDate><guid>http://localhost:1313/p/tech-v2ray-websocket-tls-web-installation/</guid><description>&lt;p&gt;一些vpn或代理的特征比较明显容易被识别，虽然是加密的，看不到内容，但知道是vpn，容易被block，采用websoket+tls+web，虽然也是加密的，但和正常web访问类似，不易被block。&lt;/p&gt;
 &lt;p&gt;整个过程比较简单，前提是要有一个墙外的VPS。&lt;/p&gt;
 &lt;h2 id="1-vps安装v2ray服务端"&gt;1. vps安装v2ray（服务端）
 &lt;/h2&gt;&lt;p&gt;root权限下执行：&lt;/p&gt;
@@ -2176,17 +2176,17 @@ service v2ray restart&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id="8-上网"&gt;8. 上网
-&lt;/h2&gt;&lt;p&gt;启动客户端v2ray，上网设置为socks，地址127.0.0.1，端口1080&lt;/p&gt;</description></item><item><title>Wireguard的分流方法</title><link>https://blog.fallleaf.net/p/tech-wireguard-split-tunneling/</link><pubDate>Sat, 07 Sep 2019 15:45:22 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-wireguard-split-tunneling/</guid><description>&lt;p&gt;Wireguard开启后，由于默认采用的全局路由，所有流量都通过Wireguard隧道，造成不必要的流量浪费，有必要进行流量分流。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;启动客户端v2ray，上网设置为socks，地址127.0.0.1，端口1080&lt;/p&gt;</description></item><item><title>Wireguard的分流方法</title><link>http://localhost:1313/p/tech-wireguard-split-tunneling/</link><pubDate>Sat, 07 Sep 2019 15:45:22 +0800</pubDate><guid>http://localhost:1313/p/tech-wireguard-split-tunneling/</guid><description>&lt;p&gt;Wireguard开启后，由于默认采用的全局路由，所有流量都通过Wireguard隧道，造成不必要的流量浪费，有必要进行流量分流。&lt;/p&gt;
 &lt;p&gt;分流的一种方法主要利用路由方式，让特定的IP包转发到Wireguard隧道中，可参见这篇：WireGuard —— Windows 客户端国内外IP分流教程。这种方式是将国内地址段以路由方式不走隧道，但需要不时维护国内地址段，同时一些常规状态下能访问的国外IP地址也走了隧道。&lt;/p&gt;
 &lt;p&gt;用Wireguard，主要就是要科学上网，不能直接访问的毕竟是少数，因此就有了另外一种方式，见这一篇：wireguard+ss/v2ray/brook等实现域名分流。方法是先利用Wireguard建立隧道，再开启Brook等服务，然后利用Wireguard的AllowIPs功能，限定Brook通过隧道建立连接，利用SwitchOmega等代理插件的PAC列表，实现域名分流。&lt;/p&gt;
-&lt;p&gt;在Win10和Linuxmint设置了一下，效果不错。手机上因为Wireguard可以设置某些App通过Wireguard，也就不用考虑了。&lt;/p&gt;</description></item><item><title>25G单纤双向收发合一光模块</title><link>https://blog.fallleaf.net/p/tech-25g-bidi-module/</link><pubDate>Sat, 03 Aug 2019 13:34:59 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-25g-bidi-module/</guid><description>&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
+&lt;p&gt;在Win10和Linuxmint设置了一下，效果不错。手机上因为Wireguard可以设置某些App通过Wireguard，也就不用考虑了。&lt;/p&gt;</description></item><item><title>25G单纤双向收发合一光模块</title><link>http://localhost:1313/p/tech-25g-bidi-module/</link><pubDate>Sat, 03 Aug 2019 13:34:59 +0800</pubDate><guid>http://localhost:1313/p/tech-25g-bidi-module/</guid><description>&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
 &lt;p&gt;2016年5月IEEE通过了802.3by-2016规范，定义了25Gb/s应用媒质接入控制参数、物理层要求，2017年12月通过了802.3cc-2017标准以太网修正：物理层和管理参数，用于通过单模光纤实现串行25 Gbps以太网，2018年10月通过PAR，开展制定10Gb/s，25Gb/s，50Gb/s单纤双向物理层规范，项目号为P802.3cp。中国于2018年6月开始制定用于基站的25Gb/s单纤双向光收发合一模块技术规范，2018年11月发出征求意见稿，预计2019年完成标准制定工作。&lt;/p&gt;
 &lt;p&gt;单纤双向方式可以节省50%的纤芯资源，大大节省了光缆线路的投资，同时由于上下行等距可有效保证高精度时间同步，因此，是5G前传的一种主要模式。&lt;/p&gt;
 &lt;p&gt;下图是optech发布的一款25G单纤双向光模块，采用SFP28封装方式：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-25g-bidi-module/25g-bidi-txrx.webp"
 width="747"
 height="440"
-srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_a6f1cbd30437b995.webp 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_eac0f67620db50ab.webp 1024w"
+srcset="http://localhost:1313/p/tech-25g-bidi-module/25g-bidi-txrx_hu_a6f1cbd30437b995.webp 480w, http://localhost:1313/p/tech-25g-bidi-module/25g-bidi-txrx_hu_eac0f67620db50ab.webp 1024w"
 loading="lazy"
 alt="光模块"
 class="gallery-image"
@@ -2194,10 +2194,10 @@ data-flex-grow="169"
 data-flex-basis="407px"
 &gt;&lt;/p&gt;
 &lt;p&gt;下图是25G单纤双向光模块的原理图：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver.webp"
 width="943"
 height="365"
-srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_4e153485a631ccbc.webp 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_7d33a44214ee0c35.webp 1024w"
+srcset="http://localhost:1313/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_4e153485a631ccbc.webp 480w, http://localhost:1313/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_7d33a44214ee0c35.webp 1024w"
 loading="lazy"
 alt="原理框图"
 class="gallery-image"
@@ -2262,16 +2262,16 @@ data-flex-basis="620px"
 &lt;li&gt;15km模块最大线路衰减：&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;$$P_o−S_i−E=6.0−2.7−(−13)=17.4dB$$&lt;/p&gt;
-&lt;p&gt;即当光缆线路端到端衰减大于14.4dB时，应选用15km单纤双向光模块。&lt;/p&gt;</description></item><item><title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title><link>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</guid><description>&lt;h2 id="什么是斜线图"&gt;什么是斜线图
+&lt;p&gt;即当光缆线路端到端衰减大于14.4dB时，应选用15km单纤双向光模块。&lt;/p&gt;</description></item><item><title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title><link>http://localhost:1313/p/tech-slopegraph-comparing-change-structure/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-slopegraph-comparing-change-structure/</guid><description>&lt;h2 id="什么是斜线图"&gt;什么是斜线图
 &lt;/h2&gt;&lt;p&gt;斜线图（Slopegraph）是一种用于展示同一组观测对象在两个固定状态之间变化关系的数据可视化形式。
 这两个状态可以是不同时间（如今年与去年、事件前后），也可以是不同维度（如总体与子群体），其度量可以是排名、比例或数值。&lt;/p&gt;
 &lt;p&gt;从表现形式上看，斜线图属于折线图的一个特例，但其设计目标并不是描绘连续变化过程，而是强调两个状态之间的相对变化结构。因此，无论是 Excel、Tableau 还是 R，只要支持折线图的工具都可以绘制斜线图。&lt;/p&gt;
 &lt;p&gt;Edward Tufte 在 1983 年出版的《The Visual Display of Quantitative Information》中首次系统性讨论了这种表达方式，并在 2011 年 6 月 1 日的论坛中正式将其命名为 slopegraph。早期应用并不广泛，但随着数据新闻和分析型可视化的发展，斜线图近年来逐渐成为常用工具。&lt;/p&gt;
 &lt;p&gt;下面是几个典型的斜线图示例。
-&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott.webp"
+&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott.webp"
 width="1080"
 height="965"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_a3e4ab5f789f691d.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_59b7c3e89008846a.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_a3e4ab5f789f691d.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_59b7c3e89008846a.webp 1024w"
 loading="lazy"
 alt="FT图例"
 class="gallery-image"
@@ -2279,10 +2279,10 @@ data-flex-grow="111"
 data-flex-basis="268px"
 &gt;&lt;/p&gt;
 &lt;p&gt;这是《Financial Times》绘制的一个斜线图，用于展示中国消费者对美国品牌商品抵制态度的变化情况。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_time.webp"
 width="404"
 height="634"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_20e05bf5a266a1df.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_264cc8b81c03f11f.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_20e05bf5a266a1df.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_264cc8b81c03f11f.webp 1024w"
 loading="lazy"
 alt="网易图例"
 class="gallery-image"
@@ -2290,10 +2290,10 @@ data-flex-grow="63"
 data-flex-basis="152px"
 &gt;&lt;/p&gt;
 &lt;p&gt;这张图来自网易，X 轴为 1990 年和 2017 年两个时间点，Y 轴为慢性病伤残调整寿命年（DALY）的排名。通过斜线的交叉和排序变化，可以直观看出哪些慢性病在这 27 年间上升为主要死因，以及不同病种之间地位的变化。这种跨时间跨度较大的对比，正是斜线图&lt;strong&gt;最典型&lt;/strong&gt;的应用场景。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_group.webp"
 width="376"
 height="443"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_dd48f3d75baea9b2.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_64d89214951880a0.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_dd48f3d75baea9b2.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_64d89214951880a0.webp 1024w"
 loading="lazy"
 alt="Employee Feedback"
 class="gallery-image"
@@ -2309,10 +2309,10 @@ data-flex-basis="203px"
 &lt;p&gt;即：斜线图用于比较&lt;strong&gt;一组可排序或可度量对象在不同状态之间的变化&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;因此，在原本会使用柱状图或折线图进行“两点对比”的场景中，斜线图往往是更高效的表达方式。例如，以下是用柱状图表示四家公司 2018 年和 2019 年收入的情况。
 柱状图表示：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar1-1.webp"
 width="960"
 height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_4220d2c8b959ef73.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_d7f2463eaa4adb43.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_4220d2c8b959ef73.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_d7f2463eaa4adb43.webp 1024w"
 loading="lazy"
 alt="柱状图示例"
 class="gallery-image"
@@ -2320,10 +2320,10 @@ data-flex-grow="100"
 data-flex-basis="240px"
 &gt;&lt;/p&gt;
 &lt;p&gt;或者：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar2-1.webp"
 width="960"
 height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_39414b2dd2fbf857.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_8fb406bedf84b6d0.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_39414b2dd2fbf857.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_8fb406bedf84b6d0.webp 1024w"
 loading="lazy"
 alt="另一种柱状图示例"
 class="gallery-image"
@@ -2331,10 +2331,10 @@ data-flex-grow="100"
 data-flex-basis="240px"
 &gt;&lt;/p&gt;
 &lt;p&gt;用斜线图表示，如下&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph-1.webp"
 width="1344"
 height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_2412b24114d9707.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_fb2506ae2fd5ba04.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_2412b24114d9707.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_fb2506ae2fd5ba04.webp 1024w"
 loading="lazy"
 alt="斜线图示例"
 class="gallery-image"
@@ -2534,16 +2534,16 @@ data-flex-basis="336px"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; )
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/demo-1.png"
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://localhost:1313/demo-1.png"
 loading="lazy"
 alt="斜线图"
 &gt;&lt;/p&gt;
 &lt;p&gt;一般而言，斜线图最适合用于比较两个时间点或两个分组的数据，也可以扩展到三至四个时间点，但不宜过多，否则应改用传统折线图。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/chinaunicom-1.png"
+&lt;p&gt;&lt;img src="http://localhost:1313/chinaunicom-1.png"
 loading="lazy"
 alt="中国联通"
 &gt;&lt;/p&gt;
-&lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;</description></item><item><title>色子肖像--Python程序</title><link>https://blog.fallleaf.net/p/tech-dice-portrait-python/</link><pubDate>Thu, 28 Dec 2017 15:49:14 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-dice-portrait-python/</guid><description>&lt;p&gt;上一篇色子肖像介绍了把图像变成色子点阵图的基本思路，用python语言采用PIL库写了一个程序，后来发现opencv更加简便合适，就采用numpy以及opencv库，进行了优化。
+&lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;</description></item><item><title>色子肖像--Python程序</title><link>http://localhost:1313/p/tech-dice-portrait-python/</link><pubDate>Thu, 28 Dec 2017 15:49:14 +0800</pubDate><guid>http://localhost:1313/p/tech-dice-portrait-python/</guid><description>&lt;p&gt;上一篇色子肖像介绍了把图像变成色子点阵图的基本思路，用python语言采用PIL库写了一个程序，后来发现opencv更加简便合适，就采用numpy以及opencv库，进行了优化。
 这是我第一次开始用python语言编写稍微复杂些的程序。对于有一定编程经验的人，采用实现一个功能的方式编程能够很快熟悉该语言，是一种很好的学习方式。&lt;/p&gt;
 &lt;p&gt;以下是我编写的程序以及简单的注释。&lt;/p&gt;
 &lt;p&gt;由于要对图像进行数值处理，所以采用opencv以及numpy库。首先是加载库，datetime是用于计算程序运行时间，os是用于获得文件路径，sys是用于获得命令行参数，cv2是opencv库，numpy是python的数组库。&lt;/p&gt;
@@ -2906,11 +2906,11 @@ alt="中国联通"
 &lt;p&gt;程序放到了GitHub上，也可以直接用&lt;/p&gt;
 &lt;p&gt;git clone &lt;a class="link" href="https://github.com/fallleaf/dice_portrait.git" target="_blank" rel="noopener"
 &gt;https://github.com/fallleaf/dice_portrait.git&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;图框和色子都准备好了，这将是18年的第一个项目。&lt;/p&gt;</description></item><item><title>色子肖像</title><link>https://blog.fallleaf.net/p/tech-dice-portrait/</link><pubDate>Tue, 12 Dec 2017 10:02:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-dice-portrait/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_small.png" alt="Featured image of post 色子肖像" /&gt;&lt;p&gt;2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/caroline_portrait.png"
+&lt;p&gt;图框和色子都准备好了，这将是18年的第一个项目。&lt;/p&gt;</description></item><item><title>色子肖像</title><link>http://localhost:1313/p/tech-dice-portrait/</link><pubDate>Tue, 12 Dec 2017 10:02:27 +0800</pubDate><guid>http://localhost:1313/p/tech-dice-portrait/</guid><description>&lt;img src="http://localhost:1313/p/tech-dice-portrait/cecilia_small.png" alt="Featured image of post 色子肖像" /&gt;&lt;p&gt;2008年Scott MacDonald发表了一篇Blog，用骰子为她制作一副肖像画,他把一幅肖像画量化成不同点数的色子，用色子摆放成了一幅肖像画。如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-dice-portrait/caroline_portrait.png"
 width="512"
 height="273"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/caroline_portrait_hu_c2c495ea3cda6d25.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/caroline_portrait_hu_f70e9b7b7c26cbf2.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/caroline_portrait_hu_c2c495ea3cda6d25.png 480w, http://localhost:1313/p/tech-dice-portrait/caroline_portrait_hu_f70e9b7b7c26cbf2.png 1024w"
 loading="lazy"
 alt="caroline_portrait"
 class="gallery-image"
@@ -2918,10 +2918,10 @@ data-flex-grow="187"
 data-flex-basis="450px"
 &gt;&lt;/p&gt;
 &lt;p&gt;他用了2560（40x60）个16mm的色子，制作了一个64cmx96cm的色子肖像，如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/caroline.jpg"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-dice-portrait/caroline.jpg"
 width="529"
 height="542"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/caroline_hu_fbdcc507a223342c.jpg 480w, https://blog.fallleaf.net/p/tech-dice-portrait/caroline_hu_4ade5e8f384b2656.jpg 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/caroline_hu_fbdcc507a223342c.jpg 480w, http://localhost:1313/p/tech-dice-portrait/caroline_hu_4ade5e8f384b2656.jpg 1024w"
 loading="lazy"
 alt="caroline"
 class="gallery-image"
@@ -2932,10 +2932,10 @@ data-flex-basis="234px"
 &lt;p&gt;思路是先对图像进行灰度处理，然后把图片分割成16x16像素的单元图块，再对图块中256个点的灰度取平均值，对平均值分组用1-6数值代替。色度值范围0-255，亮度从深到浅，颜色从黑到白。数值1-6对应色子的点数，对于黑底白点的色子，色度值和点数正比例关系，对于白底黑点的色子，色度值和点数反比例关系。最后按色子点数做出图。&lt;/p&gt;
 &lt;p&gt;我用了三种16x16的图块，如下：&lt;/p&gt;
 &lt;p&gt;灰度色块：
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/graydice.png"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/graydice.png"
 width="96"
 height="16"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/graydice_hu_2a8cd17567e55e06.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/graydice_hu_9af2030d95ba904e.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/graydice_hu_2a8cd17567e55e06.png 480w, http://localhost:1313/p/tech-dice-portrait/graydice_hu_9af2030d95ba904e.png 1024w"
 loading="lazy"
 alt="graydice"
 class="gallery-image"
@@ -2943,10 +2943,10 @@ data-flex-grow="600"
 data-flex-basis="1440px"
 &gt;&lt;/p&gt;
 &lt;p&gt;黑底白点色子：
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/blackdice.png"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/blackdice.png"
 width="96"
 height="16"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/blackdice_hu_1630946f4df10da0.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/blackdice_hu_126e36a88e9ee30.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/blackdice_hu_1630946f4df10da0.png 480w, http://localhost:1313/p/tech-dice-portrait/blackdice_hu_126e36a88e9ee30.png 1024w"
 loading="lazy"
 alt="blackdice"
 class="gallery-image"
@@ -2954,10 +2954,10 @@ data-flex-grow="600"
 data-flex-basis="1440px"
 &gt;&lt;/p&gt;
 &lt;p&gt;白底黑点色子：
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/whitedice.png"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/whitedice.png"
 width="96"
 height="16"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/whitedice_hu_6797ae34ca853fb0.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/whitedice_hu_a220206ef32465ae.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/whitedice_hu_6797ae34ca853fb0.png 480w, http://localhost:1313/p/tech-dice-portrait/whitedice_hu_a220206ef32465ae.png 1024w"
 loading="lazy"
 alt="whitedice"
 class="gallery-image"
@@ -3030,10 +3030,10 @@ f.write(&amp;rsquo;\n&amp;rsquo;)
 f.close()&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;按以上方法生成了三种处理后的图片，第一个是原图，第二个是灰度色块，第三个是黑底白点，第四个是白底黑点。如下图：
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_small.png"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/cecilia_small.png"
 width="1120"
 height="1584"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_small_hu_542dd8651340c7dd.png 480w, https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_small_hu_e475395d559590d0.png 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/cecilia_small_hu_542dd8651340c7dd.png 480w, http://localhost:1313/p/tech-dice-portrait/cecilia_small_hu_e475395d559590d0.png 1024w"
 loading="lazy"
 alt="cecilia"
 class="gallery-image"
@@ -3041,30 +3041,30 @@ data-flex-grow="70"
 data-flex-basis="169px"
 &gt;&lt;/p&gt;
 &lt;p&gt;所用原始图片的大小为1120x1584，一共生成色子数量为70x99=6930块,若用8mm的色子制作，大小为56cmx79.2cm。 亚洲人的面部没有欧洲人立体感强，选择照片时需挑选立体感强，色差比较鲜明的图片，这样，分辨率可以低一些，色子的数量可以减少一些。另外，1-6的分组值也需要进一步优化。下图是分辨率变化的情况。
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliag_gif.gif"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/ceciliag_gif.gif"
 width="280"
 height="396"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliag_gif_hu_5e4c2dfb41ced0d2.gif 480w, https://blog.fallleaf.net/p/tech-dice-portrait/ceciliag_gif_hu_8bfeb71e387b1d48.gif 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/ceciliag_gif_hu_5e4c2dfb41ced0d2.gif 480w, http://localhost:1313/p/tech-dice-portrait/ceciliag_gif_hu_8bfeb71e387b1d48.gif 1024w"
 loading="lazy"
 alt="ceciliag"
 class="gallery-image"
 data-flex-grow="70"
 data-flex-basis="169px"
 &gt;
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliaw_gif.gif"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/ceciliaw_gif.gif"
 width="280"
 height="396"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliaw_gif_hu_b692e8d90f563c54.gif 480w, https://blog.fallleaf.net/p/tech-dice-portrait/ceciliaw_gif_hu_85051bd5a762ed50.gif 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/ceciliaw_gif_hu_b692e8d90f563c54.gif 480w, http://localhost:1313/p/tech-dice-portrait/ceciliaw_gif_hu_85051bd5a762ed50.gif 1024w"
 loading="lazy"
 alt="ceciliaw"
 class="gallery-image"
 data-flex-grow="70"
 data-flex-basis="169px"
 &gt;
-&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliab_gif.gif"
+&lt;img src="http://localhost:1313/p/tech-dice-portrait/ceciliab_gif.gif"
 width="280"
 height="396"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/ceciliab_gif_hu_2bf96734fa72f743.gif 480w, https://blog.fallleaf.net/p/tech-dice-portrait/ceciliab_gif_hu_d881b7438a7385eb.gif 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/ceciliab_gif_hu_2bf96734fa72f743.gif 480w, http://localhost:1313/p/tech-dice-portrait/ceciliab_gif_hu_d881b7438a7385eb.gif 1024w"
 loading="lazy"
 alt="ceciliab"
 class="gallery-image"
@@ -3074,27 +3074,27 @@ data-flex-basis="169px"
 &lt;p&gt;这个项目正在进行中，等色子及图框到后再把制作的全过程展示一下。&lt;/p&gt;
 &lt;p&gt;续：&lt;/p&gt;
 &lt;p&gt;购买了2000个色子，用纸盒盖子做框，摆成一个肖像，远看效果好些&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice1.jpg"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-dice-portrait/cecilia_dice1.jpg"
 width="1080"
 height="1440"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice1_hu_9afffa2e6bcab57.jpg 480w, https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice1_hu_79421af38ba3cd23.jpg 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/cecilia_dice1_hu_9afffa2e6bcab57.jpg 480w, http://localhost:1313/p/tech-dice-portrait/cecilia_dice1_hu_79421af38ba3cd23.jpg 1024w"
 loading="lazy"
 alt="cecilia1"
 class="gallery-image"
 data-flex-grow="75"
 data-flex-basis="180px"
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice2.jpg"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-dice-portrait/cecilia_dice2.jpg"
 width="1080"
 height="1440"
-srcset="https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice2_hu_3f405b5235b9b71e.jpg 480w, https://blog.fallleaf.net/p/tech-dice-portrait/cecilia_dice2_hu_49d2120084624dfc.jpg 1024w"
+srcset="http://localhost:1313/p/tech-dice-portrait/cecilia_dice2_hu_3f405b5235b9b71e.jpg 480w, http://localhost:1313/p/tech-dice-portrait/cecilia_dice2_hu_49d2120084624dfc.jpg 1024w"
 loading="lazy"
 alt="cecilia2"
 class="gallery-image"
 data-flex-grow="75"
 data-flex-basis="180px"
 &gt;&lt;/p&gt;
-&lt;p&gt;源代码放到了GitHub上，做了些改动，采用opencv做图像处理。&lt;/p&gt;</description></item><item><title>浅谈接入网的薄覆盖</title><link>https://blog.fallleaf.net/p/tech-odn-sparse-coverage/</link><pubDate>Thu, 01 Jan 2015 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-odn-sparse-coverage/</guid><description>&lt;p&gt;在宽带接入网工程中，常常会出现关于覆盖的几种说法，如“全覆盖”，“深覆盖”，“薄覆盖”等，其概念各不相同，各自的理解也不同，依据目前我的经验，谈谈一点看法。&lt;/p&gt;
+&lt;p&gt;源代码放到了GitHub上，做了些改动，采用opencv做图像处理。&lt;/p&gt;</description></item><item><title>浅谈接入网的薄覆盖</title><link>http://localhost:1313/p/tech-odn-sparse-coverage/</link><pubDate>Thu, 01 Jan 2015 00:00:00 +0800</pubDate><guid>http://localhost:1313/p/tech-odn-sparse-coverage/</guid><description>&lt;p&gt;在宽带接入网工程中，常常会出现关于覆盖的几种说法，如“全覆盖”，“深覆盖”，“薄覆盖”等，其概念各不相同，各自的理解也不同，依据目前我的经验，谈谈一点看法。&lt;/p&gt;
 &lt;p&gt;在很多资料里，“全覆盖”和“薄覆盖”是相对出现，是从工程建设界面的角度来定义的。&lt;/p&gt;
 &lt;p&gt;“全覆盖”是指在宽带接入工程中，建设的网络末端为用户家中的光纤插座或多媒体箱，是工程做到了入户，而“薄覆盖”，是指网络末端只做到单元、楼宇或小区，工程没有做到入户，不能给用户提供一个全程端到端的连接。现在宽带接入建设，大多要求按照薄覆盖来建设，究其原因，主要是由于宽带运营商竞争的加剧，小区的宽带用户渗透率以及各运营商的宽带市场份额也不可能百分百，这两方面因素共同导致了在用户不明确的情况下，若采用全覆盖方式来进行宽带接入建设，会导致网络利用率不高、建设的端口浪费、投资大，在投资受限的情况下，进而会导致覆盖小区数量减少，覆盖率下降。&lt;/p&gt;
 &lt;p&gt;但以这种接入覆盖的深度（到用户的距离）来定义薄覆盖，与它所倡导的一种建设思路上来比，还是有些缺陷。若全覆盖和薄覆盖只是入不入户的差别，那么不可避免建设的网络存在容量利用率不高，端口浪费的情况，因为若薄覆盖是按照1户1线这种思路去做，也就是小区的用户渗透率及市场份额都是百分百考虑，并没有达到薄覆盖的真实目的。&lt;/p&gt;
@@ -3108,24 +3108,24 @@ data-flex-basis="180px"
 &lt;p&gt;从目前市场格局来看，除了独家进线的、目标用户渗透率70%以上（这时按薄覆盖的话，端口渗透率也就是100%了），改造网络等情况可按全覆盖来进行建设，其他情况均可按薄覆盖进行建设。而薄覆盖的定义，应从覆盖深度及建设规模上来进行阐述，这里，试图给薄覆盖一个定义：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;薄覆盖，是指在宽带接入网网络建设中，网络末端只建设到分光器、分纤箱，入户线在装机时进行敷设，并以业务预测的稳定期用户数（目标用户数）为基础，按照一定的目标实占率要求，确定PON口数量以及ODN网各部分的规模（主干光缆规模、配线光缆规模、分光器端口数量）的一种建设方式。&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>走线架垮塌事件分析</title><link>https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/</link><pubDate>Tue, 01 Feb 2011 09:48:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/cover.webp" alt="Featured image of post 走线架垮塌事件分析" /&gt;&lt;p&gt;某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑：&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>走线架垮塌事件分析</title><link>http://localhost:1313/p/tech-cable-tray-collapse-analysis/</link><pubDate>Tue, 01 Feb 2011 09:48:27 +0800</pubDate><guid>http://localhost:1313/p/tech-cable-tray-collapse-analysis/</guid><description>&lt;img src="http://localhost:1313/p/tech-cable-tray-collapse-analysis/cover.webp" alt="Featured image of post 走线架垮塌事件分析" /&gt;&lt;p&gt;某机房在敷设电力电缆的施工过程中，机房维护施工通道一侧的走线架（约9米）发生垮塌，经现场查勘、分析，初步判断为吊挂连接件的螺孔槽受压力作用变形并扩张，致使连接固定龙门架横梁以及走线架上梁的螺栓从螺孔槽中脱落，事件发生原因可以从以下几个方面考虑：&lt;/p&gt;
 &lt;h2 id="材料方面"&gt;材料方面
 &lt;/h2&gt;&lt;p&gt;从现场情况看，吊杆与天花板未脱落，吊杆亦未发生拉伸变形及断裂，可认为吊杆的强度是足够的，主要问题就在于吊杆与走线架的连接件上。&lt;/p&gt;
 &lt;p&gt;连接件作为连接与支持走线架的零件，受力要比走线架大得多，所使用材料强度应高于走线架所用材料的强度，从现场来看，所使用材料均为同一规格，厚度为2mm。按YD5026-95和YD/T5026-2005《电信机房铁架安装设计标准》的要求，所采用铁件一般为50x50x5mm。&lt;/p&gt;
 &lt;p&gt;从螺栓与连接件的紧固方式看，连接件的受力面积主要是螺栓垫片与连接件的接触面积，从照片上看，螺栓垫圈小，致使连接件单位面积受力过大，超过连接件的受力特性，造成了螺孔槽受压力作用变形并扩张。目前走线架所用螺栓规格为M6，规范要求的螺栓规格为M8和M10和M12，
-&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1.webp"
+&lt;img src="http://localhost:1313/p/tech-cable-tray-collapse-analysis/1.webp"
 width="640"
 height="480"
-srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_9640c548afff0dfc.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/1_hu_14bee3a46e103979.webp 1024w"
+srcset="http://localhost:1313/p/tech-cable-tray-collapse-analysis/1_hu_9640c548afff0dfc.webp 480w, http://localhost:1313/p/tech-cable-tray-collapse-analysis/1_hu_14bee3a46e103979.webp 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
 &gt;
-&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2.webp"
+&lt;img src="http://localhost:1313/p/tech-cable-tray-collapse-analysis/2.webp"
 width="640"
 height="480"
-srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_dbba45ab0fa38515.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/2_hu_80c29e00c574e8ce.webp 1024w"
+srcset="http://localhost:1313/p/tech-cable-tray-collapse-analysis/2_hu_dbba45ab0fa38515.webp 480w, http://localhost:1313/p/tech-cable-tray-collapse-analysis/2_hu_80c29e00c574e8ce.webp 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="133"
@@ -3133,19 +3133,19 @@ data-flex-basis="320px"
 &gt;&lt;/p&gt;
 &lt;h2 id="地震及受力的影响"&gt;地震及受力的影响
 &lt;/h2&gt;&lt;p&gt;从512大地震以来，该地区陆续发生了大大小小的上百次的余震。大地震和余震产生地震波，使走线架上下及左右震动，长期处于一种不稳定状态。螺栓、螺母与连接件的紧固，是靠螺栓、螺母以及垫片与紧固件间的摩擦力固紧的，同时，由于部分螺母、螺栓安装时没有加弹簧垫圈（见下图），经过512大地震以及上百次余震的冲击波后，非常容易使螺母与螺栓松动。
-&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3.webp"
+&lt;img src="http://localhost:1313/p/tech-cable-tray-collapse-analysis/3.webp"
 width="640"
 height="480"
-srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_9d8d063b61e28ed9.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/3_hu_8d8b10ed7f565e7d.webp 1024w"
+srcset="http://localhost:1313/p/tech-cable-tray-collapse-analysis/3_hu_9d8d063b61e28ed9.webp 480w, http://localhost:1313/p/tech-cable-tray-collapse-analysis/3_hu_8d8b10ed7f565e7d.webp 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
 &gt;
-&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4.webp"
+&lt;img src="http://localhost:1313/p/tech-cable-tray-collapse-analysis/4.webp"
 width="640"
 height="480"
-srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_2d2bc90ae72cbd2d.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/4_hu_153779037fdc72be.webp 1024w"
+srcset="http://localhost:1313/p/tech-cable-tray-collapse-analysis/4_hu_2d2bc90ae72cbd2d.webp 480w, http://localhost:1313/p/tech-cable-tray-collapse-analysis/4_hu_153779037fdc72be.webp 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="133"
@@ -3156,30 +3156,30 @@ data-flex-basis="320px"
 &lt;p&gt;现场塌垮的走线架，是维护和施工通道一侧走线架发生侧翻，而不是走线架整体垮塌，在施工中，由于外力扰动，走线架受力不平衡，维护和施工通道一侧走线架连接件受力过大也是一个原因。&lt;/p&gt;
 &lt;h2 id="连接加固方式"&gt;连接加固方式
 &lt;/h2&gt;&lt;p&gt;现场走线架吊挂有两种方式，一种为龙门架，龙门架的横担支撑两层走线架的重量，另外一种为吊挂上层走线架梁上，如下图所示&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-cable-tray-collapse-analysis/5.webp"
 width="640"
 height="853"
-srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_b9c8d6e40e233bbb.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/5_hu_54fd8281f5a18881.webp 1024w"
+srcset="http://localhost:1313/p/tech-cable-tray-collapse-analysis/5_hu_b9c8d6e40e233bbb.webp 480w, http://localhost:1313/p/tech-cable-tray-collapse-analysis/5_hu_54fd8281f5a18881.webp 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="75"
 data-flex-basis="180px"
 &gt;&lt;/p&gt;
 &lt;p&gt;按一般要求，对于双层走线架，每层都应与吊挂连接（见下图），以免连接件集中受力，现场的走线架只有最下一层与吊挂连接，导致所有线缆的重量都压在横梁上，也导致连接件的受力过大。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-cable-tray-collapse-analysis/6.webp"
 width="800"
 height="600"
-srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_83fed71ff9b412e5.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/6_hu_21c3b6184c8e8122.webp 1024w"
+srcset="http://localhost:1313/p/tech-cable-tray-collapse-analysis/6_hu_83fed71ff9b412e5.webp 480w, http://localhost:1313/p/tech-cable-tray-collapse-analysis/6_hu_21c3b6184c8e8122.webp 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
 &gt;&lt;/p&gt;
 &lt;p&gt;现场走线架另外一种的吊挂方式，这种方式致使只有连接件的螺栓受力，而整个连接件不受力，也会导致螺孔槽所受压力过大，以致变形，若连接件承托上梁下放，则受力为整个连接件以及螺栓（见下图）。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-cable-tray-collapse-analysis/7.webp"
 width="235"
 height="180"
-srcset="https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_fddd72f4d4720887.webp 480w, https://blog.fallleaf.net/p/tech-cable-tray-collapse-analysis/7_hu_b30bb3dd1c32c5b1.webp 1024w"
+srcset="http://localhost:1313/p/tech-cable-tray-collapse-analysis/7_hu_fddd72f4d4720887.webp 480w, http://localhost:1313/p/tech-cable-tray-collapse-analysis/7_hu_b30bb3dd1c32c5b1.webp 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="130"
@@ -3194,7 +3194,7 @@ data-flex-basis="313px"
 &lt;li&gt;YD/T 5026-2005《电信机房铁架安装设计标准》&lt;/li&gt;
 &lt;li&gt;YD 5059-2005《电信设备安装抗震设计规范》&lt;/li&gt;
 &lt;li&gt;YD 5060-2010《通信设备安装抗震设计图集》&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>LTE下的RAN</title><link>https://blog.fallleaf.net/p/tech-lte-ran/</link><pubDate>Mon, 12 Jul 2010 16:39:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-lte-ran/</guid><description>&lt;p&gt;R5版本的RAN，NODE B到RNC之间只有Iub接口，基站间没有互联，Iub可以看做是一个端到端的链接，目前采用PTN传送，已经没有异议了，但在LTE环境下，eNODE到MME/S-GW是S1接口，类似Iub接口，但相邻的eNODE之间有了X2互联接口，那么LTE环境下的RAN该采用何种技术？PTN是否仍然合适？是否需要新建一个基于三层技术的IP RAN呢？&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>LTE下的RAN</title><link>http://localhost:1313/p/tech-lte-ran/</link><pubDate>Mon, 12 Jul 2010 16:39:27 +0800</pubDate><guid>http://localhost:1313/p/tech-lte-ran/</guid><description>&lt;p&gt;R5版本的RAN，NODE B到RNC之间只有Iub接口，基站间没有互联，Iub可以看做是一个端到端的链接，目前采用PTN传送，已经没有异议了，但在LTE环境下，eNODE到MME/S-GW是S1接口，类似Iub接口，但相邻的eNODE之间有了X2互联接口，那么LTE环境下的RAN该采用何种技术？PTN是否仍然合适？是否需要新建一个基于三层技术的IP RAN呢？&lt;/p&gt;
 &lt;p&gt;E2E时延： S1&amp;lt;10ms X2&amp;lt;20ms —–3GPP TR R3.018&lt;/p&gt;
 &lt;p&gt;流量： S1站97%以上，X2小于3%；&lt;/p&gt;
 &lt;p&gt;需要二层PTN吗？ 还是需要三层PTN? X2的时延，QOS？ EVPLAN EVPLINE&lt;/p&gt;
@@ -3203,7 +3203,7 @@ data-flex-basis="313px"
 &lt;p&gt;eNodeB与EPC通过S1接口连接，eNodeB间通过X2接口连接，UE与eNodeB通过Uu接口连接。和TD-SCDMA相比，X2接口类似于Iur接口，S1 接口类似于Iu接口，但有较大简化。由于英电和RNC融合为网元eNodeB，LTE比WCDMA和TD-SCDMA少了Iub接口。&lt;/p&gt;
 &lt;p&gt;那么采用PTN接入的时候X2接口间的电路数量过多，在VLAN 上将会处理较为麻烦，而且PTN的LSP数量极剧增加，如果采用PTN传输是不是很麻烦，有一种说法是CE布置到汇聚层，完善数据城域网，接入层由传输负责，个人感觉还是比较好，X2的电路还是路由器调度比较方便，但是目前的机房条件好像再放路由器很难了，而且还有具有OTN。比较困难。不知道那位高手怎么看？&lt;/p&gt;
 &lt;p&gt;“下面我们就来看还有一个困扰PTN的发展，就是LTE提出了X2接口，整个基站是扁平化的网络，这时候就趋向了包括S1Flex动态归属需求，基站和基站之间互联。现在我们在中国电信内部讨论PTN有很大的问题，第一就是对LTE的情况下，三层功能比较弱，另外解决大客户用的时候也是不能提供的。这是我们的 IP RAN承载方案，路由器方案、PTN接入路由器方案、PTN+路由器方案。我认为PTN+路由器方案是最糟糕的方案，但实际运用中也不尽然，可能运作中 PTN+路由器还是比较多的方案。如果你放在综合承载，PTN不仅仅是基站，而是综合的承载基站，你考虑LTE更复杂的网络拓扑，这时候提到这个方案还是有一定道理的，所以我们并没有排除这个方案，让用户来选择是最好的。“ –张成良&lt;/p&gt;
-&lt;p&gt;若读者有什么想法，尽可留言。&lt;/p&gt;</description></item><item><title>我的PROJECT365</title><link>https://blog.fallleaf.net/p/life-my-project365/</link><pubDate>Thu, 04 Jan 2007 16:32:38 +0800</pubDate><guid>https://blog.fallleaf.net/p/life-my-project365/</guid><description>&lt;p&gt;这几天看了几个有关PROJECT 365的帖子，颇为心动。2007年已经到来了，该定下今年的一些目标了，那么其中的一个目标就是PROJECT 365。
+&lt;p&gt;若读者有什么想法，尽可留言。&lt;/p&gt;</description></item><item><title>我的PROJECT365</title><link>http://localhost:1313/p/life-my-project365/</link><pubDate>Thu, 04 Jan 2007 16:32:38 +0800</pubDate><guid>http://localhost:1313/p/life-my-project365/</guid><description>&lt;p&gt;这几天看了几个有关PROJECT 365的帖子，颇为心动。2007年已经到来了，该定下今年的一些目标了，那么其中的一个目标就是PROJECT 365。
 PROJECT 365简单的说就是每天照几张照片，并且坚持一年。照相可以每天固定在一个特定的时间，也可以固定在一个特定的地方，也可以固定与一个特定的物体。比如每天的自拍像，每天路口的情况等等。我计划每天拍3张照片，一张是每天上午10点左右的自拍像，选择这个时间，我想是最能反应我当时的情况，另外两张拍的是一天内有意义的事情，比如外出吃饭，工作，游玩等。这样持续一年时间，到年底的时候，一定会发现巨大的意义。&lt;/p&gt;
 &lt;p&gt;至于实施PROJECT 365的工具，很简单，就是一个数码相机，最好是那种口袋机，能够随身携带，走到哪里拍到哪里，也可以是一个WEBCAM，只不过拍照地点就要限制在计算机附近了。另外，实施这个也主要是为了和别人分享，因此，BLOG或照片共享是必要的，这方面的工具很多，比如Flickr ,Bababian 等网上资源，我现在用的是Photoblog （由于上网条件有限，停止照片更新，但PROJECT365仍然进行）。&lt;/p&gt;
 &lt;p&gt;&lt;a class="link" href="http://gtmcknight.com/365/" target="_blank" rel="noopener"
@@ -3239,7 +3239,7 @@ PROJECT 365简单的说就是每天照几张照片，并且坚持一年。照相
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;p&gt;Get Out and Shoot! — 3 Great Ideas for Shooting Outside in Your Town or City&lt;/p&gt;
 &lt;p&gt;Project 365: How to Take a Photo a Day and See Your Life in a Whole New Way&lt;/p&gt;
-&lt;p&gt;The Secret to Keeping Your New Year’s Resolutions&lt;/p&gt;</description></item><item><title>电源头柜电力线径的计算方法</title><link>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</link><pubDate>Mon, 27 Mar 2006 16:27:04 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</guid><description>&lt;p&gt;查询了网站的统计信息，发现搜索电力线缆计算方法的还不少，我根据以往经验，参照其他人写的文章，归纳了一下，供大家参考。&lt;/p&gt;
+&lt;p&gt;The Secret to Keeping Your New Year’s Resolutions&lt;/p&gt;</description></item><item><title>电源头柜电力线径的计算方法</title><link>http://localhost:1313/p/tech-power-cabinet-wire-sizing-method/</link><pubDate>Mon, 27 Mar 2006 16:27:04 +0800</pubDate><guid>http://localhost:1313/p/tech-power-cabinet-wire-sizing-method/</guid><description>&lt;p&gt;查询了网站的统计信息，发现搜索电力线缆计算方法的还不少，我根据以往经验，参照其他人写的文章，归纳了一下，供大家参考。&lt;/p&gt;
 &lt;p&gt;对于小工程来说，或者一个工程的配套部分，电源头柜至电源分支柜或直流屏这段导线的线径可按照固定压降发，根据以下公式计算，其计算公式如下：&lt;/p&gt;
 &lt;p&gt;S=(ΣIL)/(rΔU)&lt;/p&gt;
 &lt;p&gt;上式中： - S — 导线截面面积(mm2)，&lt;/p&gt;
@@ -3249,10 +3249,10 @@ r — 导体导电系数(m/Ω·mm2)，一般铜取57，铝取34，
 ΔU — 除掉配电设备等压降后在导线上允许的压降(V)。
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;现在要确认的是ΔU的数值，ΔU根据不同的电源系统设计，取值也不同，需向电源专业了解ΔU的取值，如果了解不到，可以按以下直流放电回路全程压降分配的情况取定。（要注意的是，这种分配方法只是其中的一种，还有其他的方法）&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1.jpg"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-power-cabinet-wire-sizing-method/105_1.jpg"
 width="500"
 height="172"
-srcset="https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1_hu_a455c9aedc6b0d91.jpg 480w, https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1_hu_74ba8459562556ff.jpg 1024w"
+srcset="http://localhost:1313/p/tech-power-cabinet-wire-sizing-method/105_1_hu_a455c9aedc6b0d91.jpg 480w, http://localhost:1313/p/tech-power-cabinet-wire-sizing-method/105_1_hu_74ba8459562556ff.jpg 1024w"
 loading="lazy"
 alt="压降分配"
 class="gallery-image"
@@ -3261,7 +3261,7 @@ data-flex-basis="697px"
 &gt;&lt;/p&gt;
 &lt;p&gt;按此算出电力线线径，并向上取相近的电缆规格，保护地可取小一号线径。&lt;/p&gt;
 &lt;p&gt;在不同机房之间选用铜芯聚氯乙烯绝缘聚氯乙烯护套电力电缆（阻燃）（RVVZ系列），在同一机房内选用铜芯聚氯乙烯绝缘电力电缆（阻燃）（RVZ系列）。&lt;/p&gt;
-&lt;p&gt;设计中常见的直流用电力线按截面分有如下几种：1×6、1×10、1×16、1×35、1×50、1×70、1×95、1×120、1×150、1×185、1×240（mm2）。&lt;/p&gt;</description></item><item><title>MSTP传输设备选型谈判需要注意的几个问题</title><link>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</link><pubDate>Mon, 20 Mar 2006 11:36:47 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-mstp-device-selection-negotiation/</guid><description>&lt;p&gt;传输设备谈判中需要注意以下几个问题：&lt;/p&gt;
+&lt;p&gt;设计中常见的直流用电力线按截面分有如下几种：1×6、1×10、1×16、1×35、1×50、1×70、1×95、1×120、1×150、1×185、1×240（mm2）。&lt;/p&gt;</description></item><item><title>MSTP传输设备选型谈判需要注意的几个问题</title><link>http://localhost:1313/p/tech-mstp-device-selection-negotiation/</link><pubDate>Mon, 20 Mar 2006 11:36:47 +0800</pubDate><guid>http://localhost:1313/p/tech-mstp-device-selection-negotiation/</guid><description>&lt;p&gt;传输设备谈判中需要注意以下几个问题：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;设备的高、低阶交叉连接能力及其结构、限制条件；&lt;/p&gt;
@@ -3287,7 +3287,7 @@ data-flex-basis="697px"
 &lt;li&gt;
 &lt;p&gt;现有设备和新版本设备的区别，升级能力；说明在网设备的升级方式、具体步骤，需要更换的板卡，对业务的具体影响，新、旧版本的主要差异及在网设备升级后达到的效果。&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>为什么通信设备使用–48V这样的负电源系统</title><link>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</link><pubDate>Wed, 21 Dec 2005 11:25:17 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</guid><description>&lt;p&gt;在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>为什么通信设备使用–48V这样的负电源系统</title><link>http://localhost:1313/p/tech-why-use-48v-telcom-equiment/</link><pubDate>Wed, 21 Dec 2005 11:25:17 +0800</pubDate><guid>http://localhost:1313/p/tech-why-use-48v-telcom-equiment/</guid><description>&lt;p&gt;在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。&lt;/p&gt;
 &lt;p&gt;整理：邓兴昌&lt;/p&gt;
 &lt;p&gt;A：这里面包含2 个意思：&lt;/p&gt;
 &lt;p&gt;（1） 极性为何是负电源（也就是正接地）？&lt;/p&gt;
@@ -3301,7 +3301,7 @@ data-flex-basis="697px"
 &lt;p&gt;顺便提一下，-48V 电源系统只是我国和大部分国家采用的通信电源标准， 并非所有国家都使用这个标准，例如俄罗斯会使用-60V 的电源系统，还有某些国家使用-24V 的电源系统。如果产品要在这些地区销售，就要兼顾这些不同的标准。&lt;/p&gt;
 &lt;p&gt;市电的标准在世界范围内也是不同的，例如我国和欧洲等采用220V 的市电系统，美国、日本等是110V 的市电。&lt;/p&gt;
 &lt;p&gt;从华为的资料中找到为什么是正极接地的解释，作为补充解释：&lt;/p&gt;
-&lt;p&gt;正极接地主要是为了防止电极的腐蚀。电话局蓄电池组-48V或-24V是正极接地，其原因是减少由于继电器或电缆金属外皮绝缘不良时产生的电蚀作用，使继电器和电缆金属外皮受到损坏。因为在电蚀时，金属离子在化学反应下是由正极向负极移动的。继电器线圈和铁芯之间的绝缘不良，就有小电流流过，电池组负极接地时，线圈的导线有可能蚀断。反之，如电池组正极接地，虽然铁芯也会受到电蚀，但线圈的导线不会腐蚀，铁芯的质量较大，不会招致可察觉的后果。正极接地也可以使外线电缆的芯线在绝缘不良时免受腐蚀。（注：隐含条件是继电器铁芯接地）&lt;/p&gt;</description></item><item><title>C-FOL论坛上一个关于MSTP的讨论</title><link>https://blog.fallleaf.net/p/tech-discuss-mstp-cfol/</link><pubDate>Mon, 07 Nov 2005 09:11:59 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-discuss-mstp-cfol/</guid><description>&lt;p&gt;晚上和同事用IM讨论一个软课题，顺便到[[C-FOL论坛]]上查找资料，ASON的一个“MSTP上提供三层路由的功能有用吗？ “的帖子引起了长达一年的讨 论，开始于2004年1月，目前截至于2005年月。这个帖子的讨论对我帮助很大，今天凑空把讨论的内容整理一下，留做纪念。&lt;/p&gt;
+&lt;p&gt;正极接地主要是为了防止电极的腐蚀。电话局蓄电池组-48V或-24V是正极接地，其原因是减少由于继电器或电缆金属外皮绝缘不良时产生的电蚀作用，使继电器和电缆金属外皮受到损坏。因为在电蚀时，金属离子在化学反应下是由正极向负极移动的。继电器线圈和铁芯之间的绝缘不良，就有小电流流过，电池组负极接地时，线圈的导线有可能蚀断。反之，如电池组正极接地，虽然铁芯也会受到电蚀，但线圈的导线不会腐蚀，铁芯的质量较大，不会招致可察觉的后果。正极接地也可以使外线电缆的芯线在绝缘不良时免受腐蚀。（注：隐含条件是继电器铁芯接地）&lt;/p&gt;</description></item><item><title>C-FOL论坛上一个关于MSTP的讨论</title><link>http://localhost:1313/p/tech-discuss-mstp-cfol/</link><pubDate>Mon, 07 Nov 2005 09:11:59 +0800</pubDate><guid>http://localhost:1313/p/tech-discuss-mstp-cfol/</guid><description>&lt;p&gt;晚上和同事用IM讨论一个软课题，顺便到[[C-FOL论坛]]上查找资料，ASON的一个“MSTP上提供三层路由的功能有用吗？ “的帖子引起了长达一年的讨 论，开始于2004年1月，目前截至于2005年月。这个帖子的讨论对我帮助很大，今天凑空把讨论的内容整理一下，留做纪念。&lt;/p&gt;
 &lt;p&gt;ASON:&lt;/p&gt;
 &lt;p&gt;问题:MSTP上提供三层路由的功能有用吗？&lt;/p&gt;
 &lt;p&gt;有的厂家在MSTP上提供三层的处理能力，有的厂家说没有需要，有的厂家在开发，大家讨论讨论，在MSTP上如果提供路由功能，可以带来什么好处呢？&lt;/p&gt;

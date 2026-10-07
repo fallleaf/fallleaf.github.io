@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ggplot2 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/ggplot2/</link><description>Recent content in Ggplot2 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/ggplot2/index.xml" rel="self" type="application/rss+xml"/><item><title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title><link>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</guid><description>&lt;h2 id="什么是斜线图"&gt;什么是斜线图
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ggplot2 on 红旗下的蛋</title><link>http://localhost:1313/tags/ggplot2/</link><description>Recent content in Ggplot2 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ggplot2/index.xml" rel="self" type="application/rss+xml"/><item><title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title><link>http://localhost:1313/p/tech-slopegraph-comparing-change-structure/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/tech-slopegraph-comparing-change-structure/</guid><description>&lt;h2 id="什么是斜线图"&gt;什么是斜线图
 &lt;/h2&gt;&lt;p&gt;斜线图（Slopegraph）是一种用于展示同一组观测对象在两个固定状态之间变化关系的数据可视化形式。
 这两个状态可以是不同时间（如今年与去年、事件前后），也可以是不同维度（如总体与子群体），其度量可以是排名、比例或数值。&lt;/p&gt;
 &lt;p&gt;从表现形式上看，斜线图属于折线图的一个特例，但其设计目标并不是描绘连续变化过程，而是强调两个状态之间的相对变化结构。因此，无论是 Excel、Tableau 还是 R，只要支持折线图的工具都可以绘制斜线图。&lt;/p&gt;
 &lt;p&gt;Edward Tufte 在 1983 年出版的《The Visual Display of Quantitative Information》中首次系统性讨论了这种表达方式，并在 2011 年 6 月 1 日的论坛中正式将其命名为 slopegraph。早期应用并不广泛，但随着数据新闻和分析型可视化的发展，斜线图近年来逐渐成为常用工具。&lt;/p&gt;
 &lt;p&gt;下面是几个典型的斜线图示例。
-&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott.webp"
+&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott.webp"
 width="1080"
 height="965"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_a3e4ab5f789f691d.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_59b7c3e89008846a.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_a3e4ab5f789f691d.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_59b7c3e89008846a.webp 1024w"
 loading="lazy"
 alt="FT图例"
 class="gallery-image"
@@ -15,10 +15,10 @@ data-flex-grow="111"
 data-flex-basis="268px"
 &gt;&lt;/p&gt;
 &lt;p&gt;这是《Financial Times》绘制的一个斜线图，用于展示中国消费者对美国品牌商品抵制态度的变化情况。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_time.webp"
 width="404"
 height="634"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_20e05bf5a266a1df.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_264cc8b81c03f11f.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_20e05bf5a266a1df.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_264cc8b81c03f11f.webp 1024w"
 loading="lazy"
 alt="网易图例"
 class="gallery-image"
@@ -26,10 +26,10 @@ data-flex-grow="63"
 data-flex-basis="152px"
 &gt;&lt;/p&gt;
 &lt;p&gt;这张图来自网易，X 轴为 1990 年和 2017 年两个时间点，Y 轴为慢性病伤残调整寿命年（DALY）的排名。通过斜线的交叉和排序变化，可以直观看出哪些慢性病在这 27 年间上升为主要死因，以及不同病种之间地位的变化。这种跨时间跨度较大的对比，正是斜线图&lt;strong&gt;最典型&lt;/strong&gt;的应用场景。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_group.webp"
 width="376"
 height="443"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_dd48f3d75baea9b2.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_64d89214951880a0.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_dd48f3d75baea9b2.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_64d89214951880a0.webp 1024w"
 loading="lazy"
 alt="Employee Feedback"
 class="gallery-image"
@@ -45,10 +45,10 @@ data-flex-basis="203px"
 &lt;p&gt;即：斜线图用于比较&lt;strong&gt;一组可排序或可度量对象在不同状态之间的变化&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;因此，在原本会使用柱状图或折线图进行“两点对比”的场景中，斜线图往往是更高效的表达方式。例如，以下是用柱状图表示四家公司 2018 年和 2019 年收入的情况。
 柱状图表示：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar1-1.webp"
 width="960"
 height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_4220d2c8b959ef73.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_d7f2463eaa4adb43.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_4220d2c8b959ef73.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_d7f2463eaa4adb43.webp 1024w"
 loading="lazy"
 alt="柱状图示例"
 class="gallery-image"
@@ -56,10 +56,10 @@ data-flex-grow="100"
 data-flex-basis="240px"
 &gt;&lt;/p&gt;
 &lt;p&gt;或者：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar2-1.webp"
 width="960"
 height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_39414b2dd2fbf857.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_8fb406bedf84b6d0.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_39414b2dd2fbf857.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_8fb406bedf84b6d0.webp 1024w"
 loading="lazy"
 alt="另一种柱状图示例"
 class="gallery-image"
@@ -67,10 +67,10 @@ data-flex-grow="100"
 data-flex-basis="240px"
 &gt;&lt;/p&gt;
 &lt;p&gt;用斜线图表示，如下&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph-1.webp"
 width="1344"
 height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_2412b24114d9707.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_fb2506ae2fd5ba04.webp 1024w"
+srcset="http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_2412b24114d9707.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_fb2506ae2fd5ba04.webp 1024w"
 loading="lazy"
 alt="斜线图示例"
 class="gallery-image"
@@ -270,12 +270,12 @@ data-flex-basis="336px"
 &lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; )
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/demo-1.png"
+&lt;/div&gt;&lt;p&gt;&lt;img src="http://localhost:1313/demo-1.png"
 loading="lazy"
 alt="斜线图"
 &gt;&lt;/p&gt;
 &lt;p&gt;一般而言，斜线图最适合用于比较两个时间点或两个分组的数据，也可以扩展到三至四个时间点，但不宜过多，否则应改用传统折线图。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/chinaunicom-1.png"
+&lt;p&gt;&lt;img src="http://localhost:1313/chinaunicom-1.png"
 loading="lazy"
 alt="中国联通"
 &gt;&lt;/p&gt;

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SFP on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/sfp/</link><description>Recent content in SFP on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sat, 29 Jul 2023 21:31:51 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/sfp/index.xml" rel="self" type="application/rss+xml"/><item><title>SFP模块的兼容性</title><link>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</link><pubDate>Sat, 14 Dec 2019 21:31:51 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</guid><description>&lt;h2 id="sfp光模块的生产"&gt;SFP光模块的生产
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SFP on 红旗下的蛋</title><link>http://localhost:1313/tags/sfp/</link><description>Recent content in SFP on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sat, 29 Jul 2023 21:31:51 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/sfp/index.xml" rel="self" type="application/rss+xml"/><item><title>SFP模块的兼容性</title><link>http://localhost:1313/p/tech-compatibility-sfp-module/</link><pubDate>Sat, 14 Dec 2019 21:31:51 +0800</pubDate><guid>http://localhost:1313/p/tech-compatibility-sfp-module/</guid><description>&lt;h2 id="sfp光模块的生产"&gt;SFP光模块的生产
 &lt;/h2&gt;&lt;p&gt;SFP光模块的组成如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp.webp"
+&lt;p&gt;&lt;img src="http://localhost:1313/p/tech-compatibility-sfp-module/sfp.webp"
 width="1080"
 height="724"
-srcset="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_2c8d41280072178b.webp 480w, https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_8cd4b58aecbc64e5.webp 1024w"
+srcset="http://localhost:1313/p/tech-compatibility-sfp-module/sfp_hu_2c8d41280072178b.webp 480w, http://localhost:1313/p/tech-compatibility-sfp-module/sfp_hu_8cd4b58aecbc64e5.webp 1024w"
 loading="lazy"
 alt="SFP光模块"
 class="gallery-image"
