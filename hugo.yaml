@@ -1,0 +1,185 @@
+baseurl: https://blog.fallleaf.net/
+languageCode: zh-cn
+theme: hugo-theme-stack
+title: 红旗下的蛋
+copyright: fallleaf
+
+DefaultContentLanguage: zh-cn
+hasCJKLanguage: true
+
+languages:
+  zh-cn:
+    languageName: 简体中文
+    title: 红旗下的蛋
+    weight: 1
+    params:
+      sidebar:
+        subtitle: 记录生活、技术与思考
+
+pagination:
+  pagerSize: 5
+
+permalinks:
+  post: /p/:slug/
+  page: /:slug/
+
+params:
+  mainSections:
+    - post
+  featuredImageField: image
+  rssFullContent: true
+  favicon: /favicon.ico
+
+  footer:
+    since: 2004
+    customText: "Powered by Hugo & Stack"
+
+  dateFormat:
+    published: "2006-01-02"
+    lastUpdated: "2006-01-02 15:04"
+
+  sidebar:
+    emoji: 🐈
+    subtitle: 记录生活、技术与思考
+    avatar:
+      enabled: true
+      local: true
+      src: img/avatar.webp
+
+  article:
+    math: true
+    toc: true
+    readingTime: true
+    license:
+      enabled: true
+      default: "Licensed under CC BY-NC-SA 4.0"
+
+  comments:
+    enabled: false
+
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 10
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 20
+    page:
+      - type: toc
+
+  colorScheme:
+    toggle: true
+    default: auto
+
+  imageProcessing:
+    cover:
+      enabled: true
+    content:
+      enabled: true
+
+  defaultImage:
+    opengraph:
+      enabled: true
+      local: true
+      src: img/og-default.webp
+
+menu:
+  main:
+    - identifier: home
+      name: 主页
+      url: /
+      weight: -100
+      params:
+        icon: home
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: -90
+      params:
+        icon: user
+    - identifier: archives
+      name: 存档
+      url: /archives/
+      weight: -80
+      params:
+        icon: archive
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: -70
+      params:
+        icon: tag
+    - identifier: links
+      name: 友链
+      url: /links/
+      weight: -60
+      params:
+        icon: link
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: -50
+      params:
+        icon: search
+
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/fallleaf
+      params:
+        icon: brand-github
+    - identifier: email
+      name: Email
+      url: mailto:fallleaf@example.com
+      params:
+        icon: mail
+
+related:
+  includeNewer: true
+  threshold: 60
+  toLower: false
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 200
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - \[
+              - \]
+            - - \$\$
+              - \$\$
+          inline:
+            - - \(
+              - \)
+    renderer:
+      unsafe: true
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    lineNumbersInTable: true
+    tabWidth: 4
+
+sitemap:
+  changefreq: weekly
+  priority: 0.7
+  filename: sitemap.xml
+
+enableRobotsTXT: true

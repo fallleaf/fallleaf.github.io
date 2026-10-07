@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LLM on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/llm/</link><description>Recent content in LLM on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Thu, 16 Oct 2025 14:26:23 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/llm/index.xml" rel="self" type="application/rss+xml"/><item><title>对LLM客气，纯属自找麻烦</title><link>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</link><pubDate>Thu, 16 Oct 2025 14:26:23 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/cover.webp" alt="Featured image of post 对LLM客气，纯属自找麻烦" /&gt;&lt;h2 id="实验结果越客气llm越糊涂"&gt;实验结果：越客气，LLM越糊涂
+&lt;/h2&gt;&lt;p&gt;最近有篇论文做了个实验，结论让人哭笑不得：你对ChatGPT越客气，它答题越不准。&lt;/p&gt;
+&lt;p&gt;研究者出了50道多选题，用五种语气问ChatGPT-4o——从“请您帮忙解答一下”到“快给我答案”。结果如下：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;语气&lt;/th&gt;
+&lt;th&gt;正确率&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;非常礼貌&lt;/td&gt;
+&lt;td&gt;80.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;礼貌&lt;/td&gt;
+&lt;td&gt;81.4%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中性&lt;/td&gt;
+&lt;td&gt;82.2%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;粗鲁&lt;/td&gt;
+&lt;td&gt;82.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;非常粗鲁&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;84.8%&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;越不客气，越准确。
+这不是段子，而是统计检验后的真实结果。&lt;/p&gt;
+&lt;p&gt;换句话说——LLM（&lt;strong&gt;语言大模型&lt;/strong&gt;）不吃“客气”那一套。&lt;/p&gt;
+&lt;h2 id="为什么客气反而坏事"&gt;为什么客气反而坏事？
+&lt;/h2&gt;&lt;p&gt;别以为LLM真懂“礼貌”。
+它不过是一台概率机器，所有输入的字，对它而言只是数据。&lt;/p&gt;
+&lt;p&gt;“请”“麻烦您”“谢谢”这些词，对人来说表示尊重，对LLM来说只是 &lt;strong&gt;冗余的噪音&lt;/strong&gt; 。它无法感受到情绪，却要在冗余语言中找出你真正的问题。结果是—— &lt;strong&gt;它被你的客气话搞糊涂了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;还有一个原因是： &lt;strong&gt;上下文窗口的效率。&lt;/strong&gt;
+在有限的上下文窗口（Context Window）中，你的客气话占据了 &lt;strong&gt;宝贵的Token数量&lt;/strong&gt; 。每一个Token都应该用于传递关键的指令信息，而不是用于寒暄。ChatGPT这类模型的训练数据中，大量来自论坛、技术问答等。模型在这些语境下习惯处理简洁、命令式句子，而不是文绉绉的礼貌表达。换句话说，它对“直白的命令”更熟悉，对“客气的请求”反而陌生。&lt;/p&gt;
+&lt;p&gt;当你绕弯子时，它反而要花更多算力去猜你的真实意图。
+结果就像说话绕圈子，让对方瞎猜，准确率自然下降了。&lt;/p&gt;
+&lt;h2 id="别把llm当人看警惕粗鲁的边界"&gt;别把LLM当人看（警惕“粗鲁”的边界）
+&lt;/h2&gt;&lt;p&gt;很多人用LLM时，总喜欢装出一副“礼貌至上”的样子：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“请帮我详细而准确地回答以下问题，麻烦您了，谢谢～”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这对人说没问题，对LLM说完全没意义。
+它不会因为你客气就更用心，也不会因为你粗鲁就罢工。&lt;/p&gt;
+&lt;p&gt;LLM没有自尊，也没有同理心。你所有的客气，只是浪费token。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;【重要提醒】&lt;/strong&gt; 实验中的“非常粗鲁”指的是 &lt;strong&gt;指令的绝对直白和省略客套&lt;/strong&gt; 。我们不鼓励使用侮辱或攻击性词汇。真正的侮辱性内容会触发LLM的 &lt;strong&gt;安全过滤机制（GuardrLLMls）&lt;/strong&gt; ，反而会导致拒绝回答或输出质量下降。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="对llm发指令追求清晰度"&gt;对LLM发指令，追求清晰度
+&lt;/h2&gt;&lt;p&gt;这项研究其实提醒我们一个朴素的道理：
+&lt;strong&gt;和LLM打交道，关键不是态度，而是表达的清晰度。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;好的提示词要像指令，不像寒暄。越简洁，越容易让LLM锁定任务。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;低效寒暄式&lt;/th&gt;
+&lt;th&gt;高效指令式&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;请问您能帮我解一下这个复杂的方程吗？&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;解方程，输出步骤。&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;请帮我总结一下《红楼梦》的主要人物，要详细哦。&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;指令：提炼《红楼梦》前80回五位核心人物，格式：姓名/关系/主要性格特征。&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;人与人的沟通追求“情商”，人与LLM的交互追求“指令清晰度”。&lt;/strong&gt; 这是人机协作的准则，无关态度，只关效率。&lt;/p&gt;
+&lt;h2 id="别被llm的懂礼貌假象骗了"&gt;别被LLM的“懂礼貌”假象骗了
+&lt;/h2&gt;&lt;p&gt;很多人说：“ChatGPT挺懂人情世故啊，还会说谢谢。”
+这是错觉。&lt;/p&gt;
+&lt;p&gt;LLM的礼貌，是模仿出来的。
+它从无数人类对话中学到“客气话的模式”，
+却从未理解“礼貌的意义”。&lt;/p&gt;
+&lt;p&gt;它只是鹦鹉学舌，说“请”“谢谢”只是语言表演，不是情感反应。如果你以为那是“温度”，那不过是 &lt;strong&gt;统计学拟合出的幻觉。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="真正的礼貌是对人"&gt;真正的礼貌，是对人
+&lt;/h2&gt;&lt;p&gt;对LLM客气，不仅没用，还可能降低效率。
+它不会感激，也不会回礼。&lt;/p&gt;
+&lt;p&gt;真正该讲礼貌的对象，是人——而不是算法。
+对机器，只要清晰、准确、高效就够了。&lt;/p&gt;
+&lt;p&gt;下次和LLM交互时，不妨试试直接说出需求。
+别说“麻烦帮我”，直接说“生成报告，800字，总结重点”。&lt;/p&gt;
+&lt;p&gt;这不是没礼貌，而是理性。
+因为LLM不需要礼貌，它只需要清晰。&lt;/p&gt;
+&lt;h2 id="结语"&gt;结语
+&lt;/h2&gt;&lt;p&gt;LLM越进步，人越容易把它“人化”。
+但别忘了，它不是思想者，只是概率引擎。&lt;/p&gt;
+&lt;p&gt;我们要做的，不是讨好它，而是让它听懂。
+&lt;strong&gt;把话说清楚，比说得好听更重要。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;论文链接：&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://arxiv.org/pdf/2510.04950" target="_blank" rel="noopener"
+&gt;《Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy》&lt;/a&gt;&lt;/p&gt;</description></item><item><title>驾驭你的LLM：从提示词新手到“指令设计师”的极简指南</title><link>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</link><pubDate>Tue, 07 Oct 2025 08:15:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/cover.webp" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id="为什么llm总跑偏先搞清它其实不会懂你"&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
+&lt;/h2&gt;&lt;p&gt;你有没有遇到过这样的情况：问LLM一个问题，有时候它回答得像个专家，精准又到位；有时候它就好像刚学会说话的小孩，答非所问，甚至自说自话。难道LLM在“抽风”？其实不完全是。&lt;/p&gt;
+&lt;p&gt;LLM的本质其实是个超级“猜词机器”：它并不真正理解你说话的深意，而是在它庞大的学习数据中，预测“下一句最可能出现的词”是什么。换句话说，它靠概率输出内容。&lt;/p&gt;
+&lt;p&gt;当你给它的提示话很模糊时，它只能在无数的可能中猜答案，自然容易“跑偏”。&lt;/p&gt;
+&lt;p&gt;所以，想让LLM表现得聪明，关键不在问得多，而在于问得 &lt;strong&gt;准&lt;/strong&gt; 。你的问题越模糊，LLM就越容易瞎猜；问题越精准，它就越能给你想要的答案。说白了，提示词就是你手里的方向盘，你指的方向越清楚，LLM这辆车才越不会跑偏。&lt;/p&gt;
+&lt;h2 id="dice-框架提示词的四个核心组成"&gt;D.I.C.E. 框架：提示词的四个核心组成
+&lt;/h2&gt;&lt;p&gt;给LLM下指令（提示词），就跟让新同事帮你办事一样。你要是只说“把这个弄一下”，他肯定一头雾水，办事的结果也不如你所愿。你得告诉他前因后果、他该扮什么角色、具体要做什么、最后交出什么成果，这样才能达到你预期的目的。这里有个特别好用的方法，是美国人 Michael Blank 提出了一个超实用的D.I.C.E.方法，将任务拆成四个重点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;D — 背景信息（DATA）&lt;/strong&gt;
+告诉LLM，你要做什么，为什么要做。帮助它把任务放在正确的“道路”上。
+例：“我运营一家B2B软件公司，每月接触200个潜客，转化率只有8%，我想提高销售效率。”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;I — 角色定位（IDENTIFY）&lt;/strong&gt;
+给LLM戴上“专业帽”，限定它的身份和专业方向。
+例：“请你扮演一位有10年经验的SaaS资深销售顾问，专长是优化中小企业销售流程。”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C — 澄清细节（CLARIFY）&lt;/strong&gt;
+别急着一次给完全部信息。最好让LLM先提一个问题，确认重点，避免误解。
+例：“开始分析前，请先问我一个关键的销售环节问题。”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;E — 明确交付（EXECUTE）&lt;/strong&gt;
+告诉LLM你想要什么样的结果，输出格式、风格、长度等都要明确。
+例：“在我答复后，请给我一份30天销售改进计划，格式为一步步执行的清单。”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;用了这样的方式提示，LLM才不会给你泛泛而谈的建议，而是一份专业且可执行的行动方案。&lt;/p&gt;
+&lt;h2 id="clear-原则判断提示词质量的五个标准"&gt;C.L.E.A.R. 原则：判断提示词质量的五个标准
+&lt;/h2&gt;&lt;p&gt;如果说D.I.C.E.给提示词搭起了“骨架”，那么Lovable公司提出的C.L.E.A.R.原则就是帮你把骨架的“肌肉和皮肤”打磨完整，让任务说明干净、有效、有活力。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原则&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;th&gt;实践要点&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;C 简洁（Concise）&lt;/td&gt;
+&lt;td&gt;去掉多余客套和废话，直奔重点&lt;/td&gt;
+&lt;td&gt;不说“谢谢”“麻烦了”这类无关紧要的话&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L 有逻辑（Logical）&lt;/td&gt;
+&lt;td&gt;任务分解清楚，步骤合理&lt;/td&gt;
+&lt;td&gt;任务执行顺序是否合理，比如先分析再建议&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;E 明确（Explicit）&lt;/td&gt;
+&lt;td&gt;明确说明要什么和不要什么&lt;/td&gt;
+&lt;td&gt;指定风格、字数限制，禁止内容&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A 可调（Adaptive）&lt;/td&gt;
+&lt;td&gt;支持后续调整和优化&lt;/td&gt;
+&lt;td&gt;留有调整空间，不要锁死边界&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R 可反思（Reflective）&lt;/td&gt;
+&lt;td&gt;鼓励LLM总结反馈，提升提示词&lt;/td&gt;
+&lt;td&gt;让LLM指出哪里还能更明确或优化&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="提示词的框架与准则"&gt;提示词的框架与准则
+&lt;/h2&gt;&lt;p&gt;D.I.C.E. 是提示词的结构框架，它定义了一个提示词该“长成什么样”； C.L.E.A.R. 是质量准则，它确保这个结构内部的逻辑、语言与目标保持清晰一致。&lt;/p&gt;
+&lt;p&gt;在实际提示词设计中，我们先用 D.I.C.E. 打底——明确目标、设定角色、补充上下文、定义评估标准； 再以 C.L.E.A.R. 打磨——检视表达是否清晰（Clear）、逻辑是否连贯（Logical）、依据是否可验证（Empirical）、行动是否可执行（Actionable）、反思是否充分（Reflective）。&lt;/p&gt;
+&lt;p&gt;这种“两层式”方法能显著提升提示词的稳定性与可复用性： 结构清晰使大模型“理解你要什么”， 质量准则则让输出更贴近“你真正需要的”。&lt;/p&gt;
+&lt;h2 id="你是-llm-的导航员帮它锁定方向提升效率"&gt;你是 LLM 的“导航员”：帮它锁定方向，提升效率
+&lt;/h2&gt;&lt;p&gt;LLM不会主动“懂”你，它只能根据你给的信息猜测答案。你设计的提示词就像导航系统，帮它锁定正确方向，避免它在海量的可能中胡乱“试探”。&lt;/p&gt;
+&lt;p&gt;每一次清晰、有结构的提示输入，都是在缩小它自由发挥的范围，以带来更精准有效的回应。掌握了D.I.C.E.框架和C.L.E.A.R.原则，就让你能更好使用LLM，从“使用者”升级为“驾驭者”，彻底释放LLM的生产力。&lt;/p&gt;
+&lt;h2 id="diceclear示范模板"&gt;D.I.C.E.+C.L.E.A.R.示范模板
+&lt;/h2&gt;&lt;h3 id="自驾游计划"&gt;自驾游计划
+&lt;/h3&gt;&lt;p&gt;生成一份适合一家三口的国庆假期自驾游计划，涵盖路线、每日安排、住宿建议与注意事项。&lt;/p&gt;
+&lt;h4 id="dice-框架提示词可粘贴到大模型里看看输出"&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
+&lt;/h4&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#DATA#
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;我们是一家三口（两位成人，一位10岁孩子），计划在2025年10月2日至10月7日国庆假期期间自驾从郑州前往重庆旅游。希望行程轻松、有趣，适合家庭出行。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#IDENTIFY#
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;请你扮演一位经验丰富的国内亲子旅行规划师，熟悉中西部城市间自驾路线、家庭友好型景点与节假日出行建议。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#CLARIFY#
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;你可以先问我一个问题，以确认我们对住宿预算、每日驾驶时长或景点偏好的具体要求。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#EXECUTE#
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;请根据我们的时间安排，生成一份6天的行程计划，包括：
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;- 每日路线与预计行驶时间；
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;- 推荐景点（适合孩子）与活动安排；
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;- 住宿建议（中等价位，安全舒适）；
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;- 每日注意事项（如交通、天气、节假高峰）。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;输出格式为分日条列，每日标题为“Day X：城市名”，语言使用简体中文。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id="clear-原则优化"&gt;C.L.E.A.R. 原则优化
+&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原则&lt;/th&gt;
+&lt;th&gt;应用说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;简洁（Concise）&lt;/td&gt;
+&lt;td&gt;去除冗余描述，直接说明时间、地点、人数、目标。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有逻辑（Logical）&lt;/td&gt;
+&lt;td&gt;明确起止时间、路线方向、每日安排，避免“重庆周边推荐”这类模糊任务。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;明确（Explicit）&lt;/td&gt;
+&lt;td&gt;指定输出格式（分日条列）、语言（简体中文）、住宿类型（中等价位）、人群（亲子）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可调（Adaptive）&lt;/td&gt;
+&lt;td&gt;通过 CLARIFY 模块引导 LLM 提问，便于后续补充预算、偏好等信息。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可反思（Reflective）&lt;/td&gt;
+&lt;td&gt;可在输出后追加一句：“如需调整行程节奏或加入特定景点，请告诉我，我可以重新规划。”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="学术论文写作辅助"&gt;学术论文写作辅助
+&lt;/h3&gt;&lt;p&gt;撰写一篇关于人工智能伦理的学术论文，目标是投稿至国际期刊。希望获得结构优化建议与引用规范指导，强调逻辑严密、表达规范、支持多轮修订。&lt;/p&gt;
+&lt;h4 id="dice-框架提示词可粘贴到大模型里看看输出-1"&gt;D.I.C.E 框架提示词（可粘贴到大模型里看看输出）
+&lt;/h4&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#DATA#
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;我正在撰写一篇关于人工智能伦理的学术论文，主题聚焦于算法偏见与责任归属问题。目标是投稿至国际科技伦理期刊，要求逻辑清晰、论证严密、引用格式符合国际标准（如 APA 或 IEEE）。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#IDENTIFY#
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;请你扮演一位资深学术编辑，熟悉科技伦理领域，具备国际期刊审稿经验，了解常见结构问题与引用规范。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#CLARIFY#
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;在开始修改前，请先提出一个关于文章论点结构的关键问题，以确认我是否已建立清晰的中心论点与支持层次。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#EXECUTE#
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;请根据我的主题与目标，提出具体的章节重组建议，包括：
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;- 推荐的章节划分与标题；
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;- 每章应承担的论证任务；
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;- 引用格式建议（如文内引用、参考文献排列方式）；
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;- 总结建议不超过 500 字，使用中文表达，风格正式、学术。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id="clear-原则优化-1"&gt;C.L.E.A.R. 原则优化
+&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原则&lt;/th&gt;
+&lt;th&gt;应用说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;简洁（Concise）&lt;/td&gt;
+&lt;td&gt;去除口语化表达，直接说明论文主题、目标期刊、引用要求。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有逻辑（Logical）&lt;/td&gt;
+&lt;td&gt;明确任务流程：先澄清论点结构，再提出章节建议与引用规范。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;明确（Explicit）&lt;/td&gt;
+&lt;td&gt;指定输出格式（中文总结、500 字以内）、引用风格（APA 或 IEEE）、角色设定（学术编辑）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可调（Adaptive）&lt;/td&gt;
+&lt;td&gt;通过 CLARIFY 模块引导模型提问，支持后续补充论文摘要、章节草稿等内容。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;可反思（Reflective）&lt;/td&gt;
+&lt;td&gt;鼓励模型在输出后提供“如需进一步细化章节内容或补充文献引用，请继续提供草稿内容”之类的反馈建议。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;参考资料：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://www.entrepreneur.com/leadership/i-used-chatgpt-to-transform-my-business-with-these-prompts/497180" target="_blank" rel="noopener"
+&gt;D.I.C.E.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://docs.lovable.dev/prompting/prompting-one" target="_blank" rel="noopener"
+&gt;C.L.E.A.R.&lt;/a&gt;&lt;/p&gt;</description></item><item><title>我们该如何使用大语言模型</title><link>https://blog.fallleaf.net/p/growth-how-to-use-llm/</link><pubDate>Thu, 02 Oct 2025 20:43:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-how-to-use-llm/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-how-to-use-llm/cover.webp" alt="Featured image of post 我们该如何使用大语言模型" /&gt;&lt;h2 id="大语言模型的基本原理与本质"&gt;大语言模型的基本原理与本质
+&lt;/h2&gt;&lt;p&gt;许多人在使用大语言模型（LLM）时，会产生一种直观的错觉：模型的输出好像是经过深思熟虑的“思考结果”。这种感受并不奇怪，因为 LLM 生成的文字往往流畅、有逻辑，常常给你新的思路，甚至带有推理色彩，让人联想到“它在思考”。这其实源于人类对语言的天然信任——我们习惯把清晰有序的表达与真实的认知挂钩。&lt;/p&gt;
+&lt;p&gt;然而，LLM 并没有意识、意图或理解能力。它既不会判断对错，也不会形成观点。它的核心运作机制，并不是“理解”语言，而是基于海量文本训练出的概率预测系统。它通过庞大的参数系统，学习语言中词与词之间的常见搭配与使用规律。当我们输入一段文字时，模型会根据上下文计算出最可能出现的下一个词，并以此逐字生成连贯的文字。&lt;/p&gt;
+&lt;p&gt;因此，LLM 的本质是一个 &lt;strong&gt;概率驱动的语言生成系统&lt;/strong&gt; 。它的“知识”来自于训练数据的模式，而不是对现实世界的认知。它所谓的“创造力”，其实是对语言的多样组合与概率探索。当我们看到 LLM 给出新颖的答案时，实质上是它利用已学到的规律，组合出你未曾尝试过的表达路径，而不是在进行真正的思考。&lt;/p&gt;
+&lt;p&gt;所以，LLM 并不是思考者，而是生成器；不是认知系统，而是语言模式的高效重组器。理解这一点至关重要，因为这能帮助我们正确定位它的角色：它并不是替代人类思考的主体，而是 &lt;strong&gt;思考的补充与放大器&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h2 id="人类思维与-llm-输出的根本差异"&gt;人类思维与 LLM 输出的根本差异
+&lt;/h2&gt;&lt;p&gt;尽管 LLM 能生成看似合理的回答，但它与人类思维存在结构性差异：&lt;/p&gt;
+&lt;h3 id="相似之处"&gt;相似之处
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;都能快速生成“合乎上下文”的表达；&lt;/li&gt;
+&lt;li&gt;都能组合已有元素，产出新颖的语言或创意联想。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="根本差异"&gt;根本差异
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;驱动力不同&lt;/strong&gt; ：人类思考由目标、经验、情感与价值观驱动；LLM 的输出仅由输入提示与统计概率决定。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可靠性不同&lt;/strong&gt; ：人类会依据逻辑、常识与现实约束修正错误；LLM 可能生成 &lt;strong&gt;自洽却完全虚构的内容&lt;/strong&gt; ——这种现象被称为“幻觉”（Hallucination），源于其缺乏对真实世界的理解。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;记忆机制不同&lt;/strong&gt; ：LLM 没有长期记忆，每次交互都是“无历史”的独立预测，依赖用户在当前上下文中提供全部背景。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;责任归属不同&lt;/strong&gt; ：人类对其言论与决策负有道德与法律责任；LLM 本身没有责任意识，也无法承担后果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;正因如此， &lt;strong&gt;我们永远是最终的判断者&lt;/strong&gt; 。LLM 的输出应被视为“初稿”“素材”或“灵感来源”，而非权威答案——尤其在涉及事实核查、专业判断或伦理决策时，必须进行人工验证。&lt;/p&gt;
+&lt;h2 id="如何正确利用-llm"&gt;如何正确利用 LLM
+&lt;/h2&gt;&lt;p&gt;显然 LLM 不是一个思考者，而是一个高效的生成器，我们该如何与之协作？关键在于要明确它扮演的角色—— &lt;strong&gt;LL&lt;/strong&gt; &lt;strong&gt;M 负责提供&lt;/strong&gt; “素材” &lt;strong&gt;和&lt;/strong&gt; “可能性” &lt;strong&gt;，你负责&lt;/strong&gt; “筛选-加工-整合” 。&lt;/p&gt;
+&lt;p&gt;LLM 能在信息获取和初步构思上提供极大的效率优势。无论是写作、编程还是研究，它都可以快速生成多样化的初稿、思路和表达，帮助人类突破惯性思维。人类必须扮演“审校者”和“决策者”的角色，我们要对 LLM 的输出进行甄别、筛选和改写，将其中有价值的部分吸收进自己的思考框架中，而不是不加辨别地照单全收。更重要的是：LLM 的真正价值不在于替代，而在于扩展。它让我们能够更快地走出“已知的路径”，看到潜在的可能性。但最终的方向感、价值判断和创造性的落地，仍然只能由人类来完成。&lt;/p&gt;
+&lt;p&gt;换句话说，LLM 不是思维的终点，而是 &lt;strong&gt;思维的助推器&lt;/strong&gt; 。当我们学会将它当作探索的工具，而不是答案的来源时，才能真正发挥它的力量。&lt;/p&gt;
+&lt;h2 id="几个最有效的使用场景"&gt;几个最有效的使用场景
+&lt;/h2&gt;&lt;h3 id="快速表达"&gt;快速表达
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：将零散想法、口语提纲转化为结构清晰、语言规范的初稿，如邮件、公文、说明文档。
+&lt;strong&gt;输出处理&lt;/strong&gt; ：根据受众身份、场合语境调整语气与措辞，避免机械套话或语言错位。&lt;/p&gt;
+&lt;h3 id="发散思维"&gt;发散思维
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：为产品命名、营销策略、活动策划等提供多个创意选项，充当“数字头脑风暴伙伴”。
+&lt;strong&gt;输出处理&lt;/strong&gt; ：剔除脱离实际、违背品牌风格或逻辑断裂的方案，保留可落地的方向。&lt;/p&gt;
+&lt;h3 id="总结概括"&gt;总结概括
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：从长篇报告、会议记录或学术论文中提取关键信息，生成摘要或框架。
+&lt;strong&gt;输出处理&lt;/strong&gt; ：核对核心事实与数据，补充必要背景，警惕因压缩导致的 &lt;strong&gt;片面化或误读&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h3 id="初步写作"&gt;初步写作
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：快速搭建文章结构、演讲提纲或项目方案草稿，突破“空白页焦虑”。
+&lt;strong&gt;输出处理&lt;/strong&gt; ：优化逻辑链条，注入个人见解，润色语言风格，形成真正属于“你”的作品。&lt;/p&gt;
+&lt;h3 id="灵感触发"&gt;灵感触发
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;需求&lt;/strong&gt; ：通过类比、跨领域联想或非常规视角，为科研、工程、艺术创作提供新思路。
+&lt;strong&gt;输出处理&lt;/strong&gt; ：甄别哪些启发具有实质价值，避免牵强附会，并在实践中迭代验证。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;慎用提醒&lt;/strong&gt; ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;切勿依赖 LLM 独立生成法律意见、医疗建议、财务规划或学术引用（它可能编造不存在的文献），如使用必须经过事实验证；&lt;/li&gt;
+&lt;li&gt;在高风险决策中，LLM 仅可作为信息辅助工具，不可替代专业判断。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="总结"&gt;总结
+&lt;/h2&gt;&lt;p&gt;大语言模型是一种强大的认知工具，但它既不是万能的答案机器，也不是思考主体。理解它的本质与边界，才能让我们在使用时保持清醒。&lt;/p&gt;
+&lt;p&gt;它的最佳定位，不是“替代者”，而是“ 思维助推器 ”。我们清晰地了解其本质特点，就能在未来的工作与生活中，更加从容的驾驭这种新型智能力量。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;你设想，它模拟；&lt;/strong&gt;
+&lt;strong&gt;你创造，它生成；&lt;/strong&gt;
+&lt;strong&gt;你判断，它佐证；&lt;/strong&gt;
+&lt;strong&gt;你突破，它追随。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化</title><link>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</link><pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/cover.webp" alt="Featured image of post 别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化" /&gt;&lt;h2 id="引子"&gt;引子
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;网络段子：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用了AI后，共情了领导:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;聪明但不干活的工贼deepseek ，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;愚蠢但勤劳的牛马豆包 ，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不加预算请不起的留子chatgpt，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;裁不掉的关系户文心一言 ，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;而我成为了那个一分钟改五版的领导 。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="从助手到主宰你真的还在独立思考吗"&gt;从“助手”到“主宰”：你真的还在独立思考吗？
+&lt;/h2&gt;&lt;p&gt;你有没有这样的瞬间：打开空白文档，不是自己列提纲，而是本能地问AI“怎么写”？&lt;/p&gt;
+&lt;p&gt;自从 LLM（大语言模型）出现，我们的工作效率确实被拉满。它能帮你列提纲、做总结、提炼标题，像一个万能的智能副驾。但我们正面临一个深刻的悖论： 我们以为在用工具，工具却在重塑我们的大脑 。&lt;/p&gt;
+&lt;p&gt;这种“ 智能依赖 ”正在悄悄侵蚀我们最核心的几项能力：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;耐心的丧失&lt;/strong&gt; ： 我们习惯了AI的“ &lt;strong&gt;丝滑输出&lt;/strong&gt; ”，不再愿意忍受信息获取和逻辑梳理的“ &lt;strong&gt;延迟&lt;/strong&gt; ”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;批判的退化&lt;/strong&gt; ： 当LLM给出的答案过于完整和流畅时，我们放弃了深度质疑和查证的动力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;创造力的固化&lt;/strong&gt; ： 我们将“ &lt;strong&gt;思考&lt;/strong&gt; ”降级为“ &lt;strong&gt;提示词&lt;/strong&gt; ”，从亲手创造者退化为发号施令的“ &lt;strong&gt;提示工程师&lt;/strong&gt; ”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这不是进步，而是一种“ &lt;strong&gt;快捷键取代思考键&lt;/strong&gt; ”的被动适应。我们正用对速度的追求，交换对思维的掌控。&lt;/p&gt;
+&lt;h2 id="效率的甜蜜毒药llm如何重塑我们的行为模式"&gt;效率的“甜蜜毒药”：LLM如何重塑我们的行为模式
+&lt;/h2&gt;&lt;p&gt;技术的本质是放大器。LLM极大地放大了个体的产出速度，但同时也放大了一个“ &lt;strong&gt;浅尝辄止&lt;/strong&gt; ”的巨大趋势。&lt;/p&gt;
+&lt;p&gt;在一个内容爆炸的时代，数量正在压倒质量。当AI可以无限、批量地生成内容时，我们对价值的衡量标准发生了变化：我们开始追求“ &lt;strong&gt;AI卷出来的数量&lt;/strong&gt; ”，而非“ &lt;strong&gt;人类打磨的洞察&lt;/strong&gt; ”。&lt;/p&gt;
+&lt;p&gt;一个残酷的例子或许能说明问题： 在某些内容创作平台，有研究显示，AI生成内容的比例已急剧上升，但其用户互动率和转发深度却在下降。因为机器可以模仿逻辑，但无法模拟共情、情感和独一无二的生命体验。&lt;/p&gt;
+&lt;p&gt;如果人人都问AI相同的问题，得到的答案也将趋向平庸和同质化。这种“集体无意识”的平庸，正在模糊我们作为个体独特性和价值创造的边界。我们以为自己掌握着方向盘，却发现车速和方向都被“ &lt;strong&gt;高效&lt;/strong&gt; ”的牵引绳所控制。&lt;/p&gt;
+&lt;h2 id="人是目的ai是手段如何守住我们不可替代的核心竞争力"&gt;人是目的，AI是手段：如何守住我们不可替代的核心竞争力？
+&lt;/h2&gt;&lt;p&gt;LLM可以是最好的助手，但绝不能成为我们思考的主人。它能帮你跑得更快，但无法取代人类的判断力、情感表达和价值创造。&lt;/p&gt;
+&lt;p&gt;真正的进步，是人与工具的深度协作，而非人的全面退让。面对这股浪潮，我们必须清醒地给自己设置思维“ &lt;strong&gt;防火墙&lt;/strong&gt; &lt;strong&gt;行动&lt;/strong&gt; ”：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;反思区行动&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目的 ： 找回批判性思维 。&lt;/p&gt;
+&lt;p&gt;行动 ： 每次使用 AI 辅助产出后，强制自己写一段人工总结： AI的输出里，哪句话是你的原创洞察？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;独特性坚守&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目的 ：摆脱同质化平庸。&lt;/p&gt;
+&lt;p&gt;行动 ： 每周进行一次“ 无AI创作练习 ”：刻意选择一个主题，从零开始自己动手列大纲、找论据，用“费力”的方式激活你的思考肌肉。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;主导权回归&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目的 ： 将LLM视为工具，而非终点 。&lt;/p&gt;
+&lt;p&gt;行动： 倒置工作流： 先由你思考并完成30%的初稿和核心论点，再用AI来优化表达、补充素材；绝不从一个空白提示词开始你的工作。&lt;/p&gt;
+&lt;p&gt;AI时代，我们不拒绝智能，但我们更需要清醒地保有对真理的求索欲，对世界的情感共鸣。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请不要让你的大脑，成为被机器淘汰的第一个器官。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”</title><link>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</link><pubDate>Thu, 04 Sep 2025 10:45:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎 配套资源 ，获取一键导入的 n8n 配置文件。在导入之前，确保 n8n、ollama 和 Qwen 都正常运行，相关安装方法，见网上教程。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="引言我们为什么需要第二大脑"&gt;引言：我们为什么需要“第二大脑”？
+&lt;/h2&gt;&lt;p&gt;在通信行业，每一份战略规划都承载着对未来的判断。它不仅要基于历史经验、试点反馈，更要精准对齐高层意图，并洞察竞争格局。&lt;/p&gt;
+&lt;p&gt;然而，信息散落在 OA、本地磁盘、会议纪要中，专家常常陷入“找资料比写方案还累”的困境。&lt;/p&gt;
+&lt;p&gt;而我们在上篇提出的解决方案是：打造一个能“ &lt;strong&gt;感知任务、融合知识、生成框架&lt;/strong&gt; ”的“战略型第二大脑”。&lt;/p&gt;
+&lt;p&gt;现在，是时候兑现承诺了。&lt;/p&gt;
+&lt;p&gt;本文将带您 &lt;strong&gt;从零开始，用开源工具本地搭建一个可用的“第二大脑”&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;一个基于 n8n + Ollama + Qwen 的智能系统，流程如下图：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;战略生成流程知识库模块读取目录文件切分文本Ollama 向量化存入 Simple Vector Store任务输入感知模块融合模块查询 Vector Store Tool生成模块输出初稿专家介入
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;知识库模块&lt;/strong&gt; ：构建企业“战略记忆中枢”，将散落的文档转化为可检索、可追溯、可进化的智能资产。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;感知模块&lt;/strong&gt; ：听懂任务背后的“弦外之音”，解析出关键词与战略意图。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;融合模块&lt;/strong&gt; ：激活企业“沉睡的知识资产”，实现跨文档、跨时间的语义关联。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;生成模块&lt;/strong&gt; ：基于上下文，自动生成逻辑清晰、结构完整的方案初稿。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;专家介入&lt;/strong&gt; ：最终决策与洞见注入，人机协同产出真正有价值的方案。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这套系统能否成功，80% 取决于知识库的质量，20% 取决于技术实现的合理性。接下来，我们就来一步步构建它。&lt;/p&gt;
+&lt;h2 id="步骤-1打造可进化的战略知识库"&gt;步骤 1：打造可进化的“战略知识库”
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯 目标：将分散的 &lt;code&gt;.txt&lt;/code&gt; 文件自动转化为结构化、可语义检索的知识资产。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="1-节点-1读取指定目录下的所有文本文件readwrite-file"&gt;1. 节点 1：读取指定目录下的所有文本文件（Read/Write File）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;资料输入&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;节点类型&lt;/strong&gt; ： &lt;code&gt;n8n-nodes-base.readWriteFile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;fileSelector&amp;#34;: &amp;#34;d:\\\\second_brain_demo\\\\*&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;options&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;fileExtension&amp;#34;: &amp;#34;.txt&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;功能&lt;/strong&gt; ：扫描 &lt;code&gt;d:\second_brain_demo\&lt;/code&gt; 目录下所有 &lt;code&gt;.txt&lt;/code&gt; 文件，支持通配符。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;输出&lt;/strong&gt; ：以二进制形式返回每个文件内容。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;💡 可扩展支持 &lt;code&gt;.pdf&lt;/code&gt; 、&lt;code&gt;.docx&lt;/code&gt; ，但需确保 Ollama 支持解析。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="2-节点-2文本切分recursive-character-text-splitter"&gt;2. 节点 2：文本切分（Recursive Character Text Splitter）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Recursive Character Text Splitter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;chunkSize&amp;#34;: 100,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;chunkOverlap&amp;#34;: 20
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;作用&lt;/strong&gt; ：将长文本按字符递归切分为小片段，避免超出模型上下文。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;切分逻辑&lt;/strong&gt; ：优先按 &lt;code&gt;\n\n&lt;/code&gt; 、 &lt;code&gt;\n&lt;/code&gt; 、 、&lt;code&gt;.&lt;/code&gt; 分割。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ 注意：当前版本中，切分由该节点控制，而非 &lt;code&gt;Simple Vector Store&lt;/code&gt; 内置。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="3-节点-3调用-ollama-进行向量化embeddings-ollama"&gt;3. 节点 3：调用 Ollama 进行向量化（Embeddings Ollama）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Embeddings Ollama&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;model&amp;#34;: &amp;#34;dengcao/bge-large-zh-v1.5:latest&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;功能&lt;/strong&gt; ：调用本地 Ollama 服务，使用中文优化的 &lt;code&gt;bge-large-zh&lt;/code&gt; 模型生成向量。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;优势&lt;/strong&gt; ：专为中文语义设计，在“领导讲话”“试点报告”等场景表现优异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 需提前运行：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ollama pull dengcao/bge-large-zh-v1.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="4-节点-4存入向量数据库simple-vector-store"&gt;4. 节点 4：存入向量数据库（Simple Vector Store）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Simple Vector Store&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：&lt;/li&gt;
+&lt;li&gt;• Mode: &lt;code&gt;insert&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;• Memory Key: &lt;code&gt;vector_store_key&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;连接&lt;/strong&gt; ：&lt;/li&gt;
+&lt;li&gt;• 输入文档 → &lt;code&gt;Default Data Loader&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;• 切分器 → &lt;code&gt;Recursive Character Text Splitter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• 嵌入模型 → &lt;code&gt;Embeddings Ollama&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 数据将持久化在内存中，供后续查询使用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="-知识库构建流程总结"&gt;✅ 知识库构建流程总结
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;节点&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;资料输入&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;扫描目录，读取 &lt;code&gt;.txt&lt;/code&gt; 文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Recursive Character Text Splitter&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;按设定规则切分文本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Embeddings Ollama&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;使用 &lt;code&gt;bge-large-zh&lt;/code&gt; 生成中文向量&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Simple Vector Store&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;存储为可检索的知识片段&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔄 此流程可绑定 &lt;code&gt;Cron Trigger&lt;/code&gt; ，实现 &lt;strong&gt;每日自动更新知识库&lt;/strong&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="步骤-2构建懂战略的-ai-生成引擎"&gt;步骤 2：构建“懂战略”的 AI 生成引擎
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯 目标：用户输入任务，AI 自动调用知识库，生成专业方案初稿。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="1-节点-1任务输入chat-trigger"&gt;1. 节点 1：任务输入（Chat Trigger）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;任务输入&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;类型&lt;/strong&gt; ： &lt;code&gt;@n8n/n8n-nodes-langchain.chatTrigger&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;作用&lt;/strong&gt; ：接收用户输入的任务指令，如：
+“请基于历史方案和试点反馈，制定县乡传输网低成本演进路径”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id="2-节点-2感知模块ai-agent--知识检索"&gt;2. 节点 2：感知模块（AI Agent + 知识检索）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;感知模块&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;类型&lt;/strong&gt; ： &lt;code&gt;@n8n/n8n-nodes-langchain.agent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;核心配置&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="-使用的模型"&gt;📌 使用的模型
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;语言模型&lt;/strong&gt; ： &lt;code&gt;Qwen Turbo&lt;/code&gt; （通过 API 调用）&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;嵌入模型&lt;/strong&gt; ： &lt;code&gt;Ollama&lt;/code&gt; （用于检索）&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;记忆机制&lt;/strong&gt; ： &lt;code&gt;Window Buffer Memory&lt;/code&gt; （保留上下文）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="-系统提示词system-message"&gt;📌 系统提示词（System Message）
+&lt;/h4&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-gdscript3" data-lang="gdscript3"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;你是一名通信网络战略规划专家以及专业的任务分析助手。你的职责是分析用户的要求：&lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chatInput&lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="err"&gt;，根据查询知识库&lt;/span&gt; &lt;span class="n"&gt;company_documents_tool&lt;/span&gt; &lt;span class="err"&gt;中的相关内容&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;输出框架大纲。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;请严格遵守以下规则：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;1.&lt;/span&gt; &lt;span class="err"&gt;内容从知识库&lt;/span&gt; &lt;span class="n"&gt;company_documents_tool&lt;/span&gt; &lt;span class="err"&gt;获取&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;2.&lt;/span&gt; &lt;span class="err"&gt;输出内容只包含“需要做什么”，不得加入额外解释&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;3.&lt;/span&gt; &lt;span class="err"&gt;输出格式为&lt;/span&gt; &lt;span class="n"&gt;JSON&lt;/span&gt;&lt;span class="err"&gt;，必须包含：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;task&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;一句话说明要完成的具体任务&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;requirements&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;要求1&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;要求2&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id="-工具绑定"&gt;📌 工具绑定
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;Vector Store Tool&lt;/strong&gt; ： &lt;code&gt;company_documents_tool&lt;/code&gt; ，用于检索知识库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 该模块将：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• 解析用户意图&lt;/li&gt;
+&lt;li&gt;• 自动调用知识库检索相关资料&lt;/li&gt;
+&lt;li&gt;• 输出结构化任务框架&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="3-节点-3生成模块ai-agent--文档生成"&gt;3. 节点 3：生成模块（AI Agent + 文档生成）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;生成模块&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;类型&lt;/strong&gt; ： &lt;code&gt;@n8n/n8n-nodes-langchain.agent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;系统提示词&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-gdscript3" data-lang="gdscript3"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;你是一名通信网络战略规划专家。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;你是一个专业的文档编写助手。你的任务是根据任务要求，仅使用知识库&lt;/span&gt; &lt;span class="n"&gt;company_documents_tool&lt;/span&gt; &lt;span class="err"&gt;提供的内容，生成最终文档。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;请严格遵守以下规则：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;1.&lt;/span&gt; &lt;span class="err"&gt;所有内容必须来自知识库，不得引入外部信息&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;2.&lt;/span&gt; &lt;span class="err"&gt;可以在知识库范围内进行归纳、整合，但不得编造&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;3.&lt;/span&gt; &lt;span class="err"&gt;如果某项信息未找到，请写“相关信息未在知识库中找到”&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;4.&lt;/span&gt; &lt;span class="err"&gt;文风：简洁、正式、专业&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;✅ 输入来自“感知模块”的结构化任务框架，输出完整方案初稿。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="-战略生成流程总结"&gt;✅ 战略生成流程总结
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;节点&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;任务输入&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;接收用户指令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;感知模块&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;解析意图，调用知识库，输出任务框架&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;生成模块&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;基于框架与知识，生成专业文档&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔁 整个流程无需人工干预，AI 自主完成“理解 → 检索 → 生成”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="三关键连接模块如何协同工作"&gt;三、关键连接：模块如何协同工作？
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;连接&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;资料输入&lt;/code&gt; → &lt;code&gt;Simple Vector Store&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;触发知识入库&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Embeddings Ollama&lt;/code&gt; → &lt;code&gt;Simple Vector Store&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;提供中文向量能力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Vector Store Tool&lt;/code&gt; ←→ &lt;code&gt;感知模块&lt;/code&gt; &amp;amp; &lt;code&gt;生成模块&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;提供语义检索能力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Qwen&lt;/code&gt; ←→ 所有 AI Agent 节点&lt;/td&gt;
+&lt;td&gt;提供大模型推理能力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Window Buffer Memory&lt;/code&gt; ←→ 两个 Agent&lt;/td&gt;
+&lt;td&gt;支持多轮对话上下文&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 所有 AI 能力通过标准接口连接，模块化、可替换、可扩展。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="-知识库演示内容"&gt;📁 知识库演示内容
+&lt;/h2&gt;&lt;p&gt;为确保 AI 能生成高质量方案，建议知识库包含以下五个测试文件, 均由 LLM 生成：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;文件名&lt;/th&gt;
+&lt;th&gt;内容重点&lt;/th&gt;
+&lt;th&gt;示例片段&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;白皮书摘要.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;战略目标、技术路径&lt;/td&gt;
+&lt;td&gt;“2027 年实现县乡 100% 光缆覆盖”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;试点报告.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;成功/ 失败经验&lt;/td&gt;
+&lt;td&gt;“FgOTN 设备成本高达 45 万元”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;领导讲话.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;战略偏好&lt;/td&gt;
+&lt;td&gt;“要注重投资效益，避免重复建设”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;友商应用情况.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;竞争情报&lt;/td&gt;
+&lt;td&gt;“B 运营商采用 DCI-BOX，部署效率提升”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;设备对比资料.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;技术依据&lt;/td&gt;
+&lt;td&gt;“DCI-BOX 成本比 OTN 低 30%-50%”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="-重要说明与边界"&gt;⚠️ 重要说明与边界
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;项目&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Ollama 必须运行&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ollama serve&lt;/code&gt; 需常驻后台&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;嵌入模型必须加载&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ollama pull dengcao/bge-large-zh-v1.5&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Qwen Turbo 需 API 密钥&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;通过阿里云百炼平台获取&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;向量库存储在内存中&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;如需持久化，建议升级为 ChromaDB 或 FAISS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;必须人工审核&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;⚠️ AI 输出仅作参考，不可直接用于决策&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="实战演示以县乡传输网演进为例"&gt;实战演示：以“县乡传输网演进”为例
+&lt;/h2&gt;&lt;p&gt;让我们用一个真实场景验证系统效果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;任务输入&lt;/strong&gt; ：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请结合《XX 网络 2025-2027 年演进白皮书》和DCI-BOX以及FgOTN试点情况，研究县乡本地传输网的演进方向。重点考虑低成本、可持续性和与国家‘新基建’政策的契合度。参考近期领导在务虚会上关于‘网络精简’和‘区域均衡’的讲话精神。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;感知模块调用融合模块输出&lt;/strong&gt; ：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;AI&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="err"&gt;&amp;#34;task&amp;#34;:&lt;/span&gt; &lt;span class="err"&gt;&amp;#34;编制县乡本地传输网发展建设指导意见&amp;#34;,&amp;#34;requirements&amp;#34;:&lt;/span&gt; &lt;span class="err"&gt;[&amp;#34;结合《XX&lt;/span&gt; &lt;span class="err"&gt;网络&lt;/span&gt; &lt;span class="err"&gt;2025-2027&lt;/span&gt; &lt;span class="err"&gt;年演进白皮书》的内容&amp;#34;,&amp;#34;分析DCI-BOX和FgOTN试点情况&amp;#34;,&amp;#34;制定县乡本地传输网发展建设指导意见&amp;#34;,&amp;#34;重点考虑低成本、可持续性&amp;#34;,&amp;#34;确保与国家‘新基建’政策的契合度&amp;#34;,&amp;#34;参考近期领导在务虚会上关于‘网络精简’和‘区域均衡’的讲话精神&amp;#34;],&amp;#34;rule&amp;#34;:&lt;/span&gt; &lt;span class="err"&gt;&amp;#34;必须采用company_documents_tool内的信息&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;生成模块调用融合模块输出初稿（语言模型不同，输出也不同）&lt;/strong&gt; ：&lt;/p&gt;
+&lt;p&gt;县乡本地传输网发展建设指导意见&lt;/p&gt;
+&lt;p&gt;一、总体目标&lt;/p&gt;
+&lt;p&gt;根据《XX 网络 2025-2027 年演进白皮书》的指导思想，结合DCI-BOX和FgOTN试点情况，推动县乡本地传输网的高质量发展。以低成本、可持续性为核心，确保与国家“新基建”政策的契合度，同时落实领导在务虚会上关于“网络精简”和“区域均衡”的讲话精神。&lt;/p&gt;
+&lt;p&gt;二、基本原则&lt;/p&gt;
+&lt;p&gt;低成本：优先采用成熟、经济的技术方案，降低建设和运维成本。&lt;/p&gt;
+&lt;p&gt;可持续性：注重资源的合理利用，确保网络长期稳定运行。&lt;/p&gt;
+&lt;p&gt;政策契合度：紧密结合国家“新基建”政策，推动技术与政策的深度融合。&lt;/p&gt;
+&lt;p&gt;网络精简：优化网络结构，提升效率，减少冗余。&lt;/p&gt;
+&lt;p&gt;区域均衡：实现城乡网络协调发展，缩小数字鸿沟。&lt;/p&gt;
+&lt;p&gt;三、重点任务&lt;/p&gt;
+&lt;p&gt;技术选型&lt;/p&gt;
+&lt;p&gt;推广DCI-BOX和FgOTN等先进技术，提升传输效率和灵活性。&lt;/p&gt;
+&lt;p&gt;结合试点经验，逐步推广适用于县乡地区的解决方案。&lt;/p&gt;
+&lt;p&gt;网络规划&lt;/p&gt;
+&lt;p&gt;根据区域发展需求，制定合理的网络布局，确保覆盖全面。&lt;/p&gt;
+&lt;p&gt;强化骨干网与接入网的协同，提升整体性能。&lt;/p&gt;
+&lt;p&gt;政策支持&lt;/p&gt;
+&lt;p&gt;积极争取国家“新基建”政策的支持，争取专项资金。&lt;/p&gt;
+&lt;p&gt;推动地方政策与国家政策的对接，形成合力。&lt;/p&gt;
+&lt;p&gt;管理机制&lt;/p&gt;
+&lt;p&gt;建立健全网络维护和管理机制，确保网络运行的稳定性。&lt;/p&gt;
+&lt;p&gt;加强人才培训，提升运维水平。&lt;/p&gt;
+&lt;p&gt;四、实施步骤&lt;/p&gt;
+&lt;p&gt;调研分析：深入调研县乡地区网络现状及需求，形成详细报告。&lt;/p&gt;
+&lt;p&gt;方案设计：基于调研结果，制定具体实施方案。&lt;/p&gt;
+&lt;p&gt;试点推进：选择典型区域进行试点，积累经验。&lt;/p&gt;
+&lt;p&gt;全面推广：总结试点经验，逐步推广至全县乡范围。&lt;/p&gt;
+&lt;p&gt;五、保障措施&lt;/p&gt;
+&lt;p&gt;组织保障：成立专项工作组，明确责任分工。&lt;/p&gt;
+&lt;p&gt;资金保障：多渠道筹措资金，确保项目顺利实施。&lt;/p&gt;
+&lt;p&gt;监督评估：建立监督评估机制，定期检查项目进展。&lt;/p&gt;
+&lt;p&gt;六、结语&lt;/p&gt;
+&lt;p&gt;县乡本地传输网的发展是推动乡村振兴和数字化转型的重要基础。通过科学规划、技术创新和政策支持，努力构建一个高效、经济、可持续的县乡传输网络，为实现“网络强国”目标贡献力量。&lt;/p&gt;
+&lt;p&gt;相关信息未在知识库中找到&lt;/p&gt;
+&lt;h2 id="结语从建力到用智通信人的-ai-新使命"&gt;结语：从“建力”到“用智”，通信人的 AI 新使命
+&lt;/h2&gt;&lt;p&gt;在上一篇文章的结尾，我们提到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“在下一篇中，我将分享如何利用开源工具，在本地环境中一步步搭建起这套能解码战略的智能系统。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今天，我们兑现了这个承诺。&lt;/p&gt;
+&lt;p&gt;这套系统原型，还不能真正的实用,仅仅是一个最小的简单RAG系统 ， 但让我们认识到：人工智能，不再遥远，而是每一位战略规划专家都 &lt;strong&gt;用得上、用得起、用得安心&lt;/strong&gt; 的生产力工具。&lt;/p&gt;
+&lt;p&gt;它让我们：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• 从 “信息搬运工” 转变为 “战略架构师” ；&lt;/li&gt;
+&lt;li&gt;• 从 “被动响应” 升级为 “主动洞察” ；&lt;/li&gt;
+&lt;li&gt;• 从 “经验驱动” 迈向 “数据+ 智能驱动” 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更重要的是，它提醒我们：
+作为通信人，我们不仅是 &lt;strong&gt;算力的建设者&lt;/strong&gt; ，更应成为 &lt;strong&gt;智能的应用者&lt;/strong&gt; 。
+国家推动“人工智能+”，不仅是让我们建更多的数据中心，更是鼓励我们 &lt;strong&gt;率先在自身业务中实践 AI 的价值&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h2 id="-配套资源"&gt;📎 配套资源
+&lt;/h2&gt;&lt;p&gt;关注公众号，回复“ &lt;strong&gt;第二大脑&lt;/strong&gt; ”（不是文章留言!），获取：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;本文对应的工作流 JSON 文件（可直接导入）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;5 份示例资料（.txt）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;示例资料默认存储在&amp;quot;D:\second_brain_demo&amp;quot; 目录下&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;由于笔记本算力不足, 语言模型用阿里的免费 Qwen 模型，可以去申请免费 API_KEY&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>【人工智能+】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑</title><link>https://blog.fallleaf.net/p/tech-second-brain-introduce/</link><pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-second-brain-introduce/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-second-brain-introduce/cover.webp" alt="Featured image of post 【人工智能+】系列（一）：告别方案焦虑，为网络规划专家打造“懂战略”的第二大脑" /&gt;&lt;h2 id="引子一次典型的战略突袭"&gt;引子：一次典型的“战略突袭”
+&lt;/h2&gt;&lt;p&gt;我们通信人，尤其是做网络规划和顶层设计的同事，对下面这个场景一定不陌生：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;周五下午四点半，领导的即时消息弹出，转发了更高层领导聊天记录，内容是“根据三年前集团发布的《XX网络2025-2027年演进白皮书》，结合近一年各省分公司的试点结果和当前行业技术趋势，重新评估并制定下一阶段网络演进的战略路径和部署方案。下周三提交汇报版PPT。”&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这一刻，压在我们心头的，不是“时间紧”，而是“任务重”。这个“重”，体现在它的 &lt;strong&gt;深度、广度和战略对齐的高要求&lt;/strong&gt; 上：&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;历史的厚度&lt;/strong&gt; ：三年前的《白皮书》，最终版在哪？过程稿的取舍逻辑是什么？相关重点内容的解读及其背后的目的是什么？ • &lt;strong&gt;实践的广度&lt;/strong&gt; ：近一年的试点数据，哪些省是成功样板，哪些是“踩坑”案例？这些宝贵的经验沉淀，是结构化的报告还是零散的汇报？ • &lt;strong&gt;未来的精度&lt;/strong&gt; ：最新的技术趋势，是参考Gartner的曲线，还是听取厂家的宣传，亦或是友商发展动向？如何快速甄别、整合并形成我们的判断？ • &lt;strong&gt;最关键的——战略的高度&lt;/strong&gt; ：集团近期的战略重心是什么？高层领导在不同场合的讲话中，对这个方向的定调有何变化？如何确保我们的方案，是与集团战略 &lt;strong&gt;同频共振&lt;/strong&gt; 的顶层设计，而非一份单纯的技术堆砌？&lt;/p&gt;
+&lt;p&gt;这不仅是一次信息检索，更是一场对个人知识体系、信息敏感度和战略解码能力的极限拉练。我们的周末，注定要在海量的文档、PPT和聊天记录中进行“大海捞针”，试图拼凑出那张宏伟而精准的战略蓝图。&lt;/p&gt;
+&lt;h2 id="痛点剖析网络规划专家的知识管理困境"&gt;痛点剖析：网络规划专家的“知识管理困境”
+&lt;/h2&gt;&lt;p&gt;我们擅长思考宏大的战略，却常常被构成战略的微小碎片所困。这种困境，本质上是三个核心挑战：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;知识资产的“沉睡”与“离散”&lt;/strong&gt; ：大量的历史方案、试点数据、行业报告，如同沉睡的资产，分散在不同的系统、部门甚至个人电脑中。需要时，无法快速建立“过去”（历史方案）、“现在”（试点反馈）和“未来”（技术趋势）之间的逻辑关联。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;战略意图的“隐性”与“多变”&lt;/strong&gt; ：领导的战略意图，往往蕴含在多次会议、不同场合的讲话和批示中。这些“软知识”是方案的灵魂，但捕捉和理解它们，极度依赖个人记忆和悟性，难以体系化传承和对齐。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方案制定的“高压”与“重复”&lt;/strong&gt; ：每个战略方案都是高度定制的，既要深度复用历史经验，又要进行创新性重构，无法通过简单的模板套用完成。在时间紧、任务重的压力下，大量精力耗费在重复性的资料搜集、整理和对齐工作上，挤占了真正用于战略思考和创新的时间。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="破局之策构建能理解战略意图的第二大脑"&gt;破局之策：构建能理解“战略意图”的第二大脑
+&lt;/h2&gt;&lt;p&gt;我们需要一个智能伙伴，它不仅能存储知识，更能理解知识背后的 &lt;strong&gt;上下文（Context）&lt;/strong&gt; 和 战略意图（Strategic Intent） 。这，就是我们基于大语言模型（LLM）构建的“战略型第二大脑”。&lt;/p&gt;
+&lt;p&gt;面对开篇的任务，它的工作流程是这样的：&lt;/p&gt;
+&lt;p&gt;首先， &lt;strong&gt;感知模块&lt;/strong&gt; 会对任务进行深度解析。它不仅识别出“XX网络演进白皮书”这个实体，更能理解“战略推进路径”、“下一阶段”等词汇背后，对 &lt;strong&gt;方向性、前瞻性和投资效益&lt;/strong&gt; 的综合考量。&lt;/p&gt;
+&lt;p&gt;随后， &lt;strong&gt;融合模块&lt;/strong&gt; 将启动深度的语义关联与溯源：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;精准定位&lt;/strong&gt; ：《XX网络演进白皮书》的所有版本、相关解读及宣贯材料。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自动关联&lt;/strong&gt; ：过去一年所有省公司的“试点”、“试验”项目报告与总结汇报，并基于关键指标（如TCO、性能、运维效率）进行对比分析。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;智能检索&lt;/strong&gt; ：知识库中所有标记为“技术趋势”、“行业洞察”的内外部文档（如Gartner报告、MWC演讲、标准组织文稿、厂商的建议、互联网上相关的内容）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心能力——战略解码&lt;/strong&gt; ：启动“ &lt;strong&gt;领导意图分析&lt;/strong&gt; ”功能，自动检索并提炼高层领导近半年所有公开讲话、内部会议纪要中，与“XX网络”、“演进”、“战略”、“投资”等相关的核心观点，分析其关注点的演变脉络，为方案精准定调。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;接下来， &lt;strong&gt;生成模块&lt;/strong&gt; 将扮演你的“首席规划师”，基于融合后的知识，构建方案的核心逻辑：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;现状评估与洞察（As-Is &amp;amp; Insight）&lt;/strong&gt; ：对比《白皮书》的初始目标与试点现实，自动生成SWOT分析，清晰指出当前策略的差距与机遇。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;战略路径建议（To-Be Options）&lt;/strong&gt; ：提出2-3条演进路径选项，并结合“领导意图分析”的结果，加权推荐最符合集团顶层战略的选项，并阐明理由。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署路线图（Roadmap）&lt;/strong&gt; ：将推荐的战略路径，分解为具体的举措、阶段和里程碑，形成可执行、可衡量的行动计划草案。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;最后， &lt;strong&gt;输出模块&lt;/strong&gt; 将上述思考，转化为一份逻辑严谨、表述专业、深度对齐战略方向的方案初稿。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/B95B1kesBUDh0N9HyBBLDQC9NwYmAKjniaR21uibLcmibzxichmF2GvapP79jLZEgiaDUmFBDicrbib852BALmHfNENKg/640?wx_fmt=jpeg&amp;amp;watermark=1&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1#imgIndex=0"
+loading="lazy"
+alt="图片"
+&gt;&lt;/p&gt;
+&lt;h2 id="价值回归从方案撰写者到战略决策者"&gt;价值回归：从“方案撰写者”到“战略决策者”
+&lt;/h2&gt;&lt;p&gt;在“第二大脑”的辅助下，你不再需要耗费数日进行原始资料的搜集、整理和初步分析。你的工作模式将彻底升级：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你提出战略问题 -&amp;gt; 它完成80%的资料融合、分析洞察和框架构建 -&amp;gt; 你基于它的深度分析和高价值初稿，聚焦于最终的策略决断、观点拔高和逻辑精炼。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你的宝贵时间，将真正回归到 &lt;strong&gt;定方向、做决断、提洞见&lt;/strong&gt; 上，这才是战略型专家不可替代的核心价值。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="实战业务场景设想本地传输网演进中的战略编制"&gt;实战业务场景设想：本地传输网演进中的“战略编制”
+&lt;/h2&gt;&lt;p&gt;以一个典型的实际业务场景为例： &lt;strong&gt;集团要求思考本地传输网，尤其是县乡层面的网络如何演进发展&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;这一场景面临以下几个关键问题：&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;低成本建设&lt;/strong&gt; ：县域及乡镇地区资源有限，需平衡投资与效益； • &lt;strong&gt;满足一定时期的业务需求&lt;/strong&gt; ：既要支撑当前5G、千兆宽带、工业互联网等应用，也要具备一定的扩展能力； • &lt;strong&gt;政策导向&lt;/strong&gt; ：国家“新基建”政策、“城乡一体化”战略等对网络发展的具体要求； • &lt;strong&gt;技术演进&lt;/strong&gt; ：从光传送网（OTN）、IPRAN、FlexE、FgOTN、DCI-BOX等新技术/新设备形态发展的趋势。&lt;/p&gt;
+&lt;p&gt;在这个过程中，“第二大脑”可以帮助我们：&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;快速提取历史方案&lt;/strong&gt; ：回顾过去几年在县乡网络部署中的成功与失败案例； • &lt;strong&gt;整合试点数据&lt;/strong&gt; ：分析不同区域的试点成果，提炼有效模式； • &lt;strong&gt;分析领导意图&lt;/strong&gt; ：梳理上级对“区域一体化”、“底层网络”、“网络精简”等议题的关注点； • &lt;strong&gt;生成可行路径&lt;/strong&gt; ：基于成本、性能、可持续性等维度，提出多个演进路线供选择。&lt;/p&gt;
+&lt;h2 id="结语掌控知识方能引领战略"&gt;结语：掌控知识，方能引领战略
+&lt;/h2&gt;&lt;p&gt;“第二大脑”的核心，是将分散、沉睡的知识，激活为系统、智能的战略资产。它让我们能够从容应对高层级的战略需求，输出不仅技术正确、更体现战略洞察的卓越方案，真正成为领导身边“靠得住、用得上”的核心智囊。&lt;/p&gt;
+&lt;p&gt;在下一篇中，我将分享如何利用开源工具，在本地环境中一步步搭建起这套能解码战略的智能系统原型。敬请期待。&lt;/p&gt;
+&lt;h2 id="后记从建力到用智通信人的ai新使命"&gt;后记：从“建力”到“用智”——通信人的AI新使命
+&lt;/h2&gt;&lt;p&gt;当我们谈论国家大力发展人工智能时，作为通信网络从业者，我们往往首先想到的是5G、F5G、算力网络、数据中心等基础设施建设——我们是“算力的建设者”，为AI时代铺就信息高速公路。&lt;/p&gt;
+&lt;p&gt;然而，在这场波澜壮阔的智能化浪潮中，我们的角色不应止步于此。&lt;/p&gt;
+&lt;p&gt;国家推动“人工智能+”行动，不仅要求我们提供更强大的算力支撑，更要求我们成为“算力的使用者”，将AI技术深度融入网络规划、建设、运维、优化的全生命周期，实现行业的自我革新与赋能。&lt;/p&gt;
+&lt;p&gt;本文所探讨的“第二大脑”，正是这样一个尝试。它并非遥不可及的概念，而是每个通信工程师都能上手实践的具体工具。通过将LLM与我们的专业知识和海量数据相结合，我们正在：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将经验转化为可复用的智能资产&lt;/li&gt;
+&lt;li&gt;将碎片信息整合为战略洞察&lt;/li&gt;
+&lt;li&gt;将被动响应变为主动规划&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这不仅是工作效率的提升，更是工作模式的变革——让我们从重复性的信息整理中解放出来，专注于更需要人类智慧和创造力的战略决策和技术创新。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作为数字基础设施的构建者，我们比任何人都更懂数据的力量；作为网络技术的创新者，我们理应成为AI技术的最前沿应用者。让我们既做算力的“铺路人”，也做智能的“领航员”，在建设强大算力基础设施的同时，更率先探索其最具价值的应用场景，共同推动通信行业向智能化、高端化迈进。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这条路，才刚刚开始。但每一个小小的实践，都是通往未来的一步。&lt;/p&gt;</description></item></channel></rss>

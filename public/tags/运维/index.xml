@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>运维 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/%E8%BF%90%E7%BB%B4/</link><description>Recent content in 运维 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sat, 13 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E8%BF%90%E7%BB%B4/index.xml" rel="self" type="application/rss+xml"/><item><title>极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！</title><link>https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/</link><pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/cover.webp" alt="Featured image of post 极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！" /&gt;&lt;p&gt;在数字化转型加速的今天，网络稳定性与运维效率成为运营商的核心竞争力。中国联通子公司中讯设计，推出全新自研产品—— &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; ，正式在 &lt;strong&gt;智慧供应链科创转化专区&lt;/strong&gt; 上线，助力光缆网络运维迈入智能化新时代！&lt;/p&gt;
+&lt;h2 id="产品概览一眼看懂光缆健康"&gt;产品概览：一眼看懂光缆健康
+&lt;/h2&gt;&lt;p&gt;系统首页集成了 &lt;strong&gt;故障告警分析、光缆健康度评价、故障工单指标、光缆运行全景视图&lt;/strong&gt; 等功能，基于GIS地图与OTDR探测能力，实现 &lt;strong&gt;光缆故障精准定位&lt;/strong&gt; ，让运维人员一目了然，快速响应。&lt;/p&gt;
+&lt;h2 id="软硬一体自主产权性能卓越"&gt;软硬一体：自主产权，性能卓越
+&lt;/h2&gt;&lt;h2 id="硬件设备智能监测稳定可靠"&gt;硬件设备：智能监测，稳定可靠
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;光纤智能监测设备&lt;/strong&gt; ：1U高度，支持8/16通道，动态范围32dB，监测距离高达 &lt;strong&gt;100公里&lt;/strong&gt; ，定位精度 ±5米 ！&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;模块化设计&lt;/strong&gt; ：灵活配置，支持内外挂光开关，适配多场景部署&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;低成本高性价比&lt;/strong&gt; ：完全自主知识产权，设备售价仅为 &lt;strong&gt;5万元/台&lt;/strong&gt; ，远低于市场同类产品&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="软件平台智能分析全域覆盖"&gt;软件平台：智能分析，全域覆盖
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;故障快速定位&lt;/strong&gt; ：结合GIS与光缆资源数据，实现从段落到标志点的精准定位&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;性能巡检与指标监控&lt;/strong&gt; ：支持定期/实时巡检，自动阈值告警，提升巡检效率&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;时延路径仿真&lt;/strong&gt; ：智能推荐最短时延路径，支撑业务快速开通&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;光缆健康度评价&lt;/strong&gt; ：多维度评估光缆状态，输出月/季/年报，支持PDF导出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="四大核心优势"&gt;四大核心优势
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;优势&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;** 智能分析**&lt;/td&gt;
+&lt;td&gt;性能在线纳管、指标综合分析&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;** 快速感知**&lt;/td&gt;
+&lt;td&gt;故障定位精确、告警派单实时&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;** 经济高效**&lt;/td&gt;
+&lt;td&gt;一键巡检、分级维护，降本增效&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;** 全域覆盖**&lt;/td&gt;
+&lt;td&gt;支持在用与备用纤芯，多场景适用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="应用场景广泛实战效果显著"&gt;应用场景广泛，实战效果显著
+&lt;/h2&gt;&lt;p&gt;系统已成功应用于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;集团智能排障平台&lt;/strong&gt; ：覆盖265套波分系统，纳管光缆529条，提升排障效率与数据质量&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;客户业务监测&lt;/strong&gt; ：先于客户发现故障，实现主动运维，提升客户满意度&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;骨干网与备用光纤一体化监控&lt;/strong&gt; ：实现跨厂家统一纳管，打破系统孤岛&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="竞品对比技术领先合作灵活"&gt;竞品对比：技术领先，合作灵活
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;对比项&lt;/th&gt;
+&lt;th&gt;中讯&lt;/th&gt;
+&lt;th&gt;市场竞品&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;设备价格&lt;/td&gt;
+&lt;td&gt;5万元/台&lt;/td&gt;
+&lt;td&gt;12–14万元/台&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;在用光纤管理&lt;/td&gt;
+&lt;td&gt;支持统一纳管&lt;/td&gt;
+&lt;td&gt;不支持&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;厂家依赖&lt;/td&gt;
+&lt;td&gt;低，独立部署&lt;/td&gt;
+&lt;td&gt;高，依赖厂家网管&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;扩展能力&lt;/td&gt;
+&lt;td&gt;强，支持定制开发&lt;/td&gt;
+&lt;td&gt;有限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="合作与联系"&gt;合作与联系
+&lt;/h2&gt;&lt;p&gt;如果您对&amp;quot; &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; &amp;ldquo;感兴趣，欢迎联系产品负责人：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;联系人：张先生&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;微信扫码咨询👇&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mmbiz.qpic.cn/sz_mmbiz_png/B95B1kesBUA2xJbW2Sgm22Tic3hcS34AhvHKHaGRZsNVO7x15eDJpCoRAjPN0B3WepKXtoCRzae9aZ3iaRIqwhdQ/640?wx_fmt=png&amp;amp;from=appmsg&amp;amp;watermark=1&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1#imgIndex=0"
+loading="lazy"
+alt="图片"
+&gt;&lt;/p&gt;
+&lt;p&gt;中国联通光纤智慧运营管理系统，以 &lt;strong&gt;自主产权、智能运维、高效管理&lt;/strong&gt; 为核心，助力构建更安全、更稳定、更智能的光网络基础设施。 &lt;strong&gt;智慧光网，联通未来！&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
