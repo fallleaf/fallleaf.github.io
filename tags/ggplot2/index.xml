@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ggplot2 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/ggplot2/</link><description>Recent content in Ggplot2 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/ggplot2/index.xml" rel="self" type="application/rss+xml"/><item><title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title><link>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</guid><description>&lt;h2 id="什么是斜线图"&gt;什么是斜线图
+&lt;/h2&gt;&lt;p&gt;斜线图（Slopegraph）是一种用于展示同一组观测对象在两个固定状态之间变化关系的数据可视化形式。
+这两个状态可以是不同时间（如今年与去年、事件前后），也可以是不同维度（如总体与子群体），其度量可以是排名、比例或数值。&lt;/p&gt;
+&lt;p&gt;从表现形式上看，斜线图属于折线图的一个特例，但其设计目标并不是描绘连续变化过程，而是强调两个状态之间的相对变化结构。因此，无论是 Excel、Tableau 还是 R，只要支持折线图的工具都可以绘制斜线图。&lt;/p&gt;
+&lt;p&gt;Edward Tufte 在 1983 年出版的《The Visual Display of Quantitative Information》中首次系统性讨论了这种表达方式，并在 2011 年 6 月 1 日的论坛中正式将其命名为 slopegraph。早期应用并不广泛，但随着数据新闻和分析型可视化的发展，斜线图近年来逐渐成为常用工具。&lt;/p&gt;
+&lt;p&gt;下面是几个典型的斜线图示例。
+&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott.webp"
+width="1080"
+height="965"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_a3e4ab5f789f691d.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_59b7c3e89008846a.webp 1024w"
+loading="lazy"
+alt="FT图例"
+class="gallery-image"
+data-flex-grow="111"
+data-flex-basis="268px"
+&gt;&lt;/p&gt;
+&lt;p&gt;这是《Financial Times》绘制的一个斜线图，用于展示中国消费者对美国品牌商品抵制态度的变化情况。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time.webp"
+width="404"
+height="634"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_20e05bf5a266a1df.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_264cc8b81c03f11f.webp 1024w"
+loading="lazy"
+alt="网易图例"
+class="gallery-image"
+data-flex-grow="63"
+data-flex-basis="152px"
+&gt;&lt;/p&gt;
+&lt;p&gt;这张图来自网易，X 轴为 1990 年和 2017 年两个时间点，Y 轴为慢性病伤残调整寿命年（DALY）的排名。通过斜线的交叉和排序变化，可以直观看出哪些慢性病在这 27 年间上升为主要死因，以及不同病种之间地位的变化。这种跨时间跨度较大的对比，正是斜线图&lt;strong&gt;最典型&lt;/strong&gt;的应用场景。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group.webp"
+width="376"
+height="443"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_dd48f3d75baea9b2.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_64d89214951880a0.webp 1024w"
+loading="lazy"
+alt="Employee Feedback"
+class="gallery-image"
+data-flex-grow="84"
+data-flex-basis="203px"
+&gt;&lt;/p&gt;
+&lt;p&gt;该图引自 storytellingwithdata 网站的文章 More on slopegraphs。X 轴表示两个分组（Company 与 Team X），Y 轴表示调查指标得分。斜线图在这里用于展示同一指标在&lt;strong&gt;总体与子群体&lt;/strong&gt;中的相对位置与变化情况。&lt;/p&gt;
+&lt;h2 id="什么时候用斜线图"&gt;什么时候用斜线图
+&lt;/h2&gt;&lt;p&gt;Edward Tufte 在 6 月 1 日的帖子中对斜线图的用途做了高度概括：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Slopegraphs compare changes over time for a list of nouns located on an ordinal or interval scale.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;即：斜线图用于比较&lt;strong&gt;一组可排序或可度量对象在不同状态之间的变化&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;因此，在原本会使用柱状图或折线图进行“两点对比”的场景中，斜线图往往是更高效的表达方式。例如，以下是用柱状图表示四家公司 2018 年和 2019 年收入的情况。
+柱状图表示：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1.webp"
+width="960"
+height="960"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_4220d2c8b959ef73.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_d7f2463eaa4adb43.webp 1024w"
+loading="lazy"
+alt="柱状图示例"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;&lt;/p&gt;
+&lt;p&gt;或者：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1.webp"
+width="960"
+height="960"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_39414b2dd2fbf857.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_8fb406bedf84b6d0.webp 1024w"
+loading="lazy"
+alt="另一种柱状图示例"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;&lt;/p&gt;
+&lt;p&gt;用斜线图表示，如下&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1.webp"
+width="1344"
+height="960"
+srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_2412b24114d9707.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_fb2506ae2fd5ba04.webp 1024w"
+loading="lazy"
+alt="斜线图示例"
+class="gallery-image"
+data-flex-grow="140"
+data-flex-basis="336px"
+&gt;&lt;/p&gt;
+&lt;p&gt;对比这三种表达方式可以发现：
+柱状图只能呈现绝对数值，而斜线图能够在同一视图中同时表达收入水平、排名以及变化幅度。读者不需要额外计算或比较，就可以理解企业之间的相对变化。&lt;/p&gt;
+&lt;p&gt;柱状图与斜线图在设计上的一个关键差异在于：柱状图的 Y 轴必须从 0 开始，否则会夸大差异；而斜线图的 Y 轴并不要求从 0 开始，因此更适合用来比较排名变化或相对变化结构，而不是绝对规模。&lt;/p&gt;
+&lt;h2 id="怎么用r语言作斜线图"&gt;怎么用R语言作斜线图
+&lt;/h2&gt;&lt;p&gt;由于斜线图就是折线图的一种变形，所以，只要能够制作折线图的软件都能制作斜线图，这里介绍一下在R语言环境下制作斜线图的方法。&lt;/p&gt;
+&lt;p&gt;GitHub有一个R语言库项目：CGPfunctions，提供了制作斜线图的函数newggslopegraph()。上面的斜线图就是用这个函数做出来的。&lt;/p&gt;
+&lt;p&gt;库文件的安装详见网页说明，最新版本是0.5.8，包含了新增加的一些函数参数，这里只把这个函数的参数用中文解释一下。&lt;/p&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;newggslopegraph(
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; dataframe, Times, Measurement, Grouping,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Title = &amp;#34;No title given&amp;#34;, SubTitle = &amp;#34;No subtitle given&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Caption = &amp;#34;No caption given&amp;#34;, XTextSize = 12, YTextSize = 3,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; TitleTextSize = 14, SubTitleTextSize = 10, CaptionTextSize = 8,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; TitleJustify = &amp;#34;left&amp;#34;, SubTitleJustify = &amp;#34;left&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; CaptionJustify = &amp;#34;right&amp;#34;, LineThickness = 1, LineColor = &amp;#34;ByGroup&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataTextSize = 2.5, DataTextColor = &amp;#34;black&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataLabelPadding = 0.05, DataLabelLineSize = 0,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataLabelFillColor = &amp;#34;white&amp;#34;, WiderLabels = FALSE,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ReverseYAxis = FALSE, ReverseXAxis = FALSE, RemoveMissing = TRUE,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ThemeChoice = &amp;#34;bw&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; )
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;dataframe：一个数据框类型的数据组，tidy data格式。会检查一些基本的错误，如检查是否存在列名称。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Times：数据框中的一列数据名，表示X轴上不同分组，比如时间或类别，可以是一个有序的class，因子或字符。注意，如果这列数据是日期类型，则需用as.character()转换成字符类型。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Measurement： 数据框中的一列数据名，表示Y轴上不同的数值。一般为百分比、名次等，也可为数值，可接受的类型为整数或数值。如果数值不那么离散或集中，斜线图的表达会更完美。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grouping：分组名，数据框中的一列数据，表示不同的分组&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如上面例子中用的数据框为：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;data
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## company year income
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 1 CompanyA 2018年 232
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 2 CompanyA 2019年 261
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 3 CompanyB 2018年 111
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 4 CompanyB 2019年 425
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 5 CompanyC 2018年 266
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 6 CompanyC 2019年 217
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 7 CompanyD 2018年 431
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 8 CompanyD 2019年 329
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这是一个带列名称的数据框data，第一列就是Grouping，表明每个斜线的类别，第二列是Times，表明X轴上的两个时间点，第三列是“Measurement”，表明每列别对应X轴在Y轴上的位置。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Title：标题，可选，当Title = NULL时，没有标题，当Title = “”时，一个空标题，但在图形中占据位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SubTitle：副标题，可选，当SubTitle = NULL时，没有标题，当SubTitle = “”时，一个空标题，但在图形中占据位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Caption：说明文字，可选，当Caption = NULL时，没有标题，当Caption = “”时，一个空标题，但在图形中占据位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;XTextSize：X轴分组的文字大小，可选，缺省大小为12，和Y轴的分组文字大小有不同比例。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;YTextSize：Y轴分组的文字大小，可选，缺省大小为3，和X轴的分组文字大小有不同比例。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TitleTextSize：标题文字大小，可选，缺省大小为14。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SubTitleTextSize：副标题文字大小，可选，缺省大小为10。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CaptionTextSize：说明文字大小， 可选，缺省大小为8。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TitleJustify：标题位置，为“L”, “R” or “C” or use the hjust = notation from ggplot2 with a numeric value between ‘0’ (left) and ‘1’ (right)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SubTitleJustify：副标题位置，为“L”, “R” or “C” or use the hjust = notation from ggplot2 with a numeric value between ‘0’ (left) and ‘1’ (right)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CaptionJustify：说明文字位置，为“L”, “R” or “C” or use the hjust = notation from ggplot2 with a numeric value between ‘0’ (left) and ‘1’ (right)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LineThickness：斜线线宽，可选，缺省值为1。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LineColor：斜线颜色。可以用一个向量给每个分组设置颜色，向量的长度应和分组的分类数相等，如果不足，则循环设置，如c(“gray”, “red”, “green”, “gray”)或者时带分组名称的向量 c(“CompanyA” = “gray”, “CompanyB” = “red”, “CompanyC” = “green”, “CompanyD” = “gray”)，利用这一特性，可以绘制出不同颜色的斜线。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DataTextSize：Y轴数值字符大小，可选，缺省值为2.5。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DataTextColor：Y轴数值颜色，可选，缺省为黑色“black”，可以是“colors()”中颜色或16进制数“#FF00FF”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DataLabelPadding：Y轴数值和外框的间距，缺省值为0.05。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DataLabelLineSize：Y轴数值外框的线宽，缺省值为0，即没有框。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DataLabelFillColor：Y轴数值框内的颜色，缺省值为“white”，可以是“colors()”中颜色或16进制数“#FF00FF”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WiderLabels：logical, set this value to TRUE if your “labels” or Grouping variable values tend to be long as they are in the newcancer dataset. This setting will give them more room in the same plot size.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ReverseYAxis：反转Y轴，逻辑值，如果想改变Y轴的排序方式，可设置为TRUE，可以把第一名调整在顶层。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ReverseXAxis：反转X轴，逻辑值，想改变factor levels时，可设置为TRUE。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RemoveMissing：逻辑值，如果设置为TRUE，如果缺少一些数值，则响应的分组也会移除不显示。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ThemeChoice：主题选择，缺省主题为“bw”,其他的是“ipsum”, “econ”, “wsj”, “gdocs”, and “tufte”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;下面展示一个完整的函数参数以及创建的图形，注意，X轴和Y轴均倒置了。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;newggslopegraph(
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; data, year, income, company,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Title = &amp;#34;This is Title&amp;#34;, SubTitle = &amp;#34;This is subTitle&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Caption = &amp;#34;This is Caption\nSecond line&amp;#34;, XTextSize = 14, YTextSize = 4,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; TitleTextSize = 14, SubTitleTextSize = 12, CaptionTextSize = 10,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; TitleJustify = &amp;#34;L&amp;#34;, SubTitleJustify = &amp;#34;R&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; CaptionJustify = &amp;#34;C&amp;#34;, LineThickness = 2,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; LineColor = c(&amp;#34;CompanyD&amp;#34; = &amp;#34;seagreen&amp;#34;,&amp;#34;CompanyA&amp;#34; = &amp;#34;green&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;CompanyB&amp;#34; = &amp;#34;tomato&amp;#34;,&amp;#34;CompanyC&amp;#34; = &amp;#34;orange&amp;#34;),
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataTextSize = 4, DataTextColor = &amp;#34;red&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataLabelPadding = 0.2, DataLabelLineSize = 0.5,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataLabelFillColor = &amp;#34;gray&amp;#34;, WiderLabels = FALSE,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ThemeChoice = &amp;#34;tufte&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; )
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/demo-1.png"
+loading="lazy"
+alt="斜线图"
+&gt;&lt;/p&gt;
+&lt;p&gt;一般而言，斜线图最适合用于比较两个时间点或两个分组的数据，也可以扩展到三至四个时间点，但不宜过多，否则应改用传统折线图。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/chinaunicom-1.png"
+loading="lazy"
+alt="中国联通"
+&gt;&lt;/p&gt;
+&lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;</description></item></channel></rss>

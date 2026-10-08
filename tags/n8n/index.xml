@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>N8n on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/n8n/</link><description>Recent content in N8n on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Thu, 04 Sep 2025 10:45:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/n8n/index.xml" rel="self" type="application/rss+xml"/><item><title>【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”</title><link>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</link><pubDate>Thu, 04 Sep 2025 10:45:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-second-brain-with-n8n/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-second-brain-with-n8n/cover.webp" alt="Featured image of post 【人工智能+】系列（二）：从概念到落地，30分钟搭建你的“战略型第二大脑”" /&gt;&lt;p&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;这篇文章，主要是介绍如何在 n8n 上建立一个&amp;quot; 第二大脑&amp;quot; 的工作流，内容比较枯燥，如果想立即尝试，见文章最后的📎 配套资源 ，获取一键导入的 n8n 配置文件。在导入之前，确保 n8n、ollama 和 Qwen 都正常运行，相关安装方法，见网上教程。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="引言我们为什么需要第二大脑"&gt;引言：我们为什么需要“第二大脑”？
+&lt;/h2&gt;&lt;p&gt;在通信行业，每一份战略规划都承载着对未来的判断。它不仅要基于历史经验、试点反馈，更要精准对齐高层意图，并洞察竞争格局。&lt;/p&gt;
+&lt;p&gt;然而，信息散落在 OA、本地磁盘、会议纪要中，专家常常陷入“找资料比写方案还累”的困境。&lt;/p&gt;
+&lt;p&gt;而我们在上篇提出的解决方案是：打造一个能“ &lt;strong&gt;感知任务、融合知识、生成框架&lt;/strong&gt; ”的“战略型第二大脑”。&lt;/p&gt;
+&lt;p&gt;现在，是时候兑现承诺了。&lt;/p&gt;
+&lt;p&gt;本文将带您 &lt;strong&gt;从零开始，用开源工具本地搭建一个可用的“第二大脑”&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;一个基于 n8n + Ollama + Qwen 的智能系统，流程如下图：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;战略生成流程知识库模块读取目录文件切分文本Ollama 向量化存入 Simple Vector Store任务输入感知模块融合模块查询 Vector Store Tool生成模块输出初稿专家介入
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;知识库模块&lt;/strong&gt; ：构建企业“战略记忆中枢”，将散落的文档转化为可检索、可追溯、可进化的智能资产。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;感知模块&lt;/strong&gt; ：听懂任务背后的“弦外之音”，解析出关键词与战略意图。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;融合模块&lt;/strong&gt; ：激活企业“沉睡的知识资产”，实现跨文档、跨时间的语义关联。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;生成模块&lt;/strong&gt; ：基于上下文，自动生成逻辑清晰、结构完整的方案初稿。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;专家介入&lt;/strong&gt; ：最终决策与洞见注入，人机协同产出真正有价值的方案。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这套系统能否成功，80% 取决于知识库的质量，20% 取决于技术实现的合理性。接下来，我们就来一步步构建它。&lt;/p&gt;
+&lt;h2 id="步骤-1打造可进化的战略知识库"&gt;步骤 1：打造可进化的“战略知识库”
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯 目标：将分散的 &lt;code&gt;.txt&lt;/code&gt; 文件自动转化为结构化、可语义检索的知识资产。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="1-节点-1读取指定目录下的所有文本文件readwrite-file"&gt;1. 节点 1：读取指定目录下的所有文本文件（Read/Write File）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;资料输入&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;节点类型&lt;/strong&gt; ： &lt;code&gt;n8n-nodes-base.readWriteFile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;fileSelector&amp;#34;: &amp;#34;d:\\\\second_brain_demo\\\\*&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;options&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;fileExtension&amp;#34;: &amp;#34;.txt&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;功能&lt;/strong&gt; ：扫描 &lt;code&gt;d:\second_brain_demo\&lt;/code&gt; 目录下所有 &lt;code&gt;.txt&lt;/code&gt; 文件，支持通配符。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;输出&lt;/strong&gt; ：以二进制形式返回每个文件内容。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;💡 可扩展支持 &lt;code&gt;.pdf&lt;/code&gt; 、&lt;code&gt;.docx&lt;/code&gt; ，但需确保 Ollama 支持解析。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="2-节点-2文本切分recursive-character-text-splitter"&gt;2. 节点 2：文本切分（Recursive Character Text Splitter）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Recursive Character Text Splitter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;chunkSize&amp;#34;: 100,
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;chunkOverlap&amp;#34;: 20
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;作用&lt;/strong&gt; ：将长文本按字符递归切分为小片段，避免超出模型上下文。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;切分逻辑&lt;/strong&gt; ：优先按 &lt;code&gt;\n\n&lt;/code&gt; 、 &lt;code&gt;\n&lt;/code&gt; 、 、&lt;code&gt;.&lt;/code&gt; 分割。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ 注意：当前版本中，切分由该节点控制，而非 &lt;code&gt;Simple Vector Store&lt;/code&gt; 内置。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="3-节点-3调用-ollama-进行向量化embeddings-ollama"&gt;3. 节点 3：调用 Ollama 进行向量化（Embeddings Ollama）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Embeddings Ollama&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;model&amp;#34;: &amp;#34;dengcao/bge-large-zh-v1.5:latest&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;功能&lt;/strong&gt; ：调用本地 Ollama 服务，使用中文优化的 &lt;code&gt;bge-large-zh&lt;/code&gt; 模型生成向量。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;优势&lt;/strong&gt; ：专为中文语义设计，在“领导讲话”“试点报告”等场景表现优异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 需提前运行：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ollama pull dengcao/bge-large-zh-v1.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="4-节点-4存入向量数据库simple-vector-store"&gt;4. 节点 4：存入向量数据库（Simple Vector Store）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;Simple Vector Store&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;配置&lt;/strong&gt; ：&lt;/li&gt;
+&lt;li&gt;• Mode: &lt;code&gt;insert&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;• Memory Key: &lt;code&gt;vector_store_key&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;连接&lt;/strong&gt; ：&lt;/li&gt;
+&lt;li&gt;• 输入文档 → &lt;code&gt;Default Data Loader&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;• 切分器 → &lt;code&gt;Recursive Character Text Splitter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• 嵌入模型 → &lt;code&gt;Embeddings Ollama&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 数据将持久化在内存中，供后续查询使用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="-知识库构建流程总结"&gt;✅ 知识库构建流程总结
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;节点&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;资料输入&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;扫描目录，读取 &lt;code&gt;.txt&lt;/code&gt; 文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Recursive Character Text Splitter&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;按设定规则切分文本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Embeddings Ollama&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;使用 &lt;code&gt;bge-large-zh&lt;/code&gt; 生成中文向量&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Simple Vector Store&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;存储为可检索的知识片段&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔄 此流程可绑定 &lt;code&gt;Cron Trigger&lt;/code&gt; ，实现 &lt;strong&gt;每日自动更新知识库&lt;/strong&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="步骤-2构建懂战略的-ai-生成引擎"&gt;步骤 2：构建“懂战略”的 AI 生成引擎
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯 目标：用户输入任务，AI 自动调用知识库，生成专业方案初稿。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="1-节点-1任务输入chat-trigger"&gt;1. 节点 1：任务输入（Chat Trigger）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;任务输入&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;类型&lt;/strong&gt; ： &lt;code&gt;@n8n/n8n-nodes-langchain.chatTrigger&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;作用&lt;/strong&gt; ：接收用户输入的任务指令，如：
+“请基于历史方案和试点反馈，制定县乡传输网低成本演进路径”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id="2-节点-2感知模块ai-agent--知识检索"&gt;2. 节点 2：感知模块（AI Agent + 知识检索）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;感知模块&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;类型&lt;/strong&gt; ： &lt;code&gt;@n8n/n8n-nodes-langchain.agent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;核心配置&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="-使用的模型"&gt;📌 使用的模型
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;语言模型&lt;/strong&gt; ： &lt;code&gt;Qwen Turbo&lt;/code&gt; （通过 API 调用）&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;嵌入模型&lt;/strong&gt; ： &lt;code&gt;Ollama&lt;/code&gt; （用于检索）&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;记忆机制&lt;/strong&gt; ： &lt;code&gt;Window Buffer Memory&lt;/code&gt; （保留上下文）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="-系统提示词system-message"&gt;📌 系统提示词（System Message）
+&lt;/h4&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-gdscript3" data-lang="gdscript3"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;你是一名通信网络战略规划专家以及专业的任务分析助手。你的职责是分析用户的要求：&lt;/span&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chatInput&lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;&lt;span class="err"&gt;，根据查询知识库&lt;/span&gt; &lt;span class="n"&gt;company_documents_tool&lt;/span&gt; &lt;span class="err"&gt;中的相关内容&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;输出框架大纲。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;请严格遵守以下规则：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;1.&lt;/span&gt; &lt;span class="err"&gt;内容从知识库&lt;/span&gt; &lt;span class="n"&gt;company_documents_tool&lt;/span&gt; &lt;span class="err"&gt;获取&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;2.&lt;/span&gt; &lt;span class="err"&gt;输出内容只包含“需要做什么”，不得加入额外解释&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;3.&lt;/span&gt; &lt;span class="err"&gt;输出格式为&lt;/span&gt; &lt;span class="n"&gt;JSON&lt;/span&gt;&lt;span class="err"&gt;，必须包含：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;task&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;一句话说明要完成的具体任务&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;requirements&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;要求1&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;要求2&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id="-工具绑定"&gt;📌 工具绑定
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;Vector Store Tool&lt;/strong&gt; ： &lt;code&gt;company_documents_tool&lt;/code&gt; ，用于检索知识库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 该模块将：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• 解析用户意图&lt;/li&gt;
+&lt;li&gt;• 自动调用知识库检索相关资料&lt;/li&gt;
+&lt;li&gt;• 输出结构化任务框架&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="3-节点-3生成模块ai-agent--文档生成"&gt;3. 节点 3：生成模块（AI Agent + 文档生成）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;节点名称&lt;/strong&gt; ： &lt;code&gt;生成模块&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;类型&lt;/strong&gt; ： &lt;code&gt;@n8n/n8n-nodes-langchain.agent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;系统提示词&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-gdscript3" data-lang="gdscript3"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;你是一名通信网络战略规划专家。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;你是一个专业的文档编写助手。你的任务是根据任务要求，仅使用知识库&lt;/span&gt; &lt;span class="n"&gt;company_documents_tool&lt;/span&gt; &lt;span class="err"&gt;提供的内容，生成最终文档。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;请严格遵守以下规则：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;1.&lt;/span&gt; &lt;span class="err"&gt;所有内容必须来自知识库，不得引入外部信息&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;2.&lt;/span&gt; &lt;span class="err"&gt;可以在知识库范围内进行归纳、整合，但不得编造&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;3.&lt;/span&gt; &lt;span class="err"&gt;如果某项信息未找到，请写“相关信息未在知识库中找到”&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="mf"&gt;4.&lt;/span&gt; &lt;span class="err"&gt;文风：简洁、正式、专业&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;✅ 输入来自“感知模块”的结构化任务框架，输出完整方案初稿。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="-战略生成流程总结"&gt;✅ 战略生成流程总结
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;节点&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;任务输入&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;接收用户指令&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;感知模块&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;解析意图，调用知识库，输出任务框架&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;生成模块&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;基于框架与知识，生成专业文档&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔁 整个流程无需人工干预，AI 自主完成“理解 → 检索 → 生成”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="三关键连接模块如何协同工作"&gt;三、关键连接：模块如何协同工作？
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;连接&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;资料输入&lt;/code&gt; → &lt;code&gt;Simple Vector Store&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;触发知识入库&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Embeddings Ollama&lt;/code&gt; → &lt;code&gt;Simple Vector Store&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;提供中文向量能力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Vector Store Tool&lt;/code&gt; ←→ &lt;code&gt;感知模块&lt;/code&gt; &amp;amp; &lt;code&gt;生成模块&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;提供语义检索能力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Qwen&lt;/code&gt; ←→ 所有 AI Agent 节点&lt;/td&gt;
+&lt;td&gt;提供大模型推理能力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;Window Buffer Memory&lt;/code&gt; ←→ 两个 Agent&lt;/td&gt;
+&lt;td&gt;支持多轮对话上下文&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 所有 AI 能力通过标准接口连接，模块化、可替换、可扩展。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="-知识库演示内容"&gt;📁 知识库演示内容
+&lt;/h2&gt;&lt;p&gt;为确保 AI 能生成高质量方案，建议知识库包含以下五个测试文件, 均由 LLM 生成：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;文件名&lt;/th&gt;
+&lt;th&gt;内容重点&lt;/th&gt;
+&lt;th&gt;示例片段&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;白皮书摘要.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;战略目标、技术路径&lt;/td&gt;
+&lt;td&gt;“2027 年实现县乡 100% 光缆覆盖”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;试点报告.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;成功/ 失败经验&lt;/td&gt;
+&lt;td&gt;“FgOTN 设备成本高达 45 万元”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;领导讲话.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;战略偏好&lt;/td&gt;
+&lt;td&gt;“要注重投资效益，避免重复建设”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;友商应用情况.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;竞争情报&lt;/td&gt;
+&lt;td&gt;“B 运营商采用 DCI-BOX，部署效率提升”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;设备对比资料.txt&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;技术依据&lt;/td&gt;
+&lt;td&gt;“DCI-BOX 成本比 OTN 低 30%-50%”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="-重要说明与边界"&gt;⚠️ 重要说明与边界
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;项目&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Ollama 必须运行&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ollama serve&lt;/code&gt; 需常驻后台&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;嵌入模型必须加载&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ollama pull dengcao/bge-large-zh-v1.5&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Qwen Turbo 需 API 密钥&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;通过阿里云百炼平台获取&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;向量库存储在内存中&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;如需持久化，建议升级为 ChromaDB 或 FAISS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;必须人工审核&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;⚠️ AI 输出仅作参考，不可直接用于决策&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="实战演示以县乡传输网演进为例"&gt;实战演示：以“县乡传输网演进”为例
+&lt;/h2&gt;&lt;p&gt;让我们用一个真实场景验证系统效果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;任务输入&lt;/strong&gt; ：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;请结合《XX 网络 2025-2027 年演进白皮书》和DCI-BOX以及FgOTN试点情况，研究县乡本地传输网的演进方向。重点考虑低成本、可持续性和与国家‘新基建’政策的契合度。参考近期领导在务虚会上关于‘网络精简’和‘区域均衡’的讲话精神。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;感知模块调用融合模块输出&lt;/strong&gt; ：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;AI&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="err"&gt;&amp;#34;task&amp;#34;:&lt;/span&gt; &lt;span class="err"&gt;&amp;#34;编制县乡本地传输网发展建设指导意见&amp;#34;,&amp;#34;requirements&amp;#34;:&lt;/span&gt; &lt;span class="err"&gt;[&amp;#34;结合《XX&lt;/span&gt; &lt;span class="err"&gt;网络&lt;/span&gt; &lt;span class="err"&gt;2025-2027&lt;/span&gt; &lt;span class="err"&gt;年演进白皮书》的内容&amp;#34;,&amp;#34;分析DCI-BOX和FgOTN试点情况&amp;#34;,&amp;#34;制定县乡本地传输网发展建设指导意见&amp;#34;,&amp;#34;重点考虑低成本、可持续性&amp;#34;,&amp;#34;确保与国家‘新基建’政策的契合度&amp;#34;,&amp;#34;参考近期领导在务虚会上关于‘网络精简’和‘区域均衡’的讲话精神&amp;#34;],&amp;#34;rule&amp;#34;:&lt;/span&gt; &lt;span class="err"&gt;&amp;#34;必须采用company_documents_tool内的信息&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;生成模块调用融合模块输出初稿（语言模型不同，输出也不同）&lt;/strong&gt; ：&lt;/p&gt;
+&lt;p&gt;县乡本地传输网发展建设指导意见&lt;/p&gt;
+&lt;p&gt;一、总体目标&lt;/p&gt;
+&lt;p&gt;根据《XX 网络 2025-2027 年演进白皮书》的指导思想，结合DCI-BOX和FgOTN试点情况，推动县乡本地传输网的高质量发展。以低成本、可持续性为核心，确保与国家“新基建”政策的契合度，同时落实领导在务虚会上关于“网络精简”和“区域均衡”的讲话精神。&lt;/p&gt;
+&lt;p&gt;二、基本原则&lt;/p&gt;
+&lt;p&gt;低成本：优先采用成熟、经济的技术方案，降低建设和运维成本。&lt;/p&gt;
+&lt;p&gt;可持续性：注重资源的合理利用，确保网络长期稳定运行。&lt;/p&gt;
+&lt;p&gt;政策契合度：紧密结合国家“新基建”政策，推动技术与政策的深度融合。&lt;/p&gt;
+&lt;p&gt;网络精简：优化网络结构，提升效率，减少冗余。&lt;/p&gt;
+&lt;p&gt;区域均衡：实现城乡网络协调发展，缩小数字鸿沟。&lt;/p&gt;
+&lt;p&gt;三、重点任务&lt;/p&gt;
+&lt;p&gt;技术选型&lt;/p&gt;
+&lt;p&gt;推广DCI-BOX和FgOTN等先进技术，提升传输效率和灵活性。&lt;/p&gt;
+&lt;p&gt;结合试点经验，逐步推广适用于县乡地区的解决方案。&lt;/p&gt;
+&lt;p&gt;网络规划&lt;/p&gt;
+&lt;p&gt;根据区域发展需求，制定合理的网络布局，确保覆盖全面。&lt;/p&gt;
+&lt;p&gt;强化骨干网与接入网的协同，提升整体性能。&lt;/p&gt;
+&lt;p&gt;政策支持&lt;/p&gt;
+&lt;p&gt;积极争取国家“新基建”政策的支持，争取专项资金。&lt;/p&gt;
+&lt;p&gt;推动地方政策与国家政策的对接，形成合力。&lt;/p&gt;
+&lt;p&gt;管理机制&lt;/p&gt;
+&lt;p&gt;建立健全网络维护和管理机制，确保网络运行的稳定性。&lt;/p&gt;
+&lt;p&gt;加强人才培训，提升运维水平。&lt;/p&gt;
+&lt;p&gt;四、实施步骤&lt;/p&gt;
+&lt;p&gt;调研分析：深入调研县乡地区网络现状及需求，形成详细报告。&lt;/p&gt;
+&lt;p&gt;方案设计：基于调研结果，制定具体实施方案。&lt;/p&gt;
+&lt;p&gt;试点推进：选择典型区域进行试点，积累经验。&lt;/p&gt;
+&lt;p&gt;全面推广：总结试点经验，逐步推广至全县乡范围。&lt;/p&gt;
+&lt;p&gt;五、保障措施&lt;/p&gt;
+&lt;p&gt;组织保障：成立专项工作组，明确责任分工。&lt;/p&gt;
+&lt;p&gt;资金保障：多渠道筹措资金，确保项目顺利实施。&lt;/p&gt;
+&lt;p&gt;监督评估：建立监督评估机制，定期检查项目进展。&lt;/p&gt;
+&lt;p&gt;六、结语&lt;/p&gt;
+&lt;p&gt;县乡本地传输网的发展是推动乡村振兴和数字化转型的重要基础。通过科学规划、技术创新和政策支持，努力构建一个高效、经济、可持续的县乡传输网络，为实现“网络强国”目标贡献力量。&lt;/p&gt;
+&lt;p&gt;相关信息未在知识库中找到&lt;/p&gt;
+&lt;h2 id="结语从建力到用智通信人的-ai-新使命"&gt;结语：从“建力”到“用智”，通信人的 AI 新使命
+&lt;/h2&gt;&lt;p&gt;在上一篇文章的结尾，我们提到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“在下一篇中，我将分享如何利用开源工具，在本地环境中一步步搭建起这套能解码战略的智能系统。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今天，我们兑现了这个承诺。&lt;/p&gt;
+&lt;p&gt;这套系统原型，还不能真正的实用,仅仅是一个最小的简单RAG系统 ， 但让我们认识到：人工智能，不再遥远，而是每一位战略规划专家都 &lt;strong&gt;用得上、用得起、用得安心&lt;/strong&gt; 的生产力工具。&lt;/p&gt;
+&lt;p&gt;它让我们：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• 从 “信息搬运工” 转变为 “战略架构师” ；&lt;/li&gt;
+&lt;li&gt;• 从 “被动响应” 升级为 “主动洞察” ；&lt;/li&gt;
+&lt;li&gt;• 从 “经验驱动” 迈向 “数据+ 智能驱动” 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更重要的是，它提醒我们：
+作为通信人，我们不仅是 &lt;strong&gt;算力的建设者&lt;/strong&gt; ，更应成为 &lt;strong&gt;智能的应用者&lt;/strong&gt; 。
+国家推动“人工智能+”，不仅是让我们建更多的数据中心，更是鼓励我们 &lt;strong&gt;率先在自身业务中实践 AI 的价值&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h2 id="-配套资源"&gt;📎 配套资源
+&lt;/h2&gt;&lt;p&gt;关注公众号，回复“ &lt;strong&gt;第二大脑&lt;/strong&gt; ”（不是文章留言!），获取：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;本文对应的工作流 JSON 文件（可直接导入）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;5 份示例资料（.txt）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;示例资料默认存储在&amp;quot;D:\second_brain_demo&amp;quot; 目录下&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;由于笔记本算力不足, 语言模型用阿里的免费 Qwen 模型，可以去申请免费 API_KEY&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
