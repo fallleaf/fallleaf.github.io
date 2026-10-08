@@ -1,0 +1,19 @@
+{{- partial "helper/external" (dict "Context" . "Namespace" "Vibrant") -}}
+
+{{- $opts := dict "minify" hugo.IsProduction "bundle" true "splitting" false -}}
+{{- $script := resources.Get "ts/main.ts" | js.Build $opts | resources.ExecuteAsTemplate "js/main.min.js" . -}}
+<script type="text/javascript" src="{{ $script.RelPermalink }}" defer></script>
+
+{{- with resources.Get "ts/custom.ts" -}}
+    {{/* Place your custom script in HUGO_SITE_FOLDER/assets/ts/custom.ts */}}
+    {{- $customScript := . | js.Build (dict "minify" hugo.IsProduction "bundle" true "splitting" false) | resources.ExecuteAsTemplate "js/custom.min.js" . -}}
+    <script type="text/javascript" src="{{ $customScript.RelPermalink }}" defer></script>
+{{- end -}}
+
+{{/* Prism.js - load only on pages with code blocks */}}
+{{- if .Page.Store.Get "hasCodeBlock" -}}
+    {{- $prism := resources.Get "js/prism.js" | minify | resources.ExecuteAsTemplate "js/prism.min.js" . -}}
+    <script type="text/javascript" src="{{ $prism.RelPermalink }}" defer></script>
+    {{- $prismCSS := resources.Get "css/prism.css" | minify | resources.ExecuteAsTemplate "css/prism.min.css" . -}}
+    <link rel="stylesheet" href="{{ $prismCSS.RelPermalink }}">
+{{- end -}}

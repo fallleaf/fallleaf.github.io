@@ -1,11 +1,11 @@
 mermaid:
-  enable: true
+  enable: false
   theme: default
   flowchart:
     diagramPadding: 20
 markmap:
-  enable: true
+  enable: false
 katex:
-  enable: true
+  enable: false
   mhchem:
-    enable: true
+    enable: false

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>成长与学习 on 红旗下的蛋</title><link>http://localhost:1313/categories/growth/</link><description>Recent content in 成长与学习 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sun, 13 Sep 2026 07:40:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/growth/index.xml" rel="self" type="application/rss+xml"/><item><title>从 Anthropic 报告谈起，一个不容忽视的安全问题</title><link>http://localhost:1313/p/anthropic/</link><pubDate>Sun, 13 Sep 2026 07:40:00 +0000</pubDate><guid>http://localhost:1313/p/anthropic/</guid><description>&lt;img src="http://localhost:1313/p/anthropic/cover.webp" alt="Featured image of post 从 Anthropic 报告谈起，一个不容忽视的安全问题" /&gt;&lt;h2 id="云端-ai-服务的可见性"&gt;云端 AI 服务的可见性
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>成长与学习 on 红旗下的蛋</title><link>https://blog.fallleaf.net/categories/growth/</link><description>Recent content in 成长与学习 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sun, 13 Sep 2026 07:40:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/categories/growth/index.xml" rel="self" type="application/rss+xml"/><item><title>从 Anthropic 报告谈起，一个不容忽视的安全问题</title><link>https://blog.fallleaf.net/p/anthropic/</link><pubDate>Sun, 13 Sep 2026 07:40:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/anthropic/</guid><description>&lt;img src="https://blog.fallleaf.net/p/anthropic/cover.webp" alt="Featured image of post 从 Anthropic 报告谈起，一个不容忽视的安全问题" /&gt;&lt;h2 id="云端-ai-服务的可见性"&gt;云端 AI 服务的可见性
 &lt;/h2&gt;&lt;p&gt;近日，Anthropic 发布了关于模型输入风险、凭据滥用、供应链攻击、越权访问以及 AI 应用安全的研究和威胁情报报告，再次引发了业界对大模型安全问题的关注。&lt;/p&gt;
 &lt;p&gt;报告本身当然值得关注。但从另一个视角看，更值得关注的其实是报告背后的一个问题：为什么 AI 服务商能够发现、分析和还原这些攻击行为？&lt;/p&gt;
 &lt;p&gt;一个重要原因是，在现有主流云端 AI 服务架构中，用户与 AI 的交互发生在服务商控制的计算和服务环境中。用户请求最终需要进入服务端的计算链路，由模型完成 Tokenization、推理以及必要的工具调用；与此同时，服务侧还可能产生与请求相关的安全检测、会话信息、调用记录和其他遥测数据。具体哪些数据会被记录、保留多久、是否用于模型改进，取决于各服务商的产品策略、企业协议和合规要求；但从架构上看，服务侧至少需要获得足够的明文或明文派生数据，才能完成推理和基础的安全检测。&lt;/p&gt;
@@ -102,7 +102,342 @@
 &lt;/h2&gt;&lt;p&gt;AI 的发展正在改变数据安全的边界。&lt;/p&gt;
 &lt;p&gt;过去，重点是保护数据在网络传输和存储过程中的安全；现在，企业越来越多地将代码、文档、客户信息和业务数据交给 AI 处理，安全问题进一步延伸到了 &lt;strong&gt;数据进入计算环境之后&lt;/strong&gt; 。因此，AI 时代的数据安全正在从： &lt;strong&gt;传输安全 → 计算安全 → 全生命周期安全。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;对运营商而言，在 AI 安全领域的演进可以归纳为一条主线： &lt;strong&gt;从“保障网络连接安全”，向“保障 AI 使用安全”，进一步向“提供可信 AI 基础设施”演进。&lt;/strong&gt; 其核心不是与专业 AI 厂商竞争模型和算法，而是发挥运营商 &lt;strong&gt;网络、云、算力和边缘资源的综合优势&lt;/strong&gt; ，成为企业 AI 应用与算力基础设施之间可信赖的连接者、服务者和安全保障者。&lt;/p&gt;
-&lt;p&gt;最终需要解决的核心问题其实也很简单： &lt;strong&gt;让数据安全地到达 AI，让 AI 在可信的环境中计算。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>AI时代的真正壁垒，不是技术，而是判断</title><link>http://localhost:1313/p/growth-ai-era-real-moat-judgment/</link><pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate><guid>http://localhost:1313/p/growth-ai-era-real-moat-judgment/</guid><description>&lt;img src="http://localhost:1313/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id="年长者的逆袭"&gt;年长者的逆袭
+&lt;p&gt;最终需要解决的核心问题其实也很简单： &lt;strong&gt;让数据安全地到达 AI，让 AI 在可信的环境中计算。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>20 年后，重读自己写的–48V电源的blog：哪些错了，哪些该修正？</title><link>https://blog.fallleaf.net/p/20-48vblog/</link><pubDate>Tue, 08 Sep 2026 07:22:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/20-48vblog/</guid><description>&lt;img src="https://blog.fallleaf.net/p/20-48vblog/cover.webp" alt="Featured image of post 20 年后，重读自己写的–48V电源的blog：哪些错了，哪些该修正？" /&gt;&lt;h2 id="写在前面"&gt;写在前面
+&lt;/h2&gt;&lt;p&gt;最近偶然翻到了自己大约 20 年前写的一篇 blog，题目叫《为什么通信设备使用 –48 V 这样的负电源系统》。&lt;/p&gt;
+&lt;p&gt;那是 2005 年前后。当时的互联网远没有今天方便，遇到一个技术难题，只能在BBS、论坛、厂商资料和图书里“考古”，把别人讨论过的片段拼凑在一起。那篇文章也不是什么严谨的研究，不过是我把当时能搜到的解释梳理了一遍，觉得逻辑顺畅，就顺手写成了blog。&lt;/p&gt;
+&lt;p&gt;没想到，这一放就是 20 年。&lt;/p&gt;
+&lt;p&gt;这次重看，我突然有些好奇：20 年前那个年轻的自己，到底把这个问题搞懂了多少？&lt;/p&gt;
+&lt;p&gt;于是，我把当年的旧文丢给现在的 AI 大模型，让它围绕文中的几个问题重新检索、整理相关的技术资料和历史资料，再拿这些结果回头看看当年的说法。&lt;/p&gt;
+&lt;p&gt;结果很有意思：大方向上没全错，有些逻辑依然成立；但也有不少解释含混不清，甚至把不同层次的工程问题搅在了一起。&lt;/p&gt;
+&lt;p&gt;这篇文章并不是要重新写一篇严密的学术论文，只是想趁着这个契机，和 20 年前的自己隔空通个气。&lt;/p&gt;
+&lt;h2 id="20-年前我是怎么解释-48-v-的"&gt;20 年前我是怎么解释 –48 V 的？
+&lt;/h2&gt;&lt;p&gt;为了方便对比，先把当年文章里的核心观点简单列一列：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;为什么是 48 V？&lt;/strong&gt; 当时的理解是：早期电话网由局端给远端用户供电，为了把供电距离拉远，需要相对较高的电压；但电压又不能太高（要考虑安全），所以折中了 48 V。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么是负 48 V？&lt;/strong&gt; 当时网上盛传“正极接地是为了吸附空气中的负离子防锈”，我当时就觉得这说法极不靠谱，在文章里明确否了它。但我虽然否定了谬误，却并没有真正给出正确的解释。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;认为电蚀影响微乎其微。&lt;/strong&gt; 我当年拿计算机做类比，认为“计算机没有因为接地极性不同而生锈，所以通信系统哪个极接地本质上没区别”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么实际测到的电压经常是 –53.5 V 左右？&lt;/strong&gt; 当时的解释是系统配有备用电池，为了浮充电池，实际电压需要偏高一点。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么输入电压范围宽至 –36 V ～ –72 V？&lt;/strong&gt; 当时归结为兼容历史遗留的不同电压标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现在回头看，最值得琢磨的不是“答案对不对”，而是：当年自己是怎么把这一套逻辑“强行自洽”的。&lt;/p&gt;
+&lt;h2 id="几个现在看来不太准确的地方"&gt;几个现在看来不太准确的地方
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1. “正极接地只是行业惯例”——说轻了&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当年我把正极接地归结为一种历史约定。但实际上，早期通信网有大量埋地或架空的长距离铜线，环境潮湿且充满微小的漏电流。电化学原理决定了，处于阳极（正极）的金属会加速溶解腐蚀，而阴极（负极）则受到保护。采用正极接地，可以让通信线路相对于大地处于负电位，从而降低潮湿环境下电化学腐蚀的风险。这不是一个毫无原因的行业惯例，而是早期通信系统长期工程实践形成的选择。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. “电蚀只是微观现象，工程上没影响”——这个判断现在看并不成立&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;拿“办公桌上的电脑没生锈”来证明“通信网接地极性不重要”，是当年犯的最典型的一个类比错误。现代计算机处于干燥温控的机房，线缆极短；而早期的电话线延伸几公里，长期浸泡在潮湿土壤中。微小的电蚀在岁月累积下，足以导致接点电阻飙升甚至线路断蚀。用局部经验去套复杂的工程现实，当年确实太想当然了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. “吸附负离子防锈”——否定得对，但没完全对&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;值得庆幸的是，年轻时的自己没有轻信“负离子防锈”这种伪科学。但尴尬之处在于： &lt;strong&gt;我只知道它不对，却不知为何错误。&lt;/strong&gt; 很多时候，“识别出荒谬”和“理解透本质”之间，还隔着相当长的一段距离。&lt;/p&gt;
+&lt;h2 id="为什么偏偏是-48-v"&gt;为什么偏偏是 48 V？
+&lt;/h2&gt;&lt;p&gt;这个问题其实没那么神秘。&lt;/p&gt;
+&lt;p&gt;它既是传输距离与安全电压之间的工程折中，也是与铅酸蓄电池物理特性天然契合的结果。&lt;/p&gt;
+&lt;p&gt;一节铅酸电池标称电压约 2 V，24 节串联正好是 48 V。这种极高的匹配度，让 48 V 在漫长的技术演进中被固化为行业标准。&lt;/p&gt;
+&lt;p&gt;没必要非要寻觅一个“唯一的决定性因素”。工程的本质就是妥协与凑巧，多方因素叠加在一起，最终稳定了下来。&lt;/p&gt;
+&lt;h2 id="关于-535-v-与-36-v--72-v-的宽电压"&gt;关于 –53.5 V 与 –36 V ～ –72 V 的宽电压
+&lt;/h2&gt;&lt;p&gt;这两点当年的理解大体没错，只是不够全面。&lt;/p&gt;
+&lt;p&gt;–53.5 V 是 24 节铅酸电池在浮充状态下的典型工作电压；而–36 V ～ –72 V 这样的宽范围输入，则主要是为了覆盖通信电源系统在电池放电、浮充以及配电压降等情况下可能出现的实际工作范围，同时也方便设备兼容不同的历史电源系统。&lt;/p&gt;
+&lt;p&gt;有趣的是，重读旧文时，我还发现自己少写了一个负号。&lt;/p&gt;
+&lt;p&gt;当年觉得自己逻辑严密，隔了 20 年再看，里面全是小漏洞。&lt;/p&gt;
+&lt;h2 id="如果现在让我重新解释为什么是-48-v"&gt;如果现在让我重新解释“为什么是 –48 V”
+&lt;/h2&gt;&lt;p&gt;如果用几句话给现在的自己做个总结，我会说得更克制、更务实：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;为什么是 48 V？&lt;/strong&gt; 电话局端远供需要兼顾传输距离、线路压降和安全性，48 V 是长期工程实践形成的一个折中选择，同时又很好地匹配 24 节铅酸电池组。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么是负 48 V？&lt;/strong&gt; 潮湿环境下的电化学腐蚀是金属线路的大敌。正极接地能够让脆弱的通信线缆处于电化学保护状态，减少阳极溶蚀风险。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么能延续至今？&lt;/strong&gt; 这套系统经过长期使用，已经形成了完整的电源、设备、电池、配电和维护体系，自然就沿用了下来。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="六写在最后20-年后的数字考古"&gt;六、写在最后：20 年后的“数字考古”
+&lt;/h2&gt;&lt;p&gt;这篇文章写到这里，其实答案本身已经不重要了。&lt;/p&gt;
+&lt;p&gt;这次重读旧文，最有趣的体验并不是“纠错”，而是看见了 20 年前那个在初代互联网上认真拼凑答案的自己。&lt;/p&gt;
+&lt;p&gt;那时信息匮乏，没有智能检索，更没有大模型。我们凭着一点好奇心，把论坛里的蛛丝马迹、手册里的片段拼凑在一起，强行建立起一套“看似合理”的认知体系。&lt;/p&gt;
+&lt;p&gt;如今，借助 AI，我们可以瞬间跨越 20 年的信息鸿沟，轻易找出当年理解的纰漏。如果你哪天也在旧硬盘或老博客里翻出了多年前写的文章，不妨也拿出来重新读读。不一定要去修改什么，只是隔着时光看一眼当时的自己，是如何试着去理解这个世界的。&lt;/p&gt;</description></item><item><title>算力网与新一代通信网——定义、内容与关系</title><link>https://blog.fallleaf.net/p/b338a002/</link><pubDate>Thu, 20 Aug 2026 18:04:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/b338a002/</guid><description>&lt;img src="https://blog.fallleaf.net/p/b338a002/cover.webp" alt="Featured image of post 算力网与新一代通信网——定义、内容与关系" /&gt;&lt;h2 id="概述"&gt;概述
+&lt;/h2&gt;&lt;p&gt;算力网与新一代通信网均被纳入国家&amp;quot;六张网&amp;quot;顶层部署。2026年4月28日，中共中央政治局会议明确提出&amp;quot;加强水网、新型电网、算力网、新一代通信网、城市地下管网、物流网等规划建设&amp;quot;，标志着两张网正式上升为国家战略。&amp;ldquo;十五五&amp;quot;规划纲要将其列为现代化基础设施体系的核心组成部分。2026年全年&amp;quot;六张网&amp;quot;及重点领域投资超7万亿元，&amp;ldquo;十五五&amp;quot;时期总投资预计超过10万亿元。&lt;/p&gt;
+&lt;p&gt;两张网分别对应数字经济的&amp;quot;算&amp;quot;与&amp;quot;传&amp;quot;两大核心能力——算力网解决算力&amp;quot;从哪来、怎么调度&amp;quot;的问题，新一代通信网解决数据&amp;quot;怎么传、多快传&amp;quot;的问题，二者深度融合构成&amp;quot;算网一体&amp;quot;体系。&lt;/p&gt;
+&lt;h2 id="算力网"&gt;算力网
+&lt;/h2&gt;&lt;h3 id="一定义来源"&gt;（一）定义来源
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;时间&lt;/th&gt;
+&lt;th&gt;文件/场合&lt;/th&gt;
+&lt;th&gt;发布主体&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2022年2月&lt;/td&gt;
+&lt;td&gt;启动建设国家算力枢纽节点通知&lt;/td&gt;
+&lt;td&gt;国家发改委等四部门&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2023年10月&lt;/td&gt;
+&lt;td&gt;《算力基础设施高质量发展行动计划》&lt;/td&gt;
+&lt;td&gt;工信部等六部门&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2023年12月&lt;/td&gt;
+&lt;td&gt;《关于深入实施&amp;quot;东数西算&amp;quot;工程加快构建全国一体化算力网的实施意见》&lt;/td&gt;
+&lt;td&gt;国家发改委、国家数据局等五部门&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2024年12月&lt;/td&gt;
+&lt;td&gt;《国家数据基础设施建设指引》&lt;/td&gt;
+&lt;td&gt;国家发改委、国家数据局、工信部&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2025年&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;十五五&amp;quot;规划纲要&lt;/td&gt;
+&lt;td&gt;全国人大&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年4月&lt;/td&gt;
+&lt;td&gt;中共中央政治局会议&lt;/td&gt;
+&lt;td&gt;中共中央&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年5月&lt;/td&gt;
+&lt;td&gt;丁薛祥调研算力网建设讲话&lt;/td&gt;
+&lt;td&gt;国务院副总理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年6月16日&lt;/td&gt;
+&lt;td&gt;国家发改委民营企业座谈会&lt;/td&gt;
+&lt;td&gt;国家发改委主任郑栅洁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：国家发改委官网（ndrc.gov.cn）、新华社、央视新闻、中国政府网（gov.cn）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="二定义"&gt;（二）定义
+&lt;/h3&gt;&lt;p&gt;算力网（全国一体化算力网）是以&amp;quot;东数西算&amp;quot;工程为战略骨架，依托8大国家算力枢纽节点和10个国家数据中心集群，通过&amp;quot;新八纵八横&amp;quot;骨干光缆互联，将散落在全国各地的通用算力、智能算力、超级算力等多元算力设施连接成网，实现全国算力资源统筹调度、供需适配、集约高效利用的新型基础设施体系。算力是继热力、电力之后的新型基础资源，算力网被定位为&amp;quot;算力版的国家电网&amp;rdquo;，是支撑数字经济、人工智能等高质量发展的关键基础设施。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：&amp;ldquo;十五五&amp;quot;规划纲要；丁薛祥2026年5月调研讲话（新华社）；央视新闻2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="三核心内容"&gt;（三）核心内容
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 空间布局（&amp;ldquo;8+10+3&amp;quot;体系）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;8大国家算力枢纽：京津冀、长三角、粤港澳大湾区、成渝、内蒙古、贵州、甘肃、宁夏。&lt;/p&gt;
+&lt;p&gt;10个国家数据中心集群：各枢纽下辖。&lt;/p&gt;
+&lt;p&gt;3个算电协同发展区域：2026年6月，国家发展改革委政策研究室副主任、新闻发言人李超披露，我国加快构建全国一体化算力网，形成以8大国家算力枢纽、10个国家算力集群、3个算电协同发展区域为重点的&amp;quot;8+10+3&amp;quot;算力空间布局，&amp;ldquo;3&amp;quot;指最新布局的三个国家级算电协同发展区域，是本轮建设的战略亮点。&lt;/p&gt;
+&lt;p&gt;全国智能算力总规模已达188万PFLOPS（FP16），八大枢纽节点算力占比超80%。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：国家发改委&amp;quot;东数西算&amp;quot;工程启动通知（2022年2月）；国家发改委2026年6月新闻发布会；央视新闻2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2. 骨干网络&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;新八纵八横&amp;quot;骨干光缆沿高铁线延伸。已规划建设181条&amp;quot;东数西算&amp;quot;干线光缆（来源：央视财经2024年7月报道），开通26个互联网骨干直联点。目标：1ms城市算力网、5ms区域算力网、20ms跨枢纽算力网。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：国家发改委等五部门《关于深入实施&amp;quot;东数西算&amp;quot;工程加快构建全国一体化算力网的实施意见》（2023年12月）；央视财经2024年7月报道；福建省经济信息中心报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;3. 建设原则&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;统筹布局、有序建设&lt;/strong&gt; ：注重供需适配、算电协同，加快形成全国一张网。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;算力监测调度&lt;/strong&gt; ：提升算力接入和精准匹配能力，把分散的资源整合利用起来。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;算电协同&lt;/strong&gt; ：统筹能源资源配置与算力设施建设，&amp;ldquo;以电强算、以算促电&amp;rdquo;，探索绿电直连。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安全韧性&lt;/strong&gt; ：提高设施、模型、数据、网络安全防护能力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;国产化&lt;/strong&gt; ：推动国产软硬件从&amp;quot;可用&amp;quot;迈向&amp;quot;好用&amp;rdquo;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：丁薛祥2026年5月调研讲话（新华社）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;4. 投资规模&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;算力网直接投资达万亿量级（含信息设备和土木建筑工程）。2026年&amp;quot;六张网&amp;quot;及重点领域投资超7万亿元。算力网投资具有乘数效应，带动AI、自动驾驶、低空经济、合成生物等产业。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：央视新闻2026年6月报道；国家发改委2026年6月16日座谈会（金融界报道）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;5. 参与主体&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;基础电信企业：中国联通（华北廊坊数据中心）、中国移动（呼和浩特智算中心）、中国电信等电信运营商深度参与。互联网/科技企业：华为、腾讯、阿里等参与数据中心集群建设。地方政府：各枢纽节点所在省市配套建设。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：丁薛祥调研中国联通华北（廊坊）数据中心、中国移动呼和浩特智算中心（新华社2026年5月）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="新一代通信网"&gt;新一代通信网
+&lt;/h2&gt;&lt;h3 id="一定义来源-1"&gt;（一）定义来源
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;时间&lt;/th&gt;
+&lt;th&gt;文件/场合&lt;/th&gt;
+&lt;th&gt;发布主体&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2025年&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;十五五&amp;quot;规划纲要&lt;/td&gt;
+&lt;td&gt;全国人大&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年4月28日&lt;/td&gt;
+&lt;td&gt;中共中央政治局会议&lt;/td&gt;
+&lt;td&gt;中共中央&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年5月&lt;/td&gt;
+&lt;td&gt;央视《新闻联播》&amp;ldquo;六张网&amp;quot;调研&lt;/td&gt;
+&lt;td&gt;央视/千龙网&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年5月29日&lt;/td&gt;
+&lt;td&gt;中新网/央视新闻报道&lt;/td&gt;
+&lt;td&gt;中国信通院副院长王志勤&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年6月&lt;/td&gt;
+&lt;td&gt;新华社/经济日报报道&lt;/td&gt;
+&lt;td&gt;中国信通院副所长赵文玉&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年7月20日&lt;/td&gt;
+&lt;td&gt;国新办新闻发布会&lt;/td&gt;
+&lt;td&gt;工信部信息通信管理局局长谢存&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年7月30日&lt;/td&gt;
+&lt;td&gt;中共中央政治局会议&lt;/td&gt;
+&lt;td&gt;中共中央&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：中国政府网（gov.cn）、工信部官网、国新办发布会、新华社、央视新闻&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="二定义-1"&gt;（二）定义
+&lt;/h3&gt;&lt;p&gt;新一代通信网是以新一代通信技术创新和新型应用需求为驱动，以高速泛在、全域智能、韧性安全、融合赋能等为特征，服务于经济社会数智化转型的&amp;quot;空天地海&amp;quot;一体化网络设施体系。它不仅包含由5G-A/6G网络、光网络和数据通信网络等构成的基础网络，以卫星互联网为主体的空间网络，涵盖工业互联网、低空智联网等的融合网络，还包括服务应急通信保障的应急通信网络。从5G、5G-A到未来6G的移动通信网，以及万兆光网、卫星互联网等，都属于新一代通信网范畴。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：中国信通院技术与标准研究所副所长赵文玉（新华社2026年6月报道）；央视财经/未来网2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="三工信部定义的四新特征"&gt;（三）工信部定义的&amp;quot;四新&amp;quot;特征
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;连接对象新&lt;/strong&gt; ：从传统个人用户拓展到人、机、物、具身智能等多元主体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;覆盖范围新&lt;/strong&gt; ：突破传统地面限制，向空天地海一体化全域覆盖拓展。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;连接能力新&lt;/strong&gt; ：实现确定性、稳定性等大幅提升，更好满足行业应用差异化需求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;网络功能新&lt;/strong&gt; ：由单纯的信息传输，向通信、感知、计算、智能、安全等多能力深度融合演进。&lt;/p&gt;
+&lt;p&gt;工信部信息通信管理局局长谢存强调：&amp;ldquo;新一代通信网不仅仅是传统意义上的网络升级，更是面向智能时代数字信息基础设施的一次关键革新。&amp;rdquo;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：工信部信息通信管理局局长谢存，国新办新闻发布会（2026年7月20日，21财经报道）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="四核心内容"&gt;（四）核心内容
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 网络体系构成&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;基础网络&lt;/strong&gt; ：5G-A/6G移动通信网、光网络（万兆光网/400G超高速光传输）、数据通信网络。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;空间网络&lt;/strong&gt; ：以卫星互联网为主体（低轨卫星、天通卫星），实现空天地海覆盖。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;融合网络&lt;/strong&gt; ：工业互联网、低空智联网、车联网等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;应急通信网络&lt;/strong&gt; ：服务应急通信保障的专用网络。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：中国信通院技术与标准研究所副所长赵文玉（新华社2026年6月报道）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2. 关键建设指标（截至2026年）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5G/5G-A：&lt;/strong&gt; 5G基站510.2万个（全球最大），5G-A覆盖330个以上城市，未来五年将建成50万座5G-A基站。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：央视财经2026年6月10日报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;截至2026年4月末， &lt;strong&gt;5G移动电话用户达12.62亿户&lt;/strong&gt; ，占移动电话用户比重68.7%（来源：新华社2026年5月27日报道）。截至2026年6月末，5G移动电话用户达12.88亿户，占移动电话用户的69.9%（来源：工信部2026年上半年通信业经济运行情况）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;万兆光网：&lt;/strong&gt; 86个城市168个小区/工厂/园区试点，未来五年将建设100万个高速无源光网络端口。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;光网络：&lt;/strong&gt; 全国光缆线路7499万公里，400G超高速光传输系统规模部署。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;固定宽带：&lt;/strong&gt; 千兆及以上固定宽带用户2.53亿户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;移动物联网：&lt;/strong&gt; 移动物联网终端用户29.76亿户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;卫星互联网：&lt;/strong&gt; 技术试验卫星已发射，手机宽带直连卫星试验中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6G：&lt;/strong&gt; 第一阶段技术试验顺利完成，已批复6GHz频段6G试验频率，第二阶段试验推进中；目标2029年形成自主创新6G技术方案，2030年前后商用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：工信部数据（国新办发布会2026年7月）；中新网/央视新闻2026年5月报道；央视新闻2026年3月报道；工信部2026年5月批复&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;3. 技术演进路径&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5G：&lt;/strong&gt; 全面商用，高速下载、eMBB/uRLLC/mMTC。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5G-A：&lt;/strong&gt; 规模商用中，千兆上行、毫秒级时延、通感一体、超轻量化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6G：&lt;/strong&gt; 研发/试验阶段（2030年商用），效率与连接能力再提升10倍以上，&amp;ldquo;通感算智&amp;quot;深度融合。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：央视财经/未来网2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;4. 经济带动效应&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;未来五年带动上下游总产出约7万亿元；拉动GDP增长约1.5个百分点；直接创造就业岗位超过百万。带动产业链：网络设备、智能终端、核心芯片、测试仪器等。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：央视财经2026年6月10日报道；21财经2026年7月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;5. 赋能领域&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;已融入97个国民经济大类中的91个。累计建设2.5万余个&amp;quot;5G+工业互联网&amp;quot;项目。建成1260家5G工厂，平均产品质量提升20.5%，运营成本降低18.4%，平均产能增加24.7%。重点赋能：智能制造、智慧城市、智慧家庭、低空经济、具身智能、脑机接口、智能网联汽车。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：工信部数据（国新办发布会2026年7月）；新华社2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;6. 下一步重点工作（工信部）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;网络建设部署&lt;/strong&gt; ：统筹推进基础网络、空间网络、国际网络和融合网络建设，推动5G-A、万兆光网等规模商用，持续增加国际海缆通达方向，加快新型工业网络建设。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;产业支撑赋能&lt;/strong&gt; ：加强6G移动通信、超高速光通信、海底光缆、卫星通信等核心技术创新攻关。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;应用创新推广&lt;/strong&gt; ：深化5G、千兆光网在重点行业应用，深化脑机接口、具身智能、智能网联汽车与5G-A/6G、卫星互联网等融合发展。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：工信部信息通信管理局局长谢存，国新办新闻发布会（2026年7月20日）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;##两张网的关系&lt;/p&gt;
+&lt;h3 id="一战略定位关系"&gt;（一）战略定位关系
+&lt;/h3&gt;&lt;p&gt;算力网是数字经济的核心底座，解决算力&amp;quot;从哪来、怎么调度&amp;quot;的问题。新一代通信网是数据传输的&amp;quot;大动脉&amp;rdquo;，解决数据&amp;quot;怎么传、多快传&amp;quot;的问题。二者共同构成数字经济的&amp;quot;算&amp;quot;与&amp;quot;传&amp;quot;两大核心能力。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：综合&amp;quot;十五五&amp;quot;规划纲要、中共中央政治局会议部署&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="二功能协同关系"&gt;（二）功能协同关系
+&lt;/h3&gt;&lt;p&gt;新一代通信网是其他五张网的信息通信连接和服务基座。为算力网提供高质量联算、入算的网络底座。支撑人工智能高质量训练推理。二者深度融合构成&amp;quot;算网一体&amp;quot;体系。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：中国信通院技术与标准研究所副所长赵文玉（新华社2026年6月报道）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="三产业融合关系"&gt;（三）产业融合关系
+&lt;/h3&gt;&lt;p&gt;加强算力网与新一代通信网的规划协同，推动5G、6G等新一代通信技术与算力网深度融合。为工业互联网、低空经济、智慧政务等各类数字应用提供支撑。算力网投资具有乘数效应，带动AI、自动驾驶、低空经济等产业；新一代通信网全面赋能智能制造、智慧城市、智慧家庭等领域。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：综合&amp;quot;十五五&amp;quot;规划纲要、中共中央政治局会议部署&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="主要引用出处汇总"&gt;主要引用出处汇总
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;十五五&amp;quot;规划纲要——全国人大2025年审议通过&lt;/li&gt;
+&lt;li&gt;中共中央政治局会议——2026年4月28日、2026年7月30日&lt;/li&gt;
+&lt;li&gt;《关于深入实施&amp;quot;东数西算&amp;quot;工程加快构建全国一体化算力网的实施意见》——国家发改委、国家数据局等五部门，2023年12月（发改数据〔2023〕1779号）&lt;/li&gt;
+&lt;li&gt;《算力基础设施高质量发展行动计划》——工信部等六部门，2023年10月（工信部联通信〔2023〕180号）&lt;/li&gt;
+&lt;li&gt;《国家数据基础设施建设指引》——国家发改委、国家数据局、工信部，2024年12月（发改数据〔2024〕1853号）&lt;/li&gt;
+&lt;li&gt;丁薛祥调研算力网建设讲话——新华社，2026年5月18日&lt;/li&gt;
+&lt;li&gt;工信部国新办新闻发布会——工信部信息通信管理局局长谢存，2026年7月20日（21财经报道）&lt;/li&gt;
+&lt;li&gt;中国信通院副院长王志勤采访——中新网/央视新闻，2026年5月29日&lt;/li&gt;
+&lt;li&gt;中国信通院副所长赵文玉采访——新华社/经济日报，2026年6月&lt;/li&gt;
+&lt;li&gt;央视《新闻联播》&amp;ldquo;六张网&amp;quot;调研——千龙网，2026年6月14日&lt;/li&gt;
+&lt;li&gt;央视财经/未来网报道——2026年6月10日&lt;/li&gt;
+&lt;li&gt;国家发改委2026年6月新闻发布会——国家发改委政策研究室副主任李超，2026年6月18日&lt;/li&gt;
+&lt;li&gt;国家发改委民营企业座谈会——国家发改委主任郑栅洁，2026年6月16日（金融界报道）&lt;/li&gt;
+&lt;li&gt;界面新闻&amp;quot;六张网&amp;quot;分析报道——2026年&lt;/li&gt;
+&lt;li&gt;21财经&amp;quot;六张网&amp;quot;解读——2026年7月26日&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>大模型也会"失忆"？用一部爱情电影讲清语言大模型的记忆机制</title><link>https://blog.fallleaf.net/p/why-llm-can-remember-you/</link><pubDate>Fri, 13 Mar 2026 07:45:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/why-llm-can-remember-you/</guid><description>&lt;img src="https://blog.fallleaf.net/p/why-llm-can-remember-you/cover.webp" alt="Featured image of post 大模型也会"失忆"？用一部爱情电影讲清语言大模型的记忆机制" /&gt;&lt;p&gt;在电影《初恋 50 次》里，女主角露西因为一场车祸患上了一种罕见的记忆障碍：每天醒来，她的记忆都会自动重置回事故发生的那一天。昨天发生的事、认识过的人、甚至自己的婚姻，对她来说都会在睡眠之后全部消失。&lt;/p&gt;
+&lt;p&gt;对露西来说，每一天都是&amp;quot;第一次&amp;quot;。&lt;/p&gt;
+&lt;p&gt;为了让她能够继续生活，男主角亨利想出了一个办法。他每天都会让露西先看一段录像，录像里记录了她的真实生活：她已经结婚、正在旅行、身边的人是谁。看完录像后，她才能重新理解自己所处的世界，才能接着昨天的日子继续过。&lt;/p&gt;
+&lt;p&gt;如果换一个角度看，这个设定其实很适合用来理解今天的大语言模型。&lt;/p&gt;
+&lt;p&gt;很多人觉得 AI 聊天像是在和一个&amp;quot;记得你&amp;quot;的老朋友交流，但从技术结构上看，大模型其实更像电影里的露西——&lt;strong&gt;每一天的对话，都是从零开始。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="每一次回复都是一次新的醒来"&gt;每一次回复，都是一次新的醒来
+&lt;/h2&gt;&lt;p&gt;在很多人的直觉里，AI 聊天应该像人与人交流：说过的话会被记住，对话会逐渐积累背景，感情会随着时间加深。&lt;/p&gt;
+&lt;p&gt;但大语言模型的工作方式并不是这样。&lt;/p&gt;
+&lt;p&gt;这就好比露西每次醒来，大脑里并没有一个隐藏的笔记本在记录昨天。她只能根据眼前看到的景象，重新思考该怎么说话。模型也是如此，它没有隐藏的&amp;quot;后台状态&amp;quot;，每一次回答，都是看着你刚刚发给它的文字，现场重新思考出来的。&lt;/p&gt;
+&lt;p&gt;对它来说，每一次请求都像是一次新的&amp;quot;唤醒&amp;quot;。如果系统不主动提供历史信息，模型其实并不知道之前发生过什么。所谓&amp;quot;记住上下文&amp;quot;，其实并不是模型真的记住了，而是有人帮它把昨天的事又重新讲了一遍。&lt;/p&gt;
+&lt;h2 id="上下文窗口一盘有限长度的录像带"&gt;上下文窗口：一盘有限长度的录像带
+&lt;/h2&gt;&lt;p&gt;为了让对话能够连续进行，系统通常会把之前的聊天记录一起发送给模型。这样模型在生成回答时，就可以重新读取这段历史内容，再继续往下推理。&lt;/p&gt;
+&lt;p&gt;这就是所谓的 &lt;strong&gt;上下文窗口（Context Window）&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;用电影里的情节来类比，这就像亨利为露西准备的那盘录像带：每天早晨，她通过观看录像，重新了解自己的生活，然后继续开始新的一天。&lt;/p&gt;
+&lt;p&gt;不过，录像带的长度是有限的。&lt;/p&gt;
+&lt;p&gt;大模型的上下文窗口也一样。目前常见的规模包括 8K、32K、128K tokens。虽然看起来已经能容纳相当长的文本，但依然存在上限。当对话内容超过这个容量时，系统就必须删除最早的一部分记录，为新的内容腾出空间。&lt;/p&gt;
+&lt;p&gt;因此在特别长的对话中，模型有时会突然忘记最开始设定的规则或背景。并不是模型&amp;quot;糊涂了&amp;quot;，而是那部分信息已经像过期的录像带一样，离开了它的视野。&lt;/p&gt;
+&lt;h2 id="系统提示词一直贴在墙上的纸条"&gt;系统提示词：一直贴在墙上的纸条
+&lt;/h2&gt;&lt;p&gt;电影中还有一个细节：露西的家人会在家里的墙上和冰箱上贴很多提示纸条，写着她的重要信息，比如家人的名字、她当前的生活状态等。&lt;/p&gt;
+&lt;p&gt;这些信息每天都会出现在她面前，不会因为记忆重置而消失。&lt;/p&gt;
+&lt;p&gt;在 AI 系统中，也有类似的机制，叫做 &lt;strong&gt;System Prompt（系统提示词）&lt;/strong&gt;。这是开发者在对话开始时写入的一段固定指令，比如告诉模型&amp;quot;你是一个有帮助的助手&amp;quot;、&amp;ldquo;请用中文回答&amp;quot;或者&amp;quot;不要生成有害内容&amp;rdquo;。&lt;/p&gt;
+&lt;p&gt;这些规则会在每一次请求中一起发送给模型，因此不会像普通对话那样被逐渐挤出上下文窗口。换句话说，它们相当于始终贴在模型&amp;quot;视野&amp;quot;里的提示纸条。很多 AI 产品表现出稳定的语气和行为，其实就来自这些系统提示。&lt;/p&gt;
+&lt;h2 id="向量数据库一本可以随时翻阅的相册"&gt;向量数据库：一本可以随时翻阅的相册
+&lt;/h2&gt;&lt;p&gt;随着生活内容越来越多，仅靠录像带显然不够。电影里，亨利后来开始整理露西的照片，把重要的经历分门别类地保存下来：旅行、家庭、朋友、工作。&lt;/p&gt;
+&lt;p&gt;当露西问起某件事情时，他不需要让她重新看完整段录像，而是直接翻到对应的相册页。&lt;/p&gt;
+&lt;p&gt;现代 AI 系统也采用了类似的方法。当需要保存大量信息时，系统通常会把数据转化为向量并存入向量数据库。当用户提出问题时，系统会先进行语义检索，从数据库中找到最相关的内容片段，再把这些信息发送给模型。&lt;/p&gt;
+&lt;p&gt;这种架构被称为 &lt;strong&gt;RAG（检索增强生成）&lt;/strong&gt;。通过这种方式，模型不需要把所有知识都放在上下文里，却可以在需要的时候快速调用大量信息。它不用记住所有事，但知道去哪里找答案。&lt;/p&gt;
+&lt;h2 id="模型参数刻在系统里的长期经验"&gt;模型参数：刻在系统里的&amp;quot;长期经验&amp;quot;
+&lt;/h2&gt;&lt;p&gt;电影里有一个很有意思的细节：虽然露西每天都会失去新的记忆，但她依然保留着很多能力，比如画画、基本生活技能，以及对音乐的情绪反应。&lt;/p&gt;
+&lt;p&gt;这些能力不是当天学习的，而是早已形成的习惯。&lt;/p&gt;
+&lt;p&gt;大模型也有类似的部分。在预训练阶段，海量文本被压缩进了模型的参数权重里。语言规律、常识知识、代码结构等能力，都会体现在这些参数之中。这些内容并不属于对话记忆，而更像是模型的&amp;quot;长期经验&amp;quot;。无论开启多少次新对话，它们都会保持一致。&lt;/p&gt;
+&lt;h2 id="看不见的亨利为什么有的-ai-更懂你"&gt;看不见的&amp;quot;亨利&amp;quot;：为什么有的 AI 更懂你
+&lt;/h2&gt;&lt;p&gt;回到电影，露西之所以能过上看似正常的生活，并不是因为她病好了，而是因为亨利在背后做了大量工作。他不仅准备了录像带，还整理了相册，贴好了纸条，甚至记住了她所有的喜好。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你在使用 AI 产品时感受到的&amp;quot;记性好&amp;quot;，其实是因为背后站着一个看不见的&amp;quot;亨利&amp;quot;。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不同的 AI 产品，区别就在于这个&amp;quot;亨利&amp;quot;做得够不够用心。&lt;/p&gt;
+&lt;p&gt;有的产品只给了模型一盘录像带（上下文窗口），聊久了自然会忘；而有的产品则在幕后默默建了一座图书馆（向量数据库），哪怕对话再长，也能随时翻到以前的那一页。有的产品会细心地在冰箱上贴好你的偏好（系统提示词），而有的则让你每次都要重新自我介绍。&lt;/p&gt;
+&lt;p&gt;模型本身只是那个每天失忆的&amp;quot;露西&amp;quot;，真正决定它是否懂你的，是背后那套记忆系统是否完整。当你觉得某个 AI 特别贴心时，其实是背后的工程师像亨利一样，替它记住了那些容易被遗忘的细节。&lt;/p&gt;
+&lt;p&gt;所以，重要的不仅仅是模型有多聪明，而是谁在替它保管记忆。&lt;/p&gt;
+&lt;h2 id="技术的温情即使失忆也想记住你"&gt;技术的温情：即使失忆，也想记住你
+&lt;/h2&gt;&lt;p&gt;电影的结尾，露西虽然依然每天失忆，但在亨利构建的记忆系统帮助下，她过上了完整的人生。她不需要治愈，她只需要被记住。&lt;/p&gt;
+&lt;p&gt;大模型的故事也是如此。&lt;/p&gt;
+&lt;p&gt;本质上，它只是一个每次对话都会重置的数学模型。但通过上下文窗口、向量数据库、系统提示词以及不断进化的架构，工程师们为它搭建了一套复杂的&amp;quot;记忆外挂&amp;quot;。&lt;/p&gt;
+&lt;p&gt;我们努力让它记住你的偏好，记住你们之前的约定，记住那些重要的细节。&lt;/p&gt;
+&lt;p&gt;技术的作用或许就在于此：语言大模型尽管没有记忆，但通过系统设计：上下文窗口、向量检索、系统提示，我们让它拥有了可延续的记忆。每一次对话虽然都是“初次见面”，但因为这些设计，它能够调用过去的信息，让你感觉它记得你。如同亨利为露西搭建的那套生活系统，不是治愈了她，而是替她记住了该记住的事。就像亨利对露西做的承诺一样，大模型也在用另一种方式诉说：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;即使我会失忆，我也会想办法，重新记住你。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>AI时代的真正壁垒，不是技术，而是判断</title><link>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</link><pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id="年长者的逆袭"&gt;年长者的逆袭
 &lt;/h2&gt;&lt;p&gt;在人工智能的使用方式上，年轻人与年长者之间出现了一种有趣的分化：年轻人更喜欢把LLM当成生活顾问，频繁提问；而年长者则倾向于将其用作知识验证的工具，提问更精准。这种差异揭示了一个重要事实——在AI时代，使用频率并不代表掌握程度。&lt;/p&gt;
 &lt;p&gt;过去的每一次技术革命几乎都属于年轻人，他们学习快、敢尝试、没有心理包袱。然而这一次的AI浪潮，规律似乎正在反转。AI并不是一个简单的工具升级，而是一个 &lt;strong&gt;“垃圾进、垃圾出”&lt;/strong&gt; 的黑箱系统，输入的质量决定了输出的价值。&lt;/p&gt;
 &lt;p&gt;在这样的体系中，经验第一次成为决定性的筹码。AI不提供真理，它只是模仿逻辑的镜像。输入者如果缺乏判断力，再先进的模型也只能制造幻觉。&lt;/p&gt;
@@ -126,7 +461,7 @@
 &lt;h2 id="弯道超车的核心逻辑"&gt;弯道超车的核心逻辑
 &lt;/h2&gt;&lt;p&gt;AI时代的弯道超车，不在于谁掌握了更多工具，而在于谁能把经验转化为提问力。懂得如何提问、为什么提问的人，才真正掌握了AI的核心逻辑。&lt;/p&gt;
 &lt;p&gt;经验不是时代的包袱，而是认知的资本。&lt;/p&gt;
-&lt;p&gt;AI 时代，真正珍贵的，不是信息，而是判断。&lt;/p&gt;</description></item><item><title>对LLM客气，纯属自找麻烦</title><link>http://localhost:1313/p/growth-stop-being-polite-to-llm/</link><pubDate>Thu, 16 Oct 2025 14:26:23 +0800</pubDate><guid>http://localhost:1313/p/growth-stop-being-polite-to-llm/</guid><description>&lt;img src="http://localhost:1313/p/growth-stop-being-polite-to-llm/cover.webp" alt="Featured image of post 对LLM客气，纯属自找麻烦" /&gt;&lt;h2 id="实验结果越客气llm越糊涂"&gt;实验结果：越客气，LLM越糊涂
+&lt;p&gt;AI 时代，真正珍贵的，不是信息，而是判断。&lt;/p&gt;</description></item><item><title>对LLM客气，纯属自找麻烦</title><link>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</link><pubDate>Thu, 16 Oct 2025 14:26:23 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-stop-being-polite-to-llm/cover.webp" alt="Featured image of post 对LLM客气，纯属自找麻烦" /&gt;&lt;h2 id="实验结果越客气llm越糊涂"&gt;实验结果：越客气，LLM越糊涂
 &lt;/h2&gt;&lt;p&gt;最近有篇论文做了个实验，结论让人哭笑不得：你对ChatGPT越客气，它答题越不准。&lt;/p&gt;
 &lt;p&gt;研究者出了50道多选题，用五种语气问ChatGPT-4o——从“请您帮忙解答一下”到“快给我答案”。结果如下：&lt;/p&gt;
 &lt;table&gt;
@@ -227,7 +562,7 @@
 &lt;strong&gt;把话说清楚，比说得好听更重要。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;论文链接：&lt;/p&gt;
 &lt;p&gt;&lt;a class="link" href="https://arxiv.org/pdf/2510.04950" target="_blank" rel="noopener"
-&gt;《Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy》&lt;/a&gt;&lt;/p&gt;</description></item><item><title>驾驭你的LLM：从提示词新手到“指令设计师”的极简指南</title><link>http://localhost:1313/p/growth-llm-prompt-to-instruction-guide/</link><pubDate>Tue, 07 Oct 2025 08:15:00 +0800</pubDate><guid>http://localhost:1313/p/growth-llm-prompt-to-instruction-guide/</guid><description>&lt;img src="http://localhost:1313/p/growth-llm-prompt-to-instruction-guide/cover.webp" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id="为什么llm总跑偏先搞清它其实不会懂你"&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
+&gt;《Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy》&lt;/a&gt;&lt;/p&gt;</description></item><item><title>驾驭你的LLM：从提示词新手到“指令设计师”的极简指南</title><link>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</link><pubDate>Tue, 07 Oct 2025 08:15:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-llm-prompt-to-instruction-guide/cover.webp" alt="Featured image of post 驾驭你的LLM：从提示词新手到“指令设计师”的极简指南" /&gt;&lt;h2 id="为什么llm总跑偏先搞清它其实不会懂你"&gt;为什么LLM总“跑偏”？先搞清它其实不会“懂你”
 &lt;/h2&gt;&lt;p&gt;你有没有遇到过这样的情况：问LLM一个问题，有时候它回答得像个专家，精准又到位；有时候它就好像刚学会说话的小孩，答非所问，甚至自说自话。难道LLM在“抽风”？其实不完全是。&lt;/p&gt;
 &lt;p&gt;LLM的本质其实是个超级“猜词机器”：它并不真正理解你说话的深意，而是在它庞大的学习数据中，预测“下一句最可能出现的词”是什么。换句话说，它靠概率输出内容。&lt;/p&gt;
 &lt;p&gt;当你给它的提示话很模糊时，它只能在无数的可能中猜答案，自然容易“跑偏”。&lt;/p&gt;
@@ -447,7 +782,7 @@
 &lt;p&gt;&lt;a class="link" href="https://www.entrepreneur.com/leadership/i-used-chatgpt-to-transform-my-business-with-these-prompts/497180" target="_blank" rel="noopener"
 &gt;D.I.C.E.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="link" href="https://docs.lovable.dev/prompting/prompting-one" target="_blank" rel="noopener"
-&gt;C.L.E.A.R.&lt;/a&gt;&lt;/p&gt;</description></item><item><title>我们该如何使用大语言模型</title><link>http://localhost:1313/p/growth-how-to-use-llm/</link><pubDate>Thu, 02 Oct 2025 20:43:00 +0800</pubDate><guid>http://localhost:1313/p/growth-how-to-use-llm/</guid><description>&lt;img src="http://localhost:1313/p/growth-how-to-use-llm/cover.webp" alt="Featured image of post 我们该如何使用大语言模型" /&gt;&lt;h2 id="大语言模型的基本原理与本质"&gt;大语言模型的基本原理与本质
+&gt;C.L.E.A.R.&lt;/a&gt;&lt;/p&gt;</description></item><item><title>我们该如何使用大语言模型</title><link>https://blog.fallleaf.net/p/growth-how-to-use-llm/</link><pubDate>Thu, 02 Oct 2025 20:43:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-how-to-use-llm/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-how-to-use-llm/cover.webp" alt="Featured image of post 我们该如何使用大语言模型" /&gt;&lt;h2 id="大语言模型的基本原理与本质"&gt;大语言模型的基本原理与本质
 &lt;/h2&gt;&lt;p&gt;许多人在使用大语言模型（LLM）时，会产生一种直观的错觉：模型的输出好像是经过深思熟虑的“思考结果”。这种感受并不奇怪，因为 LLM 生成的文字往往流畅、有逻辑，常常给你新的思路，甚至带有推理色彩，让人联想到“它在思考”。这其实源于人类对语言的天然信任——我们习惯把清晰有序的表达与真实的认知挂钩。&lt;/p&gt;
 &lt;p&gt;然而，LLM 并没有意识、意图或理解能力。它既不会判断对错，也不会形成观点。它的核心运作机制，并不是“理解”语言，而是基于海量文本训练出的概率预测系统。它通过庞大的参数系统，学习语言中词与词之间的常见搭配与使用规律。当我们输入一段文字时，模型会根据上下文计算出最可能出现的下一个词，并以此逐字生成连贯的文字。&lt;/p&gt;
 &lt;p&gt;因此，LLM 的本质是一个 &lt;strong&gt;概率驱动的语言生成系统&lt;/strong&gt; 。它的“知识”来自于训练数据的模式，而不是对现实世界的认知。它所谓的“创造力”，其实是对语言的多样组合与概率探索。当我们看到 LLM 给出新颖的答案时，实质上是它利用已学到的规律，组合出你未曾尝试过的表达路径，而不是在进行真正的思考。&lt;/p&gt;
@@ -502,7 +837,7 @@
 &lt;strong&gt;你创造，它生成；&lt;/strong&gt;
 &lt;strong&gt;你判断，它佐证；&lt;/strong&gt;
 &lt;strong&gt;你突破，它追随。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>月光--吉他曲（索尔）</title><link>http://localhost:1313/p/growth-guitar-moonlight-sor/</link><pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/growth-guitar-moonlight-sor/</guid><description>&lt;img src="http://localhost:1313/p/growth-guitar-moonlight-sor/cover.webp" alt="Featured image of post 月光--吉他曲（索尔）" /&gt;&lt;p&gt;索尔（Fernando Sor, 1778–1839）是西班牙19世纪早期最重要的吉他作曲家与演奏家之一，被后人誉为“吉他之父”，西班牙人称他为“吉他的贝多芬”，是吉他古典时期的代表人物。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>月光--吉他曲（索尔）</title><link>https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/</link><pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-guitar-moonlight-sor/cover.webp" alt="Featured image of post 月光--吉他曲（索尔）" /&gt;&lt;p&gt;索尔（Fernando Sor, 1778–1839）是西班牙19世纪早期最重要的吉他作曲家与演奏家之一，被后人誉为“吉他之父”，西班牙人称他为“吉他的贝多芬”，是吉他古典时期的代表人物。&lt;/p&gt;
 &lt;p&gt;《月光》（Moonlight）是他创作的一首著名吉他小品，原名为《B小调练习曲》（Étude in B minor, Op. 29, No. 13）。这首作品最初并非以“月光”为题，而是后人因其旋律宁静、柔和、富有诗意，联想到月夜的意境，遂赋予其“月光”这一浪漫化的标题，成为古典吉他曲目中最广为流传的小品之一。据说曲名《月光》是日本人出版时所取。如同贝多芬的《升C小调钢琴奏鸣曲》，又称“月光奏鸣曲”一样，都是后人加的，不一定能真正反映当时作曲者所表达的思想，到不如不加别名。&lt;/p&gt;
 &lt;p&gt;我演奏的作品，请欣赏：&lt;/p&gt;
 &lt;audio controls style="width: 100%;"&gt;
@@ -542,7 +877,7 @@ Your browser does not support the audio element.
 &lt;/li&gt;
 &lt;li&gt;记得有人说演奏此曲时应该突出旋律声部，否则就是错误的，现在您还会同意吗？充分发挥您的想象力吧，开放您的思维模式，您会得到更多的东西，但，这一切都离不开对作品合理的分析和理解！ 最后，您可能会感觉到，所谓的技巧被您心中的音乐带走了。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a class="link" href="sor-fernando-op-35-n-22-etude-en-si-mineur.pdf" &gt;月光吉他五线谱下载&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Per-Olov Kindgren的作品演奏</title><link>http://localhost:1313/p/growth-per-olov-kindgren-guitar-play/</link><pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/growth-per-olov-kindgren-guitar-play/</guid><description>&lt;img src="http://localhost:1313/p/growth-per-olov-kindgren-guitar-play/cover.webp" alt="Featured image of post Per-Olov Kindgren的作品演奏" /&gt;&lt;h2 id="关于-per-olov-kindgren"&gt;关于 Per-Olov Kindgren
+&lt;p&gt;&lt;a class="link" href="sor-fernando-op-35-n-22-etude-en-si-mineur.pdf" &gt;月光吉他五线谱下载&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Per-Olov Kindgren的作品演奏</title><link>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</link><pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-per-olov-kindgren-guitar-play/cover.webp" alt="Featured image of post Per-Olov Kindgren的作品演奏" /&gt;&lt;h2 id="关于-per-olov-kindgren"&gt;关于 Per-Olov Kindgren
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Per-Olov Kindgren&lt;/strong&gt; 是一位出生于哥伦比亚、在瑞典成长的知名古典吉他演奏家和作曲家。&lt;/p&gt;
 &lt;p&gt;他最显著的标签是**“情感的编织者”&lt;strong&gt;。与许多追求极致演奏速度和复杂技巧的古典吉他手不同，Kindgren 的作品以&lt;/strong&gt;旋律性、空间感和极简主义**见长。他的音乐风格横跨古典、爵士与现代流行元素，因其在社交媒体上分享的极具氛围感的演奏视频而享誉全球。&lt;/p&gt;
 &lt;h2 id="作品逐一解析"&gt;作品逐一解析
@@ -607,6 +942,6 @@ Your browser does not support the audio element.
 &lt;li&gt;&lt;a class="link" href="Why.pdf" &gt;Why&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="link" href="Sea_Of_Nectar.pdf" &gt;Sea of Nectar&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="link" href="It-Hurts-to-Leave-It-Hurts-To-Stay_TAB.pdf" &gt;It Hurts to Leave and It Hurts to Stay&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>我和吉他</title><link>http://localhost:1313/p/growth-guitar-and-me/</link><pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate><guid>http://localhost:1313/p/growth-guitar-and-me/</guid><description>&lt;p&gt;初三的时候喜欢上了吉他，当时学习一点儿也不卷，也没有那么大的压力，赶时髦，伙同同学找关系去本市的一个乐器厂买了一把，由于五音不全，没法自弹自唱，只好学习古典和指弹，当时的条件不可能找老师学，也就买些吉他杂志看着自学，比葫芦画瓢。&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>我和吉他</title><link>https://blog.fallleaf.net/p/growth-guitar-and-me/</link><pubDate>Wed, 23 Sep 2015 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/growth-guitar-and-me/</guid><description>&lt;p&gt;初三的时候喜欢上了吉他，当时学习一点儿也不卷，也没有那么大的压力，赶时髦，伙同同学找关系去本市的一个乐器厂买了一把，由于五音不全，没法自弹自唱，只好学习古典和指弹，当时的条件不可能找老师学，也就买些吉他杂志看着自学，比葫芦画瓢。&lt;/p&gt;
 &lt;p&gt;高中的时候也是断断续续的，没啥长进，就是能把音阶按熟练了。一上大学，就参加了新生的吉他兴趣组，在大一迎新会上配合别人弹了一个二重奏曲子《伏尔塔瓦河》，不过我只是伴奏，弹简单的和弦，因此购买了一把吉他，为了省钱，连续两个星期都是白糖沾馍吃。后来不再为谁而弹了，兴趣就逐渐消失，等工作后，就不再触及了。&lt;/p&gt;
 &lt;p&gt;现在，又有机会再次捡起曾经的兴趣。好在网上有了各种资源和视频，学习起来不那么难了。以后陆陆续续学弹了一些曲子，留作纪念，自娱自乐。&lt;/p&gt;</description></item></channel></rss>

@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电源 on 红旗下的蛋</title><link>http://localhost:1313/tags/%E7%94%B5%E6%BA%90/</link><description>Recent content in 电源 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sun, 30 Jul 2023 11:25:17 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%94%B5%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>为什么通信设备使用–48V这样的负电源系统</title><link>http://localhost:1313/p/tech-why-use-48v-telcom-equiment/</link><pubDate>Wed, 21 Dec 2005 11:25:17 +0800</pubDate><guid>http://localhost:1313/p/tech-why-use-48v-telcom-equiment/</guid><description>&lt;p&gt;在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电源 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/%E7%94%B5%E6%BA%90/</link><description>Recent content in 电源 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Tue, 08 Sep 2026 07:22:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E7%94%B5%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>20 年后，重读自己写的–48V电源的blog：哪些错了，哪些该修正？</title><link>https://blog.fallleaf.net/p/20-48vblog/</link><pubDate>Tue, 08 Sep 2026 07:22:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/20-48vblog/</guid><description>&lt;img src="https://blog.fallleaf.net/p/20-48vblog/cover.webp" alt="Featured image of post 20 年后，重读自己写的–48V电源的blog：哪些错了，哪些该修正？" /&gt;&lt;h2 id="写在前面"&gt;写在前面
+&lt;/h2&gt;&lt;p&gt;最近偶然翻到了自己大约 20 年前写的一篇 blog，题目叫《为什么通信设备使用 –48 V 这样的负电源系统》。&lt;/p&gt;
+&lt;p&gt;那是 2005 年前后。当时的互联网远没有今天方便，遇到一个技术难题，只能在BBS、论坛、厂商资料和图书里“考古”，把别人讨论过的片段拼凑在一起。那篇文章也不是什么严谨的研究，不过是我把当时能搜到的解释梳理了一遍，觉得逻辑顺畅，就顺手写成了blog。&lt;/p&gt;
+&lt;p&gt;没想到，这一放就是 20 年。&lt;/p&gt;
+&lt;p&gt;这次重看，我突然有些好奇：20 年前那个年轻的自己，到底把这个问题搞懂了多少？&lt;/p&gt;
+&lt;p&gt;于是，我把当年的旧文丢给现在的 AI 大模型，让它围绕文中的几个问题重新检索、整理相关的技术资料和历史资料，再拿这些结果回头看看当年的说法。&lt;/p&gt;
+&lt;p&gt;结果很有意思：大方向上没全错，有些逻辑依然成立；但也有不少解释含混不清，甚至把不同层次的工程问题搅在了一起。&lt;/p&gt;
+&lt;p&gt;这篇文章并不是要重新写一篇严密的学术论文，只是想趁着这个契机，和 20 年前的自己隔空通个气。&lt;/p&gt;
+&lt;h2 id="20-年前我是怎么解释-48-v-的"&gt;20 年前我是怎么解释 –48 V 的？
+&lt;/h2&gt;&lt;p&gt;为了方便对比，先把当年文章里的核心观点简单列一列：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;为什么是 48 V？&lt;/strong&gt; 当时的理解是：早期电话网由局端给远端用户供电，为了把供电距离拉远，需要相对较高的电压；但电压又不能太高（要考虑安全），所以折中了 48 V。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么是负 48 V？&lt;/strong&gt; 当时网上盛传“正极接地是为了吸附空气中的负离子防锈”，我当时就觉得这说法极不靠谱，在文章里明确否了它。但我虽然否定了谬误，却并没有真正给出正确的解释。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;认为电蚀影响微乎其微。&lt;/strong&gt; 我当年拿计算机做类比，认为“计算机没有因为接地极性不同而生锈，所以通信系统哪个极接地本质上没区别”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么实际测到的电压经常是 –53.5 V 左右？&lt;/strong&gt; 当时的解释是系统配有备用电池，为了浮充电池，实际电压需要偏高一点。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么输入电压范围宽至 –36 V ～ –72 V？&lt;/strong&gt; 当时归结为兼容历史遗留的不同电压标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现在回头看，最值得琢磨的不是“答案对不对”，而是：当年自己是怎么把这一套逻辑“强行自洽”的。&lt;/p&gt;
+&lt;h2 id="几个现在看来不太准确的地方"&gt;几个现在看来不太准确的地方
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1. “正极接地只是行业惯例”——说轻了&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当年我把正极接地归结为一种历史约定。但实际上，早期通信网有大量埋地或架空的长距离铜线，环境潮湿且充满微小的漏电流。电化学原理决定了，处于阳极（正极）的金属会加速溶解腐蚀，而阴极（负极）则受到保护。采用正极接地，可以让通信线路相对于大地处于负电位，从而降低潮湿环境下电化学腐蚀的风险。这不是一个毫无原因的行业惯例，而是早期通信系统长期工程实践形成的选择。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. “电蚀只是微观现象，工程上没影响”——这个判断现在看并不成立&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;拿“办公桌上的电脑没生锈”来证明“通信网接地极性不重要”，是当年犯的最典型的一个类比错误。现代计算机处于干燥温控的机房，线缆极短；而早期的电话线延伸几公里，长期浸泡在潮湿土壤中。微小的电蚀在岁月累积下，足以导致接点电阻飙升甚至线路断蚀。用局部经验去套复杂的工程现实，当年确实太想当然了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. “吸附负离子防锈”——否定得对，但没完全对&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;值得庆幸的是，年轻时的自己没有轻信“负离子防锈”这种伪科学。但尴尬之处在于： &lt;strong&gt;我只知道它不对，却不知为何错误。&lt;/strong&gt; 很多时候，“识别出荒谬”和“理解透本质”之间，还隔着相当长的一段距离。&lt;/p&gt;
+&lt;h2 id="为什么偏偏是-48-v"&gt;为什么偏偏是 48 V？
+&lt;/h2&gt;&lt;p&gt;这个问题其实没那么神秘。&lt;/p&gt;
+&lt;p&gt;它既是传输距离与安全电压之间的工程折中，也是与铅酸蓄电池物理特性天然契合的结果。&lt;/p&gt;
+&lt;p&gt;一节铅酸电池标称电压约 2 V，24 节串联正好是 48 V。这种极高的匹配度，让 48 V 在漫长的技术演进中被固化为行业标准。&lt;/p&gt;
+&lt;p&gt;没必要非要寻觅一个“唯一的决定性因素”。工程的本质就是妥协与凑巧，多方因素叠加在一起，最终稳定了下来。&lt;/p&gt;
+&lt;h2 id="关于-535-v-与-36-v--72-v-的宽电压"&gt;关于 –53.5 V 与 –36 V ～ –72 V 的宽电压
+&lt;/h2&gt;&lt;p&gt;这两点当年的理解大体没错，只是不够全面。&lt;/p&gt;
+&lt;p&gt;–53.5 V 是 24 节铅酸电池在浮充状态下的典型工作电压；而–36 V ～ –72 V 这样的宽范围输入，则主要是为了覆盖通信电源系统在电池放电、浮充以及配电压降等情况下可能出现的实际工作范围，同时也方便设备兼容不同的历史电源系统。&lt;/p&gt;
+&lt;p&gt;有趣的是，重读旧文时，我还发现自己少写了一个负号。&lt;/p&gt;
+&lt;p&gt;当年觉得自己逻辑严密，隔了 20 年再看，里面全是小漏洞。&lt;/p&gt;
+&lt;h2 id="如果现在让我重新解释为什么是-48-v"&gt;如果现在让我重新解释“为什么是 –48 V”
+&lt;/h2&gt;&lt;p&gt;如果用几句话给现在的自己做个总结，我会说得更克制、更务实：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;为什么是 48 V？&lt;/strong&gt; 电话局端远供需要兼顾传输距离、线路压降和安全性，48 V 是长期工程实践形成的一个折中选择，同时又很好地匹配 24 节铅酸电池组。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么是负 48 V？&lt;/strong&gt; 潮湿环境下的电化学腐蚀是金属线路的大敌。正极接地能够让脆弱的通信线缆处于电化学保护状态，减少阳极溶蚀风险。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;为什么能延续至今？&lt;/strong&gt; 这套系统经过长期使用，已经形成了完整的电源、设备、电池、配电和维护体系，自然就沿用了下来。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="六写在最后20-年后的数字考古"&gt;六、写在最后：20 年后的“数字考古”
+&lt;/h2&gt;&lt;p&gt;这篇文章写到这里，其实答案本身已经不重要了。&lt;/p&gt;
+&lt;p&gt;这次重读旧文，最有趣的体验并不是“纠错”，而是看见了 20 年前那个在初代互联网上认真拼凑答案的自己。&lt;/p&gt;
+&lt;p&gt;那时信息匮乏，没有智能检索，更没有大模型。我们凭着一点好奇心，把论坛里的蛛丝马迹、手册里的片段拼凑在一起，强行建立起一套“看似合理”的认知体系。&lt;/p&gt;
+&lt;p&gt;如今，借助 AI，我们可以瞬间跨越 20 年的信息鸿沟，轻易找出当年理解的纰漏。如果你哪天也在旧硬盘或老博客里翻出了多年前写的文章，不妨也拿出来重新读读。不一定要去修改什么，只是隔着时光看一眼当时的自己，是如何试着去理解这个世界的。&lt;/p&gt;</description></item><item><title>为什么通信设备使用–48V这样的负电源系统</title><link>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</link><pubDate>Wed, 21 Dec 2005 11:25:17 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-why-use-48v-telcom-equiment/</guid><description>&lt;p&gt;在C114论坛上找到了这片文章，把原因大概解释了一下。没有去翻查资料考证是否正确之前，就以这个解释为准吧。&lt;/p&gt;
 &lt;p&gt;整理：邓兴昌&lt;/p&gt;
 &lt;p&gt;A：这里面包含2 个意思：&lt;/p&gt;
 &lt;p&gt;（1） 极性为何是负电源（也就是正接地）？&lt;/p&gt;

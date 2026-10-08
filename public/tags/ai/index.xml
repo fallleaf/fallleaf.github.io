@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 红旗下的蛋</title><link>http://localhost:1313/tags/ai/</link><description>Recent content in AI on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sun, 13 Sep 2026 07:40:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>从 Anthropic 报告谈起，一个不容忽视的安全问题</title><link>http://localhost:1313/p/anthropic/</link><pubDate>Sun, 13 Sep 2026 07:40:00 +0000</pubDate><guid>http://localhost:1313/p/anthropic/</guid><description>&lt;img src="http://localhost:1313/p/anthropic/cover.webp" alt="Featured image of post 从 Anthropic 报告谈起，一个不容忽视的安全问题" /&gt;&lt;h2 id="云端-ai-服务的可见性"&gt;云端 AI 服务的可见性
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/ai/</link><description>Recent content in AI on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sun, 13 Sep 2026 07:40:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>从 Anthropic 报告谈起，一个不容忽视的安全问题</title><link>https://blog.fallleaf.net/p/anthropic/</link><pubDate>Sun, 13 Sep 2026 07:40:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/anthropic/</guid><description>&lt;img src="https://blog.fallleaf.net/p/anthropic/cover.webp" alt="Featured image of post 从 Anthropic 报告谈起，一个不容忽视的安全问题" /&gt;&lt;h2 id="云端-ai-服务的可见性"&gt;云端 AI 服务的可见性
 &lt;/h2&gt;&lt;p&gt;近日，Anthropic 发布了关于模型输入风险、凭据滥用、供应链攻击、越权访问以及 AI 应用安全的研究和威胁情报报告，再次引发了业界对大模型安全问题的关注。&lt;/p&gt;
 &lt;p&gt;报告本身当然值得关注。但从另一个视角看，更值得关注的其实是报告背后的一个问题：为什么 AI 服务商能够发现、分析和还原这些攻击行为？&lt;/p&gt;
 &lt;p&gt;一个重要原因是，在现有主流云端 AI 服务架构中，用户与 AI 的交互发生在服务商控制的计算和服务环境中。用户请求最终需要进入服务端的计算链路，由模型完成 Tokenization、推理以及必要的工具调用；与此同时，服务侧还可能产生与请求相关的安全检测、会话信息、调用记录和其他遥测数据。具体哪些数据会被记录、保留多久、是否用于模型改进，取决于各服务商的产品策略、企业协议和合规要求；但从架构上看，服务侧至少需要获得足够的明文或明文派生数据，才能完成推理和基础的安全检测。&lt;/p&gt;
@@ -102,7 +102,670 @@
 &lt;/h2&gt;&lt;p&gt;AI 的发展正在改变数据安全的边界。&lt;/p&gt;
 &lt;p&gt;过去，重点是保护数据在网络传输和存储过程中的安全；现在，企业越来越多地将代码、文档、客户信息和业务数据交给 AI 处理，安全问题进一步延伸到了 &lt;strong&gt;数据进入计算环境之后&lt;/strong&gt; 。因此，AI 时代的数据安全正在从： &lt;strong&gt;传输安全 → 计算安全 → 全生命周期安全。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;对运营商而言，在 AI 安全领域的演进可以归纳为一条主线： &lt;strong&gt;从“保障网络连接安全”，向“保障 AI 使用安全”，进一步向“提供可信 AI 基础设施”演进。&lt;/strong&gt; 其核心不是与专业 AI 厂商竞争模型和算法，而是发挥运营商 &lt;strong&gt;网络、云、算力和边缘资源的综合优势&lt;/strong&gt; ，成为企业 AI 应用与算力基础设施之间可信赖的连接者、服务者和安全保障者。&lt;/p&gt;
-&lt;p&gt;最终需要解决的核心问题其实也很简单： &lt;strong&gt;让数据安全地到达 AI，让 AI 在可信的环境中计算。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>AI时代的真正壁垒，不是技术，而是判断</title><link>http://localhost:1313/p/growth-ai-era-real-moat-judgment/</link><pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate><guid>http://localhost:1313/p/growth-ai-era-real-moat-judgment/</guid><description>&lt;img src="http://localhost:1313/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id="年长者的逆袭"&gt;年长者的逆袭
+&lt;p&gt;最终需要解决的核心问题其实也很简单： &lt;strong&gt;让数据安全地到达 AI，让 AI 在可信的环境中计算。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>中国电信智传网 AI Flow：极低速率“感官无差别传输”到底有多可信？</title><link>https://blog.fallleaf.net/p/ai-flow/</link><pubDate>Wed, 02 Sep 2026 08:05:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/ai-flow/</guid><description>&lt;img src="https://blog.fallleaf.net/p/ai-flow/cover.webp" alt="Featured image of post 中国电信智传网 AI Flow：极低速率“感官无差别传输”到底有多可信？" /&gt;&lt;blockquote&gt;
+&lt;p&gt;中国电信“智传网（AI Flow）”提出的生成式智能传输，并非单纯概念包装：其核心技术路线和部分极低码率实验结果具有较充分依据。但“0.02% 压缩率”和“感官无差别”不能理解为任意视频的 5000 倍无损压缩，而是面向感知与任务有效的生成式通信。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="智传网ai-flow到底是什么"&gt;智传网（AI Flow）到底是什么
+&lt;/h2&gt;&lt;p&gt;智传网是中国电信人工智能研究院（TeleAI）提出的生成式智能传输体系，其核心不是继续“把传统视频编码压得更狠”，而是 &lt;strong&gt;改变通信系统传输的信息对象&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;传统视频通信基本遵循：&lt;/p&gt;
+&lt;p&gt;原始视频 → H.264 / H.265 / H.266 等编码 → 比特流 → 网络传输 → 解码 → 视频&lt;/p&gt;
+&lt;p&gt;AI Flow 则更接近：&lt;/p&gt;
+&lt;p&gt;原始视频 → 语义 / 特征 / 运动信息提取 → Token / 紧凑表示 → 低码率网络传输 → 生成式模型 → 重建视频&lt;/p&gt;
+&lt;p&gt;也就是说，它利用 AI 模型的先验知识，在接收端“补全”大量没有显式传输的信息。&lt;/p&gt;
+&lt;p&gt;所谓“比特流向词元流转变”，真正含义是： &lt;strong&gt;通信系统从传输完整数据，逐渐转向传输能够支撑目标任务的高价值信息。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从这个角度看，AI Flow 更接近“ &lt;strong&gt;语义通信 + 生成式模型 + 通信系统&lt;/strong&gt; ”的融合。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="极低速率感知近似无差异的技术依据"&gt;“极低速率、感知近似无差异”的技术依据
+&lt;/h2&gt;&lt;p&gt;目前公开资料中已经有几组代表性指标。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国电信公开资料显示，在卫星等弱网环境下，AI Flow 视频传输带宽可控制在 &lt;strong&gt;14–144 Kbps&lt;/strong&gt; 区间；&lt;/li&gt;
+&lt;li&gt;在相关应急通信测试中，展示了约 &lt;strong&gt;110 Kbps、720P 视频实时传输&lt;/strong&gt; 的能力，并强调重建视频在清晰度、流畅度和业务效果上与原视频接近；&lt;/li&gt;
+&lt;li&gt;TeleAI 的生成式视频压缩（GVC）论文进一步给出更极端实验结果：在特定视频和实验条件下，码率可达 &lt;strong&gt;0.005 bpp&lt;/strong&gt; ，主要实验结果约为 &lt;strong&gt;0.008 bpp&lt;/strong&gt; ；部分视频序列上，相对传统方法达到相近感知质量所需码率可大幅降低；&lt;/li&gt;
+&lt;li&gt;公开资料中还出现了 &lt;strong&gt;0.02% 压缩率&lt;/strong&gt; 等极端指标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些数据共同说明：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在特定视频内容、特定模型和特定感知目标下，生成式视频传输确实能够进入传统视频编码难以达到的极低码率区间。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;但必须明确区分：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;“0.02% 的极端实验码率”与“14–144 Kbps 的实际弱网测试”是两个不同层次的指标。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;前者主要证明技术的理论和实验潜力，后者更接近完整通信系统的工程验证。&lt;/p&gt;
+&lt;p&gt;因此，目前更有工程意义的证据是 &lt;strong&gt;百 Kbps 级视频传输&lt;/strong&gt; ，而不是简单强调“5000 倍压缩”。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="为什么如此低的速率在技术上是可能的"&gt;为什么如此低的速率在技术上是可能的？
+&lt;/h2&gt;&lt;p&gt;关键不在于 AI 找到了一个“违反信息论”的新压缩算法，而在于：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;接收端已经拥有大量信息。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以固定摄像机持续拍摄一条道路为例。&lt;/p&gt;
+&lt;p&gt;传统编码器需要不断编码：车辆、道路、建筑、天空、光照、纹理、人物、运动……虽然 H.265 等编码器能利用帧间相关性减少重复数据，但仍需通过码流表达足够多的像素信息。&lt;/p&gt;
+&lt;p&gt;生成式传输则可以进一步利用：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;固定摄像机 ＋ 固定背景 ＋ 历史帧 ＋ 场景模型 ＋ 生成模型&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;那么网络真正需要传输的主要是：&lt;/p&gt;
+&lt;p&gt;车辆出现 → 位置变化 → 速度变化 → 人物运动 → 局部视觉特征&lt;/p&gt;
+&lt;p&gt;接收端利用已有模型和历史状态，将这些信息重新生成完整画面。&lt;/p&gt;
+&lt;p&gt;因此：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;传输信息量 ＜ 最终呈现信息量&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;并不是系统“凭空创造信息”，而是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 &lt;strong&gt;大量信息已经由模型、历史状态和共享先验承担&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这正是生成式通信能够突破传统像素级编码码率限制的核心原因。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="002-压缩率究竟应该怎样理解"&gt;“0.02% 压缩率”究竟应该怎样理解？
+&lt;/h2&gt;&lt;p&gt;如果把一段视频从 100 MB 变成 20 KB，却仍要求接收端逐像素、逐帧恢复原始视频，那么这种意义上的“5000 倍无损压缩”显然不成立。&lt;/p&gt;
+&lt;p&gt;AI Flow 的逻辑实际上是：&lt;/p&gt;
+&lt;p&gt;原始视频
+├─ 人眼真正需要的信息
+├─ 机器真正需要的信息
+└─ 可以由模型预测的信息
+↓
+只传输前两类 → 接收端生成第三类&lt;/p&gt;
+&lt;p&gt;因此：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;AI Flow 压缩的不是“原始信息本身”，而是“为了获得目标感知结果而必须通过网络显式传输的信息”。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这一区别非常关键。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果目标是 &lt;strong&gt;人眼观看&lt;/strong&gt; ，某些像素级差异可以接受；&lt;/li&gt;
+&lt;li&gt;如果目标是 &lt;strong&gt;目标检测&lt;/strong&gt; ，只要目标位置、类别和运动状态准确即可；&lt;/li&gt;
+&lt;li&gt;如果目标是 &lt;strong&gt;事件识别&lt;/strong&gt; ，甚至不需要完整恢复视频，只需让接收端准确理解“发生了什么”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此，生成式通信的码率实际上与 &lt;strong&gt;任务目标&lt;/strong&gt; 高度相关。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="感官无差别是否意味着真的没有区别"&gt;“感官无差别”是否意味着真的没有区别？
+&lt;/h2&gt;&lt;p&gt;严格来说，不应理解为“无损”。&lt;/p&gt;
+&lt;p&gt;更准确的说法是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;主观感知近似无差异，或者感知质量接近原始视频。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;例如原视频中一个人物拿着一个杯子。&lt;/p&gt;
+&lt;p&gt;AI 模型可能生成：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“一个人拿着一个杯子。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在人眼看来，两幅画面可能几乎没有区别。但如果逐像素比较：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;原始视频 ≠ AI 重建视频&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;甚至可能出现一些细节偏差，例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;人脸细节变化&lt;/li&gt;
+&lt;li&gt;文字发生变化&lt;/li&gt;
+&lt;li&gt;Logo 被重新生成&lt;/li&gt;
+&lt;li&gt;细小纹理变化&lt;/li&gt;
+&lt;li&gt;物体边缘发生变化&lt;/li&gt;
+&lt;li&gt;快速运动时出现生成误差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 &lt;strong&gt;感知等效 ≠ 数据等价&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这也是 AI Flow 与 H.265 / H.266 等传统视频编码体系之间最根本的区别之一。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="真正值得关注的是模型先验成为通信系统的一部分"&gt;真正值得关注的是“模型先验成为通信系统的一部分”
+&lt;/h2&gt;&lt;p&gt;传统通信系统可以简单描述为：&lt;/p&gt;
+&lt;p&gt;Source → Encoder → Bits → Network → Bits → Decoder → Source&lt;/p&gt;
+&lt;p&gt;而生成式通信则变成：&lt;/p&gt;
+&lt;p&gt;发送端：
+视频 → Semantic Encoder → Token / Feature → 网络&lt;/p&gt;
+&lt;p&gt;接收端：
+Token / Feature → Generative Decoder
+＋ 历史状态 ＋ 模型先验
+→ 视频&lt;/p&gt;
+&lt;p&gt;因此，通信系统实际上增加了一个过去没有的重要组成部分：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;生成模型及其先验知识。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;从这个意义上讲，AI Flow 并不是简单地“压缩得更厉害”，而是 &lt;strong&gt;把一部分原本需要由通信网络承担的信息传输任务，转移到了计算和存储上&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;可以表示为：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 &lt;strong&gt;Bandwidth ↔ Computation ↔ Memory&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这也是生成式通信真正具有研究价值的地方。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="这是否突破了-shannon-信息论"&gt;这是否突破了 Shannon 信息论？
+&lt;/h2&gt;&lt;p&gt;不能这样理解。&lt;/p&gt;
+&lt;p&gt;Token 最终仍然需要通过网络编码成 Bit：&lt;/p&gt;
+&lt;p&gt;Token → Binary Representation → Modulation → Physical Channel&lt;/p&gt;
+&lt;p&gt;因此 AI Flow 并没有从物理层面消除 Bit，也没有违反 Shannon 信道容量理论。&lt;/p&gt;
+&lt;p&gt;它真正改变的是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;通信系统究竟需要传输什么。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;传统通信关注： &lt;strong&gt;如何准确恢复数据&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语义通信关注： &lt;strong&gt;如何准确恢复信息含义&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;生成式通信进一步关注： &lt;strong&gt;如何用最少通信资源获得有效感知或完成任务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因此更准确的说法不是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“AI Flow 突破了信息论极限。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;而是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;AI Flow 突破了传统像素保真型视频传输模式的应用边界。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这两种表述的技术含义完全不同。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="为什么监控卫星和应急通信特别适合-ai-flow"&gt;为什么监控、卫星和应急通信特别适合 AI Flow？
+&lt;/h2&gt;&lt;p&gt;AI Flow 并不是对所有视频都同样有效。其优势最大的场景通常具有以下特征：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;① 场景具有高度稳定性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;固定摄像机 → 固定背景 → 有限运动目标&lt;/p&gt;
+&lt;p&gt;模型非常容易预测大量未变化的信息。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;② 带宽非常昂贵&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;卫星通信&lt;/li&gt;
+&lt;li&gt;远洋通信&lt;/li&gt;
+&lt;li&gt;应急通信&lt;/li&gt;
+&lt;li&gt;空天地一体化通信&lt;/li&gt;
+&lt;li&gt;偏远地区通信&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果传统视频需要 1 Mbps，而生成式传输只需要 100 Kbps，那么牺牲一定计算资源换取 90% 的带宽节省，可能具有很高的经济价值。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;③ 用户更关心“发生了什么”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;监控视频往往不是为了逐像素分析，而是为了：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;看清楚人、车、事件和运动。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这恰好与生成式通信的目标一致。&lt;/p&gt;
+&lt;p&gt;因此，AI Flow 目前最值得关注的商业价值，并不是马上替代互联网视频编码，而是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;在极端弱网条件下，把原本无法传输的视频变成“可用的视频”。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="目前最大的工程限制是什么"&gt;目前最大的工程限制是什么？
+&lt;/h2&gt;&lt;p&gt;AI Flow 目前真正需要继续验证的，不是“能不能把码率做到很低”，而是能否同时满足：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 &lt;strong&gt;低带宽 ＋ 低延迟 ＋ 低功耗 高质量 ＋ 高鲁棒性&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这五个指标之间存在明显的 Trade-off。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;① 计算成本&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;生成式视频重建显著依赖 AI 推理能力。&lt;/p&gt;
+&lt;p&gt;传统 H.265 解码可以在大量低功耗芯片上完成，而生成式视频解码需要更强的 AI 算力。&lt;/p&gt;
+&lt;p&gt;因此：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;节省的是网络带宽，但增加的是计算资源。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;② 实时性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;生成式模型需要进行推理和生成，这可能增加端到端时延。&lt;/p&gt;
+&lt;p&gt;对于视频监控，问题可能不大；但对于远程操控、机器人、无人驾驶、实时互动等场景，则需要严格控制延迟。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;③ 生成错误&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;传统视频解码的错误通常来自“数据损坏”。&lt;/p&gt;
+&lt;p&gt;生成式通信还可能出现“模型理解错了”，例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• 原始：红色车辆 → 生成：黑色车辆&lt;/li&gt;
+&lt;li&gt;• 原始：ABC123 → 生成：ABC128&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对普通观看而言可能没有影响，但对于取证、工业检测、医学影像和高精度机器视觉而言，这种错误可能是不可接受的。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="因此不能简单说-ai-flow-将取代-h265h266"&gt;因此不能简单说 AI Flow 将取代 H.265/H.266
+&lt;/h2&gt;&lt;p&gt;至少目前没有充分证据支持这一判断。&lt;/p&gt;
+&lt;p&gt;更可能出现的未来形态是：&lt;/p&gt;
+&lt;p&gt;AI Flow
+├─ 极弱网 → 生成式传输
+└─ 正常网络 → H.265 / H.266
+↓
+自适应选择&lt;/p&gt;
+&lt;p&gt;也就是说：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;生成式传输更可能首先成为传统视频编码体系之外的一种新模式，而不是立即取代传统编码器。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;特别是在正常宽带、移动互联网和视频平台场景中，H.265 / H.266 / AV1 等技术仍具有成熟的生态、硬件加速和确定性优势。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="从运营商角度看ai-flow-真正重要的不是压缩率"&gt;从运营商角度看，AI Flow 真正重要的不是“压缩率”
+&lt;/h2&gt;&lt;p&gt;如果站在通信运营商的角度，AI Flow 真正值得关注的战略意义其实更深。&lt;/p&gt;
+&lt;p&gt;传统通信网络：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 传输数据&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;AI 通信网络：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 传输语义、Token、状态和任务信息&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这意味着网络可能出现一个新的优化目标：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 &lt;strong&gt;Utility / Bit&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;即：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;每一个 Bit 能够产生多少有效感知或智能价值。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;未来甚至可以进一步演化为：&lt;/p&gt;
+&lt;p&gt;Bit/s → Token/s → Task/s → Inference/s → Intelligence/s&lt;/p&gt;
+&lt;p&gt;这意味着通信网络的价值评价体系可能从：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“能够传多少数据”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;逐渐转向：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“能够以多低的通信成本产生多少有效智能。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这可能比单纯的视频压缩技术本身更值得运营商关注。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="对-ai-flow-的综合可信度评价"&gt;对 AI Flow 的综合可信度评价
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;① AI Flow 是真实技术体系&lt;/strong&gt; ｜★★★★★&lt;br&gt;
+已有中国电信官方资料和论文支撑&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;② 采用生成式/语义传输&lt;/strong&gt; ｜★★★★★&lt;br&gt;
+技术路线明确&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;③ 通过计算换带宽&lt;/strong&gt; ｜★★★★★&lt;br&gt;
+核心机制成立&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;④ 14–144 Kbps 弱网视频&lt;/strong&gt; ｜★★★★☆&lt;br&gt;
+已有公开工程测试&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑤ 约 110 Kbps 传输 720P&lt;/strong&gt; ｜★★★★☆&lt;br&gt;
+有实际演示/测试依据&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑥ ＜100 Kbps 传输 1080P&lt;/strong&gt; ｜★★★☆☆&lt;br&gt;
+需要更多独立、可复现数据&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑦ 0.02% 极端压缩率&lt;/strong&gt; ｜★★★★☆&lt;br&gt;
+有论文实验依据，但属于特定条件&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑧ 普遍 5000 倍压缩&lt;/strong&gt; ｜★☆☆☆☆&lt;br&gt;
+不应由公开数据推导&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑨ 感知上接近原视频&lt;/strong&gt; ｜★★★★☆&lt;br&gt;
+与生成式通信目标一致&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑩ 像素级无损&lt;/strong&gt; ｜☆☆☆☆☆&lt;br&gt;
+技术目标本身就不是这个&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑪ 任意视频均适用&lt;/strong&gt; ｜★☆☆☆☆&lt;br&gt;
+泛化能力仍是主要问题&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑫ 已全面替代 H.265/H.266&lt;/strong&gt; ｜★☆☆☆☆&lt;br&gt;
+目前没有充分证据&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑬ 卫星/应急/监控应用价值&lt;/strong&gt; ｜★★★★★&lt;br&gt;
+与技术特点高度匹配&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;⑭ 成为未来通信新范式&lt;/strong&gt; ｜★★★★☆&lt;br&gt;
+技术方向具有较高战略价值&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="结论可信但必须重新定义压缩"&gt;结论｜可信，但必须重新定义“压缩”
+&lt;/h2&gt;&lt;p&gt;综合来看，中国电信智传网 AI Flow 的核心技术并不是“AI 把视频无损压缩了 5000 倍”，而是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;通过语义提取、紧凑表示、模型先验和生成式重建，把“传输完整视频”转变为“传输足以生成目标感知结果的信息”。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;因此，0.02% 等极端码率具有实验技术依据，14–144 Kbps 的百 Kbps 级弱网视频传输也已经具有公开工程验证基础；但这些结果不能简单推广为所有视频均可实现数千倍压缩。&lt;/p&gt;
+&lt;p&gt;从技术成熟度看，AI Flow 已经越过“纯概念验证”的阶段，但距离成为面向任意视频、任意网络和任意终端的通用通信技术仍有明显距离。&lt;/p&gt;
+&lt;p&gt;其近期最现实的价值，是在卫星、应急、远洋、监控、空天地一体化等带宽极度稀缺的场景中， &lt;strong&gt;以计算和存储换取通信带宽&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;更值得关注的是其背后的范式变化：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📌 &lt;strong&gt;从“传输数据” → “传输信息” → “传输语义” → “传输任务所需的信息”&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果这一方向持续成熟，那么 AI Flow 对运营商的意义将不再只是“又一种视频压缩技术”，而可能意味着通信网络开始从面向比特的网络，逐步向面向语义、状态和智能任务的网络演进。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;参考资料&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[1] &lt;a class="link" href="https://finance.sina.com.cn/tech/roll/2026-05-08/doc-inhxefhp4231873.shtml" target="_blank" rel="noopener"
+&gt;智传网（AI Flow）赋能视联网，破解空天地海弱网场景高清视频传输难题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2] &lt;a class="link" href="https://k.sina.com.cn/article%5c_5952915720%5c_162d2490806704h2tc.html" target="_blank" rel="noopener"
+&gt;从“光改”“云改”走向“智改”：WAIC 2026 透视中国电信 AI 范式革命&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3] &lt;a class="link" href="https://www.xiaoyuzhoufm.com/episode/6969e3de109824f9e1ccd575" target="_blank" rel="noopener"
+&gt;小耳朵·听世界 68：超神奇！不用传视频，屏幕也能变出高清画面？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[4] &lt;a class="link" href="https://tech.chinadaily.com.cn/a/202608/21/WS6a87ee95a3105d3d7a27c33c.html" target="_blank" rel="noopener"
+&gt;中国电信人工智能研究院（TeleAI）发布智传网（AI Flow）关键突破&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[5] &lt;a class="link" href="https://www.chinatelecom.com.cn/ct/news/jtxw/167314.html" target="_blank" rel="noopener"
+&gt;中国电信“翼锋·智传网（AI Flow）应急系统”为应急救援提供坚实保障&lt;/a&gt;&lt;/p&gt;</description></item><item><title>AI 对广域网的影响——Cisco 2026 年度报告</title><link>https://blog.fallleaf.net/p/ai-cisco-2026/</link><pubDate>Mon, 17 Aug 2026 15:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/ai-cisco-2026/</guid><description>&lt;img src="https://blog.fallleaf.net/p/ai-cisco-2026/cover.webp" alt="Featured image of post AI 对广域网的影响——Cisco 2026 年度报告" /&gt;&lt;h2 id="报告概况"&gt;报告概况
+&lt;/h2&gt;&lt;p&gt;本报告由 Cisco Systems, Inc. 主导研究，联合 Opanga Networks 共同完成，属年度系列报告首期，后续将逐年更新。研究基于三类数据源：Cisco Crosswork Assurance User Experience 真实流量分析、Cisco 实验室对 AI Agent 的受控测试、以及 Gartner、IBM、McKinsey、Morgan Stanley、Omdia 等第三方机构的行业数据。&lt;/p&gt;
+&lt;p&gt;报告作者：Johan Gustawsson、Javier Antich、Waris Sagheer（Cisco）
+报告编号：C99-5828901-00 05/26&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="核心发现"&gt;核心发现
+&lt;/h2&gt;&lt;h3 id="ai-推理流量现状体量较小但增速极快"&gt;AI 推理流量现状：体量较小但增速极快
+&lt;/h3&gt;&lt;p&gt;OpenRouter 平台数据显示，2024 年 12 月至 2025 年 12 月期间，Token 消耗同比增长约 10 倍。两家服务提供商的 8 个月监测数据显示，AI 推理流量增长约 4 倍。若保持当前增速，预计 2035 年 AI 流量将占全网流量的 25%，成为重要组成部分。&lt;/p&gt;
+&lt;h3 id="传输层特征显著不同于传统-web-流量"&gt;传输层特征显著不同于传统 Web 流量
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;特征维度&lt;/th&gt;
+&lt;th&gt;AI 推理流量&lt;/th&gt;
+&lt;th&gt;传统 Web 流量&lt;/th&gt;
+&lt;th&gt;差异倍数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;流持续时间（中位数）&lt;/td&gt;
+&lt;td&gt;1292 ms&lt;/td&gt;
+&lt;td&gt;643 ms&lt;/td&gt;
+&lt;td&gt;2 倍&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;流速率（中位数）&lt;/td&gt;
+&lt;td&gt;338 Kbps&lt;/td&gt;
+&lt;td&gt;3803 Kbps&lt;/td&gt;
+&lt;td&gt;Web 为 AI 的 10 倍&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;上行主导流占比&lt;/td&gt;
+&lt;td&gt;9%&lt;/td&gt;
+&lt;td&gt;0.5%&lt;/td&gt;
+&lt;td&gt;AI 高出 18 倍&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;成因分析&lt;/strong&gt;
+AI 推理采用逐 Token 生成方式，相当于在数据流上施加&amp;quot;整形器&amp;quot;，导致流持续时间延长、速率更平滑。推理请求通常携带大量上下文，致使上行流量显著增加。Agentic AI 执行任务时持续积累上下文状态，进一步加剧上行增长。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;网络影响&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;流感知网络系统（防火墙、入侵检测、DPI）面临流表状态规模与分散度双重增长，需向分布式架构演进（如 Cisco Hypershield）&lt;/li&gt;
+&lt;li&gt;中位速率与峰均比差异要求差异化 QoS 策略&lt;/li&gt;
+&lt;li&gt;无线接入网容量规划需重新评估上下行对称性假设&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="传输层协议分布"&gt;传输层协议分布
+&lt;/h3&gt;&lt;p&gt;AI 推理服务同时使用 TCP 与 QUIC。按流数量计，两者接近 50% 对 50%；按数据量计，QUIC 占 57%。QUIC 的加密特性给 DPI 系统的应用层流量识别带来挑战。&lt;/p&gt;
+&lt;h3 id="网络延迟当前非主要瓶颈"&gt;网络延迟：当前非主要瓶颈
+&lt;/h3&gt;&lt;p&gt;端到端 AI 推理延迟主要由模型处理时间决定，通常在数百毫秒至数秒范围。网络延迟目前仅占 20-50 ms，尚不足以证明大规模向边缘推理迁移的合理性。但随推理硬件加速发展，网络延迟重要性将上升。测量与保障 AI 推理体验已成服务质量感知关键。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;延迟模型&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;延迟 = TTFT（首 Token 时间）+ TPOT（每 Token 生成时间）× 输出 Token 数
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;OpenAI GPT-5.2：约 9 ms/Token → 100 Token 约 1 秒，600 Token 约 5.4 秒&lt;/li&gt;
+&lt;li&gt;Anthropic Claude Opus 4.5：约 20 ms/Token&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="agentic-ai-流量模式"&gt;Agentic AI 流量模式
+&lt;/h2&gt;&lt;h3 id="ai-agent-的三大数据源与目的地"&gt;AI Agent 的三大数据源与目的地
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;Agent 本身&lt;/strong&gt; ：Agent 代码运行位置&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;AI 模型&lt;/strong&gt; ：推理发生位置&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;工具/数据源&lt;/strong&gt; ：Agent 调用的外部工具与数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="实证测试结果以-langchain-open-deep-research-agent-为例"&gt;实证测试结果（以 Langchain Open Deep Research Agent 为例）
+&lt;/h3&gt;&lt;p&gt;测试任务：收集 Cisco 公开 IR、社交媒体、新闻、合作伙伴、高管信息等。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Agent 触发总流量：26.8 MB&lt;/li&gt;
+&lt;li&gt;分析 Web 来源数：44 个&lt;/li&gt;
+&lt;li&gt;Agent 驱动流量增长：450%（相较人工执行同任务）&lt;/li&gt;
+&lt;li&gt;其中 70% 为 AI 推理流量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="agent-的脊髓概念"&gt;Agent 的&amp;quot;脊髓&amp;quot;概念
+&lt;/h3&gt;&lt;p&gt;Agent 代码与 AI 模型间的网络路径称为 Agent 的&amp;quot;脊髓&amp;quot;——关键依赖路径：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• 任何网络降级直接损害 Agent 功能&lt;/li&gt;
+&lt;li&gt;• 该路径需高弹性、可观测性与差异化处理（QoS、路径安全）&lt;/li&gt;
+&lt;li&gt;• Agent 以软件速度而非人类速度运行，网络资源消耗呈数量级增长&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="agentic-ai-流量模式关键特征"&gt;Agentic AI 流量模式关键特征
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;• Agent 是网络&amp;quot;超级用户&amp;quot;，以软件速度消耗云与网络资源&lt;/li&gt;
+&lt;li&gt;• AI 推理流量不仅是流量主要组成，更是 Agent 运行的关键路径流量&lt;/li&gt;
+&lt;li&gt;• Agent 部署位置灵活（端侧/本地/私有 DC/公有云），推理路径可能跨越多网络域&lt;/li&gt;
+&lt;li&gt;• 工具调用通过 MCP 等协议与多外部系统交互&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="企业级-agentic-ai-采用预测与网络影响2026-2035"&gt;企业级 Agentic AI 采用预测与网络影响（2026-2035）
+&lt;/h2&gt;&lt;h3 id="关键时间节点"&gt;关键时间节点
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;年份&lt;/th&gt;
+&lt;th&gt;里程碑&lt;/th&gt;
+&lt;th&gt;数据来源&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2026&lt;/td&gt;
+&lt;td&gt;40% 企业应用集成任务特定 AI Agent&lt;/td&gt;
+&lt;td&gt;Gartner&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2027&lt;/td&gt;
+&lt;td&gt;80% 高管认为 Agentic AI 关乎公司生存&lt;/td&gt;
+&lt;td&gt;Cisco/Omdia&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2027&lt;/td&gt;
+&lt;td&gt;67% 企业领导者预期 AI Agent 将自主决策&lt;/td&gt;
+&lt;td&gt;IBM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2028&lt;/td&gt;
+&lt;td&gt;1/3 用户交互从传统应用转向 Agentic AI 界面&lt;/td&gt;
+&lt;td&gt;Gartner&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2029&lt;/td&gt;
+&lt;td&gt;80% 常规客服问题由 AI Agent 自主处理&lt;/td&gt;
+&lt;td&gt;Gartner&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2035&lt;/td&gt;
+&lt;td&gt;Agentic AI 驱动约 30% 企业应用软件收入（&amp;gt;4500 亿美元）&lt;/td&gt;
+&lt;td&gt;Gartner&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="企业流量增长预测"&gt;企业流量增长预测
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;无 Agentic AI 场景：2026-2035 年企业流量增长约 2.5 倍&lt;/li&gt;
+&lt;li&gt;有 Agentic AI 场景：企业流量增长约 9 倍&lt;/li&gt;
+&lt;li&gt;核心驱动力：自主任务执行与推理密集型工作流&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="采用曲线特征"&gt;采用曲线特征
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;2024-2025 年：萌芽期（&amp;lt;5% 企业应用含 AI Agent）&lt;/li&gt;
+&lt;li&gt;026-2028 年：快速采用期（从实验走向战略）&lt;/li&gt;
+&lt;li&gt;2029-2032 年：爆发增长期（AI 推理流量 CAGR 约 25%）&lt;/li&gt;
+&lt;li&gt;2033-2035 年：成熟普及期（AI Agent 成企业运营标准组件）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="消费者-ai-与-agentic-ai-采用预测与网络影响2026-2035"&gt;消费者 AI 与 Agentic AI 采用预测与网络影响（2026-2035）
+&lt;/h2&gt;&lt;h3 id="当前采用现状"&gt;当前采用现状
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;2025 年中：61% 美国成年人过去 6 个月使用过 AI，约 19% 日活&lt;/li&gt;
+&lt;li&gt;全球约 17-18 亿人曾使用 AI 工具，其中 5-6 亿日活用户&lt;/li&gt;
+&lt;li&gt;2025 年底：约 23% 美国人过去一个月通过 AI 完成购买（Morgan Stanley）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="关键预测"&gt;关键预测
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;年份&lt;/th&gt;
+&lt;th&gt;预测&lt;/th&gt;
+&lt;th&gt;数据来源&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2030&lt;/td&gt;
+&lt;td&gt;AI 驱动购买占美国消费者交易 46%&lt;/td&gt;
+&lt;td&gt;Cognizant/Oxford Economics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2030&lt;/td&gt;
+&lt;td&gt;Agentic shoppers 占美国电商支出 10-20%&lt;/td&gt;
+&lt;td&gt;Morgan Stanley&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2030&lt;/td&gt;
+&lt;td&gt;AI Agent 协调全球零售收入 3-5 万亿美元&lt;/td&gt;
+&lt;td&gt;McKinsey&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2030s 初&lt;/td&gt;
+&lt;td&gt;大多数消费者日常使用 AI 助手，如同使用互联网&lt;/td&gt;
+&lt;td&gt;综合预测&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2035&lt;/td&gt;
+&lt;td&gt;AI 接近无处不在，覆盖 90-100% 互联网用户&lt;/td&gt;
+&lt;td&gt;综合预测&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="消费者流量增长预测"&gt;消费者流量增长预测
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;无 AI 影响场景：2025-2035 年网络流量增长约 4 倍&lt;/li&gt;
+&lt;li&gt;有 AI/Agentic AI 场景：流量增长约 6.6 倍（相较非 AI 场景增加 63%）&lt;/li&gt;
+&lt;li&gt;AI 推理流量预计占 2035 年总流量 25%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="设备生态扩展"&gt;设备生态扩展
+&lt;/h3&gt;&lt;p&gt;智能手机仍为主力终端。AI 正渗透至家居、可穿戴设备、汽车与 AR 界面。多设备普及使 AI 几乎随时随地可用。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="物理-ai-的潜在影响"&gt;物理 AI 的潜在影响
+&lt;/h2&gt;&lt;p&gt;随机器人技术发展，物理 AI 将对网络基础设施产生重大影响。多数系统将结合嵌入式实时推理（即时动作）与云端推理（复杂推理）。从网络视角看，机器人可视为配备物理工具的 Agent。预计总体影响与数字 Agent 相当，后续报告将持续跟踪。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="对网络规划与运营的关键启示"&gt;对网络规划与运营的关键启示
+&lt;/h2&gt;&lt;h3 id="流量特征的根本性变化"&gt;流量特征的根本性变化
+&lt;/h3&gt;&lt;p&gt;AI 与 Agentic AI 不仅增加流量总量，更改变流量的形态、对称性、持续时间与关键性：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;维度&lt;/th&gt;
+&lt;th&gt;传统假设&lt;/th&gt;
+&lt;th&gt;AI 时代新现实&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;流量模式&lt;/td&gt;
+&lt;td&gt;突发性、下行主导&lt;/td&gt;
+&lt;td&gt;平滑持续、上行增加&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;交互节奏&lt;/td&gt;
+&lt;td&gt;人类速度&lt;/td&gt;
+&lt;td&gt;软件速度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;关键路径&lt;/td&gt;
+&lt;td&gt;无特定依赖&lt;/td&gt;
+&lt;td&gt;Agent-模型路径为&amp;quot;脊髓&amp;quot;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;流持续时间&lt;/td&gt;
+&lt;td&gt;短（~643 ms）&lt;/td&gt;
+&lt;td&gt;长（~1292 ms）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;安全需求&lt;/td&gt;
+&lt;td&gt;传统边界防护&lt;/td&gt;
+&lt;td&gt;分布式、流感知安全&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="网络架构演进方向"&gt;网络架构演进方向
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;AI 推理路径将成战略性网络资产，需高弹性、可观测性与差异化 QoS 保障&lt;/li&gt;
+&lt;li&gt;流感知网络系统需向分布式架构演进，应对流表规模增长&lt;/li&gt;
+&lt;li&gt;接入网规划需重新评估上下行对称性假设，增加上行容量&lt;/li&gt;
+&lt;li&gt;安全系统需适应 QUIC 加密流量与 AI 流量新特征&lt;/li&gt;
+&lt;li&gt;网络延迟将随推理硬件加速而变得更重要&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="持续测量与保障"&gt;持续测量与保障
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;需建立 AI 特定 KPI 的持续测量体系&lt;/li&gt;
+&lt;li&gt;可使用 Cisco Crosswork Assurance 等工具跨网络端点测量 AI 推理 KPI&lt;/li&gt;
+&lt;li&gt;自适应网络架构对维持性能与用户体验至关重要&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="规划建议"&gt;规划建议
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;传统规划假设（突发性、下行主导、人类节奏）需调整&lt;/li&gt;
+&lt;li&gt;2029-2032 年为 AI 推理流量爆发增长期（CAGR 约 25%），需提前布局&lt;/li&gt;
+&lt;li&gt;企业网络需为 9 倍流量增长做准备&lt;/li&gt;
+&lt;li&gt;运营商网络需为 6.6 倍流量增长做准备，其中 AI 推理占 25%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="报告方法论"&gt;报告方法论
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;数据来源&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Cisco Crosswork Assurance User Experience 真实流量分析&lt;/li&gt;
+&lt;li&gt;Cisco 实验室 AI Agent 受控测试&lt;/li&gt;
+&lt;li&gt;第三方行业报告（Gartner、IBM、McKinsey、Morgan Stanley、Omdia 等）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;流量识别&lt;/strong&gt;
+通过实证测试训练模型，精确识别与追踪 AI 流量&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预测模型&lt;/strong&gt;
+基于行业数据建立可重复测量框架与基线，逐年跟踪 AI 流量演进&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;报告周期&lt;/strong&gt;
+年度更新&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="关键数据汇总"&gt;关键数据汇总
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;指标&lt;/th&gt;
+&lt;th&gt;数值&lt;/th&gt;
+&lt;th&gt;时间节点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Token 消耗同比增长&lt;/td&gt;
+&lt;td&gt;10x&lt;/td&gt;
+&lt;td&gt;2024.12-2025.12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;服务商 AI 流量增长&lt;/td&gt;
+&lt;td&gt;4x / 8 个月&lt;/td&gt;
+&lt;td&gt;2025.04-2025.12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AI 推理流持续时间&lt;/td&gt;
+&lt;td&gt;2x 传统 Web&lt;/td&gt;
+&lt;td&gt;当前&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AI 推理流速率&lt;/td&gt;
+&lt;td&gt;1/10 传统 Web&lt;/td&gt;
+&lt;td&gt;当前&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AI 上行主导流占比&lt;/td&gt;
+&lt;td&gt;9%（vs Web 0.5%）&lt;/td&gt;
+&lt;td&gt;当前&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Agent 流量增幅&lt;/td&gt;
+&lt;td&gt;450%&lt;/td&gt;
+&lt;td&gt;实证测试&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Agent 流量中 AI 推理占比&lt;/td&gt;
+&lt;td&gt;70%&lt;/td&gt;
+&lt;td&gt;实证测试&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;企业流量增长（无 Agentic AI）&lt;/td&gt;
+&lt;td&gt;2.5x&lt;/td&gt;
+&lt;td&gt;2026-2035&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;企业流量增长（有 Agentic AI）&lt;/td&gt;
+&lt;td&gt;9x&lt;/td&gt;
+&lt;td&gt;2026-2035&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;消费者流量增长（无 AI）&lt;/td&gt;
+&lt;td&gt;4x&lt;/td&gt;
+&lt;td&gt;2025-2035&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;消费者流量增长（有 AI）&lt;/td&gt;
+&lt;td&gt;6.6x&lt;/td&gt;
+&lt;td&gt;2025-2035&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AI 推理占全网流量&lt;/td&gt;
+&lt;td&gt;25%&lt;/td&gt;
+&lt;td&gt;2035 年&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AI 推理流量 CAGR（爆发期）&lt;/td&gt;
+&lt;td&gt;~25%&lt;/td&gt;
+&lt;td&gt;2029-2032&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;来源：Cisco Systems, Inc. &amp;ldquo;AI Impact on Wide Area Networks: Cisco 2026 Report&amp;rdquo;&lt;/em&gt;
+&lt;em&gt;合作：Opanga Networks&lt;/em&gt;&lt;/p&gt;</description></item><item><title>AI时代的真正壁垒，不是技术，而是判断</title><link>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</link><pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id="年长者的逆袭"&gt;年长者的逆袭
 &lt;/h2&gt;&lt;p&gt;在人工智能的使用方式上，年轻人与年长者之间出现了一种有趣的分化：年轻人更喜欢把LLM当成生活顾问，频繁提问；而年长者则倾向于将其用作知识验证的工具，提问更精准。这种差异揭示了一个重要事实——在AI时代，使用频率并不代表掌握程度。&lt;/p&gt;
 &lt;p&gt;过去的每一次技术革命几乎都属于年轻人，他们学习快、敢尝试、没有心理包袱。然而这一次的AI浪潮，规律似乎正在反转。AI并不是一个简单的工具升级，而是一个 &lt;strong&gt;“垃圾进、垃圾出”&lt;/strong&gt; 的黑箱系统，输入的质量决定了输出的价值。&lt;/p&gt;
 &lt;p&gt;在这样的体系中，经验第一次成为决定性的筹码。AI不提供真理，它只是模仿逻辑的镜像。输入者如果缺乏判断力，再先进的模型也只能制造幻觉。&lt;/p&gt;

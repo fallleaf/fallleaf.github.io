@@ -68,7 +68,11 @@
     {{- end -}}
     
     {{/* List only pages that are not a subsection */}}
-    {{ $paginator := .Paginate $pages }}
+    {{- $isPaginated := or .IsHome (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $paginator := dict "Pages" $pages "PageNumber" 1 "TotalPages" 1 "HasPrev" false "HasNext" false "FirstPage" dict "PageNumber" 1 "LastPage" dict "PageNumber" 1 -}}
+    {{- if $isPaginated -}}
+        {{ $paginator = .Paginate $pages }}
+    {{- end -}}
     <section class="article-list--compact">
         {{ range $paginator.Pages }}
             {{ partial "article-list/compact" . }}

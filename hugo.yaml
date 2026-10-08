@@ -59,7 +59,6 @@ params:
 
   widgets:
     homepage:
-      - type: search
       - type: archives
         params:
           limit: 10
@@ -79,8 +78,12 @@ params:
   imageProcessing:
     cover:
       enabled: true
+      quality: 75
+      maxWidth: 1200
     content:
       enabled: true
+      quality: 75
+      maxWidth: 1200
 
   defaultImage:
     opengraph:
