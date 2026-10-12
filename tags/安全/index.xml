@@ -1,9 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>安全 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/%E5%AE%89%E5%85%A8/</link><description>Recent content in 安全 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Tue, 27 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>建设郊县第二汇聚点，值吗？</title><link>https://blog.fallleaf.net/p/notes-suburban-network-value/</link><pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/notes-suburban-network-value/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-suburban-network-value/cover.webp" alt="Featured image of post 建设郊县第二汇聚点，值吗？" /&gt;&lt;h2 id="一个不好明说的问题"&gt;一个不好明说的问题
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>安全 on 红旗下的蛋</title>
+        <link>http://localhost:1313/tags/%E5%AE%89%E5%85%A8/</link>
+        <description>Recent content in 安全 on 红旗下的蛋</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>fallleaf</copyright>
+        <lastBuildDate>Tue, 27 Jan 2026 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>建设郊县第二汇聚点，值吗？</title>
+        <link>http://localhost:1313/p/notes-suburban-network-value/</link>
+        <pubDate>Tue, 27 Jan 2026 00:00:00 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/notes-suburban-network-value/</guid>
+        <description>&lt;img src="http://localhost:1313/p/notes-suburban-network-value/cover.webp" alt="Featured image of post 建设郊县第二汇聚点，值吗？" /&gt;&lt;h2 id=&#34;一个不好明说的问题&#34;&gt;一个不好明说的问题
 &lt;/h2&gt;&lt;p&gt;“郊县第二汇聚点建设，值吗？”这个问题在投资决策会上很少被直接提出，却常常是决策者心中真实的疑问。&lt;/p&gt;
 &lt;p&gt;当前，信息通信已深度融入社会运行的各个层面。一旦县域通信因单点故障导致整体中断，影响不仅涉及基础通信业务，也将迅速波及政务、医疗、应急、金融等关键领域，其后果远超一般网络事故。从这个角度看，通过新建第二汇聚点，提高网络整体的可靠性，是提升县域通信韧性的必要举措。&lt;/p&gt;
 &lt;p&gt;没人会说提升网络可靠性的项目不重要，但现实矛盾也是非常突出。建设投资总盘子日趋下降，5G覆盖、政企专线、算力下沉等项目普遍具备明确的收入预期或合同支撑，在资源竞争中占据优势。相比之下，这些不能直接拉动用户及营收增长的安全类项目，其价值更多体现在“避免问题发生”上，短期内价值难以显性呈现，加之多数郊县近年来未发生重大中断事件，“低概率”又进一步强化了“可缓投”的心理预期。因此，在没有政策或考核红线的情况下，这些建设需求被要求反复论证方案合理性、经济性，一次次在投资排序时被悄然后移。&lt;/p&gt;
 &lt;p&gt;更关键的是，传统项目论证多依赖“可靠性提升”“平均无故障时间（MTBF）延长”等技术指标，难以与收益类项目在同一评价体系下比较。当预算收紧时，这类项目往往首当其冲被调整。问题的核心，不是“要不要安全”，而是在有限资金下，“&lt;strong&gt;它是否是一项有效益的投资&lt;/strong&gt;”，是否能和那些效益类项目同台竞争。&lt;/p&gt;
-&lt;h2 id="解决思路把安全量化为收益"&gt;解决思路：把“安全”量化为“收益”
+&lt;h2 id=&#34;解决思路把安全量化为收益&#34;&gt;解决思路：把“安全”量化为“收益”
 &lt;/h2&gt;&lt;p&gt;投资决策的本质，是在不确定性中配置资源。既然收益类项目以“能增加多少收入”为衡量标准，那么这些提升安全类的项目对应的，则是“可以减少多少潜在损失”。两者在逻辑上并不冲突，只是长期以来缺乏统一。&lt;/p&gt;
 &lt;p&gt;基于这一逻辑，可引入$ROSI$（Return on Security Investment，安全投资回报率）模型，将“避免的潜在损失”视为一种可量化的投资收益。该模型的基本表达式为：&lt;/p&gt;
 &lt;p&gt;$\text{ROSI} = \frac{ALE_{\text{before}} - ALE_{\text{after}} - \text{Cost}}{\text{Cost}}$&lt;/p&gt;
@@ -28,7 +43,7 @@
 &lt;p&gt;这一方法的关键价值在于，它使提升安全类项目首次能够与5G、政企等收益类项目置于同一张投资评估表中，实现公平排序。&lt;/p&gt;
 &lt;p&gt;上述模型，本质和可行性研究报告中要求的“盈利能力分析”逻辑是一致的，仅在收益口径上进行了适应性调整。&lt;/p&gt;
 &lt;p&gt;在传统可研中，效益通常体现为 &lt;strong&gt;直接收入增加&lt;/strong&gt;（如新增用户、带宽销售）或 &lt;strong&gt;成本节约&lt;/strong&gt;（如运维效率提升、能耗降低）。而在网络安全类项目中，&lt;strong&gt;主要效益表现为“避免的损失”（Avoided Loss）&lt;/strong&gt;，即因风险事件未发生或影响减轻而节省的支出。这种“负向收益”在会计上虽不计入营业收入，但在投资决策中具有同等经济价值。&lt;/p&gt;
-&lt;h2 id="示例分析郊县第二汇聚点建设到底值不值"&gt;示例分析：郊县第二汇聚点建设，到底值不值
+&lt;h2 id=&#34;示例分析郊县第二汇聚点建设到底值不值&#34;&gt;示例分析：郊县第二汇聚点建设，到底值不值
 &lt;/h2&gt;&lt;p&gt;回到开头的问题，假设某郊县，现网采用单汇聚节点架构，计划新建第二汇聚点，两节点分设于不同局址。&lt;/p&gt;
 &lt;p&gt;结合行业运行经验及历史故障统计，此类区域在单汇聚架构下发生全县级重大节点失效的年概率通常处于较低水平，按保守估计约为每年0.2次。单次事故的综合经济损失测算为200万元，由两部分构成：公众接入网（移动业务、宽带业务）阻断损失依据《公用电信设施损坏经济损失计算方法》（工信部联电管〔2014〕372号）进行核算，按“阻断用户数 × 单用户日均通信收入 × 阻断时长（日）”计算；政企专线部分则包括SLA违约赔偿、客户维系成本及潜在续约影响。&lt;/p&gt;
 &lt;p&gt;由此可得改造前的年度预期损失：&lt;/p&gt;
@@ -44,7 +59,12 @@
 &lt;li&gt;利用现有综合业务接入点做逃生通道备份；&lt;/li&gt;
 &lt;li&gt;采用单局双设备+出局多路由+提升机房等级等方式。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="不算账本身就是高风险决策"&gt;不算账，本身就是高风险决策
+&lt;h2 id=&#34;不算账本身就是高风险决策&#34;&gt;不算账，本身就是高风险决策
 &lt;/h2&gt;&lt;p&gt;“郊县第二汇聚点建设，值吗？”这一问题，并不适合用经验或直觉来回答，而应建立在可验证的经济分析之上。&lt;/p&gt;
 &lt;p&gt;通过引入 ROSI 模型，将安全投入视为一种风险对冲投资，可以把原本抽象的“安全性提升”，转化为清晰的经济量化结果，使安全类项目能够与收益类项目在同一投资池中进行比较和排序。更重要的是，它让安全的投入从“政治正确但难量化”的模糊地带，走向“可比、可排、可辩”的理性轨道。这种方法同样适合用与二平面建设、多路由等项目上。&lt;/p&gt;
-&lt;p&gt;在这个意义上，真正的风险或许并不在于是否建设第二汇聚点，而在于面对重大安全投入时，选择不去算这笔账。在投资约束日益严格的今天，这种基于数据的审慎权衡，正是实现安全与效益动态平衡的务实路径。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;在这个意义上，真正的风险或许并不在于是否建设第二汇聚点，而在于面对重大安全投入时，选择不去算这笔账。在投资约束日益严格的今天，这种基于数据的审慎权衡，正是实现安全与效益动态平衡的务实路径。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

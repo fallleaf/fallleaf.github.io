@@ -1,68 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>新一代通信网 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/%E6%96%B0%E4%B8%80%E4%BB%A3%E9%80%9A%E4%BF%A1%E7%BD%91/</link><description>Recent content in 新一代通信网 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Thu, 20 Aug 2026 18:04:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/%E6%96%B0%E4%B8%80%E4%BB%A3%E9%80%9A%E4%BF%A1%E7%BD%91/index.xml" rel="self" type="application/rss+xml"/><item><title>算力网与新一代通信网——定义、内容与关系</title><link>https://blog.fallleaf.net/p/b338a002/</link><pubDate>Thu, 20 Aug 2026 18:04:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/b338a002/</guid><description>&lt;img src="https://blog.fallleaf.net/p/b338a002/cover.webp" alt="Featured image of post 算力网与新一代通信网——定义、内容与关系" /&gt;&lt;h2 id="概述"&gt;概述
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>新一代通信网 on 红旗下的蛋</title>
+        <link>http://localhost:1313/tags/%E6%96%B0%E4%B8%80%E4%BB%A3%E9%80%9A%E4%BF%A1%E7%BD%91/</link>
+        <description>Recent content in 新一代通信网 on 红旗下的蛋</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>fallleaf</copyright>
+        <lastBuildDate>Thu, 20 Aug 2026 18:04:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%96%B0%E4%B8%80%E4%BB%A3%E9%80%9A%E4%BF%A1%E7%BD%91/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>算力网与新一代通信网——定义、内容与关系</title>
+        <link>http://localhost:1313/p/b338a002/</link>
+        <pubDate>Thu, 20 Aug 2026 18:04:00 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/b338a002/</guid>
+        <description>&lt;img src="http://localhost:1313/p/b338a002/cover.webp" alt="Featured image of post 算力网与新一代通信网——定义、内容与关系" /&gt;&lt;h2 id=&#34;概述&#34;&gt;概述
 &lt;/h2&gt;&lt;p&gt;算力网与新一代通信网均被纳入国家&amp;quot;六张网&amp;quot;顶层部署。2026年4月28日，中共中央政治局会议明确提出&amp;quot;加强水网、新型电网、算力网、新一代通信网、城市地下管网、物流网等规划建设&amp;quot;，标志着两张网正式上升为国家战略。&amp;ldquo;十五五&amp;quot;规划纲要将其列为现代化基础设施体系的核心组成部分。2026年全年&amp;quot;六张网&amp;quot;及重点领域投资超7万亿元，&amp;ldquo;十五五&amp;quot;时期总投资预计超过10万亿元。&lt;/p&gt;
 &lt;p&gt;两张网分别对应数字经济的&amp;quot;算&amp;quot;与&amp;quot;传&amp;quot;两大核心能力——算力网解决算力&amp;quot;从哪来、怎么调度&amp;quot;的问题，新一代通信网解决数据&amp;quot;怎么传、多快传&amp;quot;的问题，二者深度融合构成&amp;quot;算网一体&amp;quot;体系。&lt;/p&gt;
-&lt;h2 id="算力网"&gt;算力网
-&lt;/h2&gt;&lt;h3 id="一定义来源"&gt;（一）定义来源
+&lt;h2 id=&#34;算力网&#34;&gt;算力网
+&lt;/h2&gt;&lt;h3 id=&#34;一定义来源&#34;&gt;（一）定义来源
 &lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;时间&lt;/th&gt;
-&lt;th&gt;文件/场合&lt;/th&gt;
-&lt;th&gt;发布主体&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2022年2月&lt;/td&gt;
-&lt;td&gt;启动建设国家算力枢纽节点通知&lt;/td&gt;
-&lt;td&gt;国家发改委等四部门&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2023年10月&lt;/td&gt;
-&lt;td&gt;《算力基础设施高质量发展行动计划》&lt;/td&gt;
-&lt;td&gt;工信部等六部门&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2023年12月&lt;/td&gt;
-&lt;td&gt;《关于深入实施&amp;quot;东数西算&amp;quot;工程加快构建全国一体化算力网的实施意见》&lt;/td&gt;
-&lt;td&gt;国家发改委、国家数据局等五部门&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2024年12月&lt;/td&gt;
-&lt;td&gt;《国家数据基础设施建设指引》&lt;/td&gt;
-&lt;td&gt;国家发改委、国家数据局、工信部&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2025年&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;十五五&amp;quot;规划纲要&lt;/td&gt;
-&lt;td&gt;全国人大&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2026年4月&lt;/td&gt;
-&lt;td&gt;中共中央政治局会议&lt;/td&gt;
-&lt;td&gt;中共中央&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2026年5月&lt;/td&gt;
-&lt;td&gt;丁薛祥调研算力网建设讲话&lt;/td&gt;
-&lt;td&gt;国务院副总理&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2026年6月16日&lt;/td&gt;
-&lt;td&gt;国家发改委民营企业座谈会&lt;/td&gt;
-&lt;td&gt;国家发改委主任郑栅洁&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;时间&lt;/th&gt;
+          &lt;th&gt;文件/场合&lt;/th&gt;
+          &lt;th&gt;发布主体&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2022年2月&lt;/td&gt;
+          &lt;td&gt;启动建设国家算力枢纽节点通知&lt;/td&gt;
+          &lt;td&gt;国家发改委等四部门&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2023年10月&lt;/td&gt;
+          &lt;td&gt;《算力基础设施高质量发展行动计划》&lt;/td&gt;
+          &lt;td&gt;工信部等六部门&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2023年12月&lt;/td&gt;
+          &lt;td&gt;《关于深入实施&amp;quot;东数西算&amp;quot;工程加快构建全国一体化算力网的实施意见》&lt;/td&gt;
+          &lt;td&gt;国家发改委、国家数据局等五部门&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2024年12月&lt;/td&gt;
+          &lt;td&gt;《国家数据基础设施建设指引》&lt;/td&gt;
+          &lt;td&gt;国家发改委、国家数据局、工信部&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2025年&lt;/td&gt;
+          &lt;td&gt;&amp;ldquo;十五五&amp;quot;规划纲要&lt;/td&gt;
+          &lt;td&gt;全国人大&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年4月&lt;/td&gt;
+          &lt;td&gt;中共中央政治局会议&lt;/td&gt;
+          &lt;td&gt;中共中央&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年5月&lt;/td&gt;
+          &lt;td&gt;丁薛祥调研算力网建设讲话&lt;/td&gt;
+          &lt;td&gt;国务院副总理&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年6月16日&lt;/td&gt;
+          &lt;td&gt;国家发改委民营企业座谈会&lt;/td&gt;
+          &lt;td&gt;国家发改委主任郑栅洁&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;来源：国家发改委官网（ndrc.gov.cn）、新华社、央视新闻、中国政府网（gov.cn）&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id="二定义"&gt;（二）定义
+&lt;h3 id=&#34;二定义&#34;&gt;（二）定义
 &lt;/h3&gt;&lt;p&gt;算力网（全国一体化算力网）是以&amp;quot;东数西算&amp;quot;工程为战略骨架，依托8大国家算力枢纽节点和10个国家数据中心集群，通过&amp;quot;新八纵八横&amp;quot;骨干光缆互联，将散落在全国各地的通用算力、智能算力、超级算力等多元算力设施连接成网，实现全国算力资源统筹调度、供需适配、集约高效利用的新型基础设施体系。算力是继热力、电力之后的新型基础资源，算力网被定位为&amp;quot;算力版的国家电网&amp;rdquo;，是支撑数字经济、人工智能等高质量发展的关键基础设施。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;来源：&amp;ldquo;十五五&amp;quot;规划纲要；丁薛祥2026年5月调研讲话（新华社）；央视新闻2026年6月报道&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id="三核心内容"&gt;（三）核心内容
+&lt;h3 id=&#34;三核心内容&#34;&gt;（三）核心内容
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 空间布局（&amp;ldquo;8+10+3&amp;quot;体系）&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;8大国家算力枢纽：京津冀、长三角、粤港澳大湾区、成渝、内蒙古、贵州、甘肃、宁夏。&lt;/p&gt;
 &lt;p&gt;10个国家数据中心集群：各枢纽下辖。&lt;/p&gt;
@@ -95,63 +110,63 @@
 &lt;blockquote&gt;
 &lt;p&gt;来源：丁薛祥调研中国联通华北（廊坊）数据中心、中国移动呼和浩特智算中心（新华社2026年5月）&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="新一代通信网"&gt;新一代通信网
-&lt;/h2&gt;&lt;h3 id="一定义来源-1"&gt;（一）定义来源
+&lt;h2 id=&#34;新一代通信网&#34;&gt;新一代通信网
+&lt;/h2&gt;&lt;h3 id=&#34;一定义来源-1&#34;&gt;（一）定义来源
 &lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;时间&lt;/th&gt;
-&lt;th&gt;文件/场合&lt;/th&gt;
-&lt;th&gt;发布主体&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2025年&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;十五五&amp;quot;规划纲要&lt;/td&gt;
-&lt;td&gt;全国人大&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2026年4月28日&lt;/td&gt;
-&lt;td&gt;中共中央政治局会议&lt;/td&gt;
-&lt;td&gt;中共中央&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2026年5月&lt;/td&gt;
-&lt;td&gt;央视《新闻联播》&amp;ldquo;六张网&amp;quot;调研&lt;/td&gt;
-&lt;td&gt;央视/千龙网&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2026年5月29日&lt;/td&gt;
-&lt;td&gt;中新网/央视新闻报道&lt;/td&gt;
-&lt;td&gt;中国信通院副院长王志勤&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2026年6月&lt;/td&gt;
-&lt;td&gt;新华社/经济日报报道&lt;/td&gt;
-&lt;td&gt;中国信通院副所长赵文玉&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2026年7月20日&lt;/td&gt;
-&lt;td&gt;国新办新闻发布会&lt;/td&gt;
-&lt;td&gt;工信部信息通信管理局局长谢存&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2026年7月30日&lt;/td&gt;
-&lt;td&gt;中共中央政治局会议&lt;/td&gt;
-&lt;td&gt;中共中央&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;时间&lt;/th&gt;
+          &lt;th&gt;文件/场合&lt;/th&gt;
+          &lt;th&gt;发布主体&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2025年&lt;/td&gt;
+          &lt;td&gt;&amp;ldquo;十五五&amp;quot;规划纲要&lt;/td&gt;
+          &lt;td&gt;全国人大&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年4月28日&lt;/td&gt;
+          &lt;td&gt;中共中央政治局会议&lt;/td&gt;
+          &lt;td&gt;中共中央&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年5月&lt;/td&gt;
+          &lt;td&gt;央视《新闻联播》&amp;ldquo;六张网&amp;quot;调研&lt;/td&gt;
+          &lt;td&gt;央视/千龙网&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年5月29日&lt;/td&gt;
+          &lt;td&gt;中新网/央视新闻报道&lt;/td&gt;
+          &lt;td&gt;中国信通院副院长王志勤&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年6月&lt;/td&gt;
+          &lt;td&gt;新华社/经济日报报道&lt;/td&gt;
+          &lt;td&gt;中国信通院副所长赵文玉&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年7月20日&lt;/td&gt;
+          &lt;td&gt;国新办新闻发布会&lt;/td&gt;
+          &lt;td&gt;工信部信息通信管理局局长谢存&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年7月30日&lt;/td&gt;
+          &lt;td&gt;中共中央政治局会议&lt;/td&gt;
+          &lt;td&gt;中共中央&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;来源：中国政府网（gov.cn）、工信部官网、国新办发布会、新华社、央视新闻&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id="二定义-1"&gt;（二）定义
+&lt;h3 id=&#34;二定义-1&#34;&gt;（二）定义
 &lt;/h3&gt;&lt;p&gt;新一代通信网是以新一代通信技术创新和新型应用需求为驱动，以高速泛在、全域智能、韧性安全、融合赋能等为特征，服务于经济社会数智化转型的&amp;quot;空天地海&amp;quot;一体化网络设施体系。它不仅包含由5G-A/6G网络、光网络和数据通信网络等构成的基础网络，以卫星互联网为主体的空间网络，涵盖工业互联网、低空智联网等的融合网络，还包括服务应急通信保障的应急通信网络。从5G、5G-A到未来6G的移动通信网，以及万兆光网、卫星互联网等，都属于新一代通信网范畴。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;来源：中国信通院技术与标准研究所副所长赵文玉（新华社2026年6月报道）；央视财经/未来网2026年6月报道&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id="三工信部定义的四新特征"&gt;（三）工信部定义的&amp;quot;四新&amp;quot;特征
+&lt;h3 id=&#34;三工信部定义的四新特征&#34;&gt;（三）工信部定义的&amp;quot;四新&amp;quot;特征
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;连接对象新&lt;/strong&gt; ：从传统个人用户拓展到人、机、物、具身智能等多元主体。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;覆盖范围新&lt;/strong&gt; ：突破传统地面限制，向空天地海一体化全域覆盖拓展。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;连接能力新&lt;/strong&gt; ：实现确定性、稳定性等大幅提升，更好满足行业应用差异化需求。&lt;/p&gt;
@@ -160,7 +175,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;来源：工信部信息通信管理局局长谢存，国新办新闻发布会（2026年7月20日，21财经报道）&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id="四核心内容"&gt;（四）核心内容
+&lt;h3 id=&#34;四核心内容&#34;&gt;（四）核心内容
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 网络体系构成&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;基础网络&lt;/strong&gt; ：5G-A/6G移动通信网、光网络（万兆光网/400G超高速光传输）、数据通信网络。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;空间网络&lt;/strong&gt; ：以卫星互联网为主体（低轨卫星、天通卫星），实现空天地海覆盖。&lt;/p&gt;
@@ -209,22 +224,22 @@
 &lt;p&gt;来源：工信部信息通信管理局局长谢存，国新办新闻发布会（2026年7月20日）&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;##两张网的关系&lt;/p&gt;
-&lt;h3 id="一战略定位关系"&gt;（一）战略定位关系
+&lt;h3 id=&#34;一战略定位关系&#34;&gt;（一）战略定位关系
 &lt;/h3&gt;&lt;p&gt;算力网是数字经济的核心底座，解决算力&amp;quot;从哪来、怎么调度&amp;quot;的问题。新一代通信网是数据传输的&amp;quot;大动脉&amp;rdquo;，解决数据&amp;quot;怎么传、多快传&amp;quot;的问题。二者共同构成数字经济的&amp;quot;算&amp;quot;与&amp;quot;传&amp;quot;两大核心能力。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;来源：综合&amp;quot;十五五&amp;quot;规划纲要、中共中央政治局会议部署&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id="二功能协同关系"&gt;（二）功能协同关系
+&lt;h3 id=&#34;二功能协同关系&#34;&gt;（二）功能协同关系
 &lt;/h3&gt;&lt;p&gt;新一代通信网是其他五张网的信息通信连接和服务基座。为算力网提供高质量联算、入算的网络底座。支撑人工智能高质量训练推理。二者深度融合构成&amp;quot;算网一体&amp;quot;体系。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;来源：中国信通院技术与标准研究所副所长赵文玉（新华社2026年6月报道）&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id="三产业融合关系"&gt;（三）产业融合关系
+&lt;h3 id=&#34;三产业融合关系&#34;&gt;（三）产业融合关系
 &lt;/h3&gt;&lt;p&gt;加强算力网与新一代通信网的规划协同，推动5G、6G等新一代通信技术与算力网深度融合。为工业互联网、低空经济、智慧政务等各类数字应用提供支撑。算力网投资具有乘数效应，带动AI、自动驾驶、低空经济等产业；新一代通信网全面赋能智能制造、智慧城市、智慧家庭等领域。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;来源：综合&amp;quot;十五五&amp;quot;规划纲要、中共中央政治局会议部署&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="主要引用出处汇总"&gt;主要引用出处汇总
+&lt;h2 id=&#34;主要引用出处汇总&#34;&gt;主要引用出处汇总
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&amp;ldquo;十五五&amp;quot;规划纲要——全国人大2025年审议通过&lt;/li&gt;
 &lt;li&gt;中共中央政治局会议——2026年4月28日、2026年7月30日&lt;/li&gt;
@@ -241,4 +256,9 @@
 &lt;li&gt;国家发改委民营企业座谈会——国家发改委主任郑栅洁，2026年6月16日（金融界报道）&lt;/li&gt;
 &lt;li&gt;界面新闻&amp;quot;六张网&amp;quot;分析报道——2026年&lt;/li&gt;
 &lt;li&gt;21财经&amp;quot;六张网&amp;quot;解读——2026年7月26日&lt;/li&gt;
-&lt;/ol&gt;</description></item></channel></rss>
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,43 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>R语言 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/</link><description>Recent content in R语言 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/r%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml"/><item><title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title><link>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate><guid>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</guid><description>&lt;h2 id="什么是斜线图"&gt;什么是斜线图
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>R语言 on 红旗下的蛋</title>
+        <link>http://localhost:1313/tags/r%E8%AF%AD%E8%A8%80/</link>
+        <description>Recent content in R语言 on 红旗下的蛋</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>fallleaf</copyright>
+        <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/r%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title>
+        <link>http://localhost:1313/p/tech-slopegraph-comparing-change-structure/</link>
+        <pubDate>Sun, 21 Jul 2019 00:00:00 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/tech-slopegraph-comparing-change-structure/</guid>
+        <description>&lt;h2 id=&#34;什么是斜线图&#34;&gt;什么是斜线图
 &lt;/h2&gt;&lt;p&gt;斜线图（Slopegraph）是一种用于展示同一组观测对象在两个固定状态之间变化关系的数据可视化形式。
 这两个状态可以是不同时间（如今年与去年、事件前后），也可以是不同维度（如总体与子群体），其度量可以是排名、比例或数值。&lt;/p&gt;
 &lt;p&gt;从表现形式上看，斜线图属于折线图的一个特例，但其设计目标并不是描绘连续变化过程，而是强调两个状态之间的相对变化结构。因此，无论是 Excel、Tableau 还是 R，只要支持折线图的工具都可以绘制斜线图。&lt;/p&gt;
 &lt;p&gt;Edward Tufte 在 1983 年出版的《The Visual Display of Quantitative Information》中首次系统性讨论了这种表达方式，并在 2011 年 6 月 1 日的论坛中正式将其命名为 slopegraph。早期应用并不广泛，但随着数据新闻和分析型可视化的发展，斜线图近年来逐渐成为常用工具。&lt;/p&gt;
 &lt;p&gt;下面是几个典型的斜线图示例。
-&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott.webp"
-width="1080"
-height="965"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_a3e4ab5f789f691d.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_59b7c3e89008846a.webp 1024w"
-loading="lazy"
-alt="FT图例"
-class="gallery-image"
-data-flex-grow="111"
-data-flex-basis="268px"
+&lt;img src=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott.webp&#34;
+	width=&#34;1080&#34;
+	height=&#34;965&#34;
+	srcset=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_a3e4ab5f789f691d.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_boycott_hu_59b7c3e89008846a.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;FT图例&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;111&#34;
+		data-flex-basis=&#34;268px&#34;
+	
 &gt;&lt;/p&gt;
 &lt;p&gt;这是《Financial Times》绘制的一个斜线图，用于展示中国消费者对美国品牌商品抵制态度的变化情况。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time.webp"
-width="404"
-height="634"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_20e05bf5a266a1df.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_264cc8b81c03f11f.webp 1024w"
-loading="lazy"
-alt="网易图例"
-class="gallery-image"
-data-flex-grow="63"
-data-flex-basis="152px"
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_time.webp&#34;
+	width=&#34;404&#34;
+	height=&#34;634&#34;
+	srcset=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_20e05bf5a266a1df.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_time_hu_264cc8b81c03f11f.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;网易图例&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;63&#34;
+		data-flex-basis=&#34;152px&#34;
+	
 &gt;&lt;/p&gt;
 &lt;p&gt;这张图来自网易，X 轴为 1990 年和 2017 年两个时间点，Y 轴为慢性病伤残调整寿命年（DALY）的排名。通过斜线的交叉和排序变化，可以直观看出哪些慢性病在这 27 年间上升为主要死因，以及不同病种之间地位的变化。这种跨时间跨度较大的对比，正是斜线图&lt;strong&gt;最典型&lt;/strong&gt;的应用场景。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group.webp"
-width="376"
-height="443"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_dd48f3d75baea9b2.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_64d89214951880a0.webp 1024w"
-loading="lazy"
-alt="Employee Feedback"
-class="gallery-image"
-data-flex-grow="84"
-data-flex-basis="203px"
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_group.webp&#34;
+	width=&#34;376&#34;
+	height=&#34;443&#34;
+	srcset=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_dd48f3d75baea9b2.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph_group_hu_64d89214951880a0.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Employee Feedback&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;84&#34;
+		data-flex-basis=&#34;203px&#34;
+	
 &gt;&lt;/p&gt;
 &lt;p&gt;该图引自 storytellingwithdata 网站的文章 More on slopegraphs。X 轴表示两个分组（Company 与 Team X），Y 轴表示调查指标得分。斜线图在这里用于展示同一指标在&lt;strong&gt;总体与子群体&lt;/strong&gt;中的相对位置与变化情况。&lt;/p&gt;
-&lt;h2 id="什么时候用斜线图"&gt;什么时候用斜线图
+&lt;h2 id=&#34;什么时候用斜线图&#34;&gt;什么时候用斜线图
 &lt;/h2&gt;&lt;p&gt;Edward Tufte 在 6 月 1 日的帖子中对斜线图的用途做了高度概括：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“Slopegraphs compare changes over time for a list of nouns located on an ordinal or interval scale.”&lt;/p&gt;
@@ -45,76 +72,88 @@ data-flex-basis="203px"
 &lt;p&gt;即：斜线图用于比较&lt;strong&gt;一组可排序或可度量对象在不同状态之间的变化&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;因此，在原本会使用柱状图或折线图进行“两点对比”的场景中，斜线图往往是更高效的表达方式。例如，以下是用柱状图表示四家公司 2018 年和 2019 年收入的情况。
 柱状图表示：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1.webp"
-width="960"
-height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_4220d2c8b959ef73.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_d7f2463eaa4adb43.webp 1024w"
-loading="lazy"
-alt="柱状图示例"
-class="gallery-image"
-data-flex-grow="100"
-data-flex-basis="240px"
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar1-1.webp&#34;
+	width=&#34;960&#34;
+	height=&#34;960&#34;
+	srcset=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_4220d2c8b959ef73.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar1-1_hu_d7f2463eaa4adb43.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;柱状图示例&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
 &gt;&lt;/p&gt;
 &lt;p&gt;或者：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1.webp"
-width="960"
-height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_39414b2dd2fbf857.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_8fb406bedf84b6d0.webp 1024w"
-loading="lazy"
-alt="另一种柱状图示例"
-class="gallery-image"
-data-flex-grow="100"
-data-flex-basis="240px"
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar2-1.webp&#34;
+	width=&#34;960&#34;
+	height=&#34;960&#34;
+	srcset=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_39414b2dd2fbf857.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/bar2-1_hu_8fb406bedf84b6d0.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;另一种柱状图示例&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
 &gt;&lt;/p&gt;
 &lt;p&gt;用斜线图表示，如下&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1.webp"
-width="1344"
-height="960"
-srcset="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_2412b24114d9707.webp 480w, https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_fb2506ae2fd5ba04.webp 1024w"
-loading="lazy"
-alt="斜线图示例"
-class="gallery-image"
-data-flex-grow="140"
-data-flex-basis="336px"
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph-1.webp&#34;
+	width=&#34;1344&#34;
+	height=&#34;960&#34;
+	srcset=&#34;http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_2412b24114d9707.webp 480w, http://localhost:1313/p/tech-slopegraph-comparing-change-structure/slopegraph-1_hu_fb2506ae2fd5ba04.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;斜线图示例&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;336px&#34;
+	
 &gt;&lt;/p&gt;
 &lt;p&gt;对比这三种表达方式可以发现：
 柱状图只能呈现绝对数值，而斜线图能够在同一视图中同时表达收入水平、排名以及变化幅度。读者不需要额外计算或比较，就可以理解企业之间的相对变化。&lt;/p&gt;
 &lt;p&gt;柱状图与斜线图在设计上的一个关键差异在于：柱状图的 Y 轴必须从 0 开始，否则会夸大差异；而斜线图的 Y 轴并不要求从 0 开始，因此更适合用来比较排名变化或相对变化结构，而不是绝对规模。&lt;/p&gt;
-&lt;h2 id="怎么用r语言作斜线图"&gt;怎么用R语言作斜线图
+&lt;h2 id=&#34;怎么用r语言作斜线图&#34;&gt;怎么用R语言作斜线图
 &lt;/h2&gt;&lt;p&gt;由于斜线图就是折线图的一种变形，所以，只要能够制作折线图的软件都能制作斜线图，这里介绍一下在R语言环境下制作斜线图的方法。&lt;/p&gt;
 &lt;p&gt;GitHub有一个R语言库项目：CGPfunctions，提供了制作斜线图的函数newggslopegraph()。上面的斜线图就是用这个函数做出来的。&lt;/p&gt;
 &lt;p&gt;库文件的安装详见网页说明，最新版本是0.5.8，包含了新增加的一些函数参数，这里只把这个函数的参数用中文解释一下。&lt;/p&gt;
 &lt;p&gt;用法：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
-&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
-&lt;/span&gt;&lt;span class="lnt"&gt; 2
-&lt;/span&gt;&lt;span class="lnt"&gt; 3
-&lt;/span&gt;&lt;span class="lnt"&gt; 4
-&lt;/span&gt;&lt;span class="lnt"&gt; 5
-&lt;/span&gt;&lt;span class="lnt"&gt; 6
-&lt;/span&gt;&lt;span class="lnt"&gt; 7
-&lt;/span&gt;&lt;span class="lnt"&gt; 8
-&lt;/span&gt;&lt;span class="lnt"&gt; 9
-&lt;/span&gt;&lt;span class="lnt"&gt;10
-&lt;/span&gt;&lt;span class="lnt"&gt;11
-&lt;/span&gt;&lt;span class="lnt"&gt;12
-&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;newggslopegraph(
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; dataframe, Times, Measurement, Grouping,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Title = &amp;#34;No title given&amp;#34;, SubTitle = &amp;#34;No subtitle given&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Caption = &amp;#34;No caption given&amp;#34;, XTextSize = 12, YTextSize = 3,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; TitleTextSize = 14, SubTitleTextSize = 10, CaptionTextSize = 8,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; TitleJustify = &amp;#34;left&amp;#34;, SubTitleJustify = &amp;#34;left&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; CaptionJustify = &amp;#34;right&amp;#34;, LineThickness = 1, LineColor = &amp;#34;ByGroup&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataTextSize = 2.5, DataTextColor = &amp;#34;black&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataLabelPadding = 0.05, DataLabelLineSize = 0,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataLabelFillColor = &amp;#34;white&amp;#34;, WiderLabels = FALSE,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ReverseYAxis = FALSE, ReverseXAxis = FALSE, RemoveMissing = TRUE,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ThemeChoice = &amp;#34;bw&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; )
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;newggslopegraph(
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  dataframe, Times, Measurement, Grouping,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Title = &amp;#34;No title given&amp;#34;, SubTitle = &amp;#34;No subtitle given&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Caption = &amp;#34;No caption given&amp;#34;, XTextSize = 12, YTextSize = 3,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  TitleTextSize = 14, SubTitleTextSize = 10, CaptionTextSize = 8,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  TitleJustify = &amp;#34;left&amp;#34;, SubTitleJustify = &amp;#34;left&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  CaptionJustify = &amp;#34;right&amp;#34;, LineThickness = 1, LineColor = &amp;#34;ByGroup&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DataTextSize = 2.5, DataTextColor = &amp;#34;black&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DataLabelPadding = 0.05, DataLabelLineSize = 0,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DataLabelFillColor = &amp;#34;white&amp;#34;, WiderLabels = FALSE,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ReverseYAxis = FALSE, ReverseXAxis = FALSE, RemoveMissing = TRUE,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ThemeChoice = &amp;#34;bw&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  )
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;参数：&lt;/p&gt;
@@ -133,32 +172,32 @@ data-flex-basis="336px"
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;例如上面例子中用的数据框为：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
-&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
-&lt;/span&gt;&lt;span class="lnt"&gt; 2
-&lt;/span&gt;&lt;span class="lnt"&gt; 3
-&lt;/span&gt;&lt;span class="lnt"&gt; 4
-&lt;/span&gt;&lt;span class="lnt"&gt; 5
-&lt;/span&gt;&lt;span class="lnt"&gt; 6
-&lt;/span&gt;&lt;span class="lnt"&gt; 7
-&lt;/span&gt;&lt;span class="lnt"&gt; 8
-&lt;/span&gt;&lt;span class="lnt"&gt; 9
-&lt;/span&gt;&lt;span class="lnt"&gt;10
-&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;data
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## company year income
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 1 CompanyA 2018年 232
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 2 CompanyA 2019年 261
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 3 CompanyB 2018年 111
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 4 CompanyB 2019年 425
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 5 CompanyC 2018年 266
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 6 CompanyC 2019年 217
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 7 CompanyD 2018年 431
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;## 8 CompanyD 2019年 329
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;data
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;##    company   year income
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 1 CompanyA 2018年    232
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 2 CompanyA 2019年    261
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 3 CompanyB 2018年    111
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 4 CompanyB 2019年    425
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 5 CompanyC 2018年    266
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 6 CompanyC 2019年    217
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 7 CompanyD 2018年    431
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## 8 CompanyD 2019年    329
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;这是一个带列名称的数据框data，第一列就是Grouping，表明每个斜线的类别，第二列是Times，表明X轴上的两个时间点，第三列是“Measurement”，表明每列别对应X轴在Y轴上的位置。&lt;/p&gt;
@@ -234,49 +273,66 @@ data-flex-basis="336px"
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;下面展示一个完整的函数参数以及创建的图形，注意，X轴和Y轴均倒置了。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
-&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
-&lt;/span&gt;&lt;span class="lnt"&gt; 2
-&lt;/span&gt;&lt;span class="lnt"&gt; 3
-&lt;/span&gt;&lt;span class="lnt"&gt; 4
-&lt;/span&gt;&lt;span class="lnt"&gt; 5
-&lt;/span&gt;&lt;span class="lnt"&gt; 6
-&lt;/span&gt;&lt;span class="lnt"&gt; 7
-&lt;/span&gt;&lt;span class="lnt"&gt; 8
-&lt;/span&gt;&lt;span class="lnt"&gt; 9
-&lt;/span&gt;&lt;span class="lnt"&gt;10
-&lt;/span&gt;&lt;span class="lnt"&gt;11
-&lt;/span&gt;&lt;span class="lnt"&gt;12
-&lt;/span&gt;&lt;span class="lnt"&gt;13
-&lt;/span&gt;&lt;span class="lnt"&gt;14
-&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;newggslopegraph(
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; data, year, income, company,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Title = &amp;#34;This is Title&amp;#34;, SubTitle = &amp;#34;This is subTitle&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Caption = &amp;#34;This is Caption\nSecond line&amp;#34;, XTextSize = 14, YTextSize = 4,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; TitleTextSize = 14, SubTitleTextSize = 12, CaptionTextSize = 10,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; TitleJustify = &amp;#34;L&amp;#34;, SubTitleJustify = &amp;#34;R&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; CaptionJustify = &amp;#34;C&amp;#34;, LineThickness = 2,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; LineColor = c(&amp;#34;CompanyD&amp;#34; = &amp;#34;seagreen&amp;#34;,&amp;#34;CompanyA&amp;#34; = &amp;#34;green&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &amp;#34;CompanyB&amp;#34; = &amp;#34;tomato&amp;#34;,&amp;#34;CompanyC&amp;#34; = &amp;#34;orange&amp;#34;),
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataTextSize = 4, DataTextColor = &amp;#34;red&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataLabelPadding = 0.2, DataLabelLineSize = 0.5,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; DataLabelFillColor = &amp;#34;gray&amp;#34;, WiderLabels = FALSE,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ThemeChoice = &amp;#34;tufte&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; )
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;newggslopegraph(
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  data, year, income, company,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Title = &amp;#34;This is Title&amp;#34;, SubTitle = &amp;#34;This is subTitle&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Caption = &amp;#34;This is Caption\nSecond line&amp;#34;, XTextSize = 14, YTextSize = 4,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  TitleTextSize = 14, SubTitleTextSize = 12, CaptionTextSize = 10,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  TitleJustify = &amp;#34;L&amp;#34;, SubTitleJustify = &amp;#34;R&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  CaptionJustify = &amp;#34;C&amp;#34;, LineThickness = 2,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  LineColor = c(&amp;#34;CompanyD&amp;#34; = &amp;#34;seagreen&amp;#34;,&amp;#34;CompanyA&amp;#34; = &amp;#34;green&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &amp;#34;CompanyB&amp;#34; = &amp;#34;tomato&amp;#34;,&amp;#34;CompanyC&amp;#34; = &amp;#34;orange&amp;#34;),
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DataTextSize = 4, DataTextColor = &amp;#34;red&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DataLabelPadding = 0.2, DataLabelLineSize = 0.5,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DataLabelFillColor = &amp;#34;gray&amp;#34;, WiderLabels = FALSE,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ReverseYAxis = TRUE, ReverseXAxis = TRUE, RemoveMissing = TRUE,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  ThemeChoice = &amp;#34;tufte&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  )
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/demo-1.png"
-loading="lazy"
-alt="斜线图"
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/demo-1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;斜线图&#34;
+	
+	
 &gt;&lt;/p&gt;
 &lt;p&gt;一般而言，斜线图最适合用于比较两个时间点或两个分组的数据，也可以扩展到三至四个时间点，但不宜过多，否则应改用传统折线图。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://blog.fallleaf.net/chinaunicom-1.png"
-loading="lazy"
-alt="中国联通"
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/chinaunicom-1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;中国联通&#34;
+	
+	
 &gt;&lt;/p&gt;
-&lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;中国联通2018年四季度，2019年一、二季度业务数据的斜线图。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
