@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>5G承载 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/5g-bearer/</link><description>Recent content in 5G承载 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Fri, 26 Sep 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/5g-bearer/index.xml" rel="self" type="application/rss+xml"/><item><title>单纤多向：让前传更极简</title><link>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</link><pubDate>Fri, 26 Sep 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/cover.webp" alt="Featured image of post 单纤多向：让前传更极简" /&gt;&lt;p&gt;在移动基站的建设中，无线前传网络却一直面临着一个&amp;quot;老大难&amp;quot;问题——光缆投资过大。随着CRAN（集中式无线接入网）模式成为主流，BBU（基带处理单元）集中部署，BBU与RRU（射频拉远单元）之间需要大量光缆纤芯连接，导致前传光缆投资成为电信运营商难以承受之重。&lt;/p&gt;
+&lt;h2 id="前传之痛光缆投资为何居高不下"&gt;前传之痛：光缆投资为何居高不下？
+&lt;/h2&gt;&lt;p&gt;传统的无线前传采用双纤双向光模块直连方式，每站需要占用6芯光纤。在CRAN模式下，虽然BBU集中部署带来了设备利用率提升、节省机房空间和降低能耗等优势，但也导致了前传光缆需求激增的问题。面对成千上万的基站建设，光缆投资已成为运营商网络建设中不可忽视的成本。&lt;/p&gt;
+&lt;h2 id="现有方案的局限"&gt;现有方案的局限
+&lt;/h2&gt;&lt;p&gt;为了解决前传光缆投资问题，业界曾提出几种方案，但各有局限：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BiDi光模块：将纤芯占用减半，但仍需3芯/站，投资依然较高&lt;/li&gt;
+&lt;li&gt;RRU级联：可将纤芯降至1芯，但可靠性差，且不适用于高配基站&lt;/li&gt;
+&lt;li&gt;前传WDM系统：纤芯占用少，但增加了&amp;quot;波分盒子&amp;quot;设备，故障点多、维护难
+这些方案要么投资仍高，要么带来了新的问题，无法从根本上解决前传网络的痛点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="单纤多向前传网络的极简"&gt;单纤多向：前传网络的&amp;quot;极简&amp;quot;
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块直驱技术，正是为解决前传痛点而生的创新方案。它的核心理念是：在不增加额外设备的前提下，将多路光信号合并到1芯光纤中传输。&lt;/p&gt;
+&lt;h2 id="什么是单纤多向光模块"&gt;什么是单纤多向光模块？
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块相较于传统光模块，主要新增了两个特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置了&amp;quot;光上联口&amp;quot;和&amp;quot;光下联口&amp;quot;两个光接口&lt;/li&gt;
+&lt;li&gt;增加了&amp;quot;单纤多向光组件&amp;quot;，实现多波长信号的处理
+这种光模块巧妙地利用不同波长实现多路信号在单根光纤中的 传输，同时通过无源器件处理方式，确保上游光模块故障不会影响下游信号传输。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="单纤多向光模块构成示意"&gt;单纤多向光模块构成示意
+&lt;/h4&gt;&lt;h2 id="单纤多向如何工作"&gt;单纤多向如何工作？
+&lt;/h2&gt;&lt;p&gt;以3个RRU组成的系统为例：&lt;/p&gt;
+&lt;p&gt;每个RRU配对一个尾端光模块，BBU侧配对相应数量的头端光模块，所有光模块通过1根光纤串联，不同光模块使用不同波长，互不干扰。&lt;/p&gt;
+&lt;p&gt;（图示：普通宏站场景下，3个RRU通过单纤多向光模块仅需1芯光纤连接）&lt;/p&gt;
+&lt;h2 id="为何说它更极简"&gt;为何说它&amp;quot;更极简&amp;quot;？
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块方案带来了多重&amp;quot;极简&amp;quot;优势：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;资源极简：将每站占用光缆纤芯数量降至1芯，大幅减少光缆投资&lt;/li&gt;
+&lt;li&gt;设备极简：无需额外的&amp;quot;波分盒子&amp;quot;等设备，中间无独立合分波器&lt;/li&gt;
+&lt;li&gt;维护极简：与传统光模块维护方式一致，不改变原有维护界面&lt;/li&gt;
+&lt;li&gt;管理极简：可通过无线网管直接管理，无需额外网管系统&lt;/li&gt;
+&lt;li&gt;施工极简：连接方式固定，无需多人配合核实光路，施工简单快捷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="典型场景应用"&gt;典型场景应用
+&lt;/h2&gt;&lt;p&gt;单纤多向技术适用于多种场景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;1. 普通宏站/高流量室分：3个RRU组成1个单纤多向系统，仅需1芯光纤&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://mmbiz.qpic.cn/sz_mmbiz_png/B95B1kesBUBc2trfKPY3f3UWkJyDKh3gZu6SEQyyibyr4VQUeIg9SO9sxkGCvLHelXtLwoWGAQSdom1XzwdYqRQ/640?wx_fmt=png&amp;amp;from=appmsg&amp;amp;watermark=1&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1#imgIndex=2"
+loading="lazy"
+alt="图片"
+&gt;&lt;/li&gt;
+&lt;li&gt;2. 低流量室分：可与RRU级联结合，进一步减少纤芯占用&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+loading="lazy"
+alt="图片"
+&gt;&lt;/li&gt;
+&lt;li&gt;3. 高铁/地铁覆盖：多站级联组网，减少切换，简化网络结构&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+loading="lazy"
+alt="图片"
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;该产品已在多个省应用。日前，重庆联通发布了单纤多向的招标公告。&lt;/p&gt;
+&lt;h2 id="结语让前传回归简单"&gt;结语：让前传回归简单
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块直驱技术，不仅解决了前传光缆投资大的痛点，更实现了前传网络的&amp;quot;极简&amp;quot;。它既保留了光模块直驱方案的可靠性与易维护性，又大幅降低了纤芯资源占用，是当前最符合现网需求的前传技术。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;简单，才是最复杂的技术。单纤多向，让前传更极简，让网络更高效。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>5G回传承载网IPv6地址分配方案学习</title><link>https://blog.fallleaf.net/p/tech-5g-backhaul-ipv6-addressing/</link><pubDate>Tue, 08 Aug 2023 21:00:42 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-5g-backhaul-ipv6-addressing/</guid><description>&lt;h3 id="ipv6地址简介"&gt;IPv6地址简介
+&lt;/h3&gt;&lt;p&gt;IPv6地址采用共128二进制地址长度，分成8段，每16位1段，每段用4位16进制表示，分段间用“：”隔开。可采用压缩格式表示，即每段前导0可以删除，连续的“0”分段可以用“::”表示（只能出现一次）。&lt;/p&gt;
+&lt;p&gt;下面是二进制形式的IPv6地址：&lt;/p&gt;
+&lt;p&gt;0010000000000001 0000110110111000 0000000000000000 0010111100111011 0000001010101010 0000000011111111 1111111000101000 1001110001011010&lt;/p&gt;
+&lt;p&gt;转换成十六进制表示：&lt;/p&gt;
+&lt;p&gt;2001: 0DB8: 0000: 2F3B: 02AA: 00FF: FE28: 9C5A&lt;/p&gt;
+&lt;p&gt;压缩格式为：&lt;/p&gt;
+&lt;p&gt;2001:DB8:0:2F3B:2AA:FF:FE28:9C5A&lt;/p&gt;
+&lt;p&gt;128位的IPv6地址由64位的子网前缀和64位的接口标识符组成。IPv6 前缀用“ 地址/ 前缀长度” 这一表示方法。所有子网都有64位子网络，例如2001:DB8:0:2F3B::/64表示一个子网前缀。任何少于 64 位的前缀要么表示一条 汇 总的路由，要么是一段 IPv6 地址空间的地址范围汇总，例如2001:DB8:3F::/48。&lt;/p&gt;
+&lt;p&gt;对除由国际地址分配机构(ICANN、APNIC等)分配的前缀外，剩余地址比特位(前缀至第65比特前)可以由规划机构、互联网运营商自行划定，并制定相关含义。同时，64位接口标识符目前也没有形成全球明确的分配规则，可以在规划时统一考虑利用接口标识符承载多种信息。&lt;/p&gt;
+&lt;h3 id="5g回传承载网ipv6地址分配方案学习"&gt;5G回传承载网IPv6地址分配方案学习
+&lt;/h3&gt;&lt;h3 id="ipv6地址规划方案"&gt;IPv6地址规划方案
+&lt;/h3&gt;&lt;p&gt;某运营商分配给5G回传承载网的IPv6地址段为2345:6720::/27（&lt;strong&gt;虚拟，非真实地址&lt;/strong&gt;）。&lt;/p&gt;
+&lt;p&gt;5G回传承载网IP地址规划体现了层次划分原则，按网络类型、区域、层级、用途进行了划分。如下所示。&lt;/p&gt;
+&lt;p&gt;1-27位：2345:6720::/27 5G回传承载网地址段&lt;/p&gt;
+&lt;p&gt;28-35位：区域区分（骨干网、省分）&lt;/p&gt;
+&lt;p&gt;36-40位：省内地市划分&lt;/p&gt;
+&lt;p&gt;41-52位：地市内网络区分&lt;/p&gt;
+&lt;p&gt;53-64位：子网用途划分&lt;/p&gt;
+&lt;p&gt;由于5G回传承载网的IPv6地址为人工指定，所以仍可按子网划分方式设置特定的地址段。&lt;/p&gt;
+&lt;p&gt;65-68位：网络层次（核心汇聚、接入）&lt;/p&gt;
+&lt;h3 id="ipv6地址规划实例"&gt;IPv6地址规划实例
+&lt;/h3&gt;&lt;p&gt;承载网IPv6地址段为2345:6720::/27，把第二段换成二进制为：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2345:0110 0111 001&lt;/strong&gt;0 0000::/27，第二段第三个字节最后一位取值可为0和1，因此IPv6地址范围为：&lt;/p&gt;
+&lt;p&gt;2345:6720::~2345:673F:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF&lt;/p&gt;
+&lt;h4 id="区域规划"&gt;区域规划
+&lt;/h4&gt;&lt;p&gt;第28-35位共8位，作为区域划分，区分骨干和省分网络，一共可划分2^8=256个子网。&lt;/p&gt;
+&lt;p&gt;把2345:6720:0000::/35转换成二进制为：&lt;/p&gt;
+&lt;p&gt;2345:0110 0111 001&lt;strong&gt;0 0000:000&lt;/strong&gt;0 0000 0000 0000::/35，黑色粗体部分位区域子网，这样，第二段的第三个字节可取2，3，第四个字节可取0-F，第三段第一个字节可取0，2，4，6，8，A，C，E&lt;/p&gt;
+&lt;p&gt;因此，这一层级的网络子网地址范围可分为：&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;20: 0&lt;/strong&gt;000::/35（骨干网络）&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;20: 2&lt;/strong&gt;000::/35 北京&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;20: 4&lt;/strong&gt;000::/35 上海&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;20: 6&lt;/strong&gt;000::/35 天津&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;20: 8&lt;/strong&gt;000::/35 山东&lt;/p&gt;
+&lt;p&gt;….&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;23:A&lt;/strong&gt;000::/35 青海&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;23:C&lt;/strong&gt;000::/35 宁夏&lt;/p&gt;
+&lt;p&gt;….&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;2F:E&lt;/strong&gt;000::/35 预留&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;30:0&lt;/strong&gt;000::/35 预留&lt;/p&gt;
+&lt;p&gt;….&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;3F:C&lt;/strong&gt;000::/35 预留&lt;/p&gt;
+&lt;p&gt;2345:67&lt;strong&gt;3F:E&lt;/strong&gt;000::/35 预留&lt;/p&gt;
+&lt;p&gt;其中，对于骨干网络子网地址范围2345:67&lt;strong&gt;20: 0&lt;/strong&gt;000::/35，取第36位作为区分两个骨干承载网络，有&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2345:6720: 0000::/36 2408:1000 0001 0010 0000:000&lt;strong&gt;0&lt;/strong&gt; 0000 0000 0000::/36 承载网一平面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2345:6720: 1000::/36 2408:1000 0001 0010 0000:000&lt;strong&gt;1&lt;/strong&gt; 0000 0000 0000::/36 承载网二平面&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="省内地市规划"&gt;省内地市规划
+&lt;/h4&gt;&lt;p&gt;在各省的子网中，36-40为地市标识，最多有2^5=32个子网，以山东分配的地址段（2345:67&lt;strong&gt;20: 8&lt;/strong&gt;000::/35）为例进行划分。&lt;/p&gt;
+&lt;p&gt;转换为二进制为：&lt;/p&gt;
+&lt;p&gt;2345:6720: 100&lt;strong&gt;0 0000&lt;/strong&gt; 0000 0000 0000::/40，黑色字体为36-40位。&lt;/p&gt;
+&lt;p&gt;第三段第一字节可取8和9，第二字节可取 0-F，因此有，按身份证号第三、四位对应城市顺序依次从1开始顺序编号，对应转换为5位2进制。如下：&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;80&lt;/strong&gt;00::/40 预留&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;81&lt;/strong&gt;00::/40 济南（济南01，5位二进制为0 0001）&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;82&lt;/strong&gt;00::/40 青岛（青岛02，5位二进制为0 0002）&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;8D&lt;/strong&gt;00::/40 临沂&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;8E&lt;/strong&gt;00::/40 德州&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;8F&lt;/strong&gt;00::/40 聊城&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;90&lt;/strong&gt;00::/40 菏泽（菏泽17，5位二进制为1 1111）&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;91&lt;/strong&gt;00::/40 预留&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;92&lt;/strong&gt;00::/40 预留&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;9D&lt;/strong&gt;00::/40 预留&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;9E&lt;/strong&gt;00::/40 预留&lt;/p&gt;
+&lt;p&gt;2345:6720:&lt;strong&gt;9F&lt;/strong&gt;00::/40 预留&lt;/p&gt;
+&lt;h4 id="地市内网络规划"&gt;地市内网络规划
+&lt;/h4&gt;&lt;p&gt;41-52位为地市内网络划分，可划分2^12=4096子网。以青岛（2345:6720:8200::/40）为例子，第三、四段转换为二进制为：&lt;/p&gt;
+&lt;p&gt;2345:6720:1000 0010 &lt;strong&gt;0000 0000: 0000&lt;/strong&gt; 0000 0000 0000::/52&lt;/p&gt;
+&lt;p&gt;加黑的字节可取0-F，因此有：&lt;/p&gt;
+&lt;p&gt;2345:6720:82&lt;strong&gt;00:0&lt;/strong&gt;000::/52、&lt;/p&gt;
+&lt;p&gt;2345:6720:82&lt;strong&gt;00:1&lt;/strong&gt;000::/52、&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;2345:6720:82&lt;strong&gt;00:F&lt;/strong&gt;000::/52&lt;/p&gt;
+&lt;p&gt;2345:6720:82&lt;strong&gt;01:0&lt;/strong&gt;000::/52&lt;/p&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;2345:6720:82&lt;strong&gt;FF:F&lt;/strong&gt;000::/52&lt;/p&gt;
+&lt;p&gt;一共2^12=4096个，取第一子网地址段（2345:6720:82&lt;strong&gt;00:0&lt;/strong&gt;000::/52）作为山东省青岛市5G回传承载网的地址段，&lt;/p&gt;
+&lt;h4 id="地市5g回传承载网子网用途划分"&gt;地市5G回传承载网子网用途划分
+&lt;/h4&gt;&lt;p&gt;53-64位按用途（网管、业务、端口互联）划分子网，&lt;/p&gt;
+&lt;p&gt;2345:6720: 1000 0010 0000 0000: 0000 &lt;strong&gt;0000 0000 0000&lt;/strong&gt;::/64&lt;/p&gt;
+&lt;p&gt;黑体的这三个字节分别可取0-F，因此有：&lt;/p&gt;
+&lt;p&gt;2345:6720:8200:0&lt;strong&gt;000&lt;/strong&gt;::/64 青岛市5G回传承载网设备网管loopback地址段&lt;/p&gt;
+&lt;p&gt;2345:6720:8200:0&lt;strong&gt;001&lt;/strong&gt;::/64 青岛市5G回传承载网设备网络业务loopback地址段&lt;/p&gt;
+&lt;p&gt;2345:6720:8200:0&lt;strong&gt;002&lt;/strong&gt;::/64 青岛市5G回传承载网设备接口互联地址段&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;2345:6720:8200:0&lt;strong&gt;FFE&lt;/strong&gt;::/64 预留&lt;/p&gt;
+&lt;p&gt;2345:6720:8200:0&lt;strong&gt;FFF&lt;/strong&gt;::/64 预留&lt;/p&gt;
+&lt;h4 id="网络层次规划"&gt;网络层次规划
+&lt;/h4&gt;&lt;p&gt;将65-68位作为网络层次区分，共有2^4=16个，定义0000为核心汇聚层，0001为接入层，以青岛市5G回传承载网设备网络业务loopback地址段2345:6720:8200:0&lt;strong&gt;001&lt;/strong&gt;::/64 地址段为例：&lt;/p&gt;
+&lt;p&gt;2345:6720:8200:0002:&lt;strong&gt;0000&lt;/strong&gt; 0000 0000 0000::/68 核心汇聚层业务loopback地址段，&lt;/p&gt;
+&lt;p&gt;2345:6720:8200:0002:&lt;strong&gt;1111&lt;/strong&gt; 0000 0000 0000::/68 接入层业务loopback地址段，&lt;/p&gt;
+&lt;h4 id="网管loopback地址网络业务地址及端口互联地址规划"&gt;网管loopback地址，网络业务地址及端口互联地址规划
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;网管loopback地址，以/128前缀长度分配地址，&lt;/li&gt;
+&lt;li&gt;业务loopback地址，以/128前缀长度分配地址，&lt;/li&gt;
+&lt;li&gt;网络侧设备端口互联地址，以/127前缀长度分配地址，互联接口两端网络业务loopback地址小的取值/127中的0，网络业务loopback地址大的取值/127中的1，&lt;/li&gt;
+&lt;li&gt;业务接入设备端口互联地址，按业务接入设备的IPv6地址规划，以/127前缀长度分配地址，互联接口两端网络业务loopback地址小的取值/127中的0，网络业务loopback地址大的取值/127中的1。&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>5G承载中回传新接口:50GE</title><link>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</link><pubDate>Fri, 13 Dec 2019 08:49:28 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</guid><description>&lt;p&gt;在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。&lt;/p&gt;
+&lt;h2 id="50g相关以太网光接口标准"&gt;50G相关以太网光接口标准
+&lt;/h2&gt;&lt;p&gt;IEEE的两个标准：IEEE 802.3 bs(400G，200G) 和802.3 cd（200G，100G，50G） 定义了50G，100G，200G，400G以太网的媒体访问控制层（MAC）以及物理层（PHY）的相关参数。主要的光接口类型以及采用的调制格式如下表：&lt;/p&gt;
+&lt;p&gt;可以看到，在实现50G以上的高速以太网接口时，主要采用了50G比特速率（波特26.6GBaud），PAM4调制方式。&lt;/p&gt;
+&lt;h2 id="为什么是pam4"&gt;为什么是PAM4
+&lt;/h2&gt;&lt;p&gt;光传输一直在追求更高的传输速率，但速率越高，所面临的问题也就越多，诸如色散、发光功率、信噪比、光收发器的线性度及灵敏度、技术成熟度、成本等。提高速率的方式有多种，包括通过频率、振幅、相位等变化的调制方式。&lt;/p&gt;
+&lt;p&gt;NRZ（不归零码，Non-Return-to-Zero）调制方式一直是光通信采用的主要技术，随着速率的提升，如 200G/400G，NRZ调制在色散影响、光电转换带宽和成本上遇到了较大的困难。对于25G以上的波特率，在中长距传输时，色散的影响显著；光电转换带宽在60Gbit/s以上出现了技术瓶颈。对于高速接口，每通道数据速率要提高到50Gbps以上，如果仍然采用NRZ技术，由于每个符号周期只有不到20ps，对于收发芯片的时间裕量以及传输链路的损耗要求更加苛刻， 若能既保持较低的波特率，又提高每一波特的信息量，就能大大降低光器件的带宽要求，从而可以降低光器件成本。而PAM4调制方式极大的满足了上述要求，是继NRZ后热门的信号调制技术，也是多阶调制技术的代表。&lt;/p&gt;
+&lt;h2 id="pam4是什么"&gt;PAM4是什么
+&lt;/h2&gt;&lt;p&gt;PAM即脉冲幅度调制（Pulse Amplitude Modulation）。NRZ调制方式采用高、低两种信号电平来表示要传输的数字逻辑信号的1、0信息，每个信号符号周期可以传输1bit的逻辑信息，实际上NRZ方式可也叫做PAM2，2表示的是有2种电平信号。那么PAM4调制方式就是采用4个不同的信号电平来进行数据传输，每个符号周期可以表示2bit的逻辑信息（00、01、10、11）。由于 PAM4 信号每个符号周期可以传输2bit的信息，因此要实现同样的信号传输能力，PAM4信号的符号速率（波特率）只有NRZ信号的一半，换而言之，采用同样的波特速率，PAM4的信号比特率是NRZ信号的2倍，比如利用25G波特率，PAM4调制方式，可以传输50G比特率的信息。NRZ和PAM4信号典型波形如下图所示，右侧为NRZ和PAM4的光眼图对比，NRZ为单眼波形，PAM4为三眼波形（Y轴方向存在3个眼状图形）。&lt;/p&gt;
+&lt;p&gt;其实多阶PAM调制的概念并不新鲜，比如最普遍使用的100MBase-T以太网，就使用3种电平进行信号传输；而在无线通信领域中普遍使用的16QAM调制、32QAM调制、64QAM调制等，也都是采用多电平的基带信号对载波信号进行调制。此外还有PAM5（802.3ab），PAM8（802.3bm）等。&lt;/p&gt;
+&lt;p&gt;在2014年发布的100G背板标准802.3 bj中，同时定义了两种信号传输方式：4组25.78G波特率的NRZ信号，或者4组13.6G波特率的PAM4信号。由于芯片技术以及PCB板材和连接器技术的快速发展，25G波特率的NRZ技术很快实现商用应用，但PAM4由于当时技术成熟度和成本的原因，并没有在100G以太网的技术中被真正应用。随着IEEE 802.3 bs 和802.3 cd的发布，PAM4将越来越多的大规模应用起来。
+50G相关标准进展&lt;/p&gt;
+&lt;p&gt;IEEE 802.3 bs标准批准时间为2017年12月，该标准覆盖了400GE/200GE两种以太网接口速率。其中400GE定义了LR8 (10km)/FR8 (2km)/DR4 (500m)/SR16 (100m)等PMD子层规格以及多种AUI电接口。LR8/FR8采用了50G PAM4技术，成为以太网标准中首个采用该技术接口标准，为PAM4技术开启广泛商用打开了大门。&lt;/p&gt;
+&lt;p&gt;IEEE 802.3 cd标准批准时间为2018年12月，标准覆盖了50GBASE-LR/KR/SR PMD子层，所有PMD子层都采用了50G PAM4技术，50GE是PAM4技术应用最广泛的以太网接口速率。&lt;/p&gt;
+&lt;p&gt;以上标准定义的50GE传输距离都在10km以下，2018年4月IEEE成立了Beyond 10km工作组，对50G在40km传输距离范围内，100G、200G、400G在40km及80km传输范围的技术进行研究，2018年9月更改为P802.3 cn工作组，计划规范批准时间节点为2020年6月。&lt;/p&gt;
+&lt;h2 id="50g光收发模块原理及功率预算"&gt;50G光收发模块原理及功率预算
+&lt;/h2&gt;&lt;p&gt;基于50G PAM4光模块运用PAM4编码技术，每个采样周期的传输信息量提升了一倍，可以利用一对25G发射和接收器件实现50G传输速率，降低了模块的成本。50G PAM4可有多种应用场景，除了单通道的50GE PAM4光模块，还有4通道的200GE（4×50G）光模块和8通道的400GE（8×50G）光模块。&lt;/p&gt;
+&lt;p&gt;下面以单通道50G PAM4即50GE光模块为例，介绍各模块功能。&lt;/p&gt;
+&lt;p&gt;发送方向：数据经过50GE MAC、PCS、PMA后，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到50GE光模块，经过PAM4 DSP编解码芯片进行速率和码型转换，从2通道转换为1通道，调制码型转换成为PAM4，速率为26.5625G波特率，激光器驱动芯片将PAM4信号放大，驱动25G激光器将电信号转换为单波长25GBaud（50Gbps）光信号。&lt;/p&gt;
+&lt;p&gt;接收方向，接受器将单波长25GBaud光信号转换为电信号，整形放大后输出至PAM4 DSP编解码芯片，PAM4编解码芯片再将该信号转换为2*25G NRZ信号，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到以太网处理芯片。&lt;/p&gt;
+&lt;p&gt;目前50GE PAM4模块的封装形式为QSFP28，计划的封装为SFP56，光口类型为LC，使用单模光纤，中心波长为1311nm，传输距离为10km/40km，模块的最大功耗为4.5W。有关功率预算关键技术参数如下表：&lt;/p&gt;
+&lt;p&gt;和传输距离相关的主要是通道插损，即光纤以及光纤连接器引入的插损之和。IEEE目前定义50G LR场景，极限情况下是1304.5nm，按0.43dB/km计算，即0.43dB/km×10km=4.3dB，还有6.3-4.3=2dB余量是给光纤连接、以及熔纤导致的插损。&lt;/p&gt;
+&lt;h2 id="50g光收发模块相关技术"&gt;50G光收发模块相关技术
+&lt;/h2&gt;&lt;p&gt;PAM4相比传统的NRZ信号，从2阶变为4阶，眼图从单眼变成3眼。在承载bit效率方面虽然提升了1倍，但也引入了对噪声、线性度敏感的问题，因此不能简单的利用已经成熟的25G光电模块，还需根据PAM4的特性进行相应的改变。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发送机线性要求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于多电平调制，PAM4 对器件的线性度有要求。当线性度差时，PAM4 输出眼图的3 个眼高度不一样，容易造成误判，增加了误码率。电器件比较容易满足上述要求，10 km 规格能采用直接调制激光器（DML）实现，同时也保证了低成本。40km规格则需要使用电吸收调制激光器(EML)和雪崩光电探测器。另一方面，10km和40km的规格均对高线性度的激光器驱动器和跨阻放大器有需求。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;光功率预算&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;功率预算主要考虑出光功率、光调制幅度（OMA）、光链路损耗、发射机和色散眼图闭合度（TDECQ）、多径干扰（MPI）和接收灵敏度等，PAM4在功率预算计算上与NRZ 类似。对于同样的接收信号幅度，由于PAM4发送4 个电平，最小信号眼图眼高比NRZ 的小5 dB 左右。因此，相比于NRZ 方式，PAM4 存在着5dB左右的调制代价。激光器的发射功率相对采用NRZ的25G激光器需要提高。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PAM4 DSP芯片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于PAM4编码有4种电平逻辑，所以要求模块内部的Driver和TIA芯片都具备线性输出功能，而NRZ模块使用限幅输出的方案即可。PAM4模块需要使用DSP来完成50G PAM4和2×25G NRZ信号的转换，而NRZ模块只需要使用传统的CDR芯片即可完成数据传输。&lt;/p&gt;
+&lt;h2 id="50ge的应用及展望"&gt;50GE的应用及展望
+&lt;/h2&gt;&lt;p&gt;50GE除了在数据中心的交换机以及服务器互联中大量采用，随着5G承载网建设的日益临近，其在承载网接入层中的应用也越来越多的得到运营商的关注。&lt;/p&gt;
+&lt;p&gt;在运营商方面：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国移动：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;李晗表示，在技术推动上，中国移动选择“两条腿走路”——既完善SPN的相关标准，推动其成熟，又发挥中国移动产业影响力，积极与光芯片、光器件、光模块等厂家合作，降低光层整体成本。SPN接入层采用50G PAM4 BiDi光模块，更好地满足带宽、同步等指标，需进一步推进产业成熟和降低成本。据悉，50GE光模块支持10km、100km DiBi方案，已有可商用产品，而50G较25G成本增加主要是PAM4电芯片，预计量产后50G PAM4较25G光模块贵10%-20%以内，预计单比特成本下降35%-45%。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国电信：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;张成良指出，4G和5G相比，不仅是承载网络架构发生变化，对核心网、中传/回传、前传等都提出了更高的要求。核心网需要更高速的光模块（200G/400G）、更大的容量的光传输、更灵活的组网、更高效的光层调度。中传/回传需要更高速的光模块（50G/100G）、更大的网络带宽和更灵活的网络以及更好的性能。中国电信在STN招标里，要求STN-A2，STN-B设备“承诺支持50GE/25GE 接口”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国联通&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;中国联通网络技术研究院沈世奎表示：“中国联通在5G承载网的建设已有较为清晰的方向，务实为本，采用产业链中更加成熟的技术；成本为主，以综合成本和TCO最低为目标。25G光层产业链已经完善，基于PAM4技术和25G光收发器实现的50GE更具性价比优势。”&lt;/p&gt;
+&lt;p&gt;50GE光模块的应用需要整个产业链的共同促进，其中运营商的需求是决定因素，据目前的信息，中国移动在推进50GE的应用最积极，其次是中国电信，以中国移动的需求量，或许能够加速整个产业链的发展。&lt;/p&gt;
+&lt;p&gt;国内传统通信设备厂商华为、中兴、烽火也都宣称5G承载网设备支持50G接口。华为一直在牵头做技术推动，2018年联合上下游企业发布了《50G PAM4技术白皮书》。在2019年4月，华为宣称通过了中国移动研究院组织开展的50GE单纤双向新技术测试，其在技术交流资料中，更是介绍了采用FlexE技术将50GE平滑升级成100G的方案。&lt;/p&gt;
+&lt;p&gt;50GE在5G回传接入层的应用，主要取决于接入层流量预测以及50GE光收发器的价格。&lt;/p&gt;
+&lt;p&gt;据测算，目前4G基站单站平均流速大概0.08Gb/s，结合目前运营商的建设指导意见，一个接入环大概带4个BBU集中点，一个BBU集中点大约带10个左右的基站，若按5G基站平均流速是4G的10倍计算，则一个环的总流速大概为0.08×10×4×10=32Gb/s，这种情况下采用50GE是比较合适的，但考虑初期50GE成本问题，建设初期可采用10GE建设，随着流量增加进行10GE捆绑方式扩容（实际上，也可考虑采用前传采用的25GE速率）。假若50GE的价格能够达到10GE价格的2-3倍时（这一点在数通的报价体系内估计很难达到），或100GE的1/3以下时，采用50GE是一个优选的方案，可以达到TCO的最优。n×10GE捆绑方式，除了考虑光模块的价格，还要把维护量的增加、数据配置的复杂、对光纤的占用都纳入TCO的评估中。据相关资料，现有4G回传接入层有30%-44%采用的40km10G光模块，因此50GE 40km光模块的价格对其应用也是至关重要的。&lt;/p&gt;
+&lt;p&gt;126.6GBaud实为26.5625GBaud，在使用PAM4调制时，采用前向纠错编码RS-FEC（544，514）以及线路编码256b257b将25G变为26.5625G，25G×（544÷514）×（257÷256）＝26.5625G。&lt;/p&gt;
+&lt;p&gt;225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。&lt;/p&gt;</description></item><item><title>无源波分前传分场景解决方案</title><link>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</link><pubDate>Sat, 12 Oct 2019 13:15:13 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</guid><description>&lt;p&gt;ITU-T G.694.2规范在1270~1610nm范围内，建议了波长间隔为20nm的18个可用波长，如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands.webp"
+width="644"
+height="381"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_28170b3aaa1787e.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands_hu_4a25cc7c4348340e.webp 1024w"
+loading="lazy"
+alt="波长间隔"
+class="gallery-image"
+data-flex-grow="169"
+data-flex-basis="405px"
+&gt;&lt;/p&gt;
+&lt;p&gt;由于G.652 A/B光纤有水峰，一般都用1471~1611nm这8个波，对于G.652 C/D光纤，18个波均可使用。&lt;/p&gt;
+&lt;p&gt;4G建设时期，前传主要采用光纤直驱方式，建设了大量接入主干和配线光缆。由于5G基站大量与4G共站，均有配线光缆接入，采用无源波分方式能最大化提高现有光缆的利用效能，为光缆网络增值，降低接入成本，是5G前传建设时需要重点考虑建设方式。&lt;/p&gt;
+&lt;p&gt;目前用于5G前传的无源波分方案，主要有两种方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;6波25G方案
+&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm.webp"
+width="635"
+height="216"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_1eac7a1d8ecdc4fc.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/6channel_cwdm_hu_d3a58e77b4bbbe84.webp 1024w"
+loading="lazy"
+alt="6波25G方案"
+class="gallery-image"
+data-flex-grow="293"
+data-flex-basis="705px"
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;12波方案（6波10G+6波25G）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm.webp"
+width="728"
+height="380"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_c2be703ac0e630af.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/12channel_cwdm_hu_88d8b9ac41a280c3.webp 1024w"
+loading="lazy"
+alt="12波方案"
+class="gallery-image"
+data-flex-grow="191"
+data-flex-basis="459px"
+&gt;&lt;/p&gt;
+&lt;p&gt;近期的上海移动5G无源波分招标，包含12波25G的无源波分方案，据推测，可能是采用移动的OPEN-WDM彩光方案，25G彩光模块前6波采用比较成熟的1271nm，1291nm，1311nm，1331nm，1351nm，1371nm，后6波选用目前较少采用的1471nm，1491nm，1511nm，1531nm，1551nm，1571nm这6个波长，后期需跟踪用于室外的12波25G彩光模块的整体成熟度和成本是否能降下来。&lt;/p&gt;
+&lt;p&gt;在目前的5G前传建设中，也有采用25G单纤双向光模块，这种方式可以看作是一种光模块集成的CWDM方式，对于减轻主干、配线光缆的压力，起了很大的作用，在纤芯不紧张时，可以采用该方式。目前共享5G的前传接口需求尚不明确，若采用2×25G接口方案时，对光缆网纤芯的需求将是2倍的需求。&lt;/p&gt;
+&lt;p&gt;针对不同的5G前传接入场景，6波和12波有不同的组合方案。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景1&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;新建5G站址，配线光缆新建，接入主干利旧&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×2+25G彩光模块×6&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1.webp"
+width="730"
+height="283"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_4ec819fdbb2c1fd1.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1_hu_733365c90d7359d3.webp 1024w"
+loading="lazy"
+alt="场景1"
+class="gallery-image"
+data-flex-grow="257"
+data-flex-basis="619px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景2&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5G与4G共站址，有少量纤芯，4G前传方式不变，5G采用无源波分&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×2+25G彩光模块×6&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2.webp"
+width="1163"
+height="441"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_755ae6e485dc7c02.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario2_hu_5817772904b08928.webp 1024w"
+loading="lazy"
+alt="场景2"
+class="gallery-image"
+data-flex-grow="263"
+data-flex-basis="632px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景3&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5G与4G共站址，有少量纤芯，4G前传采用无源波分，5G采裸光纤&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×2+10G彩光模块×6（比场景2成本低一些，但需割接4G基站）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/scenario3"
+loading="lazy"
+alt="场景3"
+&gt;3.webp)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景4&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5G与4G共站址，无纤芯，4G、5G前传采用无源波分，腾退纤芯&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×4+10G彩光模块×6+25G彩光模块×6&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4.webp"
+width="1163"
+height="441"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_abc6da58c1bb05f1.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario4_hu_93f8ab8a1b57b6a4.webp 1024w"
+loading="lazy"
+alt="场景4"
+class="gallery-image"
+data-flex-grow="263"
+data-flex-basis="632px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景5&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5G与4G共站址，无纤芯，4G、5G前传采用无源波分，腾退纤芯&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源12波合分波器×2+10G彩光模块×6+25G彩光模块×6&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5.webp"
+width="1163"
+height="441"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_71e132c9f426b9c5.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario5_hu_f69c97395513119c.webp 1024w"
+loading="lazy"
+alt="场景5"
+class="gallery-image"
+data-flex-grow="263"
+data-flex-basis="632px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;场景6&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;联通电信共享5G，与4G共址，少量纤芯，5G前传采用无源波分&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置：无源6波合分波器×4+25G彩光模块×12&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;b&gt;假设每个AAU需要2个25G接口&lt;/b&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6.webp"
+width="1163"
+height="395"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_df0bbef6f0b2bece.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario6_hu_eef47a142fe6a3cf.webp 1024w"
+loading="lazy"
+alt="场景6"
+class="gallery-image"
+data-flex-grow="294"
+data-flex-basis="706px"
+&gt;&lt;/p&gt;
+&lt;p&gt;还有其他组合方式，就不一一列举了。总之，采用无源波分，主要目的就是腾退已占用纤芯和减少纤芯占用，对于4G前传RRU采用级联的情况，采用无源波分主要是减少5G前传纤芯占用。&lt;/p&gt;
+&lt;p&gt;根据上海移动5G无源波分的招标公告以及中标公示，6波25G无源波分限价4000元/套（不含税），平均中标折扣率为70.18%，12波25G无源波分限价10600元/套（不含税），平均中标折扣率为79%。&lt;/p&gt;
+&lt;p&gt;上海移动招标的是10公里光模块，最大线路损耗为11dB，也就是在11dB这个范围内，采用无源波分的成本是固定的，而新建光缆或使用光纤的成本和距离成正比关系，有一个成本交叉的临界点，如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian.webp"
+width="327"
+height="214"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_4d0d317349b61d58.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/linjiedian_hu_fb366ef6224960d6.webp 1024w"
+loading="lazy"
+alt="成本变化"
+class="gallery-image"
+data-flex-grow="152"
+data-flex-basis="366px"
+&gt;&lt;/p&gt;
+&lt;p&gt;各本地网可以根据自己的情况进行测算，测算时应同时考虑主干与配线的综合成本，确定无源波分应用的最佳场景。&lt;/p&gt;
+&lt;p&gt;有关材料显示近三年各运营商无源波分招标规模如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji.webp"
+width="555"
+height="286"
+srcset="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_66861a1ccc17955f.webp 480w, https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/tongji_hu_b193d2880aa3d1.webp 1024w"
+loading="lazy"
+alt="招标规模"
+class="gallery-image"
+data-flex-grow="194"
+data-flex-basis="465px"
+&gt;&lt;/p&gt;
+&lt;p&gt;在现有的采购模式下，5G基站设备的采购和无源波分的采购是两个独立的项目，但都含有前传光模块的采购内容。如果前传采用无源波分方案，那么5G基站设备采购的光模块就重复了，带来资金的浪费，建议统一由一个项目来采购前传的光模块及CWDM合分波模块，降低整体的5G建设成本。&lt;/p&gt;</description></item><item><title>25G单纤双向收发合一光模块</title><link>https://blog.fallleaf.net/p/tech-25g-bidi-module/</link><pubDate>Sat, 03 Aug 2019 13:34:59 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-25g-bidi-module/</guid><description>&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
+&lt;p&gt;2016年5月IEEE通过了802.3by-2016规范，定义了25Gb/s应用媒质接入控制参数、物理层要求，2017年12月通过了802.3cc-2017标准以太网修正：物理层和管理参数，用于通过单模光纤实现串行25 Gbps以太网，2018年10月通过PAR，开展制定10Gb/s，25Gb/s，50Gb/s单纤双向物理层规范，项目号为P802.3cp。中国于2018年6月开始制定用于基站的25Gb/s单纤双向光收发合一模块技术规范，2018年11月发出征求意见稿，预计2019年完成标准制定工作。&lt;/p&gt;
+&lt;p&gt;单纤双向方式可以节省50%的纤芯资源，大大节省了光缆线路的投资，同时由于上下行等距可有效保证高精度时间同步，因此，是5G前传的一种主要模式。&lt;/p&gt;
+&lt;p&gt;下图是optech发布的一款25G单纤双向光模块，采用SFP28封装方式：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx.webp"
+width="747"
+height="440"
+srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_a6f1cbd30437b995.webp 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_eac0f67620db50ab.webp 1024w"
+loading="lazy"
+alt="光模块"
+class="gallery-image"
+data-flex-grow="169"
+data-flex-basis="407px"
+&gt;&lt;/p&gt;
+&lt;p&gt;下图是25G单纤双向光模块的原理图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver.webp"
+width="943"
+height="365"
+srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_4e153485a631ccbc.webp 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_7d33a44214ee0c35.webp 1024w"
+loading="lazy"
+alt="原理框图"
+class="gallery-image"
+data-flex-grow="258"
+data-flex-basis="620px"
+&gt;&lt;/p&gt;
+&lt;p&gt;25Gbit/s单纤双向光模块采用的波长业界有1270nm/1310nm和1270nm/1330nm两种方案，征求意见稿中初步确定采用1270nm/1330nm方案。&lt;/p&gt;
+&lt;p&gt;25Gbit/s单纤双向光模块最高速率为25.78Gb/s，按传输距离分类可分为两种:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中距:建议用于10km以内的场景&lt;/li&gt;
+&lt;li&gt;长距:建议用于15km以内的场景&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;25Gbit/s单纤双向光模块光口参数分AAU侧和DU侧：&lt;/p&gt;
+&lt;p&gt;AAU侧光口参数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;光模块拉环为海蓝色&lt;/li&gt;
+&lt;li&gt;发送端中心波长：1260nm~1280nm&lt;/li&gt;
+&lt;li&gt;接收端接收波长：1320nm~1340nm&lt;/li&gt;
+&lt;li&gt;平均发送光功率：10公里，-2.0 ~ +4.0dBm；15公里，0 ~ +6dBm&lt;/li&gt;
+&lt;li&gt;发送和色散代价(TDP)：≤2.7dBm&lt;/li&gt;
+&lt;li&gt;最大接受灵敏度：10公里，≤-13dBm；15公里，≤-14.5dBm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;DU侧光口参数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;光模块拉环为中黄色&lt;/li&gt;
+&lt;li&gt;发送端中心波长：1320nm~1340nm&lt;/li&gt;
+&lt;li&gt;接收端接收波长：1260nm~1280nm&lt;/li&gt;
+&lt;li&gt;平均发送光功率：10公里，-2.0 ~ +4.0dBm；15公里，0 ~ +6dBm&lt;/li&gt;
+&lt;li&gt;发送和色散代价(TDP)：≤2.7dBm&lt;/li&gt;
+&lt;li&gt;最大接受灵敏度：10公里，≤-13dBm；15公里，≤-14dBm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;信道功率预算和代价&lt;/p&gt;
+&lt;p&gt;为了保证25G单纤双向光模块在现网中的应用,各项指标值需要保证功率预算需求,保证足够的冗余量。链路光功率预算需要考虑传输(光纤含熔接)损耗,活动连接头损耗和维护冗余等因素,光功率预算的公式如下:&lt;/p&gt;
+&lt;p&gt;$$ P_o−S_i-E≥T+I+M $$&lt;/p&gt;
+&lt;p&gt;式中:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$$P_o — 最小发送光功率;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$S_i—— 最大接收灵敏度;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$E—— 发送和色散的代价;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$T—— 传输(光纤含熔接)损耗,1310nm 波段光纤每公里损耗按 0.4dB 计算;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$I—— 活动连接头损耗,每个按 0.5dB 计算;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$M—— 维护冗余,工程中维护冗余按 3dB 计算。$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;按平均发光功率的统计数据计算，得出：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10km模块最大线路衰减：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$P_o−S_i−E=4.0−2.7−(−13)=14.4dB$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;15km模块最大线路衰减：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$P_o−S_i−E=6.0−2.7−(−13)=17.4dB$$&lt;/p&gt;
+&lt;p&gt;即当光缆线路端到端衰减大于14.4dB时，应选用15km单纤双向光模块。&lt;/p&gt;</description></item><item><title>LTE下的RAN</title><link>https://blog.fallleaf.net/p/tech-lte-ran/</link><pubDate>Mon, 12 Jul 2010 16:39:27 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-lte-ran/</guid><description>&lt;p&gt;R5版本的RAN，NODE B到RNC之间只有Iub接口，基站间没有互联，Iub可以看做是一个端到端的链接，目前采用PTN传送，已经没有异议了，但在LTE环境下，eNODE到MME/S-GW是S1接口，类似Iub接口，但相邻的eNODE之间有了X2互联接口，那么LTE环境下的RAN该采用何种技术？PTN是否仍然合适？是否需要新建一个基于三层技术的IP RAN呢？&lt;/p&gt;
+&lt;p&gt;E2E时延： S1&amp;lt;10ms X2&amp;lt;20ms —–3GPP TR R3.018&lt;/p&gt;
+&lt;p&gt;流量： S1站97%以上，X2小于3%；&lt;/p&gt;
+&lt;p&gt;需要二层PTN吗？ 还是需要三层PTN? X2的时延，QOS？ EVPLAN EVPLINE&lt;/p&gt;
+&lt;p&gt;LTE新的逻辑接口X2主要用于切换，由于这个接口的出现，基站出现了逻辑部分MESH互连的承载难题，对传统点到点的传输网络架构提出了挑战。但进一步分析可以发现，实际X2接口带宽需求不会很大（最大不会超过S1接口的3%），X2业务面传输时延要求端到端50－100ms，信令面传输时延要求约 10－20ms，这个要求比S1用户面时延5ms宽松了许多。&lt;/p&gt;
+&lt;p&gt;LTE系统由核心网(EPC)、基站(eNodeB)和用户设备(UE)3部分组成。其中eNodeB负责无线接入网部分，称为E- UTRAN；EPC(EnvolvedPacketCore)是核心网部分，EPC信令处理部分称MME，数据处理部分称为SAE-Gateway。&lt;/p&gt;
+&lt;p&gt;eNodeB与EPC通过S1接口连接，eNodeB间通过X2接口连接，UE与eNodeB通过Uu接口连接。和TD-SCDMA相比，X2接口类似于Iur接口，S1 接口类似于Iu接口，但有较大简化。由于英电和RNC融合为网元eNodeB，LTE比WCDMA和TD-SCDMA少了Iub接口。&lt;/p&gt;
+&lt;p&gt;那么采用PTN接入的时候X2接口间的电路数量过多，在VLAN 上将会处理较为麻烦，而且PTN的LSP数量极剧增加，如果采用PTN传输是不是很麻烦，有一种说法是CE布置到汇聚层，完善数据城域网，接入层由传输负责，个人感觉还是比较好，X2的电路还是路由器调度比较方便，但是目前的机房条件好像再放路由器很难了，而且还有具有OTN。比较困难。不知道那位高手怎么看？&lt;/p&gt;
+&lt;p&gt;“下面我们就来看还有一个困扰PTN的发展，就是LTE提出了X2接口，整个基站是扁平化的网络，这时候就趋向了包括S1Flex动态归属需求，基站和基站之间互联。现在我们在中国电信内部讨论PTN有很大的问题，第一就是对LTE的情况下，三层功能比较弱，另外解决大客户用的时候也是不能提供的。这是我们的 IP RAN承载方案，路由器方案、PTN接入路由器方案、PTN+路由器方案。我认为PTN+路由器方案是最糟糕的方案，但实际运用中也不尽然，可能运作中 PTN+路由器还是比较多的方案。如果你放在综合承载，PTN不仅仅是基站，而是综合的承载基站，你考虑LTE更复杂的网络拓扑，这时候提到这个方案还是有一定道理的，所以我们并没有排除这个方案，让用户来选择是最好的。“ –张成良&lt;/p&gt;
+&lt;p&gt;若读者有什么想法，尽可留言。&lt;/p&gt;</description></item></channel></rss>

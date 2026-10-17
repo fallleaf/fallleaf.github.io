@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>极简网络 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/simplified-network/</link><description>Recent content in 极简网络 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/simplified-network/index.xml" rel="self" type="application/rss+xml"/><item><title>从“搬设备”到“优网络”：OLT回撤如何真正实现极简网络的价值？</title><link>https://blog.fallleaf.net/p/notes-how-olt-withdrawal-method/</link><pubDate>Wed, 21 Jan 2026 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-how-olt-withdrawal-method/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-how-olt-withdrawal-method/cover.webp" alt="Featured image of post 从“搬设备”到“优网络”：OLT回撤如何真正实现极简网络的价值？" /&gt;&lt;h2 id="olt回撤的本质"&gt;OLT回撤的本质
+&lt;/h2&gt;&lt;p&gt;推动网络架构极简化、实现设备集中部署，是运营商在投资约束趋紧、运维压力持续上升以及技术快速演进背景下的必然选择。将分散部署于非架构机房的 OLT 设备回撤至机房条件更优、配套保障更完善的架构机房，已成为接入网优化中的一项重要战略举措。&lt;/p&gt;
+&lt;p&gt;但必须清醒认识到，OLT回撤的目标绝不应止步于设备位置的物理迁移或机房数量的简单减少。从接入网长周期演进的角度看，这一过程本质上是一项难得的 网络结构优化重构契机。如果仅停留在“设备搬迁”层面，回撤工作即使完成，也难以实现网络极简化应有的系统性价值。&lt;/p&gt;
+&lt;p&gt;因此，OLT 回撤必须实现从“搬设备”向“优网络”的认知转变：以目标架构为牵引，以终为始，对接入网的拓扑结构、ODN 层级和资源布局进行系统性优化重构，引导网络向结构更清晰、运行更稳健、演进更具弹性的方向持续发展。&lt;/p&gt;
+&lt;h2 id="风险剖析olt回撤的两大误区"&gt;风险剖析：OLT回撤的两大误区
+&lt;/h2&gt;&lt;p&gt;在实际推进过程中，受限于 KPI 压力、建设周期约束以及资源掌控能力不足等多重因素，OLT 回撤工作如果缺乏明确的目标规划和闭环管控，极易偏离其初衷，形成两类典型误区：一是在实施层面，将回撤简化为以“业务割通”为目标的设备搬迁工程；二是在布局层面，对农村及边缘节点撤并决策缺乏前瞻性的考虑。&lt;/p&gt;
+&lt;p&gt;这两类问题虽表现不同，但其本质却高度一致：以短期工程效率或局部成本优化，替代了对接入网整体结构质量和长期演进能力的系统规划。结果往往是，回撤工作在形式上推进了，网络在实质上却并未得到优化，甚至进一步固化了原有的历史问题。&lt;/p&gt;
+&lt;h3 id="误区一以连通为目标的简单搬迁割接"&gt;误区一：以“连通”为目标的简单搬迁割接
+&lt;/h3&gt;&lt;p&gt;在当前实践中，部分 OLT 回撤方案采用一种“最少工作量”的实施思路，仅以完成设备搬迁和业务割通为目标，其典型模式可概括为“原址设交、直连跳通”。&lt;/p&gt;
+&lt;p&gt;具体做法是：以地理邻近为唯一依据，选择最近的架构机房作为回撤局点，从该局点敷设一条光缆直达原 OLT 机房附近，新建光交接箱，将进入原机房的配线光缆整体入光交，并通过跳纤方式联通光路，完成业务迁移。该模式施工路径清晰、组织简单，能够在较短时间内完成回撤工作，因此是首选方案。&lt;/p&gt;
+&lt;p&gt;但从网络结构视角看，这种做法的局限性同样明显。它并未对既有驻地网结构进行重新审视和优化，原有驻地网的缺点被原样继承，甚至因新增光缆路由增加而进一步拉长光路、压缩光功率裕量。同时，新建光缆往往仅服务于“搬迁需求”，未能与沿途驻地网配线光缆形成结构性整合，错失了重构和利旧的机会。&lt;/p&gt;
+&lt;p&gt;其结果是：回撤在工程意义上完成了，但网络在结构意义上并未“变好”。短期内实现了连通，长期却增加了运维复杂度，削弱了网络的可管理性与技术演进弹性，为后续升级埋下隐患。&lt;/p&gt;
+&lt;h3 id="误区二以减量为目标的盲目农村撤点"&gt;误区二：以“减量”为目标的盲目农村撤点
+&lt;/h3&gt;&lt;p&gt;在农村及边缘区域，OLT 回撤工作更容易滑向另一类误区，即在缺乏OLT局点整体目标规划的前提下，对业务量低的非架构节点进行简单撤并。此类决策往往以单点运营成本或当前用户规模及覆盖为主要依据：机房租金高、维护困难、用户数量少，因而被视为“应当回撤”的对象，统一集中至距离更远的乡镇或县级局点。&lt;/p&gt;
+&lt;p&gt;单从现状来看，这种决策具有一定的合理性，能够在短期内降低机房数量，减少电费、租金及现场维护支出。但问题在于，这类回撤的出发点仅考虑了当前的情况，是在缺乏OLT目标局点布局规划条件下，以静态的数据支撑一次性判断，并未考虑近期乃至中远期的发展。&lt;/p&gt;
+&lt;p&gt;首先，过度回撤带来的光缆距离的增加将不可避免地带来光功率裕量持续压缩，使边远村落长期处于网络性能边缘，网络质量对线路老化、环境变化的敏感性显著增强。其次，一旦原区域出现新增人口聚集、产业引入或政策性建设需求或覆盖区域向外延伸，基于配线光缆建设成本以及光功率预算的考虑，只能通过重新下沉建设OLT局点来弥补，形成了“建—撤—建”的重复投资循环。&lt;/p&gt;
+&lt;p&gt;归根结底，农村OLT节点的取舍问题，本质不是“留与不留”的工程判断，而是该节点在OLT目标节点布局中处于何种角色的规划问题。只有在明确OLT节点目标布局蓝图的前提下，对节点功能进行分层定位，回撤与保留才能成为有方向、有边界的结构性优化行为，而非零散、短视的被动调整。&lt;/p&gt;
+&lt;h2 id="解决方法"&gt;解决方法
+&lt;/h2&gt;&lt;p&gt;上面两类误区，一个发生在实施层面，一个发生在布局层面。尽管其表现形式不同，但在具体工作中，二者往往交织出现，最终导致 OLT 回撤偏离网络结构优化的初衷。&lt;/p&gt;
+&lt;p&gt;OLT目标局点布局规划本身是一个系统性、长期性的规划议题，值得另行展开深入论述。这里基于一个前提假设：区域内已具备明确的目标布局或基本规划原则。在此基础上，主要考虑在具体回撤工作中，如何通过方法论和流程设计，避免两类典型误区的再次发生。&lt;/p&gt;
+&lt;h3 id="针对误区一避免-olt-回撤退化为简单搬迁割接的方法"&gt;针对误区一：避免 OLT 回撤退化为“简单搬迁割接”的方法
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;误区一的典型场景&lt;/strong&gt;是：在回撤任务压力下，以“最近架构机房 + 新设光交 + 原路跳接”为最省事方案，只追求业务快速恢复，用连通性替代结构合理性。&lt;/p&gt;
+&lt;p&gt;针对这一场景，需要在考虑回撤方案的时候，引入结构性思考顺序。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在设计回撤方案前，首先要回答一个基础问题：该局点的回撤，是否具备同步优化驻地网结构的条件：原驻地网是否存在明显的结构混乱，周边是否已有稳定、清晰的主干光交，原有的配线光缆是否具备割接整合空间？只有在具备上述条件之一时，回撤应该包含着一次结构性调整机会；若完全不具备，则应明确认定为“过渡性回撤”，并在方案中予以标注，而非默认等同对待。这一判断的目的，是避免所有回撤“一刀切”，同时防止本应重构的场景被简化处理。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以“回撤后网络形态”为设计起点，而非以单纯割接为起点。误区一的方案往往从“怎么把光路接通”开始设计，结果自然导向直连跳接。要从方案设计思路上进行纠偏，方法就是强制反向设计：先设想回撤完成后，驻地网应有的合理的网络结构，再来思考按这种结构，回撤方案该怎么做。哪怕只是一个简化的拓扑草图，也必须回答：原有的配线回局路由是否最优，配线光缆是否和新增回局光缆合理衔接等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对于确实因条件限制无法同步重构的回撤方案，并非一味否定，而是要求问题显性化。如在方案中明确标注“结构无明显优化”，同时列出可能带来的后果，如光路延长、管理复杂度上升等。该类方案需经过更高一层级的确认，而非默认通过。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这种方法的意义在于给出了有章可循的流程，防止“省事方案”在无意识中成为主流做法。&lt;/p&gt;
+&lt;h3 id="针对误区二避免农村节点盲目撤并的方法"&gt;针对误区二：避免农村节点盲目撤并的方法
+&lt;/h3&gt;&lt;p&gt;误区二的典型场景是：&lt;br&gt;
+以降低租金、电费和维护成本为直接目标，对农村或边远局点采取简单撤并策略，却忽视其在区域网络中的结构性作用。&lt;/p&gt;
+&lt;p&gt;针对这一场景，关键是在于先弄清这个节点在未来的网络里的到底起到什么作用。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;基本上每一个农村 OLT 节点，在网络中都至少承担以下三种角色之一：覆盖作用，保障当前用户接入；延伸作用，支撑未来覆盖或业务下沉；过渡节点，历史遗留、可被替代的。在任何撤并决策前，必须明确其角色属性。只有被明确判定为“过渡节点”的局点，才适合直接撤并；其余两类，则需要更谨慎的处理方式。&lt;/li&gt;
+&lt;li&gt;要用发展的眼光，考虑近期甚至中期，该区域业务发展或依托该区域扩大覆盖范围的情况下，该节点所起的作用。这一判定过程本身，并不依赖复杂模型，而依赖对区域网络结构、业务发展的基本认知。&lt;/li&gt;
+&lt;li&gt;将“短期节省”与“中期代价”同时呈现。误区二往往源于只看到当前账面节省，而看不到未来支出。在制定方案时，同时呈现两本账：一是当前撤并带来的成本下降，二是若未来延伸覆盖，新增业务，所需新增投资的大致量级。哪怕是粗略估算，也足以让决策从单维度转为双维度，避免在局部最优中反复试错。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="将olt回撤定义为网络能力的进阶"&gt;将OLT回撤定义为网络能力的进阶
+&lt;/h2&gt;&lt;p&gt;OLT回撤不应再被视作一次被动的、以成本削减为单一目标的“减法”操作，应该是一个积极的、创造长期网络价值的 &lt;strong&gt;“战略性重构”&lt;/strong&gt; 与 &lt;strong&gt;“能力进阶”&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;其成功的标尺，绝非仅仅是减少了几个机房或维护费用，而在于是否通过这次行动，使我们所运营的网络结构更清晰、资源更可视、演进更敏捷、韧性更强大。这要求我们告别“回撤就是割接，割接即完工”的旧有思维，坚定地走向“规划先行、重构为本”的新的网络发展思路。&lt;/p&gt;
+&lt;p&gt;前面多次提到的OLT目标局点布局规划，其实应该在接入网大建设时就该及早规划，等网络基本成型，再想优化调整，已经很难了，最大的可能就是针对原有的缺陷修修补补了。&lt;/p&gt;</description></item><item><title>单纤多向：让前传更极简</title><link>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</link><pubDate>Fri, 26 Sep 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-single-fiber-multi-directional-fronthaul/cover.webp" alt="Featured image of post 单纤多向：让前传更极简" /&gt;&lt;p&gt;在移动基站的建设中，无线前传网络却一直面临着一个&amp;quot;老大难&amp;quot;问题——光缆投资过大。随着CRAN（集中式无线接入网）模式成为主流，BBU（基带处理单元）集中部署，BBU与RRU（射频拉远单元）之间需要大量光缆纤芯连接，导致前传光缆投资成为电信运营商难以承受之重。&lt;/p&gt;
+&lt;h2 id="前传之痛光缆投资为何居高不下"&gt;前传之痛：光缆投资为何居高不下？
+&lt;/h2&gt;&lt;p&gt;传统的无线前传采用双纤双向光模块直连方式，每站需要占用6芯光纤。在CRAN模式下，虽然BBU集中部署带来了设备利用率提升、节省机房空间和降低能耗等优势，但也导致了前传光缆需求激增的问题。面对成千上万的基站建设，光缆投资已成为运营商网络建设中不可忽视的成本。&lt;/p&gt;
+&lt;h2 id="现有方案的局限"&gt;现有方案的局限
+&lt;/h2&gt;&lt;p&gt;为了解决前传光缆投资问题，业界曾提出几种方案，但各有局限：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BiDi光模块：将纤芯占用减半，但仍需3芯/站，投资依然较高&lt;/li&gt;
+&lt;li&gt;RRU级联：可将纤芯降至1芯，但可靠性差，且不适用于高配基站&lt;/li&gt;
+&lt;li&gt;前传WDM系统：纤芯占用少，但增加了&amp;quot;波分盒子&amp;quot;设备，故障点多、维护难
+这些方案要么投资仍高，要么带来了新的问题，无法从根本上解决前传网络的痛点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="单纤多向前传网络的极简"&gt;单纤多向：前传网络的&amp;quot;极简&amp;quot;
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块直驱技术，正是为解决前传痛点而生的创新方案。它的核心理念是：在不增加额外设备的前提下，将多路光信号合并到1芯光纤中传输。&lt;/p&gt;
+&lt;h2 id="什么是单纤多向光模块"&gt;什么是单纤多向光模块？
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块相较于传统光模块，主要新增了两个特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置了&amp;quot;光上联口&amp;quot;和&amp;quot;光下联口&amp;quot;两个光接口&lt;/li&gt;
+&lt;li&gt;增加了&amp;quot;单纤多向光组件&amp;quot;，实现多波长信号的处理
+这种光模块巧妙地利用不同波长实现多路信号在单根光纤中的 传输，同时通过无源器件处理方式，确保上游光模块故障不会影响下游信号传输。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="单纤多向光模块构成示意"&gt;单纤多向光模块构成示意
+&lt;/h4&gt;&lt;h2 id="单纤多向如何工作"&gt;单纤多向如何工作？
+&lt;/h2&gt;&lt;p&gt;以3个RRU组成的系统为例：&lt;/p&gt;
+&lt;p&gt;每个RRU配对一个尾端光模块，BBU侧配对相应数量的头端光模块，所有光模块通过1根光纤串联，不同光模块使用不同波长，互不干扰。&lt;/p&gt;
+&lt;p&gt;（图示：普通宏站场景下，3个RRU通过单纤多向光模块仅需1芯光纤连接）&lt;/p&gt;
+&lt;h2 id="为何说它更极简"&gt;为何说它&amp;quot;更极简&amp;quot;？
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块方案带来了多重&amp;quot;极简&amp;quot;优势：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;资源极简：将每站占用光缆纤芯数量降至1芯，大幅减少光缆投资&lt;/li&gt;
+&lt;li&gt;设备极简：无需额外的&amp;quot;波分盒子&amp;quot;等设备，中间无独立合分波器&lt;/li&gt;
+&lt;li&gt;维护极简：与传统光模块维护方式一致，不改变原有维护界面&lt;/li&gt;
+&lt;li&gt;管理极简：可通过无线网管直接管理，无需额外网管系统&lt;/li&gt;
+&lt;li&gt;施工极简：连接方式固定，无需多人配合核实光路，施工简单快捷&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="典型场景应用"&gt;典型场景应用
+&lt;/h2&gt;&lt;p&gt;单纤多向技术适用于多种场景：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;1. 普通宏站/高流量室分：3个RRU组成1个单纤多向系统，仅需1芯光纤&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://mmbiz.qpic.cn/sz_mmbiz_png/B95B1kesBUBc2trfKPY3f3UWkJyDKh3gZu6SEQyyibyr4VQUeIg9SO9sxkGCvLHelXtLwoWGAQSdom1XzwdYqRQ/640?wx_fmt=png&amp;amp;from=appmsg&amp;amp;watermark=1&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1#imgIndex=2"
+loading="lazy"
+alt="图片"
+&gt;&lt;/li&gt;
+&lt;li&gt;2. 低流量室分：可与RRU级联结合，进一步减少纤芯占用&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+loading="lazy"
+alt="图片"
+&gt;&lt;/li&gt;
+&lt;li&gt;3. 高铁/地铁覆盖：多站级联组网，减少切换，简化网络结构&lt;/li&gt;
+&lt;li&gt;&lt;img src="https://mp.weixin.qq.com/www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3E%3C/title%3E%3Cg%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%20fill-opacity=%270%27%3E%3Cg%20transform=%27translate%28-249.000000,%20-126.000000%29%27%20fill=%27%23FFFFFF%27%3E%3Crect%20x=%27249%27%20y=%27126%27%20width=%271%27%20height=%271%27%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+loading="lazy"
+alt="图片"
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;该产品已在多个省应用。日前，重庆联通发布了单纤多向的招标公告。&lt;/p&gt;
+&lt;h2 id="结语让前传回归简单"&gt;结语：让前传回归简单
+&lt;/h2&gt;&lt;p&gt;单纤多向光模块直驱技术，不仅解决了前传光缆投资大的痛点，更实现了前传网络的&amp;quot;极简&amp;quot;。它既保留了光模块直驱方案的可靠性与易维护性，又大幅降低了纤芯资源占用，是当前最符合现网需求的前传技术。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;简单，才是最复杂的技术。单纤多向，让前传更极简，让网络更高效。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>极简主义：联通极简网络与50+人群健康的共同革命</title><link>https://blog.fallleaf.net/p/life-simply-workout-after-50/</link><pubDate>Sun, 14 Sep 2025 20:10:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/life-simply-workout-after-50/</guid><description>&lt;img src="https://blog.fallleaf.net/p/life-simply-workout-after-50/cover.webp" alt="Featured image of post 极简主义：联通极简网络与50+人群健康的共同革命" /&gt;&lt;p&gt;当最后一处3G基站退网完成，本地网内GPON、IPRAN、SDH、RNC四张网络设备全部退网下电，辽宁朝阳联通不仅打造了首个完成“极简网络”的本地网，更向我们展示了“真正的极简，不是简单的减少，而是通过系统思考实现复杂问题的简单化”这一深刻理念。这并非仅是技术升级，而是中国联通将“极简”列为“一号工程”，以核心理念驱动的系统性重构。&lt;/p&gt;
+&lt;p&gt;这一理念，与50岁以上人群的健康管理有着惊人的相似性。当大多数50+人群还在被各种花哨的健身方法和器械所困扰时，将“极简”理念应用于健身，不仅能有效避免运动伤害，更能实现长期、可持续的健康收益。&lt;/p&gt;
+&lt;h2 id="一去繁就简精简网络节点聚焦核心训练"&gt;一、去繁就简：精简网络节点，聚焦核心训练
+&lt;/h2&gt;&lt;p&gt;联通通过“理、强、迁、退、评”五步流程，系统性地精简网络架构，将非必要的网络节点有效整合。同样，50+人群的健身也应遵循这一原则—— &lt;strong&gt;不是盲目堆砌训练动作，而是抓住核心、高效的训练&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;如同联通将复杂的通信网络精简为清晰明了的网络，50+人群也应将健身重点放在最能带来回报的基础训练上，而非被眼花缭乱的器械和动作所迷惑。这些核心动作能同时调动多组肌肉，高效提升整体健康水平。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;高脚杯深蹲&lt;/strong&gt; ：双手托一个哑铃或壶铃在胸前，完成深蹲。这个动作不仅能强化下肢肌肉，还能有效锻炼核心，是安全又高效的选择。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;基础重量训练&lt;/strong&gt; ：使用哑铃或弹力带进行推、拉、举等复合动作，事半功倍，帮助你建立全身力量。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="二强化底座升级网络架构夯实身体骨架"&gt;二、强化底座：升级网络架构，夯实身体“骨架”
+&lt;/h2&gt;&lt;p&gt;联通通过机房能力 提升 、 设备整合、退网老旧设备，优化了网络架构的“底座”。50+人群的身体“底座”——骨骼与肌肉，同样需要通过“升级”来增强承载力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;骨骼与肌肉健康危机&lt;/strong&gt; ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;美国运动医学会（ACSM）&lt;/strong&gt; 研究表明，50岁以上女性每年骨密度流失约2-3%；男性约为1-2%。&lt;/li&gt;
+&lt;li&gt;70%的50+人群存在肌肉流失问题，这直接影响日常生活质量。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;深蹲和重量训练，正是为身体“补钙”和“升级”的有效手段。 &lt;strong&gt;哈佛大学研究表明，50岁以上人群进行规律的力量训练，可将骨质疏松风险降低40%&lt;/strong&gt; 。这就像联通的“渐进超负荷”策略，通过循序渐进地增加负重，迫使身体不断适应，变得更强。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;训练要点&lt;/strong&gt; ：&lt;/li&gt;
+&lt;li&gt;从轻重量开始（女性2-5kg，男性5-8kg）。&lt;/li&gt;
+&lt;li&gt;每2-4周微调重量或次数（增加5-10%），持续给身体新的挑战。&lt;/li&gt;
+&lt;li&gt;始终保持动作标准，避免因追求重量而牺牲形式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="三保持灵活优化传输路径润滑身体关节"&gt;三、保持灵活：优化传输路径，润滑身体关节
+&lt;/h2&gt;&lt;p&gt;联通通过创新技术优化网络架构，提升了承载的灵活性和效率。50+人群的身体灵活性则体现在关节的润滑和活动范围上，这是维持独立生活质量的关键。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关节健康挑战&lt;/strong&gt; ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;50%的50+人群有关节疼痛问题。&lt;/li&gt;
+&lt;li&gt;关节活动范围随年龄增长而减少，影响日常活动。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;深蹲这个动作，如同为关节进行“润滑保养”。在保持背部挺直的前提下，尽量完成全幅度的深蹲，能有效促进髋、膝、踝关节的滑液循环，让关节在正确的轨迹上运行。这种控制与稳定，能有效避免关节磨损，保持身体架构的“通畅”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;训练要点&lt;/strong&gt; ：&lt;/li&gt;
+&lt;li&gt;深蹲时保持脚尖与膝盖方向一致，避免膝盖内扣。&lt;/li&gt;
+&lt;li&gt;下蹲过程中保持背部挺直，避免圆背。&lt;/li&gt;
+&lt;li&gt;如果有膝关节问题，可先从椅子辅助深蹲开始，逐步建立力量和信心。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="四长期坚持从一号工程到健康资产"&gt;四、长期坚持：从“一号工程”到“健康资产”
+&lt;/h2&gt;&lt;p&gt;联通将极简网络作为“一号工程”，坚持三年专项行动计划。同样，50+的健康管理也绝非一蹴而就，而是一种“运营即优化”的长期主义文化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“50+的健身不是与年轻人赛跑，而是与昨天的自己比进步。”&lt;/strong&gt; 通过规律的训练，让身体有节奏地接受刺激并恢复成长。将安全放在首位，专注于动作模式而非重量大小。最重要的是，要将健身视为一种对未来的投资，如同联通为未来网络架构铺路一样，我们是在为未来十年的独立、高质量生活累积“健康资产”。&lt;/p&gt;
+&lt;h3 id="50极简健身的五步法"&gt;50+极简健身的“五步法”
+&lt;/h3&gt;&lt;p&gt;借鉴联通的成功经验，50+人群可以建立自己的极简健身体系：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;理：理清现状，明确目标。&lt;/strong&gt; 评估身体状况，设定“能轻松抱起孙子”而非“减肥20斤”的现实目标。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;强：强化基础，安全起步。&lt;/strong&gt; 从自重深蹲开始，逐步引入轻量级训练，专注于核心肌群和下肢力量。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;迁：迁移习惯，融入生活。&lt;/strong&gt; 将训练融入日常生活，与志同道合的伙伴互相鼓励，让健身成为一种习惯。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;退：适时调整，避免过度。&lt;/strong&gt; 倾听身体信号，遇到不适及时调整或暂停，记录进步，但不急于求成。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;评：定期评估，持续优化。&lt;/strong&gt; 每月评估身体变化，调整训练计划，保持挑战性，并与专业人士定期沟通。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="结语极简健康长期主义的智慧"&gt;结语：极简健康，长期主义的智慧
+&lt;/h2&gt;&lt;p&gt;联通的极简网络实践告诉我们：当冗余被移除，核心被强化，系统才能真正绽放价值。同样，当50+人群坚持将深蹲与重量训练融入生活，当骨骼更强健、肌肉更有力、关节更灵活，真正的健康人生才刚刚开始。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;去繁就简，保持专注；强化底座，延缓老化；持续优化，积累韧性&lt;/strong&gt; ——这不仅是联通的极简网络哲学，更是50+人群应有的健康生活智慧。&lt;/p&gt;
+&lt;p&gt;记住：50+不是衰老的开始，而是智慧健康的起点。从今天开始，用极简的方式，为自己打造一个更健康、更有活力的未来。&lt;/p&gt;</description></item><item><title>极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！</title><link>https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/</link><pubDate>Sat, 13 Sep 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-china-unicom-fiber-smart-operation-system/cover.webp" alt="Featured image of post 极简运维：中国联通自研光纤智慧运营管理系统上线，故障定位精度达±5米！" /&gt;&lt;p&gt;在数字化转型加速的今天，网络稳定性与运维效率成为运营商的核心竞争力。中国联通子公司中讯设计，推出全新自研产品—— &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; ，正式在 &lt;strong&gt;智慧供应链科创转化专区&lt;/strong&gt; 上线，助力光缆网络运维迈入智能化新时代！&lt;/p&gt;
+&lt;h2 id="产品概览一眼看懂光缆健康"&gt;产品概览：一眼看懂光缆健康
+&lt;/h2&gt;&lt;p&gt;系统首页集成了 &lt;strong&gt;故障告警分析、光缆健康度评价、故障工单指标、光缆运行全景视图&lt;/strong&gt; 等功能，基于GIS地图与OTDR探测能力，实现 &lt;strong&gt;光缆故障精准定位&lt;/strong&gt; ，让运维人员一目了然，快速响应。&lt;/p&gt;
+&lt;h2 id="软硬一体自主产权性能卓越"&gt;软硬一体：自主产权，性能卓越
+&lt;/h2&gt;&lt;h2 id="硬件设备智能监测稳定可靠"&gt;硬件设备：智能监测，稳定可靠
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;光纤智能监测设备&lt;/strong&gt; ：1U高度，支持8/16通道，动态范围32dB，监测距离高达 &lt;strong&gt;100公里&lt;/strong&gt; ，定位精度 ±5米 ！&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;模块化设计&lt;/strong&gt; ：灵活配置，支持内外挂光开关，适配多场景部署&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;低成本高性价比&lt;/strong&gt; ：完全自主知识产权，设备售价仅为 &lt;strong&gt;5万元/台&lt;/strong&gt; ，远低于市场同类产品&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="软件平台智能分析全域覆盖"&gt;软件平台：智能分析，全域覆盖
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;故障快速定位&lt;/strong&gt; ：结合GIS与光缆资源数据，实现从段落到标志点的精准定位&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;性能巡检与指标监控&lt;/strong&gt; ：支持定期/实时巡检，自动阈值告警，提升巡检效率&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;时延路径仿真&lt;/strong&gt; ：智能推荐最短时延路径，支撑业务快速开通&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;光缆健康度评价&lt;/strong&gt; ：多维度评估光缆状态，输出月/季/年报，支持PDF导出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="四大核心优势"&gt;四大核心优势
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;优势&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;** 智能分析**&lt;/td&gt;
+&lt;td&gt;性能在线纳管、指标综合分析&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;** 快速感知**&lt;/td&gt;
+&lt;td&gt;故障定位精确、告警派单实时&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;** 经济高效**&lt;/td&gt;
+&lt;td&gt;一键巡检、分级维护，降本增效&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;** 全域覆盖**&lt;/td&gt;
+&lt;td&gt;支持在用与备用纤芯，多场景适用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="应用场景广泛实战效果显著"&gt;应用场景广泛，实战效果显著
+&lt;/h2&gt;&lt;p&gt;系统已成功应用于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;集团智能排障平台&lt;/strong&gt; ：覆盖265套波分系统，纳管光缆529条，提升排障效率与数据质量&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;客户业务监测&lt;/strong&gt; ：先于客户发现故障，实现主动运维，提升客户满意度&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;骨干网与备用光纤一体化监控&lt;/strong&gt; ：实现跨厂家统一纳管，打破系统孤岛&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="竞品对比技术领先合作灵活"&gt;竞品对比：技术领先，合作灵活
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;对比项&lt;/th&gt;
+&lt;th&gt;中讯&lt;/th&gt;
+&lt;th&gt;市场竞品&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;设备价格&lt;/td&gt;
+&lt;td&gt;5万元/台&lt;/td&gt;
+&lt;td&gt;12–14万元/台&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;在用光纤管理&lt;/td&gt;
+&lt;td&gt;支持统一纳管&lt;/td&gt;
+&lt;td&gt;不支持&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;厂家依赖&lt;/td&gt;
+&lt;td&gt;低，独立部署&lt;/td&gt;
+&lt;td&gt;高，依赖厂家网管&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;扩展能力&lt;/td&gt;
+&lt;td&gt;强，支持定制开发&lt;/td&gt;
+&lt;td&gt;有限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="合作与联系"&gt;合作与联系
+&lt;/h2&gt;&lt;p&gt;如果您对&amp;quot; &lt;strong&gt;光纤智慧运营管理系统&lt;/strong&gt; &amp;ldquo;感兴趣，欢迎联系产品负责人：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;联系人：张先生&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;微信扫码咨询👇&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mmbiz.qpic.cn/sz_mmbiz_png/B95B1kesBUA2xJbW2Sgm22Tic3hcS34AhvHKHaGRZsNVO7x15eDJpCoRAjPN0B3WepKXtoCRzae9aZ3iaRIqwhdQ/640?wx_fmt=png&amp;amp;from=appmsg&amp;amp;watermark=1&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1#imgIndex=0"
+loading="lazy"
+alt="图片"
+&gt;&lt;/p&gt;
+&lt;p&gt;中国联通光纤智慧运营管理系统，以 &lt;strong&gt;自主产权、智能运维、高效管理&lt;/strong&gt; 为核心，助力构建更安全、更稳定、更智能的光网络基础设施。 &lt;strong&gt;智慧光网，联通未来！&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>移动近10亿招标“极简网络”，联通将其升华为网络哲学，背后有何玄机？</title><link>https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/</link><pubDate>Wed, 03 Sep 2025 07:32:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-mobile-unicom-bidding-simplist-network/cover.webp" alt="Featured image of post 移动近10亿招标“极简网络”，联通将其升华为网络哲学，背后有何玄机？" /&gt;&lt;p&gt;一场关于“极简”的本质之争，正在三大运营商之间悄然上演。近期，广东移动近10亿元的“极简网络改造技术支撑”项目招标，再次将“极简”推向风口浪尖。然而，当我们深入剖析三大运营商在这一领域的实施路径时，却发现了一个令人深思的现象： &lt;strong&gt;名称相同，但理念和做法却大相径庭。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="移动与电信项目式的减法工程"&gt;移动与电信：项目式的“减法工程”
+&lt;/h2&gt;&lt;p&gt;移动和电信对“极简”的理解，更倾向于一个具体的工程项目。他们的招标项目通常直接、明确，预算和改造站点数量清晰可见，主要聚焦移动基站及配套的精简。这是一种典型的项目化运作模式，聚焦于物理层面的设备简化，例如采用刀片电池和刀片电源，将基站CRAN化，从而减少机房和配套设施。这种模式的优点是目标明确、执行高效，能够迅速看到网络运营成本的降低和效能的提升，但其本质是一场“减法工程”，旨在解决眼前的问题。&lt;/p&gt;
+&lt;h2 id="联通理念化的重构哲学"&gt;联通：理念化的“重构哲学”
+&lt;/h2&gt;&lt;p&gt;与此形成鲜明对比的是，联通的“极简”实践鲜有大规模的集中招标，查询其招标网站，也只有两条相关的机房招标公告 ，但搜索网站和公众号文章 ， 却发现联通的&amp;quot;打造极简网络&amp;quot;工作，全国范围内正如火如荼的开展，贯穿网络建设的方方面面。联通将“极简”视为一种 &lt;strong&gt;贯穿网络全生命周期的核心哲学&lt;/strong&gt; ，而非一个孤立的技术项目。这种理念的引领，使得联通的“极简”实践更具系统性和长远性。&lt;/p&gt;
+&lt;h2 id="中国联通极简网络的深层内涵"&gt;中国联通“极简网络”的深层内涵
+&lt;/h2&gt;&lt;p&gt;中国联通的“打造极简网络”工作不仅仅是设备上的简化，而是一项系统性的工程，其核心内涵可以从以下几个方面重新阐述：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优化架构，夯实基础：
+联通的“极简网络”战略首先聚焦于网络架构的深层优化。这包括整合分散、小型化的机房，以构建一个更精简、更稳定的网络架构。通过淘汰老旧设备、更新关键设施（如发电机和电池），提升网络的整体可靠性和安全性，为用户提供一个坚实、可靠的基础网络服务。&lt;/li&gt;
+&lt;li&gt;效率至上，网络革新：
+为了提高网络效率，联通对移动网、宽带网和承载网进行优化改造。他们通过优化光缆结构和光纤交接箱的布局，缩短接入距离，优化承载网络，形成一刚一柔两张简洁的承载网。同时，联通积极推进2G、3G网络的退网，并精简冗余的4G基站，OLT局点的优化、老旧OLT的退网，最终构建一个以4G/5G、10G PON宽带和智能城域网/PeOTN网为核心的现代化精品网络，大幅提升了网络能力和运营效率。&lt;/li&gt;
+&lt;li&gt;能力升级，数据驱动：
+“极简网络”的实施也是一次内部能力的革命。联通鼓励自有员工参与到网络建设和改造中，以此提升团队的核心技术能力，降低对外部供应商的依赖。此外，还对网络资源进行的全面数据治理，为公司的数智化转型打下坚实基础，从而能更好地为用户提供高品质、个性化的服务。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="极简背后的深层价值超越技术的价值创造"&gt;“极简”背后的深层价值：超越技术的价值创造
+&lt;/h2&gt;&lt;p&gt;联通的“打造极简网络”工作不仅限于技术层面，更延伸至组织能力、企业文化和战略发展等多个维度。这种超越技术的价值创造，是其与友商最大的不同。&lt;/p&gt;
+&lt;p&gt;通过 &lt;strong&gt;自主实施&lt;/strong&gt; 网络精简、架构优化等工作，联通不仅降低了对外部供应商的依赖，更培养了员工的系统思维能力和自主创新能力。这种“自己动手”的方式，将极简理念内化为企业文化，让员工从被动执行变为主动创新。例如，某地市联通在实践中发现，通过“打造极简网络”工作，不仅节省了机房空间、降低了能耗，还能提高设备运行的稳定性和延长使用寿命，这正是从 “为极简而极简” 到 “为价值而极简” 的深刻转变 。&lt;/p&gt;
+&lt;p&gt;此外，极简网络更是联通未来战略的基石。正如联通副总经理苗守野在2020年全球移动宽带论坛上所言，联通将从“ 极简网络 、极致体验、极智服务”三个方面打造高品质目标网，极简网络为网络智能化发展奠定了基础，能更好地支持人工智能、大数据、云计算等新技术的应用。这与联通提出的 “5G+ABC端到端网络建设发展路线” 一脉相承，展现了其对未来网络演进方向的深刻洞察。&lt;/p&gt;
+&lt;h2 id="极简的真谛复杂问题的简单化"&gt;“极简”的真谛：复杂问题的简单化
+&lt;/h2&gt;&lt;p&gt;真正的极简，不是简单的减少，而是通过系统思考实现复杂问题的简单化。当电信和移动还在为如何减少基站设备数量而努力时，联通已经将极简升华为一种网络建设的哲学。&lt;/p&gt;
+&lt;p&gt;这种哲学体现在：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;战略高度：&lt;/strong&gt; 将“极简 ” 作为企业长期发展策略。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方法论体系： 各省/各地市形成了诸如“理、强、迁、退、评”等可复制、可推广的工作流程。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作原则：&lt;/strong&gt; 遵循“强基础 ，优网络，升安全，治数据” 指导原则。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文化内化： 将极简理念融入日常工作，成为企业DNA的一部分。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过极简网络工作，联通不仅实现了网络效能提升和成本降低，更重要的是培养了各级员工的系统思维能力和自主创新能力。这种内在能力的提升，对企业长远发展的价值不可估量。&lt;/p&gt;
+&lt;h2 id="结语极简之路道阻且长"&gt;结语：极简之路，道阻且长
+&lt;/h2&gt;&lt;p&gt;当移动豪掷近10亿招标“极简网络”，电信大规模推进“极简基站”时，联通却选择了另一条路——将 “ 极简 ” 升华为网络建设的核心理念。这种差异，反映了三大运营商对“极简”本质理解的深刻分歧。&lt;/p&gt;
+&lt;p&gt;随着5G-Advanced技术的演进和6G研究的启动，网络智能化将成为必然趋势。在这一背景下，联通将“极简”作为网络建设理念而非项目推进的方式，虽然在短期内可能难以看到爆炸性的成效，但却是在默默锤炼内功，为未来智能化网络奠定坚实基础。 真正的极简革命，不在于减少多少设备，而在于能否通过系统思考，将复杂问题简单化，让网络回归本质，让技术真正服务于人。 中国联通的极简网络实践，正是这一理念的生动诠释。&lt;/p&gt;
+&lt;p&gt;本文参考的相关网络资源:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;运营商&lt;/th&gt;
+&lt;th&gt;标题&lt;/th&gt;
+&lt;th&gt;来源&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国移动&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;广东移动2025-2026极简网络改造技术支撑招标公告&lt;/td&gt;
+&lt;td&gt;中国移动采购及招标网&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;安庆联通桐城汇聚区打造极简网络工作案例&lt;/td&gt;
+&lt;td&gt;网易&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;率先完成本地网极简网络工作&lt;/td&gt;
+&lt;td&gt;中国青年网&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;沁县联通聚焦绿色发展，打造极简网络&lt;/td&gt;
+&lt;td&gt;搜狐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;【联通好网络 畅享每一刻】打造极简网络 驱动网络焕新&lt;/td&gt;
+&lt;td&gt;中华网&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;璧山联通打造“极简网络” 共赢双碳未来&lt;/td&gt;
+&lt;td&gt;中国网&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国联通&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;中国联通苗守野：极简网络+极致体验+极智服务 成就高品质5G赋能未来&lt;/td&gt;
+&lt;td&gt;新浪财经&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国电信&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;中国电信陕西公司2025年极简基站改造服务项目标包一招标公告&lt;/td&gt;
+&lt;td&gt;中国电信阳光采购网&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国电信&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;中国电信股份有限公司湖北分公司2024年极简基站改造服务项目招标公告&lt;/td&gt;
+&lt;td&gt;中国电信阳光采购网&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中国移动&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;陕西移动咸阳分公司推进极简站改造 助力“碳中和、碳达峰”战略&lt;/td&gt;
+&lt;td&gt;搜狐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;行业讨论&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;三大运营商集体押注极简网络，是破局还是闯祸？&lt;/td&gt;
+&lt;td&gt;通信人家园（论坛）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中国联通&lt;/td&gt;
+&lt;td&gt;极简网络相关内容&lt;/td&gt;
+&lt;td&gt;微信公众号:通信菜园儿&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description></item></channel></rss>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>科技与社会 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/tech-society/</link><description>Recent content in 科技与社会 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sun, 13 Sep 2026 07:40:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/tech-society/index.xml" rel="self" type="application/rss+xml"/><item><title>从 Anthropic 报告谈起，一个不容忽视的安全问题</title><link>https://blog.fallleaf.net/p/anthropic/</link><pubDate>Sun, 13 Sep 2026 07:40:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/anthropic/</guid><description>&lt;img src="https://blog.fallleaf.net/p/anthropic/cover.webp" alt="Featured image of post 从 Anthropic 报告谈起，一个不容忽视的安全问题" /&gt;&lt;h2 id="云端-ai-服务的可见性"&gt;云端 AI 服务的可见性
+&lt;/h2&gt;&lt;p&gt;近日，Anthropic 发布了关于模型输入风险、凭据滥用、供应链攻击、越权访问以及 AI 应用安全的研究和威胁情报报告，再次引发了业界对大模型安全问题的关注。&lt;/p&gt;
+&lt;p&gt;报告本身当然值得关注。但从另一个视角看，更值得关注的其实是报告背后的一个问题：为什么 AI 服务商能够发现、分析和还原这些攻击行为？&lt;/p&gt;
+&lt;p&gt;一个重要原因是，在现有主流云端 AI 服务架构中，用户与 AI 的交互发生在服务商控制的计算和服务环境中。用户请求最终需要进入服务端的计算链路，由模型完成 Tokenization、推理以及必要的工具调用；与此同时，服务侧还可能产生与请求相关的安全检测、会话信息、调用记录和其他遥测数据。具体哪些数据会被记录、保留多久、是否用于模型改进，取决于各服务商的产品策略、企业协议和合规要求；但从架构上看，服务侧至少需要获得足够的明文或明文派生数据，才能完成推理和基础的安全检测。&lt;/p&gt;
+&lt;p&gt;这些信息使服务商具备了对 AI 交互过程进行观测、关联和分析的能力，从而能够在一定条件下识别异常行为、分析攻击链条，甚至还原部分攻击过程。&lt;/p&gt;
+&lt;p&gt;当然，这并不意味着服务商可以任意查看所有用户数据，也不意味着所有请求都会被完整保存。具体能够看到什么、记录什么、保存多久，取决于具体服务的架构、产品策略和安全机制。&lt;/p&gt;
+&lt;p&gt;但从架构层面看，一个基本事实是明确的：只要 AI 推理发生在服务商控制的计算环境中，用户数据就必须进入一种能够被该计算环境处理和理解的状态。对于文本、代码、文档等数据而言，这通常意味着数据本身以人类可理解的形式进入服务端，或者经过 Tokenization 等处理后，仍然保留能够被模型解析和推理的信息，而不是像端到端加密那样始终保持为服务端无法理解的密文。&lt;/p&gt;
+&lt;p&gt;这与传统意义上的端到端加密通信存在一个根本区别。&lt;/p&gt;
+&lt;p&gt;在端到端加密场景中，服务提供者可以负责传输和转发数据，但通常无法获得应用层的明文内容；而在云端 AI 推理场景中，模型本身必须对用户输入进行计算，因此服务端计算环境必须能够获得并处理相应的数据。&lt;/p&gt;
+&lt;p&gt;这就带来了一个过去并不那么突出的安全问题：当数据进入计算环境之后，如何保护它？&lt;/p&gt;
+&lt;p&gt;这个问题对于企业用户尤其重要。&lt;/p&gt;
+&lt;p&gt;当企业把源代码、内部文档、客户资料、业务数据甚至核心知识交给 AI 进行分析时，安全边界已经不再只是“数据在网络上传输时是否被窃取”，而进一步涉及：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据进入 AI 服务后的处理过程；&lt;/li&gt;
+&lt;li&gt;模型推理过程中的数据保护；&lt;/li&gt;
+&lt;li&gt;上下文、缓存和中间数据的安全；&lt;/li&gt;
+&lt;li&gt;AI Gateway、日志和监控等服务环节；&lt;/li&gt;
+&lt;li&gt;第三方代理、插件以及工具调用形成的新数据链路。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此，AI 时代的数据安全边界正在发生一个重要变化：传统网络安全关注数据如何安全地传输和存储，而 AI 进一步提出了一个问题，数据如何在计算过程中保持安全。&lt;/p&gt;
+&lt;p&gt;这也是为什么 Confidential AI、可信执行环境、Confidential GPU、私有化 AI 以及安全 AI Gateway 等技术开始受到关注。&lt;/p&gt;
+&lt;p&gt;对于运营商而言，这意味着需要重新审视 AI 基础设施的安全边界，以及自己在这一新的安全边界中能够承担什么样的角色。&lt;/p&gt;
+&lt;h2 id="ai时代的数据安全边界正在发生结构性变化"&gt;AI时代的数据安全边界正在发生结构性变化
+&lt;/h2&gt;&lt;p&gt;在传统互联网体系中，数据安全的核心边界相对明确：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;确保数据在网络传输过程中不被第三方获取。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因此形成了 HTTPS、TLS、VPN、IPSec 等成熟的网络安全体系。用户发送数据之前进行加密，数据通过网络传输，服务器收到以后再解密处理。对于中间网络而言，看到的主要是一段不可理解的密文。这种安全模型在过去几十年中非常有效。&lt;/p&gt;
+&lt;p&gt;但生成式 AI 改变了数据的使用方式。&lt;/p&gt;
+&lt;p&gt;企业今天交给 AI 的，往往已经不是普通的互联网信息，而是越来越有价值的生产数据：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;源代码、内部文档、客户信息、网络配置、业务流程、生产数据以及企业知识库。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这些数据进入 AI 服务以后，不再只是“经过网络”。它们还要被：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;理解、转换、计算、缓存和生成。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一次典型的 AI 请求，大致会经历：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;用户 → API 网关 → 应用服务 → Token 化 → 模型推理 → GPU 计算 → 返回结果&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用户请求通过 HTTPS 加密（TLS）传输到云端后，需要在服务端完成解密、解析和后续计算。文本经过 Tokenization 等处理后，进一步转换为模型可以计算的数值表示，进入推理引擎和 GPU 完成计算。&lt;/p&gt;
+&lt;p&gt;当企业应用的信息通过加密进入AI服务的入口后，转换成可被大模型计算的数据，之后的每一个环节都可能形成新的数据安全隐患。因此，AI 时代安全与传统网络的主要变化就在于：过去主要关注 &lt;strong&gt;数据在网络中是否安全&lt;/strong&gt; ，而现在还必须关注： &lt;strong&gt;数据在计算过程中是否安全。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="为什么数据到了-ai-服务端必须被看见"&gt;为什么数据到了 AI 服务端必须被“看见”？
+&lt;/h2&gt;&lt;h3 id="llm-的数据处理流程决定了这一点"&gt;LLM 的数据处理流程决定了这一点
+&lt;/h3&gt;&lt;p&gt;大模型推理并不是简单地把一段文本送进一个“黑盒”。&lt;/p&gt;
+&lt;p&gt;一次典型的文本LLM 交互大致经历以下环节：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用户客户端通过 HTTPS（TLS）将文本请求发送到云端 API 网关；&lt;/li&gt;
+&lt;li&gt;TLS 在网关或负载均衡处终止，被解密为明文数据（包含 Prompt、上下文、参数等）；&lt;/li&gt;
+&lt;li&gt;服务将文本送入分词器（Tokenizer）转换为 Token ID 序列，再映射为高维向量（Embedding）；&lt;/li&gt;
+&lt;li&gt;这些向量以浮点数矩阵形式进入 GPU 显存，参与大模型计算。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在这个过程中： &lt;strong&gt;TLS 只保护“网络传输阶段”&lt;/strong&gt; ，一旦到达云端网关就被解密，后续在应用层、推理引擎和显存中均以明文或明文派生形式（Token ID，向量等）存在；拥有服务器权限的运维人员、被攻破的服务进程、以及拿到日志/追踪数据的攻击者，都有能力读取这些内容。&lt;/p&gt;
+&lt;p&gt;这就是传统传输加密与 AI 计算之间的边界。&lt;/p&gt;
+&lt;h3 id="澄清误区token-化与向量不是加密"&gt;澄清误区：Token 化与向量不是加密
+&lt;/h3&gt;&lt;p&gt;部分人存在一个误解：认为文本进入大模型前被分词并转成 Token ID（如把 &amp;ldquo;Hello&amp;rdquo; 转成 &lt;/p&gt;
+\[9906\]&lt;p&gt;），或者转成高维向量（Embedding），就相当于完成了“加密”，这种认识是错误的。&lt;/p&gt;
+&lt;p&gt;Token化（分词）是公开编码，而非加密，原因是分词只是基于公开词表（如 BPE 算法）进行的确切语义映射与离散化编码，类似将英文字母转为 ASCII 码。任何人拿着公开词表调用 decode() 函数，都能无损还原原始文本。&lt;/p&gt;
+&lt;p&gt;而向量则是保留明文语义，Embedding 是为模型计算设计的语义表示，保留了高精度的空间与语义关联。研究显示，在特定攻击模型和假设条件下，攻击者有可能从这些向量中部分反推原始文本或推断敏感属性，因此不能把向量化理解为“安全转换”。&lt;/p&gt;
+&lt;p&gt;所以Token化和向量依然属于“明文数据（plaintext）”的派生表示。只要数据以这种形式在服务侧流转或在显存中计算，数据泄露风险就依然存在。&lt;/p&gt;
+&lt;h3 id="为什么不能即时通信那样做端到端加密"&gt;为什么不能即时通信那样做“端到端加密”？
+&lt;/h3&gt;&lt;p&gt;传统即时通讯的端到端加密（E2EE）要求服务器只做中转，不理解内容：客户端 A 加密，客户端 B 解密，中间服务器看到的只是一堆无意义的密文。&lt;/p&gt;
+&lt;p&gt;但大模型推理的基本条件就是“ &lt;strong&gt;服务商的大模型必须深度理解文本&lt;/strong&gt; ”，总结下来，主要有两点制约了采用加密数据进行大模型计算。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• &lt;strong&gt;语义破坏&lt;/strong&gt; ：现代加密算法（如 AES-256）的目标之一，是让不知道密钥的观察者无法从密文中识别原始数据的结构和规律，理想情况下，密文在统计上应呈现接近随机的特征。对于没有密钥的大模型而言，加密后的文本表现为近似随机的序列，其中原有的词汇、句法、语义和上下文关系都不可直接获得。将这样的密文直接用于普通大模型训练，模型无法从中学习原始数据所包含的语言和知识规律，因此无法训练出具有相应语义能力的模型。&lt;/li&gt;
+&lt;li&gt;• &lt;strong&gt;计算局限&lt;/strong&gt; ：普通大模型的推理需要将输入转换为 Token，并进一步形成模型可以进行数值计算的表示，再通过 Transformer 的矩阵运算完成推理。AES 等传统加密产生的密文不能直接作为具有原始语义的输入参与这一过程；在没有专门隐私计算机制的情况下，数据需要先在受信任的计算环境中解密，再转换为模型可以处理的表示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;大模型要能工作，就必须“看懂”原始内容，这本身就决定了它在服务侧不可能处于传统意义上的加密保护状态&lt;/strong&gt; 。问题也由此发生了变化，过去需要解决的是“ &lt;strong&gt;传输过程中的数据保密&lt;/strong&gt; ” ， 现在需要进一步解决&amp;quot; &lt;strong&gt;计算过程中的数据保密&lt;/strong&gt; ”。这就是所谓的 &lt;strong&gt;计算安全&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h2 id="从传输安全走向计算安全两条技术路线"&gt;从传输安全走向计算安全：两条技术路线
+&lt;/h2&gt;&lt;p&gt;如果希望 AI 在处理数据的同时，又尽可能减少计算环境对数据的暴露，目前大致存在两条技术路线。&lt;/p&gt;
+&lt;h3 id="全同态加密密码学上的长期方向"&gt;全同态加密：密码学上的长期方向
+&lt;/h3&gt;&lt;p&gt;全同态加密（FHE）的核心思想非常直接：允许直接在密文上进行加减乘除等运算，解密后的结果与在明文中计算完全一致。这是一个非常理想的方案。但问题在于计算效率。&lt;/p&gt;
+&lt;p&gt;现代大模型涉及巨量矩阵运算，同时还包含注意力机制和各种非线性计算。在这些复杂计算场景下，FHE 仍然面临较大的性能和工程成本。在当下，用 FHE 运行大模型生成一个词可能需要数十分钟，暂不具备商业实用性。因此现阶段更适合把它看成： &lt;strong&gt;值得长期关注的密码学技术方向，而不是当前大规模通用 LLM 推理的主流工程方案&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h3 id="硬件机密计算tee--confidential-ai工程上的最佳现实解法"&gt;硬件机密计算（TEE / Confidential AI）：工程上的最佳现实解法
+&lt;/h3&gt;&lt;p&gt;另一种思路完全不同。利用现代芯片（如 Intel TDX、AMD SEV-SNP、NVIDIA H100/B200、远程证明 + 密钥管理）在 GPU 和 CPU 内部搭建硬件级物理隔离的“黑盒飞地（Enclave）”。它并不试图让 AI 永远看不到数据。而是基于一个现实： &lt;strong&gt;AI 必须看到数据才能计算。&lt;/strong&gt; 那么需要解决的就是： &lt;strong&gt;能不能让只有可信计算环境看到这些数据？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这就是 Confidential Computing 和 Confidential AI 的核心思想。其原理就是：数据在用户端通过密钥加密；密文通过加密通道（如 attested TLS）进入芯片内部的硬件安全区；仅在飞地内部解密并计算，计算结果加密后再输出。这种方式的优势在于： &lt;strong&gt;在 TEE 实现本身未被攻破、远程证明可信的前提下&lt;/strong&gt; ，哪怕云服务商的运维人员或操作系统被彻底攻破，也无法读取 TEE 内部的内存明文。其性能损耗通常仅在 &lt;strong&gt;2%–7%&lt;/strong&gt; ，多数场景低于 5%，是目前较为可行的“硬件级安全计算端到端保护”方案。&lt;/p&gt;
+&lt;p&gt;需要强调的是，真正的“机密推理”不是简单打开某个 GPU 的安全功能，而是要把 CPU、GPU 和两者之间的数据传输一起保护起来，并在计算开始前确认整个环境是可信的。&lt;/p&gt;
+&lt;h2 id="防患于未然应用部署层面的安全防护措施"&gt;防患于未然：应用部署层面的安全防护措施
+&lt;/h2&gt;&lt;p&gt;在计算安全技术没有大规模应用普及之前，企业在部署 LLM 应用时，可以根据数据敏感程度采取分层防护措施。&lt;/p&gt;
+&lt;h3 id="客户端与网关侧动态数据脱敏masking--redaction"&gt;客户端与网关侧：动态数据脱敏（Masking &amp;amp; Redaction）
+&lt;/h3&gt;&lt;p&gt;在数据离开企业内网之前部署 AI 网关或脱敏中间件，利用规则和模型识别 API Key、身份证号、客户信息、财务数据等敏感内容，并用占位符（如 &lt;code&gt;[USER_1]&lt;/code&gt; ）替换后再发送给公网大模型，返回结果后在企业内部完成还原。&lt;/p&gt;
+&lt;p&gt;这种方式对结构化敏感信息比较有效，但对于上下文中隐含的敏感信息，以及通过多轮对话逐步暴露的信息，仍然存在识别遗漏的风险。&lt;/p&gt;
+&lt;h3 id="云端服务侧严格控制数据留存zero-data-retention"&gt;云端服务侧：严格控制数据留存（Zero Data Retention）
+&lt;/h3&gt;&lt;p&gt;对于需要使用公网大模型、但又不希望数据长期留存在服务商侧的场景，应优先选择具有明确数据留存和训练使用策略的企业级 API 服务，并通过合同、配置和审计等方式进行约束。&lt;/p&gt;
+&lt;p&gt;需要注意， &lt;strong&gt;ZDR 的核心是“不留存”或尽量减少留存，并不意味着数据在 GPU 中推理时就自动处于不可见状态&lt;/strong&gt; 。如果对计算过程本身也有较高的安全要求，则需要进一步采用机密计算等技术。&lt;/p&gt;
+&lt;h3 id="部署形态侧敏感场景采用本地私有化部署local-llm"&gt;部署形态侧：敏感场景采用本地私有化部署（Local LLM）
+&lt;/h3&gt;&lt;p&gt;对于核心代码、重要内部资料以及高度敏感的业务数据，可以将模型直接部署在企业私有云或内部计算节点中，使用 Ollama、vLLM 等推理框架运行开源模型。&lt;/p&gt;
+&lt;p&gt;这种方式的核心优势是 &lt;strong&gt;数据不需要离开企业控制范围&lt;/strong&gt; 。但本地部署并不意味着“天然安全”，企业仍需负责模型更新、系统安全、访问控制、数据管理以及 GPU 资源和运行成本。&lt;/p&gt;
+&lt;p&gt;因此，实际部署中可以根据数据敏感程度形成简单的选择：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一般数据 → 云端 AI&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;敏感数据 → 脱敏后使用云端 AI&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心数据 → 企业私有化部署&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这比试图用一种技术解决所有 AI 数据安全问题，更符合目前的实际情况。&lt;/p&gt;
+&lt;h2 id="对电信运营商的深刻启示"&gt;对电信运营商的深刻启示
+&lt;/h2&gt;&lt;p&gt;作为拥有庞大网络基础设施、海量高价值用户数据以及承接大量政企信息化建设的运营商（如中国联通、中国移动、中国电信）来说，Anthropic 的报告提供了极具战略价值的启示。AI 时代，运营商参与 AI 安全，不能理解为增加一个新的安全产品，而应充分发挥自身在 &lt;strong&gt;网络、云、算力和边缘资源&lt;/strong&gt; 方面的优势，逐步从“提供连接”向“提供可信的 AI 基础设施”延伸。AI 数据安全将成为运营商进入这一领域的重要切入点。过去运营商解决的是 &lt;strong&gt;“企业如何连接云”&lt;/strong&gt; ，AI 时代可以解决 &lt;strong&gt;“企业如何安全地连接 AI”&lt;/strong&gt; ，再进一步则是 &lt;strong&gt;“企业如何获得可信的 AI 计算环境”&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h3 id="从连接安全向-ai-使用安全延伸"&gt;从连接安全向 AI 使用安全延伸
+&lt;/h3&gt;&lt;p&gt;通过增强AI智能网关能力，将 AI 访问纳入运营商现有的政企网络和安全服务体系。&lt;/p&gt;
+&lt;p&gt;重点不是运营商自己去做一个大模型，而是帮助企业解决AI 可以访问什么、数据能不能出去、应该使用什么模型，以及整个使用过程如何管理。将 AI 安全与政企专线、云联网、SD-WAN 等现有业务结合，逐步形成面向企业的 AI 安全接入能力。&lt;/p&gt;
+&lt;h3 id="从提供算力向提供可信-ai-计算环境发展"&gt;从提供算力向提供可信 AI 计算环境发展
+&lt;/h3&gt;&lt;p&gt;随着 GPU 算力逐步成为基础资源，单纯提供 GPU 的差异化空间将大大压缩。&lt;/p&gt;
+&lt;p&gt;运营商可以进一步强化 AIDC 的 &lt;strong&gt;可信计算和安全保障能力&lt;/strong&gt; ，面向金融、政务、能源、工业以及大型企业等高敏感客户，提供从网络连接到 AI 计算的一体化可信环境。&lt;/p&gt;
+&lt;p&gt;发展方向可以概括为： &lt;strong&gt;从“卖算力”向“提供可信的 AI 计算服务”转变&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h3 id="发挥网络和边缘资源优势发展分布式-ai"&gt;发挥网络和边缘资源优势，发展分布式 AI
+&lt;/h3&gt;&lt;p&gt;AI 的计算位置将不再全部集中于少数大型数据中心。&lt;/p&gt;
+&lt;p&gt;运营商应利用现有的省、市、县、园区和企业节点资源，根据业务对时延、数据安全和算力的不同要求，推动 AI 能力向网络边缘延伸。形成 &lt;strong&gt;中心算力负责通用 AI，边缘算力支撑低时延场景，本地算力承载高敏感业务&lt;/strong&gt; 。通过云边协同，使运营商广泛分布的网络和机房资源转化为 AI 基础设施优势。&lt;/p&gt;
+&lt;h3 id="从单点能力建设走向云网边算一体化"&gt;从单点能力建设走向云—网—边—算一体化
+&lt;/h3&gt;&lt;p&gt;运营商最大的优势并不是掌握某一项 AI 安全技术，而是能同时掌握 &lt;strong&gt;网络连接、数据传输、计算资源和分布式节点&lt;/strong&gt; ，形成系统级的可信 AI 基础设施解决方案。 通过逐步打通 AI 接入、网络连接、算力部署和安全管理，形成统一的 AI 基础设施服务体系，最终实现： &lt;strong&gt;让数据去合适的地方、让 AI 在合适的位置计算，并让整个过程可控、可管、可信。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="结语ai时代的安全边界正在进入计算内部"&gt;结语：AI时代的安全边界正在进入“计算内部”
+&lt;/h2&gt;&lt;p&gt;AI 的发展正在改变数据安全的边界。&lt;/p&gt;
+&lt;p&gt;过去，重点是保护数据在网络传输和存储过程中的安全；现在，企业越来越多地将代码、文档、客户信息和业务数据交给 AI 处理，安全问题进一步延伸到了 &lt;strong&gt;数据进入计算环境之后&lt;/strong&gt; 。因此，AI 时代的数据安全正在从： &lt;strong&gt;传输安全 → 计算安全 → 全生命周期安全。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对运营商而言，在 AI 安全领域的演进可以归纳为一条主线： &lt;strong&gt;从“保障网络连接安全”，向“保障 AI 使用安全”，进一步向“提供可信 AI 基础设施”演进。&lt;/strong&gt; 其核心不是与专业 AI 厂商竞争模型和算法，而是发挥运营商 &lt;strong&gt;网络、云、算力和边缘资源的综合优势&lt;/strong&gt; ，成为企业 AI 应用与算力基础设施之间可信赖的连接者、服务者和安全保障者。&lt;/p&gt;
+&lt;p&gt;最终需要解决的核心问题其实也很简单： &lt;strong&gt;让数据安全地到达 AI，让 AI 在可信的环境中计算。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>AI时代的真正壁垒，不是技术，而是判断</title><link>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</link><pubDate>Fri, 31 Oct 2025 07:36:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/</guid><description>&lt;img src="https://blog.fallleaf.net/p/growth-ai-era-real-moat-judgment/cover.webp" alt="Featured image of post AI时代的真正壁垒，不是技术，而是判断" /&gt;&lt;h2 id="年长者的逆袭"&gt;年长者的逆袭
+&lt;/h2&gt;&lt;p&gt;在人工智能的使用方式上，年轻人与年长者之间出现了一种有趣的分化：年轻人更喜欢把LLM当成生活顾问，频繁提问；而年长者则倾向于将其用作知识验证的工具，提问更精准。这种差异揭示了一个重要事实——在AI时代，使用频率并不代表掌握程度。&lt;/p&gt;
+&lt;p&gt;过去的每一次技术革命几乎都属于年轻人，他们学习快、敢尝试、没有心理包袱。然而这一次的AI浪潮，规律似乎正在反转。AI并不是一个简单的工具升级，而是一个 &lt;strong&gt;“垃圾进、垃圾出”&lt;/strong&gt; 的黑箱系统，输入的质量决定了输出的价值。&lt;/p&gt;
+&lt;p&gt;在这样的体系中，经验第一次成为决定性的筹码。AI不提供真理，它只是模仿逻辑的镜像。输入者如果缺乏判断力，再先进的模型也只能制造幻觉。&lt;/p&gt;
+&lt;h2 id="经验的价值与噪声过滤器"&gt;经验的价值与“噪声过滤器”
+&lt;/h2&gt;&lt;p&gt;年轻人擅长掌握操作技巧，懂得提示词、插件、脚本的使用，却往往缺乏对输出真伪的识别力。他们容易将AI的回答视为权威，而忘记那只是概率语言模型的产物，它没有理解，只有统计。&lt;/p&gt;
+&lt;p&gt;相较之下，那些经过多年训练、熟悉事实与逻辑的年长者，更能看穿AI的幻觉。他们的经验像是一种 &lt;strong&gt;“噪声过滤器”&lt;/strong&gt; ，能在表面合理的回答中辨认出不合逻辑的部分。&lt;/p&gt;
+&lt;p&gt;这意味着，AI不仅没有削弱经验的价值，反而让经验成为一种新的算力。判断力正在成为稀缺资源，而判断力的来源正是被时间沉淀下来的经验。&lt;/p&gt;
+&lt;h2 id="逆转的格局与提问力"&gt;逆转的格局与提问力
+&lt;/h2&gt;&lt;p&gt;“长江后浪拍前浪”的格局在这场变革中出现了逆转。年轻人依旧敏捷，但真正的掌舵人，却往往是那些懂得观察与质疑、能在潮流中保持冷静的“前浪”。&lt;/p&gt;
+&lt;p&gt;对于他们来说，AI不再是万能的救世主，而是一种理性合作的伙伴。他们不会盲信模型，而是利用AI去验证思路、拓展论据、节省资料整理的时间。AI对他们而言，是效率的放大器；但对缺乏判断力的人而言，却成为思维的稀释器。&lt;/p&gt;
+&lt;p&gt;AI使用中最关键的能力其实是 &lt;strong&gt;“提问”&lt;/strong&gt; 。然而提问的质量取决于是否理解问题的上下文。一个没有清晰背景意识的提问者，只能得到模糊的答案。&lt;/p&gt;
+&lt;p&gt;比如问“为什么长时间看手机眼睛会疲劳”，AI的回答大多停留在“因为用眼过度”这样的表层；但若补充条件“是否与蓝光刺激、眨眼频率降低有关”，模型才会给出涉及视疲劳机制的深入解释。差距不在AI，而在于提问者是否清楚自己在问什么。&lt;/p&gt;
+&lt;h2 id="知识的壁垒与认知的不可取代性"&gt;知识的壁垒与认知的不可取代性
+&lt;/h2&gt;&lt;p&gt;AI能让新手的产出迅速达到八十分的水准，实现“合格”的普遍化，却无法凭空创造卓越。真正的卓越来自非结构化的经验——那些长期积累的判断、人脉、直觉和行业理解。&lt;/p&gt;
+&lt;p&gt;例如记者如果能获得如黄仁勋这样的企业家的私下见解，其报道的价值将立刻脱颖而出。AI无法触及这种基于信任和真实互动形成的 &lt;strong&gt;“隐性知识”&lt;/strong&gt; ，而这恰恰是经验者的核心优势。&lt;/p&gt;
+&lt;p&gt;AI提高了效率，却无法取代认知。没有先验知识的支撑，AI生成的内容就像无根之水——它能写，却不懂。真正决定AI价值的，不是操作技巧，而是使用者的世界观。&lt;/p&gt;
+&lt;p&gt;AI的支持者常说“AI会让人人平等”，这是一个美好的幻觉。AI的确降低了信息的门槛，但并没有降低理解的门槛。信息越容易获取，判断反而越重要。AI的普及让 &lt;strong&gt;“思考”和“复制思考”&lt;/strong&gt; 变成了两种截然不同的能力：前者属于人，后者属于机器。&lt;/p&gt;
+&lt;p&gt;那些缺乏思维框架的人，用AI写得再多，也只是文字的堆砌；而拥有知识体系和逻辑秩序的人，即便使用同样的工具，也能写出结构清晰、推理严谨的成果。区别不在AI，而在人。&lt;/p&gt;
+&lt;p&gt;经验不是数据的堆叠，而是对因果关系的认知。它来自真实世界中一次次的失败与修正。机器可以预测，却不能犯错；而人类的智慧恰恰源自 &lt;strong&gt;“犯错之后的反思”&lt;/strong&gt; 。AI能模仿智慧，但永远无法生成智慧。&lt;/p&gt;
+&lt;p&gt;许多人以为AI是捷径，结果走得更慢。因为他们省略了思考，只留下操作。经验的价值正在于此——它迫使人重新审视问题的结构，而不是依赖答案的速度。&lt;/p&gt;
+&lt;h2 id="弯道超车的核心逻辑"&gt;弯道超车的核心逻辑
+&lt;/h2&gt;&lt;p&gt;AI时代的弯道超车，不在于谁掌握了更多工具，而在于谁能把经验转化为提问力。懂得如何提问、为什么提问的人，才真正掌握了AI的核心逻辑。&lt;/p&gt;
+&lt;p&gt;经验不是时代的包袱，而是认知的资本。&lt;/p&gt;
+&lt;p&gt;AI 时代，真正珍贵的，不是信息，而是判断。&lt;/p&gt;</description></item><item><title>德勤退还澳政府款项：生成式AI误用引发咨询行业信任危机</title><link>https://blog.fallleaf.net/p/notes-deloitte-ai-misuse-consulting-trust-crisis/</link><pubDate>Tue, 07 Oct 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-deloitte-ai-misuse-consulting-trust-crisis/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-deloitte-ai-misuse-consulting-trust-crisis/cover.webp" alt="Featured image of post 德勤退还澳政府款项：生成式AI误用引发咨询行业信任危机" /&gt;&lt;p&gt;德勤澳大利亚分公司近日同意向联邦政府退还44万澳元咨询费用，原因是其提交的一份社会福利合规报告中存在严重内容造假，且这些错误源于未经充分监督的生成式人工智能工具的使用。此事件被广泛视为政府咨询领域迄今最具代表性的人工智能问责案例之一，暴露了AI技术在专业服务中的系统性风险。&lt;/p&gt;
+&lt;h2 id="事件概述ai生成内容导致虚假信息"&gt;事件概述：AI生成内容导致虚假信息
+&lt;/h2&gt;&lt;p&gt;根据澳大利亚就业与劳资关系部的确认，德勤在2024年7月提交的报告中使用了大型语言模型（Azure OpenAI GPT-4o）以“填补文档空白”。然而，该技术的使用并未在初稿中披露，且直接导致以下关键错误：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;伪造司法引文&lt;/strong&gt; ：报告引用了联邦法院法官詹妮弗·戴维斯（Jennifer Davies）在“机器人欠债”（Robodebt）案件中的言论，但该引文并不存在。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;虚构学术来源&lt;/strong&gt; ：报告列出至少12篇不存在的学术论文与书籍，构成严重的文献造假。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;延迟披露AI使用&lt;/strong&gt; ：上述问题由悉尼大学学者克里斯托弗·拉奇（Dr. Christopher Rudge）于8月首次揭露，德勤随后才在更正版本中承认使用了AI模型。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;尽管政府发言人表示这些错误未影响报告的主要结论，但报告的可信度和方法论完整性已受到广泛质疑。&lt;/p&gt;
+&lt;h2 id="问责焦点专业透明度与ai治理缺失"&gt;问责焦点：专业透明度与AI治理缺失
+&lt;/h2&gt;&lt;p&gt;该事件引发了对政府采购流程中人工智能使用规范的广泛讨论。关键问题包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;技术使用未披露&lt;/strong&gt; ：德勤未在报告中说明AI参与内容生成，违反了基本的专业透明原则。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缺乏验证机制&lt;/strong&gt; ：报告内容未经过充分人工审核，导致AI“幻觉”（hallucination）现象直接进入正式文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;政府回应不足&lt;/strong&gt; ：尽管德勤已退还部分款项，但其回应仅限于“已与客户解决”，缺乏对方法论失误的实质性反思。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;工党参议员黛博拉·奥尼尔（Deborah O&amp;rsquo;Neill）批评称，政府在采购咨询服务时应主动询问是否使用AI，并要求对专业性和数据来源进行验证。&lt;/p&gt;
+&lt;h2 id="核心问题剖析ai幻觉与专业信任的冲突"&gt;核心问题剖析：AI幻觉与专业信任的冲突
+&lt;/h2&gt;&lt;p&gt;德勤案例揭示了生成式AI在专业咨询中的根本性风险：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;幻觉现象系统性存在&lt;/strong&gt; ：大型语言模型在缺乏语境约束和专家监督的情况下，极易生成看似合理但实则虚假的内容。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方法论缺陷影响决策基础&lt;/strong&gt; ：当报告建立在未经验证的AI生成内容之上，其政策建议的可信度和可执行性将大打折扣。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;专业服务的边界模糊化&lt;/strong&gt; ：AI工具的引入若无明确规范，将使“专业判断”与“自动生成”之间的界限变得模糊，削弱咨询行业的责任机制。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;学者拉奇指出，若报告的基础方法本身存在缺陷且未被披露，其结论将缺乏可信度。行业观察者亦警告，在缺乏人工监督和可靠性验证的前提下大规模部署AI，将直接威胁专业服务的质量与伦理底线。&lt;/p&gt;
+&lt;h2 id="结语ai应用亟需制度性约束"&gt;结语：AI应用亟需制度性约束
+&lt;/h2&gt;&lt;p&gt;德勤事件并非技术失误的孤例，而是对当前AI应用模式的一次系统性警示。在专业服务领域，生成式AI的使用必须建立在明确披露、专家审核和责任归属的基础之上。否则，技术便利将转化为信任危机，最终损害的不仅是客户利益，更是整个行业的公信力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;新闻来源：&lt;/strong&gt;
+&lt;a class="link" href="https://www.ft.com/content/934cc94b-32c4-497e-9718-d87d6a7835ca" target="_blank" rel="noopener"
+&gt;https://www.ft.com/content/934cc94b-32c4-497e-9718-d87d6a7835ca&lt;/a&gt;&lt;/p&gt;</description></item><item><title>效率幻觉：为什么 AI 让我们看似更快，实则更慢？</title><link>https://blog.fallleaf.net/p/notes-efficiency-illusion/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-efficiency-illusion/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-efficiency-illusion/cover.webp" alt="Featured image of post 效率幻觉：为什么 AI 让我们看似更快，实则更慢？" /&gt;&lt;h2 id="ai-生产力陷阱为什么团队越用-ai效率反而越低"&gt;AI 生产力陷阱：为什么团队越用 AI，效率反而越低？
+&lt;/h2&gt;&lt;p&gt;过去两年，AI 工具的应用呈现出爆发式增长。从撰写邮件、起草报告，到生成代码和设计初稿，AI 已经快速进入了日常工作流程。&lt;/p&gt;
+&lt;p&gt;然而， &lt;strong&gt;一项由麻省理工学院（MIT）与德克萨斯大学奥斯汀分校联合开展的研究&lt;/strong&gt; 提醒我们：AI 并非天然的效率加速器。在许多情况下，它可能制造出一种新的低效形式—— &lt;strong&gt;“无效产出”（Workslop）&lt;/strong&gt; ，并逐步削弱团队的协作质量与整体生产力。&lt;/p&gt;
+&lt;h2 id="什么是无效产出workslop"&gt;什么是“无效产出”（Workslop）？
+&lt;/h2&gt;&lt;p&gt;研究人员观察到，AI 的高产出特性带来了大量内容的快速生成，但其中不少缺乏深度、准确性或应用价值。他们将这类内容定义为 &lt;strong&gt;Workslop&lt;/strong&gt; ，即“无效产出”或“虚假工作泡沫”。&lt;/p&gt;
+&lt;p&gt;其主要表现包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;形式完整但缺乏实质&lt;/strong&gt; ：结构清晰、语言流畅，但逻辑和价值不足。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;言之凿凿但事实失真&lt;/strong&gt; ：看似专业，实则缺乏可靠的依据或数据支持。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内容过剩但信息稀缺&lt;/strong&gt; ：重复、模板化和冗余内容堆积，导致有用信息匮乏。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些内容往往让人误以为工作已经完成，但团队在处理时需要投入额外的时间与精力来筛选和修正，从而延长了实际工作周期。&lt;/p&gt;
+&lt;h2 id="为什么无效产出会降低效率"&gt;为什么“无效产出”会降低效率？
+&lt;/h2&gt;&lt;p&gt;研究指出，AI 生成内容在以下几个方面对组织效率造成负面影响：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;信息过载&lt;/strong&gt;
+AI 生成的内容量过大，超出人类的处理能力，反而使得决策过程被拖慢。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;二次加工成本增加&lt;/strong&gt;
+由于缺乏事实核查和上下文理解，团队成员需要反复验证和修改，抵消了原本节省的时间。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;协作信任下降&lt;/strong&gt;
+当员工怀疑同事提交的成果未经审慎处理而直接来自 AI，跨团队合作的信任度会明显降低。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;思维依赖性增强&lt;/strong&gt;
+长期依赖 AI 完成常规工作，可能导致主动思考和创造性解决问题的能力下降。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="如何更有效地使用-ai"&gt;如何更有效地使用 AI？
+&lt;/h2&gt;&lt;p&gt;研究并未否认 AI 的价值，而是提出了更合理的使用路径：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;划定应用范围&lt;/strong&gt;
+适合 AI 的是结构化、标准化的工作，例如初稿撰写、数据整理或格式处理。涉及战略判断、客户沟通或创意构思的任务应仍由人主导。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;建立复核机制&lt;/strong&gt;
+将 AI 输出视为“草稿”，必须经过事实核查和逻辑验证后，才能作为正式成果使用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;强调质量而非数量&lt;/strong&gt;
+应将 AI 用作提升分析、整合与创新的辅助工具，而不是依赖它生成大量表面完整的内容。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="结语"&gt;结语
+&lt;/h2&gt;&lt;p&gt;AI 是工具，而非答案。它能否提升生产力，取决于使用者如何设定边界和制定流程。研究者指出： &lt;strong&gt;AI 不会自动创造效率，它更可能放大既有的习惯——好的更高效，差的更低效。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于个人和组织而言，真正的效率提升，不在于 AI 的使用范围，而在于如何在人机协同中保持专业判断和清晰分工。&lt;/p&gt;
+&lt;p&gt;参考文章 ：&lt;/p&gt;
+&lt;p&gt;(&lt;a class="link" href="https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity" target="_blank" rel="noopener"
+&gt;https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity&lt;/a&gt;)&lt;/p&gt;</description></item><item><title>别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化</title><link>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</link><pubDate>Sat, 27 Sep 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-llm-dependence-critical-thinking-degrade/cover.webp" alt="Featured image of post 别让“智能依赖”吞噬你！LLM 带来的高效，代价是独立思考的退化" /&gt;&lt;h2 id="引子"&gt;引子
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;网络段子：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用了AI后，共情了领导:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;聪明但不干活的工贼deepseek ，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;愚蠢但勤劳的牛马豆包 ，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不加预算请不起的留子chatgpt，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;裁不掉的关系户文心一言 ，&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;而我成为了那个一分钟改五版的领导 。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="从助手到主宰你真的还在独立思考吗"&gt;从“助手”到“主宰”：你真的还在独立思考吗？
+&lt;/h2&gt;&lt;p&gt;你有没有这样的瞬间：打开空白文档，不是自己列提纲，而是本能地问AI“怎么写”？&lt;/p&gt;
+&lt;p&gt;自从 LLM（大语言模型）出现，我们的工作效率确实被拉满。它能帮你列提纲、做总结、提炼标题，像一个万能的智能副驾。但我们正面临一个深刻的悖论： 我们以为在用工具，工具却在重塑我们的大脑 。&lt;/p&gt;
+&lt;p&gt;这种“ 智能依赖 ”正在悄悄侵蚀我们最核心的几项能力：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;耐心的丧失&lt;/strong&gt; ： 我们习惯了AI的“ &lt;strong&gt;丝滑输出&lt;/strong&gt; ”，不再愿意忍受信息获取和逻辑梳理的“ &lt;strong&gt;延迟&lt;/strong&gt; ”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;批判的退化&lt;/strong&gt; ： 当LLM给出的答案过于完整和流畅时，我们放弃了深度质疑和查证的动力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;创造力的固化&lt;/strong&gt; ： 我们将“ &lt;strong&gt;思考&lt;/strong&gt; ”降级为“ &lt;strong&gt;提示词&lt;/strong&gt; ”，从亲手创造者退化为发号施令的“ &lt;strong&gt;提示工程师&lt;/strong&gt; ”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这不是进步，而是一种“ &lt;strong&gt;快捷键取代思考键&lt;/strong&gt; ”的被动适应。我们正用对速度的追求，交换对思维的掌控。&lt;/p&gt;
+&lt;h2 id="效率的甜蜜毒药llm如何重塑我们的行为模式"&gt;效率的“甜蜜毒药”：LLM如何重塑我们的行为模式
+&lt;/h2&gt;&lt;p&gt;技术的本质是放大器。LLM极大地放大了个体的产出速度，但同时也放大了一个“ &lt;strong&gt;浅尝辄止&lt;/strong&gt; ”的巨大趋势。&lt;/p&gt;
+&lt;p&gt;在一个内容爆炸的时代，数量正在压倒质量。当AI可以无限、批量地生成内容时，我们对价值的衡量标准发生了变化：我们开始追求“ &lt;strong&gt;AI卷出来的数量&lt;/strong&gt; ”，而非“ &lt;strong&gt;人类打磨的洞察&lt;/strong&gt; ”。&lt;/p&gt;
+&lt;p&gt;一个残酷的例子或许能说明问题： 在某些内容创作平台，有研究显示，AI生成内容的比例已急剧上升，但其用户互动率和转发深度却在下降。因为机器可以模仿逻辑，但无法模拟共情、情感和独一无二的生命体验。&lt;/p&gt;
+&lt;p&gt;如果人人都问AI相同的问题，得到的答案也将趋向平庸和同质化。这种“集体无意识”的平庸，正在模糊我们作为个体独特性和价值创造的边界。我们以为自己掌握着方向盘，却发现车速和方向都被“ &lt;strong&gt;高效&lt;/strong&gt; ”的牵引绳所控制。&lt;/p&gt;
+&lt;h2 id="人是目的ai是手段如何守住我们不可替代的核心竞争力"&gt;人是目的，AI是手段：如何守住我们不可替代的核心竞争力？
+&lt;/h2&gt;&lt;p&gt;LLM可以是最好的助手，但绝不能成为我们思考的主人。它能帮你跑得更快，但无法取代人类的判断力、情感表达和价值创造。&lt;/p&gt;
+&lt;p&gt;真正的进步，是人与工具的深度协作，而非人的全面退让。面对这股浪潮，我们必须清醒地给自己设置思维“ &lt;strong&gt;防火墙&lt;/strong&gt; &lt;strong&gt;行动&lt;/strong&gt; ”：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;反思区行动&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目的 ： 找回批判性思维 。&lt;/p&gt;
+&lt;p&gt;行动 ： 每次使用 AI 辅助产出后，强制自己写一段人工总结： AI的输出里，哪句话是你的原创洞察？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;独特性坚守&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目的 ：摆脱同质化平庸。&lt;/p&gt;
+&lt;p&gt;行动 ： 每周进行一次“ 无AI创作练习 ”：刻意选择一个主题，从零开始自己动手列大纲、找论据，用“费力”的方式激活你的思考肌肉。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;主导权回归&lt;/strong&gt; ：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目的 ： 将LLM视为工具，而非终点 。&lt;/p&gt;
+&lt;p&gt;行动： 倒置工作流： 先由你思考并完成30%的初稿和核心论点，再用AI来优化表达、补充素材；绝不从一个空白提示词开始你的工作。&lt;/p&gt;
+&lt;p&gt;AI时代，我们不拒绝智能，但我们更需要清醒地保有对真理的求索欲，对世界的情感共鸣。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;请不要让你的大脑，成为被机器淘汰的第一个器官。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>社交媒体的“最后时刻”：喧嚣退潮，新的开始？</title><link>https://blog.fallleaf.net/p/notes-social-media-end-era-new-start/</link><pubDate>Sat, 27 Sep 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-social-media-end-era-new-start/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-social-media-end-era-new-start/cover.webp" alt="Featured image of post 社交媒体的“最后时刻”：喧嚣退潮，新的开始？" /&gt;&lt;h2 id="导语"&gt;导语
+&lt;/h2&gt;&lt;p&gt;每天刷着信息流，你是不是也有这样的感觉： &lt;strong&gt;内容越来越多，但真正值得停留的越来越少？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;近日，Noema 杂志刊登了一篇文章《 &lt;strong&gt;The Last Days of Social Media&lt;/strong&gt; 》，作者 James O’Sullivan 提出一个大胆观点： &lt;strong&gt;社交媒体正在走向“最后时刻”&lt;/strong&gt; 。这不是某个平台马上倒下，而是整个模式正遭遇瓶颈。&lt;/p&gt;
+&lt;h2 id="社交媒体怎么了"&gt;社交媒体怎么了？
+&lt;/h2&gt;&lt;p&gt;O’Sullivan 指出：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;真实性稀薄&lt;/strong&gt; ：朋友圈里曾是生活点滴，如今却被 AI 合成、标题党和重复内容淹没。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;算法绑架&lt;/strong&gt; ：平台更关心你能停留多久，而不是你能收获什么。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;虚拟亲密陷阱&lt;/strong&gt; ：“Bot-girl 经济”让真人和机器界限模糊，虚假的互动被包装成“真实的陪伴”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;结果？我们刷得越多，越感到空虚。点赞和评论在减少，信任感也在消失。&lt;/p&gt;
+&lt;h2 id="退潮的迹象"&gt;退潮的迹象
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;用户疲惫&lt;/strong&gt; ：刷屏成了机械动作，年轻人开始尝试“数字排毒”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解捆绑趋势&lt;/strong&gt; ：更多人逃离大平台，去往 Discord、Substack、Patreon 等小圈子。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台自救&lt;/strong&gt; ：大公司也在推小群组、订阅社群，想把人重新拉回来。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="未来的可能"&gt;未来的可能
+&lt;/h2&gt;&lt;p&gt;O’Sullivan 并不悲观，他看到了几条新路：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;小而美社群&lt;/strong&gt; —— 真实互动比规模更重要。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;公共服务化治理&lt;/strong&gt; —— 平台像公共广播一样运作，更透明、更负责任。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用户可控算法&lt;/strong&gt; —— 让你决定信息如何排序，不再被动“被推荐”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数字素养教育&lt;/strong&gt; —— 从小培养对算法和注意力经济的认知。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="给我们的启示"&gt;给我们的启示
+&lt;/h2&gt;&lt;p&gt;社交媒体的退潮，或许并不是坏事。&lt;/p&gt;
+&lt;p&gt;它提醒我们：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;真正的连接，往往来自小圈子的深度交流；&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;我们要学会管理自己的注意力，而不是被平台牵着走；&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;未来的互联网，也许不再是一个“大广场”，而是无数个“温暖小岛”。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="结语"&gt;结语
+&lt;/h2&gt;&lt;p&gt;社交媒体的“最后时刻”，不是终结，而是一场转型。&lt;/p&gt;
+&lt;p&gt;当注意力经济走到尽头，我们也许能重新找回互联网最初的价值：
+&lt;strong&gt;让人和人更好地连接，而不是被信息淹没。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;原文链接:&lt;/strong&gt;
+&lt;a class="link" href="https://www.noemamag.com/the-last-days-of-social-media/" target="_blank" rel="noopener"
+&gt;https://www.noemamag.com/the-last-days-of-social-media/&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

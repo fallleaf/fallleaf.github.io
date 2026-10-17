@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>政策与监管 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/policy-regulation/</link><description>Recent content in 政策与监管 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Thu, 20 Aug 2026 18:04:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/policy-regulation/index.xml" rel="self" type="application/rss+xml"/><item><title>算力网与新一代通信网——定义、内容与关系</title><link>https://blog.fallleaf.net/p/b338a002/</link><pubDate>Thu, 20 Aug 2026 18:04:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/b338a002/</guid><description>&lt;img src="https://blog.fallleaf.net/p/b338a002/cover.webp" alt="Featured image of post 算力网与新一代通信网——定义、内容与关系" /&gt;&lt;h2 id="概述"&gt;概述
+&lt;/h2&gt;&lt;p&gt;算力网与新一代通信网均被纳入国家&amp;quot;六张网&amp;quot;顶层部署。2026年4月28日，中共中央政治局会议明确提出&amp;quot;加强水网、新型电网、算力网、新一代通信网、城市地下管网、物流网等规划建设&amp;quot;，标志着两张网正式上升为国家战略。&amp;ldquo;十五五&amp;quot;规划纲要将其列为现代化基础设施体系的核心组成部分。2026年全年&amp;quot;六张网&amp;quot;及重点领域投资超7万亿元，&amp;ldquo;十五五&amp;quot;时期总投资预计超过10万亿元。&lt;/p&gt;
+&lt;p&gt;两张网分别对应数字经济的&amp;quot;算&amp;quot;与&amp;quot;传&amp;quot;两大核心能力——算力网解决算力&amp;quot;从哪来、怎么调度&amp;quot;的问题，新一代通信网解决数据&amp;quot;怎么传、多快传&amp;quot;的问题，二者深度融合构成&amp;quot;算网一体&amp;quot;体系。&lt;/p&gt;
+&lt;h2 id="算力网"&gt;算力网
+&lt;/h2&gt;&lt;h3 id="一定义来源"&gt;（一）定义来源
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;时间&lt;/th&gt;
+&lt;th&gt;文件/场合&lt;/th&gt;
+&lt;th&gt;发布主体&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2022年2月&lt;/td&gt;
+&lt;td&gt;启动建设国家算力枢纽节点通知&lt;/td&gt;
+&lt;td&gt;国家发改委等四部门&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2023年10月&lt;/td&gt;
+&lt;td&gt;《算力基础设施高质量发展行动计划》&lt;/td&gt;
+&lt;td&gt;工信部等六部门&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2023年12月&lt;/td&gt;
+&lt;td&gt;《关于深入实施&amp;quot;东数西算&amp;quot;工程加快构建全国一体化算力网的实施意见》&lt;/td&gt;
+&lt;td&gt;国家发改委、国家数据局等五部门&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2024年12月&lt;/td&gt;
+&lt;td&gt;《国家数据基础设施建设指引》&lt;/td&gt;
+&lt;td&gt;国家发改委、国家数据局、工信部&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2025年&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;十五五&amp;quot;规划纲要&lt;/td&gt;
+&lt;td&gt;全国人大&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年4月&lt;/td&gt;
+&lt;td&gt;中共中央政治局会议&lt;/td&gt;
+&lt;td&gt;中共中央&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年5月&lt;/td&gt;
+&lt;td&gt;丁薛祥调研算力网建设讲话&lt;/td&gt;
+&lt;td&gt;国务院副总理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年6月16日&lt;/td&gt;
+&lt;td&gt;国家发改委民营企业座谈会&lt;/td&gt;
+&lt;td&gt;国家发改委主任郑栅洁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：国家发改委官网（ndrc.gov.cn）、新华社、央视新闻、中国政府网（gov.cn）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="二定义"&gt;（二）定义
+&lt;/h3&gt;&lt;p&gt;算力网（全国一体化算力网）是以&amp;quot;东数西算&amp;quot;工程为战略骨架，依托8大国家算力枢纽节点和10个国家数据中心集群，通过&amp;quot;新八纵八横&amp;quot;骨干光缆互联，将散落在全国各地的通用算力、智能算力、超级算力等多元算力设施连接成网，实现全国算力资源统筹调度、供需适配、集约高效利用的新型基础设施体系。算力是继热力、电力之后的新型基础资源，算力网被定位为&amp;quot;算力版的国家电网&amp;rdquo;，是支撑数字经济、人工智能等高质量发展的关键基础设施。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：&amp;ldquo;十五五&amp;quot;规划纲要；丁薛祥2026年5月调研讲话（新华社）；央视新闻2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="三核心内容"&gt;（三）核心内容
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 空间布局（&amp;ldquo;8+10+3&amp;quot;体系）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;8大国家算力枢纽：京津冀、长三角、粤港澳大湾区、成渝、内蒙古、贵州、甘肃、宁夏。&lt;/p&gt;
+&lt;p&gt;10个国家数据中心集群：各枢纽下辖。&lt;/p&gt;
+&lt;p&gt;3个算电协同发展区域：2026年6月，国家发展改革委政策研究室副主任、新闻发言人李超披露，我国加快构建全国一体化算力网，形成以8大国家算力枢纽、10个国家算力集群、3个算电协同发展区域为重点的&amp;quot;8+10+3&amp;quot;算力空间布局，&amp;ldquo;3&amp;quot;指最新布局的三个国家级算电协同发展区域，是本轮建设的战略亮点。&lt;/p&gt;
+&lt;p&gt;全国智能算力总规模已达188万PFLOPS（FP16），八大枢纽节点算力占比超80%。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：国家发改委&amp;quot;东数西算&amp;quot;工程启动通知（2022年2月）；国家发改委2026年6月新闻发布会；央视新闻2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2. 骨干网络&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;新八纵八横&amp;quot;骨干光缆沿高铁线延伸。已规划建设181条&amp;quot;东数西算&amp;quot;干线光缆（来源：央视财经2024年7月报道），开通26个互联网骨干直联点。目标：1ms城市算力网、5ms区域算力网、20ms跨枢纽算力网。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：国家发改委等五部门《关于深入实施&amp;quot;东数西算&amp;quot;工程加快构建全国一体化算力网的实施意见》（2023年12月）；央视财经2024年7月报道；福建省经济信息中心报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;3. 建设原则&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;统筹布局、有序建设&lt;/strong&gt; ：注重供需适配、算电协同，加快形成全国一张网。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;算力监测调度&lt;/strong&gt; ：提升算力接入和精准匹配能力，把分散的资源整合利用起来。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;算电协同&lt;/strong&gt; ：统筹能源资源配置与算力设施建设，&amp;ldquo;以电强算、以算促电&amp;rdquo;，探索绿电直连。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安全韧性&lt;/strong&gt; ：提高设施、模型、数据、网络安全防护能力。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;国产化&lt;/strong&gt; ：推动国产软硬件从&amp;quot;可用&amp;quot;迈向&amp;quot;好用&amp;rdquo;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：丁薛祥2026年5月调研讲话（新华社）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;4. 投资规模&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;算力网直接投资达万亿量级（含信息设备和土木建筑工程）。2026年&amp;quot;六张网&amp;quot;及重点领域投资超7万亿元。算力网投资具有乘数效应，带动AI、自动驾驶、低空经济、合成生物等产业。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：央视新闻2026年6月报道；国家发改委2026年6月16日座谈会（金融界报道）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;5. 参与主体&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;基础电信企业：中国联通（华北廊坊数据中心）、中国移动（呼和浩特智算中心）、中国电信等电信运营商深度参与。互联网/科技企业：华为、腾讯、阿里等参与数据中心集群建设。地方政府：各枢纽节点所在省市配套建设。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：丁薛祥调研中国联通华北（廊坊）数据中心、中国移动呼和浩特智算中心（新华社2026年5月）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="新一代通信网"&gt;新一代通信网
+&lt;/h2&gt;&lt;h3 id="一定义来源-1"&gt;（一）定义来源
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;时间&lt;/th&gt;
+&lt;th&gt;文件/场合&lt;/th&gt;
+&lt;th&gt;发布主体&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2025年&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;十五五&amp;quot;规划纲要&lt;/td&gt;
+&lt;td&gt;全国人大&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年4月28日&lt;/td&gt;
+&lt;td&gt;中共中央政治局会议&lt;/td&gt;
+&lt;td&gt;中共中央&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年5月&lt;/td&gt;
+&lt;td&gt;央视《新闻联播》&amp;ldquo;六张网&amp;quot;调研&lt;/td&gt;
+&lt;td&gt;央视/千龙网&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年5月29日&lt;/td&gt;
+&lt;td&gt;中新网/央视新闻报道&lt;/td&gt;
+&lt;td&gt;中国信通院副院长王志勤&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年6月&lt;/td&gt;
+&lt;td&gt;新华社/经济日报报道&lt;/td&gt;
+&lt;td&gt;中国信通院副所长赵文玉&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年7月20日&lt;/td&gt;
+&lt;td&gt;国新办新闻发布会&lt;/td&gt;
+&lt;td&gt;工信部信息通信管理局局长谢存&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2026年7月30日&lt;/td&gt;
+&lt;td&gt;中共中央政治局会议&lt;/td&gt;
+&lt;td&gt;中共中央&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：中国政府网（gov.cn）、工信部官网、国新办发布会、新华社、央视新闻&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="二定义-1"&gt;（二）定义
+&lt;/h3&gt;&lt;p&gt;新一代通信网是以新一代通信技术创新和新型应用需求为驱动，以高速泛在、全域智能、韧性安全、融合赋能等为特征，服务于经济社会数智化转型的&amp;quot;空天地海&amp;quot;一体化网络设施体系。它不仅包含由5G-A/6G网络、光网络和数据通信网络等构成的基础网络，以卫星互联网为主体的空间网络，涵盖工业互联网、低空智联网等的融合网络，还包括服务应急通信保障的应急通信网络。从5G、5G-A到未来6G的移动通信网，以及万兆光网、卫星互联网等，都属于新一代通信网范畴。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：中国信通院技术与标准研究所副所长赵文玉（新华社2026年6月报道）；央视财经/未来网2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="三工信部定义的四新特征"&gt;（三）工信部定义的&amp;quot;四新&amp;quot;特征
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;连接对象新&lt;/strong&gt; ：从传统个人用户拓展到人、机、物、具身智能等多元主体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;覆盖范围新&lt;/strong&gt; ：突破传统地面限制，向空天地海一体化全域覆盖拓展。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;连接能力新&lt;/strong&gt; ：实现确定性、稳定性等大幅提升，更好满足行业应用差异化需求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;网络功能新&lt;/strong&gt; ：由单纯的信息传输，向通信、感知、计算、智能、安全等多能力深度融合演进。&lt;/p&gt;
+&lt;p&gt;工信部信息通信管理局局长谢存强调：&amp;ldquo;新一代通信网不仅仅是传统意义上的网络升级，更是面向智能时代数字信息基础设施的一次关键革新。&amp;rdquo;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：工信部信息通信管理局局长谢存，国新办新闻发布会（2026年7月20日，21财经报道）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="四核心内容"&gt;（四）核心内容
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 网络体系构成&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;基础网络&lt;/strong&gt; ：5G-A/6G移动通信网、光网络（万兆光网/400G超高速光传输）、数据通信网络。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;空间网络&lt;/strong&gt; ：以卫星互联网为主体（低轨卫星、天通卫星），实现空天地海覆盖。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;融合网络&lt;/strong&gt; ：工业互联网、低空智联网、车联网等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;应急通信网络&lt;/strong&gt; ：服务应急通信保障的专用网络。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：中国信通院技术与标准研究所副所长赵文玉（新华社2026年6月报道）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;2. 关键建设指标（截至2026年）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5G/5G-A：&lt;/strong&gt; 5G基站510.2万个（全球最大），5G-A覆盖330个以上城市，未来五年将建成50万座5G-A基站。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：央视财经2026年6月10日报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;截至2026年4月末， &lt;strong&gt;5G移动电话用户达12.62亿户&lt;/strong&gt; ，占移动电话用户比重68.7%（来源：新华社2026年5月27日报道）。截至2026年6月末，5G移动电话用户达12.88亿户，占移动电话用户的69.9%（来源：工信部2026年上半年通信业经济运行情况）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;万兆光网：&lt;/strong&gt; 86个城市168个小区/工厂/园区试点，未来五年将建设100万个高速无源光网络端口。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;光网络：&lt;/strong&gt; 全国光缆线路7499万公里，400G超高速光传输系统规模部署。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;固定宽带：&lt;/strong&gt; 千兆及以上固定宽带用户2.53亿户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;移动物联网：&lt;/strong&gt; 移动物联网终端用户29.76亿户。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;卫星互联网：&lt;/strong&gt; 技术试验卫星已发射，手机宽带直连卫星试验中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6G：&lt;/strong&gt; 第一阶段技术试验顺利完成，已批复6GHz频段6G试验频率，第二阶段试验推进中；目标2029年形成自主创新6G技术方案，2030年前后商用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：工信部数据（国新办发布会2026年7月）；中新网/央视新闻2026年5月报道；央视新闻2026年3月报道；工信部2026年5月批复&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;3. 技术演进路径&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5G：&lt;/strong&gt; 全面商用，高速下载、eMBB/uRLLC/mMTC。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5G-A：&lt;/strong&gt; 规模商用中，千兆上行、毫秒级时延、通感一体、超轻量化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6G：&lt;/strong&gt; 研发/试验阶段（2030年商用），效率与连接能力再提升10倍以上，&amp;ldquo;通感算智&amp;quot;深度融合。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：央视财经/未来网2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;4. 经济带动效应&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;未来五年带动上下游总产出约7万亿元；拉动GDP增长约1.5个百分点；直接创造就业岗位超过百万。带动产业链：网络设备、智能终端、核心芯片、测试仪器等。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：央视财经2026年6月10日报道；21财经2026年7月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;5. 赋能领域&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;已融入97个国民经济大类中的91个。累计建设2.5万余个&amp;quot;5G+工业互联网&amp;quot;项目。建成1260家5G工厂，平均产品质量提升20.5%，运营成本降低18.4%，平均产能增加24.7%。重点赋能：智能制造、智慧城市、智慧家庭、低空经济、具身智能、脑机接口、智能网联汽车。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：工信部数据（国新办发布会2026年7月）；新华社2026年6月报道&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;6. 下一步重点工作（工信部）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;网络建设部署&lt;/strong&gt; ：统筹推进基础网络、空间网络、国际网络和融合网络建设，推动5G-A、万兆光网等规模商用，持续增加国际海缆通达方向，加快新型工业网络建设。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;产业支撑赋能&lt;/strong&gt; ：加强6G移动通信、超高速光通信、海底光缆、卫星通信等核心技术创新攻关。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;应用创新推广&lt;/strong&gt; ：深化5G、千兆光网在重点行业应用，深化脑机接口、具身智能、智能网联汽车与5G-A/6G、卫星互联网等融合发展。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：工信部信息通信管理局局长谢存，国新办新闻发布会（2026年7月20日）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;##两张网的关系&lt;/p&gt;
+&lt;h3 id="一战略定位关系"&gt;（一）战略定位关系
+&lt;/h3&gt;&lt;p&gt;算力网是数字经济的核心底座，解决算力&amp;quot;从哪来、怎么调度&amp;quot;的问题。新一代通信网是数据传输的&amp;quot;大动脉&amp;rdquo;，解决数据&amp;quot;怎么传、多快传&amp;quot;的问题。二者共同构成数字经济的&amp;quot;算&amp;quot;与&amp;quot;传&amp;quot;两大核心能力。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：综合&amp;quot;十五五&amp;quot;规划纲要、中共中央政治局会议部署&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="二功能协同关系"&gt;（二）功能协同关系
+&lt;/h3&gt;&lt;p&gt;新一代通信网是其他五张网的信息通信连接和服务基座。为算力网提供高质量联算、入算的网络底座。支撑人工智能高质量训练推理。二者深度融合构成&amp;quot;算网一体&amp;quot;体系。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：中国信通院技术与标准研究所副所长赵文玉（新华社2026年6月报道）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="三产业融合关系"&gt;（三）产业融合关系
+&lt;/h3&gt;&lt;p&gt;加强算力网与新一代通信网的规划协同，推动5G、6G等新一代通信技术与算力网深度融合。为工业互联网、低空经济、智慧政务等各类数字应用提供支撑。算力网投资具有乘数效应，带动AI、自动驾驶、低空经济等产业；新一代通信网全面赋能智能制造、智慧城市、智慧家庭等领域。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来源：综合&amp;quot;十五五&amp;quot;规划纲要、中共中央政治局会议部署&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="主要引用出处汇总"&gt;主要引用出处汇总
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;十五五&amp;quot;规划纲要——全国人大2025年审议通过&lt;/li&gt;
+&lt;li&gt;中共中央政治局会议——2026年4月28日、2026年7月30日&lt;/li&gt;
+&lt;li&gt;《关于深入实施&amp;quot;东数西算&amp;quot;工程加快构建全国一体化算力网的实施意见》——国家发改委、国家数据局等五部门，2023年12月（发改数据〔2023〕1779号）&lt;/li&gt;
+&lt;li&gt;《算力基础设施高质量发展行动计划》——工信部等六部门，2023年10月（工信部联通信〔2023〕180号）&lt;/li&gt;
+&lt;li&gt;《国家数据基础设施建设指引》——国家发改委、国家数据局、工信部，2024年12月（发改数据〔2024〕1853号）&lt;/li&gt;
+&lt;li&gt;丁薛祥调研算力网建设讲话——新华社，2026年5月18日&lt;/li&gt;
+&lt;li&gt;工信部国新办新闻发布会——工信部信息通信管理局局长谢存，2026年7月20日（21财经报道）&lt;/li&gt;
+&lt;li&gt;中国信通院副院长王志勤采访——中新网/央视新闻，2026年5月29日&lt;/li&gt;
+&lt;li&gt;中国信通院副所长赵文玉采访——新华社/经济日报，2026年6月&lt;/li&gt;
+&lt;li&gt;央视《新闻联播》&amp;ldquo;六张网&amp;quot;调研——千龙网，2026年6月14日&lt;/li&gt;
+&lt;li&gt;央视财经/未来网报道——2026年6月10日&lt;/li&gt;
+&lt;li&gt;国家发改委2026年6月新闻发布会——国家发改委政策研究室副主任李超，2026年6月18日&lt;/li&gt;
+&lt;li&gt;国家发改委民营企业座谈会——国家发改委主任郑栅洁，2026年6月16日（金融界报道）&lt;/li&gt;
+&lt;li&gt;界面新闻&amp;quot;六张网&amp;quot;分析报道——2026年&lt;/li&gt;
+&lt;li&gt;21财经&amp;quot;六张网&amp;quot;解读——2026年7月26日&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>增值税税率调整对电信运营商有何影响？</title><link>https://blog.fallleaf.net/p/notes-impact-of-vat-rate-adjustment-on-us/</link><pubDate>Sun, 01 Feb 2026 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-impact-of-vat-rate-adjustment-on-us/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-impact-of-vat-rate-adjustment-on-us/cover.webp" alt="Featured image of post 增值税税率调整对电信运营商有何影响？" /&gt;&lt;p&gt;财政部、国家税务总局发布的《关于增值税征税具体范围有关事项的公告》（2026年第9号）规定自2026年1月1日起，在中国境内利用固网、移动网、卫星、互联网提供&lt;strong&gt;手机流量服务、短信和彩信服务、互联网宽带接入服务&lt;/strong&gt;的业务活动，其增值税税目由&amp;quot;增值电信服务&amp;quot;改为&amp;quot;基础电信服务&amp;quot;，相应税率由6%上调至9%。中国移动、中国电信、中国联通三大运营商已发布公告，均明确此次调整&amp;quot;将对公司收入及利润产生影响&amp;quot;，并提出将强化运营和管理应对挑战。&lt;/p&gt;
+&lt;h2 id="对运营商的影响"&gt;对运营商的影响
+&lt;/h2&gt;&lt;h3 id="收入结构和受影响业务规模"&gt;收入结构和受影响业务规模
+&lt;/h3&gt;&lt;p&gt;各运营商的流量、宽带业务收入占比甚高，其中&amp;quot;手机流量服务&amp;quot;和&amp;quot;宽带接入服务&amp;quot;均包含在新增税负之下。以2024年财报为例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;中国移动&lt;/strong&gt;：主营业务收入8895亿元，其中&amp;quot;无线互联网&amp;quot;业务收入3859亿元（主要为手机数据），&amp;ldquo;有线宽带&amp;quot;收入1302亿元（合计3282亿元）。固定宽带用户1.97亿，宽带收入占比显著。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中国电信&lt;/strong&gt;：服务收入4820亿元，其中移动通信服务收入2025亿元，固网及智慧家庭（含宽带）收入1257亿元（合计3282亿元）。固定宽带用户1.97亿，宽带收入占比显著。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中国联通&lt;/strong&gt;：2024年营业收入3896亿元，其中&amp;quot;联网通信&amp;quot;基础业务收入约占76%（含移动和固定宽带等）；&amp;ldquo;算网数智&amp;quot;新兴业务占24%。据此保守估计，约有2960亿元基础通信业务收入受税率上调影响。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上述数据表明，三大运营商主要收入中，流量上网和宽带业务规模庞大，涉及增值税税率上调的收入规模巨大。下表概括各运营商相关指标及预估税负增量：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;运营商&lt;/th&gt;
+&lt;th&gt;2024年主营业务收入 (亿元)&lt;/th&gt;
+&lt;th&gt;受增值税上调影响的业务收入(亿元)&lt;/th&gt;
+&lt;th&gt;2024年归母净利润 (亿元)&lt;/th&gt;
+&lt;th&gt;税率上调后增值税增量 (≈亿元)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;中国移动&lt;/td&gt;
+&lt;td&gt;10408 (营业收入)&lt;/td&gt;
+&lt;td&gt;≈5161（流量3859 + 宽带1302）&lt;/td&gt;
+&lt;td&gt;1384&lt;/td&gt;
+&lt;td&gt;约155（5161×3%）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中国电信&lt;/td&gt;
+&lt;td&gt;5294 (经营收入)&lt;/td&gt;
+&lt;td&gt;≈3282（移动2025 + 宽带1257）&lt;/td&gt;
+&lt;td&gt;330&lt;/td&gt;
+&lt;td&gt;约98（3282×3%）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中国联通&lt;/td&gt;
+&lt;td&gt;3896 (营业收入)&lt;/td&gt;
+&lt;td&gt;≈2960（基础通信收入估计）&lt;/td&gt;
+&lt;td&gt;90&lt;/td&gt;
+&lt;td&gt;约89（2960×3%）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：收入数据来自2024年财报，税负增量估算为相关收入×(9%-6%)。表中收入单位均为人民币亿元。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="对营收利润的短期影响"&gt;对营收、利润的短期影响
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;收入方面：&lt;/strong&gt;
+增值税的上调本身不直接减少运营商的营业收入（因为运营商收费通常未明确列税），但可能通过资费调整对用户施加。若运营商无法完全转嫁这部分成本，则相当于增加了经营成本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;利润方面：&lt;/strong&gt;
+影响更为明显。
+以&lt;strong&gt;中国移动&lt;/strong&gt;为例，2024年归母净利润1384亿元，净利率约13.3%。若其受影响业务收入5161亿元全部按9%计税而无法抵扣额外成本，税负将增加约155亿元，这相当于将净利润降至约1229亿元（净利率降至≈11.8%）。同理，&lt;strong&gt;中国电信&lt;/strong&gt;净利润330亿元，受影响业务收入3282亿元，增税约98亿元；&lt;strong&gt;中国联通&lt;/strong&gt;净利润仅90亿元，受影响业务收入≈2960亿元，增税约89亿元。若三家运营商&lt;strong&gt;短期内完全吸收&lt;/strong&gt;新增税负，其2024年净利润将被大幅压缩（联通几乎盈余被耗尽）。&lt;/p&gt;
+&lt;p&gt;各公司公告均指出&amp;quot;将对公司收入及利润产生影响&amp;rdquo;。但实际效果还取决于成本控制与转嫁幅度。综合考虑三家运营商2024年利润率差异：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国移动利润率最高（约13%），财务实力强，抗风险能力最强；&lt;/li&gt;
+&lt;li&gt;中国电信中等（≈6%），受冲击较大；&lt;/li&gt;
+&lt;li&gt;中国联通较低（≈2&amp;ndash;3%），面临的压力最大。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="税负转嫁可能性"&gt;税负转嫁可能性
+&lt;/h3&gt;&lt;p&gt;运营商能否将新增税负转嫁至消费者，需综合竞争态势和监管政策。一般而言，三大运营商竞争激烈，不宜大规模统一提价，但可在新资费和套餐设计上做微调。例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;资费上调&lt;/strong&gt;：可能针对流量、宽带套餐适度提价，如增加流量包价格或推出阶梯式资费。3%税率上调可能对应资费上调约2&amp;ndash;3个百分点。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;优惠调整&lt;/strong&gt;：减少赠送流量、调整促销活动等，以减少成本支出。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;其他业务侧转移&lt;/strong&gt;：鼓励用户使用增值服务、云业务或数字化服务，提高非基础通信收入占比，以提高综合盈利。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;不过，监管层可能关注通信服务价格变化，防止扰乱市场。2014年电信业&amp;quot;营改增&amp;quot;后，运营商在价格上较为谨慎，整体资费并未大幅上涨。这次增税幅度较小，若完全转嫁对用户影响有限，运营商更可能通过结构优化分摊成本。&lt;/p&gt;
+&lt;h2 id="对运营商员工的影响"&gt;对运营商员工的影响
+&lt;/h2&gt;&lt;p&gt;税负上升意味着运营商的经营压力加大，各公司均强调&amp;quot;提质增效、降本增效&amp;rdquo;。在成本控制大背景下，可能对员工产生如下影响：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;薪酬与福利趋紧&lt;/strong&gt;：运营商可能控制薪资增长、谨慎分配年度奖金和股权激励，加大绩效考核力度。中国移动2024年职工薪酬已达1009亿元，占营业收入9.7%，可见人力成本占比较高。在税负增加情况下，公司可能压缩人均成本，提高薪酬与绩效挂钩的比例，限制非核心人员的薪酬增幅。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;奖金激励机制调整&lt;/strong&gt;：奖金和激励方案将更紧密地与公司利润和个人业绩挂钩。若利润受压缩，年度奖金池可能相应减少；同时可能推出更多股权或长期激励以锁定关键人才。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;人员编制与岗位调整&lt;/strong&gt;：业务重心或从传统通信转向云计算、大数据等新兴领域，运营商可能推动内部转岗和再培训，将员工从成熟业务线转移到增长较快的云网融合、算力服务等部门。对于低效冗余岗位，可能通过自然减员、提前退休、内部竞岗等方式优化团队。大规模裁员可能性较小，但部门重组、职能整合等组织架构调整会加快。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作强度和压力&lt;/strong&gt;：在强调精益运营和创新发展的背景下，员工工作压力可能增加，需要承担更多跨领域技能任务。同时公司也可能加大对科技人才的投入，部分员工有机会参与AI和云计算等前沿项目，需不断提升技能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总之，运营商会通过更加精细化的成本管理来应对税负上升，员工的薪资激励和岗位安排会向效率更高、贡献度更大的方向倾斜。&lt;/p&gt;
+&lt;h2 id="对消费者的影响"&gt;对消费者的影响
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;资费变化&lt;/strong&gt;：三大运营商可能会将部分税负通过小幅提高套餐资费或取消优惠活动转嫁给用户。由于税率上涨3个百分点并非巨大增幅，单个用户的月账单增长通常在个位数百分点。例如，原有100元资费套餐，提价到102~103元；但运营商更倾向于通过调整套餐档次或附加包形式来分摊，而非全网统一涨价。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不同群体差异&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;低收入用户&lt;/strong&gt;：他们通常选择最低端的套餐，对价格较为敏感。若资费微涨，这部分用户可能更加谨慎地使用流量，尽量通过Wi-Fi上网以节约成本。也可能促使运营商推出更具性价比的基础套餐或专项优惠来维稳用户。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;重度流量用户&lt;/strong&gt;：本身话费支出高，增值部分可能略有增长，但对资费变化承受能力较强。他们可能会选择更大流量包或无限流量套餐，以平摊每GB成本；同时也可能继续使用家中或公共Wi-Fi来尽量降低移动数据消耗。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;企业客户&lt;/strong&gt;：企业通常与运营商签订专属合同或大流量套餐，对价格敏感度高但也具有议价能力。面对运营商成本压力，企业客户可能在续签合同时要求更优惠的条款或寻求套餐优化。运营商也会考虑通过套餐升级、提供额外增值服务来留住大客户，而不会轻易加倍转嫁税费。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使用习惯调整&lt;/strong&gt;：轻微的资费上涨可能促使部分用户更注重使用效率。例如，更多人在室内偏好使用Wi-Fi替代移动网络、延后下载大文件、利用流量包和夜间流量政策。短信和彩信上税后亦不利于传统短信收入增长，但现代用户早已普遍使用微信、QQ等即时通讯软件替代短信，影响有限；对于未智能手机用户影响较小且基数较低。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;替代通信服务&lt;/strong&gt;：增值税上调可能间接推动用户更多使用Wi-Fi和OTT（Over-The-Top）服务。家庭和公共场所免费Wi-Fi的使用率可能略增，以减少移动网络费用；微信视频通话、企业云会议、OTT消息等服务将继续替代部分传统业务，从而减弱对运营商基础通信业务的依赖。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总体来看，此次增值税率由6%升至9%的调整对消费者的直接影响相对有限（单月资费上涨几元），但可能会加速用户对套餐内容和通信方式的关注，促进运营商优化产品结构，提高服务性价比。&lt;/p&gt;
+&lt;h3 id="影响对比表"&gt;影响对比表
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;影响类别&lt;/th&gt;
+&lt;th&gt;中国移动&lt;/th&gt;
+&lt;th&gt;中国电信&lt;/th&gt;
+&lt;th&gt;中国联通&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2024年收入(亿元)&lt;/td&gt;
+&lt;td&gt;主营业务收入8895&lt;/td&gt;
+&lt;td&gt;经营收入5294&lt;/td&gt;
+&lt;td&gt;营业收入3896&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;受影响业务规模(亿元)&lt;/td&gt;
+&lt;td&gt;手机数据+宽带≈5161&lt;/td&gt;
+&lt;td&gt;移动通信+宽带≈3282&lt;/td&gt;
+&lt;td&gt;基础通信≈2960（估算）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2024年净利润(亿元)&lt;/td&gt;
+&lt;td&gt;1384&lt;/td&gt;
+&lt;td&gt;330&lt;/td&gt;
+&lt;td&gt;90&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;增值税增量 (≈亿元)&lt;/td&gt;
+&lt;td&gt;≈155（5161×3%）&lt;/td&gt;
+&lt;td&gt;≈98（3282×3%）&lt;/td&gt;
+&lt;td&gt;≈89（2960×3%）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;备注&lt;/td&gt;
+&lt;td&gt;利润率高，承压相对小；可通过降本续稳增长&lt;/td&gt;
+&lt;td&gt;利润率中等，增税冲击明显；需加快提升新增值业务&lt;/td&gt;
+&lt;td&gt;利润率最低，增税几乎耗净利润，需提速转型&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：以上估算仅供参考。表中数据均来自运营商2024年财报。实际影响还取决于运营商成本抵扣能力和价格策略。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="小结"&gt;小结
+&lt;/h2&gt;&lt;p&gt;综合来看，增值税税率上调对三大运营商的短期盈利将造成实质性压力，特别是利润率较低的电信业。运营商难以完全通过价格传导税负，需要在成本端做文章，持续提高运营效率，发展云计算、数字化等新业务以改善业绩。同时，此次税改对运营商员工和用户亦带来连锁效应：企业或收紧人力资源成本和激励政策，用户则需适应可能的小幅资费调整和促销策略变化。运营商预期通过&amp;quot;降本增效&amp;quot;和创新服务来化解影响，在稳增长的同时保障用户体验和市场竞争力。&lt;/p&gt;
+&lt;p&gt;此次增值税率调整，表面上是税收政策的微调，实质上是推动电信行业从传统管道服务商向综合数字服务商加速转型的催化剂。它迫使运营商必须摆脱对基础通信业务的过度依赖，通过技术创新和业务重构来提升盈利能力。对于从业者而言，这意味着需要拥抱变化，提升在新兴技术领域的竞争力；对于消费者而言，则是在享受稳定服务的同时，适应一个更加精细化、数字化的通信消费环境。&lt;/p&gt;</description></item><item><title>中国联通与中国电信2026年度工作会议对比解读</title><link>https://blog.fallleaf.net/p/notes-cu-ct-2026-work-meeting-explain/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-cu-ct-2026-work-meeting-explain/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-cu-ct-2026-work-meeting-explain/cover.webp" alt="Featured image of post 中国联通与中国电信2026年度工作会议对比解读" /&gt;&lt;h2 id="站在规划交汇点的信息通信业"&gt;站在规划交汇点的信息通信业
+&lt;/h2&gt;&lt;p&gt;2026年，是中国信息通信业一个极具标志意义的年份。&lt;/p&gt;
+&lt;p&gt;这一年，国家“十四五”规划圆满收官，“十五五”规划全面启幕；这一年，人工智能、算力网络、5G-A（5G-Advanced）、量子通信等前沿技术，正从技术验证阶段加速走向规模化、体系化应用；这一年，电信运营商的角色，也正在发生根本性变化。&lt;/p&gt;
+&lt;p&gt;以中国电信、中国联通为代表的基础电信企业，正在从传统意义上的&lt;strong&gt;通信服务提供商&lt;/strong&gt;，加速转型为&lt;strong&gt;数字化综合服务的国家队与主力军&lt;/strong&gt;。
+2026 年，既是规划切换的“起跑线”，也是新一轮技术周期真正发力的“临界点”。&lt;/p&gt;
+&lt;p&gt;在全球数字经济竞争显著加剧的背景下，两家运营商在 2026 年度工作会议中所展现出的战略布局，既高度同向，又各具侧重：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国电信全面升级“云改数转智惠”战略，试图以 &lt;strong&gt;AI 与智能云&lt;/strong&gt; 作为未来十年的核心引擎；&lt;/li&gt;
+&lt;li&gt;中国联通则以“守正创新、行稳致远”为总基调，明确“连接、算力、服务、安全”四大核心赛道，强调在高质量发展中的结构优化与差异化竞争。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本文基于两家运营商 2026 年度工作会议的公开信息，从战略基调、基础设施、AI 行动、新兴产业、经营逻辑与改革治理等多个维度，进行系统梳理与对比，力图呈现一个更清晰的行业全景。&lt;/p&gt;
+&lt;h2 id="战略基调与顶层设计守正创新与智惠共生"&gt;战略基调与顶层设计：守正创新与智惠共生
+&lt;/h2&gt;&lt;h3 id="中国联通守正创新行稳致远的转型定力"&gt;中国联通：守正创新、行稳致远的转型定力
+&lt;/h3&gt;&lt;p&gt;在 2026 年工作会议上，中国联通明确提出，将“守正创新、行稳致远”确立为“十五五”时期的发展主基调。&lt;/p&gt;
+&lt;p&gt;这一表述并非口号式修辞，而是清晰回应了当前复杂环境下的战略取向：
+既要坚守“姓党为民”的政治本色与央企责任，又要通过持续的技术与管理创新突破增长瓶颈。&lt;/p&gt;
+&lt;p&gt;联通将自身定位为从“基础管道提供商”向“数字化综合服务商”转型升级，并明确提出要做“信息通信事业国家队、主力军”。&lt;/p&gt;
+&lt;p&gt;在路径选择上，中国联通划定了四个履行央企责任的&lt;strong&gt;核心赛道&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;连接&lt;/strong&gt;：作为一切能力的基础&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;算力&lt;/strong&gt;：作为新一轮增长的动力&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;服务&lt;/strong&gt;：作为价值实现的出口&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安全&lt;/strong&gt;：作为不可逾越的底线与屏障&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这种赛道式表述，意味着联通更强调&lt;strong&gt;边界清晰、重点聚焦、结构优化&lt;/strong&gt;，通过差异化优势，在存量经营与新型算网数智业务之间寻找确定性增长空间。&lt;/p&gt;
+&lt;h3 id="中国电信从云改数转到智惠的战略跃迁"&gt;中国电信：从“云改数转”到“智惠”的战略跃迁
+&lt;/h3&gt;&lt;p&gt;相比之下，中国电信在 2026 年展现出更为鲜明的“代际升级”特征。&lt;/p&gt;
+&lt;p&gt;其核心战略从“云改数转”正式升级为“云改数转智惠”。这一变化，标志着中国电信不再停留在数字化转型阶段，而是全面进入&lt;strong&gt;智能化重构&lt;/strong&gt;的新阶段。&lt;/p&gt;
+&lt;p&gt;“智惠”二字，构成了中国电信未来几年战略的核心关键词：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;“智”&lt;/strong&gt;：以人工智能为引擎，推动高水平科技自立自强&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;“惠”&lt;/strong&gt;：以“数智惠民”为目标，让技术红利转化为社会价值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在中国电信的战略框架中，AI 不仅是工具，而是重塑企业流程、业务形态乃至社会运行方式的底层力量。其目标，是从网络服务商升级为&lt;strong&gt;智能底座的构建者与输出者&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id="战略主旨横向对比"&gt;战略主旨横向对比
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;维度&lt;/th&gt;
+&lt;th&gt;中国联通&lt;/th&gt;
+&lt;th&gt;中国电信&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;发展主基调&lt;/td&gt;
+&lt;td&gt;守正创新、行稳致远&lt;/td&gt;
+&lt;td&gt;云改数转智惠&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;战略表达&lt;/td&gt;
+&lt;td&gt;核心赛道聚焦&lt;/td&gt;
+&lt;td&gt;体系工程构建&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;企业角色&lt;/td&gt;
+&lt;td&gt;数字化综合服务商&lt;/td&gt;
+&lt;td&gt;智能底座构建者&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;规划特征&lt;/td&gt;
+&lt;td&gt;“十五五”稳健开局&lt;/td&gt;
+&lt;td&gt;AI 驱动第一阶段&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;价值取向&lt;/td&gt;
+&lt;td&gt;国家队、主力军&lt;/td&gt;
+&lt;td&gt;数智惠民、科技向善&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="基础设施筑基算力网络与-5g-a-的不同打法"&gt;基础设施筑基：算力网络与 5G-A 的不同打法
+&lt;/h2&gt;&lt;h3 id="算力网络从规模转向效能"&gt;算力网络：从“规模”转向“效能”
+&lt;/h3&gt;&lt;p&gt;进入 2026 年，运营商投资逻辑发生显著变化。
+资本开支总体趋稳，但&lt;strong&gt;结构性调整极为明显&lt;/strong&gt;——算力网络与 AI 基础设施的战略权重持续上升。&lt;/p&gt;
+&lt;p&gt;中国联通在算力领域采取“适度超前、强调集约”的策略，继续推进全国一体化算力网建设，强化“5+4+31+X”布局，通过“大区牵引”提升云网融合的整体效率。&lt;/p&gt;
+&lt;p&gt;其重点不在于盲目扩张规模，而在于为未来可能爆发的智算需求，提前构建高效调度与资源协同能力。&lt;/p&gt;
+&lt;p&gt;中国电信则展现出更强的“技术原创性”。
+其“息壤”算力调度平台在 2026 年完成架构升级，实现跨厂家、跨区域、跨算力类型的全国级协同调度；同时，在多个城市率先部署国产万卡液冷算力集群，强化在能效比与国产化方面的领先优势。&lt;/p&gt;
+&lt;p&gt;两者在算力上的差异，本质上是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;联通&lt;/strong&gt;：算力作为服务能力的一部分，强调适配行业&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;电信&lt;/strong&gt;：算力作为国家级底座，强调平台与规模效应&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="5g-a-与-6g稳扎稳打-vs-全域前瞻"&gt;5G-A 与 6G：稳扎稳打 vs 全域前瞻
+&lt;/h3&gt;&lt;p&gt;在 5G-A 领域，中国联通更强调工程化与规模化落地，通过载波聚合、智能上行等技术，服务工业互联网、XR、低空安防等成熟场景。&lt;/p&gt;
+&lt;p&gt;中国电信则在 5G-A 的基础上，进一步拉开 6G 预研的空间维度，强调“空天地海一体化”，在语义通信、通感融合、卫星直连等方向持续投入，体现出更长周期的技术布局。&lt;/p&gt;
+&lt;h2 id="ai-行动平台化与垂类化的分野"&gt;AI+ 行动：平台化与垂类化的分野
+&lt;/h2&gt;&lt;h3 id="中国电信大模型驱动的体系化融智"&gt;中国电信：大模型驱动的体系化“融智”
+&lt;/h3&gt;&lt;p&gt;中国电信将“AI+”明确为 2026 年的核心抓手。&lt;/p&gt;
+&lt;p&gt;以“星辰”大模型为核心，其 AI 战略呈现出鲜明的体系化特征：
+一方面在内部通过 AI 优化网络运行、客服体系、能耗管理；另一方面以“平台+生态”的方式，向政务、央企、重点行业输出能力。&lt;/p&gt;
+&lt;p&gt;这种模式的优势在于集中度高、复制能力强，但对组织协同与模型泛化能力提出了更高要求。&lt;/p&gt;
+&lt;h3 id="中国联通元景体系下的垂类精耕与普惠导向"&gt;中国联通：元景体系下的垂类精耕与普惠导向
+&lt;/h3&gt;&lt;p&gt;中国联通在 AI 路径选择上更加克制而务实。&lt;/p&gt;
+&lt;p&gt;“元景”大模型并未追求单一超级模型的叙事，而是围绕数据、平台、智能体、安全等环节构建完整 AI 底座，强调“多模共生、快速落地”。&lt;/p&gt;
+&lt;p&gt;其重点应用集中在政务、医疗、工业等垂直场景，尤其面向专精特新中小企业，形成与中国电信大客户战略的差异化互补。&lt;/p&gt;
+&lt;h2 id="战略性新兴产业量子与低空的不同站位"&gt;战略性新兴产业：量子与低空的不同站位
+&lt;/h2&gt;&lt;p&gt;在量子通信领域，中国电信几乎形成“独占式领先”。
+从量子网络、量子云到量子终端，其战略意图是将量子安全能力，打造为高附加值的长期护城河。&lt;/p&gt;
+&lt;p&gt;中国联通则更多将量子能力视为“大安全体系”的重要组成部分，强调在政企和关键行业中的集成应用。&lt;/p&gt;
+&lt;p&gt;在低空经济领域，两家运营商路径不同但目标一致：
+通过 5G-A 通感一体化、边缘计算与 AI 调度，将通信网络升级为“可感知、可决策”的低空智联网。&lt;/p&gt;
+&lt;h2 id="经营与改革效率曲线与规模曲线的选择"&gt;经营与改革：效率曲线与规模曲线的选择
+&lt;/h2&gt;&lt;p&gt;在传统通信业务趋于饱和的背景下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;中国联通&lt;/strong&gt;强调存量经营、价值提升与精益管理，通过预算、司库、流程数字化提升边际效率；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中国电信&lt;/strong&gt;则通过 AI 与云能力重塑基础业务体验，试图在规模基础上叠加智能溢价。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在改革治理层面，中国电信更强调科技型企业建设与人才结构调整；中国联通则通过“严标准、强执行”倒逼资源配置效率提升。&lt;/p&gt;
+&lt;h2 id="同向而行各美其美"&gt;同向而行，各美其美
+&lt;/h2&gt;&lt;p&gt;从 2026 年度工作会议可以清晰看到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两家运营商在政治方向、国家使命与技术大势上高度一致；&lt;/li&gt;
+&lt;li&gt;在具体路径上，却形成了&lt;strong&gt;体系化与赛道化、规模化与效率化&lt;/strong&gt;的差异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;中国电信更像一台持续加速的“智能底座发动机”；
+中国联通则更像一套稳态运行、不断优化结构的“高质量系统”。&lt;/p&gt;
+&lt;p&gt;未来几年，它们将在基础设施上协同共享，在技术研发上赛马竞争，在业务落地上各展所长——共同支撑中国数字经济迈入“十五五”的深水区。&lt;/p&gt;</description></item><item><title>一场事关未来的“大考”：新规下的电信运营商，如何谋划“十五五”？</title><link>https://blog.fallleaf.net/p/notes-telecom-15th-5years-plan/</link><pubDate>Wed, 24 Sep 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/notes-telecom-15th-5years-plan/</guid><description>&lt;img src="https://blog.fallleaf.net/p/notes-telecom-15th-5years-plan/cover.webp" alt="Featured image of post 一场事关未来的“大考”：新规下的电信运营商，如何谋划“十五五”？" /&gt;&lt;p&gt;2025年，一个特殊的年份。它既是“十四五”规划的收官之年，也是“十五五”战略布局的开局之年。对于中国电信、中国移动、中国联通这三大央企运营商来说，这一刻尤为关键。&lt;/p&gt;
+&lt;p&gt;过去五年，三大运营商在千兆光网、5G、算力网络等新型基础设施建设上成果斐然，不仅巩固了全球领先的网络优势，更肩负起“东数西算”、算网融合等国家数字化战略的重任。&lt;/p&gt;
+&lt;p&gt;然而，新的挑战也接踵而至：AI、6G等前沿技术的酝酿突破，产业数字化需求井喷，以及复杂多变的国际环境。运营商们不仅要守住基础网络的“主阵地”，更要在算力、平台、应用和安全等新赛道上实现突破。&lt;/p&gt;
+&lt;p&gt;就在这个关键节点，国务院国资委印发了新版《中央企业发展规划管理办法》（以下简称“《办法》”）。这不只是一份文件，更是指导运营商谋划“十五五”大计、实现战略转型的制度利器。&lt;/p&gt;
+&lt;p&gt;本文结合运营商的发展重点对 《办法》进行初步 解读。&lt;/p&gt;
+&lt;h2 id="办法核心运营商的战略施工图"&gt;《办法》核心：运营商的“战略施工图”
+&lt;/h2&gt;&lt;p&gt;新版《办法》构建了一套三级规划体系 + 闭环管理机制，其核心要点直指运营商未来的发展模式：&lt;/p&gt;
+&lt;h2 id="1-三级规划体系从集团到一线"&gt;1. 三级规划体系，从集团到一线
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;总体发展规划：集团层面需将算力网络、6G前瞻、光传输升级、人工智能赋能等核心要素，清晰地纳入整体战略蓝图。&lt;/li&gt;
+&lt;li&gt;重点任务规划：针对专项任务，如“东数西算”枢纽工程、工业互联网平台、量子通信试点、IPv6规模部署等，需制定详细的执行方案。&lt;/li&gt;
+&lt;li&gt;企业子层级规划：各省公司、专业子公司要将集团的规划细化为可执行的落地路径，确保战略自上而下、一脉相承。
+这意味着，“十五五”的规划不再是躺在总部的“一份文件”，而是贯穿集团、省分、子公司、甚至每个项目团队的战略执行链条。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-闭环管理确保战略-投资-考核三位一体"&gt;2. 闭环管理，确保“战略-投资-考核”三位一体
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;编制环节：集团层面的发展战略必须经过专家论证和党委会/董事会的严格把关，杜绝“空心化”规划。&lt;/li&gt;
+&lt;li&gt;执行环节：年度投资和建设预算必须与发展规划紧密挂钩，避免盲目投资或低效扩张。&lt;/li&gt;
+&lt;li&gt;评估环节：中期（如十五五第三年）将进行强制性评估，如检验5G用户普及率、千兆/万兆光网覆盖率、算力部署规模等关键指标完成情况。&lt;/li&gt;
+&lt;li&gt;调整环节：面对外部技术突破（如AI、6G）或环境变化，规划需建立“ &lt;strong&gt;动态修正&lt;/strong&gt; ”机制。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="3-刚性约束规划成为考核的硬指标"&gt;3. 刚性约束：规划成为考核的“硬指标”
+&lt;/h2&gt;&lt;p&gt;国资委将规划执行情况与负责人任期考核、投资监管、资本运作审批直接挂钩。对于那些规划滞后或偏离主业的行为（如非核心资产投资、低效多元扩张），将面临通报批评或约谈。
+新规明确，运营商董事长为规划执行的第一责任人，集团党委/董事会负有前置研究和决策责任。这大大提升了规划的严肃性和执行力。&lt;/p&gt;
+&lt;h2 id="从软指导到硬约束新规新在哪"&gt;从“软指导”到“硬约束”：新规新在哪？
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;维度&lt;/th&gt;
+&lt;th&gt;2004年“十号令”&lt;/th&gt;
+&lt;th&gt;2025年新版《办法》&lt;/th&gt;
+&lt;th&gt;对运营商的影响&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;规划层级&lt;/td&gt;
+&lt;td&gt;单一战略规划&lt;/td&gt;
+&lt;td&gt;总体 + 重点 + 三级体系&lt;/td&gt;
+&lt;td&gt;战略从总部落地到一线，形成闭环&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;考核机制&lt;/td&gt;
+&lt;td&gt;约束较弱&lt;/td&gt;
+&lt;td&gt;纳入预算、投资、绩效考核&lt;/td&gt;
+&lt;td&gt;与经营指标强绑定，考核更严&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;评估调整&lt;/td&gt;
+&lt;td&gt;制度较弱&lt;/td&gt;
+&lt;td&gt;明确中期评估+调整机制&lt;/td&gt;
+&lt;td&gt;可在6G研发、算力部署中灵活调整&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;责任追究&lt;/td&gt;
+&lt;td&gt;操作性弱&lt;/td&gt;
+&lt;td&gt;偏离主业/盲目投资可追责&lt;/td&gt;
+&lt;td&gt;对多元化和资本运作设“紧箍咒”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;监管方式&lt;/td&gt;
+&lt;td&gt;以报送为主&lt;/td&gt;
+&lt;td&gt;全过程、全链条监督&lt;/td&gt;
+&lt;td&gt;数据化、透明化、强制化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;由此可见，新《办法》对运营商的影响，是从“ &lt;strong&gt;文件式规划&lt;/strong&gt; ”转向“ &lt;strong&gt;执行型规划&lt;/strong&gt; ”，从“ &lt;strong&gt;软指导&lt;/strong&gt; ”转向“ &lt;strong&gt;硬约束&lt;/strong&gt; ”。&lt;/p&gt;
+&lt;h2 id="挑战与机遇戴上紧箍咒找到定盘星"&gt;挑战与机遇：戴上“紧箍咒”，找到“定盘星”
+&lt;/h2&gt;&lt;p&gt;新规的到来，对运营商而言既是挑战，更是机遇。&lt;/p&gt;
+&lt;h2 id="机遇方向更聚焦执行力更强"&gt;机遇：方向更聚焦，执行力更强
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;国家战略地位强化：算力网络、6G研发、AI基础设施等将明确写入“十五五”任务，运营商的战略定位更加清晰，也获得了更多政策支持。&lt;/li&gt;
+&lt;li&gt;投资方向更聚焦：资源不再“撒胡椒面”，而是集中在主责主业，有效避免了资源分散和低效扩张。&lt;/li&gt;
+&lt;li&gt;战略执行力显著提升：通过与预算、绩效、考核的深度绑定，规划不再停留在纸面，而是真正转化为实实在在的行动。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="挑战平衡与取舍的艺术"&gt;挑战：平衡与取舍的艺术
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;“刚性规划”与行业不确定性的张力：电信行业技术迭代迅速，6G、AI算力、卫星通信等随时可能出现颠覆性突破。如何在新规的刚性约束下，保留足够的“ &lt;strong&gt;战略弹性&lt;/strong&gt; ”，是摆在运营商面前的一道难题。&lt;/li&gt;
+&lt;li&gt;考核压力加大：集团高层，特别是董事长、总经理的任期考核，将直接与规划完成度挂钩，责任更重，压力更大。&lt;/li&gt;
+&lt;li&gt;中长期目标与短期市场压力的矛盾：资本市场关注短期财报和股东回报，而规划强调长期战略。运营商需要巧妙地平衡两者，找到可持续的发展路径。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="结语"&gt;结语
+&lt;/h2&gt;&lt;p&gt;在“十四五”收官、“十五五”开局的关键时刻，新版《中央企业发展规划管理办法》为运营商行业提供了制度红线与发展方向。
+对三大运营商而言，这既是战略执行的“ &lt;strong&gt;紧箍咒&lt;/strong&gt; ”，更是引领转型升级、保障长期竞争力的“定盘星”。未来五年，谁能在这套“ &lt;strong&gt;规划—执行—评估&lt;/strong&gt; ”闭环中跑得更快、做得更实，谁就将在算力网络、6G、数字中国建设的宏伟蓝图中占据制高点。&lt;/p&gt;
+&lt;p&gt;中央企业发展规划管理办法：&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="http://www.sasac.gov.cn/n2588035/c33689673/content.html" target="_blank" rel="noopener"
+&gt;http://www.sasac.gov.cn/n2588035/c33689673/content.html&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

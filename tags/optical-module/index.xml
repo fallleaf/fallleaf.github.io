@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>光模块 on 红旗下的蛋</title><link>https://blog.fallleaf.net/tags/optical-module/</link><description>Recent content in 光模块 on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Fri, 10 Oct 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/tags/optical-module/index.xml" rel="self" type="application/rss+xml"/><item><title>光电共封装（CPO）：数据中心的下一场“能效革命</title><link>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</link><pubDate>Fri, 10 Oct 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-cpo-data-center-energy-efficiency-revolution/cover.webp" alt="Featured image of post 光电共封装（CPO）：数据中心的下一场“能效革命" /&gt;&lt;h2 id="为何cpo光电共封装成为焦点"&gt;为何CPO（光电共封装）成为焦点？
+&lt;/h2&gt;&lt;p&gt;近年来，AI大模型、云计算、自动驾驶和高性能计算（HPC）对数据中心带宽和算力需求激增。芯片算力不断强化，传输速率从100G、400G提升至800G乃至1.6T，但随之而来的是能耗和带宽瓶颈的新挑战。&lt;/p&gt;
+&lt;p&gt;传统架构中，交换芯片（ASIC）与光模块分离，光模块通过电连接器插在设备前面板上。这种“可插拔光模块”虽然灵活，速率提升后因电连接距离长，导致功耗高、信号衰减严重，且占用宝贵的前面板空间。&lt;/p&gt;
+&lt;p&gt;CPO的创新在于把光引擎与交换芯片直接封装，将电信号在极短距离内转换为光信号，极大减少能耗与信号损失，实现了光通信不再是外围，而是芯片核心部分。这一设计被视为突破数据中心能效和带宽瓶颈的关键。&lt;/p&gt;
+&lt;h2 id="cpo技术演进从插拔到共生"&gt;CPO技术演进：从插拔到共生
+&lt;/h2&gt;&lt;p&gt;CPO的发展是光通信追求更高速率与能效的必然趋势：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• 第一阶段：可插拔光模块。优点是灵活易维护，但速率超400G后，长距离电连接导致功耗激增和信号损耗。&lt;/li&gt;
+&lt;li&gt;• 第二阶段：近封装光学(Near-Packaged Optics)。光模块移近ASIC，采用短电缆连接，功耗有所下降，但光电器件依旧分离，能效提升有限。&lt;/li&gt;
+&lt;li&gt;• 第三阶段：光电共封装（CPO）。光芯片与ASIC共封装，电路径极短，数据即刻转为光信号，显著降低功耗并释放更多端口空间，完成了“电主光辅”向“电光共生”的结构转变。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="cpo核心价值更高带宽更低功耗更绿数据中心"&gt;CPO核心价值：更高带宽、更低功耗、更绿数据中心
+&lt;/h2&gt;&lt;p&gt;CPO解决了数据中心的三大痛点：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;优势&lt;/th&gt;
+&lt;th&gt;解决的问题&lt;/th&gt;
+&lt;th&gt;实际意义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;更低功耗&lt;/td&gt;
+&lt;td&gt;电路径缩短，减少损耗&lt;/td&gt;
+&lt;td&gt;降低系统整体能耗，减轻散热负担&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;更高带宽&lt;/td&gt;
+&lt;td&gt;解放前面板空间&lt;/td&gt;
+&lt;td&gt;支撑51.2T、102.4T级大容量交换机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;更小延迟&lt;/td&gt;
+&lt;td&gt;消除长距离电信号传输&lt;/td&gt;
+&lt;td&gt;适应AI、HPC等计算密集型应用对时延的严苛需求&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;面对AI集群中CPU、GPU与交换机间频繁高速数据传输需求，CPO不仅保障高速通信，还显著节省能耗，是算力中心实现“每瓦算力”跃升的底层革命。&lt;/p&gt;
+&lt;h2 id="2025年cpo产业现状迈向实用化"&gt;2025年CPO产业现状：迈向实用化
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;• 芯片巨头布局积极：Broadcom、Marvell、Intel、NVIDIA均展示CPO样机，Broadcom Tomahawk 5验证了51.2Tbps级CPO系统。国内华为、中科院光电所等在硅光封装领域取得重要进展。&lt;/li&gt;
+&lt;li&gt;• 标准化稳步推进：OIF发布《CPO Implementation Agreement 1.0》，IEEE 802.3df/802.3dj推动1.6TbE、3.2TbE相关标准制定，为生态建设奠定基础。&lt;/li&gt;
+&lt;li&gt;• 制造生态形成：台积电、日月光、Amkor等封装厂已具备量产CPO封装能力，主流采用硅光与高密度封装技术（InFO、CoWoS、EMIB）。&lt;/li&gt;
+&lt;li&gt;• 应用初现端倪：CPO主要面向AI算力互连和超大规模数据中心核心交换，契合高带宽、低能耗、低延迟需求的典型场景。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="三大挑战热管理封装精度与维护"&gt;三大挑战：热管理、封装精度与维护
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;• 散热难题：高功耗ASIC和光芯片共封装导致热密度高，光器件对温漂敏感。主流方案包括液冷微通道、分区散热和异构封装设计。&lt;/li&gt;
+&lt;li&gt;• 封装精度：光芯片对准误差需控制在微米级，自动化主动对准和光学测试助力提升良率。&lt;/li&gt;
+&lt;li&gt;• 维护复杂：CPO结构非传统可插拔，维护难度大。采用外置激光器（ELS）方案，将激光源独立外置，仅保留调制器在封装内，提高维护便捷度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="全球生态与标准化协同共建"&gt;全球生态与标准化：协同共建
+&lt;/h2&gt;&lt;p&gt;CPO涉及光电芯片、材料、封装、散热及测试等多环节，需产业链高度协同：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;• 国际标准组织：OIF、COBO、IEEE、OCP等共同推动接口与封装标准制定。&lt;/li&gt;
+&lt;li&gt;• 产业合作网络：涵盖芯片设计、封装制造、光器件及系统厂商。&lt;/li&gt;
+&lt;li&gt;• 中国力量崛起：国内厂商从追赶者转向积极参与，推动生态与标准发展，彰显行业话语权提升。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="未来三步走"&gt;未来三步走
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;• 短期（2025-2027）：小规模试用聚焦AI/HPC互连，外置激光方案主导，模块化系统逐步完善。&lt;/li&gt;
+&lt;li&gt;• 中期（2027-2030）：随102.4Tbps交换芯片商用，CPO进入主流，与NPO并行发展以满足多样化需求，光电协同设计工具链成熟。&lt;/li&gt;
+&lt;li&gt;• 长期（2030以后）：实现“光原生”数据中心架构，光电封装成为芯片设计常态，计算与通信深度融合。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="结语算力时代的能效转折点"&gt;结语：算力时代的能效转折点
+&lt;/h2&gt;&lt;p&gt;CPO不仅是光模块的迭代，更是芯片与通信关系的重新定义。它将光通信从外围配件转变为算力系统核心，回应了AI计算时代对能效的极致追求。随着从可插拔到共封装的转变，CPO正引领数据中心迈向以光为底层语言的未来。&lt;/p&gt;</description></item><item><title>CMIS：从“看”到“管”，光网络开放解耦的隐性基石</title><link>https://blog.fallleaf.net/p/tech-cmis/</link><pubDate>Sat, 20 Sep 2025 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-cmis/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-cmis/cover.webp" alt="Featured image of post CMIS：从“看”到“管”，光网络开放解耦的隐性基石" /&gt;&lt;p&gt;在光通信的世界里，我们总能听到那些令人振奋的数字：400G、800G、1.6T……它们代表着速度的极限和带宽的无限可能。但如果我告诉你，决定未来网络能否真正开放、智能、可编程的关键，并不在于这些数字里，而在于一个听起来有些陌生的名字——CMIS，你信吗？&lt;/p&gt;
+&lt;p&gt;今天，我们就来聊聊这个在幕后默默发挥作用的“隐藏英雄”。&lt;/p&gt;
+&lt;h2 id="故事的开端一个只看数据无法指挥的时代"&gt;故事的开端：一个“只看数据，无法指挥”的时代
+&lt;/h2&gt;&lt;p&gt;想象一下，你是一位光网络运维工程师，你的工作是确保网络稳定运行。在 CMIS 出现之前，你手中的“工具”主要是 SFF-8472。&lt;/p&gt;
+&lt;p&gt;SFF-8472 就像是光模块的“诊断报告”。它让你能看到模块的实时运行数据：温度、电压、收发光功率。你很清楚模块是否“健康”，但如果你想对它进行更深层次的控制——比如，动态调整功率模式，或者远程重置模块——SFF-8472 却无能为力。&lt;/p&gt;
+&lt;p&gt;在这个时代，光模块就像一个“ &lt;strong&gt;黑盒&lt;/strong&gt; ” 。它能告诉你它在干什么，但你无法对其发号施令。更糟糕的是，每个设备厂商都有自己的私有接口，这导致：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;运维复杂： 你的团队需要掌握无数种“方言”。&lt;/li&gt;
+&lt;li&gt;锁定效应： 你被单一供应商牢牢锁住，失去了选择权和议价能力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="cmis-的革命从诊断报告到可编程大脑"&gt;CMIS 的革命：从“诊断报告”到“可编程大脑”
+&lt;/h2&gt;&lt;p&gt;为了打破这种僵局，CMIS 诞生了。CMIS（Common Management Interface Specification，通用管理接口规范）是由 OIF（Optical Internetworking Forum） 制定的行业规范，旨在为高速可插拔光模块（如 400G、800G 以及未来的 1.6T 模块）提供统一的管理与控制接口。它定义了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;寄存器映射：统一的寄存器结构和访问方式；&lt;/li&gt;
+&lt;li&gt;状态机模型：模块启动、故障、恢复等状态定义；&lt;/li&gt;
+&lt;li&gt;告警与监控：标准化的温度、电压、光功率等监控指标；&lt;/li&gt;
+&lt;li&gt;配置与控制：速率切换、工作模式、功能使能等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过这一统一规范，主机设备（交换机、路由器、传输设备）无需依赖厂商自定义的驱动程序，就能以一致的方式管理不同厂商的模块。这种标准化，是后续一切开放创新的基石。&lt;/p&gt;
+&lt;p&gt;如果说 SFF-8472 让你能“ &lt;strong&gt;看&lt;/strong&gt; ”到光模块，那么 CMIS 则赋予了你“ &lt;strong&gt;管理&lt;/strong&gt; ”和“ &lt;strong&gt;指挥&lt;/strong&gt; ”的能力。它彻底改变了光模块的地位，使其从一个被动的“诊断设备”变成了可编程、可控的网络资源。&lt;/p&gt;
+&lt;h2 id="黄金搭档cmis--netconfyang-的分层解耦战略"&gt;黄金搭档：CMIS + NETCONF/YANG 的分层解耦战略
+&lt;/h2&gt;&lt;p&gt;光模块的解耦只是第一步。真正的价值在于，CMIS 与上层网络管理协议的完美结合，共同构建了一个分层解耦的开放网络架构。&lt;/p&gt;
+&lt;p&gt;我们可以用一个简单的比喻来理解这种关系：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CMIS 就像是光模块的“操作系统”。它负责和硬件打交道，并以标准化的方式暴露所有可管理的参数。&lt;/li&gt;
+&lt;li&gt;NETCONF/YANG 就像是网络的“应用程序编程接口（API）”。它将 CMIS 提供的标准化数据模型，以更高级、更抽象的方式呈现给网络控制器或编排器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这种分层协同的模式，为运营商带来了前所未有的战略优势：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 降本提效&lt;/strong&gt; ： 运维团队不再需要适配不同厂商的私有协议。他们只需对接一套统一的 NETCONF/YANG 模型，就能管理所有符合标准的设备和光模块。这极大地简化了运维流程，降低了人力和时间成本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 掌控主动权&lt;/strong&gt; ： 运营商摆脱了单一供应商的锁定。他们可以自由选择最符合需求的光模块，并通过一套统一的管理系统进行管理。这种供应链的灵活性，使得运营商真正掌握了网络建设和运营的主动权。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 赋能智能&lt;/strong&gt; ： CMIS 让光模块的每一个细节都变得“可见”和“可控”。这意味着光模块可以无缝融入到端到端的自动化编排体系中。未来，网络控制器可以根据流量负载，自动调整模块的功率模式，实现动态节能和性能优化，为“极简网络”和“算力网络”打下坚实基础。&lt;/p&gt;
+&lt;h2 id="一句话总结"&gt;一句话总结
+&lt;/h2&gt;&lt;p&gt;CMIS 的出现，将光模块从一个“黑盒”转变为可编程、可管理的网络资源，并与 NETCONF/YANG 共同构筑了光网络分层解耦的黄金架构。它不只是一个技术标准，更是光网络从“封闭”走向“开放”的战略杠杆。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CMIS规范链接:&lt;/strong&gt;
+&lt;a class="link" href="https://www.oiforum.com/wp-content/uploads/OIF-CMIS-05.3.pdf" target="_blank" rel="noopener"
+&gt;https://www.oiforum.com/wp-content/uploads/OIF-CMIS-05.3.pdf&lt;/a&gt;&lt;/p&gt;</description></item><item><title>DDM,DOM是什么</title><link>https://blog.fallleaf.net/p/tech-what-is-ddm-dom/</link><pubDate>Sat, 14 Dec 2019 21:35:45 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-what-is-ddm-dom/</guid><description>&lt;h2 id="ddm的定义"&gt;DDM的定义
+&lt;/h2&gt;&lt;p&gt;DDM(Digital Diagnostic Monitoring)即数字诊断监控，由SFF-8472定义。&lt;/p&gt;
+&lt;p&gt;SFF-8472(Specification for Management Interface for SFP+)是一个关于SFP管理接口的规范，由行业组织存储网络工业协会 (SNIA)下的SFF(Small Form Factor)技术工作组制定。这种协议最初是为了给便携式电脑定义新型磁盘驱动器的外形而成立的，第一个版本是在2001年发布，最新的版本是2018年7月发布的Rev.12.3。&lt;/p&gt;
+&lt;p&gt;制定SFF-8472规范的一个主要目的是定义光模块的数字诊断监控功能（DDM），它是应用在GBIC/SFP/SFP+光模块中一项功能，用来监控光模块工作中的实时参数，如工作电压、工作电流、激光器偏置电流、激光器发光功率和收光功率，这些信息被存储在标准的内存结构中，并提供了标准访问接口地址，该内存结构除了提供参数监测信息外，还定义了报警标志或告警条件。&lt;/p&gt;
+&lt;p&gt;DDM通常也叫做DOM(Digital Optical Monitoring )，即数字光学检测。&lt;/p&gt;
+&lt;p&gt;DDM相关信息存储在I2C从设备的1010001X开始的存储段内，如下图。&lt;/p&gt;
+&lt;h2 id="ddm的参数"&gt;DDM的参数
+&lt;/h2&gt;&lt;p&gt;DDM实时监测工作温度、工作电压、偏置电流、发射功率、接收功率这5个参数，经过A/D转换，将模拟量变为数字量，并通过校准，将数字量写入EEPROM特定地址段A2H，&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;工作温度：指收发器温度，SFF-8472并没有规定温度的测量点，由厂家决定，一般温度传感器是在电路板上。如果离芯片太近可能监测的温度会高一些，并不是实际收发器的温度，所以要进行校准。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;工作电压：指收发器的工作电压，同样，SFF-8472并没有指明电压监测点，一般可以是发送器电压或者接收器电压。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;激光器偏置电流：激光器的偏置电流指的是驱动电源中放大器的输入电路的静态电流，用以保证激光器正常工作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;发送功率：激光器发送功率并不是真正的光功率，一般是监测发射器电流转换的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接收功率：可采用平均功率或OMA类型的接收功率。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="哪些光模块支持ddm"&gt;哪些光模块支持DDM
+&lt;/h2&gt;&lt;p&gt;目前大部分的SFP、SFP+模块都支撑DDM功能，在模块的规格信息里，常常注明DDM或DOM。&lt;/p&gt;
+&lt;h2 id="ddm能做什么"&gt;DDM能做什么
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;预测光模块的使用寿命：一般来讲，光模块的输出功率都是稳定的，这是通过不断调整激光发射器的偏置电流来实现的，但是随着运行时间的增加，发射激光器的量子效率会降低，因此用户可以通过监控激光发射器的的偏置电流来预测光模块的使用寿命。&lt;/li&gt;
+&lt;li&gt;故障定位：在光通信系统中，精准地找到故障点具有重要意义。通过分析收发功率以及i电压电流可以进行故障定位。&lt;/li&gt;
+&lt;li&gt;兼容性测试：兼容性测试即检测光模块是否可以在某一网络设备上正常使用，而光模块不兼容的常见情况有电压超过光模块的规格、温度超过光模块的规格、接收到的光功率过载或低于光接收器的的接收范围等。而使用具有数字诊断监控功能（DDM）的光模块能直观的反映这些不兼容情况。&lt;/li&gt;
+&lt;li&gt;监测光纤性能：通过对接收功率以及发送功率的分析，辅助光纤长度等信息，可大致判断光路的衰减是否在正常范围内。&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>SFP模块的兼容性</title><link>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</link><pubDate>Sat, 14 Dec 2019 21:31:51 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</guid><description>&lt;h2 id="sfp光模块的生产"&gt;SFP光模块的生产
+&lt;/h2&gt;&lt;p&gt;SFP光模块的组成如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp.webp"
+width="1080"
+height="724"
+srcset="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_2c8d41280072178b.webp 480w, https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp_hu_8cd4b58aecbc64e5.webp 1024w"
+loading="lazy"
+alt="SFP光模块"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="358px"
+&gt;&lt;/p&gt;
+&lt;p&gt;实际上，所有光模块，不管是原厂还是第三方，都是由类似的元器件组装而成。&lt;/p&gt;
+&lt;p&gt;光模块供应商生产基本是三种模式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;外购组件，模块封装&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;外购芯片，组建封装，模块封装&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;芯片制造，组建封装，模块封装&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;具备从芯片制造到模块封装能力的供应商，全球屈指可数的，大部分的供应商都是外购元器件进行封装生产，国内更甚。光模块产品的区别主要体现在不同的元器件来源、生产质量及成本的管控方面。&lt;/p&gt;
+&lt;p&gt;大部分兼容光模块其实也是由生产原厂光模块的厂家生产，甚至采用相同技术指标、生产工艺，也仅仅是商标的不同。&lt;/p&gt;
+&lt;h2 id="sfp光模块兼容性"&gt;SFP光模块兼容性
+&lt;/h2&gt;&lt;p&gt;根据MSA标准设计制造生产的SFP光模块，兼容性是不言而喻的。&lt;/p&gt;
+&lt;p&gt;MSA（Multi-Source Agreement）是一个多供应商规范，相比IEEE算是一个民间的非官方组织形式，针对不同的光模块（SFP、SFP+、QSFP等）标准会形成不同的MSA协议，可以理解是产业内企业联盟行为。MSA除了定义光模块的结构封装（包括外形尺寸，电连接器，引脚分配等），也定义了电接口、光接口，从而形成完整的光模块标准。理论上，遵循MSA协议生产的光模块均可兼容。
+供应商陷阱&lt;/p&gt;
+&lt;p&gt;一些主导地位的通信设备、数据设备供应商，常常采用“Vendor Lock-in“（供应商陷阱，供应商套牢，厂商泥潭）的策略，宣称在设备上用原厂的SFP模块才能正常工作，让用户产生不必要的担忧，使用了远远高过市场价的原厂光模块。当然，不考虑成本的话，原厂光模块自然是首选。当成本占据主要因素时，利用兼容光模块就成了首要考虑的问题。&lt;/p&gt;
+&lt;p&gt;这些供应商通常在光模块的固件、硬件以及EEPROM里设置一些数据，比如供应商名称、序列号，认证码等等。当设备发觉光模块插入插槽中，就会读取光模块某些特定地址的（A0h）数据，如果和预先设定的数据不一致，便认为不是原厂模块，不工作或发出告警。即便模块能正常工作，模块的DDM功能也可能不正常使用。SFF-8472规范里，规定了数字诊断检测接口（A2h），其中存储了光模块的发光功率、收光功率以及告警、警报的门限值等，如果兼容模块的DDM信息中的一些门限参数和原厂不一致，也会造成网管的频繁告警或警报。&lt;/p&gt;
+&lt;h2 id="怎么用兼容sfp模块"&gt;怎么用兼容SFP模块
+&lt;/h2&gt;&lt;p&gt;光模块中的EEPROM信息可以通过专用设备进行修改，大量兼容模块厂家也根据原厂模块的一些参数进行了适配，兼容性更强了。在某些主导厂家的设备商，也可进行命令设置，取消原厂模块认证功能，让设备或网管能够识别及监测兼容光模块。&lt;/p&gt;
+&lt;p&gt;使用兼容光模块，在法律上，也可看作一种反垄断的举措。通过选择合适的兼容模块供应商，可以即保证性能，又降低成本。这必将会对设备供应商的报价策略产生影响，报价策略通常是把接口板或设备与光模块捆绑在一起，价格此消彼长。不过，让模块归于模块，让板卡归于板卡，价格体系理顺，不是更好吗？
+如何选择兼容光模块&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;选择合适的兼容光模块，可以从以下几点考虑：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;是否符合MSA的规范要求&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;是否和原厂设备兼容，DDM功能是否正常&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;是否有可靠的质量和服务保证&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;模块的零部件来源是否是可信任&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>5G承载中回传新接口:50GE</title><link>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</link><pubDate>Fri, 13 Dec 2019 08:49:28 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-50ge-interface-5g-backhaul/</guid><description>&lt;p&gt;在IMT-2020(5G)推进组的《5G承载网络架构和技术方案白皮书》以及《5G承载光模块白皮书》中，提出了采用50GE作为5G承载中回传的线路接口。&lt;/p&gt;
+&lt;h2 id="50g相关以太网光接口标准"&gt;50G相关以太网光接口标准
+&lt;/h2&gt;&lt;p&gt;IEEE的两个标准：IEEE 802.3 bs(400G，200G) 和802.3 cd（200G，100G，50G） 定义了50G，100G，200G，400G以太网的媒体访问控制层（MAC）以及物理层（PHY）的相关参数。主要的光接口类型以及采用的调制格式如下表：&lt;/p&gt;
+&lt;p&gt;可以看到，在实现50G以上的高速以太网接口时，主要采用了50G比特速率（波特26.6GBaud），PAM4调制方式。&lt;/p&gt;
+&lt;h2 id="为什么是pam4"&gt;为什么是PAM4
+&lt;/h2&gt;&lt;p&gt;光传输一直在追求更高的传输速率，但速率越高，所面临的问题也就越多，诸如色散、发光功率、信噪比、光收发器的线性度及灵敏度、技术成熟度、成本等。提高速率的方式有多种，包括通过频率、振幅、相位等变化的调制方式。&lt;/p&gt;
+&lt;p&gt;NRZ（不归零码，Non-Return-to-Zero）调制方式一直是光通信采用的主要技术，随着速率的提升，如 200G/400G，NRZ调制在色散影响、光电转换带宽和成本上遇到了较大的困难。对于25G以上的波特率，在中长距传输时，色散的影响显著；光电转换带宽在60Gbit/s以上出现了技术瓶颈。对于高速接口，每通道数据速率要提高到50Gbps以上，如果仍然采用NRZ技术，由于每个符号周期只有不到20ps，对于收发芯片的时间裕量以及传输链路的损耗要求更加苛刻， 若能既保持较低的波特率，又提高每一波特的信息量，就能大大降低光器件的带宽要求，从而可以降低光器件成本。而PAM4调制方式极大的满足了上述要求，是继NRZ后热门的信号调制技术，也是多阶调制技术的代表。&lt;/p&gt;
+&lt;h2 id="pam4是什么"&gt;PAM4是什么
+&lt;/h2&gt;&lt;p&gt;PAM即脉冲幅度调制（Pulse Amplitude Modulation）。NRZ调制方式采用高、低两种信号电平来表示要传输的数字逻辑信号的1、0信息，每个信号符号周期可以传输1bit的逻辑信息，实际上NRZ方式可也叫做PAM2，2表示的是有2种电平信号。那么PAM4调制方式就是采用4个不同的信号电平来进行数据传输，每个符号周期可以表示2bit的逻辑信息（00、01、10、11）。由于 PAM4 信号每个符号周期可以传输2bit的信息，因此要实现同样的信号传输能力，PAM4信号的符号速率（波特率）只有NRZ信号的一半，换而言之，采用同样的波特速率，PAM4的信号比特率是NRZ信号的2倍，比如利用25G波特率，PAM4调制方式，可以传输50G比特率的信息。NRZ和PAM4信号典型波形如下图所示，右侧为NRZ和PAM4的光眼图对比，NRZ为单眼波形，PAM4为三眼波形（Y轴方向存在3个眼状图形）。&lt;/p&gt;
+&lt;p&gt;其实多阶PAM调制的概念并不新鲜，比如最普遍使用的100MBase-T以太网，就使用3种电平进行信号传输；而在无线通信领域中普遍使用的16QAM调制、32QAM调制、64QAM调制等，也都是采用多电平的基带信号对载波信号进行调制。此外还有PAM5（802.3ab），PAM8（802.3bm）等。&lt;/p&gt;
+&lt;p&gt;在2014年发布的100G背板标准802.3 bj中，同时定义了两种信号传输方式：4组25.78G波特率的NRZ信号，或者4组13.6G波特率的PAM4信号。由于芯片技术以及PCB板材和连接器技术的快速发展，25G波特率的NRZ技术很快实现商用应用，但PAM4由于当时技术成熟度和成本的原因，并没有在100G以太网的技术中被真正应用。随着IEEE 802.3 bs 和802.3 cd的发布，PAM4将越来越多的大规模应用起来。
+50G相关标准进展&lt;/p&gt;
+&lt;p&gt;IEEE 802.3 bs标准批准时间为2017年12月，该标准覆盖了400GE/200GE两种以太网接口速率。其中400GE定义了LR8 (10km)/FR8 (2km)/DR4 (500m)/SR16 (100m)等PMD子层规格以及多种AUI电接口。LR8/FR8采用了50G PAM4技术，成为以太网标准中首个采用该技术接口标准，为PAM4技术开启广泛商用打开了大门。&lt;/p&gt;
+&lt;p&gt;IEEE 802.3 cd标准批准时间为2018年12月，标准覆盖了50GBASE-LR/KR/SR PMD子层，所有PMD子层都采用了50G PAM4技术，50GE是PAM4技术应用最广泛的以太网接口速率。&lt;/p&gt;
+&lt;p&gt;以上标准定义的50GE传输距离都在10km以下，2018年4月IEEE成立了Beyond 10km工作组，对50G在40km传输距离范围内，100G、200G、400G在40km及80km传输范围的技术进行研究，2018年9月更改为P802.3 cn工作组，计划规范批准时间节点为2020年6月。&lt;/p&gt;
+&lt;h2 id="50g光收发模块原理及功率预算"&gt;50G光收发模块原理及功率预算
+&lt;/h2&gt;&lt;p&gt;基于50G PAM4光模块运用PAM4编码技术，每个采样周期的传输信息量提升了一倍，可以利用一对25G发射和接收器件实现50G传输速率，降低了模块的成本。50G PAM4可有多种应用场景，除了单通道的50GE PAM4光模块，还有4通道的200GE（4×50G）光模块和8通道的400GE（8×50G）光模块。&lt;/p&gt;
+&lt;p&gt;下面以单通道50G PAM4即50GE光模块为例，介绍各模块功能。&lt;/p&gt;
+&lt;p&gt;发送方向：数据经过50GE MAC、PCS、PMA后，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到50GE光模块，经过PAM4 DSP编解码芯片进行速率和码型转换，从2通道转换为1通道，调制码型转换成为PAM4，速率为26.5625G波特率，激光器驱动芯片将PAM4信号放大，驱动25G激光器将电信号转换为单波长25GBaud（50Gbps）光信号。&lt;/p&gt;
+&lt;p&gt;接收方向，接受器将单波长25GBaud光信号转换为电信号，整形放大后输出至PAM4 DSP编解码芯片，PAM4编解码芯片再将该信号转换为2*25G NRZ信号，通过2×26.5625Gbps接口(Golden finger，50GAUI-2)送到以太网处理芯片。&lt;/p&gt;
+&lt;p&gt;目前50GE PAM4模块的封装形式为QSFP28，计划的封装为SFP56，光口类型为LC，使用单模光纤，中心波长为1311nm，传输距离为10km/40km，模块的最大功耗为4.5W。有关功率预算关键技术参数如下表：&lt;/p&gt;
+&lt;p&gt;和传输距离相关的主要是通道插损，即光纤以及光纤连接器引入的插损之和。IEEE目前定义50G LR场景，极限情况下是1304.5nm，按0.43dB/km计算，即0.43dB/km×10km=4.3dB，还有6.3-4.3=2dB余量是给光纤连接、以及熔纤导致的插损。&lt;/p&gt;
+&lt;h2 id="50g光收发模块相关技术"&gt;50G光收发模块相关技术
+&lt;/h2&gt;&lt;p&gt;PAM4相比传统的NRZ信号，从2阶变为4阶，眼图从单眼变成3眼。在承载bit效率方面虽然提升了1倍，但也引入了对噪声、线性度敏感的问题，因此不能简单的利用已经成熟的25G光电模块，还需根据PAM4的特性进行相应的改变。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发送机线性要求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于多电平调制，PAM4 对器件的线性度有要求。当线性度差时，PAM4 输出眼图的3 个眼高度不一样，容易造成误判，增加了误码率。电器件比较容易满足上述要求，10 km 规格能采用直接调制激光器（DML）实现，同时也保证了低成本。40km规格则需要使用电吸收调制激光器(EML)和雪崩光电探测器。另一方面，10km和40km的规格均对高线性度的激光器驱动器和跨阻放大器有需求。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;光功率预算&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;功率预算主要考虑出光功率、光调制幅度（OMA）、光链路损耗、发射机和色散眼图闭合度（TDECQ）、多径干扰（MPI）和接收灵敏度等，PAM4在功率预算计算上与NRZ 类似。对于同样的接收信号幅度，由于PAM4发送4 个电平，最小信号眼图眼高比NRZ 的小5 dB 左右。因此，相比于NRZ 方式，PAM4 存在着5dB左右的调制代价。激光器的发射功率相对采用NRZ的25G激光器需要提高。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PAM4 DSP芯片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于PAM4编码有4种电平逻辑，所以要求模块内部的Driver和TIA芯片都具备线性输出功能，而NRZ模块使用限幅输出的方案即可。PAM4模块需要使用DSP来完成50G PAM4和2×25G NRZ信号的转换，而NRZ模块只需要使用传统的CDR芯片即可完成数据传输。&lt;/p&gt;
+&lt;h2 id="50ge的应用及展望"&gt;50GE的应用及展望
+&lt;/h2&gt;&lt;p&gt;50GE除了在数据中心的交换机以及服务器互联中大量采用，随着5G承载网建设的日益临近，其在承载网接入层中的应用也越来越多的得到运营商的关注。&lt;/p&gt;
+&lt;p&gt;在运营商方面：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国移动：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;李晗表示，在技术推动上，中国移动选择“两条腿走路”——既完善SPN的相关标准，推动其成熟，又发挥中国移动产业影响力，积极与光芯片、光器件、光模块等厂家合作，降低光层整体成本。SPN接入层采用50G PAM4 BiDi光模块，更好地满足带宽、同步等指标，需进一步推进产业成熟和降低成本。据悉，50GE光模块支持10km、100km DiBi方案，已有可商用产品，而50G较25G成本增加主要是PAM4电芯片，预计量产后50G PAM4较25G光模块贵10%-20%以内，预计单比特成本下降35%-45%。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国电信：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;张成良指出，4G和5G相比，不仅是承载网络架构发生变化，对核心网、中传/回传、前传等都提出了更高的要求。核心网需要更高速的光模块（200G/400G）、更大的容量的光传输、更灵活的组网、更高效的光层调度。中传/回传需要更高速的光模块（50G/100G）、更大的网络带宽和更灵活的网络以及更好的性能。中国电信在STN招标里，要求STN-A2，STN-B设备“承诺支持50GE/25GE 接口”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国联通&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;中国联通网络技术研究院沈世奎表示：“中国联通在5G承载网的建设已有较为清晰的方向，务实为本，采用产业链中更加成熟的技术；成本为主，以综合成本和TCO最低为目标。25G光层产业链已经完善，基于PAM4技术和25G光收发器实现的50GE更具性价比优势。”&lt;/p&gt;
+&lt;p&gt;50GE光模块的应用需要整个产业链的共同促进，其中运营商的需求是决定因素，据目前的信息，中国移动在推进50GE的应用最积极，其次是中国电信，以中国移动的需求量，或许能够加速整个产业链的发展。&lt;/p&gt;
+&lt;p&gt;国内传统通信设备厂商华为、中兴、烽火也都宣称5G承载网设备支持50G接口。华为一直在牵头做技术推动，2018年联合上下游企业发布了《50G PAM4技术白皮书》。在2019年4月，华为宣称通过了中国移动研究院组织开展的50GE单纤双向新技术测试，其在技术交流资料中，更是介绍了采用FlexE技术将50GE平滑升级成100G的方案。&lt;/p&gt;
+&lt;p&gt;50GE在5G回传接入层的应用，主要取决于接入层流量预测以及50GE光收发器的价格。&lt;/p&gt;
+&lt;p&gt;据测算，目前4G基站单站平均流速大概0.08Gb/s，结合目前运营商的建设指导意见，一个接入环大概带4个BBU集中点，一个BBU集中点大约带10个左右的基站，若按5G基站平均流速是4G的10倍计算，则一个环的总流速大概为0.08×10×4×10=32Gb/s，这种情况下采用50GE是比较合适的，但考虑初期50GE成本问题，建设初期可采用10GE建设，随着流量增加进行10GE捆绑方式扩容（实际上，也可考虑采用前传采用的25GE速率）。假若50GE的价格能够达到10GE价格的2-3倍时（这一点在数通的报价体系内估计很难达到），或100GE的1/3以下时，采用50GE是一个优选的方案，可以达到TCO的最优。n×10GE捆绑方式，除了考虑光模块的价格，还要把维护量的增加、数据配置的复杂、对光纤的占用都纳入TCO的评估中。据相关资料，现有4G回传接入层有30%-44%采用的40km10G光模块，因此50GE 40km光模块的价格对其应用也是至关重要的。&lt;/p&gt;
+&lt;p&gt;126.6GBaud实为26.5625GBaud，在使用PAM4调制时，采用前向纠错编码RS-FEC（544，514）以及线路编码256b257b将25G变为26.5625G，25G×（544÷514）×（257÷256）＝26.5625G。&lt;/p&gt;
+&lt;p&gt;225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。&lt;/p&gt;</description></item><item><title>25G单纤双向收发合一光模块</title><link>https://blog.fallleaf.net/p/tech-25g-bidi-module/</link><pubDate>Sat, 03 Aug 2019 13:34:59 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-25g-bidi-module/</guid><description>&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
+&lt;p&gt;2016年5月IEEE通过了802.3by-2016规范，定义了25Gb/s应用媒质接入控制参数、物理层要求，2017年12月通过了802.3cc-2017标准以太网修正：物理层和管理参数，用于通过单模光纤实现串行25 Gbps以太网，2018年10月通过PAR，开展制定10Gb/s，25Gb/s，50Gb/s单纤双向物理层规范，项目号为P802.3cp。中国于2018年6月开始制定用于基站的25Gb/s单纤双向光收发合一模块技术规范，2018年11月发出征求意见稿，预计2019年完成标准制定工作。&lt;/p&gt;
+&lt;p&gt;单纤双向方式可以节省50%的纤芯资源，大大节省了光缆线路的投资，同时由于上下行等距可有效保证高精度时间同步，因此，是5G前传的一种主要模式。&lt;/p&gt;
+&lt;p&gt;下图是optech发布的一款25G单纤双向光模块，采用SFP28封装方式：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx.webp"
+width="747"
+height="440"
+srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_a6f1cbd30437b995.webp 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx_hu_eac0f67620db50ab.webp 1024w"
+loading="lazy"
+alt="光模块"
+class="gallery-image"
+data-flex-grow="169"
+data-flex-basis="407px"
+&gt;&lt;/p&gt;
+&lt;p&gt;下图是25G单纤双向光模块的原理图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver.webp"
+width="943"
+height="365"
+srcset="https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_4e153485a631ccbc.webp 480w, https://blog.fallleaf.net/p/tech-25g-bidi-module/Block_Diagram_of_Transceiver_hu_7d33a44214ee0c35.webp 1024w"
+loading="lazy"
+alt="原理框图"
+class="gallery-image"
+data-flex-grow="258"
+data-flex-basis="620px"
+&gt;&lt;/p&gt;
+&lt;p&gt;25Gbit/s单纤双向光模块采用的波长业界有1270nm/1310nm和1270nm/1330nm两种方案，征求意见稿中初步确定采用1270nm/1330nm方案。&lt;/p&gt;
+&lt;p&gt;25Gbit/s单纤双向光模块最高速率为25.78Gb/s，按传输距离分类可分为两种:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中距:建议用于10km以内的场景&lt;/li&gt;
+&lt;li&gt;长距:建议用于15km以内的场景&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;25Gbit/s单纤双向光模块光口参数分AAU侧和DU侧：&lt;/p&gt;
+&lt;p&gt;AAU侧光口参数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;光模块拉环为海蓝色&lt;/li&gt;
+&lt;li&gt;发送端中心波长：1260nm~1280nm&lt;/li&gt;
+&lt;li&gt;接收端接收波长：1320nm~1340nm&lt;/li&gt;
+&lt;li&gt;平均发送光功率：10公里，-2.0 ~ +4.0dBm；15公里，0 ~ +6dBm&lt;/li&gt;
+&lt;li&gt;发送和色散代价(TDP)：≤2.7dBm&lt;/li&gt;
+&lt;li&gt;最大接受灵敏度：10公里，≤-13dBm；15公里，≤-14.5dBm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;DU侧光口参数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;光模块拉环为中黄色&lt;/li&gt;
+&lt;li&gt;发送端中心波长：1320nm~1340nm&lt;/li&gt;
+&lt;li&gt;接收端接收波长：1260nm~1280nm&lt;/li&gt;
+&lt;li&gt;平均发送光功率：10公里，-2.0 ~ +4.0dBm；15公里，0 ~ +6dBm&lt;/li&gt;
+&lt;li&gt;发送和色散代价(TDP)：≤2.7dBm&lt;/li&gt;
+&lt;li&gt;最大接受灵敏度：10公里，≤-13dBm；15公里，≤-14dBm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;信道功率预算和代价&lt;/p&gt;
+&lt;p&gt;为了保证25G单纤双向光模块在现网中的应用,各项指标值需要保证功率预算需求,保证足够的冗余量。链路光功率预算需要考虑传输(光纤含熔接)损耗,活动连接头损耗和维护冗余等因素,光功率预算的公式如下:&lt;/p&gt;
+&lt;p&gt;$$ P_o−S_i-E≥T+I+M $$&lt;/p&gt;
+&lt;p&gt;式中:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;$$P_o — 最小发送光功率;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$S_i—— 最大接收灵敏度;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$E—— 发送和色散的代价;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$T—— 传输(光纤含熔接)损耗,1310nm 波段光纤每公里损耗按 0.4dB 计算;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$I—— 活动连接头损耗,每个按 0.5dB 计算;$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$M—— 维护冗余,工程中维护冗余按 3dB 计算。$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;按平均发光功率的统计数据计算，得出：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10km模块最大线路衰减：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$P_o−S_i−E=4.0−2.7−(−13)=14.4dB$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;15km模块最大线路衰减：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$P_o−S_i−E=6.0−2.7−(−13)=17.4dB$$&lt;/p&gt;
+&lt;p&gt;即当光缆线路端到端衰减大于14.4dB时，应选用15km单纤双向光模块。&lt;/p&gt;</description></item></channel></rss>

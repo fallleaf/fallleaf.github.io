@@ -3774,17 +3774,19 @@ AI 推理采用逐 Token 生成方式，相当于在数据流上施加&amp;quot;
 &lt;h2 id="一上一版为什么不够用"&gt;一、上一版为什么不够用
 &lt;/h2&gt;&lt;p&gt;原来的五类是：成长与学习、技术与实践、生活与日常、行走与体验、随笔与观察。判断办法是问一句&amp;quot;这篇文章的核心动作是什么&amp;quot;。&lt;/p&gt;
 &lt;p&gt;问题出在&amp;quot;动作&amp;quot;这个词上。一百多篇实际归类下来，暴露了三件事。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第一，动作和对象混在了一个维度里。&lt;/strong&gt;&amp;ldquo;成长与学习&amp;quot;回答的是为什么写（让自己变好），&amp;ldquo;技术与实践&amp;quot;回答的是写什么（技术系统），&amp;ldquo;生活与日常&amp;quot;&amp;ldquo;行走与体验&amp;quot;回答的也是写什么（家庭、地点），&amp;ldquo;随笔与观察&amp;quot;回答的却是怎么写。一篇《20 年后，重读自己写的 48V 电源博客》，同时是&amp;quot;解决技术问题&amp;quot;&amp;ldquo;提升自己&amp;quot;&amp;ldquo;表达感受&amp;rdquo;，三个动作都成立。这不是归类时看不准，是规则本身留了口子。&lt;/p&gt;
-&lt;p&gt;**第二，&amp;ldquo;随笔与观察&amp;quot;变成了兜底筐。**这个类里最多的时候有 32 篇，占四分之一还多，其中十几篇其实是标准的产业分析：《AI 时代运营商光缆基础设施商业模式重构》一万四千字，《增值税税率调整对电信运营商有何影响》《Token 运营时代》《从 OpenRouter 到运营商 AI 服务网络》系列三篇。这些文章有人物、有数据、有判断，跟&amp;quot;写给自己看的文字&amp;quot;是两回事，但它们当时无处可去。&lt;/p&gt;
-&lt;p&gt;**第三，&amp;ldquo;成长与学习&amp;quot;收到的东西，跟它的定义不是一回事。**定义写的是&amp;quot;提升自我能力 / 思维 / 方法&amp;rdquo;，实际收进来的是&amp;quot;我在学习某个技术&amp;rdquo;——《算力网与新一代通信网的定义》五千字、《从 Anthropic 报告谈起》六千字。定义的轴是目的，执行时的轴变成了姿态，两个轴不一致，它就会一直和技术类打架。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一，动作和对象混在了一个维度里&lt;/strong&gt;。&amp;ldquo;成长与学习&amp;quot;回答的是为什么写（让自己变好），&amp;ldquo;技术与实践&amp;quot;回答的是写什么（技术系统），&amp;ldquo;生活与日常&amp;quot;&amp;ldquo;行走与体验&amp;quot;回答的也是写什么（家庭、地点），&amp;ldquo;随笔与观察&amp;quot;回答的却是怎么写。一篇《20 年后，重读自己写的 48V 电源博客》，同时是&amp;quot;解决技术问题&amp;quot;&amp;ldquo;提升自己&amp;quot;&amp;ldquo;表达感受&amp;rdquo;，三个动作都成立。这不是归类时看不准，是规则本身留了口子。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二，&amp;ldquo;随笔与观察&amp;quot;变成了兜底筐&lt;/strong&gt;。这个类里最多的时候有 32 篇，占四分之一还多，其中十几篇其实是标准的产业分析：《AI 时代运营商光缆基础设施商业模式重构》一万四千字，《增值税税率调整对电信运营商有何影响》《Token 运营时代》《从 OpenRouter 到运营商 AI 服务网络》系列三篇。这些文章有人物、有数据、有判断，跟&amp;quot;写给自己看的文字&amp;quot;是两回事，但它们当时无处可去。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第三，&amp;ldquo;成长与学习&amp;quot;收到的东西，跟它的定义不是一回事&lt;/strong&gt;。定义写的是&amp;quot;提升自我能力 / 思维 / 方法&amp;rdquo;，实际收进来的是&amp;quot;我在学习某个技术&amp;rdquo;——《算力网与新一代通信网的定义》五千字、《从 Anthropic 报告谈起》六千字。定义的轴是目的，执行时的轴变成了姿态，两个轴不一致，它就会一直和技术类打架。&lt;/p&gt;
 &lt;p&gt;一个类占到总量的四分之一以上，通常说明体系缺一条轴，而不是文章写得太杂。&lt;/p&gt;
-&lt;h2 id="二现在的做法两根轴分开"&gt;二、现在的做法：两根轴分开
+&lt;h2 id="二现在的做法三根轴分开"&gt;二、现在的做法：三根轴分开
 &lt;/h2&gt;&lt;p&gt;改完的结构是这样：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;分类只回答&amp;quot;写的是什么对象&amp;rdquo;&lt;/strong&gt;，六个，长期不变。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;标签只回答&amp;quot;这是一篇什么形态的文章&amp;rdquo;&lt;/strong&gt;，八个，受控词表，不随手造词。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;形态标签回答&amp;quot;这是一篇什么形态的文章&amp;rdquo;&lt;/strong&gt;，八个，受控词表，不随手造词。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;主题标签回答&amp;quot;这篇文章写了什么&amp;rdquo;&lt;/strong&gt;，三十四个，同样是受控词表，覆盖技术、行业与生活场景。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;对象稳定，形态会变；把两件事放在一根轴上，哪一头都照顾不好。&lt;/p&gt;
+&lt;p&gt;对象稳定，形态会变，主题会越积越多。三件事分开放，哪一头都不至于被压扁。&lt;/p&gt;
+&lt;p&gt;（2026 年 10 月补记：这一节原来只有两根轴，“标签只留形态”是我 1 月时的判断。用了大半年发现不对——想找“哪几篇写过 OLT”的时候，站内搜索给的是一堆命中片段，不是一份能顺着读下去的清单。所以补了第三根轴，见第五节。）&lt;/p&gt;
 &lt;h2 id="三六个分类"&gt;三、六个分类
 &lt;/h2&gt;&lt;h3 id="技术与实践"&gt;技术与实践
 &lt;/h3&gt;&lt;p&gt;写的是技术系统本身：设备、协议、网络架构、方案、运维、工程经验。&lt;/p&gt;
@@ -3812,13 +3814,13 @@ AI 推理采用逐 Token 生成方式，相当于在数据流上施加&amp;quot;
 &lt;p&gt;判断标准：文章成立的前提是你到了那个地方。&lt;/p&gt;
 &lt;h3 id="成长与学习"&gt;成长与学习
 &lt;/h3&gt;&lt;p&gt;只留一类很窄的东西：能力、认知、方法的自我改造。学习方法、思维框架、如何使用工具改变自己的工作方式。&lt;/p&gt;
-&lt;p&gt;判断标准：读完能改变&amp;quot;我怎么做&amp;rdquo;,而不是&amp;quot;我知道了一件什么事&amp;rdquo;。所以&amp;quot;学了某个技术&amp;quot;不进来，只有&amp;quot;因此改变了做法&amp;quot;才进来。这个类现在只有 4 篇，小是正常的，它是全站最窄的一格。&lt;/p&gt;
+&lt;p&gt;判断标准：读完能改变&amp;quot;我怎么做&amp;rdquo;,而不是&amp;quot;我知道了一件什么事&amp;quot;。所以&amp;quot;学了某个技术&amp;quot;不进来，只有&amp;quot;因此改变了做法&amp;quot;才进来。这个类现在只有 4 篇，小是正常的，它是全站最窄的一格。&lt;/p&gt;
 &lt;h3 id="随笔"&gt;随笔
 &lt;/h3&gt;&lt;p&gt;有明确写作姿态、但没有明确对象的文字：情绪、观察、感慨、短记。&lt;/p&gt;
 &lt;p&gt;判断标准：把时间地点人物都抽掉，文章还成立。&lt;/p&gt;
-&lt;p&gt;**这个类不再是兜底筐。**如果一篇文章前五类都不像，先想想是它真的没有对象，还是体系又缺了一条轴。前者进随笔，后者该改分类规则，不该继续往这里塞。&lt;/p&gt;
-&lt;h2 id="四八个标签"&gt;四、八个标签
-&lt;/h2&gt;&lt;p&gt;分类管&amp;quot;是什么&amp;quot;，标签管&amp;quot;怎么写的&amp;quot;。标签只有这八个，不再随手造新词：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这个类不再是兜底筐&lt;/strong&gt;。如果一篇文章前五类都不像，先想想是它真的没有对象，还是体系又缺了一条轴。前者进随笔，后者该改分类规则，不该继续往这里塞。&lt;/p&gt;
+&lt;h2 id="四八个形态标签"&gt;四、八个形态标签
+&lt;/h2&gt;&lt;p&gt;分类管&amp;quot;是什么&amp;quot;，形态标签管&amp;quot;怎么写的&amp;quot;。这一类只有八个，不再随手造新词：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -3870,8 +3872,45 @@ AI 推理采用逐 Token 生成方式，相当于在数据流上施加&amp;quot;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;以前的标签是内容关键词（AI、宽带、OLT、安哥拉），一共 170 个，其中 139 个只出现过一次。那种标签没法用来导航，只是噪音。内容关键词交给站内搜索，标签留给结构。&lt;/p&gt;
-&lt;h2 id="五归类时的四条规则"&gt;五、归类时的四条规则
+&lt;p&gt;以前的标签是内容关键词（AI、宽带、OLT、安哥拉），一共 170 个，其中 139 个只出现过一次。当时我的结论是&amp;quot;内容关键词没法导航&amp;quot;，于是把它们全砍了，交给站内搜索。这个结论只对了一半。&lt;/p&gt;
+&lt;p&gt;170 个自由词的问题不在于它是关键词，而在于没有词表：同一个东西能有五种写法（OLT、olt、光线路终端、接入局端设备、OLT 设备），139 个词只出现一次，谁也不认谁。真正需要的不是砍掉主题，是把它们收成一张受控词表。&lt;/p&gt;
+&lt;h2 id="五三十四个主题标签"&gt;五、三十四个主题标签
+&lt;/h2&gt;&lt;p&gt;主题标签按域分四组，全部列在 &lt;code&gt;data/tag_groups.yaml&lt;/code&gt; 里，每个词都有自己的落地页：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;域&lt;/th&gt;
+&lt;th&gt;主题标签（括号内为篇数）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;网络与传输&lt;/td&gt;
+&lt;td&gt;光传输（12）、算力网络（8）、光模块（6）、5G承载（6）、光缆（6）、通信设计（6）、极简网络（5）、OLT（4）、数据中心（4）、网络规划（4）、机房与电源（4）、网络运维（4）、接入网（2）、DCI（2）、PON（1）、数字孪生（1）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;产业与政策&lt;/td&gt;
+&lt;td&gt;运营商战略（22）、宽带业务（6）、政策与监管（4）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;技术与思潮&lt;/td&gt;
+&lt;td&gt;大模型（13）、科技与社会（6）、编程（3）、网络工具（3）、数据可视化（1）、摄影（1）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;生活与场景&lt;/td&gt;
+&lt;td&gt;旅行与出差（22）、健康与健身（5）、往事回忆（5）、家庭与育儿（3）、音乐与吉他（3）、饮食与烹饪（3）、阅读与思考（2）、篮球（2）、戏曲（1）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;每篇 0 到 3 个主题标签，按&amp;quot;读者会拿什么词来找它&amp;quot;来选，而不是按&amp;quot;文章里提到过什么&amp;quot;来选。一百一十九篇里，只有三篇（一首诗、两篇短随笔）一个主题标签都没有——它们本来就没有对象，这也算一种准确的标注。&lt;/p&gt;
+&lt;p&gt;主题标签的四条规矩：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;收词标准&lt;/strong&gt;：一类技术、一个行业对象、一种生活场景。写文章时能想到去点它的词才收。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;每篇不超过三个&lt;/strong&gt;，多了等于没标。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一个词至少两篇撑着&lt;/strong&gt;；只有一篇时先想想是不是该并到上级词。少数单篇标签是有意留的（PON、数字孪生、摄影、数据可视化、戏曲），因为它们在别的文章里还会再出现。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;新增标签要建两处&lt;/strong&gt;：&lt;code&gt;data/tag_groups.yaml&lt;/code&gt; 里登记分组，&lt;code&gt;content/tags/&amp;lt;名称&amp;gt;/_index.md&lt;/code&gt; 里建落地页。少一处，标签总览页上就没有它。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="六归类时的四条规则"&gt;六、归类时的四条规则
 &lt;/h2&gt;&lt;p&gt;一篇文章同时像两类，按这个顺序判：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;看对象&lt;/strong&gt;：技术系统 → 技术与实践；行业主体 → 产业观察；家里 → 生活与日常；地点 → 行走与体验；自己 → 成长与学习；什么都没有 → 随笔。&lt;/li&gt;
@@ -3880,16 +3919,18 @@ AI 推理采用逐 Token 生成方式，相当于在数据流上施加&amp;quot;
 &lt;li&gt;&lt;strong&gt;看比例&lt;/strong&gt;：任何一个分类超过总量的 30%，就要重新检查这条轴是不是缺了东西。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;第四条是我觉得最有用的。上一版的&amp;quot;随笔与观察&amp;quot;曾经占到 28%，那已经是报警信号，当时没在意。&lt;/p&gt;
-&lt;h2 id="六这次改动落了什么"&gt;六、这次改动落了什么
+&lt;h2 id="七这次改动落了什么"&gt;七、这次改动落了什么
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;分类从五个变六个，新增&amp;quot;产业观察&amp;quot;；&amp;ldquo;随笔与观察&amp;quot;改名为&amp;quot;随笔&amp;rdquo;，范围收窄&lt;/li&gt;
-&lt;li&gt;标签从 170 个自由词换成 8 个受控词&lt;/li&gt;
+&lt;li&gt;形态标签从 170 个自由词换成 8 个受控词&lt;/li&gt;
+&lt;li&gt;主题标签从零建立，34 个受控词，119 篇逐篇按内容标注（2026 年 10 月）&lt;/li&gt;
+&lt;li&gt;标签总览页改成两组显示：形态标签在上，主题标签在下，各带篇数&lt;/li&gt;
 &lt;li&gt;119 篇文章全部重新归类，三篇吉他相关从&amp;quot;成长与学习&amp;quot;移到&amp;quot;生活与日常&amp;quot;，《大模型也会失忆》从&amp;quot;成长与学习&amp;quot;移到&amp;quot;技术与实践&amp;quot;，《20 年后重读 48V》从&amp;quot;成长与学习&amp;quot;移到&amp;quot;技术与实践&amp;quot;并标记&amp;quot;复盘&amp;quot;&lt;/li&gt;
 &lt;li&gt;现在的分布：技术与实践 41、产业观察 29、行走与体验 21、生活与日常 14、随笔 10、成长与学习 4&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="结语"&gt;结语
 &lt;/h2&gt;&lt;p&gt;分类这套东西，没人检查，写错了也没人扣分。但它决定了三年后你还找不找得到自己写过什么。&lt;/p&gt;
-&lt;p&gt;五类那版的问题不是分得不对，是它想用一根轴同时回答两个问题。把轴拆开以后，多数纠结自动消失了——剩下的那几篇，是真的写得模糊，不是分类的问题。&lt;/p&gt;</description></item><item><title>关于这个blog</title><link>https://blog.fallleaf.net/about/about-blog/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/about/about-blog/</guid><description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
+&lt;p&gt;五类那版的问题不是分得不对，是它想用一根轴同时回答两个问题。把轴拆开以后，多数纠结自动消失了。后来补上主题标签，也是同一个道理：搜索解决&amp;quot;记得只言片语&amp;quot;，标签解决&amp;quot;想看一整条线&amp;quot;，两件事不该互相顶替。&lt;/p&gt;</description></item><item><title>关于这个blog</title><link>https://blog.fallleaf.net/about/about-blog/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/about/about-blog/</guid><description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
 &lt;p&gt;这个网站，采用过joomla，wordpress，typecho，最终采用了hugo+github+cloudflare这种形式。文章以markdow的文本形式保存，避免了采用数据库存储时迁移的一些问题。&lt;/p&gt;
 &lt;p&gt;我的网站，从04年开始，起先是用的二级域名，后来申请了自己的域名，断断续续，时停时开，记录了我的一段经历，中间，有高达上万的访问量，也有访问无页面的时刻，回头看来，有不少不能成为博客，只能是一种记录，总之，这个博客不为别的，只为了表明在网络世界里，我来了，我存在。&lt;/p&gt;
 &lt;hr&gt;
