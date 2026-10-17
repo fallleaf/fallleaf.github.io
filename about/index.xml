@@ -1,129 +1,125 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on 红旗下的蛋</title><link>https://blog.fallleaf.net/about/</link><description>Recent content in About on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/about/index.xml" rel="self" type="application/rss+xml"/><item><title>博文的分类方法</title><link>https://blog.fallleaf.net/about/about-categories/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/about/about-categories/</guid><description>&lt;p&gt;写博客写久了，会发现一个问题：文章越多，越需要一个 &lt;strong&gt;清晰、长期有效、边界明确&lt;/strong&gt; 的分类体系。
-分类不是为了把文章塞进抽屉，而是为了让写作更自由，让阅读更轻松，让未来的自己更容易找到过去的思考。&lt;/p&gt;
-&lt;p&gt;经过不断整理，我最终确定了五个维度，分别对应我生活与思考的五个方向：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on 红旗下的蛋</title><link>https://blog.fallleaf.net/about/</link><description>Recent content in About on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sat, 17 Oct 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/about/index.xml" rel="self" type="application/rss+xml"/><item><title>博文的分类方法</title><link>https://blog.fallleaf.net/about/about-categories/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/about/about-categories/</guid><description>&lt;p&gt;写博客写久了，会发现一个问题：文章越多，越需要一个边界明确、经得起时间考验的分类办法。&lt;/p&gt;
+&lt;p&gt;分类不是为了把文章塞进抽屉，而是为了让写作时少犹豫，让阅读时好找，让几年后的自己还能翻得回去。&lt;/p&gt;
+&lt;p&gt;2026 年 1 月，我定过一套五分类。用了大半年，一百多篇下来，发现它有两处撑不住，于是做了重构。这一篇记录现在的做法，也记录为什么要改。&lt;/p&gt;
+&lt;h2 id="一上一版为什么不够用"&gt;一、上一版为什么不够用
+&lt;/h2&gt;&lt;p&gt;原来的五类是：成长与学习、技术与实践、生活与日常、行走与体验、随笔与观察。判断办法是问一句&amp;quot;这篇文章的核心动作是什么&amp;quot;。&lt;/p&gt;
+&lt;p&gt;问题出在&amp;quot;动作&amp;quot;这个词上。一百多篇实际归类下来，暴露了三件事。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一，动作和对象混在了一个维度里。&lt;/strong&gt;&amp;ldquo;成长与学习&amp;quot;回答的是为什么写（让自己变好），&amp;ldquo;技术与实践&amp;quot;回答的是写什么（技术系统），&amp;ldquo;生活与日常&amp;quot;&amp;ldquo;行走与体验&amp;quot;回答的也是写什么（家庭、地点），&amp;ldquo;随笔与观察&amp;quot;回答的却是怎么写。一篇《20 年后，重读自己写的 48V 电源博客》，同时是&amp;quot;解决技术问题&amp;quot;&amp;ldquo;提升自己&amp;quot;&amp;ldquo;表达感受&amp;rdquo;，三个动作都成立。这不是归类时看不准，是规则本身留了口子。&lt;/p&gt;
+&lt;p&gt;**第二，&amp;ldquo;随笔与观察&amp;quot;变成了兜底筐。**这个类里最多的时候有 32 篇，占四分之一还多，其中十几篇其实是标准的产业分析：《AI 时代运营商光缆基础设施商业模式重构》一万四千字，《增值税税率调整对电信运营商有何影响》《Token 运营时代》《从 OpenRouter 到运营商 AI 服务网络》系列三篇。这些文章有人物、有数据、有判断，跟&amp;quot;写给自己看的文字&amp;quot;是两回事，但它们当时无处可去。&lt;/p&gt;
+&lt;p&gt;**第三，&amp;ldquo;成长与学习&amp;quot;收到的东西，跟它的定义不是一回事。**定义写的是&amp;quot;提升自我能力 / 思维 / 方法&amp;rdquo;，实际收进来的是&amp;quot;我在学习某个技术&amp;rdquo;——《算力网与新一代通信网的定义》五千字、《从 Anthropic 报告谈起》六千字。定义的轴是目的，执行时的轴变成了姿态，两个轴不一致，它就会一直和技术类打架。&lt;/p&gt;
+&lt;p&gt;一个类占到总量的四分之一以上，通常说明体系缺一条轴，而不是文章写得太杂。&lt;/p&gt;
+&lt;h2 id="二现在的做法两根轴分开"&gt;二、现在的做法：两根轴分开
+&lt;/h2&gt;&lt;p&gt;改完的结构是这样：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;成长与学习&lt;/li&gt;
-&lt;li&gt;技术与实践&lt;/li&gt;
-&lt;li&gt;生活与日常&lt;/li&gt;
-&lt;li&gt;行走与体验&lt;/li&gt;
-&lt;li&gt;随笔与观察&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;分类只回答&amp;quot;写的是什么对象&amp;rdquo;&lt;/strong&gt;，六个，长期不变。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;标签只回答&amp;quot;这是一篇什么形态的文章&amp;rdquo;&lt;/strong&gt;，八个，受控词表，不随手造词。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;它们构成了我博客的基础结构，也构成了我记录世界的方式。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="为什么需要分类体系"&gt;为什么需要分类体系
-&lt;/h2&gt;&lt;p&gt;分类体系的意义不在于“管理文章”，而在于：&lt;/p&gt;
+&lt;p&gt;对象稳定，形态会变；把两件事放在一根轴上，哪一头都照顾不好。&lt;/p&gt;
+&lt;h2 id="三六个分类"&gt;三、六个分类
+&lt;/h2&gt;&lt;h3 id="技术与实践"&gt;技术与实践
+&lt;/h3&gt;&lt;p&gt;写的是技术系统本身：设备、协议、网络架构、方案、运维、工程经验。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;帮助我在写作前快速定位主题&lt;/li&gt;
-&lt;li&gt;帮助读者理解文章的语境&lt;/li&gt;
-&lt;li&gt;帮助未来的自己检索、回顾、复盘&lt;/li&gt;
-&lt;li&gt;帮助博客在长期演化中保持结构稳定&lt;/li&gt;
+&lt;li&gt;设备与器件：光模块、电源、激光器、CPO&lt;/li&gt;
+&lt;li&gt;网络与协议：MSTP、LTE RAN、5G 承载、IPv6 地址规划、PON&lt;/li&gt;
+&lt;li&gt;方案与架构：无源波分前传、单纤多向、DCI/DCA/DCN、极简网络&lt;/li&gt;
+&lt;li&gt;技术与工具：V2ray、Wireguard、Zerotier、数据可视化&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;一个好的分类体系应该 &lt;strong&gt;边界清晰、互不重叠、十年不过时&lt;/strong&gt;。&lt;/p&gt;
-&lt;h2 id="我的五大分类"&gt;我的五大分类
-&lt;/h2&gt;&lt;h3 id="成长与学习growth"&gt;成长与学习（Growth）
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
-关于个人能力、认知、方法论、职业成长的内容。
-本质是“让自己变得更好”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;涵盖内容：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;判断标准：文章的主体是技术对象，结论能被技术论证支撑。&lt;/p&gt;
+&lt;h3 id="产业观察"&gt;产业观察
+&lt;/h3&gt;&lt;p&gt;写的是行业主体之间的事：运营商、设备商、咨询机构、监管部门，以及政策、投资、招标、商业模式、市场数据。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;学习方法、学习系统&lt;/li&gt;
-&lt;li&gt;认知提升、思维方式&lt;/li&gt;
-&lt;li&gt;工作方法、经验总结&lt;/li&gt;
-&lt;li&gt;阅读笔记（偏方法论）&lt;/li&gt;
-&lt;li&gt;复盘与成长记录&lt;/li&gt;
+&lt;li&gt;企业动态与业绩解读&lt;/li&gt;
+&lt;li&gt;政策与规则：增值税、十五五规划、会议部署&lt;/li&gt;
+&lt;li&gt;商业模式：Token 经营、光缆资源开放、OpenRouter 系列&lt;/li&gt;
+&lt;li&gt;市场与招标：极简网络招标、工程咨询排名&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
-如果文章的核心是 &lt;strong&gt;提升自我能力 / 思维 / 方法&lt;/strong&gt; → 属于这里。&lt;/p&gt;
-&lt;h3 id="技术与实践tech--making"&gt;技术与实践（Tech &amp;amp; Making）
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
-关于技术、工程、工具、系统搭建、实操经验。
-本质是“解决问题、构建系统”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;涵盖内容：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;通信工程、网络、设备&lt;/li&gt;
-&lt;li&gt;技术原理、技术解释&lt;/li&gt;
-&lt;li&gt;工具使用、配置、脚本&lt;/li&gt;
-&lt;li&gt;技术方案、架构设计&lt;/li&gt;
-&lt;li&gt;实操经验、踩坑记录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
-如果文章围绕 &lt;strong&gt;技术本身&lt;/strong&gt; 或 &lt;strong&gt;技术实践&lt;/strong&gt; 展开 → 属于这里。&lt;/p&gt;
-&lt;h3 id="生活与日常daily-life"&gt;生活与日常（Daily Life）
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
-关于日常生活、家庭、家务、植物、水培、生活方式改善。
-本质是“生活本身”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;涵盖内容：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;家庭、亲子、生活记录&lt;/li&gt;
-&lt;li&gt;水培、植物、家居&lt;/li&gt;
-&lt;li&gt;生活方式、习惯、整理&lt;/li&gt;
-&lt;li&gt;饮食、日常观察&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
-如果文章主要描述 &lt;strong&gt;生活本身&lt;/strong&gt; → 属于这里。&lt;/p&gt;
-&lt;h3 id="行走与体验outdoor--travel"&gt;行走与体验（Outdoor &amp;amp; Travel）
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
-关于旅行、城市印象、户外体验、走过的地方。
-本质是“在路上”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;涵盖内容：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;城市印象&lt;/li&gt;
-&lt;li&gt;旅行记录&lt;/li&gt;
-&lt;li&gt;户外体验&lt;/li&gt;
-&lt;li&gt;旅途见闻&lt;/li&gt;
-&lt;li&gt;地方文化&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
-如果文章描述 &lt;strong&gt;地点 / 行走 / 体验&lt;/strong&gt; → 属于这里。&lt;/p&gt;
-&lt;h3 id="随笔与观察essays--thoughts"&gt;随笔与观察（Essays &amp;amp; Thoughts）
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;核心定义：&lt;/strong&gt;
-关于思考、观察、抽象感受、非主题性的文字。
-本质是“表达与观察”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;涵盖内容：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;随笔、短文&lt;/li&gt;
-&lt;li&gt;抽象思考&lt;/li&gt;
-&lt;li&gt;观察、感受&lt;/li&gt;
-&lt;li&gt;不属于其他分类的内容&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;判断标准：&lt;/strong&gt;
-如果文章难以归入前四类，或更像“写给自己看的文字” → 属于这里。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="分类的判断方法"&gt;分类的判断方法
-&lt;/h2&gt;&lt;p&gt;写文章前问自己一句：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;这篇文章的“核心动作”是什么？&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;提升自己 → 成长与学习&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;解决技术问题 → 技术与实践&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;记录生活 → 生活与日常&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;描述旅途 → 行走与体验&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;表达感受 → 随笔与观察&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;只要抓住“核心动作”，分类永远不会混乱。&lt;/p&gt;
-&lt;h2 id="分类体系的设计原则"&gt;分类体系的设计原则
+&lt;p&gt;判断标准：文章的主体是&amp;quot;谁在做什么、为什么这样做&amp;rdquo;，而不是&amp;quot;这个技术怎么做&amp;rdquo;。这条线是这次新增的，也是过去被&amp;quot;随笔&amp;quot;吞掉最多的部分。&lt;/p&gt;
+&lt;h3 id="生活与日常"&gt;生活与日常
+&lt;/h3&gt;&lt;p&gt;家庭、父母、孩子、健康、饮食、植物、习惯。&lt;/p&gt;
+&lt;p&gt;判断标准：写的是生活本身，读者主要是家里人。&lt;/p&gt;
+&lt;h3 id="行走与体验"&gt;行走与体验
+&lt;/h3&gt;&lt;p&gt;城市印象、出差见闻、旅行、户外、路上。&lt;/p&gt;
+&lt;p&gt;判断标准：文章成立的前提是你到了那个地方。&lt;/p&gt;
+&lt;h3 id="成长与学习"&gt;成长与学习
+&lt;/h3&gt;&lt;p&gt;只留一类很窄的东西：能力、认知、方法的自我改造。学习方法、思维框架、如何使用工具改变自己的工作方式。&lt;/p&gt;
+&lt;p&gt;判断标准：读完能改变&amp;quot;我怎么做&amp;rdquo;,而不是&amp;quot;我知道了一件什么事&amp;rdquo;。所以&amp;quot;学了某个技术&amp;quot;不进来，只有&amp;quot;因此改变了做法&amp;quot;才进来。这个类现在只有 4 篇，小是正常的，它是全站最窄的一格。&lt;/p&gt;
+&lt;h3 id="随笔"&gt;随笔
+&lt;/h3&gt;&lt;p&gt;有明确写作姿态、但没有明确对象的文字：情绪、观察、感慨、短记。&lt;/p&gt;
+&lt;p&gt;判断标准：把时间地点人物都抽掉，文章还成立。&lt;/p&gt;
+&lt;p&gt;**这个类不再是兜底筐。**如果一篇文章前五类都不像，先想想是它真的没有对象，还是体系又缺了一条轴。前者进随笔，后者该改分类规则，不该继续往这里塞。&lt;/p&gt;
+&lt;h2 id="四八个标签"&gt;四、八个标签
+&lt;/h2&gt;&lt;p&gt;分类管&amp;quot;是什么&amp;quot;，标签管&amp;quot;怎么写的&amp;quot;。标签只有这八个，不再随手造新词：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;标签&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;th&gt;现在篇数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;记录&lt;/td&gt;
+&lt;td&gt;把事情记下来，不求解&lt;/td&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;观点&lt;/td&gt;
+&lt;td&gt;有明确立场，做判断或反驳&lt;/td&gt;
+&lt;td&gt;29&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;科普&lt;/td&gt;
+&lt;td&gt;把原理、概念讲清楚&lt;/td&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;教程&lt;/td&gt;
+&lt;td&gt;可以照着做的步骤、清单、食谱、训练方案&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;观察&lt;/td&gt;
+&lt;td&gt;行业动态、报告、招标、会议的解读&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;深度长文&lt;/td&gt;
+&lt;td&gt;六千字以上、有完整分节结构&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;方法论&lt;/td&gt;
+&lt;td&gt;讲体系和思路，不落到具体步骤&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;复盘&lt;/td&gt;
+&lt;td&gt;回看旧作、总结得失&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;以前的标签是内容关键词（AI、宽带、OLT、安哥拉），一共 170 个，其中 139 个只出现过一次。那种标签没法用来导航，只是噪音。内容关键词交给站内搜索，标签留给结构。&lt;/p&gt;
+&lt;h2 id="五归类时的四条规则"&gt;五、归类时的四条规则
+&lt;/h2&gt;&lt;p&gt;一篇文章同时像两类，按这个顺序判：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;看对象&lt;/strong&gt;：技术系统 → 技术与实践；行业主体 → 产业观察；家里 → 生活与日常；地点 → 行走与体验；自己 → 成长与学习；什么都没有 → 随笔。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;看可执行性&lt;/strong&gt;：有数据、有方案、有结论的，不进随笔。随笔的默认读者是随手翻的人。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;看长度&lt;/strong&gt;：六千字以上且有分节结构的，优先技术与实践或产业观察，并加&amp;quot;深度长文&amp;quot;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;看比例&lt;/strong&gt;：任何一个分类超过总量的 30%，就要重新检查这条轴是不是缺了东西。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;第四条是我觉得最有用的。上一版的&amp;quot;随笔与观察&amp;quot;曾经占到 28%，那已经是报警信号，当时没在意。&lt;/p&gt;
+&lt;h2 id="六这次改动落了什么"&gt;六、这次改动落了什么
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;边界清晰&lt;/strong&gt;：每类都有明确的核心动作&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;互不重叠&lt;/strong&gt;：同一篇文章不会在两个分类之间摇摆&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;长期有效&lt;/strong&gt;：十年后仍然适用&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;可扩展&lt;/strong&gt;：未来可以在每类下继续细分标签&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;与写作习惯一致&lt;/strong&gt;：符合我记录生活与思考的方式&lt;/li&gt;
+&lt;li&gt;分类从五个变六个，新增&amp;quot;产业观察&amp;quot;；&amp;ldquo;随笔与观察&amp;quot;改名为&amp;quot;随笔&amp;rdquo;，范围收窄&lt;/li&gt;
+&lt;li&gt;标签从 170 个自由词换成 8 个受控词&lt;/li&gt;
+&lt;li&gt;119 篇文章全部重新归类，三篇吉他相关从&amp;quot;成长与学习&amp;quot;移到&amp;quot;生活与日常&amp;quot;，《大模型也会失忆》从&amp;quot;成长与学习&amp;quot;移到&amp;quot;技术与实践&amp;quot;，《20 年后重读 48V》从&amp;quot;成长与学习&amp;quot;移到&amp;quot;技术与实践&amp;quot;并标记&amp;quot;复盘&amp;quot;&lt;/li&gt;
+&lt;li&gt;现在的分布：技术与实践 41、产业观察 29、行走与体验 21、生活与日常 14、随笔 10、成长与学习 4&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="未来可能的扩展"&gt;未来可能的扩展
-&lt;/h2&gt;&lt;p&gt;未来我可能会为每个分类增加：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;专属封面插画&lt;/li&gt;
-&lt;li&gt;分类色彩体系&lt;/li&gt;
-&lt;li&gt;分类首页介绍&lt;/li&gt;
-&lt;li&gt;相关标签的推荐结构&lt;/li&gt;
-&lt;li&gt;更细粒度的子分类（如必要）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;但五大分类本身会保持稳定。&lt;/p&gt;
 &lt;h2 id="结语"&gt;结语
-&lt;/h2&gt;&lt;p&gt;分类不是限制，而是帮助我更清晰地理解自己。
-它们像五个方向，让我在写作时知道自己正在走向哪里，也知道每篇文章属于哪一块土地。&lt;/p&gt;
-&lt;p&gt;未来的文章会继续在这五个维度中生长，而我也会在写作中不断更新它们。&lt;/p&gt;</description></item><item><title>关于这个blog</title><link>https://blog.fallleaf.net/about/about-blog/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/about/about-blog/</guid><description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;分类这套东西，没人检查，写错了也没人扣分。但它决定了三年后你还找不找得到自己写过什么。&lt;/p&gt;
+&lt;p&gt;五类那版的问题不是分得不对，是它想用一根轴同时回答两个问题。把轴拆开以后，多数纠结自动消失了——剩下的那几篇，是真的写得模糊，不是分类的问题。&lt;/p&gt;</description></item><item><title>关于这个blog</title><link>https://blog.fallleaf.net/about/about-blog/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/about/about-blog/</guid><description>&lt;p&gt;我，网名“红旗下的蛋”，喜欢崔健的人知道这个名字的来历，不管是什么理由，这个网名将伴随我的网络人生。&lt;/p&gt;
 &lt;p&gt;这个网站，采用过joomla，wordpress，typecho，最终采用了hugo+github+cloudflare这种形式。文章以markdow的文本形式保存，避免了采用数据库存储时迁移的一些问题。&lt;/p&gt;
 &lt;p&gt;我的网站，从04年开始，起先是用的二级域名，后来申请了自己的域名，断断续续，时停时开，记录了我的一段经历，中间，有高达上万的访问量，也有访问无页面的时刻，回头看来，有不少不能成为博客，只能是一种记录，总之，这个博客不为别的，只为了表明在网络世界里，我来了，我存在。&lt;/p&gt;
 &lt;hr&gt;
