@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>红旗下的蛋</title><link>https://blog.fallleaf.net/</link><description>Recent content on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Sat, 17 Oct 2026 08:40:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Scale-Across 学习笔记：当 AI 算力开始"跨数据中心协作"</title><link>https://blog.fallleaf.net/p/what-is-scale-across/</link><pubDate>Sat, 17 Oct 2026 08:40:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/what-is-scale-across/</guid><description>&lt;img src="https://blog.fallleaf.net/p/what-is-scale-across/cover.webp" alt="Featured image of post Scale-Across 学习笔记：当 AI 算力开始"跨数据中心协作"" /&gt;&lt;p&gt;最近学习 AI 基础设施相关资料时，发现 Scale-Across 被提及的频率越来越高。2025 年，NVIDIA 发布 Spectrum-XGS Ethernet，探索如何通过专用网络连接分散的数据中心；2026 年，中国移动推出 GSE-DCI，烽火通信也在推进 800G 与空芯光纤等技术的用于 Scale-Across 应用。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>红旗下的蛋</title><link>https://blog.fallleaf.net/</link><description>Recent content on 红旗下的蛋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>fallleaf</copyright><lastBuildDate>Mon, 19 Oct 2026 12:00:00 +0800</lastBuildDate><atom:link href="https://blog.fallleaf.net/index.xml" rel="self" type="application/rss+xml"/><item><title>从云连接到算力互联：AI 时代，运营商 DCA/DCI 网络如何演进</title><link>https://blog.fallleaf.net/p/dca-dci-network-evolution/</link><pubDate>Mon, 19 Oct 2026 12:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/dca-dci-network-evolution/</guid><description>&lt;img src="https://blog.fallleaf.net/p/dca-dci-network-evolution/cover.webp" alt="Featured image of post 从云连接到算力互联：AI 时代，运营商 DCA/DCI 网络如何演进" /&gt;&lt;p&gt;在上一篇文章《从云连接到算力网络：重新认识 DCI、DCA 和 DCN》中，我们讨论了 DCA、DCI 和 DCN 的基本含义，以及运营商应该如何理解这几个概念。上一篇文章解决的是概念问题，接下来要讨论的是建设问题：AI 的发展究竟给运营商网络带来了哪些新的要求，现有网络应该如何演进，运营商又应该以什么方式提供连接服务。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DCA、DCI 并不天然对应两张独立的物理网络。&lt;/strong&gt; 对运营商而言，它们更多是对不同连接需求的描述，也可以成为描述网络能力、解决方案和产品的一种形式。真正承载这些业务的，仍然是现有的光缆网络、光传输网络和 IP 网络。是否需要新建网络，应由业务需求和现有网络能力共同决定，而不应由名称决定。&lt;/p&gt;
+&lt;h2 id="从云计算时代的网络基础出发"&gt;从云计算时代的网络基础出发
+&lt;/h2&gt;&lt;p&gt;经过多年建设，运营商已经形成了从骨干网到本地承载网的覆盖网络基础。在云计算时代，运营商已经围绕云服务的连接需求，并依托骨干本地一体的承载网络，为云服务商、互联网企业、金融机构、大型政企客户提供连接能力。这些网络并不是专门为某一种云服务建设的独立网络，而是面向多种业务共同形成的基础设施。&lt;/p&gt;
+&lt;p&gt;以中国电信公开介绍的 CN2-DCI 精品承载网、ROADM 全光网络、政企 OTN 精品网为例，运营商在广域覆盖、多层次承载、运营保障方面已有较好基础。&lt;/p&gt;
+&lt;p&gt;这些基础设施为算力互联提供三方面条件：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一，广域覆盖能力。&lt;/strong&gt; 运营商具备跨省、跨区域的网络资源和运维体系，能连接分布在不同城市、不同园区的数据中心。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二，多层次承载能力。&lt;/strong&gt; IP 网络、光传送网以及光缆网提供了丰富的业务能力，从点到点专线到组网，从刚性隔离电路到弹性复用带宽，从2M到100G再到波长，从光纤直驱到系统，应对用户的不同需求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第三，运营保障能力。&lt;/strong&gt; 通过网络监测、故障定位、保护机制、服务等级管理，为不同等级客户业务提供差异化保障。&lt;/p&gt;
+&lt;p&gt;但是，大模型训练、推理服务、云端 AI 应用发展到今天，数据中心之间的连接早已不只是数据访问、业务互通、异地备份那么简单，而是向算力协同、任务分发、资源调度演进。&lt;/p&gt;
+&lt;p&gt;AI 时代真正要回答的，不是要不要另起炉灶建一张独立算力互联网，而是在既有网络基础上，如何适应算力资源布局、业务流量特征和连接性能要求的变化，持续完善网络覆盖、承载能力和服务方式。&lt;/p&gt;
+&lt;p&gt;基于这一认识，网络发展应坚持存量网络复用与增量能力建设相结合：&lt;strong&gt;全网完善 DCA，重点区域按需强化 DCI。&lt;/strong&gt; 前者立足现有网络基础，持续补齐算力接入所需的覆盖和承载能力；后者面向真实的跨数据中心互联需求，在算力资源集中、互联需求明确的重点区域针对性增强。两者共同推动现有承载网向适应 AI 业务发展的方向演进，而不是简单地对应两张新建的物理网络。&lt;/p&gt;
+&lt;h2 id="ai-带来了哪些新的网络需求"&gt;AI 带来了哪些新的网络需求
+&lt;/h2&gt;&lt;p&gt;AI 带来的变化，主要体现在部分业务的流量规模、性能要求和资源分布上。&lt;/p&gt;
+&lt;p&gt;大规模训练涉及多个计算节点之间的协同，检查点传输也可能产生较大的数据流量；部分推理业务对响应时间比较敏感；随着算力资源分布在不同的数据中心和区域，企业接入算力、数据中心接入以及跨区域连接的需求也可能发生变化。这些场景可能对带宽、时延、抖动、丢包和传输稳定性提出更高要求。&lt;/p&gt;
+&lt;p&gt;此外，AI 业务还可能推动算力调度从传统的资源选择与任务分配，向计算任务、数据位置、网络路径和服务质量的协同优化发展。&lt;/p&gt;
+&lt;p&gt;在一些对响应时间敏感的场景中，业务希望能够在毫秒级时间尺度内完成资源选择、任务分配或调度决策。要实现这一目标，除了算力资源本身，还需要网络具备可感知、可测量、可预测的性能，并与上层调度系统协同。&lt;/p&gt;
+&lt;p&gt;并非所有 AI 业务都需要新的网络。&lt;/p&gt;
+&lt;p&gt;普通用户访问 AI 应用、企业调用云端模型，与大型计算任务跨数据中心协同，是不同的业务场景。前两者在不少情况下仍可利用现有互联网、宽带、移动网络和专线能力满足需求。数据中心内部 GPU 集群的高性能互联，也不能直接等同于运营商外部承载网的建设要求。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目前还不足以认为 AI 已经对运营商网络带来了突破性的网络需求。&lt;/strong&gt; 更重要的问题是，哪些业务确实提高了网络性能要求，哪些连接关系发生了变化，现有网络能否满足这些需求。&lt;/p&gt;
+&lt;p&gt;这也意味着，网络建设不能仅仅因为 AI 业务出现，就将现有网络整体升级为高性能专网。需要结合具体业务场景，区分普遍性的接入需求与局部性的高性能互联需求，在已有网络能力的基础上确定建设重点。&lt;/p&gt;
+&lt;h2 id="scale-across-值得关注但不宜提前作为普遍建设依据"&gt;Scale-Across 值得关注，但不宜提前作为普遍建设依据
+&lt;/h2&gt;&lt;p&gt;在算力互联方面，值得重点关注的是 Scale-Across 这类跨数据中心的算力协同场景。&lt;/p&gt;
+&lt;p&gt;传统 DCI 主要解决不同数据中心之间的数据交换、业务互通、容灾和资源访问等问题。Scale-Across 则试图将分布在不同数据中心的计算资源组织起来，使计算任务能够跨越单个数据中心的边界协同运行。在这种场景下，网络性能可能直接影响计算任务的执行效率，对带宽、时延、抖动、丢包和传输稳定性提出更高要求。&lt;/p&gt;
+&lt;p&gt;不过，跨数据中心的算力协同并非只要具备高速光通道就能实现。计算任务是否适合跨中心运行、数据是否需要频繁交换、不同中心之间的时延是否满足要求，以及网络性能波动会不会影响任务效率，都需要结合具体的计算框架和业务流程分析。&lt;/p&gt;
+&lt;p&gt;技术方向值得关注，并不等于现实需求已经成熟。相关业务能够形成多大规模、哪些任务适合跨数据中心协同、网络性能要求如何，以及建设成本与计算收益能否匹配，都还需要进一步验证。&lt;/p&gt;
+&lt;p&gt;Scale-Across 应当成为运营商研究下一阶段算力互联能力的重要场景，但不宜直接作为普遍升级本地承载网或大规模新建专用 DCI 网络的依据。现阶段更适合关注潜在算力集群之间的连接关系，评估现有光传输和 IP 承载能力，并在客户明确、业务真实、收益可验证的场景中开展针对性建设。对于此类需求，需要提前研究和适度准备，但要区分技术储备、试点验证与规模化建设。只有当业务规模、连接关系和性能要求逐步明确之后，才能进一步判断是否需要建设专用互联系统，以及需要达到什么样的带宽和保障水平。&lt;/p&gt;
+&lt;h2 id="从现有网络出发推动全光底座与承载能力演进"&gt;从现有网络出发，推动全光底座与承载能力演进
+&lt;/h2&gt;&lt;p&gt;既然云计算时代已经形成了较为完整的网络基础，运营商就没有必要因为 DCA、DCI 等概念的出现，重新构建一套完全独立的网络。更现实的路径，是以现有骨干网和本地承载网为基础，根据算力资源的分布和业务连接需求，逐步完善网络覆盖与承载能力。&lt;/p&gt;
+&lt;p&gt;骨干网主要承担跨区域、跨枢纽的连接需求；本地承载网则需要进一步覆盖算力中心及相关园区，为企业接入算力资源、数据中心接入和区域内互联提供支撑。两者共同形成从算力资源所在地到客户接入点的连接能力。&lt;/p&gt;
+&lt;p&gt;在这一过程中，全光底座仍然是运营商网络演进的重要基础。这里所说的全光，并不是要求所有业务都采用纯光交换，也不是取消 IP 层，而是充分发挥光缆和光传输网络在大容量、长距离传输及连接覆盖方面的优势，持续完善光层基础设施，为 IP 业务、专线业务和算力互联提供统一的底层连接能力。&lt;/p&gt;
+&lt;p&gt;对于本地承载网，全光底座首先体现在光缆覆盖和光层组网。光缆是否到达数据中心或园区，是否具备可用纤芯、路由和引接条件，决定了后续能否快速提供连接服务。对于有明确需求的重点算力园区，应优先完善光缆覆盖和接入条件，再根据业务规模、速率和保护要求建设相应的传输系统。&lt;/p&gt;
+&lt;p&gt;在这里，需要区分区域覆盖与实际接入能力。光缆到达某个城市或算力集群所在区域，并不意味着已经具备接入具体数据中心的条件；骨干网能够到达某个枢纽，也不意味着本地核心汇聚节点到数据中心之间的光缆和传输资源已经具备。对于运营商而言，应将骨干连接能力与本地光缆覆盖、园区引接和系统接入能力统筹考虑。&lt;/p&gt;
+&lt;p&gt;在系统层面，应结合现有 OTN、WDM 和 IP 网络的资源与能力，按需进行优化、扩容或新建。不同业务可以根据实际需求采用电路、波道、IP 连接或光纤资源等方式，不必预先规定所有算力互联都采用同一种技术路线。&lt;/p&gt;
+&lt;p&gt;随着算力中心规模扩大、跨中心互联带宽增长，传输系统也需要适应更高的单波速率和更大的系统容量。400G 可以作为光传输能力演进的重要方向之一：在骨干、区域互联和部分高带宽 DCI 场景中，根据传输距离、业务规模、光纤条件和设备能力，逐步引入 400G 及相应的高速光接口，提升单纤承载能力和大带宽业务供给能力。这里需要区分 400G 客户侧接口、400G 线路侧传输能力以及整条链路的实际业务带宽。它们并非完全相同的指标，具体方案需要结合设备架构、波分系统和业务接口确定。400G 也不是所有本地节点的统一建设要求。对于普通企业专线、一般算力接入和现有业务，现有速率体系仍可能具有较好的经济性；只有在业务规模和流量增长确实需要时，才有必要采用更高速率的系统。&lt;/p&gt;
+&lt;p&gt;在光层组网方面，可以结合网络规模和业务流量特征，逐步从传统环形组网向网状组网演进，并在算力资源集中、光通道调度频繁、跨节点互联需求较强的区域，研究引入 OXC（光交叉连接）等技术。OXC 的价值在于能够在光层对光通道进行交叉连接和调度，减少部分业务对电层逐跳处理的依赖，提升光通道组织和网络拓扑调整的灵活性。对于连接关系相对稳定、但业务带宽持续增长的区域，OXC 有助于构建更灵活的光层网状网络，为大带宽 DCI 和多数据中心互联提供支撑。不过，OXC 并不是部署之后就能自动实现低时延或消除所有网络瓶颈。它主要解决光层连接和调度问题，实际性能仍然取决于光传输系统、线路距离、业务处理方式及端到端网络架构。是否采用 OXC，应结合节点数量、光通道规模、调度频率、保护要求和建设成本进行判断，而不是把 OXC 作为所有本地网必须部署的设备。&lt;/p&gt;
+&lt;p&gt;从更长远看，空芯光纤也是值得关注的低时延传输技术方向。与传统实芯光纤主要在玻璃介质中传输不同，空芯光纤利用空心结构引导光传播，能够降低光在介质中的传播时延，并具有低非线性等潜在优势。在对时延敏感、带宽需求较高的特定互联场景中，空芯光纤有望成为未来光缆基础设施的补充。但空芯光纤的实际价值还需要结合工程条件判断。线路损耗、连接器和接续技术、系统兼容性、施工维护成本及产业成熟度，都会影响其规模化部署。即使光纤本身能够降低传播时延，也不代表端到端网络时延会同比例下降，因为设备处理、排队、路由和其他传输环节同样会产生时延。因此，现阶段更适合将空芯光纤纳入技术跟踪和重点场景验证，在有明确低时延需求、线路条件合适且经济性可接受的情况下探索应用，而不是直接作为全网光缆建设的普遍要求。&lt;/p&gt;
+&lt;p&gt;总体而言，网络演进应遵循从光缆资源覆盖到光层系统能力、再到 IP 与业务协同的路径，优先复用已有设施和系统。400G、OXC 等技术可根据业务增长逐步引入，空芯光纤则作为前瞻性技术储备。所有技术选择最终都应服务于实际业务，而不是成为独立于业务需求之外的建设目标。&lt;/p&gt;
+&lt;h2 id="运营商需要同时考虑网络能力与服务方式"&gt;运营商需要同时考虑网络能力与服务方式
+&lt;/h2&gt;&lt;p&gt;从运营商公开发布的算力网络、云网融合和云互联实践看，各家都在探索如何把网络连接能力与算力资源、云服务和业务保障结合起来。相关产品和平台体现了不同的业务组织方式，但仅凭公开产品介绍，还不能直接判断其实际部署规模、网络覆盖深度或自动化协同程度。&lt;/p&gt;
+&lt;p&gt;对运营商实践的观察，不宜简单归纳为某一家应采用什么技术路线。更有价值的是关注共同的问题：如何发现算力资源，如何提供连接，如何根据业务要求选择承载方式，以及如何把网络能力组织成可销售、可交付的产品。&lt;/p&gt;
+&lt;p&gt;DCA 和 DCI 不应只被理解为网络建设项目。它们还涉及连接产品、服务流程和保障机制。运营商需要把现有的光纤、波道、电路和 IP 连接能力，组织成能够面向不同客户提供的服务，并根据实际需求提供差异化的带宽、保护、时延和服务等级保障。&lt;/p&gt;
+&lt;p&gt;未来，随着算力资源逐渐分布在不同的数据中心、园区和区域，连接服务还可以进一步与算力资源发现、网络状态感知和业务调度结合。在具备相应平台和接口条件时，网络可以向上层提供可用带宽、路径时延、拥塞情况及服务等级等信息，帮助业务系统选择适合的算力资源和连接路径。&lt;/p&gt;
+&lt;p&gt;但这不意味着网络必须直接承担所有算力调度工作。算力资源编排、模型调度和网络路径控制属于不同层面的能力，需要通过明确的接口和协同机制衔接。运营商可以逐步开放网络能力、完善业务保障和连接服务，不必将整个算力平台都纳入网络建设范围。&lt;/p&gt;
+&lt;p&gt;对于普通企业和一般 AI 应用，可以更多依托现有网络能力；对有专用连接、隔离或较高可靠性要求的企业，应提供与其业务需求相匹配的专线及相关服务；对大型算力互联项目，则需要结合规模、拓扑、性能和投资回报进行专项评估。&lt;/p&gt;
+&lt;p&gt;尤其需要注意的是，DCA 并不等于专线，DCI 也不等于专用传输系统。&lt;/p&gt;
+&lt;p&gt;它们描述的是不同的连接场景，具体可以通过互联网、专线、IP 连接、光传输电路、波道或光纤资源等方式实现。运营商应根据客户的连接目标和保障要求组织产品，而不是将业务名称直接对应到某一种网络技术或产品。&lt;/p&gt;
+&lt;h2 id="面对头部客户自建-dci运营商需要拓展服务模式"&gt;面对头部客户自建 DCI，运营商需要拓展服务模式
+&lt;/h2&gt;&lt;p&gt;随着大型 AI 企业和数据中心运营商发展自身的网络能力，一部分头部客户可能选择自行建设 DCI 专网，以便更直接地控制网络拓扑、设备配置、扩容节奏和运维策略。&lt;/p&gt;
+&lt;p&gt;这对运营商既是挑战，也是服务模式调整的契机。&lt;/p&gt;
+&lt;p&gt;如果客户自行建设并运营网络，运营商原本提供的电路、波道和网络运维服务，可能部分转变为光纤或纤芯租赁。这样虽然仍能提供基础资源，但运营商在连接方案、网络运行和持续服务中的参与程度可能下降。&lt;/p&gt;
+&lt;p&gt;对此，运营商不能只考虑继续出租光纤或销售波道，也可以探索面向客户专网的设计咨询、网络代建、设备集成、代维和托管运营等服务。客户保留网络使用和管理方面的自主权，运营商则利用自身在光缆、传输系统、工程建设和运行维护方面的能力，承担客户愿意外包的工作。&lt;/p&gt;
+&lt;p&gt;当然，并非所有客户都需要托管服务，也并非所有 DCI 都适合由运营商统一建设运营。具体模式仍取决于客户对网络控制权的要求、长期成本、扩容需求和自身运维能力。&lt;/p&gt;
+&lt;p&gt;头部客户自建专网带来的变化，不一定源于 AI 对网络提出了全新的技术要求。客户也可能是出于规模、成本、控制权或运营效率的考虑。运营商既要研究网络能力如何演进，也要关注客户的建设方式如何变化，不能把商业模式变化完全归因于技术需求升级。&lt;/p&gt;
+&lt;p&gt;对于运营商而言，即使客户不再采购完整的 DCI 承载服务，光缆、纤芯、工程建设和网络维护仍然可能存在需求。关键在于，运营商能否根据客户的网络建设方式，调整资源供给与服务交付的组合，避免将自身能力局限于传统的电路销售。&lt;/p&gt;
+&lt;h2 id="结语网络演进的方向取决于业务需求与建设方式"&gt;结语：网络演进的方向，取决于业务需求与建设方式
+&lt;/h2&gt;&lt;p&gt;回顾全文，DCA 与 DCI 的讨论，最终指向的是运营商如何组织网络能力、如何服务算力业务的问题。与前文一脉相承，本文的核心判断是：网络演进的方向，取决于业务需求与建设方式，而不是取决于概念本身。&lt;/p&gt;
+&lt;p&gt;对于运营商而言，DCA 与 DCI 不是需要新建的独立网络，而是对现有网络能力如何组织、如何服务算力业务的重新审视。400G、OXC 等新技术可以在业务增长和网络条件具备时按需引入，空芯光纤等前瞻技术则适合试点验证。真正需要持续投入的，是把网络能力组织成可销售、可交付的产品，并建立与客户建设方式相适应的服务模式。&lt;/p&gt;
+&lt;p&gt;毫秒级调度、算力资源发现与网络协同，是值得探索的方向，但应建立在网络能力开放和业务需求明确的基础上，而不是作为网络建设的先决条件。&lt;/p&gt;
+&lt;p&gt;网络演进不是给原有网络不断增加新名称，而是让原有网络能够更好地连接计算资源，并为新的业务提供真正可用的连接能力。&lt;/p&gt;</description></item><item><title>Scale-Across 学习笔记：当 AI 算力开始"跨数据中心协作"</title><link>https://blog.fallleaf.net/p/what-is-scale-across/</link><pubDate>Sat, 17 Oct 2026 08:40:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/what-is-scale-across/</guid><description>&lt;img src="https://blog.fallleaf.net/p/what-is-scale-across/cover.webp" alt="Featured image of post Scale-Across 学习笔记：当 AI 算力开始"跨数据中心协作"" /&gt;&lt;p&gt;最近学习 AI 基础设施相关资料时，发现 Scale-Across 被提及的频率越来越高。2025 年，NVIDIA 发布 Spectrum-XGS Ethernet，探索如何通过专用网络连接分散的数据中心；2026 年，中国移动推出 GSE-DCI，烽火通信也在推进 800G 与空芯光纤等技术的用于 Scale-Across 应用。&lt;/p&gt;
 &lt;p&gt;这些进展背后，是要解决一个共同的问题：当电力、机房空间和散热条件限制了单个园区的扩容，能不能把不同地点的算力组织起来，让它们共同完成 AI 任务？&lt;/p&gt;
 &lt;p&gt;这就是我理解的 Scale-Across。它把数据中心连接起来，其重点在于判断哪些任务适合跨域执行，如何选择算力和网络路径，以及新增的算力能否真正转化为任务效率。&lt;/p&gt;
 &lt;p&gt;这篇笔记先聚焦概念本身。Scale-Across 是什么，和 Scale-Up、Scale-Out 有什么区别，它要解决什么问题，以及有哪些不能忽略的限制。&lt;/p&gt;
@@ -7214,7 +7273,7 @@ iptables -A FORWARD -i zt7u3fcxwr(zerotier虚拟网卡) -o enp123s0f0(物理网�
 &lt;li&gt;故障定位：在光通信系统中，精准地找到故障点具有重要意义。通过分析收发功率以及i电压电流可以进行故障定位。&lt;/li&gt;
 &lt;li&gt;兼容性测试：兼容性测试即检测光模块是否可以在某一网络设备上正常使用，而光模块不兼容的常见情况有电压超过光模块的规格、温度超过光模块的规格、接收到的光功率过载或低于光接收器的的接收范围等。而使用具有数字诊断监控功能（DDM）的光模块能直观的反映这些不兼容情况。&lt;/li&gt;
 &lt;li&gt;监测光纤性能：通过对接收功率以及发送功率的分析，辅助光纤长度等信息，可大致判断光路的衰减是否在正常范围内。&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>SFP模块的兼容性</title><link>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</link><pubDate>Sat, 14 Dec 2019 21:31:51 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</guid><description>&lt;h2 id="sfp光模块的生产"&gt;SFP光模块的生产
+&lt;/ul&gt;</description></item><item><title>SFP模块的兼容性</title><link>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</link><pubDate>Sat, 14 Dec 2019 21:31:51 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-compatibility-sfp-module/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp.webp" alt="Featured image of post SFP模块的兼容性" /&gt;&lt;h2 id="sfp光模块的生产"&gt;SFP光模块的生产
 &lt;/h2&gt;&lt;p&gt;SFP光模块的组成如下图：&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-compatibility-sfp-module/sfp.webp"
 width="1080"
@@ -7323,7 +7382,7 @@ data-flex-basis="358px"
 &lt;p&gt;50GE在5G回传接入层的应用，主要取决于接入层流量预测以及50GE光收发器的价格。&lt;/p&gt;
 &lt;p&gt;据测算，目前4G基站单站平均流速大概0.08Gb/s，结合目前运营商的建设指导意见，一个接入环大概带4个BBU集中点，一个BBU集中点大约带10个左右的基站，若按5G基站平均流速是4G的10倍计算，则一个环的总流速大概为0.08×10×4×10=32Gb/s，这种情况下采用50GE是比较合适的，但考虑初期50GE成本问题，建设初期可采用10GE建设，随着流量增加进行10GE捆绑方式扩容（实际上，也可考虑采用前传采用的25GE速率）。假若50GE的价格能够达到10GE价格的2-3倍时（这一点在数通的报价体系内估计很难达到），或100GE的1/3以下时，采用50GE是一个优选的方案，可以达到TCO的最优。n×10GE捆绑方式，除了考虑光模块的价格，还要把维护量的增加、数据配置的复杂、对光纤的占用都纳入TCO的评估中。据相关资料，现有4G回传接入层有30%-44%采用的40km10G光模块，因此50GE 40km光模块的价格对其应用也是至关重要的。&lt;/p&gt;
 &lt;p&gt;126.6GBaud实为26.5625GBaud，在使用PAM4调制时，采用前向纠错编码RS-FEC（544，514）以及线路编码256b257b将25G变为26.5625G，25G×（544÷514）×（257÷256）＝26.5625G。&lt;/p&gt;
-&lt;p&gt;225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。&lt;/p&gt;</description></item><item><title>无源波分前传分场景解决方案</title><link>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</link><pubDate>Sat, 12 Oct 2019 13:15:13 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</guid><description>&lt;p&gt;ITU-T G.694.2规范在1270~1610nm范围内，建议了波长间隔为20nm的18个可用波长，如下图所示：&lt;/p&gt;
+&lt;p&gt;225.8GBaud实为25.78125GBaud，在使用NRZ调制时，1）采用线路编码64b66b，将25G变为26.5625G。25G×（66÷64）＝25.78125G；2）采用前向纠错编码RS-FEC（528，514）以及线路编码256b257b将25G变为25.78125G，25G×（528÷514）×（257÷256）＝25.78125G。&lt;/p&gt;</description></item><item><title>无源波分前传分场景解决方案</title><link>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</link><pubDate>Sat, 12 Oct 2019 13:15:13 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/scenario1.webp" alt="Featured image of post 无源波分前传分场景解决方案" /&gt;&lt;p&gt;ITU-T G.694.2规范在1270~1610nm范围内，建议了波长间隔为20nm的18个可用波长，如下图所示：&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/tech-passive-wdm-front-haul-scene-solution/DWDM_bands.webp"
 width="644"
 height="381"
@@ -7725,7 +7784,7 @@ service v2ray restart&lt;/p&gt;
 &lt;/h2&gt;&lt;p&gt;启动客户端v2ray，上网设置为socks，地址127.0.0.1，端口1080&lt;/p&gt;</description></item><item><title>Wireguard的分流方法</title><link>https://blog.fallleaf.net/p/tech-wireguard-split-tunneling/</link><pubDate>Sat, 07 Sep 2019 15:45:22 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-wireguard-split-tunneling/</guid><description>&lt;p&gt;Wireguard开启后，由于默认采用的全局路由，所有流量都通过Wireguard隧道，造成不必要的流量浪费，有必要进行流量分流。&lt;/p&gt;
 &lt;p&gt;分流的一种方法主要利用路由方式，让特定的IP包转发到Wireguard隧道中，可参见这篇：WireGuard —— Windows 客户端国内外IP分流教程。这种方式是将国内地址段以路由方式不走隧道，但需要不时维护国内地址段，同时一些常规状态下能访问的国外IP地址也走了隧道。&lt;/p&gt;
 &lt;p&gt;用Wireguard，主要就是要科学上网，不能直接访问的毕竟是少数，因此就有了另外一种方式，见这一篇：wireguard+ss/v2ray/brook等实现域名分流。方法是先利用Wireguard建立隧道，再开启Brook等服务，然后利用Wireguard的AllowIPs功能，限定Brook通过隧道建立连接，利用SwitchOmega等代理插件的PAC列表，实现域名分流。&lt;/p&gt;
-&lt;p&gt;在Win10和Linuxmint设置了一下，效果不错。手机上因为Wireguard可以设置某些App通过Wireguard，也就不用考虑了。&lt;/p&gt;</description></item><item><title>25G单纤双向收发合一光模块</title><link>https://blog.fallleaf.net/p/tech-25g-bidi-module/</link><pubDate>Sat, 03 Aug 2019 13:34:59 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-25g-bidi-module/</guid><description>&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
+&lt;p&gt;在Win10和Linuxmint设置了一下，效果不错。手机上因为Wireguard可以设置某些App通过Wireguard，也就不用考虑了。&lt;/p&gt;</description></item><item><title>25G单纤双向收发合一光模块</title><link>https://blog.fallleaf.net/p/tech-25g-bidi-module/</link><pubDate>Sat, 03 Aug 2019 13:34:59 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-25g-bidi-module/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-25g-bidi-module/25g-bidi-txrx.webp" alt="Featured image of post 25G单纤双向收发合一光模块" /&gt;&lt;p&gt;5G采用100M通道，64T64R天线时，若采用CPRI接口，带宽将达到393.216Gb/s，即便采用CPRI压缩算法，也会达到100Gb/s，而eCPRI只需25Gb/s的带宽，综合技术、成本等考虑，5G前传将采用25G速率。&lt;/p&gt;
 &lt;p&gt;2016年5月IEEE通过了802.3by-2016规范，定义了25Gb/s应用媒质接入控制参数、物理层要求，2017年12月通过了802.3cc-2017标准以太网修正：物理层和管理参数，用于通过单模光纤实现串行25 Gbps以太网，2018年10月通过PAR，开展制定10Gb/s，25Gb/s，50Gb/s单纤双向物理层规范，项目号为P802.3cp。中国于2018年6月开始制定用于基站的25Gb/s单纤双向光收发合一模块技术规范，2018年11月发出征求意见稿，预计2019年完成标准制定工作。&lt;/p&gt;
 &lt;p&gt;单纤双向方式可以节省50%的纤芯资源，大大节省了光缆线路的投资，同时由于上下行等距可有效保证高精度时间同步，因此，是5G前传的一种主要模式。&lt;/p&gt;
 &lt;p&gt;下图是optech发布的一款25G单纤双向光模块，采用SFP28封装方式：&lt;/p&gt;
@@ -7810,7 +7869,7 @@ data-flex-basis="620px"
 &lt;p&gt;$$P_o−S_i−E=6.0−2.7−(−13)=17.4dB$$&lt;/p&gt;
 &lt;p&gt;即当光缆线路端到端衰减大于14.4dB时，应选用15km单纤双向光模块。&lt;/p&gt;</description></item><item><title>旅途思绪</title><link>https://blog.fallleaf.net/p/outdoor-travel-thoughts/</link><pubDate>Thu, 25 Jul 2019 13:31:41 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-travel-thoughts/</guid><description>&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-thoughts/cover.webp" alt="Featured image of post 旅途思绪" /&gt;&lt;p&gt;“坐火车的时候，喜欢一直看着窗外。&lt;/p&gt;
 &lt;p&gt;我会盯着远处的房子，看着瞬间经过的人，想象这房子的住着几口人，他们都过着什么样的人生；男主人女主人是什么性格脾气，他们做着什么工作；他们经历过多少苦难，又被幸运女神眷顾过几次； 他们的孩子多大了，有过什么样的童年，还在上学还是在外工作……&lt;/p&gt;
-&lt;p&gt;也会想他们会不会某个时刻不经意的瞥向窗外，看见像银蛇一般飞驰而过的动车，也会想象车上坐着什么样的人，他们有着什么样的人生，他们要去哪里，去那里做什么……”&lt;/p&gt;</description></item><item><title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title><link>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</guid><description>&lt;h2 id="什么是斜线图"&gt;什么是斜线图
+&lt;p&gt;也会想他们会不会某个时刻不经意的瞥向窗外，看见像银蛇一般飞驰而过的动车，也会想象车上坐着什么样的人，他们有着什么样的人生，他们要去哪里，去那里做什么……”&lt;/p&gt;</description></item><item><title>斜线图（Slopegraph）：一种用于比较变化结构的可视化方法</title><link>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-slopegraph-comparing-change-structure/slopegraph-1.webp" alt="Featured image of post 斜线图（Slopegraph）：一种用于比较变化结构的可视化方法" /&gt;&lt;h2 id="什么是斜线图"&gt;什么是斜线图
 &lt;/h2&gt;&lt;p&gt;斜线图（Slopegraph）是一种用于展示同一组观测对象在两个固定状态之间变化关系的数据可视化形式。
 这两个状态可以是不同时间（如今年与去年、事件前后），也可以是不同维度（如总体与子群体），其度量可以是排名、比例或数值。&lt;/p&gt;
 &lt;p&gt;从表现形式上看，斜线图属于折线图的一个特例，但其设计目标并不是描绘连续变化过程，而是强调两个状态之间的相对变化结构。因此，无论是 Excel、Tableau 还是 R，只要支持折线图的工具都可以绘制斜线图。&lt;/p&gt;
@@ -8682,7 +8741,7 @@ class="gallery-image"
 data-flex-grow="75"
 data-flex-basis="180px"
 &gt;&lt;/p&gt;
-&lt;p&gt;源代码放到了GitHub上，做了些改动，采用opencv做图像处理。&lt;/p&gt;</description></item><item><title>2016年出差数据</title><link>https://blog.fallleaf.net/p/outdoor-travel-data-2016/</link><pubDate>Tue, 03 Jan 2017 17:51:05 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-travel-data-2016/</guid><description>&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip.webp"
+&lt;p&gt;源代码放到了GitHub上，做了些改动，采用opencv做图像处理。&lt;/p&gt;</description></item><item><title>2016年出差数据</title><link>https://blog.fallleaf.net/p/outdoor-travel-data-2016/</link><pubDate>Tue, 03 Jan 2017 17:51:05 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-travel-data-2016/</guid><description>&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip.webp" alt="Featured image of post 2016年出差数据" /&gt;&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip.webp"
 width="502"
 height="723"
 srcset="https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip_hu_840dc143bcb66e6e.webp 480w, https://blog.fallleaf.net/p/outdoor-travel-data-2016/2016-trip_hu_145d292b979f30ae.webp 1024w"
@@ -8756,7 +8815,7 @@ Your browser does not support the audio element.
 &lt;li&gt;&lt;a class="link" href="Why.pdf" &gt;Why&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="link" href="Sea_Of_Nectar.pdf" &gt;Sea of Nectar&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="link" href="It-Hurts-to-Leave-It-Hurts-To-Stay_TAB.pdf" &gt;It Hurts to Leave and It Hurts to Stay&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>2014、2015年出差数据</title><link>https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/</link><pubDate>Wed, 27 Jul 2016 16:42:30 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/</guid><description>&lt;p&gt;用gephi以及excel做了一个2014年、2015年出差的图表。可以反映出工作的变化。&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>2014、2015年出差数据</title><link>https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/</link><pubDate>Wed, 27 Jul 2016 16:42:30 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/</guid><description>&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2014-trip.webp" alt="Featured image of post 2014、2015年出差数据" /&gt;&lt;p&gt;用gephi以及excel做了一个2014年、2015年出差的图表。可以反映出工作的变化。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-travel-data-2014-2015/2014-trip.webp"
 width="505"
 height="737"
@@ -8778,7 +8837,7 @@ class="gallery-image"
 data-flex-grow="68"
 data-flex-basis="163px"
 &gt;&lt;/p&gt;
-&lt;p&gt;2015年就比较轻松，但是无效劳动居多&lt;/p&gt;</description></item><item><title>四季</title><link>https://blog.fallleaf.net/p/life-four-seasons/</link><pubDate>Wed, 09 Dec 2015 09:28:43 +0800</pubDate><guid>https://blog.fallleaf.net/p/life-four-seasons/</guid><description>&lt;p&gt;我醉过春天温馨的风&lt;/p&gt;
+&lt;p&gt;2015年就比较轻松，但是无效劳动居多&lt;/p&gt;</description></item><item><title>四季</title><link>https://blog.fallleaf.net/p/life-four-seasons/</link><pubDate>Wed, 09 Dec 2015 09:28:43 +0800</pubDate><guid>https://blog.fallleaf.net/p/life-four-seasons/</guid><description>&lt;img src="https://blog.fallleaf.net/p/life-four-seasons/four-seasons.jpg" alt="Featured image of post 四季" /&gt;&lt;p&gt;我醉过春天温馨的风&lt;/p&gt;
 &lt;p&gt;但错过夏天娇艳的花&lt;/p&gt;
 &lt;p&gt;我想珍藏秋天成熟的叶&lt;/p&gt;
 &lt;p&gt;留住冬天洁白的雪&lt;/p&gt;
@@ -9052,7 +9111,7 @@ PROJECT 365简单的说就是每天照几张照片，并且坚持一年。照相
 &lt;p&gt;全国这类设计院大大小小不下上千家，我也无法全部了解，就说说几个比较重要的吧。杰赛设计院（电子部七所）、中国通信建设总公司设计院。&lt;/p&gt;
 &lt;p&gt;杰赛设计院虽是后起之秀但发展还是蛮快的，毕竟依托原电子部唯一一个移动通信研究所还是有一些技术的。但是，在2000年前后，原先联通的工程被郑州院、北京院蚕食过多所以经济不是很景气，但是近几年走出国门到东南亚很多国家总承包电信工程，业务量暴涨。薪水方面老职工应该不错，不过新职工就比较难说了。&lt;/p&gt;
 &lt;p&gt;中国通信建设总公司设计院，这个设计院成立时间不是特别长，主要是老副总从郑州院带来了几个骨干，所以业务和薪水不是很可观。&lt;/p&gt;
-&lt;p&gt;第三类设计院本人了解不多，所以只作简要说明，没有调查就没有发言权嘛。&lt;/p&gt;</description></item><item><title>预防RSI的利器</title><link>https://blog.fallleaf.net/p/life-rsi-prevention-tools/</link><pubDate>Wed, 06 Dec 2006 15:58:05 +0800</pubDate><guid>https://blog.fallleaf.net/p/life-rsi-prevention-tools/</guid><description>&lt;p&gt;RSI，英文全名叫Repetitive Strain Injury或者为Repetitive Stress Injury，中文意思为重复性压迫损伤。它是由于从事重复性活动或不良姿势而造成的对腱、神经、肌肉和其它软组织的损伤，它的损害可归结为肌肉纤维的结构性变化和血流量减少，神经也不幸被牵扯其中，不活动的组织和周围的炎症压迫着神经，能够引起肢体失去知觉和酸麻，在神经损坏严重时最终变得脆弱。RSI 不是一种特定症状的名称，它是一类具有相同特点的症状的集合，如腕管综合征（CTS，Carpal tunnel syndroma），俗称“鼠标手”，腱鞘炎，奎缅综合征（DeQuervain’s syndrome），肘管综合症（cubital tunnel syndrome），胸廓出口综合征（thoracic outlet syndrome)等。它是一种职业性疾病，经常发生在从事重复性劳动的人群中，如流水线上的工人、IT行业人士、键盘手以及短信狂等。典型症状如颈部、四肢和背部的疼痛，手腕无力、手指麻木、疼痛，无法举双肩，眼睛模糊、酸疼等，对于从事计算机行业的人群中，以腕管综合征（CTS）最普遍。&lt;/p&gt;
+&lt;p&gt;第三类设计院本人了解不多，所以只作简要说明，没有调查就没有发言权嘛。&lt;/p&gt;</description></item><item><title>预防RSI的利器</title><link>https://blog.fallleaf.net/p/life-rsi-prevention-tools/</link><pubDate>Wed, 06 Dec 2006 15:58:05 +0800</pubDate><guid>https://blog.fallleaf.net/p/life-rsi-prevention-tools/</guid><description>&lt;img src="https://blog.fallleaf.net/p/life-rsi-prevention-tools/main-window.png" alt="Featured image of post 预防RSI的利器" /&gt;&lt;p&gt;RSI，英文全名叫Repetitive Strain Injury或者为Repetitive Stress Injury，中文意思为重复性压迫损伤。它是由于从事重复性活动或不良姿势而造成的对腱、神经、肌肉和其它软组织的损伤，它的损害可归结为肌肉纤维的结构性变化和血流量减少，神经也不幸被牵扯其中，不活动的组织和周围的炎症压迫着神经，能够引起肢体失去知觉和酸麻，在神经损坏严重时最终变得脆弱。RSI 不是一种特定症状的名称，它是一类具有相同特点的症状的集合，如腕管综合征（CTS，Carpal tunnel syndroma），俗称“鼠标手”，腱鞘炎，奎缅综合征（DeQuervain’s syndrome），肘管综合症（cubital tunnel syndrome），胸廓出口综合征（thoracic outlet syndrome)等。它是一种职业性疾病，经常发生在从事重复性劳动的人群中，如流水线上的工人、IT行业人士、键盘手以及短信狂等。典型症状如颈部、四肢和背部的疼痛，手腕无力、手指麻木、疼痛，无法举双肩，眼睛模糊、酸疼等，对于从事计算机行业的人群中，以腕管综合征（CTS）最普遍。&lt;/p&gt;
 &lt;p&gt;对于长时间进行计算机操作的人员，预防RSI，可参照以下的方法：&lt;/p&gt;
 &lt;p&gt;－ 每工作 30－45 分钟，至少休息 5 分钟。可以借助一些预防RSI的软件，帮助提醒你按时休息；&lt;/p&gt;
 &lt;p&gt;－ 在休息时伸展放松你的身体，做些体操，眼保健操之类的活动；&lt;/p&gt;
@@ -9187,7 +9246,7 @@ data-flex-basis="384px"
 &lt;p&gt;出发大概一个半小时，到达宽扎河桥，据说是安哥拉唯一收过桥费的地方，这里有军队把守，路边残留一些废弃坦克残骸。过了宽扎河，道路就不想前一段那么好 了，但大多还是柏油路面，只是年久失修，路面有很多小坑，汽车一般骑着路肩跑。中途有一段在修路，推土机的驾驶员看样子象亚洲人，大概是中国公司的。大概一点半左右，在一个小村口做短暂休息，说是小村，也就是道路两边一字排开一个个小棚子，卖一些食品，还有些在卖木炭靠的鸡肉。下午3点，到达一个较大的城 市，PORTO AMBOIM，说是城市，也就只见一些山坡上的土房子，可能是我们没有进城，从城边经过的缘故吧。到这里大概是一般的路程，花费了5个小时，照这样情况， 到BENGUELA可能要到晚上8点了。&lt;/p&gt;
 &lt;p&gt;下午4点到达SUMBE，SUMBE是CUANZA SUL的省会，是一个渔港，不过我们没有在城里呆，很快就穿城而过，到达SUMBE的城边时，是从山上下来的，放眼望去，一块块密密麻麻的房子，都是土色。进到SUMBE城里，发现路边有一个中国公司的营地，名字是CAMCO，北京凯姆克国际贸易有限公司，据说是承建房屋的。在以后的路途中又遇到几个中国公司的营地，发现都有一个显著的特点，只要看见彩旗飘飘的地方，肯定是中国公司的营地。从SUMBE出来，由于靠近海边，附近又有几条河流，景色还不错。&lt;/p&gt;
 &lt;p&gt;汽车不在SUMBE停留，继续向BENGUELA行驶。司机有些不太愿意。大概6点左右，太阳落山，一路摸黑向前开去。大约6点半，到达小镇BALABAIA，镇子不大，很多车停留，找个油站，加油，29KZ/升，加油站有个小商店，进去看看，没有面包，饼干之类的。只好上车，继续赶路。8点左右，远处天边看见一片亮光，知道LOBITO快到了，LOBITO到BENGUELA大概26公里，已经很晚了，决定到LOBITO住宿。&lt;/p&gt;
-&lt;p&gt;LOBITO人生地不熟，司机一路打听，来到一家HOTEL，155USD一间，含早餐，在国内也就是个招待所的档次。不过太晚了，只好住下，还好，有热水，有空调，不过都是双人床，到这些地方，只能将就了。有餐厅，自助餐，很快，大家默默吃完饭，各自回去休息去了。&lt;/p&gt;</description></item><item><title>十一南平、郭亮游记</title><link>https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/</link><pubDate>Sat, 07 Oct 2006 11:49:46 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/</guid><description>&lt;p&gt;五一黄金周没有出去，在家过了7天“猪”一样的生活。由于十一后要去安哥拉一段时间，借着这个机会全家去游玩一下。&lt;/p&gt;
+&lt;p&gt;LOBITO人生地不熟，司机一路打听，来到一家HOTEL，155USD一间，含早餐，在国内也就是个招待所的档次。不过太晚了，只好住下，还好，有热水，有空调，不过都是双人床，到这些地方，只能将就了。有餐厅，自助餐，很快，大家默默吃完饭，各自回去休息去了。&lt;/p&gt;</description></item><item><title>十一南平、郭亮游记</title><link>https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/</link><pubDate>Sat, 07 Oct 2006 11:49:46 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/</guid><description>&lt;img src="https://blog.fallleaf.net/p/outdoor-nanping-guoliang-national-day/guoliang.webp" alt="Featured image of post 十一南平、郭亮游记" /&gt;&lt;p&gt;五一黄金周没有出去，在家过了7天“猪”一样的生活。由于十一后要去安哥拉一段时间，借着这个机会全家去游玩一下。&lt;/p&gt;
 &lt;p&gt;出去游玩不愿受拘束，不愿象走马灯一样去旅游，因此，这次还是自助游，全程坐长途客车和包车。&lt;/p&gt;
 &lt;p&gt;去之前上网查了查，决定去郭亮看看。一是据说风景不错，二是离家也近。&lt;/p&gt;
 &lt;p&gt;先附一张照片吧。（郭亮洞，悬崖上开凿的公路）&lt;/p&gt;
@@ -9222,7 +9281,7 @@ data-flex-basis="329px"
 &lt;p&gt;整个聚会过程就不再多说。下午去游览西湖，由于今天天气好，艳阳高照，来游玩的人很多。一路走到西湖有名的断桥处，感觉不出是个著名的景点，颇为失望，或许 来的季节不对，应该在雪后的晴天再到这里，或许真能感受到“断桥残雪”的意境。&lt;/p&gt;
 &lt;p&gt;晚上，兴致颇高的几个网友又凑在一起FB了一顿。完后，又准备去OK一下。我感到有些累了，想找个宾馆休息一下，就没和他们一起去。打听了几个宾馆，均客满。打了几个定房的电话，均告之所有房型均都定出去了，我FAINT，难道晚上要睡马路了。白天的时候也想到宾馆可能紧张，没想到让我碰上了。仍不死心，在杭州师范学院旁找了一个网吧，2元一小时，上网去找找有没有家庭旅店之类的，按查询的结果拨打了几个电话，也都告之”无房“。如果今晚在这里住下去，还有一个办法，就是在浴室里过一晚上，不过没有这个经验，也不愿这么作，于是决定回上海，又在网上查了火车的时刻，最近的车次也在凌晨2点多，还有三个小时，不知怎么熬。不管这么多了，先在网吧混一会儿，再到火车站吧。&lt;/p&gt;
 &lt;p&gt;打的到了车站，打开车门，马上由5，6个人围上来，嘴里含着”上海“，”义乌”……，马上明白了，看来不必等火车了。问了一下价格，到到嘉兴50， 上海火车站80。于是跟着拉客的到了一个面包车前，拉开车门，只剩一个位置了，正好，来了就能走，车上还有一个军人，上校军衔，看来，安全也能保证了。上车。落座，开车，看看时间，11点半，一路上昏昏欲睡，车很快，2个小时后，已经到了上海火车站。打的，回家，不到2点。&lt;/p&gt;
-&lt;p&gt;看来，五一是不能到杭州玩了，那时候绝对是人看人了，而不是看景色了。到这些旅游景点，事先得把房间定好，票买好。到了旺季，估计花钱也找不到住处。&lt;/p&gt;</description></item><item><title>上海，我来了</title><link>https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/</link><pubDate>Fri, 31 Mar 2006 16:11:12 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/</guid><description>&lt;p&gt;在上海要呆上一阵子了，临时办公室还不错，外景看着挺宽阔的。&lt;/p&gt;
+&lt;p&gt;看来，五一是不能到杭州玩了，那时候绝对是人看人了，而不是看景色了。到这些旅游景点，事先得把房间定好，票买好。到了旺季，估计花钱也找不到住处。&lt;/p&gt;</description></item><item><title>上海，我来了</title><link>https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/</link><pubDate>Fri, 31 Mar 2006 16:11:12 +0800</pubDate><guid>https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/</guid><description>&lt;img src="https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/shanghaioffice.webp" alt="Featured image of post 上海，我来了" /&gt;&lt;p&gt;在上海要呆上一阵子了，临时办公室还不错，外景看着挺宽阔的。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/outdoor-shanghai-i-am-coming/shanghaioffice.webp"
 width="500"
 height="375"
@@ -9232,7 +9291,7 @@ alt="上海办公室外景"
 class="gallery-image"
 data-flex-grow="133"
 data-flex-basis="320px"
-&gt;&lt;/p&gt;</description></item><item><title>电源头柜电力线径的计算方法</title><link>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</link><pubDate>Mon, 27 Mar 2006 16:27:04 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</guid><description>&lt;p&gt;查询了网站的统计信息，发现搜索电力线缆计算方法的还不少，我根据以往经验，参照其他人写的文章，归纳了一下，供大家参考。&lt;/p&gt;
+&gt;&lt;/p&gt;</description></item><item><title>电源头柜电力线径的计算方法</title><link>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</link><pubDate>Mon, 27 Mar 2006 16:27:04 +0800</pubDate><guid>https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/</guid><description>&lt;img src="https://blog.fallleaf.net/p/tech-power-cabinet-wire-sizing-method/105_1.jpg" alt="Featured image of post 电源头柜电力线径的计算方法" /&gt;&lt;p&gt;查询了网站的统计信息，发现搜索电力线缆计算方法的还不少，我根据以往经验，参照其他人写的文章，归纳了一下，供大家参考。&lt;/p&gt;
 &lt;p&gt;对于小工程来说，或者一个工程的配套部分，电源头柜至电源分支柜或直流屏这段导线的线径可按照固定压降发，根据以下公式计算，其计算公式如下：&lt;/p&gt;
 &lt;p&gt;S=(ΣIL)/(rΔU)&lt;/p&gt;
 &lt;p&gt;上式中： - S — 导线截面面积(mm2)，&lt;/p&gt;
