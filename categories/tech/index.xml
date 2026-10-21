@@ -153,7 +153,7 @@
 &lt;p&gt;这三者结合，为医疗机构探索跨地域 AI 协作提供了一种值得验证的技术路径。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;数据在可控的边界内流动，算力在专用网络上协作。安全这件事，要贯穿从数据处理到模型训练的全过程。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;医疗 AI 需要这样的技术选择，未来的算力互联网络，同样要认真考虑这个方向。&lt;/p&gt;
-&lt;h2 id="医院医疗数据如何安全地用于ai训练"&gt;&lt;img src="https://blog.fallleaf.net/p/split-learning-otn-medical-data/otn_medical_model.webp"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/split-learning-otn-medical-data/otn_medical_model.webp"
 width="1024"
 height="1536"
 srcset="https://blog.fallleaf.net/p/split-learning-otn-medical-data/otn_medical_model_hu_f2d9d826b0021238.webp 480w, https://blog.fallleaf.net/p/split-learning-otn-medical-data/otn_medical_model_hu_e2adb7303b814acf.webp 1024w"
@@ -162,8 +162,9 @@ alt="医院医疗数据如何安全地用于AI训练"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-&gt;
-&lt;/h2&gt;&lt;p&gt;&lt;em&gt;本文为技术科普，不构成医疗数据合规或网络安全认证意见。实际部署应根据适用法规、医疗机构的数据治理要求、模型隐私风险和端到端网络测试结果制定方案。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>从云连接到算力互联：AI 时代，运营商 DCA/DCI 网络如何演进</title><link>https://blog.fallleaf.net/p/dca-dci-network-evolution/</link><pubDate>Mon, 19 Oct 2026 12:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/dca-dci-network-evolution/</guid><description>&lt;img src="https://blog.fallleaf.net/p/dca-dci-network-evolution/cover.webp" alt="Featured image of post 从云连接到算力互联：AI 时代，运营商 DCA/DCI 网络如何演进" /&gt;&lt;p&gt;在上一篇文章《从云连接到算力网络：重新认识 DCI、DCA 和 DCN》中，我们讨论了 DCA、DCI 和 DCN 的基本含义，以及运营商应该如何理解这几个概念。上一篇文章解决的是概念问题，接下来要讨论的是建设问题：AI 的发展究竟给运营商网络带来了哪些新的要求，现有网络应该如何演进，运营商又应该以什么方式提供连接服务。&lt;/p&gt;
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;本文为技术科普，不构成医疗数据合规或网络安全认证意见。实际部署应根据适用法规、医疗机构的数据治理要求、模型隐私风险和端到端网络测试结果制定方案。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>从云连接到算力互联：AI 时代，运营商 DCA/DCI 网络如何演进</title><link>https://blog.fallleaf.net/p/dca-dci-network-evolution/</link><pubDate>Mon, 19 Oct 2026 12:00:00 +0800</pubDate><guid>https://blog.fallleaf.net/p/dca-dci-network-evolution/</guid><description>&lt;img src="https://blog.fallleaf.net/p/dca-dci-network-evolution/cover.webp" alt="Featured image of post 从云连接到算力互联：AI 时代，运营商 DCA/DCI 网络如何演进" /&gt;&lt;p&gt;在上一篇文章《从云连接到算力网络：重新认识 DCI、DCA 和 DCN》中，我们讨论了 DCA、DCI 和 DCN 的基本含义，以及运营商应该如何理解这几个概念。上一篇文章解决的是概念问题，接下来要讨论的是建设问题：AI 的发展究竟给运营商网络带来了哪些新的要求，现有网络应该如何演进，运营商又应该以什么方式提供连接服务。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DCA、DCI 并不天然对应两张独立的物理网络。&lt;/strong&gt; 对运营商而言，它们更多是对不同连接需求的描述，也可以成为描述网络能力、解决方案和产品的一种形式。真正承载这些业务的，仍然是现有的光缆网络、光传输网络和 IP 网络。是否需要新建网络，应由业务需求和现有网络能力共同决定，而不应由名称决定。&lt;/p&gt;
 &lt;h2 id="从云计算时代的网络基础出发"&gt;从云计算时代的网络基础出发
 &lt;/h2&gt;&lt;p&gt;经过多年建设，运营商已经形成了从骨干网到本地承载网的覆盖网络基础。在云计算时代，运营商已经围绕云服务的连接需求，并依托骨干本地一体的承载网络，为云服务商、互联网企业、金融机构、大型政企客户提供连接能力。这些网络并不是专门为某一种云服务建设的独立网络，而是面向多种业务共同形成的基础设施。&lt;/p&gt;

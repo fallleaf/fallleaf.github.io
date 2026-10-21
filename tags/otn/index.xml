@@ -153,7 +153,7 @@
 &lt;p&gt;这三者结合，为医疗机构探索跨地域 AI 协作提供了一种值得验证的技术路径。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;数据在可控的边界内流动，算力在专用网络上协作。安全这件事，要贯穿从数据处理到模型训练的全过程。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;医疗 AI 需要这样的技术选择，未来的算力互联网络，同样要认真考虑这个方向。&lt;/p&gt;
-&lt;h2 id="医院医疗数据如何安全地用于ai训练"&gt;&lt;img src="https://blog.fallleaf.net/p/split-learning-otn-medical-data/otn_medical_model.webp"
+&lt;p&gt;&lt;img src="https://blog.fallleaf.net/p/split-learning-otn-medical-data/otn_medical_model.webp"
 width="1024"
 height="1536"
 srcset="https://blog.fallleaf.net/p/split-learning-otn-medical-data/otn_medical_model_hu_f2d9d826b0021238.webp 480w, https://blog.fallleaf.net/p/split-learning-otn-medical-data/otn_medical_model_hu_e2adb7303b814acf.webp 1024w"
@@ -162,5 +162,6 @@ alt="医院医疗数据如何安全地用于AI训练"
 class="gallery-image"
 data-flex-grow="66"
 data-flex-basis="160px"
-&gt;
-&lt;/h2&gt;&lt;p&gt;&lt;em&gt;本文为技术科普，不构成医疗数据合规或网络安全认证意见。实际部署应根据适用法规、医疗机构的数据治理要求、模型隐私风险和端到端网络测试结果制定方案。&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;本文为技术科普，不构成医疗数据合规或网络安全认证意见。实际部署应根据适用法规、医疗机构的数据治理要求、模型隐私风险和端到端网络测试结果制定方案。&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
